@@ -42,6 +42,7 @@ jobs:
       - name: Fetch newest papers and archive sources
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
         continue-on-error: true
+        timeout-minutes: 40
         run: |
           npm run feed
           npm run archive
@@ -56,7 +57,13 @@ jobs:
             echo "No data changes"
           else
             git commit -m "Aylık güncelleme: yeni makaleler ve arşiv bağlantıları"
-            git push
+            # the branch may have moved while the refresh was running
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push; then
+              echo "Refreshed data pushed"
+            else
+              git rebase --abort 2>/dev/null || true
+              echo "::warning::Could not push refreshed data; the site is still built with it"
+            fi
           fi
 
       - name: Build (checks every node first)
