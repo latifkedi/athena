@@ -12,7 +12,8 @@
 // Supported feed tags:
 //   openalex:field/<id>      OpenAlex field, e.g. openalex:field/31 (Physics and Astronomy)
 //   openalex:subfield/<id>   OpenAlex subfield, e.g. openalex:subfield/3103 (Astronomy and Astrophysics)
-//   openalex:search:<words>  most relevant works of the last year for a search
+//   openalex:search:<words>  most-cited works of the last year with these words in title or abstract
+//                            (OR and "phrases" allowed, no commas)
 //   arxiv:<category>         e.g. arxiv:math, arxiv:cs.AI, arxiv:astro-ph
 //   biorxiv | medrxiv
 //   chemrxiv
@@ -213,20 +214,22 @@ async function openalex(spec) {
   const select = 'select=id,doi,display_name,publication_date,authorships,primary_location,cited_by_count';
   const until = `to_publication_date:${day(new Date())}`;
   let variants;
+  const trusted = 'is_retracted:false,is_paratext:false';
   if (spec.startsWith('search:')) {
+    // words (and OR / "phrases") matched in title and abstract only; no commas, they separate filters
     const q = encodeURIComponent(spec.slice(7));
     const since = `from_publication_date:${daysAgo(365)},${until}`;
     variants = [
-      `search=${q}&filter=${since},type:article|review,primary_location.source.type:journal,is_paratext:false&sort=relevance_score:desc`,
-      `search=${q}&filter=${since}&sort=relevance_score:desc`,
+      `filter=title_and_abstract.search:${q},${since},type:article|review,${trusted}&sort=cited_by_count:desc`,
+      `search=${q}&filter=${since},is_retracted:false&sort=relevance_score:desc`,
     ];
   } else {
     const [level, id] = spec.split('/'); // field | subfield
     const since = `from_publication_date:${daysAgo(60)},${until}`;
     // the id form and some filters have changed over time; try the strict query first
     variants = [
-      `filter=primary_topic.${level}.id:${id},${since},type:article|review,primary_location.source.type:journal,is_paratext:false&sort=cited_by_count:desc`,
-      `filter=primary_topic.${level}.id:${level}s/${id},${since},type:article|review&sort=cited_by_count:desc`,
+      `filter=primary_topic.${level}.id:${id},${since},type:article|review,primary_location.source.type:journal,${trusted}&sort=cited_by_count:desc`,
+      `filter=primary_topic.${level}.id:${level}s/${id},${since},type:article|review,is_retracted:false&sort=cited_by_count:desc`,
       `filter=topics.${level}.id:${id},${since}&sort=cited_by_count:desc`,
     ];
   }

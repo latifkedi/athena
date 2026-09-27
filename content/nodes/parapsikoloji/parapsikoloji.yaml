@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 11
-feed: ['openalex:search:parapsychology']
+feed: ['openalex:search:parapsychology OR "psi phenomena" OR telepathy OR precognition']
 title:
   tr: Parapsikoloji
   en: Parapsychology
