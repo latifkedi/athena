@@ -4,12 +4,14 @@
 //
 //   node scripts/archive-sources.mjs [--max 60] [--minutes 20]
 //
-// - Plain links: an existing snapshot is looked up first; if there is none, one is requested
-//   with Save Page Now (anonymous use allows only a few captures per minute, so at most --max).
-// - DOI links: most publishers refuse Save Page Now, and a DOI is already a persistent link.
-//   The DOI is resolved to the publisher's page and an existing snapshot of either is recorded.
-// - Rate limits (HTTP 429) and unreachable hosts are not errors: the script waits, and after
-//   several in a row it stops and leaves the rest for the next run. Progress is saved as it goes.
+// 1. Lookup: for every source the snapshot the Wayback Machine already holds is recorded.
+//    DOI links are also resolved to the publisher's page, whose snapshot counts too.
+// 2. Capture: plain links still without a snapshot are sent to Save Page Now (anonymous use
+//    allows only a few captures per minute, so at most --max). DOI links are not sent: most
+//    publishers refuse it, and a DOI is already a persistent link.
+// Rate limits (HTTP 429) and unreachable hosts are not errors: the script waits, and after
+// several in a row it ends that phase and leaves the rest for the next run. Progress is saved
+// after every recorded snapshot.
 import { readFileSync, readdirSync, statSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import * as yaml from 'js-yaml';
@@ -71,9 +73,7 @@ const todo = [...all.values()]
   .filter(({ url }) => {
     const r = db.urls[url];
     return !r || now - Date.parse(r.checked) > RECHECK_DAYS * 86400000;
-  })
-  // plain links first: they are the ones Save Page Now can capture
-  .sort((a, b) => Number(!!a.doi) - Number(!!b.doi));
+  });
 console.log(`${all.size} source URLs, ${todo.length} without a recent snapshot`);
 
 class Later extends Error {
@@ -118,13 +118,19 @@ async function save(u) {
   return null;
 }
 
-const stats = { found: 0, saved: 0, doiPending: 0, refused: 0, later: 0 };
-let saves = 0;
-let streak = 0;
+const stats = { found: 0, saved: 0, doiPending: 0, refused: 0 };
+const record = (url, snapshot) => {
+  db.urls[url] = { snapshot, checked: new Date().toISOString() };
+  persist();
+};
+const timeUp = () => Date.now() > DEADLINE;
 let stopped = '';
 
+// 1. lookup
+const toSave = [];
+let streak = 0;
 for (const item of todo) {
-  if (Date.now() > DEADLINE) {
+  if (timeUp()) {
     stopped = 'time budget used up';
     break;
   }
@@ -136,47 +142,65 @@ for (const item of todo) {
     }
     if (snap) {
       stats.found++;
+      record(item.url, snap);
       console.log(`  found  ${item.url}`);
     } else if (item.doi) {
       stats.doiPending++;
       console.log(`  doi    ${item.url} (no snapshot yet; the DOI itself stays resolvable)`);
-    } else if (saves < MAX_SAVES) {
-      saves++;
-      snap = await save(item.url);
+    } else {
+      toSave.push(item);
+    }
+    streak = 0;
+  } catch (e) {
+    if (!(e instanceof Later)) throw e;
+    console.log(`  later  ${item.url}: ${e.message}`);
+    if (++streak >= MAX_STREAK) {
+      stopped = 'the Wayback Machine lookup is rate limiting or unreachable';
+      break;
+    }
+    await sleep(e.wait * 1000);
+  }
+  await sleep(500);
+}
+
+// 2. capture
+if (!stopped) {
+  console.log(`\n${toSave.length} links without a snapshot; capturing up to ${MAX_SAVES}`);
+  streak = 0;
+  for (const item of toSave.slice(0, MAX_SAVES)) {
+    if (timeUp()) {
+      stopped = 'time budget used up';
+      break;
+    }
+    try {
+      const snap = await save(item.url);
       if (snap) {
         stats.saved++;
+        record(item.url, snap);
         console.log(`  saved  ${item.url}`);
       } else {
         stats.refused++;
         console.log(`  skip   ${item.url} (the Internet Archive could not capture it this time)`);
       }
-      await sleep(12000); // anonymous Save Page Now allows only a few captures per minute
+      streak = 0;
+    } catch (e) {
+      if (!(e instanceof Later)) throw e;
+      console.log(`  later  ${item.url}: ${e.message}`);
+      if (++streak >= MAX_STREAK) {
+        stopped = 'Save Page Now is rate limiting or unreachable';
+        break;
+      }
+      await sleep(e.wait * 1000);
     }
-    if (snap) {
-      db.urls[item.url] = { snapshot: snap, checked: new Date().toISOString() };
-      persist();
-    }
-    streak = 0;
-  } catch (e) {
-    if (!(e instanceof Later)) throw e;
-    stats.later++;
-    streak++;
-    console.log(`  later  ${item.url}: ${e.message}`);
-    if (streak >= MAX_STREAK) {
-      stopped = 'the Internet Archive is rate limiting or unreachable';
-      break;
-    }
-    await sleep(e.wait * 1000);
+    await sleep(12000); // anonymous Save Page Now allows only a few captures per minute
   }
-  await sleep(1000);
 }
 
 persist();
-const left = todo.length - (stats.found + stats.saved + stats.doiPending + stats.refused + stats.later);
 const summary =
   `${stats.found} existing snapshots recorded, ${stats.saved} new captures, ` +
-  `${stats.doiPending} DOIs without a snapshot yet, ${stats.refused} refused by the site, ` +
-  `${stats.later + left} left for the next run; ${Object.keys(db.urls).length} URLs in content/archive.json` +
-  (stopped ? ` (stopped early: ${stopped})` : '');
+  `${stats.doiPending} DOIs without a snapshot yet, ${stats.refused} refused by the site; ` +
+  `${todo.length - stats.found - stats.saved} to retry next run, ${Object.keys(db.urls).length} URLs in content/archive.json` +
+  (stopped ? ` (ended early: ${stopped})` : '');
 console.log(`\n${summary}`);
 if (process.env.GITHUB_ACTIONS) console.log(`::notice title=Archive::${summary}`);
