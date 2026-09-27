@@ -3,6 +3,7 @@ parent: insanlik
 side: roots
 type: field
 order: 1
+feed: ['openalex:subfield/1211', 'openalex:subfield/1207']
 title:
   tr: Felsefe
   en: Philosophy

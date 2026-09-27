@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 7
-feed: ['arxiv:astro-ph']
+feed: ['openalex:subfield/3103', 'arxiv:astro-ph']
 title:
   tr: Astronomi ve kozmoloji
   en: Astronomy and cosmology

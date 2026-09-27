@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 8
-feed: ['arxiv:physics.geo-ph', 'arxiv:physics.ao-ph']
+feed: ['openalex:field/19', 'openalex:subfield/2306', 'arxiv:physics.geo-ph', 'arxiv:physics.ao-ph']
 title:
   tr: Yer bilimleri
   en: Earth sciences

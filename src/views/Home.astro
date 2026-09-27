@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import type { Lang } from '../lib/data';
-import { allNodes, centerNode, topLevel } from '../lib/data';
+import { allNodes, centerNode, topLevel, treeGroups } from '../lib/data';
 import { ui, t, url, nodePath, routes, typeLabels, formatDate } from '../lib/i18n';
 
 interface Props {
@@ -20,6 +20,13 @@ const payload = {
     canopy: t(ui.canopyLabel, lang),
     roots: t(ui.rootsLabel, lang),
     datings: t(ui.datings, lang),
+    forkNote: t(ui.forkNote, lang),
+    forkNoteKids: t(ui.forkNoteKids, lang),
+    positions: t(ui.positions, lang),
+  },
+  groups: {
+    canopy: treeGroups('canopy').map((g) => ({ id: g.id, t: t(g.title, lang), f: g.fields })),
+    roots: treeGroups('roots').map((g) => ({ id: g.id, t: t(g.title, lang), f: g.fields })),
   },
   nodes: allNodes.map((n) => ({
     id: n.id,
@@ -34,6 +41,8 @@ const payload = {
     href: url(nodePath(n.id, lang)),
     rel: n.related,
     top: n.depth >= 1 ? topLevel(n.id)?.id : null,
+    // on open questions the branch splits into one prong per position
+    pw: n.type === 'question' ? n.positions.map((p) => t(p.who, lang)) : undefined,
   })),
 };
 ---
@@ -56,6 +65,15 @@ const payload = {
     <div class="legend small">
       <span><span class="dot canopy"></span>{t(ui.canopyLabel, lang)}</span>
       <span><span class="dot roots"></span>{t(ui.rootsLabel, lang)}</span>
+      <span>
+        <svg class="lg-fork" viewBox="0 0 14 14" aria-hidden="true"
+          ><path d="M7 13V7M7 7L2.5 2M7 7l4.5-5"></path><circle cx="2.5" cy="2" r="1.4"></circle><circle
+            cx="11.5"
+            cy="2"
+            r="1.4"></circle></svg
+        >{t(ui.legendFork, lang)}
+      </span>
+      <span><span class="lg-grow" aria-hidden="true">→</span>{t(ui.legendGrowth, lang)}</span>
     </div>
 
     <svg id="tree" role="img" aria-label={t(ui.siteTagline, lang)}></svg>
@@ -200,24 +218,97 @@ const payload = {
   }
 
   /* tree marks */
-  .t-link {
-    fill: none;
-    stroke-width: 1.2;
-    stroke-opacity: 0.55;
+  .t-soil {
+    fill: url(#soil);
   }
-  .t-link.canopy {
-    stroke: var(--canopy);
+  .soil-top {
+    stop-color: var(--soil);
+    stop-opacity: 1;
   }
-  .t-link.roots {
-    stroke: var(--roots);
+  .soil-bottom {
+    stop-color: var(--soil);
+    stop-opacity: 0;
   }
-  .t-link.d1 {
-    stroke-width: 2.4;
+  .t-ground {
+    stroke: var(--ground);
+    stroke-width: 1.5;
   }
-  .t-link.on {
-    stroke: var(--accent);
-    stroke-opacity: 1;
-    stroke-width: 2.2;
+  .t-side-label {
+    fill: var(--text-3);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+  .t-clump {
+    fill: url(#clump);
+    pointer-events: none;
+  }
+  .clump-in {
+    stop-color: var(--canopy);
+    stop-opacity: 0.13;
+  }
+  .clump-mid {
+    stop-color: var(--canopy);
+    stop-opacity: 0.07;
+  }
+  .clump-out {
+    stop-color: var(--canopy);
+    stop-opacity: 0;
+  }
+  .t-trunk {
+    fill: var(--bark);
+    cursor: pointer;
+  }
+  .t-branch {
+    stroke: none;
+    cursor: pointer;
+    transition: fill 0.2s;
+  }
+  .t-branch.limb {
+    cursor: default;
+  }
+  .t-branch.l0 {
+    fill: var(--bark);
+  }
+  .t-branch.canopy.l1 {
+    fill: color-mix(in srgb, var(--bark) 52%, var(--canopy));
+  }
+  .t-branch.canopy.l2 {
+    fill: color-mix(in srgb, var(--bark) 22%, var(--canopy));
+  }
+  .t-branch.canopy.l3 {
+    fill: var(--canopy);
+  }
+  .t-branch.roots.l1 {
+    fill: color-mix(in srgb, var(--bark) 55%, var(--roots));
+  }
+  .t-branch.roots.l2 {
+    fill: color-mix(in srgb, var(--bark) 25%, var(--roots));
+  }
+  .t-branch.roots.l3 {
+    fill: var(--roots);
+  }
+  .t-branch.on,
+  .t-trunk.on {
+    fill: var(--accent);
+  }
+  .t-branch:not(.limb):hover {
+    fill: color-mix(in srgb, var(--accent) 70%, var(--bark));
+  }
+  .t-group {
+    font-size: 10.5px;
+    font-weight: 650;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    fill: var(--text-3);
+    text-anchor: middle;
+    pointer-events: none;
+    paint-order: stroke;
+    stroke: var(--surface);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+  }
+  .t-group.on {
+    fill: var(--accent-ink);
   }
   .t-rel {
     fill: none;
@@ -225,15 +316,7 @@ const payload = {
     stroke-width: 1.4;
     stroke-dasharray: 4 4;
     stroke-opacity: 0.8;
-  }
-  .t-ground {
-    stroke: var(--border);
-    stroke-width: 1.2;
-  }
-  .t-side-label {
-    fill: var(--text-3);
-    font-size: 12px;
-    letter-spacing: 0.04em;
+    pointer-events: none;
   }
   .t-node {
     cursor: pointer;
@@ -243,28 +326,55 @@ const payload = {
     fill: transparent;
   }
   .t-node .mark {
+    fill: var(--surface);
     stroke-width: 1.8;
   }
   .t-node.canopy .mark {
-    fill: var(--canopy);
-    stroke: var(--canopy);
+    stroke: color-mix(in srgb, var(--bark) 30%, var(--canopy));
   }
   .t-node.roots .mark {
-    fill: var(--roots);
-    stroke: var(--roots);
-  }
-  .t-node.center .mark {
-    fill: var(--text);
-    stroke: var(--surface);
-    stroke-width: 3;
+    stroke: color-mix(in srgb, var(--bark) 30%, var(--roots));
   }
   .t-node.open .mark {
+    fill: color-mix(in srgb, var(--bark) 30%, var(--canopy));
+  }
+  .t-node.roots.open .mark {
+    fill: color-mix(in srgb, var(--bark) 30%, var(--roots));
+  }
+  .t-node.leaf .mark {
+    stroke: none;
+    fill: var(--canopy-ink);
+  }
+  .t-node.roots.leaf .mark {
+    fill: var(--roots);
+  }
+  .t-node.center .mark {
+    fill: var(--bark);
+    stroke: none;
+  }
+  .t-node .leaf {
+    fill: var(--canopy);
+    stroke: color-mix(in srgb, var(--canopy) 70%, var(--text));
+    stroke-width: 0.6;
+    stroke-opacity: 0.5;
+  }
+  .t-node .prong path,
+  .t-node .prong circle {
+    fill: var(--fork);
+  }
+  .t-node.fork .mark {
+    stroke: var(--fork);
+    fill: var(--fork);
+  }
+  .t-node.fork.open .mark {
     fill: var(--surface);
+    stroke-width: 2.2;
   }
   .t-node .ring {
     fill: none;
     stroke-width: 1.2;
-    stroke-opacity: 0.5;
+    stroke-opacity: 0.6;
+    stroke-dasharray: 2 2.4;
   }
   .t-node.canopy .ring {
     stroke: var(--canopy);
@@ -272,9 +382,10 @@ const payload = {
   .t-node.roots .ring {
     stroke: var(--roots);
   }
-  .t-node.sel .mark {
+  .t-node.sel .hit {
+    fill: color-mix(in srgb, var(--accent) 14%, transparent);
     stroke: var(--accent);
-    stroke-width: 3;
+    stroke-width: 2;
   }
   .t-node:focus-visible .hit {
     stroke: var(--accent);
@@ -288,13 +399,14 @@ const payload = {
     stroke-width: 4px;
     stroke-linejoin: round;
   }
-  .t-node.d1 text {
+  .t-node.lv1 text {
     font-size: 14px;
     font-weight: 650;
   }
   .t-node.center text {
     font-size: 15px;
     font-weight: 700;
+    letter-spacing: 0.02em;
   }
   .t-node.dim text {
     fill: var(--text-2);
@@ -305,18 +417,58 @@ const payload = {
   }
   /* semantic zoom: when zoomed out, keep main-branch labels readable and
      show deeper labels only for the selection, its path and on hover */
-  #tree.far .t-node.d1 text {
-    font-size: calc(14px * min(1.2, max(1, 0.8 / var(--k, 1))));
+  #tree.far .t-node.lv1 text {
+    font-size: calc(14px * min(1.25, max(1, 0.8 / var(--k, 1))));
   }
   #tree.far .t-node.center text {
     font-size: calc(15px * min(1.6, max(1, 0.8 / var(--k, 1))));
   }
-  #tree.far .t-node:not(.d0):not(.d1):not(.lbl):not(.hov):not(:focus-visible) text {
+  #tree.far .t-group {
     display: none;
   }
-  #tree.far .t-node.lbl:not(.d1):not(.center) text,
-  #tree.far .t-node.hov:not(.d1):not(.center) text {
+  #tree.far .t-node:not(.lv0):not(.lv1):not(.lbl):not(.hov):not(:focus-visible) text {
+    display: none;
+  }
+  #tree.far .t-node.lbl:not(.lv1):not(.center) text,
+  #tree.far .t-node.hov:not(.lv1):not(.center) text {
     font-size: calc(12.5px * min(2, 0.8 / var(--k, 1)));
+  }
+  .legend .lg-fork {
+    width: 14px;
+    height: 14px;
+    flex: none;
+  }
+  .legend .lg-fork path {
+    fill: none;
+    stroke: var(--fork);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+  }
+  .legend .lg-fork circle {
+    fill: var(--fork);
+  }
+  .legend .lg-grow {
+    width: 14px;
+    text-align: center;
+    color: var(--text-3);
+    flex: none;
+  }
+  .panel .fork-note {
+    border-left: 3px solid var(--fork);
+    padding: 6px 10px;
+    margin: 0 0 8px;
+    font-size: 0.85rem;
+    color: var(--text-2);
+    background: var(--surface-2);
+    border-radius: 0 8px 8px 0;
+  }
+  .panel ul.views {
+    margin: 0 0 4px;
+    padding-left: 18px;
+    font-size: 0.88rem;
+  }
+  .panel ul.views li::marker {
+    color: var(--fork);
   }
 
   /* panel */

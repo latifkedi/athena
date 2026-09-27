@@ -85,7 +85,7 @@ npm install
 npm run dev       # yerel geliştirme sunucusu
 npm run check     # içerik denetimi
 npm run build     # denetim + statik site (dist/)
-npm run feed      # en yeni ön baskıları çek (arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv, SocArXiv)
+npm run feed      # yeni araştırmaları çek: hakemli dergiler (OpenAlex) ve ön baskılar (arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv, SocArXiv)
 npm run archive   # kaynak bağlantılarını Wayback Machine'e arşivle
 ```
 
@@ -94,6 +94,7 @@ npm run archive   # kaynak bağlantılarını Wayback Machine'e arşivle
 ```
 content/nodes/        düğümler (her biri bir YAML dosyası)
 content/dashboard.yaml  "İnsanlık nerede?" panosu
+content/tree.yaml     ağaçta ana dalların gruplanması ve sırası (ilgili dallar yan yana)
 content/feed/latest.json  aylık otomatik makale listesi
 content/archive.json  kaynakların arşiv bağlantıları
 src/                  Astro sayfaları, D3 ağaç görünümü

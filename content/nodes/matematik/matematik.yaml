@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 1
-feed: ['arxiv:math']
+feed: ['openalex:field/26', 'arxiv:math']
 title:
   tr: Matematik
   en: Mathematics

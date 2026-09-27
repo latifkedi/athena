@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 3
-feed: ['arxiv:physics.plasm-ph', 'arxiv:physics.app-ph']
+feed: ['openalex:field/21', 'arxiv:physics.plasm-ph', 'arxiv:physics.app-ph']
 title:
   tr: Enerji
   en: Energy

@@ -1,15 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
 import type { Lang } from '../lib/data';
-import { getNode, centerNode } from '../lib/data';
-import { feed } from '../lib/feed';
+import { getNode, treeGroups } from '../lib/data';
+import { feed, isJournal } from '../lib/feed';
 import { ui, t, url, nodePath, REPO } from '../lib/i18n';
 
 interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
-const order = centerNode.children;
+// same order as on the tree, so related branches follow each other
+const order = [...treeGroups('canopy'), ...treeGroups('roots')].flatMap((g) => g.fields);
 const branches = Object.entries(feed.branches)
   .filter(([id, papers]) => getNode(id) && papers.length)
   .sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
@@ -18,13 +19,27 @@ const branches = Object.entries(feed.branches)
 <Base lang={lang} title={t(ui.nav.latest, lang)} route="latest">
   <main class="wrap">
     <h1>{t(ui.nav.latest, lang)}</h1>
-    <p class="muted">
-      {
-        lang === 'tr'
-          ? 'Bu liste her ay otomatik olarak arXiv, bioRxiv ve medRxiv ön baskı arşivlerinden alınır ve git geçmişinde saklanır. Ön baskılar yayımlandıkları anda hakem değerlendirmesinden geçmemiş olabilir; öne çıkan çalışmalar incelendikten sonra ağaca düğüm olarak eklenir.'
-          : 'This list is pulled automatically every month from the arXiv, bioRxiv and medRxiv preprint servers and kept in the git history. Preprints may not yet be peer-reviewed at the time of posting; notable work is added to the tree as a node after review.'
-      }
-    </p>
+    {
+      lang === 'tr' ? (
+        <p class="muted">
+          Bu liste her ay otomatik olarak güncellenir ve git geçmişinde saklanır. <strong>Hakemli dergi makaleleri</strong>{' '}
+          <a href="https://openalex.org">OpenAlex</a>'ten alınır: Crossref, PubMed, DOAJ, arXiv, üniversite arşivleri ve
+          yayıncı verilerini birleştiren açık akademik dizin (Google Scholar'ın bir programlama arayüzü olmadığı için onun
+          açık karşılığı kullanılır). Her alan için son iki ayda yayımlanıp en çok atıf alan makaleler listelenir.{' '}
+          <strong>Ön baskılar</strong> arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv ve SocArXiv'den alınır; henüz hakem
+          değerlendirmesinden geçmemiş olabilirler. Öne çıkan çalışmalar incelendikten sonra ağaca düğüm olarak eklenir.
+        </p>
+      ) : (
+        <p class="muted">
+          This list is refreshed automatically every month and kept in the git history. <strong>Peer-reviewed articles</strong>{' '}
+          come from <a href="https://openalex.org">OpenAlex</a>, the open scholarly index that combines Crossref, PubMed,
+          DOAJ, arXiv, university repositories and publisher data (used as the open counterpart to Google Scholar, which
+          has no API). For every field it lists the most-cited articles of the last two months.{' '}
+          <strong>Preprints</strong> come from arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv and SocArXiv and may not be
+          peer-reviewed yet. Notable work is added to the tree as a node after review.
+        </p>
+      )
+    }
     {
       feed.generated ? (
         <p class="small muted">
@@ -57,18 +72,29 @@ const branches = Object.entries(feed.branches)
             <h2>
               <span class={`dot ${n.side}`} /> <a href={url(nodePath(id, lang))}>{t(n.title, lang)}</a>
             </h2>
-            <ul class="papers">
-              {papers.map((p) => (
-                <li>
-                  <a href={p.url} rel="noopener">
-                    {p.title}
-                  </a>
-                  <div class="small muted">
-                    {p.authors} · {p.date} · {p.source} {p.category}
-                  </div>
-                </li>
-              ))}
-            </ul>
+            {[
+              [ui.journalPapers, papers.filter(isJournal)],
+              [ui.preprintPapers, papers.filter((p) => !isJournal(p))],
+            ].map(
+              ([label, list]) =>
+                (list as typeof papers).length > 0 && (
+                  <>
+                    <h3>{t(label as typeof ui.journalPapers, lang)}</h3>
+                    <ul class="papers">
+                      {(list as typeof papers).map((p) => (
+                        <li>
+                          <a href={p.url} rel="noopener">
+                            {p.title}
+                          </a>
+                          <div class="small muted">
+                            {p.authors} · {p.date} · {p.source} {p.category}
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ),
+            )}
           </section>
         );
       })
@@ -86,5 +112,11 @@ const branches = Object.entries(feed.branches)
   h2 a {
     color: var(--text);
     text-decoration: none;
+  }
+  h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-3);
   }
 </style>

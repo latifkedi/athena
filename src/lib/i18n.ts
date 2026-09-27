@@ -58,6 +58,16 @@ export const ui = {
   fit: { tr: 'Ortala', en: 'Fit' },
   canopyLabel: { tr: 'Dallar — araştırma alanları', en: 'Branches — fields of inquiry' },
   rootsLabel: { tr: 'Kökler — düşünce ve inanç gelenekleri', en: 'Roots — traditions of thought and belief' },
+  legendFork: { tr: 'Açık soru: dalın görüşlere ayrıldığı yer', en: 'Open question: where the branch splits into views' },
+  legendGrowth: { tr: 'Her dalda uca doğru daha yeni', en: 'Newer toward the tip of each branch' },
+  forkNote: {
+    tr: 'Bu soruda görüşler ayrılır; ağaçtaki her çatal bir görüştür.',
+    en: 'Views diverge on this question; each prong on the tree is one position.',
+  },
+  forkNoteKids: {
+    tr: 'Görüşler burada ayrılır; her alt dal ayrı bir görüştür ve kendi kanıtlarıyla sunulur.',
+    en: 'Views diverge here; each sub-branch is a separate view, presented with its own evidence.',
+  },
   openPage: { tr: 'Ayrıntılı sayfa', en: 'Full page' },
   close: { tr: 'Kapat', en: 'Close' },
   children: { tr: 'Alt dallar', en: 'Sub-branches' },
@@ -85,7 +95,15 @@ export const ui = {
   parentLabel: { tr: 'Üst dal', en: 'Parent' },
   people: { tr: 'Kişiler', en: 'People' },
   date: { tr: 'Tarih', en: 'Date' },
-  latestInBranch: { tr: 'Bu dalda son ön baskılar', en: 'Latest preprints in this branch' },
+  latestInBranch: { tr: 'Bu dalda yeni araştırmalar', en: 'New research in this branch' },
+  journalPapers: { tr: 'Hakemli dergilerde öne çıkanlar', en: 'Notable in peer-reviewed journals' },
+  preprintPapers: { tr: 'Ön baskılar (henüz hakemden geçmemiş olabilir)', en: 'Preprints (may not be peer-reviewed yet)' },
+  literature: { tr: 'Literatürde ara', en: 'Search the literature' },
+  literatureNote: {
+    tr: 'Bu konudaki akademik yayınları başka dizinlerde de arayabilirsiniz:',
+    en: 'Look for scholarly work on this topic in other indexes:',
+  },
+  forkBox: { tr: 'Görüş ayrılığı', en: 'Divergence of views' },
   nodes: { tr: 'düğüm', en: 'nodes' },
   undated: { tr: 'Tarihi kesin olmayanlar', en: 'Without a certain date' },
   undatedNote: {

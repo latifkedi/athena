@@ -1,19 +1,30 @@
 #!/usr/bin/env node
-// Pulls the newest preprints for every top-level branch that declares `feed:` in its YAML
+// Pulls the newest research for every top-level branch that declares `feed:` in its YAML
 // and writes content/feed/latest.json. Runs monthly in GitHub Actions (see .github/workflows/deploy.yml).
 //
+// Two kinds of papers are kept apart:
+//   journal   peer-reviewed articles from OpenAlex, the open index of scholarly works that brings
+//             together Crossref, PubMed, DOAJ, arXiv, institutional repositories and publisher data
+//             (an open counterpart to Google Scholar, which offers no API). The most-cited articles
+//             of the last two months come first.
+//   preprint  the newest postings on preprint servers; these may not be peer-reviewed yet.
+//
 // Supported feed tags:
-//   arxiv:<category>   e.g. arxiv:math, arxiv:cs.AI, arxiv:astro-ph
+//   openalex:field/<id>      OpenAlex field, e.g. openalex:field/31 (Physics and Astronomy)
+//   openalex:subfield/<id>   OpenAlex subfield, e.g. openalex:subfield/3103 (Astronomy and Astrophysics)
+//   openalex:search:<words>  most relevant works of the last year for a search
+//   arxiv:<category>         e.g. arxiv:math, arxiv:cs.AI, arxiv:astro-ph
 //   biorxiv | medrxiv
 //   chemrxiv
-//   psyarxiv | socarxiv   (OSF preprint servers)
+//   psyarxiv | socarxiv      (OSF preprint servers)
+// An OpenAlex API key, if the service asks for one, is read from OPENALEX_API_KEY.
 import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import * as yaml from 'js-yaml';
 
 const ROOT = new URL('..', import.meta.url).pathname;
 const PER_FEED = 8;
-const PER_BRANCH = 10;
+const PER_KIND = 6; // per branch: up to this many journal articles and this many preprints
 const UA = 'athena-feed/1.0 (+https://github.com/latifkedi/athena)';
 
 function walk(dir) {
@@ -32,10 +43,11 @@ async function get(url, as = 'text') {
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
       const res = await fetch(url, { headers: { 'User-Agent': UA } });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
       return as === 'json' ? await res.json() : await res.text();
     } catch (e) {
-      if (attempt === 2) throw e;
+      // a rejected query (4xx other than 429) will not succeed on a retry
+      if (attempt === 2 || (e.status >= 400 && e.status < 500 && e.status !== 429)) throw e;
       await sleep(2000 * 2 ** attempt);
     }
   }
@@ -178,7 +190,63 @@ async function osf(provider) {
   });
 }
 
+const day = (x) => x.toISOString().slice(0, 10);
+const daysAgo = (n) => day(new Date(Date.now() - n * 86400000));
+
+function openalexPaper(w) {
+  const src = w.primary_location?.source;
+  return {
+    title: clean(String(w.display_name ?? w.title ?? '').replace(/<[^>]+>/g, '')),
+    authors: shortAuthors((w.authorships ?? []).map((a) => a.author?.display_name ?? '')),
+    date: String(w.publication_date ?? ''),
+    url: w.doi || w.primary_location?.landing_page_url || w.id,
+    source: clean(src?.display_name ?? ''),
+    category: '',
+    kind: src?.type === 'repository' ? 'preprint' : 'journal',
+    via: 'OpenAlex',
+    cited: w.cited_by_count ?? 0,
+  };
+}
+
+async function openalex(spec) {
+  const key = process.env.OPENALEX_API_KEY ? `&api_key=${encodeURIComponent(process.env.OPENALEX_API_KEY)}` : '';
+  const select = 'select=id,doi,display_name,publication_date,authorships,primary_location,cited_by_count';
+  const until = `to_publication_date:${day(new Date())}`;
+  let variants;
+  if (spec.startsWith('search:')) {
+    const q = encodeURIComponent(spec.slice(7));
+    const since = `from_publication_date:${daysAgo(365)},${until}`;
+    variants = [
+      `search=${q}&filter=${since},type:article|review,primary_location.source.type:journal,is_paratext:false&sort=relevance_score:desc`,
+      `search=${q}&filter=${since}&sort=relevance_score:desc`,
+    ];
+  } else {
+    const [level, id] = spec.split('/'); // field | subfield
+    const since = `from_publication_date:${daysAgo(60)},${until}`;
+    // the id form and some filters have changed over time; try the strict query first
+    variants = [
+      `filter=primary_topic.${level}.id:${id},${since},type:article|review,primary_location.source.type:journal,is_paratext:false&sort=cited_by_count:desc`,
+      `filter=primary_topic.${level}.id:${level}s/${id},${since},type:article|review&sort=cited_by_count:desc`,
+      `filter=topics.${level}.id:${id},${since}&sort=cited_by_count:desc`,
+    ];
+  }
+  await sleep(300); // OpenAlex allows about ten requests a second
+  let lastError;
+  for (const v of variants) {
+    try {
+      const json = await get(`https://api.openalex.org/works?${v}&per_page=${PER_FEED}&${select}${key}`, 'json');
+      const items = (json.results ?? []).map(openalexPaper);
+      if (items.length) return items;
+    } catch (e) {
+      lastError = e;
+    }
+  }
+  if (lastError) throw lastError;
+  return [];
+}
+
 async function fetchTag(tag) {
+  if (tag.startsWith('openalex:')) return openalex(tag.slice(9));
   if (tag.startsWith('arxiv:')) return arxiv(tag.slice(6));
   if (tag === 'biorxiv' || tag === 'medrxiv') return rxiv(tag);
   if (tag === 'chemrxiv') return chemrxiv();
@@ -194,7 +262,8 @@ for (const file of walk(join(ROOT, 'content/nodes'))) {
   const papers = [];
   for (const tag of n.feed) {
     try {
-      papers.push(...(await fetchTag(tag)));
+      const got = await fetchTag(tag);
+      papers.push(...got.map((p) => ({ kind: 'preprint', via: p.source, ...p })));
       console.log(`  ok    ${n.id} ← ${tag}`);
     } catch (e) {
       failures.push(`${n.id} ← ${tag}: ${e.message}`);
@@ -202,10 +271,16 @@ for (const file of walk(join(ROOT, 'content/nodes'))) {
     }
   }
   const seen = new Set();
-  branches[n.id] = papers
-    .filter((p) => p.title && p.url && !seen.has(p.url) && seen.add(p.url))
+  const unique = papers.filter((p) => p.title && p.url && !seen.has(p.url) && seen.add(p.url));
+  const journals = unique
+    .filter((p) => p.kind === 'journal')
+    .sort((a, b) => b.cited - a.cited || b.date.localeCompare(a.date))
+    .slice(0, PER_KIND);
+  const preprints = unique
+    .filter((p) => p.kind !== 'journal')
     .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, PER_BRANCH);
+    .slice(0, PER_KIND);
+  branches[n.id] = [...journals, ...preprints];
 }
 
 const outFile = join(ROOT, 'content/feed/latest.json');

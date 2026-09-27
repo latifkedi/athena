@@ -3,6 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 11
+feed: ['openalex:search:parapsychology']
 title:
   tr: Parapsikoloji
   en: Parapsychology

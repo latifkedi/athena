@@ -101,9 +101,13 @@ const srcCount = allNodes.reduce((s, n) => s + Object.keys(n.sources).length, 0)
 
           <h2>7. Güncellik</h2>
           <p>
-            Her ayın 1'inde arXiv, bioRxiv ve medRxiv'den her dal için en yeni ön baskılar otomatik olarak çekilir (
-            <a href={url(routes.latest[lang])}>Yeni makaleler</a>). Öne çıkan çalışmalar incelendikten sonra ağaca düğüm
-            olarak eklenir.
+            Her ayın 1'inde her dal için yeni araştırmalar otomatik olarak çekilir (
+            <a href={url(routes.latest[lang])}>Yeni makaleler</a>). Hakemli dergi makaleleri OpenAlex'ten (Crossref,
+            PubMed, DOAJ, arXiv, üniversite arşivleri ve yayıncı verilerini birleştiren açık akademik dizin), ön baskılar
+            arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv ve SocArXiv'den gelir; ikisi ayrı listelenir. Google Scholar'ın
+            programlama arayüzü olmadığı için her düğüm sayfasında Google Scholar, Semantic Scholar, BASE, CORE, PubMed,
+            PhilPapers, JSTOR ve DergiPark'ta arama bağlantıları verilir. Öne çıkan çalışmalar incelendikten sonra ağaca
+            düğüm olarak eklenir.
           </p>
 
           <h2>8. Düzeltme önerme</h2>
@@ -189,9 +193,12 @@ const srcCount = allNodes.reduce((s, n) => s + Object.keys(n.sources).length, 0)
 
           <h2>7. Staying current</h2>
           <p>
-            On the 1st of every month the newest preprints for each branch are pulled automatically from arXiv, bioRxiv and
-            medRxiv (<a href={url(routes.latest[lang])}>New papers</a>). Notable work is added to the tree as a node after
-            review.
+            On the 1st of every month new research for each branch is pulled automatically (<a
+              href={url(routes.latest[lang])}>New papers</a>). Peer-reviewed articles come from OpenAlex (the open scholarly
+            index combining Crossref, PubMed, DOAJ, arXiv, university repositories and publisher data), preprints from
+            arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv and SocArXiv; the two are listed separately. Google Scholar has no
+            API, so every node page links to searches in Google Scholar, Semantic Scholar, BASE, CORE, PubMed, PhilPapers,
+            JSTOR and DergiPark. Notable work is added to the tree as a node after review.
           </p>
 
           <h2>8. Suggesting corrections</h2>

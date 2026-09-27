@@ -4,7 +4,8 @@ import Cite from '../components/Cite.astro';
 import SourceList from '../components/SourceList.astro';
 import type { Lang, NodeData } from '../lib/data';
 import { ancestors, getNode, relatedTo, nodeSources, descendantCount } from '../lib/data';
-import { latestFor } from '../lib/feed';
+import { latestFor, isJournal } from '../lib/feed';
+import { literatureLinks } from '../lib/scholar';
 import { ui, t, url, nodePath, routes, typeLabels, evidenceKinds, formatDate, suggestUrl, otherLang } from '../lib/i18n';
 
 interface Props {
@@ -23,6 +24,10 @@ const related = [...relIds].map((id) => getNode(id)).filter(Boolean) as NodeData
 const evFor = node.evidence.filter((e) => e.stance === 'for');
 const evAgainst = node.evidence.filter((e) => e.stance === 'against');
 const papers = node.depth === 1 ? latestFor(node.id) : [];
+const journalPapers = papers.filter(isJournal).slice(0, 4);
+const preprints = papers.filter((p) => !isJournal(p)).slice(0, 4);
+const lit = literatureLinks(node, lang);
+const isFork = node.type === 'question' && (node.children.length > 0 || node.positions.length >= 2);
 const title = t(node.title, lang);
 const sideLabel = node.side === 'roots' ? t(ui.roots, lang) : node.side === 'canopy' ? t(ui.canopy, lang) : '';
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -65,6 +70,15 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
         <p class="note small">
           <span aria-hidden="true">ⓘ</span> {t(ui.nodeNote, lang)}{' '}
           <a href={url(routes.method[lang])}>{t(ui.nav.method, lang)}</a>
+        </p>
+      )
+    }
+
+    {
+      isFork && (
+        <p class="fork-box">
+          <strong>⑂ {t(ui.forkBox, lang)}.</strong>{' '}
+          {t(node.children.length ? ui.forkNoteKids : ui.forkNote, lang)}
         </p>
       )
     }
@@ -244,19 +258,30 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
       papers.length > 0 && (
         <section>
           <h2>{t(ui.latestInBranch, lang)}</h2>
-          <ul class="papers">
-            {papers.slice(0, 6).map((p) => (
-              <li>
-                <a href={p.url} rel="noopener">
-                  {p.title}
-                </a>
-                <span class="muted small">
-                  {' '}
-                  — {p.authors} · {p.date} · {p.source}
-                </span>
-              </li>
-            ))}
-          </ul>
+          {[
+            [ui.journalPapers, journalPapers],
+            [ui.preprintPapers, preprints],
+          ].map(
+            ([label, list]) =>
+              (list as typeof papers).length > 0 && (
+                <>
+                  <h3>{t(label as typeof ui.journalPapers, lang)}</h3>
+                  <ul class="papers">
+                    {(list as typeof papers).map((p) => (
+                      <li>
+                        <a href={p.url} rel="noopener">
+                          {p.title}
+                        </a>
+                        <span class="muted small">
+                          {' '}
+                          — {p.authors} · {p.date} · {p.source}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ),
+          )}
           <p class="small">
             <a href={url(routes.latest[lang])}>{t(ui.nav.latest, lang)} →</a>
           </p>
@@ -269,6 +294,22 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
       <SourceList sources={sources} lang={lang} />
     </section>
 
+    {
+      lit.length > 0 && (
+        <section class="lit">
+          <h2>{t(ui.literature, lang)}</h2>
+          <p class="muted small">{t(ui.literatureNote, lang)}</p>
+          <div class="chips">
+            {lit.map((l) => (
+              <a class="chip" href={l.href} rel="noopener">
+                {l.label} ↗
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
     <p>
       <a class="btn" href={suggestUrl(lang, node.id, title)}>✎ {t(ui.suggest, lang)}</a>
     </p>
@@ -278,6 +319,29 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
 <style>
   .node {
     padding-top: 20px;
+  }
+  .fork-box {
+    border-left: 3px solid var(--fork);
+    background: var(--surface-2);
+    padding: 10px 14px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.92rem;
+    color: var(--text-2);
+  }
+  .fork-box strong {
+    color: var(--fork);
+  }
+  .lit .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .lit .chip {
+    text-decoration: none;
+    color: var(--text);
+  }
+  .lit .chip:hover {
+    border-color: var(--accent);
   }
   .crumbs {
     color: var(--text-3);

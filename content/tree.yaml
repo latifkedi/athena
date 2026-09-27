@@ -1,0 +1,32 @@
+# How the main branches sit on the tree view. Every top-level node belongs to one group; a
+# group is drawn as a limb that leaves the trunk and splits into its fields. Related fields
+# share a limb and neighbouring limbs are related too, so connected branches grow close together.
+# Order runs from left to right. The grouping only affects the drawing, not the content.
+
+canopy:
+  - id: insan
+    title: { tr: İnsan ve toplum, en: Humanity and society }
+    fields: [ilk-bilgiler, sanat, dilbilim, hukuk, toplum]
+  - id: zihin
+    title: { tr: Zihin, en: Mind }
+    fields: [parapsikoloji, psikoloji]
+  - id: yasam
+    title: { tr: Yaşam ve yeryüzü, en: Life and Earth }
+    fields: [tip, biyoloji, yer-bilimleri]
+  - id: madde
+    title: { tr: Madde ve enerji, en: Matter and energy }
+    fields: [kimya, enerji, fizik]
+  - id: evren
+    title: { tr: Evren, en: Cosmos }
+    fields: [astronomi, uzay-kesfi]
+  - id: bicimsel
+    title: { tr: Biçimsel bilimler, en: Formal sciences }
+    fields: [matematik, bilisim]
+
+roots:
+  - id: dusunce
+    title: { tr: Düşünce, en: Thought }
+    fields: [felsefe, kelam, tasavvuf]
+  - id: inanc
+    title: { tr: İnanç ve gelenek, en: Belief and tradition }
+    fields: [dinler, mitoloji, ezoterik]

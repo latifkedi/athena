@@ -3,6 +3,7 @@ parent: insanlik
 side: roots
 type: tradition
 order: 2
+feed: ['openalex:search:kalam']
 title:
   tr: Kelam
   en: Kalām (Islamic theology)

@@ -92,6 +92,20 @@ export const sharedSources: Record<string, Omit<Source, 'key'>> = sharedText.tri
 export const archiveMap: Record<string, { snapshot: string; checked: string }> =
   JSON.parse(Object.values(archiveRaw)[0] ?? '{}').urls ?? {};
 
+const treeRaw = import.meta.glob('/content/tree.yaml', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+export interface TreeGroup {
+  id: string;
+  title: L10n;
+  fields: string[];
+}
+const treeText = Object.values(treeRaw)[0] ?? '';
+const treeConfig = (treeText.trim() ? yaml.load(treeText) : {}) as Partial<Record<'canopy' | 'roots', TreeGroup[]>>;
+
 function load(): Map<string, NodeData> {
   const map = new Map<string, NodeData>();
   for (const [file, raw] of Object.entries(nodeFiles)) {
@@ -155,6 +169,20 @@ function compareNodes(a: NodeData, b: NodeData): number {
 export const nodes = load();
 export const allNodes = [...nodes.values()];
 export const centerNode = allNodes.find((n) => n.side === 'center')!;
+
+/** The limbs of the tree view: groups of related top-level nodes, left to right (see content/tree.yaml). */
+export function treeGroups(side: 'canopy' | 'roots'): TreeGroup[] {
+  const top = centerNode.children.map((id) => nodes.get(id)!).filter((n) => n.side === side);
+  const used = new Set<string>();
+  const groups = (treeConfig[side] ?? []).map((g) => {
+    const fields = g.fields.filter((id) => top.some((n) => n.id === id));
+    fields.forEach((id) => used.add(id));
+    return { ...g, fields };
+  });
+  const rest = top.filter((n) => !used.has(n.id)).map((n) => n.id);
+  if (rest.length) groups.push({ id: `diger-${side}`, title: { tr: 'Diğer', en: 'Other' }, fields: rest });
+  return groups.filter((g) => g.fields.length);
+}
 
 export function getNode(id: string): NodeData | undefined {
   return nodes.get(id);

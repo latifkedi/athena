@@ -3,6 +3,7 @@ parent: insanlik
 side: roots
 type: field
 order: 5
+feed: ['openalex:search:mythology']
 title:
   tr: Mitoloji
   en: Mythology

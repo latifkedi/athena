@@ -3,6 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 14
+feed: ['openalex:subfield/1213', 'openalex:subfield/1210']
 title:
   tr: Sanat, müzik ve estetik
   en: Art, music and aesthetics

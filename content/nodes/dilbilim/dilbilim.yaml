@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 13
-feed: ['arxiv:cs.CL']
+feed: ['openalex:subfield/3310', 'openalex:subfield/1203', 'arxiv:cs.CL']
 title:
   tr: Dilbilim
   en: Linguistics

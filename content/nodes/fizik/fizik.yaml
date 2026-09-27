@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 2
-feed: ['arxiv:hep-ph', 'arxiv:hep-ex', 'arxiv:gr-qc', 'arxiv:quant-ph', 'arxiv:cond-mat', 'arxiv:nucl-ex']
+feed: ['openalex:field/31', 'arxiv:hep-ph', 'arxiv:hep-ex', 'arxiv:gr-qc', 'arxiv:quant-ph', 'arxiv:cond-mat', 'arxiv:nucl-ex']
 title:
   tr: Fizik
   en: Physics

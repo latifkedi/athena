@@ -157,6 +157,30 @@ for (const n of nodes.values()) {
   }
 }
 
+// tree groups: every top-level node sits in exactly one group on its own side
+const treeFile = join(ROOT, 'content/tree.yaml');
+if (existsSync(treeFile)) {
+  const t = yaml.load(readFileSync(treeFile, 'utf8')) ?? {};
+  const center = [...nodes.values()].find((n) => n.parent == null);
+  const top = [...nodes.values()].filter((n) => center && n.parent === center.id);
+  const placedIn = new Map();
+  for (const side of ['canopy', 'roots']) {
+    for (const g of t[side] ?? []) {
+      if (!g.id) err('tree.yaml', `a ${side} group has no id`);
+      l10n('tree.yaml', `${side}.${g.id}.title`, g.title);
+      for (const id of g.fields ?? []) {
+        const n = nodes.get(id);
+        if (!n) err('tree.yaml', `${g.id}: node "${id}" does not exist`);
+        else if (n.parent !== center?.id) err('tree.yaml', `${g.id}: "${id}" is not a top-level node`);
+        else if (n.side !== side) err('tree.yaml', `${g.id}: "${id}" is on the ${n.side} side, not ${side}`);
+        if (placedIn.has(id)) err('tree.yaml', `"${id}" is in both ${placedIn.get(id)} and ${g.id}`);
+        placedIn.set(id, g.id);
+      }
+    }
+  }
+  for (const n of top) if (!placedIn.has(n.id)) warn('tree.yaml', `"${n.id}" is in no group (drawn in an extra group)`);
+}
+
 // dashboard
 const dashFile = join(ROOT, 'content/dashboard.yaml');
 if (existsSync(dashFile)) {

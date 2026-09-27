@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 5
-feed: ['biorxiv', 'arxiv:q-bio']
+feed: ['openalex:field/13', 'openalex:subfield/1105', 'biorxiv', 'arxiv:q-bio']
 title:
   tr: Biyoloji
   en: Biology

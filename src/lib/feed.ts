@@ -1,11 +1,16 @@
-// Latest preprints, refreshed monthly by scripts/fetch-latest.mjs (GitHub Actions).
+// Newest research per branch, refreshed monthly by scripts/fetch-latest.mjs (GitHub Actions).
 export interface Paper {
   title: string;
   authors: string;
   date: string;
   url: string;
+  /** journal or preprint server */
   source: string;
   category: string;
+  /** 'journal': peer-reviewed article (via OpenAlex); 'preprint': not necessarily reviewed yet */
+  kind?: 'journal' | 'preprint';
+  via?: string;
+  cited?: number;
   summary?: string;
 }
 export interface Feed {
@@ -24,3 +29,5 @@ export const feed: Feed = JSON.parse(Object.values(raw)[0] ?? '{"generated":null
 export function latestFor(branchId: string): Paper[] {
   return feed.branches[branchId] ?? [];
 }
+
+export const isJournal = (p: Paper): boolean => p.kind === 'journal';
