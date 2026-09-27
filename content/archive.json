@@ -1,4 +1,177 @@
 {
   "note": "Wayback Machine snapshots of source URLs, maintained by scripts/archive-sources.mjs",
-  "urls": {}
+  "urls": {
+    "https://arxiv.org/abs/1312.6199": {
+      "snapshot": "https://web.archive.org/web/20260914072526/https://arxiv.org/abs/1312.6199",
+      "checked": "2026-09-27T17:56:08.163Z"
+    },
+    "https://arxiv.org/abs/1910.09534": {
+      "snapshot": "https://web.archive.org/web/20260927171712/https://arxiv.org/abs/1910.09534",
+      "checked": "2026-09-27T17:56:11.236Z"
+    },
+    "https://arxiv.org/abs/2001.08361": {
+      "snapshot": "https://web.archive.org/web/20260925032932/https://arxiv.org/abs/2001.08361",
+      "checked": "2026-09-27T17:56:47.345Z"
+    },
+    "https://arxiv.org/abs/2503.14738": {
+      "snapshot": "https://web.archive.org/web/20260927175056/https://arxiv.org/abs/2503.14738",
+      "checked": "2026-09-27T17:55:10.941Z"
+    },
+    "https://arxiv.org/abs/2504.12267": {
+      "snapshot": "https://web.archive.org/web/20260927171253/https://arxiv.org/abs/2504.12267",
+      "checked": "2026-09-27T17:54:48.038Z"
+    },
+    "https://darwin-online.org.uk/content/frameset?itemID=F373&viewtype=text&pageseq=1": {
+      "snapshot": "https://web.archive.org/web/20260831042150/https://darwin-online.org.uk/content/frameset?itemID=F373&viewtype=text&pageseq=1",
+      "checked": "2026-09-27T17:58:19.597Z"
+    },
+    "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/": {
+      "snapshot": "https://web.archive.org/web/20260927000329/https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+      "checked": "2026-09-27T17:57:16.242Z"
+    },
+    "https://en.wikisource.org/wiki/The_Rig_Veda/Mandala_10/Hymn_129": {
+      "snapshot": "https://web.archive.org/web/20231008071041/https://en.wikisource.org/wiki/The_Rig_Veda/Mandala_10/Hymn_129",
+      "checked": "2026-09-27T17:58:31.230Z"
+    },
+    "https://islamansiklopedisi.org.tr/idris": {
+      "snapshot": "https://web.archive.org/web/20260906174707/https://islamansiklopedisi.org.tr/idris",
+      "checked": "2026-09-27T18:03:08.572Z"
+    },
+    "https://islamansiklopedisi.org.tr/ilm-i-ahkam-i-nucum": {
+      "snapshot": "https://web.archive.org/web/20260903044046/https://islamansiklopedisi.org.tr/ilm-i-ahkam-i-nucum",
+      "checked": "2026-09-27T18:02:32.351Z"
+    },
+    "https://islamansiklopedisi.org.tr/islam": {
+      "snapshot": "https://web.archive.org/web/20260927172656/https://islamansiklopedisi.org.tr/islam",
+      "checked": "2026-09-27T18:00:39.422Z"
+    },
+    "https://islamansiklopedisi.org.tr/tehafutu-tehafutil-felasife": {
+      "snapshot": "https://web.archive.org/web/20260614135831/https://islamansiklopedisi.org.tr/tehafutu-tehafutil-felasife",
+      "checked": "2026-09-27T18:06:32.780Z"
+    },
+    "https://islamansiklopedisi.org.tr/ulug-bey": {
+      "snapshot": "https://web.archive.org/web/20260927175524/https://islamansiklopedisi.org.tr/ulug-bey",
+      "checked": "2026-09-27T17:55:56.982Z"
+    },
+    "https://islamansiklopedisi.org.tr/zic-i-ulug-bey": {
+      "snapshot": "https://web.archive.org/web/20260418004252/https://islamansiklopedisi.org.tr/zic-i-ulug-bey",
+      "checked": "2026-09-27T17:55:58.595Z"
+    },
+    "https://lasers.llnl.gov/news/target-breakthrough-enabled-fusion-record-nif": {
+      "snapshot": "https://web.archive.org/web/20260917210542/https://lasers.llnl.gov/news/target-breakthrough-enabled-fusion-record-nif",
+      "checked": "2026-09-27T18:01:19.732Z"
+    },
+    "https://plato.stanford.edu/entries/aristotle-logic/": {
+      "snapshot": "https://web.archive.org/web/20260927180344/https://plato.stanford.edu/entries/aristotle-logic/",
+      "checked": "2026-09-27T18:04:11.855Z"
+    },
+    "https://plato.stanford.edu/entries/confucius/": {
+      "snapshot": "https://web.archive.org/web/20260927173310/https://plato.stanford.edu/entries/confucius/",
+      "checked": "2026-09-27T18:05:29.074Z"
+    },
+    "https://plato.stanford.edu/entries/descartes/": {
+      "snapshot": "https://web.archive.org/web/20260927173347/https://plato.stanford.edu/entries/descartes/",
+      "checked": "2026-09-27T18:06:08.333Z"
+    },
+    "https://plato.stanford.edu/entries/epistemology-india/": {
+      "snapshot": "https://web.archive.org/web/20260927173424/https://plato.stanford.edu/entries/epistemology-india/",
+      "checked": "2026-09-27T18:06:28.151Z"
+    },
+    "https://plato.stanford.edu/entries/ibn-sina/": {
+      "snapshot": "https://web.archive.org/web/20260927173457/https://plato.stanford.edu/entries/ibn-sina/",
+      "checked": "2026-09-27T18:06:51.978Z"
+    },
+    "https://plato.stanford.edu/entries/thomas-kuhn/": {
+      "snapshot": "https://web.archive.org/web/20260927173241/https://plato.stanford.edu/entries/thomas-kuhn/",
+      "checked": "2026-09-27T18:05:09.505Z"
+    },
+    "https://quran.com/112": {
+      "snapshot": "https://web.archive.org/web/20260608072649/https://quran.com/112",
+      "checked": "2026-09-27T17:59:24.792Z"
+    },
+    "https://quran.com/15/26-29": {
+      "snapshot": "https://web.archive.org/web/20240409223221/https://quran.com/15/26-29",
+      "checked": "2026-09-27T17:58:21.714Z"
+    },
+    "https://quran.com/22/47": {
+      "snapshot": "https://web.archive.org/web/20260927175350/https://quran.com/al-hajj/47",
+      "checked": "2026-09-27T17:54:17.141Z"
+    },
+    "https://quran.com/3/190-191": {
+      "snapshot": "https://web.archive.org/web/20260214050613/https://quran.com/3/190-191",
+      "checked": "2026-09-27T17:59:29.641Z"
+    },
+    "https://quran.com/4/157-171": {
+      "snapshot": "https://web.archive.org/web/20260927172527/https://quran.com/an-nisa/157-171",
+      "checked": "2026-09-27T17:58:58.215Z"
+    },
+    "https://quran.com/48/29": {
+      "snapshot": "https://web.archive.org/web/20260604175923/https://quran.com/48/29",
+      "checked": "2026-09-27T17:59:26.078Z"
+    },
+    "https://quran.com/7/54": {
+      "snapshot": "https://web.archive.org/web/20260927175318/https://quran.com/al-araf/54",
+      "checked": "2026-09-27T17:53:45.630Z"
+    },
+    "https://quran.com/70/4": {
+      "snapshot": "https://web.archive.org/web/20251023185025/https://quran.com/70/4",
+      "checked": "2026-09-27T17:54:20.940Z"
+    },
+    "https://www.aanda.org/articles/aa/full_html/2025/08/aa55580-25/aa55580-25.html": {
+      "snapshot": "https://web.archive.org/web/20260722151727/https://www.aanda.org/articles/aa/full_html/2025/08/aa55580-25/aa55580-25.html",
+      "checked": "2026-09-27T17:54:51.380Z"
+    },
+    "https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A3-8&version=NRSVUE": {
+      "snapshot": "https://web.archive.org/web/20260209025134/https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A3-8&version=NRSVUE",
+      "checked": "2026-09-27T17:58:35.267Z"
+    },
+    "https://www.birmingham.ac.uk/news-archive/2015/birmingham-quran-manuscript-dated-among-the-oldest-in-the-world": {
+      "snapshot": "https://web.archive.org/web/20260927180011/https://www.birmingham.ac.uk/news-archive/2015/birmingham-quran-manuscript-dated-among-the-oldest-in-the-world",
+      "checked": "2026-09-27T18:00:37.596Z"
+    },
+    "https://www.claymath.org/millennium/p-vs-np/": {
+      "snapshot": "https://web.archive.org/web/20260920221256/https://www.claymath.org/millennium/p-vs-np/",
+      "checked": "2026-09-27T17:56:02.245Z"
+    },
+    "https://www.energyinst.org/statistical-review": {
+      "snapshot": "https://web.archive.org/web/20260926180013/https://www.energyinst.org/statistical-review",
+      "checked": "2026-09-27T18:01:16.852Z"
+    },
+    "https://www.ethnologue.com/insights/how-many-languages-endangered/": {
+      "snapshot": "https://web.archive.org/web/20260427055832/https://www.ethnologue.com/insights/how-many-languages-endangered/",
+      "checked": "2026-09-27T17:58:26.367Z"
+    },
+    "https://www.gutenberg.org/ebooks/4583": {
+      "snapshot": "https://web.archive.org/web/20260927173532/https://www.gutenberg.org/ebooks/4583",
+      "checked": "2026-09-27T18:06:54.733Z"
+    },
+    "https://www.gutenberg.org/ebooks/9662": {
+      "snapshot": "https://web.archive.org/web/20260927180421/https://www.gutenberg.org/ebooks/9662",
+      "checked": "2026-09-27T18:04:48.758Z"
+    },
+    "https://www.ipp.mpg.de/5532945/w7x": {
+      "snapshot": "https://web.archive.org/web/20260722125423/https://www.ipp.mpg.de/5532945/w7x",
+      "checked": "2026-09-27T18:02:28.353Z"
+    },
+    "https://www.jpl.nasa.gov/news/nasas-tally-of-planets-outside-our-solar-system-reaches-6000/": {
+      "snapshot": "https://web.archive.org/web/20260512091625/https://www.jpl.nasa.gov/news/nasas-tally-of-planets-outside-our-solar-system-reaches-6000/",
+      "checked": "2026-09-27T17:55:14.429Z"
+    },
+    "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/": {
+      "snapshot": "https://web.archive.org/web/20260922155211/https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
+      "checked": "2026-09-27T17:58:28.345Z"
+    },
+    "https://www.sefaria.org/Exodus.19": {
+      "snapshot": "https://web.archive.org/web/20260217182821/https://www.sefaria.org/Exodus.19",
+      "checked": "2026-09-27T18:01:14.511Z"
+    },
+    "https://www.sefaria.org/Genesis.1": {
+      "snapshot": "https://web.archive.org/web/20260917211536/https://www.sefaria.org/Genesis.1",
+      "checked": "2026-09-27T17:54:24.178Z"
+    },
+    "https://www.uspto.gov/web/offices/pac/mpep/s608.html": {
+      "snapshot": "https://web.archive.org/web/20260918061206/https://www.uspto.gov/web/offices/pac/mpep/s608.html",
+      "checked": "2026-09-27T18:02:29.836Z"
+    }
+  }
 }
