@@ -112,18 +112,51 @@ async function rxiv(server) {
 }
 
 async function chemrxiv() {
+  try {
+    const json = await get(
+      `https://chemrxiv.org/engage/chemrxiv/public-api/v1/items?limit=${PER_FEED}&sort=PUBLISHED_DATE_DESC`,
+      'json',
+    );
+    return (json.itemHits ?? []).map(({ item }) => ({
+      title: clean(item.title),
+      authors: shortAuthors((item.authors ?? []).map((a) => `${a.firstName ?? ''} ${a.lastName ?? ''}`)),
+      date: String(item.publishedDate ?? '').slice(0, 10),
+      url: `https://chemrxiv.org/engage/chemrxiv/article-details/${item.id}`,
+      source: 'ChemRxiv',
+      category: clean(item.categories?.[0]?.name ?? ''),
+    }));
+  } catch {
+    // ChemRxiv's own API often refuses cloud runners (HTTP 403); Crossref lists the same preprints
+    return chemrxivCrossref();
+  }
+}
+
+async function chemrxivCrossref() {
   const json = await get(
-    `https://chemrxiv.org/engage/chemrxiv/public-api/v1/items?limit=${PER_FEED}&sort=PUBLISHED_DATE_DESC`,
+    `https://api.crossref.org/prefixes/10.26434/works?filter=type:posted-content&sort=created&order=desc&rows=${PER_FEED * 3}`,
     'json',
   );
-  return (json.itemHits ?? []).map(({ item }) => ({
-    title: clean(item.title),
-    authors: shortAuthors((item.authors ?? []).map((a) => `${a.firstName ?? ''} ${a.lastName ?? ''}`)),
-    date: String(item.publishedDate ?? '').slice(0, 10),
-    url: `https://chemrxiv.org/engage/chemrxiv/article-details/${item.id}`,
-    source: 'ChemRxiv',
-    category: clean(item.categories?.[0]?.name ?? ''),
-  }));
+  const pad = (n) => String(n).padStart(2, '0');
+  const seen = new Set();
+  const out = [];
+  for (const w of json.message?.items ?? []) {
+    const doi = String(w.DOI ?? '');
+    if (!doi.toLowerCase().startsWith('10.26434/chemrxiv')) continue;
+    const base = doi.replace(/-v\d+$/i, '');
+    if (seen.has(base)) continue;
+    seen.add(base);
+    const [y, m = 1, d = 1] = w.posted?.['date-parts']?.[0] ?? w.created?.['date-parts']?.[0] ?? [];
+    out.push({
+      title: clean(String(w.title?.[0] ?? '').replace(/<[^>]+>/g, '')),
+      authors: shortAuthors((w.author ?? []).map((a) => `${a.given ?? ''} ${a.family ?? a.name ?? ''}`)),
+      date: y ? `${y}-${pad(m)}-${pad(d)}` : '',
+      url: `https://doi.org/${doi}`,
+      source: 'ChemRxiv',
+      category: clean(w['group-title'] ?? ''),
+    });
+    if (out.length >= PER_FEED) break;
+  }
+  return out;
 }
 
 async function osf(provider) {

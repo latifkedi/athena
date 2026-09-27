@@ -94,7 +94,9 @@ const srcCount = allNodes.reduce((s, n) => s + Object.keys(n.sources).length, 0)
             Tüm içerik <a href={REPO}>git deposunda</a> düz metin (YAML) olarak durur. Her değişikliğin kim tarafından ve ne
             zaman yapıldığı kalıcı olarak kaydedilir. Kaynak bağlantıları her ay otomatik olarak Internet Archive'a (Wayback
             Machine) gönderilir ve her kaynağın yanında bir “arşiv” bağlantısı bulunur. Bağlantı bozulsa bile arşivlenmiş kopya
-            kalır.
+            kalır. DOI numarası olan makalelerde DOI zaten kalıcı bir bağlantıdır; yayıncıların çoğu otomatik arşivlemeye izin
+            vermediği için bu makalelerde Wayback Machine'de var olan kopya kaydedilir. Internet Archive aynı anda çok sayıda
+            isteği kabul etmediğinden arşivleme her ay parça parça ilerler.
           </p>
 
           <h2>7. Güncellik</h2>
@@ -180,7 +182,9 @@ const srcCount = allNodes.reduce((s, n) => s + Object.keys(n.sources).length, 0)
             All content is stored as plain text (YAML) in the <a href={REPO}>git repository</a>. Every change is permanently
             recorded with its author and time. Source links are submitted to the Internet Archive (Wayback Machine)
             automatically every month, and every source has an “archive” link next to it. The archived copy remains even if a
-            link breaks.
+            link breaks. For articles with a DOI, the DOI itself is a persistent link; since most publishers do not allow
+            automated captures, the snapshot already held by the Wayback Machine is recorded instead. The Internet Archive
+            accepts only a limited number of requests at a time, so archiving advances a portion each month.
           </p>
 
           <h2>7. Staying current</h2>
