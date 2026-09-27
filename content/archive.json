@@ -309,6 +309,10 @@
       "snapshot": "https://web.archive.org/web/20260524153714/https://www.nature.com/articles/nature10343",
       "checked": "2026-09-27T21:55:22.109Z"
     },
+    "https://doi.org/10.1038/nature14317": {
+      "snapshot": "https://web.archive.org/web/20260905235950/https://www.nature.com/articles/nature14317",
+      "checked": "2026-09-27T23:10:42.707Z"
+    },
     "https://doi.org/10.1038/nature14464": {
       "snapshot": "https://web.archive.org/web/20260513081418/https://www.nature.com/articles/nature14464",
       "checked": "2026-09-27T21:31:47.542Z"
@@ -673,6 +677,10 @@
       "snapshot": "https://web.archive.org/web/20240806153530/https://brill.com/view/journals/esm/3/1/article-p32_2.xml",
       "checked": "2026-09-27T22:14:06.665Z"
     },
+    "https://doi.org/10.1186/2046-4053-3-142": {
+      "snapshot": "https://web.archive.org/web/20251118015854/https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/2046-4053-3-142",
+      "checked": "2026-09-27T23:15:09.818Z"
+    },
     "https://doi.org/10.1215/ijm/1256049011": {
       "snapshot": "https://web.archive.org/web/20260901091521/https://projecteuclid.org/journals/illinois-journal-of-mathematics/volume-21/issue-3/Every-planar-map-is-four-colorable-Part-I-Discharging/10.1215/ijm/1256049011.full",
       "checked": "2026-09-27T21:34:49.564Z"
@@ -944,6 +952,10 @@
     "https://plato.stanford.edu/entries/mysticism/": {
       "snapshot": "https://web.archive.org/web/20260927225225/https://plato.stanford.edu/entries/mysticism/",
       "checked": "2026-09-27T22:52:40.935Z"
+    },
+    "https://plato.stanford.edu/entries/occasionalism/": {
+      "snapshot": "https://web.archive.org/web/20260927231617/https://plato.stanford.edu/entries/occasionalism/",
+      "checked": "2026-09-27T23:16:33.067Z"
     },
     "https://plato.stanford.edu/entries/philosophy-mathematics/": {
       "snapshot": "https://web.archive.org/web/20260927225054/https://plato.stanford.edu/entries/philosophy-mathematics/",

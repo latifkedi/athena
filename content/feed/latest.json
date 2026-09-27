@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T22:39:55.025Z",
+  "generated": "2026-09-27T23:09:41.011Z",
   "branches": {
     "astronomi": [
       {
@@ -707,6 +707,74 @@
         "url": "https://arxiv.org/abs/2609.29391v1",
         "source": "arXiv",
         "category": "physics.plasm-ph"
+      }
+    ],
+    "ezoterik": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Multimodal digital biopsy for preoperative prediction of occult peritoneal metastasis in gastric cancer",
+        "authors": "Sheng Chen, Ping’an Ding, Yihao Yang et al.",
+        "date": "2026-01-26",
+        "url": "https://doi.org/10.1038/s41746-025-02268-9",
+        "source": "npj Digital Medicine",
+        "category": "",
+        "cited": 13
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A new model for estimating atmospheric weighted mean temperature from radiosonde and multi-mission GNSS radio occultation data",
+        "authors": "Arash Tayfehrostami, Yazdan Amerian",
+        "date": "2025-10-30",
+        "url": "https://doi.org/10.1016/j.geog.2025.09.009",
+        "source": "Geodesy and Geodynamics",
+        "category": "",
+        "cited": 12
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Transfusion-transmitted occult hepatitis B virus infection: current understanding, challenges, and its implication in blood safety",
+        "authors": "Linbin Huang, Baoren He, Qiuhong Mo et al.",
+        "date": "2025-10-28",
+        "url": "https://doi.org/10.3389/fimmu.2025.1663306",
+        "source": "Frontiers in Immunology",
+        "category": "",
+        "cited": 11
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Spatiotemporal Implicit Neural Representation for Ionospheric Tomography With Multi-LEO Occultation Data",
+        "authors": "Fangsong Yang, Wang Li, Jiale Li et al.",
+        "date": "2026-01-01",
+        "url": "https://doi.org/10.1109/tgrs.2026.3667515",
+        "source": "IEEE Transactions on Geoscience and Remote Sensing",
+        "category": "",
+        "cited": 7
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Advanced Ultrasonographic Insights Into Neglected/Occult Achilles Tendon Rupture in Rheumatoid Arthritis",
+        "authors": "Hilmi Berkan Abacıoğlu, Alp Çetin",
+        "date": "2025-12-24",
+        "url": "https://doi.org/10.1097/phm.0000000000002929",
+        "source": "American Journal of Physical Medicine & Rehabilitation",
+        "category": "",
+        "cited": 7
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "68 Ga-FAPI-04 PET for Detecting Occult Peritoneal Metastasis in Locally Advanced Gastric Cancer: Diagnostic Performance and Cost Analyses in a Single-Center, Prospective Cohort Study",
+        "authors": "Qiancheng Hu, Shunyu Zhang, Kun Yang et al.",
+        "date": "2025-12-04",
+        "url": "https://doi.org/10.2967/jnumed.125.270633",
+        "source": "Journal of Nuclear Medicine",
+        "category": "",
+        "cited": 7
       }
     ],
     "felsefe": [
@@ -1489,6 +1557,74 @@
         "date": "2026-03-13",
         "url": "https://doi.org/10.5252/anthropozoologica2026v61a3",
         "source": "Anthropozoologica",
+        "category": "",
+        "cited": 1
+      }
+    ],
+    "parapsikoloji": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The veridical Near-Death Experience Scale: construction and a first validation with human and artificial raters",
+        "authors": "Bruce Greyson, Jeffrey D. Long, Janice Miner Holden et al.",
+        "date": "2025-10-16",
+        "url": "https://doi.org/10.3389/fpsyg.2025.1661390",
+        "source": "Frontiers in Psychology",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A neuroscientific model of near-death experiences reconsidered.",
+        "authors": "Bruce Greyson, Marieta Pehlivanova",
+        "date": "2025-10-30",
+        "url": "https://doi.org/10.1037/cns0000448",
+        "source": "Psychology of Consciousness Theory Research and Practice",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Near‐Death Experience During Emergency Ketamine Use: A Case Report",
+        "authors": "Pauline Fritz, Anaïs Pichelin, Aurore Ancion et al.",
+        "date": "2025-10-01",
+        "url": "https://doi.org/10.1002/brb3.70939",
+        "source": "Brain and Behavior",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Near-death experiences",
+        "authors": "Jorge Andrés Delgado‐Ron",
+        "date": "2026-05-24",
+        "url": "https://doi.org/10.1503/cmaj.252003",
+        "source": "Canadian Medical Association Journal",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Does Psychological Flexibility Correlate with Mystical Experiences: A Machine Learning Approach Including State of Surrender, Near-Death Experiences, and Psilocybin Consumption",
+        "authors": "Dylan Briggs, Thomas B. Sease, Ruthie Menou et al.",
+        "date": "2026-04-30",
+        "url": "https://doi.org/10.3390/bs16050686",
+        "source": "Behavioral Sciences",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Children’s near-death experiences: A narrative review and future directions for investigating near-death experiences with children.",
+        "authors": "Donna M. Thomas, Graeme O’Connor",
+        "date": "2026-03-30",
+        "url": "https://doi.org/10.1037/cns0000465",
+        "source": "Psychology of Consciousness Theory Research and Practice",
         "category": "",
         "cited": 1
       }
