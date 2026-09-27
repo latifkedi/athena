@@ -1,6 +1,14 @@
 {
   "note": "Wayback Machine snapshots of source URLs, maintained by scripts/archive-sources.mjs",
   "urls": {
+    "https://alice-collaboration.web.cern.ch/2025-alice-lead-to-gold": {
+      "snapshot": "https://web.archive.org/web/20260309210507/https://alice-collaboration.web.cern.ch/2025-alice-lead-to-gold",
+      "checked": "2026-09-27T21:44:03.018Z"
+    },
+    "https://arxiv.org/abs/1204.1019": {
+      "snapshot": "https://web.archive.org/web/20260311190851/https://arxiv.org/abs/1204.1019",
+      "checked": "2026-09-27T21:44:42.027Z"
+    },
     "https://arxiv.org/abs/1312.6199": {
       "snapshot": "https://web.archive.org/web/20260914072526/https://arxiv.org/abs/1312.6199",
       "checked": "2026-09-27T17:56:08.163Z"
@@ -17,6 +25,14 @@
       "snapshot": "https://web.archive.org/web/20260925032932/https://arxiv.org/abs/2001.08361",
       "checked": "2026-09-27T17:56:47.345Z"
     },
+    "https://arxiv.org/abs/2405.03599": {
+      "snapshot": "https://web.archive.org/web/20260819020524/https://arxiv.org/abs/2405.03599",
+      "checked": "2026-09-27T21:46:29.163Z"
+    },
+    "https://arxiv.org/abs/2409.09856": {
+      "snapshot": "https://web.archive.org/web/20260906033840/https://arxiv.org/abs/2409.09856",
+      "checked": "2026-09-27T21:46:30.608Z"
+    },
     "https://arxiv.org/abs/2503.14738": {
       "snapshot": "https://web.archive.org/web/20260927175056/https://arxiv.org/abs/2503.14738",
       "checked": "2026-09-27T17:55:10.941Z"
@@ -25,9 +41,25 @@
       "snapshot": "https://web.archive.org/web/20260927171253/https://arxiv.org/abs/2504.12267",
       "checked": "2026-09-27T17:54:48.038Z"
     },
+    "https://arxiv.org/abs/2505.11263": {
+      "snapshot": "https://web.archive.org/web/20260908013551/https://arxiv.org/abs/2505.11263",
+      "checked": "2026-09-27T21:53:20.473Z"
+    },
+    "https://arxiv.org/abs/2506.03069": {
+      "snapshot": "https://web.archive.org/web/20260924134215/https://arxiv.org/abs/2506.03069",
+      "checked": "2026-09-27T21:43:59.085Z"
+    },
     "https://arxiv.org/abs/2509.12337": {
       "snapshot": "https://web.archive.org/web/20260924164307/https://arxiv.org/abs/2509.12337",
       "checked": "2026-09-27T21:34:37.988Z"
+    },
+    "https://arxiv.org/abs/math/0211159": {
+      "snapshot": "https://web.archive.org/web/20260910164354/https://arxiv.org/abs/math/0211159",
+      "checked": "2026-09-27T21:46:38.317Z"
+    },
+    "https://arxiv.org/abs/math/0307245": {
+      "snapshot": "https://web.archive.org/web/20260918031825/https://arxiv.org/abs/math/0307245",
+      "checked": "2026-09-27T21:46:47.007Z"
     },
     "https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00001/1": {
       "snapshot": "https://web.archive.org/web/20260722120926/https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00001/1",
@@ -45,6 +77,10 @@
       "snapshot": "https://web.archive.org/web/20250405195115/https://onlinelibrary.wiley.com/doi/10.1002/andp.18501550306",
       "checked": "2026-09-27T21:25:23.888Z"
     },
+    "https://doi.org/10.1002/andp.19013090310": {
+      "snapshot": "https://web.archive.org/web/20250729222614/https://onlinelibrary.wiley.com/doi/10.1002/andp.19013090310",
+      "checked": "2026-09-27T21:43:36.051Z"
+    },
     "https://doi.org/10.1002/andp.19053220806": {
       "snapshot": "https://web.archive.org/web/20250808100521/https://onlinelibrary.wiley.com/doi/10.1002/andp.19053220806",
       "checked": "2026-09-27T21:33:31.268Z"
@@ -61,9 +97,33 @@
       "snapshot": "https://web.archive.org/web/20250729222615/https://onlinelibrary.wiley.com/doi/10.1002/andp.19263840404",
       "checked": "2026-09-27T21:28:22.423Z"
     },
+    "https://doi.org/10.1002/j.1538-7305.1948.tb01338.x": {
+      "snapshot": "https://web.archive.org/web/20260920115205/https://ieeexplore.ieee.org/document/6773024",
+      "checked": "2026-09-27T21:38:37.410Z"
+    },
+    "https://doi.org/10.1006/hmat.2001.2317": {
+      "snapshot": "https://web.archive.org/web/20250601102720/https://linkinghub.elsevier.com/retrieve/pii/S0315086001923171",
+      "checked": "2026-09-27T21:46:00.636Z"
+    },
+    "https://doi.org/10.1016/0016-7037(56)90036-9": {
+      "snapshot": "https://web.archive.org/web/20260822233353/https://linkinghub.elsevier.com/retrieve/pii/0016703756900369",
+      "checked": "2026-09-27T21:53:53.214Z"
+    },
+    "https://doi.org/10.1016/0019-1035(73)90110-3": {
+      "snapshot": "https://web.archive.org/web/20260107185743/https://linkinghub.elsevier.com/retrieve/pii/0019103573901103",
+      "checked": "2026-09-27T21:39:42.527Z"
+    },
+    "https://doi.org/10.1016/0022-0728(89)80006-3": {
+      "snapshot": "https://web.archive.org/web/20251128061635/https://linkinghub.elsevier.com/retrieve/pii/0022072889800063",
+      "checked": "2026-09-27T21:41:48.571Z"
+    },
     "https://doi.org/10.1016/j.hm.2017.08.001": {
       "snapshot": "https://web.archive.org/web/20260120180859/https://linkinghub.elsevier.com/retrieve/pii/S0315086017300691",
       "checked": "2026-09-27T21:34:32.966Z"
+    },
+    "https://doi.org/10.1016/j.jhevol.2019.102640": {
+      "snapshot": "https://web.archive.org/web/20260714051807/https://linkinghub.elsevier.com/retrieve/pii/S0047248418302914",
+      "checked": "2026-09-27T21:49:28.871Z"
     },
     "https://doi.org/10.1016/j.jmb.2004.06.058": {
       "snapshot": "https://web.archive.org/web/20251110223049/https://linkinghub.elsevier.com/retrieve/pii/S0022283604007624",
@@ -73,13 +133,89 @@
       "snapshot": "https://web.archive.org/web/20260819004650/https://linkinghub.elsevier.com/retrieve/pii/S037026931200857X",
       "checked": "2026-09-27T21:27:03.689Z"
     },
+    "https://doi.org/10.1016/j.resuscitation.2014.09.004": {
+      "snapshot": "https://web.archive.org/web/20260316222034/https://linkinghub.elsevier.com/retrieve/pii/S0300957214007394",
+      "checked": "2026-09-27T21:48:25.574Z"
+    },
+    "https://doi.org/10.1016/S0140-6736(01)07100-8": {
+      "snapshot": "https://web.archive.org/web/20260510043144/https://linkinghub.elsevier.com/retrieve/pii/S0140673601071008",
+      "checked": "2026-09-27T21:48:20.748Z"
+    },
+    "https://doi.org/10.1016/S0140-6736(01)08728-1": {
+      "snapshot": "https://web.archive.org/web/20241225234708/https://linkinghub.elsevier.com/retrieve/pii/S0140673601087281",
+      "checked": "2026-09-27T21:51:49.393Z"
+    },
+    "https://doi.org/10.1016/S0140-6736(05)67177-2": {
+      "snapshot": "https://web.archive.org/web/20260120005339/https://linkinghub.elsevier.com/retrieve/pii/S0140673605671772",
+      "checked": "2026-09-27T21:50:52.413Z"
+    },
+    "https://doi.org/10.1016/S0140-6736(97)02293-9": {
+      "snapshot": "https://web.archive.org/web/20250502071106/https://linkinghub.elsevier.com/retrieve/pii/S0140673697022939",
+      "checked": "2026-09-27T21:50:47.377Z"
+    },
+    "https://doi.org/10.1016/S0140-6736(97)11096-0": {
+      "snapshot": "https://web.archive.org/web/20260921165925/https://linkinghub.elsevier.com/retrieve/pii/S0140673697110960",
+      "checked": "2026-09-27T21:50:38.524Z"
+    },
+    "https://doi.org/10.1016/S1364-6826(97)00001-1": {
+      "snapshot": "https://web.archive.org/web/20251110235643/https://linkinghub.elsevier.com/retrieve/pii/S1364682697000011",
+      "checked": "2026-09-27T21:55:13.428Z"
+    },
+    "https://doi.org/10.1021/ja00197a079": {
+      "snapshot": "https://web.archive.org/web/20260110031313/https://pubs.acs.org/doi/abs/10.1021/ja00197a079",
+      "checked": "2026-09-27T21:45:50.322Z"
+    },
+    "https://doi.org/10.1029/2009GL037946": {
+      "snapshot": "https://web.archive.org/web/20231114224415/https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2009GL037946",
+      "checked": "2026-09-27T21:55:27.545Z"
+    },
+    "https://doi.org/10.1029/2019RG000678": {
+      "snapshot": "https://web.archive.org/web/20250808103835/https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000678",
+      "checked": "2026-09-27T21:54:23.836Z"
+    },
+    "https://doi.org/10.1029/93PA02751": {
+      "snapshot": "https://web.archive.org/web/20250711160935/https://agupubs.onlinelibrary.wiley.com/doi/10.1029/93PA02751",
+      "checked": "2026-09-27T21:54:17.103Z"
+    },
+    "https://doi.org/10.1037/a0021524": {
+      "snapshot": "https://web.archive.org/web/20220611051153/https://doi.apa.org/doi/10.1037/a0021524",
+      "checked": "2026-09-27T21:47:22.455Z"
+    },
+    "https://doi.org/10.1038/143239a0": {
+      "snapshot": "https://web.archive.org/web/20260526172152/https://www.nature.com/articles/143239a0",
+      "checked": "2026-09-27T21:41:34.955Z"
+    },
+    "https://doi.org/10.1038/143276a0": {
+      "snapshot": "https://web.archive.org/web/20260526172138/https://www.nature.com/articles/143276a0",
+      "checked": "2026-09-27T21:41:39.018Z"
+    },
     "https://doi.org/10.1038/171737a0": {
       "snapshot": "https://web.archive.org/web/20260921021935/https://www.nature.com/articles/171737a0",
       "checked": "2026-09-27T21:18:53.156Z"
     },
+    "https://doi.org/10.1038/171740a0": {
+      "snapshot": "https://web.archive.org/web/20260515201830/https://www.nature.com/articles/171740a0",
+      "checked": "2026-09-27T21:39:12.159Z"
+    },
+    "https://doi.org/10.1038/199947a0": {
+      "snapshot": "https://web.archive.org/web/20260426095418/https://www.nature.com/articles/199947a0",
+      "checked": "2026-09-27T21:56:02.217Z"
+    },
     "https://doi.org/10.1038/217624a0": {
       "snapshot": "https://web.archive.org/web/20260909132236/https://www.nature.com/articles/217624a0",
       "checked": "2026-09-27T21:21:38.908Z"
+    },
+    "https://doi.org/10.1038/264340a0": {
+      "snapshot": "https://web.archive.org/web/20250217145651/https://www.nature.com/articles/264340a0",
+      "checked": "2026-09-27T21:53:58.122Z"
+    },
+    "https://doi.org/10.1038/268301a0": {
+      "snapshot": "https://web.archive.org/web/20260623035228/https://www.nature.com/articles/268301a0",
+      "checked": "2026-09-27T21:44:17.448Z"
+    },
+    "https://doi.org/10.1038/318419a0": {
+      "snapshot": "https://web.archive.org/web/20260610093430/https://www.nature.com/articles/318419a0",
+      "checked": "2026-09-27T21:42:01.221Z"
     },
     "https://doi.org/10.1038/319618a0": {
       "snapshot": "https://web.archive.org/web/20260816212212/https://www.nature.com/articles/319618a0",
@@ -89,9 +225,29 @@
       "snapshot": "https://web.archive.org/web/20240603185032/https://www.nature.com/articles/340525a0",
       "checked": "2026-09-27T21:25:00.832Z"
     },
+    "https://doi.org/10.1038/365611a0": {
+      "snapshot": "https://web.archive.org/web/20260810134511/https://www.nature.com/articles/365611a0",
+      "checked": "2026-09-27T21:49:46.095Z"
+    },
     "https://doi.org/10.1038/378355a0": {
       "snapshot": "https://web.archive.org/web/20260920022305/https://www.nature.com/articles/Art1",
       "checked": "2026-09-27T21:17:09.142Z"
+    },
+    "https://doi.org/10.1038/385333a0": {
+      "snapshot": "https://web.archive.org/web/20260309054247/https://www.nature.com/articles/385333a0",
+      "checked": "2026-09-27T21:45:06.915Z"
+    },
+    "https://doi.org/10.1038/419269a": {
+      "snapshot": "https://web.archive.org/web/20260328013853/https://www.nature.com/articles/419269a",
+      "checked": "2026-09-27T21:48:31.117Z"
+    },
+    "https://doi.org/10.1038/46248": {
+      "snapshot": "https://web.archive.org/web/20260316203544/https://www.nature.com/articles/46248",
+      "checked": "2026-09-27T21:45:56.423Z"
+    },
+    "https://doi.org/10.1038/nature04072": {
+      "snapshot": "https://web.archive.org/web/20260910005444/https://www.nature.com/articles/nature04072",
+      "checked": "2026-09-27T21:40:22.940Z"
     },
     "https://doi.org/10.1038/nature08013": {
       "snapshot": "https://web.archive.org/web/20260719235223/https://www.nature.com/articles/nature08013",
@@ -101,6 +257,10 @@
       "snapshot": "https://web.archive.org/web/20260603205330/https://www.nature.com/articles/nature09248",
       "checked": "2026-09-27T21:32:00.408Z"
     },
+    "https://doi.org/10.1038/nature10343": {
+      "snapshot": "https://web.archive.org/web/20260524153714/https://www.nature.com/articles/nature10343",
+      "checked": "2026-09-27T21:55:22.109Z"
+    },
     "https://doi.org/10.1038/nature14464": {
       "snapshot": "https://web.archive.org/web/20260513081418/https://www.nature.com/articles/nature14464",
       "checked": "2026-09-27T21:31:47.542Z"
@@ -108,6 +268,10 @@
     "https://doi.org/10.1038/nature14539": {
       "snapshot": "https://web.archive.org/web/20260917132838/https://www.nature.com/articles/nature14539",
       "checked": "2026-09-27T21:17:42.024Z"
+    },
+    "https://doi.org/10.1038/nature15759": {
+      "snapshot": "https://web.archive.org/web/20260720063406/https://www.nature.com/articles/nature15759",
+      "checked": "2026-09-27T21:43:12.295Z"
     },
     "https://doi.org/10.1038/nature19355": {
       "snapshot": "https://web.archive.org/web/20260911130811/https://www.nature.com/articles/nature19355",
@@ -133,6 +297,10 @@
       "snapshot": "https://web.archive.org/web/20260630010406/https://www.nature.com/articles/s41586-018-0610-4",
       "checked": "2026-09-27T21:20:14.770Z"
     },
+    "https://doi.org/10.1038/s41586-019-1256-6": {
+      "snapshot": "https://web.archive.org/web/20260831183240/https://www.nature.com/articles/s41586-019-1256-6",
+      "checked": "2026-09-27T21:41:50.886Z"
+    },
     "https://doi.org/10.1038/s41586-019-1666-5": {
       "snapshot": "https://web.archive.org/web/20260828060416/https://www.nature.com/articles/s41586-019-1666-5",
       "checked": "2026-09-27T21:17:44.314Z"
@@ -153,6 +321,14 @@
       "snapshot": "https://web.archive.org/web/20260921031149/https://www.nature.com/articles/s41586-023-05786-2",
       "checked": "2026-09-27T21:15:54.324Z"
     },
+    "https://doi.org/10.1038/s41586-023-05896-x": {
+      "snapshot": "https://web.archive.org/web/20260922224954/https://www.nature.com/articles/s41586-023-05896-x",
+      "checked": "2026-09-27T21:39:20.007Z"
+    },
+    "https://doi.org/10.1038/s41586-024-07541-7": {
+      "snapshot": "https://web.archive.org/web/20260814140953/https://www.nature.com/articles/s41586-024-07541-7",
+      "checked": "2026-09-27T21:49:16.050Z"
+    },
     "https://doi.org/10.1038/s41586-024-08449-y": {
       "snapshot": "https://web.archive.org/web/20260924045711/https://www.nature.com/articles/s41586-024-08449-y",
       "checked": "2026-09-27T21:17:52.091Z"
@@ -164,6 +340,14 @@
     "https://doi.org/10.1051/0004-6361/201833910": {
       "snapshot": "https://web.archive.org/web/20260520155402/https://doi.org/10.1051/0004-6361/201833910",
       "checked": "2026-09-27T21:15:32.532Z"
+    },
+    "https://doi.org/10.1056/NEJMoa2109730": {
+      "snapshot": "https://web.archive.org/web/20250413094625/https://www.nejm.org/doi/10.1056/NEJMoa2109730",
+      "checked": "2026-09-27T21:51:46.761Z"
+    },
+    "https://doi.org/10.1056/NEJMoa2504747": {
+      "snapshot": "https://web.archive.org/web/20250723050626/https://www.nejm.org/doi/10.1056/NEJMoa2504747",
+      "checked": "2026-09-27T21:51:11.713Z"
     },
     "https://doi.org/10.1063/1.1721711": {
       "snapshot": "https://web.archive.org/web/20240816151639/https://pubs.aip.org/jap/article/25/5/676/160783/A-New-Silicon-p-n-Junction-Photocell-for",
@@ -192,6 +376,10 @@
     "https://doi.org/10.1073/pnas.15.3.168": {
       "snapshot": "https://web.archive.org/web/20250626022104/https://www.pnas.org/doi/full/10.1073/pnas.15.3.168",
       "checked": "2026-09-27T21:15:34.791Z"
+    },
+    "https://doi.org/10.1073/pnas.1605782113": {
+      "snapshot": "https://web.archive.org/web/20250629081451/https://www.pnas.org/doi/full/10.1073/pnas.1605782113",
+      "checked": "2026-09-27T21:41:09.583Z"
     },
     "https://doi.org/10.1073/pnas.44.7.671": {
       "snapshot": "https://web.archive.org/web/20250710072115/https://www.pnas.org/doi/full/10.1073/pnas.44.7.671",
@@ -225,13 +413,41 @@
       "snapshot": "https://web.archive.org/web/20250722045359/https://www.journals.uchicago.edu/doi/10.1086/431525",
       "checked": "2026-09-27T21:22:44.360Z"
     },
+    "https://doi.org/10.1086/506024": {
+      "snapshot": "https://web.archive.org/web/20230710080434/https://www.journals.uchicago.edu/doi/10.1086/506024",
+      "checked": "2026-09-27T21:39:33.489Z"
+    },
+    "https://doi.org/10.1086/508162": {
+      "snapshot": "https://web.archive.org/web/20260829150650/https://iopscience.iop.org/article/10.1086/508162",
+      "checked": "2026-09-27T21:38:18.592Z"
+    },
     "https://doi.org/10.1086/598822": {
       "snapshot": "https://web.archive.org/web/20250525042716/https://www.journals.uchicago.edu/doi/10.1086/598822",
       "checked": "2026-09-27T21:21:29.241Z"
     },
+    "https://doi.org/10.1086/659307": {
+      "snapshot": "https://web.archive.org/web/20241211111120/https://www.journals.uchicago.edu/doi/10.1086/659307",
+      "checked": "2026-09-27T21:44:48.347Z"
+    },
+    "https://doi.org/10.1088/0034-4885/76/7/076901": {
+      "snapshot": "https://web.archive.org/web/20260914132614/https://iopscience.iop.org/article/10.1088/0034-4885/76/7/076901",
+      "checked": "2026-09-27T21:53:05.827Z"
+    },
     "https://doi.org/10.1088/1475-7516/2017/08/013": {
       "snapshot": "https://web.archive.org/web/20260716154609/https://iopscience.iop.org/article/10.1088/1475-7516/2017/08/013",
       "checked": "2026-09-27T21:28:36.415Z"
+    },
+    "https://doi.org/10.1088/1538-3873/acd1b5": {
+      "snapshot": "https://web.archive.org/web/20260815231152/https://iopscience.iop.org/article/10.1088/1538-3873/acd1b5",
+      "checked": "2026-09-27T21:53:16.827Z"
+    },
+    "https://doi.org/10.1088/1748-9326/11/4/048001": {
+      "snapshot": "https://web.archive.org/web/20260824083713/https://iopscience.iop.org/article/10.1088/1748-9326/11/4/048001",
+      "checked": "2026-09-27T21:54:56.547Z"
+    },
+    "https://doi.org/10.1088/1748-9326/11/4/048002": {
+      "snapshot": "https://web.archive.org/web/20260914085231/https://iopscience.iop.org/article/10.1088/1748-9326/11/4/048002",
+      "checked": "2026-09-27T21:55:04.803Z"
     },
     "https://doi.org/10.1093/analys/23.6.121": {
       "snapshot": "https://web.archive.org/web/20241122163447/https://academic.oup.com/analysis/article-lookup/doi/10.1093/analys/23.6.121",
@@ -261,6 +477,14 @@
       "snapshot": "https://web.archive.org/web/20260917081948/https://royalsocietypublishing.org/rstl/article/doi/10.1098/rstl.1850.0004/118347/III-On-the-mechanical-equivalent-of-heat",
       "checked": "2026-09-27T21:25:15.910Z"
     },
+    "https://doi.org/10.1098/rstl.1861.0001": {
+      "snapshot": "https://web.archive.org/web/20260909151534/https://royalsocietypublishing.org/rstl/article/doi/10.1098/rstl.1861.0001/118656/I-The-Bakerian-Lecture-On-the-absorption-and",
+      "checked": "2026-09-27T21:55:42.323Z"
+    },
+    "https://doi.org/10.1098/rstl.1865.0008": {
+      "snapshot": "https://web.archive.org/web/20260914132457/https://royalsocietypublishing.org/rstl/article/doi/10.1098/rstl.1865.0008/118816/VIII-A-dynamical-theory-of-the-electromagnetic",
+      "checked": "2026-09-27T21:43:55.377Z"
+    },
     "https://doi.org/10.1103/PhysRevLett.49.1804": {
       "snapshot": "https://web.archive.org/web/20080821174906/http://link.aps.org/doi/10.1103/PhysRevLett.49.1804",
       "checked": "2026-09-27T21:27:32.178Z"
@@ -268,6 +492,10 @@
     "https://doi.org/10.1109/MAHC.2003.1253887": {
       "snapshot": "https://web.archive.org/web/20260907020907/https://ieeexplore.ieee.org/document/1253887/",
       "checked": "2026-09-27T21:17:54.753Z"
+    },
+    "https://doi.org/10.1111/evo.13650": {
+      "snapshot": "https://web.archive.org/web/20241208021738/https://academic.oup.com/evolut/article/73/1/111/6726885",
+      "checked": "2026-09-27T21:40:17.979Z"
     },
     "https://doi.org/10.1111/j.1096-3642.1858.tb02500.x": {
       "snapshot": "https://web.archive.org/web/20241203041756/https://academic.oup.com/zoolinnean/article-lookup/doi/10.1111/j.1096-3642.1858.tb02500.x",
@@ -277,6 +505,14 @@
       "snapshot": "https://web.archive.org/web/20250510074414/https://www.science.org/doi/10.1126/science.1070315",
       "checked": "2026-09-27T21:20:54.437Z"
     },
+    "https://doi.org/10.1126/science.1095443": {
+      "snapshot": "https://web.archive.org/web/20260430002342/https://www.science.org/doi/10.1126/science.1095443",
+      "checked": "2026-09-27T21:44:31.160Z"
+    },
+    "https://doi.org/10.1126/science.117.3046.528": {
+      "snapshot": "https://web.archive.org/web/20250828060356/https://www.science.org/doi/10.1126/science.117.3046.528",
+      "checked": "2026-09-27T21:39:27.257Z"
+    },
     "https://doi.org/10.1126/science.1219669": {
       "snapshot": "https://web.archive.org/web/20251112144735/https://www.science.org/doi/10.1126/science.1219669",
       "checked": "2026-09-27T21:23:07.989Z"
@@ -285,9 +521,33 @@
       "snapshot": "https://web.archive.org/web/20250809170209/https://www.science.org/doi/10.1126/science.1225829",
       "checked": "2026-09-27T21:18:43.337Z"
     },
+    "https://doi.org/10.1126/science.1236408": {
+      "snapshot": "https://web.archive.org/web/20250726143620/https://www.science.org/doi/10.1126/science.1236408",
+      "checked": "2026-09-27T21:53:45.084Z"
+    },
+    "https://doi.org/10.1126/science.1241681": {
+      "snapshot": "https://web.archive.org/web/20250727090233/https://www.science.org/doi/10.1126/science.1241681",
+      "checked": "2026-09-27T21:53:51.907Z"
+    },
+    "https://doi.org/10.1126/science.164.3881.788": {
+      "snapshot": "https://web.archive.org/web/20250627132418/https://www.science.org/doi/10.1126/science.164.3881.788",
+      "checked": "2026-09-27T21:40:11.777Z"
+    },
+    "https://doi.org/10.1126/science.177.4044.168": {
+      "snapshot": "https://web.archive.org/web/20250617220106/https://www.science.org/doi/10.1126/science.177.4044.168",
+      "checked": "2026-09-27T21:44:19.360Z"
+    },
+    "https://doi.org/10.1126/science.194.4270.1121": {
+      "snapshot": "https://web.archive.org/web/20250803222757/https://www.science.org/doi/10.1126/science.194.4270.1121",
+      "checked": "2026-09-27T21:54:08.114Z"
+    },
     "https://doi.org/10.1126/science.298.5598.1569": {
       "snapshot": "https://web.archive.org/web/20251006142752/https://www.science.org/doi/10.1126/science.298.5598.1569",
       "checked": "2026-09-27T21:22:34.535Z"
+    },
+    "https://doi.org/10.1126/science.aac4716": {
+      "snapshot": "https://web.archive.org/web/20260430013006/https://www.science.org/doi/10.1126/science.aac4716",
+      "checked": "2026-09-27T21:49:01.174Z"
     },
     "https://doi.org/10.1126/science.aao6266": {
       "snapshot": "https://web.archive.org/web/20250724042318/https://www.science.org/doi/10.1126/science.aao6266",
@@ -304,6 +564,10 @@
     "https://doi.org/10.1145/3065386": {
       "snapshot": "https://web.archive.org/web/20250527104100/https://dl.acm.org/doi/10.1145/3065386",
       "checked": "2026-09-27T21:17:32.595Z"
+    },
+    "https://doi.org/10.1145/3442188.3445922": {
+      "snapshot": "https://web.archive.org/web/20260727180018/https://dl.acm.org/doi/10.1145/3442188.3445922",
+      "checked": "2026-09-27T21:38:46.639Z"
     },
     "https://doi.org/10.1215/ijm/1256049011": {
       "snapshot": "https://web.archive.org/web/20260901091521/https://projecteuclid.org/journals/illinois-journal-of-mathematics/volume-21/issue-3/Every-planar-map-is-four-colorable-Part-I-Discharging/10.1215/ijm/1256049011.full",
@@ -325,6 +589,22 @@
       "snapshot": "https://web.archive.org/web/20260131164443/https://www.jstor.org/stable/2118560?origin=crossref",
       "checked": "2026-09-27T21:35:10.213Z"
     },
+    "https://doi.org/10.2475/ajs.s3-34.203.333": {
+      "snapshot": "https://web.archive.org/web/20251115213458/https://ajsonline.org/article/62505",
+      "checked": "2026-09-27T21:42:25.193Z"
+    },
+    "https://doi.org/10.3389/fpsyg.2013.00397": {
+      "snapshot": "https://web.archive.org/web/20160328031954/http://journal.frontiersin.org/article/10.3389/fpsyg.2013.00397/abstract",
+      "checked": "2026-09-27T21:44:38.426Z"
+    },
+    "https://doi.org/10.3402/tellusa.v12i2.9366": {
+      "snapshot": "https://web.archive.org/web/20260920200147/https://tellusjournal.org/articles/10.3402/tellusa.v12i2.9366",
+      "checked": "2026-09-27T21:54:29.796Z"
+    },
+    "https://doi.org/10.3847/1538-4357/ac6ddb": {
+      "snapshot": "https://web.archive.org/web/20260728184010/https://iopscience.iop.org/article/10.3847/1538-4357/ac6ddb",
+      "checked": "2026-09-27T21:38:14.854Z"
+    },
     "https://doi.org/10.3847/2041-8213/ab0ec7": {
       "snapshot": "https://web.archive.org/web/20260926105714/https://iopscience.iop.org/article/10.3847/2041-8213/ab0ec7",
       "checked": "2026-09-27T21:16:15.122Z"
@@ -333,9 +613,21 @@
       "snapshot": "https://web.archive.org/web/20260827155807/https://iopscience.iop.org/article/10.3847/2041-8213/ac5c5b",
       "checked": "2026-09-27T21:15:48.826Z"
     },
+    "https://doi.org/10.4049/jimmunol.155.3.1151": {
+      "snapshot": "https://web.archive.org/web/20260729070454/https://academic.oup.com/jimmunol/article/155/3/1151/8068613",
+      "checked": "2026-09-27T21:52:31.531Z"
+    },
+    "https://doi.org/10.7326/M18-2101": {
+      "snapshot": "https://web.archive.org/web/20260420090004/https://www.acpjournals.org/doi/10.7326/M18-2101",
+      "checked": "2026-09-27T21:50:35.797Z"
+    },
     "https://en.wikisource.org/wiki/The_Rig_Veda/Mandala_10/Hymn_129": {
       "snapshot": "https://web.archive.org/web/20231008071041/https://en.wikisource.org/wiki/The_Rig_Veda/Mandala_10/Hymn_129",
       "checked": "2026-09-27T17:58:31.230Z"
+    },
+    "https://gml.noaa.gov/ccgg/trends/": {
+      "snapshot": "https://web.archive.org/web/20260920165954/https://gml.noaa.gov/ccgg/trends/",
+      "checked": "2026-09-27T21:54:32.476Z"
     },
     "https://irfm.cea.fr/en/2025/02/west-sets-a-new-plasma-duration-record/": {
       "snapshot": "https://web.archive.org/web/20260218023302/https://irfm.cea.fr/en/2025/02/west-sets-a-new-plasma-duration-record/",
@@ -357,6 +649,14 @@
       "snapshot": "https://web.archive.org/web/20260925175646/https://islamansiklopedisi.org.tr/fikih",
       "checked": "2026-09-27T21:30:01.595Z"
     },
+    "https://islamansiklopedisi.org.tr/gazzali": {
+      "snapshot": "https://web.archive.org/web/20260917004717/https://islamansiklopedisi.org.tr/gazzali",
+      "checked": "2026-09-27T21:49:58.083Z"
+    },
+    "https://islamansiklopedisi.org.tr/ibn-haldun": {
+      "snapshot": "https://web.archive.org/web/20260902230117/https://islamansiklopedisi.org.tr/ibn-haldun",
+      "checked": "2026-09-27T21:52:49.421Z"
+    },
     "https://islamansiklopedisi.org.tr/ibnul-heysem": {
       "snapshot": "https://web.archive.org/web/20260819122550/https://islamansiklopedisi.org.tr/ibnul-heysem",
       "checked": "2026-09-27T21:27:15.541Z"
@@ -377,6 +677,10 @@
       "snapshot": "https://web.archive.org/web/20260906160618/https://islamansiklopedisi.org.tr/kelam--ilim",
       "checked": "2026-09-27T21:33:12.011Z"
     },
+    "https://islamansiklopedisi.org.tr/makam--musiki": {
+      "snapshot": "https://web.archive.org/web/20260813145405/https://islamansiklopedisi.org.tr/makam--musiki",
+      "checked": "2026-09-27T21:49:30.797Z"
+    },
     "https://islamansiklopedisi.org.tr/maturidiyye": {
       "snapshot": "https://web.archive.org/web/20260926065326/https://islamansiklopedisi.org.tr/maturidiyye",
       "checked": "2026-09-27T21:33:14.469Z"
@@ -385,13 +689,25 @@
       "snapshot": "https://web.archive.org/web/20260830073904/https://islamansiklopedisi.org.tr/mecelle-i-ahkam-i-adliyye",
       "checked": "2026-09-27T21:30:24.595Z"
     },
+    "https://islamansiklopedisi.org.tr/mesnevi--mevlana": {
+      "snapshot": "https://web.archive.org/web/20260906154946/https://islamansiklopedisi.org.tr/mesnevi--mevlana",
+      "checked": "2026-09-27T21:50:07.211Z"
+    },
     "https://islamansiklopedisi.org.tr/mutezile": {
       "snapshot": "https://web.archive.org/web/20260212221534/https://islamansiklopedisi.org.tr/mutezile",
       "checked": "2026-09-27T21:33:17.821Z"
     },
+    "https://islamansiklopedisi.org.tr/nazzam": {
+      "snapshot": "https://web.archive.org/web/20260806052825/https://islamansiklopedisi.org.tr/nazzam",
+      "checked": "2026-09-27T21:45:27.940Z"
+    },
     "https://islamansiklopedisi.org.tr/tehafutu-tehafutil-felasife": {
       "snapshot": "https://web.archive.org/web/20260614135831/https://islamansiklopedisi.org.tr/tehafutu-tehafutil-felasife",
       "checked": "2026-09-27T18:06:32.780Z"
+    },
+    "https://islamansiklopedisi.org.tr/tehafutul-felasife": {
+      "snapshot": "https://web.archive.org/web/20260914010826/https://islamansiklopedisi.org.tr/tehafutul-felasife",
+      "checked": "2026-09-27T21:45:24.038Z"
     },
     "https://islamansiklopedisi.org.tr/ulug-bey": {
       "snapshot": "https://web.archive.org/web/20260927175524/https://islamansiklopedisi.org.tr/ulug-bey",
@@ -401,9 +717,17 @@
       "snapshot": "https://web.archive.org/web/20260906173718/https://islamansiklopedisi.org.tr/usul-i-fikih",
       "checked": "2026-09-27T21:30:05.888Z"
     },
+    "https://islamansiklopedisi.org.tr/yunus-emre": {
+      "snapshot": "https://web.archive.org/web/20260227071602/https://islamansiklopedisi.org.tr/yunus-emre",
+      "checked": "2026-09-27T21:50:14.739Z"
+    },
     "https://islamansiklopedisi.org.tr/zic-i-ulug-bey": {
       "snapshot": "https://web.archive.org/web/20260418004252/https://islamansiklopedisi.org.tr/zic-i-ulug-bey",
       "checked": "2026-09-27T17:55:58.595Z"
+    },
+    "https://journals.library.ualberta.ca/hssa/index.php/hssa/article/view/22": {
+      "snapshot": "https://web.archive.org/web/20260924220955/https://journals.library.ualberta.ca/hssa/index.php/hssa/article/view/22",
+      "checked": "2026-09-27T21:47:12.799Z"
     },
     "https://lasers.llnl.gov/about/faqs": {
       "snapshot": "https://web.archive.org/web/20260918023231/https://lasers.llnl.gov/about/faqs",
@@ -413,6 +737,10 @@
       "snapshot": "https://web.archive.org/web/20260917210542/https://lasers.llnl.gov/news/target-breakthrough-enabled-fusion-record-nif",
       "checked": "2026-09-27T18:01:19.732Z"
     },
+    "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/": {
+      "snapshot": "https://web.archive.org/web/20260918014913/https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/",
+      "checked": "2026-09-27T21:46:19.083Z"
+    },
     "https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/": {
       "snapshot": "https://web.archive.org/web/20260913134251/https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat%27s_last_theorem/",
       "checked": "2026-09-27T21:35:15.224Z"
@@ -421,9 +749,17 @@
       "snapshot": "https://web.archive.org/web/20260613215435/https://paleoanthropology.org/ojs/index.php/paleo/article/view/742/703",
       "checked": "2026-09-27T21:32:08.479Z"
     },
+    "https://plato.stanford.edu/": {
+      "snapshot": "https://web.archive.org/web/20260927051344/https://plato.stanford.edu/",
+      "checked": "2026-09-27T21:56:11.121Z"
+    },
     "https://plato.stanford.edu/entries/aristotle-logic/": {
       "snapshot": "https://web.archive.org/web/20260927180344/https://plato.stanford.edu/entries/aristotle-logic/",
       "checked": "2026-09-27T18:04:11.855Z"
+    },
+    "https://plato.stanford.edu/entries/church-turing/": {
+      "snapshot": "https://web.archive.org/web/20260927215639/https://plato.stanford.edu/entries/church-turing/",
+      "checked": "2026-09-27T21:56:55.290Z"
     },
     "https://plato.stanford.edu/entries/confucius/": {
       "snapshot": "https://web.archive.org/web/20260927173310/https://plato.stanford.edu/entries/confucius/",
@@ -445,6 +781,10 @@
       "snapshot": "https://web.archive.org/web/20260927173241/https://plato.stanford.edu/entries/thomas-kuhn/",
       "checked": "2026-09-27T18:05:09.505Z"
     },
+    "https://quran.com/11/25-49": {
+      "snapshot": "https://web.archive.org/web/20251231072549/https://quran.com/11/25-49",
+      "checked": "2026-09-27T21:47:18.976Z"
+    },
     "https://quran.com/112": {
       "snapshot": "https://web.archive.org/web/20260608072649/https://quran.com/112",
       "checked": "2026-09-27T17:59:24.792Z"
@@ -452,6 +792,10 @@
     "https://quran.com/15/26-29": {
       "snapshot": "https://web.archive.org/web/20240409223221/https://quran.com/15/26-29",
       "checked": "2026-09-27T17:58:21.714Z"
+    },
+    "https://quran.com/17/85": {
+      "snapshot": "https://web.archive.org/web/20260214041847/https://quran.com/17/85",
+      "checked": "2026-09-27T21:48:40.690Z"
     },
     "https://quran.com/2/23": {
       "snapshot": "https://web.archive.org/web/20251211150248/https://quran.com/2/23",
@@ -481,6 +825,10 @@
       "snapshot": "https://web.archive.org/web/20260927172527/https://quran.com/an-nisa/157-171",
       "checked": "2026-09-27T17:58:58.215Z"
     },
+    "https://quran.com/41/9-12": {
+      "snapshot": "https://web.archive.org/web/20250804015703/https://quran.com/41/9-12",
+      "checked": "2026-09-27T21:54:03.437Z"
+    },
     "https://quran.com/48/29": {
       "snapshot": "https://web.archive.org/web/20260604175923/https://quran.com/48/29",
       "checked": "2026-09-27T17:59:26.078Z"
@@ -493,9 +841,25 @@
       "snapshot": "https://web.archive.org/web/20251023185025/https://quran.com/70/4",
       "checked": "2026-09-27T17:54:20.940Z"
     },
+    "https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/": {
+      "snapshot": "https://web.archive.org/web/20260915104321/https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/",
+      "checked": "2026-09-27T21:46:26.878Z"
+    },
+    "https://tubitak.gov.tr/en/node/14637": {
+      "snapshot": "https://web.archive.org/web/20260110100117/https://tubitak.gov.tr/en/node/14637",
+      "checked": "2026-09-27T21:53:40.184Z"
+    },
+    "https://wmo.int/publication-series/state-of-global-climate/state-of-global-climate-2025": {
+      "snapshot": "https://web.archive.org/web/20260917150630/https://wmo.int/publication-series/state-of-global-climate/state-of-global-climate-2025",
+      "checked": "2026-09-27T21:54:42.175Z"
+    },
     "https://www.aanda.org/articles/aa/full_html/2025/08/aa55580-25/aa55580-25.html": {
       "snapshot": "https://web.archive.org/web/20260722151727/https://www.aanda.org/articles/aa/full_html/2025/08/aa55580-25/aa55580-25.html",
       "checked": "2026-09-27T17:54:51.380Z"
+    },
+    "https://www.axiomspace.com/astronaut/alper-gezeravci": {
+      "snapshot": "https://web.archive.org/web/20260822165310/https://www.axiomspace.com/astronaut/alper-gezeravci",
+      "checked": "2026-09-27T21:53:35.063Z"
     },
     "https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A3-8&version=NRSVUE": {
       "snapshot": "https://web.archive.org/web/20260209025134/https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A3-8&version=NRSVUE",
@@ -517,6 +881,10 @@
       "snapshot": "https://web.archive.org/web/20260829174646/https://www.britannica.com/topic/yuga",
       "checked": "2026-09-27T21:32:46.820Z"
     },
+    "https://www.claymath.org/millennium-problems/": {
+      "snapshot": "https://web.archive.org/web/20260924013240/https://www.claymath.org/millennium-problems/",
+      "checked": "2026-09-27T21:56:18.333Z"
+    },
     "https://www.claymath.org/millennium/p-vs-np/": {
       "snapshot": "https://web.archive.org/web/20260920221256/https://www.claymath.org/millennium/p-vs-np/",
       "checked": "2026-09-27T17:56:02.245Z"
@@ -529,9 +897,17 @@
       "snapshot": "https://web.archive.org/web/20260427055832/https://www.ethnologue.com/insights/how-many-languages-endangered/",
       "checked": "2026-09-27T17:58:26.367Z"
     },
+    "https://www.gutenberg.org/ebooks/22914": {
+      "snapshot": "https://web.archive.org/web/20260518163317/https://www.gutenberg.org/ebooks/22914",
+      "checked": "2026-09-27T21:45:29.404Z"
+    },
     "https://www.gutenberg.org/ebooks/3207": {
       "snapshot": "https://web.archive.org/web/20260914180433/https://www.gutenberg.org/ebooks/3207",
       "checked": "2026-09-27T21:30:27.066Z"
+    },
+    "https://www.gutenberg.org/ebooks/3300": {
+      "snapshot": "https://web.archive.org/web/20260923144513/https://www.gutenberg.org/ebooks/3300",
+      "checked": "2026-09-27T21:52:45.739Z"
     },
     "https://www.gutenberg.org/ebooks/4583": {
       "snapshot": "https://web.archive.org/web/20260927173532/https://www.gutenberg.org/ebooks/4583",
@@ -545,17 +921,41 @@
       "snapshot": "https://web.archive.org/web/20260927180421/https://www.gutenberg.org/ebooks/9662",
       "checked": "2026-09-27T18:04:48.758Z"
     },
+    "https://www.ipcc.ch/report/ar6/wg1/": {
+      "snapshot": "https://web.archive.org/web/20260920210506/https://www.ipcc.ch/report/ar6/wg1/",
+      "checked": "2026-09-27T21:54:36.851Z"
+    },
     "https://www.ipp.mpg.de/5532945/w7x": {
       "snapshot": "https://web.archive.org/web/20260722125423/https://www.ipp.mpg.de/5532945/w7x",
       "checked": "2026-09-27T18:02:28.353Z"
+    },
+    "https://www.jpl.nasa.gov/news/nasa-says-mars-rover-discovered-potential-biosignature-last-year/": {
+      "snapshot": "https://web.archive.org/web/20260526092350/https://www.jpl.nasa.gov/news/nasa-says-mars-rover-discovered-potential-biosignature-last-year/",
+      "checked": "2026-09-27T21:53:31.195Z"
     },
     "https://www.jpl.nasa.gov/news/nasas-tally-of-planets-outside-our-solar-system-reaches-6000/": {
       "snapshot": "https://web.archive.org/web/20260512091625/https://www.jpl.nasa.gov/news/nasas-tally-of-planets-outside-our-solar-system-reaches-6000/",
       "checked": "2026-09-27T17:55:14.429Z"
     },
+    "https://www.nasa.gov/mission/artemis-ii/": {
+      "snapshot": "https://web.archive.org/web/20260925130419/https://www.nasa.gov/mission/artemis-ii/",
+      "checked": "2026-09-27T21:53:07.549Z"
+    },
+    "https://www.nature.com/articles/d41586-025-02597-5": {
+      "snapshot": "https://web.archive.org/web/20251102085136/https://www.nature.com/articles/d41586-025-02597-5",
+      "checked": "2026-09-27T21:53:32.303Z"
+    },
+    "https://www.newtonproject.ox.ac.uk/": {
+      "snapshot": "https://web.archive.org/web/20260905124035/https://www.newtonproject.ox.ac.uk/",
+      "checked": "2026-09-27T21:42:09.527Z"
+    },
     "https://www.nobelprize.org/prizes/chemistry/2025/press-release/": {
       "snapshot": "https://web.archive.org/web/20260911135937/https://www.nobelprize.org/prizes/chemistry/2025/press-release/",
       "checked": "2026-09-27T21:34:16.328Z"
+    },
+    "https://www.nobelprize.org/prizes/medicine/2025/press-release/": {
+      "snapshot": "https://web.archive.org/web/20260919234020/https://www.nobelprize.org/prizes/medicine/2025/press-release/",
+      "checked": "2026-09-27T21:52:41.603Z"
     },
     "https://www.nobelprize.org/prizes/physics/2025/press-release/": {
       "snapshot": "https://web.archive.org/web/20260916141837/https://www.nobelprize.org/prizes/physics/2025/press-release/",
@@ -569,6 +969,10 @@
       "snapshot": "https://web.archive.org/web/20250626133635/https://www.routledge.com/Islam-and-Evolution-Al-Ghazali-and-the-Modern-Evolutionary-Paradigm/Malik/p/book/9781032026572",
       "checked": "2026-09-27T21:32:48.340Z"
     },
+    "https://www.sciencedaily.com/releases/2017/10/171026135305.htm": {
+      "snapshot": "https://web.archive.org/web/20260518064224/https://www.sciencedaily.com/releases/2017/10/171026135305.htm",
+      "checked": "2026-09-27T21:47:15.777Z"
+    },
     "https://www.sefaria.org/Deuteronomy.6.4": {
       "snapshot": "https://web.archive.org/web/20260515224940/https://www.sefaria.org/Deuteronomy.6.4",
       "checked": "2026-09-27T21:23:35.554Z"
@@ -581,9 +985,17 @@
       "snapshot": "https://web.archive.org/web/20260917211536/https://www.sefaria.org/Genesis.1",
       "checked": "2026-09-27T17:54:24.178Z"
     },
+    "https://www.sefaria.org/Genesis.1.11-25": {
+      "snapshot": "https://web.archive.org/web/20260927215710/https://www.sefaria.org/Genesis.1.11-25",
+      "checked": "2026-09-27T21:57:25.504Z"
+    },
     "https://www.sefaria.org/Genesis.11.1-9": {
       "snapshot": "https://web.archive.org/web/20260505103308/https://www.sefaria.org/Genesis.11.1-9",
       "checked": "2026-09-27T21:31:08.441Z"
+    },
+    "https://www.sefaria.org/Genesis.2.19-20": {
+      "snapshot": "https://web.archive.org/web/20260801145833/https://www.sefaria.org/Genesis.2.19-20",
+      "checked": "2026-09-27T21:44:40.564Z"
     },
     "https://www.sefaria.org/Genesis.4.2": {
       "snapshot": "https://web.archive.org/web/20260311164418/https://www.sefaria.org/Genesis.4.2",

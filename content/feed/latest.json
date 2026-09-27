@@ -1,8 +1,76 @@
 {
-  "generated": "2026-09-27T21:15:27.283Z",
+  "generated": "2026-09-27T21:38:00.317Z",
   "branches": {
     "astronomi": [
       {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A gas-enshrouded and gas-reddened black hole at cosmic dawn",
+        "authors": "Rohan P. Naidu, Jorryt Matthee, Harley Katz et al.",
+        "date": "2026-08-12",
+        "url": "https://doi.org/10.1038/s41586-026-10846-4",
+        "source": "Nature",
+        "category": "",
+        "cited": 36
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Episodic super-Eddington accretion as a clue to overmassive black holes in the early Universe",
+        "authors": "Alessandro Trinca, Rosa Valiante, Raffaella Schneider et al.",
+        "date": "2026-08-27",
+        "url": "https://doi.org/10.1093/mnras/stag1608",
+        "source": "Monthly Notices of the Royal Astronomical Society",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Indirect searches for dark photon-photon tridents in celestial objects",
+        "authors": "Tim Linden, Thong T. Q. Nguyen, Tim M. P. Tait",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1088/1475-7516/2026/08/056",
+        "source": "Journal of Cosmology and Astroparticle Physics",
+        "category": "",
+        "cited": 9
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "GWTC-4.0: Constraints on the Cosmic Expansion Rate and Modified Gravitational-wave Propagation",
+        "authors": "Adrian Abac, I. Abouelfettouh, F. Acernese et al.",
+        "date": "2026-08-05",
+        "url": "https://doi.org/10.3847/2041-8213/ae69dd",
+        "source": "The Astrophysical Journal Letters",
+        "category": "",
+        "cited": 6
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The LBT Y p Project. IV. A New Value of the Primordial Helium Abundance",
+        "authors": "Erik Aver, Evan D. Skillman, Richard W. Pogge et al.",
+        "date": "2026-09-09",
+        "url": "https://doi.org/10.3847/1538-4357/ae879b",
+        "source": "The Astrophysical Journal",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Pulsations in Binary Star Systems",
+        "authors": "John H. Southworth, D. M. Bowman",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.1146/annurev-astro-120425-015551",
+        "source": "Annual Review of Astronomy and Astrophysics",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Igniting Galaxy Formation in the Postreionization Universe, II: Nature versus Nurture",
         "authors": "Jorge Moreno, Defne Aluç, Eisha López et al.",
         "date": "2026-09-24",
@@ -11,6 +79,8 @@
         "category": "astro-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "The geometric origin of the thermal eccentricity law",
         "authors": "Václav Pavlík",
         "date": "2026-09-24",
@@ -19,6 +89,8 @@
         "category": "astro-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Simulating the thermodynamics of gas, radiation, and multispecies dust: Method and applications to protoplanetary disks",
         "authors": "Dhruv Muley, David Melon Fuksman, Prakruti Sudarshan et al.",
         "date": "2026-09-24",
@@ -27,6 +99,8 @@
         "category": "astro-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Statistics of large-scale structure from the transition probability of Lagrangian trajectories",
         "authors": "Lawrence Dam",
         "date": "2026-09-24",
@@ -35,6 +109,8 @@
         "category": "astro-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Breaking the Blend: A multi-tracer kinematic decomposition method for IFS data applied to disentangling the AGN outflow and circumnuclear ring in NGC 5728 with JWST",
         "authors": "Oscar Veenema, Niranjan Thatte, Dimitra Rigopoulou et al.",
         "date": "2026-09-24",
@@ -43,32 +119,86 @@
         "category": "astro-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Disc-mediated angular momentum transport resolves the mass-gain problem in rotating binaries",
         "authors": "Sebastian Ljung, Avishai Gilkis, Sandro Tacchella",
         "date": "2026-09-24",
         "url": "https://arxiv.org/abs/2609.30230v1",
         "source": "arXiv",
         "category": "astro-ph"
-      },
-      {
-        "title": "Differential Double Blind Fourier Holography (diff-DBFH)",
-        "authors": "Oren Pedatzur, David T. Chuss",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30183v1",
-        "source": "arXiv",
-        "category": "astro-ph"
-      },
-      {
-        "title": "The third law of black hole thermodynamics and the mass-to-charge ratio of scalar fields",
-        "authors": "Shahar Hod, Tsvi Piran",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30170v1",
-        "source": "arXiv",
-        "category": "astro-ph"
       }
     ],
     "bilisim": [
       {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "egg: Fast and Extensible Equality Saturation",
+        "authors": "Max Willsey, Chandrakana Nandi, Yisu Remy Wang et al.",
+        "date": "2026-07-29",
+        "url": "https://doi.org/10.1145/3815481",
+        "source": "Communications of the ACM",
+        "category": "",
+        "cited": 133
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "igraph 1.0 enables fast and robust network analysis across programming languages",
+        "authors": "Michael Antonov, Gábor Csárdi, Szabolcs Horvát et al.",
+        "date": "2026-08-04",
+        "url": "https://doi.org/10.1371/journal.pone.0355108",
+        "source": "PLoS ONE",
+        "category": "",
+        "cited": 49
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Beyond Efficiency: A Systematic Survey of Resource-Efficient Large Language Models",
+        "authors": "Guangji Bai, Zheng Chai, Ling Chen et al.",
+        "date": "2026-09-15",
+        "url": "https://doi.org/10.1145/3845797",
+        "source": "ACM Computing Surveys",
+        "category": "",
+        "cited": 40
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Modelling the Intention to Adopt Cloud Computing Services: A Transaction Cost Theory Perspective",
+        "authors": "Ogan M. Yigitbasioglu",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.3127/ajis.v18i3.1052",
+        "source": "Journal of the Association for Information Systems",
+        "category": "",
+        "cited": 40
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Requirements Engineering: a close look at industry needs and a model curricula",
+        "authors": "O. Minor, Jocelyn Armarego",
+        "date": "2026-08-03",
+        "url": "https://doi.org/10.3127/ajis.v13i1.71",
+        "source": "Journal of the Association for Information Systems",
+        "category": "",
+        "cited": 25
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Perceived Impact of the Agile Development and Project Management Method Scrum on Information Systems and Software Development Productivity",
+        "authors": "Karlheinz Kautz, Johanson, Thomas Heide, Andreas Uldahl",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.3127/ajis.v18i3.1095",
+        "source": "Journal of the Association for Information Systems",
+        "category": "",
+        "cited": 21
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "LLM Agents Can Easily Tamper With Their Own Traces",
         "authors": "Jeremy Qin, David Schmotz, Derck Prinzhorn et al.",
         "date": "2026-09-24",
@@ -77,6 +207,8 @@
         "category": "cs.AI"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control",
         "authors": "Jiabin Qiu, Zixuan Chen, Hongye Cao et al.",
         "date": "2026-09-24",
@@ -85,6 +217,8 @@
         "category": "cs.AI"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "RAPID: Robot Agentic Programming from Demonstrations",
         "authors": "Yuyao Liu, Jiayuan Mao, David Hsu et al.",
         "date": "2026-09-24",
@@ -93,6 +227,8 @@
         "category": "cs.AI"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Rolling-WAM: World Action Models with Rolling Imagination",
         "authors": "Yinghua Zhou, Junjie Ye, Yiqi Zhao et al.",
         "date": "2026-09-24",
@@ -101,6 +237,8 @@
         "category": "cs.AI"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Coding Agents for Generalized Task and Motion Planning Problems",
         "authors": "Matteo Merler, Bowen Li, Josh Roy et al.",
         "date": "2026-09-24",
@@ -109,114 +247,214 @@
         "category": "cs.AI"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
         "authors": "Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri",
         "date": "2026-09-24",
         "url": "https://arxiv.org/abs/2609.30227v1",
         "source": "arXiv",
         "category": "cs.AI"
-      },
-      {
-        "title": "PoEM: Predicting RL Outcomes from Existing Policies",
-        "authors": "Kimia Hamidieh, Giannis Daras, Antonio Torralba",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30226v1",
-        "source": "arXiv",
-        "category": "cs.AI"
-      },
-      {
-        "title": "TrackEverything: Long Horizon Dense Tracking via De-Duplicating 3D Scene Representations",
-        "authors": "Ayush Jain, Sreeharsha Paruchuri, Ishita Gupta et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30222v1",
-        "source": "arXiv",
-        "category": "cs.AI"
-      },
-      {
-        "title": "Temporal Gradient Inversion for Private Trajectory Reconstruction in Embodied Reinforcement Learning",
-        "authors": "Sudip Bhujel, Shanghao Shi, Ruiquan Huang et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30258v1",
-        "source": "arXiv",
-        "category": "cs.LG"
-      },
-      {
-        "title": "Agentic Detection of Online Conspiracies",
-        "authors": "Lior Biton, Oren Tsur",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30250v1",
-        "source": "arXiv",
-        "category": "cs.LG"
       }
     ],
     "biyoloji": [
       {
-        "title": "miRstring: An RNA language model enables mature miRNA decoding and artificial small RNA design across species",
-        "authors": "Peng, R., Li, X., Fang, Y. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752258v2",
-        "source": "bioRxiv",
-        "category": "bioinformatics"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "MemBrain v2: an end-to-end tool for the analysis of membranes in cryo-electron tomography",
+        "authors": "Lorenz Lamm, Simon Zufferey, Hanyi Zhang et al.",
+        "date": "2026-09-08",
+        "url": "https://doi.org/10.1038/s41592-026-03178-8",
+        "source": "Nature Methods",
+        "category": "",
+        "cited": 179
       },
       {
-        "title": "GapDream: Active Synthetic Evidence Acquisition for Long-Tailed Medical Imaging",
-        "authors": "Chen, J., Chen, W.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753385v1",
-        "source": "bioRxiv",
-        "category": "bioengineering"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Predicting cellular responses to perturbation across diverse contexts with State",
+        "authors": "Abhinav Adduri, Dhruv Gautam, Beatrice Bevilacqua et al.",
+        "date": "2026-08-31",
+        "url": "https://doi.org/10.1016/j.cell.2026.07.052",
+        "source": "Cell",
+        "category": "",
+        "cited": 86
       },
       {
-        "title": "A Computational Pipeline for Retinal Capillary Blood Flow Measurement using Adaptive Optics Line Confocal Ophthalmoscopy",
-        "authors": "Shah, S. M. H., Tong, L., Liu, R. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753337v1",
-        "source": "bioRxiv",
-        "category": "bioengineering"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Spatiotemporal lineage tracing reveals the dynamic spatial architecture of tumor growth and metastasis",
+        "authors": "Matthew G. Jones, Dawei Sun, Kyung Hoi Min et al.",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.1038/s41588-026-02739-z",
+        "source": "Nature Genetics",
+        "category": "",
+        "cited": 30
       },
       {
-        "title": "ErrorRoute: Budgeted Utility-Aware Resolution Routingfor 3D Medical Image Segmentation",
-        "authors": "Chen, J., Chen, W.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753373v1",
-        "source": "bioRxiv",
-        "category": "biochemistry"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A complete diploid human genome benchmark for personalized genomics",
+        "authors": "Nancy Fisher Hansen, Nathan Dwarshuis, Hyun Joo Ji et al.",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1016/j.cell.2026.06.016",
+        "source": "Cell",
+        "category": "",
+        "cited": 30
       },
       {
-        "title": "ChromBPNet: bias factorized, base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax, transcription factor footprints and regulatory variants",
-        "authors": "Pampari, A., Shcherbina, A., Kvon, E. Z. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v4",
-        "source": "bioRxiv",
-        "category": "genetics"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Mapping enhancer–gene regulatory interactions from single-cell data",
+        "authors": "Maya U. Sheth, Wei‐Lin Qiu, X. Rosa Ma et al.",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1038/s41588-026-02695-8",
+        "source": "Nature Genetics",
+        "category": "",
+        "cited": 23
       },
       {
-        "title": "Living with the invader: two native deer, two outcomes along a gradient of axis deer invasion",
-        "authors": "Cravino Mol, A., Mirazo, S., Brazeiro, A. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753347v1",
-        "source": "bioRxiv",
-        "category": "ecology"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Revisión taxonómica del género sudamericano Chrysolaena (Vernonieae, Asteraceae)",
+        "authors": "Massimiliano Dematteis",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.31055/1851.2372.v44.n1-2.54829",
+        "source": "Boletín de la Sociedad Argentina de Botánica",
+        "category": "",
+        "cited": 21
       },
       {
-        "title": "Broad scale environmental conditions, not urbanisation, explain geographic variation in great tit feather microstructure",
-        "authors": "Lopez-Idiaquez, D., Watson, H., Perez-Tris, J. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753101v1",
-        "source": "bioRxiv",
-        "category": "ecology"
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "Consistent determination of stability regimes in natural ecological communities from abundance time series",
+        "authors": "Alberto Megías, Vicente J. Ontiveros, David Alonso et al.",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30154v1",
+        "source": "arXiv",
+        "category": "q-bio"
       },
       {
-        "title": "An NR2F1-dependent retinoic acid network controls retinal specialization in mice and reveals foveal hypoplasia in patients with BBSOAS",
-        "authors": "Piovani, P., Belliardo, C., Makam, R. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.biorxiv.org/content/10.64898/2026.09.22.753406v1",
-        "source": "bioRxiv",
-        "category": "developmental biology"
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "Parameter identifiability of a neuroendocrine-inflammatory model across experimental designs",
+        "authors": "Aubrey Ayres, Mitchel J. Colebank",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30031v1",
+        "source": "arXiv",
+        "category": "q-bio"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "EMMA: an R/Bioconductor package to automate tracking of metadata in functional enrichment analyses",
+        "authors": "Najla Abassi, Annekathrin Silvia Nedwed, Federico Marini",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30013v1",
+        "source": "arXiv",
+        "category": "q-bio"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics",
+        "authors": "R. Lahoz-Beltra",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.29984v1",
+        "source": "arXiv",
+        "category": "q-bio"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "Mathematical Modelling of Within-Host HIV Dynamics with Cytotoxic Immune Response and Antiretroviral Therapy",
+        "authors": "Maxim Polyakov, Yulia Chernikova",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.29972v1",
+        "source": "arXiv",
+        "category": "q-bio"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "PRAXIS-VirtualCell: A Programmable and Trustworthy Framework for Agentic Virtual Cell Experiments",
+        "authors": "Zhenyu Ma, Xukai Jiang",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.29221v1",
+        "source": "arXiv",
+        "category": "q-bio"
       }
     ],
     "dilbilim": [
       {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Pride and Shame in English Learning: Mediating the Relationship Between Classroom Environment and English Learning Engagement",
+        "authors": "Gongwei Guo, Zhihui Tang, Honggang Liu",
+        "date": "2026-09-03",
+        "url": "https://doi.org/10.1111/ejed.70859",
+        "source": "European Journal of Education",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "MORFOFONEMIK BAHASA JAWA DIALEK BANYUMAS",
+        "authors": "Yani Paryono",
+        "date": "2026-08-27",
+        "url": "https://doi.org/10.14203/widyariset.13.1.2010.173-181",
+        "source": "Widyariset",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The shrinking landscape of linguistic diversity in the age of large language models",
+        "authors": "Zhivar Sourati, Farzan Karimi-Malekabadi, Meltem Ozcan et al.",
+        "date": "2026-08-24",
+        "url": "https://doi.org/10.1038/s41562-026-02550-0",
+        "source": "Nature Human Behaviour",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Deconstruyendo la personalidad kirchnerista",
+        "authors": "Maximiliano Emanuel Korstanje",
+        "date": "2026-09-17",
+        "url": "https://doi.org/10.57027/eikasia.53.2945",
+        "source": "Eikasía Revista de Filosofía",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Calibrating understanding in interaction",
+        "authors": "I-Ni Tsai",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1075/cld.00053.tsa",
+        "source": "Chinese Language and Discourse An International and Interdisciplinary Journal",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "UNGKAPAN IDIOMATIS DALAM BUDAYA MASYARAKAT MINANGKABAU",
+        "authors": "Fairul Zabadi",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.14203/widyariset.12.3.2009.53-60",
+        "source": "Widyariset",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Agentic Detection of Online Conspiracies",
         "authors": "Lior Biton, Oren Tsur",
         "date": "2026-09-24",
@@ -225,6 +463,8 @@
         "category": "cs.CL"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "JevOut: Natural Context Can Flip Decision Models",
         "authors": "Zixiang Xu",
         "date": "2026-09-24",
@@ -233,6 +473,8 @@
         "category": "cs.CL"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "SemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data",
         "authors": "Wenhao Li, Zhibin Wu, Chong Xiao et al.",
         "date": "2026-09-24",
@@ -241,6 +483,8 @@
         "category": "cs.CL"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
         "authors": "Debajyoti Mazumder, Mamta, Abhirama Subramanyam Penamakuri",
         "date": "2026-09-24",
@@ -249,6 +493,8 @@
         "category": "cs.CL"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "PoEM: Predicting RL Outcomes from Existing Policies",
         "authors": "Kimia Hamidieh, Giannis Daras, Antonio Torralba",
         "date": "2026-09-24",
@@ -257,32 +503,154 @@
         "category": "cs.CL"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
         "authors": "Ming Zhang, Zhenghao Xiang, Peizhong Gao et al.",
         "date": "2026-09-24",
         "url": "https://arxiv.org/abs/2609.30199v1",
         "source": "arXiv",
         "category": "cs.CL"
+      }
+    ],
+    "dinler": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Being Faithful to Christ in Different Contexts: Guidance from Paul’s Self-Presentation in his Letter to the Romans",
+        "authors": "Christoph W. Stenschke",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.5117/ejt2026.2.001.sten",
+        "source": "European Journal of Theology",
+        "category": "",
+        "cited": 1
       },
       {
-        "title": "ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints",
-        "authors": "Sriram Kannan, Swetha Saseendran, Vishnu Vardhan Reddy Kandi et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30184v1",
-        "source": "arXiv",
-        "category": "cs.CL"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Dölpopa, Shentong Buddhism, and the three jewels: an analytic-friendly analysis",
+        "authors": "Joseph E. Blado",
+        "date": "2026-08-31",
+        "url": "https://doi.org/10.1007/s44204-026-00442-8",
+        "source": "Asian Journal of Philosophy",
+        "category": "",
+        "cited": 1
       },
       {
-        "title": "Do Audio Language Models Hear and Read Distinctive Features Alike?",
-        "authors": "Yuanhao Chen, Peter Chin",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30167v1",
-        "source": "arXiv",
-        "category": "cs.CL"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Caiaphas’ Country Residence on the “Hill of Evil Council” According to Maria Valtorta",
+        "authors": "Emilio Matricciani",
+        "date": "2026-08-19",
+        "url": "https://doi.org/10.30845/ijhss.v16p17",
+        "source": "International Journal of Humanities and Social Science",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Independent Islamic University Model in Europe: A Comparative Study of Three Islamic Universities in the Netherlands",
+        "authors": "Cemal YILMAZ",
+        "date": "2026-08-13",
+        "url": "https://doi.org/10.15640/jisc.v14p1",
+        "source": "Journal of Islamic Studies and Culture",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Aimé Césaire, l’Amérique et la conscience noire",
+        "authors": "Kanaté Dahouda",
+        "date": "2026-08-08",
+        "url": "https://doi.org/10.1080/17409292.2026.2698307",
+        "source": "Contemporary French and Francophone Studies",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Maylis de Kerangal : les Etats-Unis, pays d’immigrations",
+        "authors": "Dominique Viart",
+        "date": "2026-08-08",
+        "url": "https://doi.org/10.1080/17409292.2026.2698295",
+        "source": "Contemporary French and Francophone Studies",
+        "category": "",
+        "cited": 1
       }
     ],
     "enerji": [
       {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Co-Optimizing Technical Performance and Community Affordability in Smart Solar Microgrids for Underserved Regions",
+        "authors": "Marvin Komi Nenubari, Olaoluwa Adeniji Ibukun",
+        "date": "2026-08-10",
+        "url": "https://doi.org/10.56201/ijemt.vol.6.no3.2020.pg173.212",
+        "source": "INTERNATIONAL JOURNAL OF ENGINEERING AND MODERN TECHNOLOGY",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Augmented reactive oxygen species generation in Ag/AgBr/C3N5 via LSPR-enhanced S-scheme charge transfer for efficient photocatalytic antibiotic wastewater remediation",
+        "authors": "Shijie Li, Rui Li, Yanping Liu et al.",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1016/s1872-2067(26)65106-6",
+        "source": "CHINESE JOURNAL OF CATALYSIS (CHINESE VERSION)",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Charging dynamics engineering: Quantum dots-induced full-space electric field cooperative Ag2S QDs/CoWO₄ S-scheme heterojunction boosting photocatalytic hydrogen evolution",
+        "authors": "Xiaolong Ma, Zhiqiang Wu, Huiqin Yao et al.",
+        "date": "2026-08-07",
+        "url": "https://doi.org/10.1016/s1872-2067(26)65147-9",
+        "source": "CHINESE JOURNAL OF CATALYSIS (CHINESE VERSION)",
+        "category": "",
+        "cited": 7
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Synergistic chloride resistance via hydrogen−bond network dynamic optimization and electrostatic repulsion for alkaline seawater oxidation",
+        "authors": "Wei Zuo, Mingyu Liu, Shengjun Sun et al.",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1016/s1872-2067(26)65100-5",
+        "source": "CHINESE JOURNAL OF CATALYSIS (CHINESE VERSION)",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Octahedral-coordinated Co3O4 for water electrolysis in acid",
+        "authors": "Yue Wang, Yujin Ji, Jing Zhou et al.",
+        "date": "2026-07-29",
+        "url": "https://doi.org/10.1038/s41586-026-10851-7",
+        "source": "Nature",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A deep learning method for solving stochastic optimal control problems driven by fully-coupled FBSDEs",
+        "authors": "Shaolin Ji, Shigē Péng, Ying Peng et al.",
+        "date": "2026-08-26",
+        "url": "https://doi.org/10.1016/j.cam.2026.118085",
+        "source": "Journal of Computational and Applied Mathematics",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Singularities of the cold plasma theory: Modeling challenges for ICRF operation in low-density edge plasma",
         "authors": "Wouter Tierens, Chris Klepper, Raymond Diab et al.",
         "date": "2026-09-24",
@@ -291,6 +659,8 @@
         "category": "physics.plasm-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "From Processing to Functionality: Engineering Accessible Material States in Cu-Embedded SiO$_x$ Memristive Devices",
         "authors": "Tobias Gergs, Rouven Lamprecht, Sahitya Yarragolla et al.",
         "date": "2026-09-24",
@@ -299,6 +669,8 @@
         "category": "physics.plasm-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Study of low-frequency core-edge coupling in a tokamak: III. Core-localized MHD continuum pulsations \\& distant forced reconnection",
         "authors": "Andreas Bierwage, Panith Adulsiriswad, Gyungjin Choi et al.",
         "date": "2026-09-24",
@@ -307,6 +679,8 @@
         "category": "physics.plasm-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Quasi-symmetric error field correction and applications to ITER",
         "authors": "Gwang-Geun Seo, Jong-Kyu Park, S. J. Han et al.",
         "date": "2026-09-24",
@@ -315,6 +689,8 @@
         "category": "physics.plasm-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Equation of state and transport coefficients of warm dense aluminum from mixed deterministic-stochastic density functional theory",
         "authors": "Zi Li, Weijie Li, Cong Wang et al.",
         "date": "2026-09-24",
@@ -323,48 +699,222 @@
         "category": "physics.plasm-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Production of a Titanium Ion Beam Using Fluorides and Fluorine-Forming Precursors in an ECR Ion Source",
         "authors": "D. K. Pugachev, K. I. Berestov, A. E. Bondarchenko et al.",
         "date": "2026-09-24",
         "url": "https://arxiv.org/abs/2609.29391v1",
         "source": "arXiv",
         "category": "physics.plasm-ph"
+      }
+    ],
+    "ezoterik": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Artificial intelligence for quantum computing",
+        "authors": "Yuri Alexeev, Marwa H. Farag, Taylor L. Patti et al.",
+        "date": "2025-12-02",
+        "url": "https://doi.org/10.1038/s41467-025-65836-3",
+        "source": "Nature Communications",
+        "category": "",
+        "cited": 40
       },
       {
-        "title": "Frequency-inference method for reduced modeling of energetic particle modes (EPM) utilizing resonant auto-optimization remnants of imperfect time-scale separation",
-        "authors": "Andreas Bierwage, Vinícius N. Duarte, Pablo Oyola et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29352v1",
-        "source": "arXiv",
-        "category": "physics.plasm-ph"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Legitimation, transmission, and continuity: exploring the heart-of-mind esoteric Buddhist tradition in contemporary China",
+        "authors": "Daohua Xu, Yaoping Liu",
+        "date": "2025-11-12",
+        "url": "https://doi.org/10.3389/fsoc.2025.1701436",
+        "source": "Frontiers in Sociology",
+        "category": "",
+        "cited": 1
       },
       {
-        "title": "PQLS: A Quasilinear Gyrokinetic Transport Solver with a Bayesian Saturation-Rule Closure",
-        "authors": "F. Wilms, A. Agrawal, J. J. Freigang et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29336v1",
-        "source": "arXiv",
-        "category": "physics.plasm-ph"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Thomas Taylor’s “Restoration” of Plato’s Esoteric Philosophy",
+        "authors": "Guido Nerger",
+        "date": "2026-07-27",
+        "url": "https://doi.org/10.1163/15700593-02602006",
+        "source": "Aries",
+        "category": "",
+        "cited": 0
       },
       {
-        "title": "CTrex: A Research-Oriented Framework for Kernel- and Projection-Level Algorithm Development in CT Reconstruction",
-        "authors": "Karel Desplenter, Wannes Goethals, Thomas De Schryver et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30166v1",
-        "source": "arXiv",
-        "category": "physics.app-ph"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Towards a Philosophy of Esotericism",
+        "authors": "Olli Petteri Pitkänen",
+        "date": "2026-07-27",
+        "url": "https://doi.org/10.1163/15700593-02602001",
+        "source": "Aries",
+        "category": "",
+        "cited": 0
       },
       {
-        "title": "Topological-Insulator Heterophase Gate Stacks for Transistor Electrostatics",
-        "authors": "Minuk Song, Jiwan Kim, MD Gius Uddin et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30016v1",
-        "source": "arXiv",
-        "category": "physics.app-ph"
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Like Attracts Like: principles of Kubravi esotericism in Mevlevi esotericism",
+        "authors": "Giselle Guilhon Antunes Camargo",
+        "date": "2026-05-14",
+        "url": "https://doi.org/10.66568/dirjv2i1a01",
+        "source": "DARUL IRFAN RESEARCH JOURNAL",
+        "category": "",
+        "cited": 0
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Towards Esoteric Futures beyond the Apocalypse",
+        "authors": "Gijs van Leeuwen",
+        "date": "2026-05-08",
+        "url": "https://doi.org/10.63934/6np5am84",
+        "source": "Futures Reframed",
+        "category": "",
+        "cited": 0
+      }
+    ],
+    "felsefe": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "La contingence du despote",
+        "authors": "Marc Richir",
+        "date": "2026-08-27",
+        "url": "https://doi.org/10.57027/eikasia.40.2408",
+        "source": "Eikasía Revista de Filosofía",
+        "category": "",
+        "cited": 6
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Ontología del hombre y deconstrucción: Heidegger, Sartre / Derrida, Sloterdijk",
+        "authors": "Leónides Fidalgo Benayas",
+        "date": "2026-09-16",
+        "url": "https://doi.org/10.57027/eikasia.51.2857",
+        "source": "Eikasía Revista de Filosofía",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "La formation de sens comme événement",
+        "authors": "László Tengelyi",
+        "date": "2026-08-07",
+        "url": "https://doi.org/10.57027/eikasia.34.2184",
+        "source": "Eikasía Revista de Filosofía",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Quantum instability of the de Sitter space",
+        "authors": "A. Polyakov",
+        "date": "2026-08-07",
+        "url": "https://doi.org/10.1142/s0217751x26470081",
+        "source": "International Journal of Modern Physics A",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "From Access to Power: Dalit Representation Deficits Across State, Market, and Cultural Institutions in Neoliberal India",
+        "authors": "Dileep Verma, Pushpender Yadav, Shashikant Nishant Sharma",
+        "date": "2026-08-06",
+        "url": "https://doi.org/10.1080/07360932.2026.2713445",
+        "source": "Forum for Social Economics",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Nietzsche desenmascara a Heidegger",
+        "authors": "Sergio Braulio Véliz Rodríguez, Antonio Montagud Micó",
+        "date": "2026-09-12",
+        "url": "https://doi.org/10.57027/eikasia.58.2783",
+        "source": "Eikasía Revista de Filosofía",
+        "category": "",
+        "cited": 2
       }
     ],
     "fizik": [
       {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A gas-enshrouded and gas-reddened black hole at cosmic dawn",
+        "authors": "Rohan P. Naidu, Jorryt Matthee, Harley Katz et al.",
+        "date": "2026-08-12",
+        "url": "https://doi.org/10.1038/s41586-026-10846-4",
+        "source": "Nature",
+        "category": "",
+        "cited": 36
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Spectral Methods for Immunization of Large Networks",
+        "authors": "Muhammad Ahmad, Juvaria Tariq, Mudassir Shabbir et al.",
+        "date": "2026-08-19",
+        "url": "https://doi.org/10.3127/ajis.v21i0.1563",
+        "source": "Journal of the Association for Information Systems",
+        "category": "",
+        "cited": 17
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Review of Particle Physics *",
+        "authors": "Particle Data Group, Fuminobu Takahashi, Ken‐ichi Hikasa et al.",
+        "date": "2026-08-05",
+        "url": "https://doi.org/10.1142/s0217751x26300115",
+        "source": "International Journal of Modern Physics A",
+        "category": "",
+        "cited": 15
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Symmetry-enriched topological order in tensor networks: Defects, gauging and anyon condensation",
+        "authors": "Dominic J. Williamson, Nick Bultinck, Frank Verstraete",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.22331/q-2026-09-01-2199",
+        "source": "Quantum",
+        "category": "",
+        "cited": 12
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Episodic super-Eddington accretion as a clue to overmassive black holes in the early Universe",
+        "authors": "Alessandro Trinca, Rosa Valiante, Raffaella Schneider et al.",
+        "date": "2026-08-27",
+        "url": "https://doi.org/10.1093/mnras/stag1608",
+        "source": "Monthly Notices of the Royal Astronomical Society",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Indirect searches for dark photon-photon tridents in celestial objects",
+        "authors": "Tim Linden, Thong T. Q. Nguyen, Tim M. P. Tait",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1088/1475-7516/2026/08/056",
+        "source": "Journal of Cosmology and Astroparticle Physics",
+        "category": "",
+        "cited": 9
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "A Narrow Neutrino Window for the LZ Event",
         "authors": "Vedran Brdar, Dibya S. Chattopadhyay",
         "date": "2026-09-24",
@@ -373,6 +923,8 @@
         "category": "hep-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Climate, Science, and the FCC: Think Clearly, Choose Wisely, Act Swiftly",
         "authors": "Patrick Janot, Christophe Grojean",
         "date": "2026-09-24",
@@ -381,6 +933,8 @@
         "category": "hep-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Separating coherent and incoherent photoproduction at an Electron-Ion Collider: Comparing lead, gold and silver beams",
         "authors": "Spencer R. Klein, Mathias C. Labonte",
         "date": "2026-09-24",
@@ -389,6 +943,8 @@
         "category": "hep-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "High-quality axion from chain seesaw",
         "authors": "Pei-Hong Gu",
         "date": "2026-09-24",
@@ -397,6 +953,8 @@
         "category": "hep-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Quenched Cosmological Collider Physics: Random fields & white noises",
         "authors": "Matheus Curado Ferreira",
         "date": "2026-09-24",
@@ -405,328 +963,86 @@
         "category": "hep-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Infrared Screening of the Cosmological Constant",
         "authors": "Vincenzo Branchina, Riccardo Gandolfo, Arcangelo Pernace",
         "date": "2026-09-24",
         "url": "https://arxiv.org/abs/2609.29979v1",
         "source": "arXiv",
         "category": "hep-ph"
-      },
-      {
-        "title": "Plasma Effects Suppress Mixing-Induced Collisional Freeze-In",
-        "authors": "Shao-Ping Li, Josef Pradler",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29911v1",
-        "source": "arXiv",
-        "category": "hep-ph"
-      },
-      {
-        "title": "Mass spectrum and decay widths of charmonium-like mesons: A diabatic approach with complex scaling",
-        "authors": "Zi-Zhao Zhang, Bo-Chao Liu",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29909v1",
-        "source": "arXiv",
-        "category": "hep-ph"
-      },
-      {
-        "title": "Simulation-Based Inference and Unbinned Asimov Construction with Hybrid Neural Density Estimation",
-        "authors": "Rafael Coelho Lopes de Sa, Jay Sandesara",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30196v1",
-        "source": "arXiv",
-        "category": "hep-ex"
-      },
-      {
-        "title": "From Hits to Tracks: A BERT-based Tracking Model for Track Reconstruction in Drift Chambers",
-        "authors": "Yipu Liao, Yao Zhang, Jingde Chen et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29338v1",
-        "source": "arXiv",
-        "category": "hep-ex"
       }
     ],
-    "kimya": [
+    "hukuk": [
       {
-        "title": "Response to Comment “Rethinking the Evidence for a Liquid–Liquid Transition in Water: What Decompression Experiments Reveal” [J. Chem. Phys. 164, 024506 (2026)]",
-        "authors": "Valeria Molinero, Rajat Kumar, Ingrid de Almeida Ribeiro et al.",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15009478/v1",
-        "source": "ChemRxiv",
-        "category": ""
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Hukum Progresif: Hukum yang Membebaskan",
+        "authors": "Satjipto Rahardjo",
+        "date": "2026-08-10",
+        "url": "https://doi.org/10.14710/hp.1.1.1-24",
+        "source": "Jurnal Hukum Progresif",
+        "category": "",
+        "cited": 85
       },
       {
-        "title": "Molecular Design and Interface Engineering of Self-Assembled Monolayers for Inverted Perovskite Solar Cells: A Data-Driven Review of Efficiency, Stability and Scalability",
-        "authors": "Soumyabir Guha",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15009477/v1",
-        "source": "ChemRxiv",
-        "category": ""
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Endogenous coalition formation in policy debates",
+        "authors": "Philip Leifeld, Laurence Brandenberger",
+        "date": "2026-08-10",
+        "url": "https://doi.org/10.1111/ajps.70079",
+        "source": "American Journal of Political Science",
+        "category": "",
+        "cited": 12
       },
       {
-        "title": "Eugenol Sustained Release from a Non-Innocent Zn-MOF for Antimicrobial Fruit Preservation",
-        "authors": "Miriam Abán, Inmaculada Larena, Fabrice Salles et al.",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15009476/v1",
-        "source": "ChemRxiv",
-        "category": ""
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Fairness Across the World",
+        "authors": "Ingvild Almås, Alexander W. Cappelen, Erik Ø. Sørensen et al.",
+        "date": "2026-09-06",
+        "url": "https://doi.org/10.1093/qje/qjag044",
+        "source": "The Quarterly Journal of Economics",
+        "category": "",
+        "cited": 6
       },
       {
-        "title": "(N-Hydroxy)amide-Mediated Ligation of Peptides in Chemical Protein Synthesis",
-        "authors": "Weifeng Wang, Yue Zhang, Haijun Yang et al.",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15009475/v1",
-        "source": "ChemRxiv",
-        "category": ""
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Cost Efficiency Analysis of Public Higher Education Institutions in Uzbekistan",
+        "authors": "Shukhrat Kholmuminov",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.37547/tajmei/volume08issue09-02",
+        "source": "The American Journal of Management and Economics Innovations",
+        "category": "",
+        "cited": 6
       },
       {
-        "title": "Influence of exchange–correlation functional on machine-learnt interatomic potentials accuracy: a systematic study in borosilicate glasses",
-        "authors": "Fengming Shi, Luca Brugnoli, François-Xavier Coudert",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15002879/v2",
-        "source": "ChemRxiv",
-        "category": ""
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "It’s not just geopolitics, stupid! Development, retroliberalism, and the EU’s Global Gateway",
+        "authors": "Maurizio Carbone",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1080/07036337.2026.2714068",
+        "source": "Journal of European Integration",
+        "category": "",
+        "cited": 6
       },
       {
-        "title": "Revealing the Deactivation Mechanism of Aconitase at the Atomistic Level by Multiscale Simulations",
-        "authors": "Michael Stier, Kristyna Pluhackova, Johannes Kästner",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15009474/v1",
-        "source": "ChemRxiv",
-        "category": ""
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Pembangunan Hukum Negara dalam Masyarakat Multikultural: Perspektif Hukum Progresif",
+        "authors": "I Nyoman Nurjaya",
+        "date": "2026-08-10",
+        "url": "https://doi.org/10.14710/jhp.3.2.16",
+        "source": "Jurnal Hukum Progresif",
+        "category": "",
+        "cited": 6
       },
       {
-        "title": "Topologically-constrained toehold-mediated strand displacement",
-        "authors": "Andrew Stannard, Aditya Sengar, Alexander H. Clowsley et al.",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15009472/v1",
-        "source": "ChemRxiv",
-        "category": ""
-      },
-      {
-        "title": "Tweaking the Water Rigidity at Noble Metal Interfaces for Enhanced Alkaline Hydrogen Production via myo-Inositol Coating - A Bioinspired Approach",
-        "authors": "Nandita Mohandas, Alex Joseph, Anusha P. P. et al.",
-        "date": "2026-09-25",
-        "url": "https://doi.org/10.26434/chemrxiv.15009471/v1",
-        "source": "ChemRxiv",
-        "category": ""
-      },
-      {
-        "title": "Large integration time-step in molecular dynamics simulation artificially enhances the strength of hydrophobic interaction",
-        "authors": "Dilipkumar N. Asthagiri",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30109v1",
-        "source": "arXiv",
-        "category": "physics.chem-ph"
-      },
-      {
-        "title": "Ultrafast Electron Microscopy: A Quantitative Platform for Nonequilibrium Materials Research",
-        "authors": "David J. Flannigan, Swarit Ahmed Shadman",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30084v1",
-        "source": "arXiv",
-        "category": "physics.chem-ph"
-      }
-    ],
-    "matematik": [
-      {
-        "title": "Multivariate Quandles as Groupoid Invariants",
-        "authors": "Xerxes D. Arsiwalla, Louis H. Kauffman",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30262v1",
-        "source": "arXiv",
-        "category": "math"
-      },
-      {
-        "title": "Thresholds and spread in set systems of bounded VC-dimension",
-        "authors": "Chong Shangguan",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30263v1",
-        "source": "arXiv",
-        "category": "math"
-      },
-      {
-        "title": "A 1/64 spectral gap for surfaces with $δ=1/2$",
-        "authors": "Alex Cohen, Semyon Dyatlov",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30261v1",
-        "source": "arXiv",
-        "category": "math"
-      },
-      {
-        "title": "A quasisymmetric analog of Grassmannian Schubert varieties",
-        "authors": "Teddy Gonzales, Tuong Le, Chayim Lowen",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30257v1",
-        "source": "arXiv",
-        "category": "math"
-      },
-      {
-        "title": "The Moreau-Yosida approximation of the Entanglement of Formation: basic properties and accuracy estimates",
-        "authors": "M. E. Shirokov",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30246v1",
-        "source": "arXiv",
-        "category": "math"
-      },
-      {
-        "title": "A Peterson program for general Schubert varieties and mirror symmetry",
-        "authors": "Changzheng Li, Konstanze Rietsch, Mingzhi Yang",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30242v1",
-        "source": "arXiv",
-        "category": "math"
-      },
-      {
-        "title": "Multiple Stopping Options on a Geometric Random Walk",
-        "authors": "Katsunori Ano",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30239v1",
-        "source": "arXiv",
-        "category": "math"
-      },
-      {
-        "title": "Proximity operator of the weighted squared $\\ell_{2,\\infty}$ norm with applications",
-        "authors": "Sergio López-Rivera",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30237v1",
-        "source": "arXiv",
-        "category": "math"
-      }
-    ],
-    "psikoloji": [
-      {
-        "title": "Rethinking Group Differences in Psychopathology Networks: A Slow–Fast Perspective on Context and Symptom Activation",
-        "authors": "Kyuri Park, Denny Borsboom, Michael Lees et al.",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/u8wf5_v2/",
-        "source": "PsyArXiv",
-        "category": ""
-      },
-      {
-        "title": "Displayed judgment certainty reorganizes source selection in self-formed networks",
-        "authors": "Gaël Carniel, Frédéric Moisan, Alain Barrat et al.",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/fja3d_v3/",
-        "source": "PsyArXiv",
-        "category": ""
-      },
-      {
-        "title": "Resting-State Functional Connectivity in Antipsychotic-Naïve First-Episode Psychosis: A Systematic Review of Network Alterations and Preprocessing Heterogeneity",
-        "authors": "Ayla Ihsan, Ather, Joaquim Radua",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/n6kc7_v1/",
-        "source": "PsyArXiv",
-        "category": ""
-      },
-      {
-        "title": "Advancing Global Social Science through Cross-Societal Online Behavioral Economic Games (CoBEx): Lessons Learned and A Practical Guide",
-        "authors": "Shuxian Jin, Vanessa Clemens, Laura C. Hoenig et al.",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/89c7p_v1/",
-        "source": "PsyArXiv",
-        "category": ""
-      },
-      {
-        "title": "Who can re-enter the loop? A scoping review on cognitive abilities and task re-engagement in human-AI interaction",
-        "authors": "Han Zhang, Bianca Done, Stefanie Schneider et al.",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/mhvts_v2/",
-        "source": "PsyArXiv",
-        "category": ""
-      },
-      {
-        "title": "Prediction-error tolerance: Error attribution as the hinge between inquiry and the self",
-        "authors": "Tomoko Sakai, Kazuhiro Hayashi, Norihiro Sadato",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/j6rct_v1/",
-        "source": "PsyArXiv",
-        "category": ""
-      },
-      {
-        "title": "Predicting Memberships from Memory.",
-        "authors": "Luigi Grisoni",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/qkdpw_v3/",
-        "source": "PsyArXiv",
-        "category": ""
-      },
-      {
-        "title": "Beyond an Ethos or Inflexible Checklist of Research Practices: Grounding Open Science in a Biomedical Research Ethics Framework",
-        "authors": "P. Priscilla Lui",
-        "date": "2026-09-27",
-        "url": "https://osf.io/preprints/psyarxiv/ctwzb_v1/",
-        "source": "PsyArXiv",
-        "category": ""
-      }
-    ],
-    "tip": [
-      {
-        "title": "Childhood and adolescent immunisation intentions post-COVID-19 in Lusaka, Zambia",
-        "authors": "Nyasa, M., Sharma, A., Kerkhoff, A. D. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363608v1",
-        "source": "medRxiv",
-        "category": "public and global health"
-      },
-      {
-        "title": "Predictors of modern contraceptive use among reproductive-aged women (15-49 years) in Mozambique: Evidence from Mozambique Demographic and Health Survey.",
-        "authors": "Shakurun, N., Andre, F., Muhajarine, N.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363579v1",
-        "source": "medRxiv",
-        "category": "public and global health"
-      },
-      {
-        "title": "Nipah vaccine and monoclonal antibody introduction: Understanding endemic and at-risk country perspectives to inform demand forecasting",
-        "authors": "Dinkel, K. A., Ruisch, A., Mathur, I. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363632v1",
-        "source": "medRxiv",
-        "category": "public and global health"
-      },
-      {
-        "title": "Prevalence of malaria among pregnant women attending ANC at public health institutions in Damote-Gale district, Southern Ethiopia",
-        "authors": "Kussa, Y., Lema, S.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363605v1",
-        "source": "medRxiv",
-        "category": "public and global health"
-      },
-      {
-        "title": "Schizophrenia-associated polygenic liability and structural genomic risk demonstrate broadly distributed neuropsychiatric associations in the All of Us Research Program",
-        "authors": "Wells, A. M., Dang, A., Ruiz Laza, A.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363600v1",
-        "source": "medRxiv",
-        "category": "psychiatry and clinical psychology"
-      },
-      {
-        "title": "Social Isolation and All-Cause and Cause-Specific Mortality in the UK Biobank: The Modifying Role of Non-Commute Transportation Mode",
-        "authors": "Hum, E. D., Lapointe, Y., Baumgartner, J. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363514v1",
-        "source": "medRxiv",
-        "category": "epidemiology"
-      },
-      {
-        "title": "Wastewater metagenomic sequencing enables broad pathogen and resistome monitoring in Lagos, Nigeria",
-        "authors": "Parker, E., Oladipo, F., Levy, J. I. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363641v1",
-        "source": "medRxiv",
-        "category": "epidemiology"
-      },
-      {
-        "title": "High stakes, low information, no roads: a qualitative evaluation of determinants of air ambulance utilization and decision making in rural Alaska",
-        "authors": "Rice, B., Berger, B., Onders, R. et al.",
-        "date": "2026-09-23",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363602v1",
-        "source": "medRxiv",
-        "category": "emergency medicine"
-      }
-    ],
-    "toplum": [
-      {
+        "kind": "preprint",
+        "via": "SocArXiv",
         "title": "Assessing and identifying special protection needs among refugees in the EU: Overview and Synthesis of Evidence and Policy Recommendations",
         "authors": "Niklas Nutsch, Maren Hintermeier, Andreas W. Gold et al.",
         "date": "2026-09-27",
@@ -735,6 +1051,8 @@
         "category": ""
       },
       {
+        "kind": "preprint",
+        "via": "SocArXiv",
         "title": "Provisioning for human needs at low resource use: institutional lessons from Cuba, Costa Rica and Ecuador",
         "authors": "Chirag Dhara, Gustav Cederlöf, Viviana Cordero et al.",
         "date": "2026-09-27",
@@ -743,6 +1061,8 @@
         "category": ""
       },
       {
+        "kind": "preprint",
+        "via": "SocArXiv",
         "title": "Living Arrangements, Going Outdoors, and Well-Being Among Older Persons: Examining Their Associations in a Swedish Population",
         "authors": "Jeanette Melin, Marie-Louise Möllerberg, Marit Preuter et al.",
         "date": "2026-09-27",
@@ -751,6 +1071,8 @@
         "category": ""
       },
       {
+        "kind": "preprint",
+        "via": "SocArXiv",
         "title": "An Assessment of the Vanderbilt-Washington University Report on Sociology",
         "authors": "Julian Go",
         "date": "2026-09-26",
@@ -759,6 +1081,8 @@
         "category": ""
       },
       {
+        "kind": "preprint",
+        "via": "SocArXiv",
         "title": "‘Intersectionality in the Mind’: Applying an Intersectional Lens to the Study of Lay Perceptions of Inequality",
         "authors": "Margherita Cusmano",
         "date": "2026-09-26",
@@ -767,32 +1091,1134 @@
         "category": ""
       },
       {
+        "kind": "preprint",
+        "via": "SocArXiv",
         "title": "Systematic Evaluation of Nation-State Propaganda in LLM Outputs",
         "authors": "Kevin T. Greene, Jacob N Shapiro",
         "date": "2026-09-26",
         "url": "https://osf.io/preprints/socarxiv/57buw_v2/",
         "source": "SocArXiv",
         "category": ""
+      }
+    ],
+    "ilk-bilgiler": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A sunken ship cargo of 500 bipyramidal bars? Implications for La Tène period iron production and trade along the Danube",
+        "authors": "Peter Trebsche, Marion Berranger",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.15184/aqy.2026.10404",
+        "source": "Antiquity",
+        "category": "",
+        "cited": 1
       },
       {
-        "title": "Delisting and dispersal: author communities before and after removal from Scopus",
-        "authors": "Marek Deja",
-        "date": "2026-09-26",
-        "url": "https://osf.io/preprints/socarxiv/myj89_v2/",
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A model carbonized papyrus scroll opens a novel path to identifying readable scrolls of the Herculaneum Library",
+        "authors": "Douglas Seiler, Jacob Michael LaManna, Michael McOsker et al.",
+        "date": "2026-09-16",
+        "url": "https://doi.org/10.1371/journal.pone.0353485",
+        "source": "PLoS ONE",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Large estimated size of the Australian Indigenous population before its extensive decline following colonial invasion",
+        "authors": "Alan N. Williams, Raymond Tobler, Billy Griffiths et al.",
+        "date": "2026-09-15",
+        "url": "https://doi.org/10.1038/s41562-026-02571-9",
+        "source": "Nature Human Behaviour",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "MINDING THE GAP: A METHODOLOGICAL AND CHRONOLOGICAL REASSESSMENT OF EASTERN MEDITERRANEAN PURPLE‐DYE PRODUCTION IN THE BRONZE AND IRON AGES",
+        "authors": "Golan Shalvi",
+        "date": "2026-09-11",
+        "url": "https://doi.org/10.1111/ojoa.70027",
+        "source": "Oxford Journal of Archaeology",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Os Cemitérios da Guerra do Contestado (1912-1916): aspectos historiográficos e arqueológicos",
+        "authors": "Jaisson Teixeira Lino",
+        "date": "2026-09-08",
+        "url": "https://doi.org/10.18224/hab.v10.2.2012.187-201",
+        "source": "Revista Habitus - Revista do Instituto Goiano de Pré-História e Antropologia",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Influence of Hausa Culture On Contemporary Architectural Identity in Bauchi, Nigeria",
+        "authors": "Saleh Bappah, Henry Emusa, Benjamin Atai",
+        "date": "2026-09-06",
+        "url": "https://doi.org/10.64488/kwmij.v2i2.42",
+        "source": "Knowledge Web Multidisciplinary International Journal",
+        "category": "",
+        "cited": 1
+      }
+    ],
+    "kelam": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Geology of the central Kohistan Arc, Northern Swat, Kalam (NW, Pakistan), results of a new 1:50,000 scale geological mapping",
+        "authors": "Tanveer Ahmad, M. Qasim Jan, Kirsten Drüppel",
+        "date": "2025-10-30",
+        "url": "https://doi.org/10.1080/17445647.2025.2572765",
+        "source": "Journal of Maps",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Teaching Maharah Al-Kalam Through Digital Media in Higher Education",
+        "authors": "Aniqah Laili Abidah, Agung Setiyawan, M. Naufal Al Qurthuby Fuady S et al.",
+        "date": "2026-05-15",
+        "url": "https://doi.org/10.29240/jba.v10i1.13553",
+        "source": "ARABIYATUNA Jurnal Bahasa Arab",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Development of Kalam Flipbook Media for Arabic Speaking Skills of Students Grade X Madrasah Aliyah in Semarang City",
+        "authors": "Ruby Syahira, Zukhaira",
+        "date": "2026-05-13",
+        "url": "https://doi.org/10.29240/jba.v10i1.15817",
+        "source": "ARABIYATUNA Jurnal Bahasa Arab",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Efficacy of Pedagogical Modeling in Developing Arabic Speaking Skills (Maharah al-Kalam): A Case Study",
+        "authors": "KMA Ahamed Zubair",
+        "date": "2026-02-16",
+        "url": "https://doi.org/10.58363/ijael.v2i1.955",
+        "source": "Indonesian Journal of Arabic Education and Learning",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Efektivitas Pembelajaran al-‘Arabiyyah Bayna Yadayk terhadap Kemampuan Kalam Santriwati MTs Al-Islam: Studi Komparatif Short-Term vs Long-Term Memory",
+        "authors": "Eka Sandri Yusuf, Ratni Bt. Hj. Bahri, Raya Samir Abdulrahman Al-Rajabi",
+        "date": "2025-12-31",
+        "url": "https://doi.org/10.24256/jale.v8i2.9208",
+        "source": "AL IBRAH Journal of Arabic Languange Education",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Dimensions of Kalam Khabari and Kalam Insya’i in The Quran and Implications for Educational Values (A Study from the Perspective of ‘Ilm al Ma‘ani)",
+        "authors": "Ildha Amanda, Ferki Ahmad Marlion, Zabila Refania et al.",
+        "date": "2026-06-27",
+        "url": "https://doi.org/10.30983/huruf.v6i1.11143",
+        "source": "HuRuf Journal International Journal of Arabic Applied Linguistic",
+        "category": "",
+        "cited": 0
+      }
+    ],
+    "kimya": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Catalytic enantioselective construction of spiro stereocenters: recent advances and perspectives",
+        "authors": "Junsong Tian, Tao Wang, Bo‐Shuai Mu et al.",
+        "date": "2026-09-20",
+        "url": "https://doi.org/10.1007/s11426-026-3409-4",
+        "source": "Science China Chemistry",
+        "category": "",
+        "cited": 6
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Bifacial ladder polymers enabled by chirality-assisted synthesis that exhibit self-assembly and chirality-induced spin selectivity",
+        "authors": "Fumitaka Ishiwari, Kazuharu Murotani, Akinori Saeki",
+        "date": "2026-08-03",
+        "url": "https://doi.org/10.1038/s41467-026-76059-5",
+        "source": "Nature Communications",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Skylark vocalization-inspired photoacoustic spectroscopy dual-component sensor based on a double-helix Helmholtz photoacoustic cell",
+        "authors": "Xuan Yang, Ying He, Chu Zhang et al.",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1016/j.snb.2026.140602",
+        "source": "Sensors and Actuators B Chemical",
+        "category": "",
+        "cited": 5
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Two-dimensional topological quantum chemistry and catalog of topological materials",
+        "authors": "Urko Petralanda, Yi Jiang, Hanqi Pi et al.",
+        "date": "2026-09-24",
+        "url": "https://doi.org/10.1126/science.adu2107",
+        "source": "Science",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Asymptotics for Graphically Divergent Series: Dense Digraphs and 2-SAT Formulae",
+        "authors": "Sergey Dovgal, Khaydar Nurligareev",
+        "date": "2026-09-11",
+        "url": "https://doi.org/10.37236/13857",
+        "source": "The Electronic Journal of Combinatorics",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Evidence for phenylium reactivity under interstellar-relevant conditions",
+        "authors": "Jean‐Christophe Loison, Corentin Rossi, Nicolas Solem et al.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1038/s41550-026-02973-9",
+        "source": "Nature Astronomy",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "preprint",
+        "via": "ChemRxiv",
+        "title": "Response to Comment “Rethinking the Evidence for a Liquid–Liquid Transition in Water: What Decompression Experiments Reveal” [J. Chem. Phys. 164, 024506 (2026)]",
+        "authors": "Valeria Molinero, Rajat Kumar, Ingrid de Almeida Ribeiro et al.",
+        "date": "2026-09-25",
+        "url": "https://doi.org/10.26434/chemrxiv.15009478/v1",
+        "source": "ChemRxiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "ChemRxiv",
+        "title": "Molecular Design and Interface Engineering of Self-Assembled Monolayers for Inverted Perovskite Solar Cells: A Data-Driven Review of Efficiency, Stability and Scalability",
+        "authors": "Soumyabir Guha",
+        "date": "2026-09-25",
+        "url": "https://doi.org/10.26434/chemrxiv.15009477/v1",
+        "source": "ChemRxiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "ChemRxiv",
+        "title": "Eugenol Sustained Release from a Non-Innocent Zn-MOF for Antimicrobial Fruit Preservation",
+        "authors": "Miriam Abán, Inmaculada Larena, Fabrice Salles et al.",
+        "date": "2026-09-25",
+        "url": "https://doi.org/10.26434/chemrxiv.15009476/v1",
+        "source": "ChemRxiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "ChemRxiv",
+        "title": "(N-Hydroxy)amide-Mediated Ligation of Peptides in Chemical Protein Synthesis",
+        "authors": "Weifeng Wang, Yue Zhang, Haijun Yang et al.",
+        "date": "2026-09-25",
+        "url": "https://doi.org/10.26434/chemrxiv.15009475/v1",
+        "source": "ChemRxiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "ChemRxiv",
+        "title": "Influence of exchange–correlation functional on machine-learnt interatomic potentials accuracy: a systematic study in borosilicate glasses",
+        "authors": "Fengming Shi, Luca Brugnoli, François-Xavier Coudert",
+        "date": "2026-09-25",
+        "url": "https://doi.org/10.26434/chemrxiv.15002879/v2",
+        "source": "ChemRxiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "ChemRxiv",
+        "title": "Revealing the Deactivation Mechanism of Aconitase at the Atomistic Level by Multiscale Simulations",
+        "authors": "Michael Stier, Kristyna Pluhackova, Johannes Kästner",
+        "date": "2026-09-25",
+        "url": "https://doi.org/10.26434/chemrxiv.15009474/v1",
+        "source": "ChemRxiv",
+        "category": ""
+      }
+    ],
+    "matematik": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "An outline of shifted Poisson structures and deformation quantisation in derived differential geometry",
+        "authors": "J. P. Pridham",
+        "date": "2026-07-29",
+        "url": "https://doi.org/10.1016/j.difgeo.2026.102420",
+        "source": "Differential Geometry and its Applications",
+        "category": "",
+        "cited": 17
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Skeins on branes",
+        "authors": "Tobias Ekholm, Vivek Shende",
+        "date": "2026-09-08",
+        "url": "https://doi.org/10.5802/pmihes.30",
+        "source": "Publications mathématiques de l IHÉS",
+        "category": "",
+        "cited": 16
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Selecting the number of components in PCA via random signflips",
+        "authors": "David Ke Hong, Yue Sheng, Edgar Dobriban",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.1080/01621459.2026.2719861",
+        "source": "Journal of the American Statistical Association",
+        "category": "",
+        "cited": 14
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Faster Hamiltonian Monte Carlo by learning leapfrog scale: an offline randomized solution",
+        "authors": "Changye Wu, Pierre Pudlo, Christian P. Robert et al.",
+        "date": "2026-09-23",
+        "url": "https://doi.org/10.1007/s11222-026-10972-z",
+        "source": "Statistics and Computing",
+        "category": "",
+        "cited": 13
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "On the critical branching random walk I: branching capacity and visiting probability",
+        "authors": "Qingsan Zhu",
+        "date": "2026-08-22",
+        "url": "https://doi.org/10.1007/s00440-026-01530-9",
+        "source": "Probability Theory and Related Fields",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "GORENSTEIN FANO POLYTOPES ARISING FROM ORDER POLYTOPES AND CHAIN POLYTOPES",
+        "authors": "Takayuki Hibi, Kazunori Matsuda, Akiyoshi Tsuchiya",
+        "date": "2026-07-29",
+        "url": "https://doi.org/10.1216/jca.2026.18.189",
+        "source": "Journal of Commutative Algebra",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "Multivariate Quandles as Groupoid Invariants",
+        "authors": "Xerxes D. Arsiwalla, Louis H. Kauffman",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30262v1",
+        "source": "arXiv",
+        "category": "math"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "Thresholds and spread in set systems of bounded VC-dimension",
+        "authors": "Chong Shangguan",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30263v1",
+        "source": "arXiv",
+        "category": "math"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "A 1/64 spectral gap for surfaces with $δ=1/2$",
+        "authors": "Alex Cohen, Semyon Dyatlov",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30261v1",
+        "source": "arXiv",
+        "category": "math"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "A quasisymmetric analog of Grassmannian Schubert varieties",
+        "authors": "Teddy Gonzales, Tuong Le, Chayim Lowen",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30257v1",
+        "source": "arXiv",
+        "category": "math"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "The Moreau-Yosida approximation of the Entanglement of Formation: basic properties and accuracy estimates",
+        "authors": "M. E. Shirokov",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30246v1",
+        "source": "arXiv",
+        "category": "math"
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
+        "title": "A Peterson program for general Schubert varieties and mirror symmetry",
+        "authors": "Changzheng Li, Konstanze Rietsch, Mingzhi Yang",
+        "date": "2026-09-24",
+        "url": "https://arxiv.org/abs/2609.30242v1",
+        "source": "arXiv",
+        "category": "math"
+      }
+    ],
+    "mitoloji": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "From Turkish Mythology to Alevi–Bektashi Sacred Narratives: A Phenomenological Analysis of Animal Imagery",
+        "authors": "Haktan Kaplan",
+        "date": "2026-01-29",
+        "url": "https://doi.org/10.3390/rel17020155",
+        "source": "Religions",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "THE MYTHOLOGY OF HISTORY AS A TOOL OF HOSTILE PROPAGANDA IN THE CONDITIONS OF THE RUSSIAN-UKRAINIAN WAR",
+        "authors": "Ivan Kovalchuk",
+        "date": "2026-05-29",
+        "url": "https://doi.org/10.35433/history.112113",
+        "source": "Intermarum history policy culture",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Just a meme? The role of context in mythologies of memetic misogyny",
+        "authors": "Suay Melisa Özkula, Patricia Prieto Blanco",
+        "date": "2026-04-01",
+        "url": "https://doi.org/10.1177/14614448251396942",
+        "source": "New Media & Society",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Harbingers of good fortune and eternel vitality: religious and secular representations and traditions in deer mythology in Tibet and the Himalayas",
+        "authors": "Amy Heller",
+        "date": "2026-03-13",
+        "url": "https://doi.org/10.5252/anthropozoologica2026v61a3",
+        "source": "Anthropozoologica",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Mythologies of Wealth in Platform Economies: The Case of the Ride-Hailing Platform Didi in China",
+        "authors": "Jack Linzhou Xing, Jun Zhang, Gonçalo Santos",
+        "date": "2025-12-15",
+        "url": "https://doi.org/10.1177/01622439251398910",
+        "source": "Science Technology & Human Values",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Reconfiguration and Dialogism: The Evolution of Chinese Mythology from Antiquity to Modernity according to Bakhtin's Theory",
+        "authors": "Bella Akhmedovna Bulgarova, Duan Xiaoxiao, Ekaterina Stanislavovna Kozlovskaya et al.",
+        "date": "2025-11-01",
+        "url": "https://doi.org/10.7256/2454-0749.2025.11.76583",
+        "source": "Филология научные исследования",
+        "category": "",
+        "cited": 1
+      }
+    ],
+    "parapsikoloji": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "RETRACTED: Universal consciousness as foundational field: A theoretical bridge between quantum physics and non-dual philosophy",
+        "authors": "Maria Strømme",
+        "date": "2025-11-01",
+        "url": "https://doi.org/10.1063/5.0290984",
+        "source": "AIP Advances",
+        "category": "",
+        "cited": 7
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Rereading Myers: From the Subliminal to the Transliminal",
+        "authors": "Renaud Évrard",
+        "date": "2025-12-19",
+        "url": "https://doi.org/10.63499/esz30047",
+        "source": "Journal of the Society for Psychical Research",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Grand Manuel de Parapsychologie Scientifique [Grand Manual of Scientific Parapsychology]",
+        "authors": "Charles Emmons",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.63499/pv5awr96",
+        "source": "Journal of the Society for Psychical Research",
+        "category": "",
+        "cited": 0
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Myth of Publication Bias in Psi Research: A Comparison Between Parapsychology and Mainstream Psychology",
+        "authors": "Patrizio Emmanuele Tressoldi, Lance Storm",
+        "date": "2026-07-07",
+        "url": "https://doi.org/10.31275/20263793",
+        "source": "Journal of Scientific Exploration",
+        "category": "",
+        "cited": 0
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Study preregistration: an early example and analysis",
+        "authors": "Richard Wiseman, Caroline A. Watt",
+        "date": "2026-05-25",
+        "url": "https://doi.org/10.7717/peerj.21360",
+        "source": "PeerJ",
+        "category": "",
+        "cited": 0
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Theoretical exploration of yogic and parapsychological correlations: A Neuropsychological perspective based on teachings of the Haṭha Yoga Pradīpikā",
+        "authors": "Narathota SNL, Karunaratne H.K.B.M.S.",
+        "date": "2026-05-08",
+        "url": "https://doi.org/10.30574/wjarr.2026.30.2.1135",
+        "source": "World Journal of Advanced Research and Reviews",
+        "category": "",
+        "cited": 0
+      }
+    ],
+    "psikoloji": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Inferring brain-wide interactions using data-constrained recurrent neural network models",
+        "authors": "Matthew G. Perich, Charlotte Arlt, Sofia Soares et al.",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1016/j.neuron.2026.07.016",
+        "source": "Neuron",
+        "category": "",
+        "cited": 67
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Strong and localized recurrence controls the dimensionality of neural activity across brain areas",
+        "authors": "David Dahmen, Stefano Recanatesi, Xiaoxuan Jia et al.",
+        "date": "2026-08-19",
+        "url": "https://doi.org/10.1038/s41593-026-02395-w",
+        "source": "Nature Neuroscience",
+        "category": "",
+        "cited": 30
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Electrophysiological Indices of Hierarchical Speech Processing Differentially Reflect the Comprehension of Speech in Noise",
+        "authors": "Shyanthony R. Synigal, Andrew James Anderson, Edmund C. Lalor",
+        "date": "2026-08-25",
+        "url": "https://doi.org/10.1523/eneuro.0069-26.2026",
+        "source": "eNeuro",
+        "category": "",
+        "cited": 14
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Psychedelics align brain activity with context",
+        "authors": "Devon Stoliker, Leonardo Novelli, M. Amin Khajehnejad et al.",
+        "date": "2026-08-19",
+        "url": "https://doi.org/10.1038/s41586-026-10910-z",
+        "source": "Nature",
+        "category": "",
+        "cited": 11
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Enhancing Performance and User Engagement in Everyday Stress Monitoring: A Context-Aware Active Reinforcement Learning Approach",
+        "authors": "Seyed Amir Hossein Aqajari, Ziyu Wang, Ali Tazarv et al.",
+        "date": "2026-08-06",
+        "url": "https://doi.org/10.1145/3837063",
+        "source": "ACM Transactions on Computing for Healthcare",
+        "category": "",
+        "cited": 7
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A Unified Framework for Human–AI Collaboration in Security Operations Centers with Trusted Autonomy",
+        "authors": "Ahmad Mohsin, Helge Janicke, Ahmed Jamal Ibrahim et al.",
+        "date": "2026-07-30",
+        "url": "https://doi.org/10.1145/3837073",
+        "source": "ACM Transactions on Internet Technology",
+        "category": "",
+        "cited": 7
+      },
+      {
+        "kind": "preprint",
+        "via": "PsyArXiv",
+        "title": "“It's my destiny.”: A Qualitative Exploration of Motivating Factors for submissives who Hold BDSM and Kink Identities",
+        "authors": "Briana Louise Kunstman, Jaime Derringer",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/dqghy_v1/",
+        "source": "PsyArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "PsyArXiv",
+        "title": "Toward a Multidimensional Operationalization of Feminist Identity: Associations with Sexism and Weight Bias",
+        "authors": "Daemon St-James, Annie Raymond, Annie Duchesne et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/k48fz_v1/",
+        "source": "PsyArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "PsyArXiv",
+        "title": "Differential Effects of Types of Momentary Social Support on Mood and Anxiety in Patients with Depression",
+        "authors": "Annalena Jachnik, Martin Weiß, Julian Gutzeit et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/58gvq_v1/",
+        "source": "PsyArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "PsyArXiv",
+        "title": "Rethinking Group Differences in Psychopathology Networks: A Slow–Fast Perspective on Context and Symptom Activation",
+        "authors": "Kyuri Park, Denny Borsboom, Michael Lees et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/u8wf5_v2/",
+        "source": "PsyArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "PsyArXiv",
+        "title": "Displayed judgment certainty reorganizes source selection in self-formed networks",
+        "authors": "Gaël Carniel, Frédéric Moisan, Alain Barrat et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/fja3d_v3/",
+        "source": "PsyArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "PsyArXiv",
+        "title": "Resting-State Functional Connectivity in Antipsychotic-Naïve First-Episode Psychosis: A Systematic Review of Network Alterations and Preprocessing Heterogeneity",
+        "authors": "Ayla Ihsan, Ather, Joaquim Radua",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/n6kc7_v1/",
+        "source": "PsyArXiv",
+        "category": ""
+      }
+    ],
+    "sanat": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Influence of a Conductor’s Expressive Intention on Group Cohesion Within a Choir and the Quality of the Performance",
+        "authors": "Yui Katada, Ichiro Kita",
+        "date": "2026-09-15",
+        "url": "https://doi.org/10.15640/ijmpa.v13p4",
+        "source": "International Journal of Music and Performing Arts",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "From the “sticker” to the “seed” slide: Challenges testing concurrent tooling in Goffin's cockatoos",
+        "authors": "J.A.D. Colbourne, S.R. Beck, S. Tebbich et al.",
+        "date": "2026-09-11",
+        "url": "https://doi.org/10.1016/j.actpsy.2026.107787",
+        "source": "Acta Psychologica",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Exploratory profiles of theatre arts teachers in Latvia based on their orientations toward educational goals",
+        "authors": "Reinis Vējiņš, Manuel Joaquín Fernández González, Iveta Ķestere",
+        "date": "2026-09-10",
+        "url": "https://doi.org/10.3389/feduc.2026.1895758",
+        "source": "Frontiers in Education",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "La phantasia « perceptive » dans le champ esthétique",
+        "authors": "Stéphane Finetti",
+        "date": "2026-09-08",
+        "url": "https://doi.org/10.57027/eikasia.66.2598",
+        "source": "Eikasía Revista de Filosofía",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Student Perspectives on Curriculum Diversification in Higher Music Education: Contrasting Encounters With Iranian and Aboriginal Australian Music",
+        "authors": "Alex Chilvers, Jean Wong, Majid Amani et al.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.1177/1321103x261465592",
+        "source": "Research Studies in Music Education",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Assessment of Key Cultural Elements Representing Hausa Cultural Identity",
+        "authors": "Jesse Bodam Kukwi, Henry Emusa, Abraham Atai",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.64488/kwmij.v2i2.40",
+        "source": "Knowledge Web Multidisciplinary International Journal",
+        "category": "",
+        "cited": 1
+      }
+    ],
+    "tasavvuf": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Researching a new religious phenomenon of the Central Asia: Digital Sufism",
+        "authors": "Bekzhan A Azhimov, Nurlan Kairbekov, Jolaman Bulan et al.",
+        "date": "2026-01-01",
+        "url": "https://doi.org/10.55221/2693-2229.2710",
+        "source": "Occasional Papers on Religion in Eastern Europe",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Reconstructing Islamic Education Management through Prophetic Leadership and Sufism in Educational Institutions",
+        "authors": "Fadhilah Hanjani Putri, Ahmad Barizi, Nur Ismiyahyi et al.",
+        "date": "2026-08-05",
+        "url": "https://doi.org/10.69900/ag.v6i6.673",
+        "source": "Al Ghazali.",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "THE DIMENSION OF SUFISM IN THE VERSES OF HAJJ",
+        "authors": "Eko Suryaddin Zain, Muhammad Zulfikar Nur Falah",
+        "date": "2026-04-21",
+        "url": "https://doi.org/10.20871/tjsq.v8i2.586",
+        "source": "Tanzil Jurnal Studi Al-Quran",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Islamic Education Management, Sufism, and Digital Literacy: An Interdisciplinary Approach",
+        "authors": "Andi Warisno, Muhammad Afif Anshori, Nur Hidayah",
+        "date": "2026-01-21",
+        "url": "https://doi.org/10.48161/qaj.v6n1a2127",
+        "source": "Qubahan Academic Journal",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Barzakh and the Imaginal Realm: A Phenomenology of Postmortem Experience in Sufism",
+        "authors": "Muhammad Valiyyul Haqq, Iskandar Arnel",
+        "date": "2025-12-20",
+        "url": "https://doi.org/10.26593/478hr802",
+        "source": "FOCUS",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Reason, Revelation, and Sufism: The Epistemic Paradigm of al-Ghazali and Ibnu Taimiyyah",
+        "authors": "Hamdan Maghribi, Alfina Hidayah",
+        "date": "2025-12-15",
+        "url": "https://doi.org/10.21111/jios.v3i2.79",
+        "source": "Journal of Islamic and Occidental Studies",
+        "category": "",
+        "cited": 1
+      }
+    ],
+    "tip": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Loss-of-function mutation in Omicron variants reduces spike protein expression and attenuates SARS-CoV-2 infection",
+        "authors": "Michelle N. Vu, R. Elias Alvarado, Dorothea R. Morris et al.",
+        "date": "2026-08-12",
+        "url": "https://doi.org/10.1038/s41467-026-76680-4",
+        "source": "Nature Communications",
+        "category": "",
+        "cited": 22
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "2026 ESC Guidelines for the management of heart failure",
+        "authors": "Lars Køber, Marianna Adamo, Anne‐Christine Ruwald et al.",
+        "date": "2026-08-28",
+        "url": "https://doi.org/10.1093/eurheartj/ehag100",
+        "source": "European Heart Journal",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Effect of the diuretic furosemide on urinary essential nutrient loss and on body stores in growing rats",
+        "authors": "Yelitza Berné, Diamela Carías, Anna María Cioccia et al.",
+        "date": "2026-08-05",
+        "url": "https://doi.org/10.37527/2005.55.2.007",
+        "source": "Archivos Latinoamericanos de Nutrición",
+        "category": "",
+        "cited": 10
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Astrocytes mobilize a broader repertoire of lysosomal repair mechanisms than neurons",
+        "authors": "Erin Murphy Smith, Natalí L. Chanaday, Sandra Maday",
+        "date": "2026-08-01",
+        "url": "https://doi.org/10.1016/j.isci.2026.116866",
+        "source": "iScience",
+        "category": "",
+        "cited": 9
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Fifth Universal Definition of Myocardial Infarction (2026)",
+        "authors": "Nicholas L. Mills, L. Kristin Newby, Sarah J. Zaman et al.",
+        "date": "2026-08-28",
+        "url": "https://doi.org/10.1016/j.jacc.2026.07.025",
+        "source": "Journal of the American College of Cardiology",
+        "category": "",
+        "cited": 8
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A pathological phosphorylation pattern enhances tau cooperativity on microtubules and facilitates tau filament assembly",
+        "authors": "Xiangyu Fan, Joey B. Truong, Kyoko Okada et al.",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.1038/s42003-026-10797-6",
+        "source": "Communications Biology",
+        "category": "",
+        "cited": 8
+      },
+      {
+        "kind": "preprint",
+        "via": "medRxiv",
+        "title": "Childhood and adolescent immunisation intentions post-COVID-19 in Lusaka, Zambia",
+        "authors": "Nyasa, M., Sharma, A., Kerkhoff, A. D. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363608v1",
+        "source": "medRxiv",
+        "category": "public and global health"
+      },
+      {
+        "kind": "preprint",
+        "via": "medRxiv",
+        "title": "Predictors of modern contraceptive use among reproductive-aged women (15-49 years) in Mozambique: Evidence from Mozambique Demographic and Health Survey.",
+        "authors": "Shakurun, N., Andre, F., Muhajarine, N.",
+        "date": "2026-09-23",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363579v1",
+        "source": "medRxiv",
+        "category": "public and global health"
+      },
+      {
+        "kind": "preprint",
+        "via": "medRxiv",
+        "title": "Nipah vaccine and monoclonal antibody introduction: Understanding endemic and at-risk country perspectives to inform demand forecasting",
+        "authors": "Dinkel, K. A., Ruisch, A., Mathur, I. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363632v1",
+        "source": "medRxiv",
+        "category": "public and global health"
+      },
+      {
+        "kind": "preprint",
+        "via": "medRxiv",
+        "title": "Prevalence of malaria among pregnant women attending ANC at public health institutions in Damote-Gale district, Southern Ethiopia",
+        "authors": "Kussa, Y., Lema, S.",
+        "date": "2026-09-23",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363605v1",
+        "source": "medRxiv",
+        "category": "public and global health"
+      },
+      {
+        "kind": "preprint",
+        "via": "medRxiv",
+        "title": "Schizophrenia-associated polygenic liability and structural genomic risk demonstrate broadly distributed neuropsychiatric associations in the All of Us Research Program",
+        "authors": "Wells, A. M., Dang, A., Ruiz Laza, A.",
+        "date": "2026-09-23",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363600v1",
+        "source": "medRxiv",
+        "category": "psychiatry and clinical psychology"
+      },
+      {
+        "kind": "preprint",
+        "via": "medRxiv",
+        "title": "Social Isolation and All-Cause and Cause-Specific Mortality in the UK Biobank: The Modifying Role of Non-Commute Transportation Mode",
+        "authors": "Hum, E. D., Lapointe, Y., Baumgartner, J. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363514v1",
+        "source": "medRxiv",
+        "category": "epidemiology"
+      }
+    ],
+    "toplum": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Carbon Emissions and the Bank-Lending Channel",
+        "authors": "Marcin T. Kacperczyk, José‐Luis Peydró",
+        "date": "2026-08-19",
+        "url": "https://doi.org/10.1093/rfs/hhag078",
+        "source": "Review of Financial Studies",
+        "category": "",
+        "cited": 244
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Talent Hoarding in Organizations",
+        "authors": "Ingrid Haegele",
+        "date": "2026-07-31",
+        "url": "https://doi.org/10.1257/aer.20220264",
+        "source": "American Economic Review",
+        "category": "",
+        "cited": 21
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Shapley value for airport and irrigation games",
+        "authors": "Judit Márkus, Miklós Pintér, Anna Radványi",
+        "date": "2026-08-22",
+        "url": "https://doi.org/10.1007/s10100-026-01039-5",
+        "source": "Central European Journal of Operations Research",
+        "category": "",
+        "cited": 16
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "NILAI KESETARAAN LAHAN BUDI DAYA TUMPANG SARI TANAMAN TEBU DENGAN KEDELAI: STUDI KASUS DI DESA KARANGHARJO, KECAMATAN SULANG, KABUPATEN REMBANG",
+        "authors": "Ahmad Rifai",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.14203/widyariset.17.1.2014.59-69",
+        "source": "Widyariset",
+        "category": "",
+        "cited": 12
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Superconductivity from doping symmetric mass generation insulators: application to La3Ni2O7 under pressure",
+        "authors": "Da-Chuan Lu, Miao Li, Zhao-Yi Zeng et al.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1038/s41535-026-00925-0",
+        "source": "npj Quantum Materials",
+        "category": "",
+        "cited": 12
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Early-Career Discrimination: Spiralling or Self-Correcting?",
+        "authors": "Arjada Bardhi, Yingni Guo, Bruno H. Strulovici",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.1093/restud/rdag092",
+        "source": "The Review of Economic Studies",
+        "category": "",
+        "cited": 11
+      },
+      {
+        "kind": "preprint",
+        "via": "SocArXiv",
+        "title": "Assessing and identifying special protection needs among refugees in the EU: Overview and Synthesis of Evidence and Policy Recommendations",
+        "authors": "Niklas Nutsch, Maren Hintermeier, Andreas W. Gold et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/socarxiv/j3dfe_v1/",
         "source": "SocArXiv",
         "category": ""
       },
       {
-        "title": "What the World Studies, Invents and Reports About Urban Heat",
-        "authors": "Narendra Kumar",
+        "kind": "preprint",
+        "via": "SocArXiv",
+        "title": "Provisioning for human needs at low resource use: institutional lessons from Cuba, Costa Rica and Ecuador",
+        "authors": "Chirag Dhara, Gustav Cederlöf, Viviana Cordero et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/socarxiv/2ru8m_v1/",
+        "source": "SocArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "SocArXiv",
+        "title": "Living Arrangements, Going Outdoors, and Well-Being Among Older Persons: Examining Their Associations in a Swedish Population",
+        "authors": "Jeanette Melin, Marie-Louise Möllerberg, Marit Preuter et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/socarxiv/u9h5q_v1/",
+        "source": "SocArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "SocArXiv",
+        "title": "An Assessment of the Vanderbilt-Washington University Report on Sociology",
+        "authors": "Julian Go",
         "date": "2026-09-26",
-        "url": "https://osf.io/preprints/socarxiv/r8hcx_v1/",
+        "url": "https://osf.io/preprints/socarxiv/zyt2h_v1/",
+        "source": "SocArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "SocArXiv",
+        "title": "‘Intersectionality in the Mind’: Applying an Intersectional Lens to the Study of Lay Perceptions of Inequality",
+        "authors": "Margherita Cusmano",
+        "date": "2026-09-26",
+        "url": "https://osf.io/preprints/socarxiv/6jy8b_v2/",
+        "source": "SocArXiv",
+        "category": ""
+      },
+      {
+        "kind": "preprint",
+        "via": "SocArXiv",
+        "title": "Systematic Evaluation of Nation-State Propaganda in LLM Outputs",
+        "authors": "Kevin T. Greene, Jacob N Shapiro",
+        "date": "2026-09-26",
+        "url": "https://osf.io/preprints/socarxiv/57buw_v2/",
         "source": "SocArXiv",
         "category": ""
       }
     ],
     "uzay-kesfi": [
       {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "OpenMesh: wireless signal dataset for opportunistic urban weather sensing in New York City",
+        "authors": "Dror Jacoby, Shuyue Yu, Qianfei Hu et al.",
+        "date": "2026-08-12",
+        "url": "https://doi.org/10.5194/essd-18-5817-2026",
+        "source": "Earth system science data",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Modelling wind farm effects in HARMONIE-AROME (cycle 43.2.2) – Part 2: wind turbine database and application to Europe",
+        "authors": "Jana Fischereit, Bjarke Tobias Olsen, Marc Imberger et al.",
+        "date": "2026-09-02",
+        "url": "https://doi.org/10.5194/gmd-19-8115-2026",
+        "source": "Geoscientific model development",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Performance Evaluation of Aerial Drone to Ground Communication Links Using Adaptive Modulation and Coding Techniques",
+        "authors": "Sai Shruthi Gadhiraju, Mahasweta Sarkar, Santosh V. Nagaraj",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1007/s11277-026-12037-w",
+        "source": "Wireless Personal Communications",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Is semantic SLAM ready for embedded systems? A comparative survey",
+        "authors": "Calvin Galagain, Martyna Porêba, François Goulette",
+        "date": "2026-08-29",
+        "url": "https://doi.org/10.1016/j.robot.2026.105715",
+        "source": "Robotics and Autonomous Systems",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Deep sequential invariant extended Kalman filter for navigation",
+        "authors": "Wenqiang Li, Juan Yin, Yue Yuan et al.",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.1016/j.inffus.2026.104717",
+        "source": "Information Fusion",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Cross-domain spatial matching for camera and radar sensor data fusion in autonomous vehicle perception system",
+        "authors": "Daniel Dworak, Mateusz Komorkiewicz, Paweł Skruch et al.",
+        "date": "2026-08-15",
+        "url": "https://doi.org/10.1038/s41598-026-66505-1",
+        "source": "Scientific Reports",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "The geometric origin of the thermal eccentricity law",
         "authors": "Václav Pavlík",
         "date": "2026-09-24",
@@ -801,6 +2227,8 @@
         "category": "astro-ph.EP"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Simulating the thermodynamics of gas, radiation, and multispecies dust: Method and applications to protoplanetary disks",
         "authors": "Dhruv Muley, David Melon Fuksman, Prakruti Sudarshan et al.",
         "date": "2026-09-24",
@@ -809,6 +2237,8 @@
         "category": "astro-ph.EP"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Deep HST/STIS Coronagraphic Imaging of the $β$ Pictoris Debris Disk: On the Scattered Light Component of the Cat's Tail",
         "authors": "Arin M. Avsar, Kevin Wagner, Daniel Apai et al.",
         "date": "2026-09-24",
@@ -817,6 +2247,8 @@
         "category": "astro-ph.EP"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "The GAPS programme at TNG LXXIX. New mass constraints for the infant planets in the V1298 Tau system through a long-term radial velocity monitoring with HARPS-N",
         "authors": "M. Damasso, P. Leonardi, L. Borsato et al.",
         "date": "2026-09-24",
@@ -825,6 +2257,8 @@
         "category": "astro-ph.EP"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Extracting Asteroid Physical Properties from Vera C. Rubin Observatory Science Validation Survey Data: Rotational Periods, Colors, and Taxonomies",
         "authors": "V. Carruba, S. Greenstreet, M. Mastropietro et al.",
         "date": "2026-09-24",
@@ -833,48 +2267,86 @@
         "category": "astro-ph.EP"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "VLTI/MATISSE observations of the hot dust around $β$ Pictoris: Observing faint objects with MATISSE",
         "authors": "P. Priolet, J. -C. Augereau, J. Milli et al.",
         "date": "2026-09-24",
         "url": "https://arxiv.org/abs/2609.29783v1",
         "source": "arXiv",
         "category": "astro-ph.EP"
-      },
-      {
-        "title": "Exoplanet Detection Techniques: Radial Velocity",
-        "authors": "Rafael Luque, Matthew R. Standing",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29378v1",
-        "source": "arXiv",
-        "category": "astro-ph.EP"
-      },
-      {
-        "title": "JWST Observations of the Metal-poor T Dwarf WISEA J155349.96+693355.2: The First Brown Dwarf Associated with the Gaia-Enceladus Milky Way Substructure",
-        "authors": "Aaron M. Meisner, Adam J. Burgasser, Chih-Chun Hsu et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29365v1",
-        "source": "arXiv",
-        "category": "astro-ph.EP"
-      },
-      {
-        "title": "Differential Double Blind Fourier Holography (diff-DBFH)",
-        "authors": "Oren Pedatzur, David T. Chuss",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30183v1",
-        "source": "arXiv",
-        "category": "astro-ph.IM"
-      },
-      {
-        "title": "CERIDWEN: Fast and Flexible GPU-Accelerated Stellar Population Inference",
-        "authors": "Amanda Stoffers, Sandro Tacchella, Benjamin D. Johnson",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30145v1",
-        "source": "arXiv",
-        "category": "astro-ph.IM"
       }
     ],
     "yer-bilimleri": [
       {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "ANALISIS MORFOTEKTONIK SESAR LEMBANG, JAWA BARAT",
+        "authors": "Edi Hidayat",
+        "date": "2026-08-27",
+        "url": "https://doi.org/10.14203/widyariset.13.2.2010.83-92",
+        "source": "Widyariset",
+        "category": "",
+        "cited": 9
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Geochemical Characteristics and Significance of shale Gas Well Flowback Fluid in Zheng’An Block, Guizhou",
+        "authors": "Fengying Yang, Zhongyun Chen, Xiaojun Zhu",
+        "date": "2026-08-08",
+        "url": "https://doi.org/10.62762/jgee.2026.556688",
+        "source": "Journal of Geo-Energy and Environment",
+        "category": "",
+        "cited": 6
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A new species of rupicolous Cnemaspis Strauch, 1887 (Squamata: Gekkonidae) from the Male Mahadeshwara Wildlife Sanctuary, southern Eastern Ghats, India",
+        "authors": "Narayanan, Surya, Pal, Saunak, L. Lee Grismer et al.",
+        "date": "2026-09-26",
+        "url": "https://doi.org/10.48580/dcn9k.v41",
+        "source": "ZooKeys",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Depositional Environment and Diagenetic History of Gas Hydrate-Bearing Sediments of the Alaska North Slope (HYDRATE 02 Geo Data Well)",
+        "authors": "Stephen C. Phillips, Sarah Widlansky, Jun Yoneda et al.",
+        "date": "2026-09-11",
+        "url": "https://doi.org/10.1021/acs.energyfuels.5c05174",
+        "source": "Energy & Fuels",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Future directions for Anthropocene research and its applications",
+        "authors": "Jan Zalasiewicz, Julia Adeney Thomas, K.M. Cohen et al.",
+        "date": "2026-09-08",
+        "url": "https://doi.org/10.1038/s43017-026-00820-z",
+        "source": "Nature Reviews Earth & Environment",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "PENENTUAN POTENSI GEMPA BUMI MERUSAK BERDASARKAN PARAMETER KEGEMPAAN DI WILAYAH BUSUR BANDA",
+        "authors": "Drajat Ngadmanto",
+        "date": "2026-08-27",
+        "url": "https://doi.org/10.14203/widyariset.13.2.2010.125-132",
+        "source": "Widyariset",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "SPBench: A Multi-Task Evaluation Benchmark for Exploration Seismic Processing",
         "authors": "Qi Liu, Tianxiang Gao, Zhitong Cheng et al.",
         "date": "2026-09-24",
@@ -883,6 +2355,8 @@
         "category": "physics.geo-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Generative Atmospheric Super-Resolution from Heterogeneous In Situ Observations through Composable Interfaces",
         "authors": "Yang Xu, Dibyajyoti Chakraborty, Haiwen Guan et al.",
         "date": "2026-09-24",
@@ -891,6 +2365,8 @@
         "category": "physics.ao-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "A Survey of Electron Anisotropies in the Magnetosphere: Dependence on Solar Wind Pressure and Kp",
         "authors": "A. J. Hull, O. V. Agapitov, F. S. Mozer",
         "date": "2026-09-23",
@@ -899,6 +2375,8 @@
         "category": "physics.geo-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Shape matters: DEM investigation of geometry-controlled mechanical response in irregular rock fragments under static and dynamic loading",
         "authors": "Athena Bahramiyarahmadi, Rick Chalaturnyk",
         "date": "2026-09-23",
@@ -907,6 +2385,8 @@
         "category": "physics.geo-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "Evaluating Cross-region Generalization for Wavelet-Diffusion Precipitation Downscaling",
         "authors": "Weikang Qian, Yixin Wen, Chugang Yi et al.",
         "date": "2026-09-23",
@@ -915,44 +2395,14 @@
         "category": "physics.ao-ph"
       },
       {
+        "kind": "preprint",
+        "via": "arXiv",
         "title": "HClimRep-Ocean: A Global Ocean Emulator on an Unstructured Mesh",
         "authors": "Kacper Nowak, Aleksei Koldunov, Nikolay Koldunov et al.",
         "date": "2026-09-23",
         "url": "https://arxiv.org/abs/2609.28601v1",
         "source": "arXiv",
         "category": "physics.ao-ph"
-      },
-      {
-        "title": "Distributed Proximal Stein Variational Gradient Descent Algorithm for Large-scale Bayesian Inference in Traveltime Tomography",
-        "authors": "Akshay Vishwakarma, Kamal Aghazade, Ali Siahkoohi et al.",
-        "date": "2026-09-22",
-        "url": "https://arxiv.org/abs/2609.26653v1",
-        "source": "arXiv",
-        "category": "physics.geo-ph"
-      },
-      {
-        "title": "Shallow-to-deep velocity model building via diffusion models-Part II: Realistic scenarios",
-        "authors": "Shijun Cheng, Randy Harsuko, Tariq Alkhalifah",
-        "date": "2026-09-22",
-        "url": "https://arxiv.org/abs/2609.26482v1",
-        "source": "arXiv",
-        "category": "physics.geo-ph"
-      },
-      {
-        "title": "Shallow-to-deep velocity model building via diffusion models-Part I: Method and Proof of concept",
-        "authors": "Shijun Cheng, Randy Harsuko, Tariq Alkhalifah",
-        "date": "2026-09-22",
-        "url": "https://arxiv.org/abs/2609.26454v1",
-        "source": "arXiv",
-        "category": "physics.geo-ph"
-      },
-      {
-        "title": "Hydrological Constraints on Temperature Sensitivities of Precipitation Frequency and Intensity",
-        "authors": "Jun Yin, Amilcare Porporato",
-        "date": "2026-09-22",
-        "url": "https://arxiv.org/abs/2609.25533v1",
-        "source": "arXiv",
-        "category": "physics.geo-ph"
       }
     ]
   }
