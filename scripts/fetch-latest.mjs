@@ -12,7 +12,7 @@
 // Supported feed tags:
 //   openalex:field/<id>      OpenAlex field, e.g. openalex:field/31 (Physics and Astronomy)
 //   openalex:subfield/<id>   OpenAlex subfield, e.g. openalex:subfield/3103 (Astronomy and Astrophysics)
-//   openalex:search:<words>  most-cited works of the last year with these words in title or abstract
+//   openalex:search:<words>  most-cited journal articles of the last year with these words in the title
 //                            (OR and "phrases" allowed, no commas)
 //   arxiv:<category>         e.g. arxiv:math, arxiv:cs.AI, arxiv:astro-ph
 //   biorxiv | medrxiv
@@ -216,12 +216,14 @@ async function openalex(spec) {
   let variants;
   const trusted = 'is_retracted:false,is_paratext:false';
   if (spec.startsWith('search:')) {
-    // words (and OR / "phrases") matched in title and abstract only; no commas, they separate filters
+    // words (OR and "phrases" allowed, no commas: they separate filters) matched in the title,
+    // then in title and abstract; never full text, which drags in unrelated papers
     const q = encodeURIComponent(spec.slice(7));
     const since = `from_publication_date:${daysAgo(365)},${until}`;
+    const journal = `type:article|review,primary_location.source.type:journal,${trusted}`;
     variants = [
-      `filter=title_and_abstract.search:${q},${since},type:article|review,${trusted}&sort=cited_by_count:desc`,
-      `search=${q}&filter=${since},is_retracted:false&sort=relevance_score:desc`,
+      `filter=title.search:${q},${since},${journal}&sort=cited_by_count:desc`,
+      `filter=title_and_abstract.search:${q},${since},${journal}&sort=cited_by_count:desc`,
     ];
   } else {
     const [level, id] = spec.split('/'); // field | subfield

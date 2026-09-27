@@ -3,7 +3,7 @@ parent: insanlik
 side: roots
 type: field
 order: 6
-feed: ['openalex:search:esotericism OR alchemy OR hermeticism OR astrology']
+feed: ['openalex:search:esotericism OR esoteric OR hermeticism OR "history of alchemy" OR astrology']
 title:
   tr: Ezoterik gelenekler
   en: Esoteric traditions

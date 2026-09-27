@@ -3,7 +3,7 @@ parent: insanlik
 side: roots
 type: tradition
 order: 2
-feed: ['openalex:search:"Islamic theology" OR kalam OR Maturidi OR Ashari OR Mutazila']
+feed: ['openalex:search:"Islamic theology" OR "ilm al-kalam" OR "kalam theology" OR Maturidi OR Maturidism OR Asharism OR Ashari OR Mutazila OR Mutazilite']
 title:
   tr: Kelam
   en: Kalām (Islamic theology)
