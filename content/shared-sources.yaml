@@ -1,0 +1,5 @@
+# Sources cited by many nodes. Cite them with an @ prefix, e.g. src: ['@sep-popper']
+sep:
+  type: encyclopedia
+  title: Stanford Encyclopedia of Philosophy
+  url: https://plato.stanford.edu/

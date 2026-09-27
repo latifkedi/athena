@@ -1,0 +1,65 @@
+id: kalkulus
+parent: matematik
+type: idea
+date: { year: 1684 }
+people: [Isaac Newton, Gottfried Wilhelm Leibniz, Mādhava]
+title:
+  tr: Kalkülüs (türev ve integral)
+  en: Calculus
+summary:
+  tr: >-
+    Değişimi ve birikimi hesaplamayı sağlayan kalkülüs, fiziğin ve mühendisliğin dilidir. Newton ile Leibniz'in
+    birbirinden bağımsız olarak geliştirip geliştirmediği uzun süre tartışıldı. Bazı tarihçiler ise Hindistan'daki Kerala
+    okulunun sonsuz seriler üzerine daha önceki çalışmalarına dikkat çeker.
+  en: >-
+    Calculus, which lets us compute change and accumulation, is the language of physics and engineering. Whether Newton
+    and Leibniz developed it independently was argued over for a long time. Some historians also point to earlier work
+    on infinite series by the Kerala school in India.
+technical:
+  tr: >-
+    Leibniz türev hesabını 1684'te Acta Eruditorum'da "Nova Methodus pro Maximis et Minimis" ile yayımladı ve bugün
+    kullanılan dx, ∫ gösterimini getirdi. Newton'un "fluxion" yöntemi 1660'larda geliştirilmiş, el yazmaları (De
+    Analysi, 1669) çevresinde dolaşmış, ancak geç yayımlanmıştır. Royal Society'nin 1712 tarihli Commercium Epistolicum
+    raporu Newton lehine sonuçlandı. Raporu Newton'un kendisinin yönlendirdiği sonradan anlaşıldı. Kerala okulu (Mādhava,
+    y. 1340–1425) arctan, sin ve cos için kuvvet serilerine ulaştı. Bu bilginin Avrupa'ya aktarılıp aktarılmadığı
+    kanıtlanamamıştır.
+  en: >-
+    Leibniz published differential calculus in 1684 in Acta Eruditorum ("Nova Methodus pro Maximis et Minimis") and
+    introduced the dx and ∫ notation still in use. Newton's method of "fluxions" was developed in the 1660s and circulated
+    in manuscript (De Analysi, 1669) but was published late. The Royal Society's 1712 report, the Commercium
+    Epistolicum, found for Newton. It later emerged that Newton himself had steered the report. The Kerala school
+    (Mādhava, c. 1340–1425) reached power series for arctan, sin and cos. Whether this knowledge was transmitted to Europe
+    has not been demonstrated.
+positions:
+  - who:
+      tr: Bağımsız keşif görüşü (bugünkü yaygın tarih yazımı)
+      en: Independent discovery (the prevailing historiography today)
+    tr: Newton ve Leibniz kalkülüsü birbirinden bağımsız olarak geliştirdi. Newton daha önce, Leibniz ise daha önce yayımladı.
+    en: Newton and Leibniz developed calculus independently. Newton was earlier; Leibniz published first.
+    src: [hall1980]
+  - who:
+      tr: Royal Society raporu (1712)
+      en: Royal Society report (1712)
+    tr: Newton ilk mucittir. Leibniz'in Newton'un fikirlerinden yararlandığı ima edildi.
+    en: Newton was the first inventor; it was implied that Leibniz had drawn on Newton's ideas.
+    src: [hall1980]
+  - who:
+      tr: Kerala okulunu öne çıkaran görüş
+      en: View emphasising the Kerala school
+    tr: Kalkülüsün temel öğelerinden olan sonsuz seriler Hindistan'da iki yüzyıl önce biliniyordu.
+    en: Infinite series, a core ingredient of calculus, were known in India two centuries earlier.
+    src: [joseph2011]
+sources:
+  hall1980:
+    type: book
+    authors: Hall, A. R.
+    title: 'Philosophers at War: The Quarrel between Newton and Leibniz'
+    year: 1980
+    in: Cambridge University Press
+  joseph2011:
+    type: book
+    authors: Joseph, G. G.
+    title: 'The Crest of the Peacock: Non-European Roots of Mathematics'
+    year: 2011
+    in: Princeton University Press, 3rd edition
+related: [newton-principia]

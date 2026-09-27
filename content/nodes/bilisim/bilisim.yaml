@@ -1,0 +1,42 @@
+id: bilisim
+parent: insanlik
+side: canopy
+type: field
+order: 9
+feed: ['arxiv:cs.AI', 'arxiv:cs.LG', 'arxiv:cs.CL']
+title:
+  tr: Bilişim ve yapay zekâ
+  en: Computing and artificial intelligence
+summary:
+  tr: >-
+    Hesaplamanın ne olduğunu, hangi problemlerin hesaplanabileceğini ve bilginin nasıl işlenip iletileceğini inceleyen
+    alan. Kökleri Harezmî'nin algoritmalarına, Babbage ve Lovelace'ın mekanik hesap makinelerine uzanır. 20. yüzyılda
+    Turing, Shannon ve transistörle hızla gelişti. Son on yılda derin öğrenme ve büyük dil modelleri, yapay zekâyı
+    gündelik hayatın bir parçası hâline getirdi.
+  en: >-
+    The field that studies what computation is, which problems can be computed and how information is processed and
+    transmitted. Its roots go back to al-Khwārizmī's algorithms and to Babbage and Lovelace's mechanical calculators; it
+    developed rapidly in the 20th century with Turing, Shannon and the transistor. In the last decade deep learning and
+    large language models have made AI part of everyday life.
+technical:
+  tr: >-
+    Hesaplanabilirlik kuramı (Church–Turing tezi), karmaşıklık kuramı (P ve NP gibi sınıflar) ve bilgi kuramı alanın
+    kuramsal temelleridir. P = NP sorusu Milenyum Problemleri'nden biridir ve hâlâ açıktır. Yapay zekâda sembolik
+    yaklaşımlar ile istatistiksel ve bağlantıcı yaklaşımlar tarih boyunca birbirinin yerine öne çıkmıştır. Günümüzde büyük
+    ölçüde veri ve hesaplama gücüyle ölçeklenen sinir ağları baskındır.
+  en: >-
+    Computability theory (the Church–Turing thesis), complexity theory (classes such as P and NP) and information theory
+    are the field's theoretical foundations. The P = NP question is a Millennium Problem and still open. In AI, symbolic
+    approaches and statistical/connectionist approaches have alternated in prominence; today neural networks scaled with
+    data and compute dominate.
+claims:
+  - tr: P = NP sorusu, yani çözümü hızlı doğrulanabilen her problemin hızlı çözülüp çözülemeyeceği, açıktır.
+    en: The P = NP question, whether every problem whose solution can be quickly verified can also be quickly solved, is open.
+    src: [clay-pnp]
+sources:
+  clay-pnp:
+    type: web
+    title: P vs NP
+    in: Clay Mathematics Institute
+    url: https://www.claymath.org/millennium/p-vs-np/
+related: [harezmi]

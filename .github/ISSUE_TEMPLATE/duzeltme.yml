@@ -1,0 +1,44 @@
+name: Düzeltme öner / Suggest a correction
+description: Eksik kaynak, karşıt görüş, hatalı bilgi ya da yeni bir düğüm önerin. / Suggest a missing source, an opposing view, a factual fix or a new node.
+title: "[düzeltme] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Athena karar vermez; iddiaları ve kanıtları kaynaklarıyla sunar. Lütfen önerinize **kaynak** ekleyin (DOI, arXiv, ISBN veya bağlantı).
+        Athena does not deliver verdicts; it presents claims and evidence with sources. Please include a **source** (DOI, arXiv, ISBN or link).
+  - type: input
+    id: dugum
+    attributes:
+      label: Düğüm kimliği / Node id
+      description: Sayfa adresindeki kimlik (ör. /d/telekinezi/ → telekinezi). Yeni düğüm için boş bırakın. / The id in the page address; leave empty for a new node.
+  - type: dropdown
+    id: tur
+    attributes:
+      label: Öneri türü / Kind of suggestion
+      options:
+        - Eksik veya hatalı kaynak / Missing or wrong source
+        - Karşıt görüş veya kanıt ekleme / Add an opposing view or evidence
+        - Yanlış bilgi veya tarih / Wrong fact or date
+        - Çeviri veya dil hatası / Translation or language error
+        - Yeni düğüm / New node
+        - Diğer / Other
+    validations:
+      required: true
+  - type: textarea
+    id: aciklama
+    attributes:
+      label: Açıklama / Description
+    validations:
+      required: true
+  - type: textarea
+    id: kaynak
+    attributes:
+      label: Kaynak(lar) / Source(s)
+      description: DOI, arXiv numarası, ISBN veya bağlantı. / DOI, arXiv id, ISBN or link.
+    validations:
+      required: true
+  - type: input
+    id: dil
+    attributes:
+      label: Dil / Language

@@ -1,0 +1,73 @@
+id: riemann
+parent: matematik
+type: question
+date: { year: 1859 }
+people: [Bernhard Riemann]
+title:
+  tr: Riemann hipotezi (açık)
+  en: The Riemann hypothesis (open)
+summary:
+  tr: >-
+    Asal sayıların dağılımıyla ilgili, 1859'dan beri ispatlanamamış en ünlü sanıdır. Trilyonlarca durumda bilgisayarla
+    kontrol edilmiş ve hiçbir aykırı örnek bulunmamıştır. Ancak matematikte bu bir ispat sayılmaz. Clay Enstitüsü'nün
+    Milenyum Problemleri'nden biridir.
+  en: >-
+    The most famous unproven conjecture, open since 1859, concerning the distribution of prime numbers. It has been
+    checked by computer in trillions of cases with no counterexample, but in mathematics this does not count as a proof.
+    It is one of the Clay Institute's Millennium Problems.
+technical:
+  tr: >-
+    Sanıya göre Riemann zeta fonksiyonunun trivial olmayan tüm sıfırları Re(s) = 1/2 kritik doğrusu üzerindedir. Bu,
+    asal sayma fonksiyonu için π(x) = Li(x) + O(√x log x) hata sınırına denktir. Hardy (1914) sonsuz çoklukta sıfırın
+    kritik doğru üzerinde olduğunu ispatladı. Platt ve Trudgian, sanıyı sanal kısmı 3·10¹²'ye kadar olan tüm sıfırlar için
+    doğruladı. Littlewood'un (1914) π(x) − Li(x) farkının işaret değiştirdiğini göstermesi, büyük sayısal kanıtın bile
+    yanıltıcı olabileceğine örnektir.
+  en: >-
+    The conjecture states that all non-trivial zeros of the Riemann zeta function lie on the critical line Re(s) = 1/2.
+    This is equivalent to the error bound π(x) = Li(x) + O(√x log x) for the prime-counting function. Hardy (1914)
+    proved that infinitely many zeros lie on the critical line. Platt and Trudgian verified the conjecture for all zeros
+    with imaginary part up to 3·10¹². Littlewood's (1914) demonstration that π(x) − Li(x) changes sign is an example
+    of how even extensive numerical evidence can mislead.
+claims:
+  - tr: Riemann zeta fonksiyonunun trivial olmayan tüm sıfırlarının gerçel kısmı 1/2'dir.
+    en: All non-trivial zeros of the Riemann zeta function have real part 1/2.
+    src: [riemann1859, clay-riemann]
+evidence:
+  - kind: computation
+    stance: for
+    tr: Sanal kısmı 3·10¹²'ye kadar olan tüm sıfırlar kritik doğru üzerindedir.
+    en: All zeros with imaginary part up to 3·10¹² lie on the critical line.
+    src: [platt2021]
+  - kind: critique
+    stance: against
+    tr: Sayı kuramında, çok büyük sayılara kadar geçerli görünen örüntülerin çok daha büyük değerlerde bozulduğu örnekler vardır. Littlewood, π(x) − Li(x) farkının sonsuz kez işaret değiştirdiğini gösterdi.
+    en: Number theory has examples of patterns that seem to hold up to very large numbers and then fail at much larger values. Littlewood showed that π(x) − Li(x) changes sign infinitely often.
+    src: [littlewood1914]
+sources:
+  riemann1859:
+    type: article
+    authors: Riemann, B.
+    title: Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse
+    year: 1859
+    in: Monatsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin, 671–680
+  platt2021:
+    type: article
+    authors: Platt, D.; Trudgian, T.
+    title: The Riemann hypothesis is true up to 3·10¹²
+    year: 2021
+    in: Bulletin of the London Mathematical Society 53(3), 792–797
+    doi: 10.1112/blms.12460
+  littlewood1914:
+    type: article
+    authors: Littlewood, J. E.
+    title: Sur la distribution des nombres premiers
+    year: 1914
+    in: Comptes Rendus de l'Académie des Sciences 158, 1869–1872
+  clay-riemann:
+    type: web
+    title: Riemann Hypothesis
+    in: Clay Mathematics Institute
+    url: https://www.claymath.org/millennium/riemann-hypothesis/
+open:
+  - tr: Sanı ispatlanabilir mi, yoksa ZFC'den bağımsız mıdır? Bu da bilinmiyor.
+    en: Can the conjecture be proved, or is it independent of ZFC? This too is unknown.

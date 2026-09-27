@@ -1,0 +1,53 @@
+id: islam-felsefesi
+parent: felsefe
+type: tradition
+people: [Kindî / al-Kindī, Fârâbî / al-Fārābī, İbn Sina / Ibn Sīnā, İbn Rüşd / Ibn Rushd]
+title:
+  tr: İslam felsefesi (felsefe/hikmet)
+  en: Islamic philosophy (falsafa/ḥikma)
+summary:
+  tr: >-
+    Yunan felsefesinin Arapçaya çevrilmesiyle (8.–10. yüzyıl) İslam dünyasında Kindî, Fârâbî, İbn Sina ve İbn Rüşd gibi
+    filozoflar yetişti. Aristoteles ve Yeni Platonculuğu İslam inancıyla ilişkilendiren özgün sistemler kurdular. Bu
+    eserler Latinceye çevrilerek Avrupa'daki skolastik düşünceyi de etkiledi. Filozofların bazı görüşleri kelamcılar,
+    özellikle Gazzâlî tarafından eleştirildi.
+  en: >-
+    With the translation of Greek philosophy into Arabic (8th–10th centuries), philosophers such as al-Kindī, al-Fārābī,
+    Ibn Sīnā and Ibn Rushd emerged in the Islamic world. They built original systems relating Aristotle and Neoplatonism to
+    Islamic belief. Their works, translated into Latin, also influenced European scholasticism. Some of the philosophers'
+    views were criticised by theologians, especially al-Ghazālī.
+technical:
+  tr: >-
+    Fârâbî, mantığı ve siyaset felsefesini (el-Medînetü'l-fâzıla) geliştirdi. İbn Sina, zorunlu varlık (vâcibü'l-vücûd)
+    ile mümkün varlık ayrımına dayanan bir metafizik ve "uçan adam" düşünce deneyiyle benliğin kendini bilmesi üzerine
+    bir argüman sundu. İbn Rüşd, Aristoteles şerhleriyle Latin dünyasında "Şârih" (Yorumcu) olarak tanındı. Aklın ve
+    vahyin aynı hakikate götürdüğünü savundu (Faslü'l-makâl).
+  en: >-
+    Al-Fārābī developed logic and political philosophy (al-Madīna al-fāḍila). Ibn Sīnā offered a metaphysics based on
+    the distinction between the necessary existent (wājib al-wujūd) and contingent beings, and an argument about the
+    self's self-awareness through the "flying man" thought experiment. Ibn Rushd became known in the Latin world as "the
+    Commentator" for his Aristotle commentaries and argued that reason and revelation lead to the same truth (Faṣl
+    al-maqāl).
+claims:
+  - tr: Akıl ve vahiy doğru yorumlandığında birbiriyle çelişmez ve aynı hakikate işaret eder.
+    en: Reason and revelation, rightly interpreted, do not conflict and point to the same truth.
+    src: [sep-ibnrushd]
+sources:
+  sep-ibnrushd:
+    type: encyclopedia
+    title: Ibn Rushd [Averroes]
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/ibn-rushd/
+  sep-farabi:
+    type: encyclopedia
+    title: al-Farabi
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/al-farabi/
+positions:
+  - who:
+      tr: Fârâbî
+      en: al-Fārābī
+    tr: Erdemli şehir, bilgili ve erdemli bir yönetici tarafından yönetilen ve mutluluğu amaçlayan bir toplumdur.
+    en: The virtuous city is a society governed by a wise and virtuous ruler and aimed at happiness.
+    src: [sep-farabi]
+related: [kelam]

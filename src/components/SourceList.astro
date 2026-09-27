@@ -1,0 +1,89 @@
+---
+import type { Lang, Source } from '../lib/data';
+import { sourceLinks, archiveLink } from '../lib/data';
+import { t, ui, sourceTypes } from '../lib/i18n';
+
+interface Props {
+  sources: Source[];
+  lang: Lang;
+}
+const { sources, lang } = Astro.props;
+---
+
+<ol class="sources">
+  {
+    sources.map((s) => {
+      const links = sourceLinks(s);
+      const arch = archiveLink(s);
+      return (
+        <li id={`src-${s.key.replace('@', '_')}`}>
+          <span class="stype">{t(sourceTypes[s.type] ?? { tr: s.type, en: s.type }, lang)}</span>
+          {s.authors && <span class="authors">{s.authors}</span>}
+          {s.year !== undefined && <span class="year"> ({s.year}). </span>}
+          <cite>{s.title}</cite>
+          {s.in && <span class="in">. {s.in}</span>}
+          {s.isbn && <span class="isbn"> · ISBN {s.isbn}</span>}
+          {s.note && <span class="note"> — {t(s.note, lang)}</span>}
+          {(links.length > 0 || arch) && (
+            <span class="links">
+              {links.map((l) => (
+                <a href={l.href} rel="noopener">
+                  {l.label}
+                </a>
+              ))}
+              {arch && (
+                <a href={arch} rel="noopener" class="arch">
+                  {t(ui.archive, lang)}
+                </a>
+              )}
+            </span>
+          )}
+        </li>
+      );
+    })
+  }
+</ol>
+
+<style>
+  .sources {
+    padding-left: 1.6em;
+    font-size: 0.9rem;
+    color: var(--text-2);
+  }
+  .sources li {
+    margin-bottom: 10px;
+    scroll-margin-top: 80px;
+  }
+  .sources li:target {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-radius: 6px;
+  }
+  .stype {
+    display: inline-block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-3);
+    margin-right: 6px;
+  }
+  .authors {
+    color: var(--text);
+  }
+  cite {
+    font-style: italic;
+    color: var(--text);
+  }
+  .links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    margin-left: 8px;
+  }
+  .links a {
+    font-size: 0.82rem;
+    word-break: break-all;
+  }
+  .arch {
+    color: var(--text-2);
+  }
+</style>

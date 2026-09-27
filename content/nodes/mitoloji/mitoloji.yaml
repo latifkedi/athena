@@ -1,0 +1,38 @@
+id: mitoloji
+parent: insanlik
+side: roots
+type: field
+order: 5
+title:
+  tr: Mitoloji
+  en: Mythology
+summary:
+  tr: >-
+    Mitler, bir topluluğun evrenin, tanrıların, insanların ve doğa olaylarının kökenini anlattığı kutsal hikâyelerdir.
+    Yazının en eski örneklerinden biri olan Gılgamış Destanı ölümsüzlük arayışını anlatır. İskandinav mitolojisindeki
+    dünya ağacı Yggdrasil ise bu sitenin ağaç biçimine ilham verdi.
+  en: >-
+    Myths are sacred stories in which a community tells the origin of the universe, gods, humans and natural phenomena.
+    The Epic of Gilgamesh, one of the oldest pieces of literature, tells of a quest for immortality. The world tree
+    Yggdrasil of Norse mythology inspired the tree form of this site.
+technical:
+  tr: >-
+    Mit araştırmalarında farklı yaklaşımlar vardır. Karşılaştırmalı yaklaşım (Frazer, Dumézil), mitleri ortak kalıplar
+    üzerinden karşılaştırır. Yapısalcı yaklaşım (Lévi-Strauss), mitleri ikili karşıtlıklar üzerinden çözümler. Psikolojik
+    yaklaşım (Jung) arketiplere odaklanır. İşlevselci yaklaşım (Malinowski) ise mitin toplumsal düzeni meşrulaştırmadaki
+    rolünü vurgular.
+  en: >-
+    Myth research has different approaches: comparative (Frazer, Dumézil), structuralist (Lévi-Strauss, analysing myths
+    through binary oppositions), psychological (Jung, archetypes) and functionalist (Malinowski, the role of myth in
+    legitimising social order).
+claims:
+  - tr: Mitler, bir toplumun toplumsal düzenini ve değerlerini meşrulaştıran "sözleşmeler" işlevi görür.
+    en: Myths function as "charters" legitimising a society's social order and values.
+    src: [malinowski1926]
+sources:
+  malinowski1926:
+    type: book
+    authors: Malinowski, B.
+    title: Myth in Primitive Psychology
+    year: 1926
+    in: Kegan Paul, London

@@ -1,0 +1,60 @@
+id: yahudilik
+parent: dinler
+type: tradition
+people: [Hz. Musa / Moses]
+title:
+  tr: Yahudilik ve Tanah
+  en: Judaism and the Tanakh
+summary:
+  tr: >-
+    Yahudilik, tek Tanrı'ya (YHWH) inanan ve Tanrı'nın İsrailoğulları ile yaptığı ahdi merkeze alan dindir. Kutsal
+    kitabı Tanah, Tevrat (Musa'nın beş kitabı), Peygamberler ve Yazılar'dan oluşur. Sözlü gelenek ise Talmud'da
+    derlenmiştir. Dünyada yaklaşık 15 milyon Yahudi vardır.
+  en: >-
+    Judaism is the religion that believes in one God (YHWH) and centres on the covenant between God and the people of
+    Israel. Its scripture, the Tanakh, consists of the Torah (the five books of Moses), the Prophets and the Writings; the
+    oral tradition is compiled in the Talmud. There are about 15 million Jews in the world.
+technical:
+  tr: >-
+    Geleneksel inanca göre Tevrat, Sina Dağı'nda Musa'ya verilmiştir. Modern metin eleştirisinde yaygın bir model olan
+    belgeler hipotezi (Wellhausen), Tevrat'ın farklı dönemlere ait kaynakların birleşmesiyle oluştuğunu öne sürer. Bu
+    hipotez ve alternatifleri akademik olarak tartışmalıdır. Ölü Deniz Yazmaları (MÖ 3. yy – MS 1. yy), İbranice
+    İncil metninin bilinen en eski el yazmalarını içerir.
+  en: >-
+    According to traditional belief the Torah was given to Moses at Mount Sinai. The documentary hypothesis
+    (Wellhausen), a common model in modern textual criticism, proposes that the Torah was formed by combining sources from
+    different periods; it and its alternatives are debated academically. The Dead Sea Scrolls (3rd century BCE – 1st
+    century CE) include the oldest known manuscripts of the Hebrew Bible text.
+claims:
+  - tr: Tanrı birdir ve İsrailoğulları ile Tevrat aracılığıyla bir ahit yapmıştır.
+    en: God is one and made a covenant with the people of Israel through the Torah.
+    src: [deut-6-4, exodus-19]
+positions:
+  - who:
+      tr: Geleneksel Yahudi görüşü
+      en: Traditional Jewish view
+    tr: Tevrat, Sina'da Musa'ya bütünüyle verilmiştir.
+    en: The Torah was given in its entirety to Moses at Sinai.
+    src: [exodus-19]
+  - who:
+      tr: Tarihsel-eleştirel akademik görüş
+      en: Historical-critical academic view
+    tr: Tevrat, farklı dönemlerde yazılmış kaynakların birleştirilmesiyle oluşmuştur.
+    en: The Torah was formed by combining sources written in different periods.
+    src: [wellhausen1883]
+sources:
+  deut-6-4:
+    type: scripture
+    title: Tesniye / Deuteronomy 6:4
+    url: https://www.sefaria.org/Deuteronomy.6.4
+  exodus-19:
+    type: scripture
+    title: Çıkış / Exodus 19–20
+    url: https://www.sefaria.org/Exodus.19
+  wellhausen1883:
+    type: book
+    authors: Wellhausen, J.
+    title: Prolegomena zur Geschichte Israels
+    year: 1883
+    in: Georg Reimer, Berlin
+related: [yaratilis-anlatilari]

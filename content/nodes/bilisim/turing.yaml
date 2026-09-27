@@ -1,0 +1,60 @@
+id: turing
+parent: bilisim
+type: event
+date: { year: 1936 }
+people: [Alan Turing, Alonzo Church]
+title:
+  tr: Turing makinesi ve hesaplanabilirlik
+  en: The Turing machine and computability
+summary:
+  tr: >-
+    Turing 1936'da her türlü mekanik hesabı taklit edebilecek soyut bir makine tanımladı. Bu tanımla, hiçbir algoritmanın
+    çözemeyeceği problemler olduğunu ispatladı. Bunlardan en bilineni, bir programın durup durmayacağını önceden bilme
+    problemidir (durma problemi). Bu fikir bugünkü bilgisayarların kuramsal temelidir.
+  en: >-
+    In 1936 Turing defined an abstract machine able to imitate any mechanical calculation, and with it proved that there
+    are problems no algorithm can solve, the best known being whether a program will halt (the halting problem). This idea
+    is the theoretical basis of today's computers.
+technical:
+  tr: >-
+    Turing, evrensel bir makinenin başka her makinenin tanımını girdi olarak alıp onu taklit edebileceğini gösterdi.
+    Köşegen argümanıyla durma probleminin karar verilemezliğini ispatladı ve Hilbert'in Entscheidungsproblem'ine olumsuz
+    yanıt verdi. Church, λ-hesabıyla aynı sonuca bağımsız olarak ulaştı. Church–Turing tezi, "etkili olarak
+    hesaplanabilir" kavramının Turing-hesaplanabilirlikle çakıştığını söyler. Bu bir teorem değil, bir tezdir.
+  en: >-
+    Turing showed that a universal machine can take the description of any other machine as input and simulate it. By a
+    diagonal argument he proved the halting problem undecidable and answered Hilbert's Entscheidungsproblem in the
+    negative. Church reached the same result independently with the λ-calculus. The Church–Turing thesis states that
+    "effectively computable" coincides with Turing-computable; it is a thesis, not a theorem.
+claims:
+  - tr: Bir programın her girdide durup durmayacağına karar veren genel bir algoritma yoktur.
+    en: There is no general algorithm deciding whether a program halts on every input.
+    src: [turing1936]
+evidence:
+  - kind: proof
+    stance: for
+    tr: Köşegen argümanı, böyle bir algoritma varsa kendisiyle çelişen bir programın kurulabileceğini gösterir.
+    en: The diagonal argument shows that if such an algorithm existed, a program contradicting it could be constructed.
+    src: [turing1936]
+positions:
+  - who:
+      tr: Church–Turing tezinin güçlü (fiziksel) biçimini sorgulayanlar
+      en: Those questioning the strong (physical) form of the Church–Turing thesis
+    tr: Fiziksel süreçlerin, örneğin kuantum veya göreli sistemlerin, Turing makinelerinin hesaplayamayacağı şeyleri hesaplayıp hesaplayamayacağı açık bir sorudur.
+    en: Whether physical processes, for example quantum or relativistic systems, could compute what Turing machines cannot is an open question.
+    src: [sep-church-turing]
+sources:
+  turing1936:
+    type: article
+    authors: Turing, A. M.
+    title: On computable numbers, with an application to the Entscheidungsproblem
+    year: 1936
+    in: Proceedings of the London Mathematical Society s2-42(1), 230–265
+    doi: 10.1112/plms/s2-42.1.230
+  sep-church-turing:
+    type: encyclopedia
+    authors: Copeland, B. J.
+    title: The Church–Turing Thesis
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/church-turing/
+related: [godel, bb5]

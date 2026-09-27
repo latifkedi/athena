@@ -1,0 +1,44 @@
+id: canlilarin-kokeni
+parent: biyoloji
+type: question
+order: 1900
+title:
+  tr: Canlıların kökeni ve çeşitliliği üzerine görüşler
+  en: Views on the origin and diversity of living things
+summary:
+  tr: >-
+    Canlı türlerinin nasıl ortaya çıktığı ve neden bu kadar çeşitli olduğu sorusuna birbirinden farklı cevaplar
+    verilmiştir. "Evrim" tek bir kuram değildir. Lamarck, Darwin, modern sentez, nötr kuram, kesintili denge ve
+    genişletilmiş sentez farklı mekanizmalar ve farklı iddialar öne sürer. Akıllı tasarım, yaratılışçılık, teistik evrim
+    ve İslam düşüncesindeki görüşler de ayrı dallar olarak, kendi kanıt ve kaynaklarıyla birlikte gösterilir.
+  en: >-
+    Different answers have been given to how living species arose and why they are so diverse. "Evolution" is not a
+    single theory: Lamarck, Darwin, the modern synthesis, the neutral theory, punctuated equilibrium and the extended
+    synthesis propose different mechanisms and make different claims. Intelligent design, creationism, theistic
+    evolution and views in Islamic thought are also shown as separate branches, each with its own evidence and sources.
+technical:
+  tr: >-
+    Bilimsel literatürde iki ayrı iddia çoğu zaman birbirine karıştırılır. Birincisi ortak ata iddiasıdır, yani türlerin
+    soy ilişkisiyle bağlı olduğudur. İkincisi, çeşitliliği hangi mekanizmaların (doğal seçilim, genetik sürüklenme, göç,
+    gelişimsel etkenler, epigenetik) ne ölçüde açıkladığıdır. Mekanizmaların göreli önemi biyologlar arasında hâlâ
+    tartışmalıdır. Dini görüşler ise bu soruları yaratılışla ilişkili olarak ele alır. Bu görüşlerin bir kısmı doğal
+    süreçleri yaratılışın aracı olarak kabul eder, bir kısmı ise etmez.
+  en: >-
+    The scientific literature often conflates two separate claims. The first is common descent, that species are linked
+    by ancestry. The second is how far various mechanisms (natural selection, genetic drift, migration, developmental
+    factors, epigenetics) account for diversity. The relative importance of the mechanisms is still debated among
+    biologists. Religious views address these questions in relation to creation; some accept natural processes as
+    means of creation and some do not.
+claims:
+  - tr: Mekanizmaların göreli önemi konusunda biyologlar arasında süregelen bir tartışma vardır.
+    en: There is an ongoing debate among biologists about the relative importance of mechanisms.
+    src: [laland-wray2014]
+sources:
+  laland-wray2014:
+    type: article
+    authors: Laland, K.; Uller, T.; Feldman, M. et al.; Wray, G. A.; Hoekstra, H. E. et al.
+    title: Does evolutionary theory need a rethink?
+    year: 2014
+    in: Nature 514, 161–164
+    doi: 10.1038/514161a
+related: [insanlik, yaratilis-anlatilari]

@@ -1,0 +1,79 @@
+# Builds the site and publishes it to GitHub Pages.
+# - Every push to the default branch rebuilds the site.
+# - On the 1st of every month (and when run by hand) it first pulls the newest
+#   preprints and archives source links in the Wayback Machine, commits that data,
+#   then rebuilds.
+name: Deploy
+
+on:
+  push:
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: 'Yeni makaleleri çek ve kaynakları arşivle / Fetch new papers and archive sources'
+        type: boolean
+        default: true
+  schedule:
+    - cron: '17 4 1 * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.event_name != 'push' || github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch newest papers and archive sources
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        run: |
+          npm run feed
+          npm run archive
+
+      - name: Commit refreshed data
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/feed/latest.json content/archive.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Aylık güncelleme: yeni makaleler ve arşiv bağlantıları"
+            git push
+          fi
+
+      - name: Build (checks every node first)
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

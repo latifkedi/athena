@@ -1,0 +1,65 @@
+id: mendel
+parent: biyoloji
+type: event
+date: { year: 1866 }
+people: [Gregor Mendel]
+title:
+  tr: Mendel ve kalıtım yasaları
+  en: Mendel and the laws of inheritance
+summary:
+  tr: >-
+    Brno'daki bir manastırda çalışan Mendel, bezelye çaprazlamalarıyla özelliklerin karışarak değil, ayrı "birimler"
+    hâlinde kuşaktan kuşağa geçtiğini gösterdi. Çalışması 1900'de yeniden keşfedilene kadar pek fark edilmedi. İstatistikçi
+    Fisher daha sonra Mendel'in verilerinin beklenenden "fazla iyi" olduğunu ileri sürdü.
+  en: >-
+    Working in a monastery in Brno, Mendel showed with pea crosses that traits pass from generation to generation as
+    discrete "units" rather than by blending. His work went largely unnoticed until it was rediscovered in 1900. The
+    statistician Fisher later argued that Mendel's data were "too good" to be expected.
+technical:
+  tr: >-
+    Mendel, yedi karakter için F2 kuşağında yaklaşık 3:1 baskın/çekinik oranları ve bağımsız dağılımı rapor etti.
+    Fisher (1936) χ² analiziyle toplam verinin beklenen sapmayı göstermediğini, bu uyumun rastlantıyla elde edilme
+    olasılığının yaklaşık 0,00007 olduğunu hesapladı. Sonraki çalışmalar (Franklin vd. 2008) bu konuda farklı
+    açıklamalar tartıştı. Bu açıklamalar arasında bilinçsiz sınıflandırma yanlılığı, asistan müdahalesi ve Fisher'in
+    varsayımlarındaki hatalar bulunur.
+  en: >-
+    Mendel reported roughly 3:1 dominant/recessive ratios in the F2 generation for seven characters, and independent
+    assortment. Fisher (1936) calculated with χ² that the combined data lacked the expected scatter, the probability of
+    such good agreement by chance being about 0.00007. Later work (Franklin et al. 2008) discussed various explanations,
+    including unconscious classification bias, an assistant's intervention and flaws in Fisher's own assumptions.
+claims:
+  - tr: Kalıtsal özellikler karışmayan, çiftler hâlinde bulunan ve gamet oluşumunda ayrılan birimlerle aktarılır.
+    en: Hereditary traits are transmitted by non-blending units that occur in pairs and separate during gamete formation.
+    src: [mendel1866]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Binlerce bezelye bitkisinde, ikinci kuşakta baskın ve çekinik özelliklerin yaklaşık 3:1 oranında ortaya çıktığı sayıldı.
+    en: In thousands of pea plants the dominant and recessive traits were counted appearing in roughly a 3:1 ratio in the second generation.
+    src: [mendel1866]
+  - kind: statistical
+    stance: against
+    tr: Verilerin kuramsal oranlara beklenenden daha yakın olduğu, yani verilerde olması gereken rastgele dağılımın görülmediği ileri sürüldü.
+    en: It was argued that the data fit the theoretical ratios more closely than chance would allow, lacking the random scatter expected.
+    src: [fisher1936, franklin2008]
+sources:
+  mendel1866:
+    type: article
+    authors: Mendel, G.
+    title: Versuche über Pflanzen-Hybriden
+    year: 1866
+    in: Verhandlungen des naturforschenden Vereines in Brünn 4, 3–47
+  fisher1936:
+    type: article
+    authors: Fisher, R. A.
+    title: "Has Mendel's work been rediscovered?"
+    year: 1936
+    in: Annals of Science 1(2), 115–137
+    doi: 10.1080/00033793600200111
+  franklin2008:
+    type: book
+    authors: Franklin, A.; Edwards, A. W. F.; Fairbanks, D. J.; Hartl, D. L.; Seidenfeld, T.
+    title: Ending the Mendel–Fisher Controversy
+    year: 2008
+    in: University of Pittsburgh Press
+related: [modern-sentez]

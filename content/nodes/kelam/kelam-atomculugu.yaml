@@ -1,0 +1,58 @@
+id: kelam-atomculugu
+parent: kelam
+type: idea
+people: [Ebü'l-Hüzeyl el-Allâf, Nazzâm, Bâkıllânî]
+title:
+  tr: Kelam atomculuğu (cevher-i ferd)
+  en: Kalām atomism (al-jawhar al-fard)
+summary:
+  tr: >-
+    Kelamcıların çoğu, cisimlerin daha fazla bölünemeyen parçalardan ("cüz-i lâ yetecezzâ", "cevher-i ferd") ve bunlara
+    ilişen niteliklerden (araz) oluştuğunu savundu. Bu atomlar ve nitelikleri her an Allah tarafından yeniden yaratılır.
+    Kelam atomculuğu, âlemin sonradan yaratıldığını ispatlamaya yönelik bir metafizik kuramdı. Deneysel bir fizik kuramı
+    değildi. Mu'tezilî Nazzâm ise atomculuğu reddetti.
+  en: >-
+    Most theologians held that bodies consist of parts that cannot be divided further ("al-juzʾ alladhī lā yatajazzaʾ",
+    "al-jawhar al-fard") and of qualities (accidents) inhering in them, both re-created by God at every moment. Kalām
+    atomism was a metaphysical theory aimed at proving that the world was created, not an experimental physical theory.
+    The Muʿtazilī al-Naẓẓām rejected atomism.
+technical:
+  tr: >-
+    Basra Mu'tezilesi'nin atomları uzamsız ya da minimal uzamlı birimlerdir. Hareket, atomların ardışık konumlarda
+    yeniden yaratılması olarak açıklanır ("sıçrama" tartışmaları). Arazlar iki anda kalamaz. Bu ilke, sürekli yaratma
+    doktrinini destekler. Dhanani'nin çalışması, bu kuramı Demokritos atomculuğundan farklı, geometrik ve
+    uzay kavrayışı açısından özgün bir sistem olarak inceler.
+  en: >-
+    The atoms of the Basran Muʿtazila are unextended or minimally extended units; motion is explained as atoms being
+    re-created at successive positions (the "leap" debates). Accidents cannot endure for two instants, a principle
+    supporting the doctrine of continuous creation. Dhanani's study examines the theory as a system distinct from
+    Democritean atomism and original in its conception of geometry and space.
+claims:
+  - tr: Cisimler bölünmez atomlardan ve iki anda kalamayan arazlardan oluşur. Âlem bu nedenle her an bir yaratıcıya muhtaçtır.
+    en: Bodies consist of indivisible atoms and of accidents that cannot endure for two instants; the world therefore depends on a creator at every moment.
+    src: [dhanani1994, tdv-cevher]
+positions:
+  - who:
+      tr: Nazzâm
+      en: al-Naẓẓām
+    tr: Cisimler sonsuza kadar bölünebilir. Bölünmez bir parça yoktur.
+    en: Bodies are divisible without end; there is no indivisible part.
+    src: [tdv-nazzam]
+sources:
+  dhanani1994:
+    type: book
+    authors: Dhanani, A.
+    title: 'The Physical Theory of Kalām: Atoms, Space, and Void in Basrian Muʿtazilī Cosmology'
+    year: 1994
+    in: E. J. Brill, Leiden
+  tdv-cevher:
+    type: encyclopedia
+    title: Cevher
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/cevher
+  tdv-nazzam:
+    type: encyclopedia
+    title: Nazzâm
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/nazzam
+related: [sokrates-oncesi, dalton]

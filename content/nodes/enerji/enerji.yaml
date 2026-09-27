@@ -1,0 +1,39 @@
+id: enerji
+parent: insanlik
+side: canopy
+type: field
+order: 3
+feed: ['arxiv:physics.plasm-ph', 'arxiv:physics.app-ph']
+title:
+  tr: Enerji
+  en: Energy
+summary:
+  tr: >-
+    İnsanlığın enerji kaynakları kas gücünden ve ateşten başlayıp rüzgâr, su, kömür, petrol, elektrik, çekirdek
+    enerjisi ve güneşe uzanır. Bir medeniyetin ne kadar enerji kullandığı, Kardaşev ölçeği gibi yöntemlerle ilerlemenin
+    ölçütlerinden biri olarak kullanılır. 2025'te dünyanın toplam birincil enerji arzı ilk kez 600 eksajulü aştı.
+  en: >-
+    Humanity's energy sources run from muscle power and fire to wind, water, coal, oil, electricity, nuclear energy and
+    the sun. How much energy a civilisation uses is one yardstick of progress, for example on the Kardashev scale. In
+    2025 total world primary energy supply exceeded 600 exajoules for the first time.
+technical:
+  tr: >-
+    Termodinamiğin birinci yasası enerjinin korunumunu, ikinci yasası ise ısının işe dönüşümünün Carnot verimiyle
+    sınırlı olduğunu söyler. Enerji sistemlerinin karşılaştırılmasında birincil enerji, nihai enerji, kapasite faktörü ve
+    yatırılan enerjiye karşılık elde edilen enerji (EROI) gibi ölçütler kullanılır.
+  en: >-
+    The first law of thermodynamics states the conservation of energy; the second limits the conversion of heat into
+    work to the Carnot efficiency. Energy systems are compared using measures such as primary energy, final energy,
+    capacity factor and energy returned on energy invested (EROI).
+claims:
+  - tr: 2025'te dünya toplam birincil enerji arzı yaklaşık 600 EJ ile rekor düzeye ulaştı. Bunun yaklaşık %86'sı fosil yakıtlardan geldi.
+    en: In 2025 world total primary energy supply reached a record of about 600 EJ, about 86% of it from fossil fuels.
+    src: [ei2026]
+sources:
+  ei2026:
+    type: report
+    authors: Energy Institute
+    title: Statistical Review of World Energy 2026
+    year: 2026
+    url: https://www.energyinst.org/statistical-review
+related: [ates]

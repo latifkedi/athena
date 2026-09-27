@@ -1,0 +1,69 @@
+id: oklid
+parent: matematik
+type: text
+date: { year: -300, approx: true }
+people: [Öklid / Euclid]
+title:
+  tr: Öklid'in Elemanlar'ı
+  en: Euclid's Elements
+summary:
+  tr: >-
+    Öklid, geometriyi birkaç temel kabulden (aksiyom ve postulat) başlayıp her şeyi adım adım ispatlayarak kurdu. Bu
+    "aksiyomatik yöntem" iki bin yılı aşkın süre matematiğin örneği oldu. Beşinci postulatın (paraleller) diğerlerinden
+    türetilemeyeceğinin anlaşılması, Öklid dışı geometrileri doğurdu.
+  en: >-
+    Euclid built geometry from a few basic assumptions (axioms and postulates), proving everything step by step. This
+    "axiomatic method" served as the model for mathematics for more than two thousand years. The realisation that the
+    fifth (parallel) postulate cannot be derived from the others gave rise to non-Euclidean geometries.
+technical:
+  tr: >-
+    On üç kitaptan oluşan Elemanlar düzlem geometrisi, orantılar kuramı (Eudoksos), sayılar kuramı (asal sayıların
+    sonsuzluğu, IX.20; Öklid algoritması, VII.1–2) ve katı geometriyi kapsar. Paralellik postulatının bağımsızlığı
+    Lobaçevski (1829) ve Bolyai'nin (1832) hiperbolik geometrisiyle, kesin biçimde ise Beltrami'nin modelleriyle
+    gösterildi. Hilbert (1899), Öklid'in örtük varsayımlarını açık hâle getiren eksiksiz bir aksiyom sistemi verdi.
+  en: >-
+    The thirteen books of the Elements cover plane geometry, the theory of proportion (Eudoxus), number theory
+    (infinitude of primes, IX.20; the Euclidean algorithm, VII.1–2) and solid geometry. The independence of the parallel
+    postulate was shown by the hyperbolic geometry of Lobachevsky (1829) and Bolyai (1832), and rigorously by Beltrami's
+    models. Hilbert (1899) gave a complete axiom system making Euclid's implicit assumptions explicit.
+claims:
+  - tr: Asal sayılar sonsuz çokluktadır (Elemanlar IX.20).
+    en: There are infinitely many prime numbers (Elements IX.20).
+    src: [joyce]
+  - tr: Paralellik postulatı diğer aksiyomlardan türetilemez.
+    en: The parallel postulate cannot be derived from the other axioms.
+    src: [sep-geometry]
+evidence:
+  - kind: proof
+    stance: for
+    tr: Asal sayıların sonsuzluğunun ispatı Elemanlar'da yer alır ve bugün de geçerli kabul edilir.
+    en: The proof of the infinitude of primes is in the Elements and is still accepted today.
+    src: [joyce]
+  - kind: proof
+    stance: for
+    tr: Paralellik postulatının değil, onun değillemesinin geçerli olduğu tutarlı geometri modelleri kurulmuştur (hiperbolik geometri).
+    en: Consistent models of geometry have been built in which the negation of the parallel postulate holds (hyperbolic geometry).
+    src: [sep-geometry]
+  - kind: critique
+    stance: against
+    tr: Öklid'in bazı ispatları, açıkça belirtilmemiş varsayımlara (ör. çemberlerin kesişmesi, "arasında olma") dayanır. Bu eksikler Hilbert'in aksiyomlarıyla giderildi.
+    en: Some of Euclid's proofs rely on unstated assumptions (e.g. that circles intersect, "betweenness"). These gaps were closed by Hilbert's axioms.
+    src: [hilbert1899]
+sources:
+  joyce:
+    type: web
+    authors: Joyce, D. E. (ed.)
+    title: "Euclid's Elements (online edition)"
+    in: Clark University
+    url: https://mathcs.clarku.edu/~djoyce/java/elements/elements.html
+  sep-geometry:
+    type: encyclopedia
+    title: Nineteenth Century Geometry
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/geometry-19th/
+  hilbert1899:
+    type: book
+    authors: Hilbert, D.
+    title: Grundlagen der Geometrie
+    year: 1899
+    in: Teubner, Leipzig

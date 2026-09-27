@@ -1,0 +1,55 @@
+id: kant
+parent: felsefe
+type: text
+date: { year: 1781 }
+people: [Immanuel Kant]
+title:
+  tr: Kant ve Saf Aklın Eleştirisi
+  en: Kant and the Critique of Pure Reason
+summary:
+  tr: >-
+    Kant, bilginin hem deneyimden hem de zihnin önceden getirdiği yapılardan (uzay, zaman, nedensellik gibi kategoriler)
+    doğduğunu savundu. Buna göre şeyleri "kendinde" oldukları gibi değil, zihnimize göründükleri biçimiyle biliriz. Aklın
+    Tanrı, ruh ve evrenin bütünü hakkında deneyim ötesi kesin bilgiye ulaşamayacağını ileri sürdü.
+  en: >-
+    Kant argued that knowledge arises from both experience and structures the mind brings beforehand (space, time and
+    categories such as causality). We therefore know things not as they are "in themselves" but as they appear to our
+    minds. He held that reason cannot reach certain knowledge beyond experience about God, the soul and the world as a
+    whole.
+technical:
+  tr: >-
+    Kant, a priori sentetik yargıların nasıl mümkün olduğunu sorar ve matematik ile doğa biliminin temellerini
+    transandantal idealizmle açıklar. Antinomiler, evrenin zamanda bir başlangıcı olup olmadığı gibi sorularda aklın
+    birbirine karşıt iki sonucu eşit güçle ispatlayabildiğini göstermeyi amaçlar. Kant'a göre ontolojik, kozmolojik ve
+    fizikoteolojik kanıtlar kuramsal akıl için geçersizdir. Tanrı inancının pratik (ahlaki) akılda bir yeri vardır.
+  en: >-
+    Kant asks how synthetic a priori judgements are possible and explains the foundations of mathematics and natural
+    science through transcendental idealism. The antinomies aim to show that on questions such as whether the world has a
+    beginning in time, reason can prove two opposite conclusions with equal force. For Kant the ontological,
+    cosmological and physico-theological proofs are invalid for theoretical reason, while belief in God has a place in
+    practical (moral) reason.
+claims:
+  - tr: İnsan bilgisi deneyimin sınırları içinde kalır. Aklın deneyim ötesi metafizik sorulara kesin cevap verme girişimi çelişkilere yol açar.
+    en: Human knowledge stays within the limits of experience; reason's attempts to answer metaphysical questions beyond experience lead to contradictions.
+    src: [kant1781]
+sources:
+  kant1781:
+    type: book
+    authors: Kant, I.
+    title: Kritik der reinen Vernunft
+    year: 1781
+    in: Johann Friedrich Hartknoch, Riga
+  sep-kant:
+    type: encyclopedia
+    authors: Rohlf, M.
+    title: Immanuel Kant
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/kant/
+positions:
+  - who:
+      tr: Kant'ın Tanrı kanıtlarına yönelik eleştirisi
+      en: "Kant's critique of the proofs of God"
+    tr: Varlık gerçek bir yüklem değildir. Bu nedenle Tanrı kavramından Tanrı'nın varlığı çıkarılamaz.
+    en: Existence is not a real predicate, so God's existence cannot be derived from the concept of God.
+    src: [sep-kant]
+related: [hudus-delili]

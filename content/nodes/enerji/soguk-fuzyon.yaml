@@ -1,0 +1,99 @@
+id: soguk-fuzyon
+parent: enerji
+type: idea
+date: { year: 1989, month: 3 }
+people: [Martin Fleischmann, Stanley Pons]
+title:
+  tr: Soğuk füzyon (düşük enerjili nükleer tepkimeler)
+  en: Cold fusion (low-energy nuclear reactions)
+summary:
+  tr: >-
+    Fleischmann ve Pons 1989'da, oda sıcaklığında paladyum elektrotlu bir elektroliz hücresinde kimyasal tepkimelerle
+    açıklanamayacak fazla ısı ölçtüklerini ve bunun çekirdek birleşmesinden gelebileceğini açıkladı. Pek çok laboratuvar
+    sonucu tekrarlayamadı. Bir grup araştırmacı ise "LENR" adıyla çalışmaları sürdürüyor.
+  en: >-
+    In 1989 Fleischmann and Pons announced that they had measured excess heat, not explainable by chemistry, in an
+    electrolysis cell with a palladium electrode at room temperature, and that it might come from nuclear fusion. Many
+    laboratories could not reproduce the result. A group of researchers continues the work under the name "LENR".
+technical:
+  tr: >-
+    İddia, ağır suyun paladyum katotta elektrolizi sırasında deuteronların kafes içinde kaynaşarak ısı açığa çıkardığıdır.
+    Beklenen nötron ve trityum miktarları ölçülen ısıyla orantılı bulunmadı. Caltech, MIT ve Harwell'deki tekrar
+    deneyleri olumsuz sonuç verdi. ABD Enerji Bakanlığı 1989 ve 2004'te konuyu değerlendirdi. 2004 değerlendirmesinde
+    panelistlerin görüşleri bölündü ve belirli sorular için ek araştırma önerildi. Google'ın desteklediği 2019
+    tarihli çok kurumlu bir program da fazla ısı veya nükleer ürün bulamadı. Ancak programın, test edilen koşulların
+    iddiayı tamamen dışlamadığını belirttiği de not edildi.
+  en: >-
+    The claim is that during electrolysis of heavy water on a palladium cathode, deuterons fuse within the lattice and
+    release heat. The expected amounts of neutrons and tritium were not found in proportion to the measured heat.
+    Replication attempts at Caltech, MIT and Harwell were negative. The US Department of Energy reviewed the subject in
+    1989 and 2004; in 2004 panellists were divided and further research on specific questions was recommended. A
+    multi-institution programme funded by Google in 2019 also found no excess heat or nuclear products, while noting that
+    the conditions tested did not rule the claim out entirely.
+claims:
+  - tr: Paladyum içinde deuteryum, oda sıcaklığında kimyasal kaynaklı olmayan fazla ısı üretebilir.
+    en: Deuterium in palladium can produce excess heat of non-chemical origin at room temperature.
+    src: [fleischmann1989, storms2007]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Özgün deneyde, girdi gücünü aşan ve kimyasal tepkimelerle açıklanamayacak ısı ölçüldüğü bildirildi.
+    en: The original experiment reported heat exceeding input power that could not be explained by chemical reactions.
+    src: [fleischmann1989]
+  - kind: experiment
+    stance: for
+    tr: LENR araştırmacıları sonraki yıllarda fazla ısı bildiren çok sayıda deney derledi.
+    en: LENR researchers have compiled many later experiments reporting excess heat.
+    src: [storms2007]
+  - kind: replication
+    stance: against
+    tr: Caltech'te yapılan ayrıntılı tekrar deneyinde fazla ısı, nötron, gama ışını ya da trityum bulunmadı.
+    en: A detailed replication at Caltech found no excess heat, neutrons, gamma rays or tritium.
+    src: [lewis1989]
+  - kind: replication
+    stance: against
+    tr: 2019'daki çok kurumlu program, fazla ısıya ya da nükleer ürünlere dair kanıt bulamadı.
+    en: The 2019 multi-institution programme found no evidence of excess heat or nuclear products.
+    src: [berlinguette2019]
+positions:
+  - who:
+      tr: ABD Enerji Bakanlığı değerlendirmesi (2004)
+      en: US Department of Energy review (2004)
+    tr: Panelistlerin çoğu fazla ısı kanıtını ikna edici bulmadı. Belirli sorulara yönelik iyi tasarlanmış deneylerin desteklenmesi önerildi.
+    en: Most panellists did not find the evidence for excess heat convincing; support for well-designed experiments on specific questions was recommended.
+    src: [doe2004]
+sources:
+  fleischmann1989:
+    type: article
+    authors: Fleischmann, M.; Pons, S.
+    title: Electrochemically induced nuclear fusion of deuterium
+    year: 1989
+    in: Journal of Electroanalytical Chemistry 261(2), 301–308
+    doi: 10.1016/0022-0728(89)80006-3
+  lewis1989:
+    type: article
+    authors: Lewis, N. S. et al.
+    title: Searches for low-temperature nuclear fusion of deuterium in palladium
+    year: 1989
+    in: Nature 340, 525–530
+    doi: 10.1038/340525a0
+  berlinguette2019:
+    type: article
+    authors: Berlinguette, C. P. et al.
+    title: Revisiting the cold case of cold fusion
+    year: 2019
+    in: Nature 570, 45–51
+    doi: 10.1038/s41586-019-1256-6
+  storms2007:
+    type: book
+    authors: Storms, E.
+    title: 'The Science of Low Energy Nuclear Reaction: A Comprehensive Compilation of Evidence and Explanations about Cold Fusion'
+    year: 2007
+    in: World Scientific, Singapore
+  doe2004:
+    type: report
+    authors: US Department of Energy, Office of Science
+    title: Report of the Review of Low Energy Nuclear Reactions
+    year: 2004
+    in: US DOE, Washington DC
+related: [fuzyon]

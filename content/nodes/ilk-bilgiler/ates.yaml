@@ -1,0 +1,105 @@
+id: ates
+parent: ilk-bilgiler
+type: technology
+order: 2
+title:
+  tr: Ateşin kullanımı
+  en: Control of fire
+summary:
+  tr: >-
+    Ateşi kullanmak ve sonradan yakabilmek; pişirme, ısınma, korunma ve karanlıkta çalışma imkânı verdi. Ateşin ne zaman
+    ara sıra, ne zaman düzenli olarak kullanılmaya başlandığı konusunda görüşler çok farklıdır.
+  en: >-
+    Using fire, and later making it, allowed cooking, warmth, protection and activity after dark. Views differ widely
+    on when fire began to be used occasionally and when it came into regular use.
+technical:
+  tr: >-
+    Kanıtlar yanık kemik, ısıya maruz kalmış çakmaktaşı, kül mikromorfolojisi ve ocak yapılarından gelir. Güney
+    Afrika'daki Wonderwerk Mağarası'nda yaklaşık 1 milyon yıllık Acheulean katmanlarında yerinde yanma izleri
+    bildirilmiştir. İsrail'deki Gesher Benot Ya'aqov'da yaklaşık 790.000 yıllık yanık tohum ve çakmaktaşı kümeleri
+    bulunmuştur. Avrupa verilerine dayanan bir görüşe göre ateşin alışkanlık hâlinde kullanımı yaklaşık 400.000–300.000
+    yıl öncesinden önce gösterilemez. Doğal yangın kalıntılarını insan kaynaklı ateşten ayırmak temel yöntemsel
+    sorundur.
+  en: >-
+    Evidence comes from burnt bone, heated flint, ash micromorphology and hearth features. In situ burning has been
+    reported in Acheulean layers about 1 million years old at Wonderwerk Cave, South Africa. Burnt seeds and clusters
+    of burnt flint about 790,000 years old were found at Gesher Benot Ya'aqov, Israel. One view, based on European data,
+    holds that habitual use of fire cannot be shown before about 400,000–300,000 years ago. Distinguishing natural fire
+    residues from human-made fire is the central methodological problem.
+datings:
+  - view:
+      tr: Arkeoloji (Wonderwerk, Güney Afrika)
+      en: Archaeology (Wonderwerk, South Africa)
+    value:
+      tr: Yaklaşık 1 milyon yıl önce, yerinde yanma izleri
+      en: About 1 million years ago, in situ burning
+    src: [berna2012]
+  - view:
+      tr: Arkeoloji (Gesher Benot Ya'aqov, İsrail)
+      en: Archaeology (Gesher Benot Ya'aqov, Israel)
+    value:
+      tr: Yaklaşık 790.000 yıl önce
+      en: About 790,000 years ago
+    src: [goreninbar2004]
+  - view:
+      tr: Arkeoloji (Avrupa verisine dayalı eleştirel görüş)
+      en: Archaeology (critical view based on European data)
+    value:
+      tr: Alışkanlık hâlinde kullanım yaklaşık 400.000–300.000 yıl öncesinden itibaren
+      en: Habitual use from about 400,000–300,000 years ago
+    src: [roebroeks2011]
+  - view:
+      tr: Yunan mitolojisi
+      en: Greek mythology
+    value:
+      tr: Titan Prometheus ateşi tanrılardan çalıp insanlara verdi (Hesiodos, Theogonia).
+      en: The Titan Prometheus stole fire from the gods and gave it to humans (Hesiod, Theogony).
+    src: [hesiod]
+claims:
+  - tr: İnsan ataları ateşi en az bir milyon yıldır kullanmaktadır.
+    en: Human ancestors have used fire for at least a million years.
+    src: [berna2012]
+evidence:
+  - kind: archaeological
+    stance: for
+    tr: Wonderwerk Mağarası tortularında mikroskobik kül ve yanık kemik parçaları, mağara içinde yanma olduğunu gösterir biçimde bulundu.
+    en: Microscopic ash and burnt bone fragments in the Wonderwerk Cave sediments point to burning inside the cave.
+    src: [berna2012]
+  - kind: archaeological
+    stance: for
+    tr: Gesher Benot Ya'aqov'da yanık çakmaktaşları belirli alanlarda kümelenmiş olarak bulundu; bu ocak kullanımı olarak yorumlandı.
+    en: Burnt flint at Gesher Benot Ya'aqov was found clustered in specific areas, interpreted as hearths.
+    src: [goreninbar2004]
+  - kind: critique
+    stance: against
+    tr: Avrupa'daki erken alanların çoğunda ateş izleri yok. Buna dayanarak ateşin düzenli kullanımının çok daha geç başladığı savunuldu.
+    en: Most early European sites lack traces of fire, which was used to argue that regular fire use began much later.
+    src: [roebroeks2011]
+sources:
+  berna2012:
+    type: article
+    authors: Berna, F. et al.
+    title: Microstratigraphic evidence of in situ fire in the Acheulean strata of Wonderwerk Cave, Northern Cape province, South Africa
+    year: 2012
+    in: PNAS 109(20), E1215–E1220
+    doi: 10.1073/pnas.1117620109
+  goreninbar2004:
+    type: article
+    authors: Goren-Inbar, N. et al.
+    title: Evidence of hominin control of fire at Gesher Benot Ya'aqov, Israel
+    year: 2004
+    in: Science 304, 725–727
+    doi: 10.1126/science.1095443
+  roebroeks2011:
+    type: article
+    authors: Roebroeks, W.; Villa, P.
+    title: On the earliest evidence for habitual use of fire in Europe
+    year: 2011
+    in: PNAS 108(13), 5209–5214
+    doi: 10.1073/pnas.1018116108
+  hesiod:
+    type: manuscript
+    authors: Hesiodos / Hesiod
+    title: Theogonia / Theogony, 561–569
+    url: https://www.theoi.com/Text/HesiodTheogony.html
+related: [tas-aletler, enerji]

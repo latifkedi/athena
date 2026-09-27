@@ -1,0 +1,63 @@
+id: genisletilmis-sentez
+parent: canlilarin-kokeni
+type: idea
+date: { year: 2015 }
+people: [Kevin Laland, Tobias Uller, Marcus Feldman, Eva Jablonka, Gerd Müller]
+title:
+  tr: Genişletilmiş evrimsel sentez
+  en: The extended evolutionary synthesis
+summary:
+  tr: >-
+    Bir grup biyolog, gelişim süreçlerinin, çevreye bağlı biçim değişikliklerinin, epigenetik kalıtımın ve canlıların
+    kendi çevrelerini değiştirmesinin (niş inşası) evrimin yönünü belirlemede sanıldığından daha etkili olduğunu savunur.
+    Bu nedenle mevcut kuramın genişletilmesi gerektiğini düşünürler. Diğer biyologlar ise bu olguların mevcut kuram içinde
+    zaten açıklandığını savunur.
+  en: >-
+    A group of biologists argues that developmental processes, environment-dependent changes in form, epigenetic
+    inheritance and organisms' modification of their own surroundings (niche construction) play a larger role in
+    directing evolution than assumed, and that the current theory should therefore be extended. Other biologists argue
+    that these phenomena are already accommodated within the existing theory.
+technical:
+  tr: >-
+    Laland ve arkadaşları (2015) dört başlık önerir: gelişimsel yanlılık, fenotipik esneklik, kalıtımın genişletilmiş
+    kavramı ve niş inşası. Temel iddia, nedenselliğin genden fenotipe tek yönlü değil, karşılıklı olmasıdır. Wray,
+    Hoekstra ve arkadaşları ise bu süreçlerin var olduğunu kabul eder. Ancak bunların kuramın temel yapısında bir
+    değişiklik gerektirmediğini, popülasyon genetiği ile evo-devo içinde zaten incelendiğini savunur.
+  en: >-
+    Laland et al. (2015) propose four themes: developmental bias, phenotypic plasticity, an extended notion of inheritance
+    and niche construction. The key claim is that causation runs reciprocally, not one way from gene to phenotype. Wray,
+    Hoekstra and colleagues accept that these processes exist but argue that they require no change to the core structure
+    of the theory and are already studied within population genetics and evo-devo.
+claims:
+  - tr: Gelişim, esneklik, genetik olmayan kalıtım ve niş inşası, evrimin yönünü belirleyen nedenler arasında yer alır.
+    en: Development, plasticity, non-genetic inheritance and niche construction are among the causes that direct evolution.
+    src: [laland2015]
+positions:
+  - who:
+      tr: Genişletilmiş sentez savunucuları
+      en: Proponents of the extended synthesis
+    tr: Kuram yeniden düşünülmeli. Standart görüş, geni nedenselliğin merkezine koyarak önemli süreçleri gözden kaçırıyor.
+    en: The theory needs a rethink; the standard view, by placing genes at the centre of causation, misses important processes.
+    src: [laland-wray2014, laland2015]
+  - who:
+      tr: Standart kuramı savunan biyologlar
+      en: Biologists defending the standard theory
+    tr: Kuramın yeniden düşünülmesine gerek yok. Sözü edilen süreçler zaten kuramın içindedir ve iyi araştırılmaktadır.
+    en: No rethink is needed; the processes mentioned are already part of the theory and well studied.
+    src: [laland-wray2014]
+sources:
+  laland2015:
+    type: article
+    authors: Laland, K. N. et al.
+    title: 'The extended evolutionary synthesis: its structure, assumptions and predictions'
+    year: 2015
+    in: Proceedings of the Royal Society B 282, 20151019
+    doi: 10.1098/rspb.2015.1019
+  laland-wray2014:
+    type: article
+    authors: Laland, K. et al.; Wray, G. A. et al.
+    title: Does evolutionary theory need a rethink?
+    year: 2014
+    in: Nature 514, 161–164
+    doi: 10.1038/514161a
+related: [lamarck, modern-sentez]

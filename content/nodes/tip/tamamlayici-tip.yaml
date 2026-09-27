@@ -1,0 +1,46 @@
+id: tamamlayici-tip
+parent: tip
+type: field
+order: 3000
+title:
+  tr: Geleneksel ve tamamlayıcı tıp
+  en: Traditional and complementary medicine
+summary:
+  tr: >-
+    Homeopati, akupunktur, bitkisel tedaviler ve hacamat gibi uygulamalar dünyanın birçok yerinde yaygın olarak
+    kullanılır. Dünya Sağlık Örgütü'nün bu alanda bir stratejisi vardır. Türkiye'de de bu uygulamalar 2014'ten beri
+    yönetmelikle düzenlenmektedir. Bu uygulamaların etkisine dair klinik çalışmalar farklı sonuçlar vermiştir.
+  en: >-
+    Practices such as homeopathy, acupuncture, herbal remedies and cupping are widely used in many parts of the world.
+    The World Health Organization has a strategy for the field, and in Turkey these practices have been regulated since
+    2014. Clinical studies of their effects have produced differing results.
+technical:
+  tr: >-
+    Bu uygulamaların değerlendirilmesinde temel yöntemsel sorunlar şunlardır: uygun plasebo kontrolü tasarlamak (ör. sahte
+    akupunktur), körleme, bireyselleştirilmiş tedavilerin standartlaştırılması ve yayın yanlılığı. Bazı uygulamalar
+    (ör. artemisinin gibi bitkisel kökenli ilaçlar) ana akım farmakolojiye dahil olmuştur.
+  en: >-
+    Key methodological problems in evaluating these practices are designing adequate placebo controls (e.g. sham
+    acupuncture), blinding, standardising individualised treatments and publication bias. Some practices, such as
+    plant-derived drugs like artemisinin, have entered mainstream pharmacology.
+claims:
+  - tr: Dünya Sağlık Örgütü, geleneksel ve tamamlayıcı tıbbın güvenli ve etkili kullanımının sağlık sistemlerine entegre edilmesini hedefleyen bir strateji yayımlamıştır.
+    en: The World Health Organization has published a strategy aiming to integrate the safe and effective use of traditional and complementary medicine into health systems.
+    src: [who2013]
+  - tr: Türkiye'de geleneksel ve tamamlayıcı tıp uygulamaları 2014'te yürürlüğe giren bir yönetmelikle düzenlenmiştir.
+    en: In Turkey, traditional and complementary medicine practices are regulated by a regulation that entered into force in 2014.
+    src: [getat2014]
+sources:
+  who2013:
+    type: report
+    authors: World Health Organization
+    title: WHO Traditional Medicine Strategy 2014–2023
+    year: 2013
+    in: WHO, Geneva
+    url: https://www.who.int/publications/i/item/9789241506096
+  getat2014:
+    type: report
+    authors: T.C. Sağlık Bakanlığı
+    title: Geleneksel ve Tamamlayıcı Tıp Uygulamaları Yönetmeliği
+    year: 2014
+    in: Resmî Gazete, 27 Ekim 2014, Sayı 29158

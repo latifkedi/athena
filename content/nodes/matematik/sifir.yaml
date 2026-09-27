@@ -1,0 +1,68 @@
+id: sifir
+parent: matematik
+type: idea
+date: { year: 628 }
+people: [Brahmagupta]
+title:
+  tr: Bir sayı olarak sıfır
+  en: Zero as a number
+summary:
+  tr: >-
+    Sıfırın yalnızca "boş basamak" işareti olarak değil, hesaba katılan bir sayı olarak kurallarının yazılması
+    Hindistan'da gerçekleşti. Brahmagupta 628'de sıfırla toplama, çıkarma ve çarpma kurallarını verdi. Daha eski bir
+    sıfırın Bakhshali el yazmasında bulunup bulunmadığı tartışmalıdır.
+  en: >-
+    Writing down rules for zero, not merely as an "empty place" marker but as a number used in calculation, happened in
+    India. In 628 Brahmagupta gave rules for adding, subtracting and multiplying with zero. Whether an older zero appears
+    in the Bakhshali manuscript is debated.
+technical:
+  tr: >-
+    Brāhmasphuṭasiddhānta'nın 18. bölümü, "śūnya" (sıfır) ve negatif sayılarla (borç) işlemlerin kurallarını içerir.
+    Bölme kuralı (0/0 = 0) bugünkü tanımlarla uyuşmaz. Yer değerli ondalık sistem ve sıfır, Arapça eserler (ör.
+    Harezmî) üzerinden Avrupa'ya ulaştı. Bodleian Kütüphanesi'nin 2017'deki radyokarbon tarihlendirmesi Bakhshali
+    yaprakları için MS 3.–10. yüzyıl arasında farklı tarihler verdi. Plofker ve arkadaşları, metnin tarihinin en eski
+    yaprağa göre belirlenemeyeceğini savundu.
+  en: >-
+    Chapter 18 of the Brāhmasphuṭasiddhānta sets out rules for operations with "śūnya" (zero) and negative numbers
+    (debts). Its division rule (0/0 = 0) does not agree with modern definitions. The place-value decimal system and zero
+    reached Europe through Arabic works (e.g. al-Khwārizmī). The Bodleian Library's 2017 radiocarbon dating gave
+    different dates, from the 3rd to the 10th century CE, for leaves of the Bakhshali manuscript. Plofker and colleagues
+    argued that the date of the text cannot be set by its oldest leaf.
+claims:
+  - tr: Sıfırın hesap kurallarıyla birlikte bir sayı olarak ilk yazılı ele alınışı Brahmagupta'ya (628) aittir.
+    en: The first written treatment of zero as a number, with rules of calculation, is Brahmagupta's (628).
+    src: [plofker2009]
+  - tr: Bakhshali el yazmasındaki sıfır işareti MS 3. ya da 4. yüzyıla aittir.
+    en: The zero sign in the Bakhshali manuscript dates to the 3rd or 4th century CE.
+    src: [sciencedaily2017]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Bakhshali el yazmasının bir yaprağı radyokarbon yöntemiyle MS 224–383 aralığına tarihlendi.
+    en: One leaf of the Bakhshali manuscript was radiocarbon-dated to 224–383 CE.
+    src: [sciencedaily2017]
+  - kind: critique
+    stance: against
+    tr: Tarih bilimcileri, farklı yaprakların farklı tarihler vermesinin metnin bir bütün olarak geç bir döneme (en genç yaprağın tarihine) ait olduğunu gösterdiğini savundu.
+    en: Historians argued that the different dates for different leaves indicate that the text as a whole belongs to a late period, the date of the youngest leaf.
+    src: [plofker2017]
+sources:
+  plofker2009:
+    type: book
+    authors: Plofker, K.
+    title: Mathematics in India
+    year: 2009
+    in: Princeton University Press
+  plofker2017:
+    type: article
+    authors: Plofker, K.; Keller, A.; Hayashi, T.; Montelle, C.; Wujastyk, D.
+    title: "The Bakhshālī Manuscript: A Response to the Bodleian Library's Radiocarbon Dating"
+    year: 2017
+    in: History of Science in South Asia 5(1), 134–150
+    url: https://journals.library.ualberta.ca/hssa/index.php/hssa/article/view/22
+  sciencedaily2017:
+    type: news
+    title: "The Bakhshali manuscript: The world's oldest zero?"
+    year: 2017
+    in: ScienceDaily (University of Oxford press release)
+    url: https://www.sciencedaily.com/releases/2017/10/171026135305.htm

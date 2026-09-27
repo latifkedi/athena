@@ -1,0 +1,68 @@
+id: mrna-asi
+parent: tip
+type: technology
+date: { year: 2020, month: 12 }
+people: [Katalin Karikó, Drew Weissman]
+title:
+  tr: mRNA aşıları
+  en: mRNA vaccines
+summary:
+  tr: >-
+    mRNA aşıları, vücuda bir virüs proteininin tarifini içeren genetik mesajı verir. Hücreler bu proteini üretir,
+    bağışıklık sistemi de ona karşı hazırlanır. Karikó ve Weissman'ın 2005'teki buluşu, mRNA'nın gereksiz bağışıklık
+    tepkisi yaratmadan kullanılmasını sağladı. Bu yöntemle geliştirilen COVID-19 aşıları Aralık 2020'de onaylandı. 2023
+    Nobel Tıp Ödülü bu çalışmaya verildi.
+  en: >-
+    mRNA vaccines give the body a genetic message containing the recipe for a virus protein; cells produce the protein
+    and the immune system prepares against it. Karikó and Weissman's 2005 finding allowed mRNA to be used without
+    triggering unwanted immune reactions. COVID-19 vaccines developed this way were authorised in December 2020. The work
+    received the 2023 Nobel Prize in Physiology or Medicine.
+technical:
+  tr: >-
+    Üridin yerine psödoüridin (ve daha sonra N1-metilpsödoüridin) kullanımı, mRNA'nın TLR7/8 gibi doğuştan bağışıklık
+    algılayıcılarını daha az uyarmasını ve daha verimli çevrilmesini sağladı. mRNA lipit nanoparçacıklarla taşınır. Faz 3
+    çalışmalarında semptomatik COVID-19'a karşı başlangıçta yaklaşık %95 etkinlik bildirildi. Miyokardit, özellikle genç
+    erkeklerde ikinci dozdan sonra nadir görülen bir yan etki olarak tanımlandı.
+  en: >-
+    Replacing uridine with pseudouridine (and later N1-methylpseudouridine) made mRNA stimulate innate immune sensors such
+    as TLR7/8 less and be translated more efficiently. The mRNA is delivered in lipid nanoparticles. Phase 3 trials
+    initially reported about 95% efficacy against symptomatic COVID-19. Myocarditis was identified as a rare side effect,
+    especially in young men after the second dose.
+claims:
+  - tr: Nükleozidi değiştirilmiş mRNA, doğuştan bağışıklık tepkisini azaltarak aşı ve tedavi amacıyla kullanılabilir.
+    en: Nucleoside-modified mRNA can be used for vaccines and therapy with reduced innate immune activation.
+    src: [kariko2005]
+evidence:
+  - kind: clinical
+    stance: for
+    tr: 43.000'den fazla katılımcılı randomize çalışmada iki doz BNT162b2, semptomatik COVID-19'a karşı %95 etkinlik gösterdi.
+    en: In a randomised trial of more than 43,000 participants, two doses of BNT162b2 showed 95% efficacy against symptomatic COVID-19.
+    src: [polack2020]
+  - kind: statistical
+    stance: against
+    tr: İsrail'deki sürveyans verilerinde, özellikle 16–29 yaş erkeklerde ikinci dozdan sonra nadir miyokardit vakalarında artış saptandı.
+    en: Surveillance data from Israel found an increase in rare cases of myocarditis, especially in males aged 16–29 after the second dose.
+    src: [mevorach2021]
+sources:
+  kariko2005:
+    type: article
+    authors: Karikó, K.; Buckstein, M.; Ni, H.; Weissman, D.
+    title: 'Suppression of RNA recognition by Toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA'
+    year: 2005
+    in: Immunity 23(2), 165–175
+    doi: 10.1016/j.immuni.2005.06.008
+  polack2020:
+    type: article
+    authors: Polack, F. P. et al.
+    title: Safety and efficacy of the BNT162b2 mRNA Covid-19 vaccine
+    year: 2020
+    in: New England Journal of Medicine 383, 2603–2615
+    doi: 10.1056/NEJMoa2034577
+  mevorach2021:
+    type: article
+    authors: Mevorach, D. et al.
+    title: Myocarditis after BNT162b2 mRNA vaccine against Covid-19 in Israel
+    year: 2021
+    in: New England Journal of Medicine 385, 2140–2149
+    doi: 10.1056/NEJMoa2109730
+related: [asi]

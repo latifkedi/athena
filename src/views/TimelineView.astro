@@ -1,0 +1,124 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang, NodeData } from '../lib/data';
+import { allNodes, topLevel } from '../lib/data';
+import { ui, t, url, nodePath, formatDate } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const dated = allNodes.filter((n) => n.date).sort((a, b) => a.date!.year - b.date!.year || (a.date!.month ?? 0) - (b.date!.month ?? 0));
+const undated = allNodes
+  .filter((n) => !n.date && n.datings.length)
+  .sort((a, b) => t(a.title, lang).localeCompare(t(b.title, lang), lang));
+
+const eras: { label: { tr: string; en: string }; test: (y: number) => boolean }[] = [
+  { label: { tr: 'Milattan önce', en: 'Before the Common Era' }, test: (y) => y < 0 },
+  { label: { tr: '1–1500', en: '1–1500' }, test: (y) => y >= 0 && y < 1500 },
+  { label: { tr: '1500–1800', en: '1500–1800' }, test: (y) => y >= 1500 && y < 1800 },
+  { label: { tr: '1800–1900', en: '1800–1900' }, test: (y) => y >= 1800 && y < 1900 },
+  { label: { tr: '1900–2000', en: '1900–2000' }, test: (y) => y >= 1900 && y < 2000 },
+  { label: { tr: '2000 ve sonrası', en: '2000 onwards' }, test: (y) => y >= 2000 },
+];
+const groups = eras
+  .map((e) => ({ label: e.label, items: dated.filter((n) => e.test(n.date!.year)) }))
+  .filter((g) => g.items.length);
+const branchOf = (n: NodeData) => topLevel(n.id);
+---
+
+<Base lang={lang} title={t(ui.nav.timeline, lang)} route="timeline">
+  <main class="wrap">
+    <h1>{t(ui.nav.timeline, lang)}</h1>
+    <p class="muted">
+      {
+        lang === 'tr'
+          ? 'Yalnızca tarihi belgelenmiş olaylar (yayın, deney, gözlem) tarihleriyle gösterilir. Tarihi tartışmalı olanlar en altta ayrıca listelenir.'
+          : 'Only events with a documented date (publication, experiment, observation) are placed on the timeline. Items whose dates are disputed are listed separately at the bottom.'
+      }
+    </p>
+
+    {
+      groups.map((g) => (
+        <section>
+          <h2>{t(g.label, lang)}</h2>
+          <ol class="tl">
+            {g.items.map((n) => {
+              const b = branchOf(n);
+              return (
+                <li>
+                  <span class="when">{formatDate(n.date, lang)}</span>
+                  <span class={`dot ${n.side}`} />
+                  <div>
+                    <a href={url(nodePath(n.id, lang))}>{t(n.title, lang)}</a>
+                    {b && b.id !== n.id && <span class="muted small"> · {t(b.title, lang)}</span>}
+                    <p class="small muted">{t(n.summary, lang)}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ))
+    }
+
+    {
+      undated.length > 0 && (
+        <section>
+          <h2>{t(ui.undated, lang)}</h2>
+          <p class="muted small">{t(ui.undatedNote, lang)}</p>
+          <ul class="und">
+            {undated.map((n) => (
+              <li>
+                <span class={`dot ${n.side}`} /> <a href={url(nodePath(n.id, lang) + '#datings')}>{t(n.title, lang)}</a>
+                <span class="muted small">
+                  {' '}
+                  — {n.datings.map((d) => t(d.view, lang)).join(' · ')}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </main>
+</Base>
+
+<style>
+  .tl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 2px solid var(--border);
+  }
+  .tl li {
+    display: grid;
+    grid-template-columns: 116px 10px 1fr;
+    gap: 10px;
+    align-items: baseline;
+    padding: 8px 0 4px 14px;
+  }
+  .tl .when {
+    font-variant-numeric: tabular-nums;
+    color: var(--text-2);
+    font-size: 0.9rem;
+  }
+  .tl p {
+    margin: 2px 0 0;
+  }
+  .tl a {
+    font-weight: 600;
+  }
+  .und li {
+    margin-bottom: 6px;
+  }
+  @media (max-width: 560px) {
+    .tl li {
+      grid-template-columns: 10px 1fr;
+    }
+    .tl .when {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

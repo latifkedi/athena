@@ -1,0 +1,50 @@
+id: mutezile
+parent: kelam
+type: tradition
+date: { year: 750, approx: true }
+people: [Vâsıl b. Atâ, Ebü'l-Hüzeyl el-Allâf, Nazzâm, Kādî Abdülcebbâr]
+title:
+  tr: Mu'tezile
+  en: The Muʿtazila
+summary:
+  tr: >-
+    Mu'tezile, inanç konularının yorumlanmasında akla ve insan iradesine öncelik veren kelam ekolüdür. Allah'ın adaletini
+    öne çıkardı ve insanın fiillerini kendi iradesiyle yarattığını savundu. Kur'an'ın mahlûk (yaratılmış) olduğunu
+    ileri sürdü. Abbasi döneminde bir süre resmî görüş hâline geldi (Mihne, 833–848).
+  en: >-
+    The Muʿtazila is the kalām school that gave priority to reason and human will in interpreting matters of belief. It
+    emphasised God's justice, held that humans create their own acts by their own will, and maintained that the Qur'an is
+    created. For a time under the Abbasids it became the official view (the Miḥna, 833–848).
+technical:
+  tr: >-
+    Ekolün beş temel ilkesi (usûl-i hamse) şunlardır: tevhid, adl, va'd ve vaîd, el-menzile beyne'l-menzileteyn ve
+    emr-i bi'l-ma'rûf nehy-i ani'l-münker. Mu'tezile'ye göre iyi ve kötü aklen bilinebilir (husun-kubuh aklîdir). Ekol,
+    sıfatları zatla özdeş kabul eder. Basra Mu'tezilesi atomcu bir doğa kuramı geliştirdi. Nazzâm ise atomculuğu
+    reddederek sonsuz bölünebilirliği savundu.
+  en: >-
+    The school's five principles (al-uṣūl al-khamsa) are divine unity, justice, the promise and the threat, the
+    intermediate position, and commanding right and forbidding wrong. For the Muʿtazila good and evil can be known by
+    reason. The school held the divine attributes to be identical with God's essence. The Basran Muʿtazila developed an
+    atomist theory of nature, while al-Naẓẓām rejected atomism in favour of infinite divisibility.
+claims:
+  - tr: İyi ve kötü akılla bilinebilir. İnsan, fiillerinin yaratıcısıdır ve bunlardan sorumludur.
+    en: Good and evil can be known by reason; humans are the creators of their acts and responsible for them.
+    src: [tdv-mutezile]
+positions:
+  - who:
+      tr: Ehl-i sünnet kelamcıları (Eş'arî, Mâtürîdî)
+      en: Sunni theologians (Ashʿarī, Māturīdī)
+    tr: Fiilleri yaratan Allah'tır. Kur'an mahlûk değildir. Mu'tezile'nin aklı öne çıkarması nasları yeterince gözetmez.
+    en: God creates acts; the Qur'an is not created; the Muʿtazila's priority on reason does not give scripture its due.
+    src: [tdv-esariyye]
+sources:
+  tdv-mutezile:
+    type: encyclopedia
+    title: Mu'tezile
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/mutezile
+  tdv-esariyye:
+    type: encyclopedia
+    title: Eş'ariyye
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/esariyye

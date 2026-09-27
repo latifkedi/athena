@@ -1,0 +1,94 @@
+id: akilli-tasarim
+parent: canlilarin-kokeni
+type: idea
+date: { year: 1996 }
+people: [Michael Behe, William Dembski, Stephen Meyer, Douglas Axe]
+title:
+  tr: Akıllı tasarım
+  en: Intelligent design
+summary:
+  tr: >-
+    Akıllı tasarım savunucularına göre bazı biyolojik yapılar, parçalarından biri eksik olduğunda hiç işlemeyecek kadar
+    karmaşıktır ("indirgenemez karmaşıklık"). Bu nedenle bu yapıların kör ve adım adım işleyen süreçlerle değil, akıllı
+    bir tasarımcı tarafından oluşturulduğu çıkarımı yapılır. Karşı çıkanlar, bu yapıların aşamalı gelişimini gösteren
+    modeller sunar. Ayrıca kuramın bilimsel olarak test edilebilir olmadığını savunurlar. ABD'deki bir mahkeme 2005'te
+    kuramın okullarda fen dersi olarak okutulmasını anayasaya aykırı buldu.
+  en: >-
+    According to proponents of intelligent design, some biological structures are so complex that they would not work
+    at all if one part were missing ("irreducible complexity"). They therefore infer that such structures were produced by
+    an intelligent designer rather than by blind, step-by-step processes. Opponents present models showing the stepwise
+    development of these structures and argue that the theory is not scientifically testable. In 2005 a US court held
+    that teaching it as science in public schools was unconstitutional.
+technical:
+  tr: >-
+    Behe'nin örnekleri bakteri kamçısı, kan pıhtılaşma kaskadı ve bağışıklık sistemidir. Dembski'nin "belirlenmiş
+    karmaşıklık" ölçütü, tasarım çıkarımını olasılıksal bir süzgeçle biçimlendirmeyi amaçlar. Axe (2004), işlevsel protein
+    kıvrımlarının dizi uzayındaki sıklığını çok düşük (yaklaşık 10⁻⁷⁷) tahmin etti ve bu sonuç tasarım savunucularınca
+    kullanıldı. Eleştirmenler kamçının Tip III salgı sistemiyle homoloğunu, işlev değişimiyle (eksaptasyon) aşamalı
+    oluşum senaryolarını ve Axe'ın tahmininin tek bir proteine dayanmasını öne sürer.
+  en: >-
+    Behe's examples are the bacterial flagellum, the blood-clotting cascade and the immune system. Dembski's "specified
+    complexity" criterion aims to formalise the design inference as a probabilistic filter. Axe (2004) estimated the
+    prevalence of functional protein folds in sequence space as very low (about 10⁻⁷⁷), a result used by design
+    proponents. Critics point to the flagellum's homology with the type III secretion system, to scenarios of stepwise
+    origin by co-option (exaptation) and to the fact that Axe's estimate rests on a single protein.
+claims:
+  - tr: Bazı biyolojik sistemler indirgenemez biçimde karmaşıktır ve en iyi akıllı bir nedenle açıklanır.
+    en: Some biological systems are irreducibly complex and are best explained by an intelligent cause.
+    src: [behe1996, dembski1998]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Bakteri kamçısı gibi sistemlerde temel parçalardan herhangi biri çıkarıldığında sistemin işlevini kaybettiği gösterilmiştir.
+    en: In systems such as the bacterial flagellum, removing any of the core parts has been shown to abolish function.
+    src: [behe1996]
+  - kind: experiment
+    stance: for
+    tr: Bir enzim alanı üzerinde yapılan mutasyon deneylerinden, işlevsel protein dizilerinin tüm olası diziler içinde son derece nadir olduğu tahmin edildi.
+    en: Mutation experiments on one enzyme domain led to the estimate that functional protein sequences are extremely rare among all possible sequences.
+    src: [axe2004]
+  - kind: genetic
+    stance: against
+    tr: Kamçı proteinlerinin başka işlevler gören sistemlerle (ör. Tip III salgı sistemi) homolog olduğu gösterildi. Bu durum, parçaların başka işlevlerden devşirilerek aşamalı biçimde bir araya gelmiş olabileceği şeklinde yorumlandı.
+    en: Flagellar proteins were shown to be homologous to systems with other functions (e.g. the type III secretion system), interpreted as indicating stepwise assembly from parts co-opted from other functions.
+    src: [pallen2006]
+positions:
+  - who:
+      tr: Kitzmiller - Dover davası (ABD Federal Mahkemesi, 2005)
+      en: Kitzmiller v. Dover (US Federal Court, 2005)
+    tr: Mahkeme, akıllı tasarımın devlet okullarında fen dersi olarak okutulmasının din ile devletin ayrılığı ilkesini ihlal ettiğine hükmetti.
+    en: The court ruled that teaching intelligent design as science in public schools violated the separation of church and state.
+    src: [kitzmiller2005]
+sources:
+  behe1996:
+    type: book
+    authors: Behe, M. J.
+    title: "Darwin's Black Box: The Biochemical Challenge to Evolution"
+    year: 1996
+    in: Free Press, New York
+  dembski1998:
+    type: book
+    authors: Dembski, W. A.
+    title: 'The Design Inference: Eliminating Chance through Small Probabilities'
+    year: 1998
+    in: Cambridge University Press
+  axe2004:
+    type: article
+    authors: Axe, D. D.
+    title: Estimating the prevalence of protein sequences adopting functional enzyme folds
+    year: 2004
+    in: Journal of Molecular Biology 341(5), 1295–1315
+    doi: 10.1016/j.jmb.2004.06.058
+  pallen2006:
+    type: article
+    authors: Pallen, M. J.; Matzke, N. J.
+    title: 'From The Origin of Species to the origin of bacterial flagella'
+    year: 2006
+    in: Nature Reviews Microbiology 4, 784–790
+    doi: 10.1038/nrmicro1493
+  kitzmiller2005:
+    type: report
+    title: Kitzmiller v. Dover Area School District, 400 F. Supp. 2d 707 (M.D. Pa. 2005)
+    year: 2005
+    in: United States District Court for the Middle District of Pennsylvania
+related: [teistik-evrim, yaratiliscilik]

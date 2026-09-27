@@ -1,0 +1,72 @@
+id: godel
+parent: matematik
+type: event
+date: { year: 1931 }
+people: [Kurt Gödel]
+title:
+  tr: Gödel'in eksiklik teoremleri
+  en: Gödel's incompleteness theorems
+summary:
+  tr: >-
+    Gödel, aritmetiği içerecek kadar güçlü ve çelişkisiz her kurallı sistemde doğru olup o sistem içinde ispatlanamayan
+    önermeler bulunduğunu ispatladı. Böyle bir sistem kendi çelişkisizliğini de ispatlayamaz. Bu sonuç, matematiğin
+    tamamen biçimsel ve eksiksiz bir temele oturtulması umudunu (Hilbert programı) değiştirdi.
+  en: >-
+    Gödel proved that in every consistent formal system strong enough to include arithmetic there are statements that
+    are true but cannot be proved within the system. Such a system also cannot prove its own consistency. The result
+    changed the hope of placing all of mathematics on a complete formal foundation (Hilbert's programme).
+technical:
+  tr: >-
+    Birinci teorem: özyinelemeli olarak aksiyomlanabilir, ω-tutarlı (Rosser'den sonra yalnızca tutarlı) ve Robinson
+    aritmetiğini içeren her T kuramı eksiktir. Ne kendisi ne değillemesi T'de ispatlanabilen bir G_T cümlesi vardır.
+    İkinci teorem: böyle bir T tutarlıysa Con(T) cümlesi T'de ispatlanamaz. İspat, Gödel numaralandırması ve köşegen
+    lemması ile "bu cümle ispatlanamaz" diyen bir cümlenin kurulmasına dayanır.
+  en: >-
+    First theorem: every recursively axiomatisable, ω-consistent (after Rosser, merely consistent) theory T that
+    contains Robinson arithmetic is incomplete. There is a sentence G_T such that neither it nor its negation is provable
+    in T. Second theorem: if such a T is consistent, Con(T) is not provable in T. The proof rests on Gödel numbering and
+    the diagonal lemma, constructing a sentence that says "this sentence is not provable".
+claims:
+  - tr: Yeterince güçlü, tutarlı biçimsel sistemler eksiktir ve kendi tutarlılıklarını ispatlayamaz.
+    en: Sufficiently strong consistent formal systems are incomplete and cannot prove their own consistency.
+    src: [godel1931]
+evidence:
+  - kind: proof
+    stance: for
+    tr: 1931 makalesindeki ispat, sonraki on yıllarda defalarca incelenmiş ve ispat asistanlarıyla biçimsel olarak da doğrulanmıştır.
+    en: The proof in the 1931 paper has been examined many times in the decades since and has also been formally verified with proof assistants.
+    src: [godel1931, sep-godel]
+positions:
+  - who:
+      tr: Penrose–Lucas argümanı
+      en: The Penrose–Lucas argument
+    tr: Teoremler, insan zihninin bir algoritmaya indirgenemeyeceğini gösterir.
+    en: The theorems show that the human mind cannot be reduced to an algorithm.
+    src: [penrose1989]
+  - who:
+      tr: Bu argümanın eleştirmenleri
+      en: Critics of that argument
+    tr: Argüman, insanın kendi tutarlılığını bildiğini varsayar. Teoremler bu sonucu desteklemez.
+    en: The argument assumes that humans know their own consistency; the theorems do not support that conclusion.
+    src: [sep-godel]
+sources:
+  godel1931:
+    type: article
+    authors: Gödel, K.
+    title: Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I
+    year: 1931
+    in: Monatshefte für Mathematik und Physik 38, 173–198
+    doi: 10.1007/BF01700692
+  sep-godel:
+    type: encyclopedia
+    authors: Raatikainen, P.
+    title: "Gödel's Incompleteness Theorems"
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/goedel-incompleteness/
+  penrose1989:
+    type: book
+    authors: Penrose, R.
+    title: "The Emperor's New Mind"
+    year: 1989
+    in: Oxford University Press
+related: [turing, bilinc]

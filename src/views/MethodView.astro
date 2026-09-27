@@ -1,0 +1,208 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../lib/data';
+import { allNodes } from '../lib/data';
+import { ui, t, url, routes, REPO, suggestUrl } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const srcCount = allNodes.reduce((s, n) => s + Object.keys(n.sources).length, 0);
+---
+
+<Base lang={lang} title={t(ui.nav.method, lang)} route="method">
+  <main class="wrap prose">
+    <h1>{t(ui.nav.method, lang)}</h1>
+    <p class="principle-box">{t(ui.principle, lang)}</p>
+    <p class="muted small">
+      {allNodes.length}
+      {t(ui.nodes, lang)} · {srcCount}
+      {lang === 'tr' ? 'kaynak' : 'sources'}
+    </p>
+
+    {
+      lang === 'tr' ? (
+        <>
+          <h2>1. Karar vermeyiz</h2>
+          <p>
+            Athena hiçbir iddiaya “doğru”, “yanlış”, “makul” ya da “çürütülmüş” gibi bir hüküm vermez. Her düğümde yalnızca
+            şunlar bulunur: <strong>iddialar</strong>, bu iddiaları <strong>destekleyen</strong> kanıtlar,{' '}
+            <strong>karşı çıkan veya sorgulayan</strong> kanıtlar, farklı çevrelerin <strong>görüşleri</strong> ve
+            hepsinin <strong>kaynakları</strong>. Kararı okuyucu verir.
+          </p>
+          <p>
+            Kanıtların <em>türü</em> etiketlenir (deney, gözlem, matematiksel ispat, fosil bulgusu, kutsal metin, tecrübe/keşf,
+            felsefi argüman, meta-analiz…). Bu bir sıralama değildir; okuyucunun hangi tür kanıtın öne sürüldüğünü görmesi
+            içindir.
+          </p>
+          <p>
+            Genel ilke olarak her sayfada şu not yer alır: <em>Bilimde hiçbir teori mutlak değildir; her bilgi yeni kanıtlarla
+            değişebilir.</em>
+          </p>
+
+          <h2>2. Ağacın yapısı</h2>
+          <p>
+            Merkezde <strong>insanlık</strong> vardır. Yukarı doğru uzanan <strong>dallar</strong> dünyayı araştıran alanlardır
+            (matematik, fizik, enerji, kimya, biyoloji, tıp, astronomi, psikoloji, parapsikoloji…). Aşağı doğru uzanan{' '}
+            <strong>kökler</strong> düşünce ve inanç gelenekleridir (felsefe, kelam, tasavvuf, dinler, mitoloji, ezoterik
+            gelenekler…). Kök ya da dal olmak bir değer yargısı değildir; bir konunun hangi soruyla ilgilendiğini gösterir.
+            Birçok düğüm iki tarafa da bağlıdır. Örneğin simya hem ezoterik bir gelenektir hem de kimya ve çekirdek fiziğiyle
+            bağlantılıdır.
+          </p>
+          <p>
+            Bir konunun farklı anlatıları, örneğin evrim hakkındaki farklı kuramlar ve görüşler, tek bir düğümde toplanmaz.
+            Her biri ayrı düğüm olarak kendi iddiaları ve kaynaklarıyla gösterilir.
+          </p>
+
+          <h2>3. İki anlatım düzeyi</h2>
+          <p>
+            Her düğümde iki metin bulunur: <strong>Herkes için</strong> sade bir anlatım ve <strong>Uzmanlar için</strong>{' '}
+            alanın terimleriyle yazılmış teknik bir açıklama.
+          </p>
+
+          <h2>4. Tarihler</h2>
+          <p>
+            Yalnızca belgelenmiş olayların (bir kitabın ya da makalenin yayımı, kayıtlı bir deney veya gözlem) tarihi verilir.
+            Tarihi kesin olarak belgelenmemiş konularda, örneğin insanlığın doğuşu, dilin ortaya çıkışı ya da ateşin kullanımı,
+            tek bir tarih verilmez. Bunun yerine dinlere, güncel bilime ve diğer kaynaklara göre farklı görüşler yan yana
+            listelenir.
+          </p>
+          <p>
+            Başında "y." (yaklaşık) bulunan tarihler, tarihçilerin eserler ve kişiler için kabul ettiği yaklaşık tarihlerdir
+            (ör. Öklid'in Elemanlar'ı, y. MÖ 300).
+          </p>
+
+          <h2>5. Kaynak politikası</h2>
+          <ul>
+            <li>
+              Her düğümün en az bir kaynağı olmak zorundadır. Kaynaksız düğüm derleme aşamasında otomatik olarak reddedilir.
+            </li>
+            <li>
+              Birincil kaynaklar: hakemli makaleler, kitaplar, klasik eserler, kutsal metinler, kurum raporları. Haber ve
+              ansiklopedi yazıları yalnızca ek okuma olarak kullanılır.
+            </li>
+            <li>
+              Karşıt görüşler için yayımlanmış ciddi eleştiriler (hakemli yanıtlar, tekrar çalışmaları, akademik kitaplar)
+              eklenir.
+            </li>
+            <li>Makaleler için DOI veya arXiv numarası, kitaplar için yayınevi ve ISBN verilir.</li>
+          </ul>
+
+          <h2>6. Arşivleme</h2>
+          <p>
+            Tüm içerik <a href={REPO}>git deposunda</a> düz metin (YAML) olarak durur. Her değişikliğin kim tarafından ve ne
+            zaman yapıldığı kalıcı olarak kaydedilir. Kaynak bağlantıları her ay otomatik olarak Internet Archive'a (Wayback
+            Machine) gönderilir ve her kaynağın yanında bir “arşiv” bağlantısı bulunur. Bağlantı bozulsa bile arşivlenmiş kopya
+            kalır.
+          </p>
+
+          <h2>7. Güncellik</h2>
+          <p>
+            Her ayın 1'inde arXiv, bioRxiv ve medRxiv'den her dal için en yeni ön baskılar otomatik olarak çekilir (
+            <a href={url(routes.latest[lang])}>Yeni makaleler</a>). Öne çıkan çalışmalar incelendikten sonra ağaca düğüm
+            olarak eklenir.
+          </p>
+
+          <h2>8. Düzeltme önerme</h2>
+          <p>
+            Her sayfanın altında bir <a href={suggestUrl(lang)}>Düzeltme öner</a> düğmesi vardır. Öneriler GitHub'da herkese
+            açık olarak kayıt altına alınır. Eksik kaynak, karşıt görüş, yanlış tarih veya yeni bir düğüm önerebilirsiniz.
+          </p>
+        </>
+      ) : (
+        <>
+          <h2>1. We do not deliver verdicts</h2>
+          <p>
+            Athena never labels a claim “true”, “false”, “reasonable” or “refuted”. Each node contains only{' '}
+            <strong>claims</strong>, <strong>supporting</strong> evidence, <strong>challenging</strong> evidence, the{' '}
+            <strong>positions</strong> of different communities, and <strong>sources</strong> for all of them. The reader
+            decides.
+          </p>
+          <p>
+            Evidence is tagged by <em>kind</em> (experiment, observation, mathematical proof, fossil find, scripture,
+            experience/unveiling, philosophical argument, meta-analysis…). This is not a ranking; it lets the reader see what
+            kind of evidence is being offered.
+          </p>
+          <p>
+            As a general principle every page carries the note: <em>No theory in science is absolute; all knowledge may change
+            with new evidence.</em>
+          </p>
+
+          <h2>2. Structure of the tree</h2>
+          <p>
+            <strong>Humanity</strong> sits at the centre. The <strong>branches</strong> growing upward are fields that
+            investigate the world (mathematics, physics, energy, chemistry, biology, medicine, astronomy, psychology,
+            parapsychology…). The <strong>roots</strong> growing downward are traditions of thought and belief (philosophy,
+            kalām, Sufism, religions, mythology, esoteric traditions…). Being a root or a branch is not a value judgement; it
+            describes which kind of question a topic asks. Many nodes connect to both sides. Alchemy, for example, is an
+            esoteric tradition and is also linked to chemistry and nuclear physics.
+          </p>
+          <p>
+            Different accounts of a topic are not merged into one node. The various theories and views on evolution, for
+            example, each have their own node with their own claims and sources.
+          </p>
+
+          <h2>3. Two reading levels</h2>
+          <p>
+            Every node has two texts: a plain-language account <strong>for everyone</strong> and a technical account{' '}
+            <strong>for specialists</strong> that uses the field's own terminology.
+          </p>
+
+          <h2>4. Dates</h2>
+          <p>
+            Dates are given only for documented events (publication of a book or paper, a recorded experiment or observation).
+            When a date is not documented with certainty, such as the origin of humanity, the emergence of language or the
+            control of fire, no single date is given. Instead, the views of religions, current science and other sources are
+            listed side by side.
+          </p>
+          <p>
+            Dates prefixed with "c." (circa) are approximate dates accepted by historians for works and people (e.g.
+            Euclid's Elements, c. 300 BCE).
+          </p>
+
+          <h2>5. Source policy</h2>
+          <ul>
+            <li>Every node must have at least one source. A node without sources is rejected automatically at build time.</li>
+            <li>
+              Primary sources: peer-reviewed papers, books, classical works, scriptures, institutional reports. News and
+              encyclopedia articles are used only as further reading.
+            </li>
+            <li>
+              For opposing views, serious published critiques are added (peer-reviewed replies, replication studies, academic
+              books).
+            </li>
+            <li>Papers carry a DOI or arXiv number; books carry a publisher and ISBN.</li>
+          </ul>
+
+          <h2>6. Archiving</h2>
+          <p>
+            All content is stored as plain text (YAML) in the <a href={REPO}>git repository</a>. Every change is permanently
+            recorded with its author and time. Source links are submitted to the Internet Archive (Wayback Machine)
+            automatically every month, and every source has an “archive” link next to it. The archived copy remains even if a
+            link breaks.
+          </p>
+
+          <h2>7. Staying current</h2>
+          <p>
+            On the 1st of every month the newest preprints for each branch are pulled automatically from arXiv, bioRxiv and
+            medRxiv (<a href={url(routes.latest[lang])}>New papers</a>). Notable work is added to the tree as a node after
+            review.
+          </p>
+
+          <h2>8. Suggesting corrections</h2>
+          <p>
+            Every page has a <a href={suggestUrl(lang)}>Suggest a correction</a> button at the bottom. Suggestions are
+            recorded publicly on GitHub. You can suggest a missing source, an opposing view, a wrong date or a new node.
+          </p>
+        </>
+      )
+    }
+  </main>
+</Base>
+
+<style>
+  .prose li {
+    margin-bottom: 6px;
+  }
+</style>

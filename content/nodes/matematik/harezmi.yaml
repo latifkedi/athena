@@ -1,0 +1,66 @@
+id: harezmi
+parent: matematik
+type: text
+date: { year: 820, approx: true }
+people: [Muhammed bin Musa el-Harezmî / al-Khwārizmī]
+title:
+  tr: Harezmî ve cebir
+  en: Al-Khwārizmī and algebra
+summary:
+  tr: >-
+    Bağdat'taki Beytü'l-Hikme'de çalışan Harezmî, denklemleri sistematik biçimde çözmeyi anlatan kitabıyla "cebir"
+    kelimesine adını verdi. "Algoritma" kelimesi de onun adının Latincesinden gelir. Cebirin "babası"nın Harezmî mi,
+    yoksa daha önceki İskenderiyeli Diophantos mu olduğu tartışılır.
+  en: >-
+    Al-Khwārizmī, working at the House of Wisdom in Baghdad, gave the word "algebra" its name with his book on solving
+    equations systematically. The word "algorithm" also comes from the Latin form of his name. Historians debate whether
+    the "father" of algebra is al-Khwārizmī or the earlier Diophantus of Alexandria.
+technical:
+  tr: >-
+    el-Kitâbü'l-muhtasar fî hisâbi'l-cebr ve'l-mukâbele, doğrusal ve ikinci dereceden denklemleri altı kanonik türe
+    ayırır ve her birinin çözümünü geometrik ispatla (kareyi tamamlama) destekler. Sembolik değil, sözel (retorik)
+    cebirdir. Diophantos'un Arithmetica'sı ise kısaltmalı (senkopat) gösterim kullanır ve belirsiz denklemlerin rasyonel
+    çözümlerine odaklanır. Harezmî'nin Hint rakamlarıyla hesap üzerine yazdığı eser, Latince çevirisi (Algoritmi de
+    numero Indorum) aracılığıyla Avrupa'da ondalık sistemi yaydı.
+  en: >-
+    Al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa'l-muqābala classifies linear and quadratic equations into six canonical
+    types and supports each solution with a geometric proof (completing the square). It is rhetorical, not symbolic,
+    algebra. Diophantus' Arithmetica uses abbreviated (syncopated) notation and focuses on rational solutions of
+    indeterminate equations. Al-Khwārizmī's treatise on calculation with Indian numerals spread the decimal system in
+    Europe through its Latin translation (Algoritmi de numero Indorum).
+positions:
+  - who:
+      tr: Harezmî'yi cebirin kurucusu sayan görüş
+      en: View crediting al-Khwārizmī as founder of algebra
+    tr: Cebiri kendi başına bir disiplin olarak, genel çözüm yöntemleri ve ispatlarıyla ilk kuran Harezmî'dir.
+    en: Al-Khwārizmī was the first to establish algebra as a discipline in its own right, with general methods of solution and proofs.
+    src: [rashed2009]
+  - who:
+      tr: Diophantos'u öne çıkaran görüş
+      en: View emphasising Diophantus
+    tr: Diophantos'un Arithmetica'sı (y. MS 250) bilinmeyenler için gösterim ve denklem çözümü içerir ve daha eskidir.
+    en: Diophantus' Arithmetica (c. 250 CE) contains notation for unknowns and solutions of equations, and is older.
+    src: [heath1910]
+sources:
+  rashed2009:
+    type: book
+    authors: Rashed, R.
+    title: 'Al-Khwārizmī: The Beginnings of Algebra'
+    year: 2009
+    in: Saqi Books, London
+  heath1910:
+    type: book
+    authors: Heath, T. L.
+    title: 'Diophantus of Alexandria: A Study in the History of Greek Algebra'
+    year: 1910
+    in: Cambridge University Press, 2nd edition
+  mactutor:
+    type: web
+    title: Abu Ja'far Muhammad ibn Musa Al-Khwarizmi (biography)
+    in: MacTutor History of Mathematics, University of St Andrews
+    url: https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/
+claims:
+  - tr: '"Algoritma" kelimesi Harezmî adının Latince biçiminden (Algoritmi) türemiştir.'
+    en: 'The word "algorithm" derives from the Latin form of al-Khwārizmī''s name (Algoritmi).'
+    src: [mactutor]
+related: [sifir, bilisim]

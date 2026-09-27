@@ -1,0 +1,65 @@
+id: kardasev
+parent: enerji
+type: idea
+date: { year: 1964 }
+people: [Nikolai Kardashev, Carl Sagan]
+title:
+  tr: Kardaşev ölçeği
+  en: The Kardashev scale
+summary:
+  tr: >-
+    Sovyet astronom Kardaşev medeniyetleri kullandıkları enerjiye göre sınıflandırdı. Tip I bir gezegenin, Tip II bir
+    yıldızın, Tip III bir galaksinin enerjisini kullanır. Carl Sagan'ın ara değerler için önerdiği formüle göre insanlık,
+    2025 enerji verileriyle yaklaşık 0,73 düzeyindedir.
+  en: >-
+    The Soviet astronomer Kardashev classified civilisations by the energy they use: Type I uses the energy of a planet,
+    Type II that of a star, Type III that of a galaxy. By the formula Carl Sagan proposed for intermediate values,
+    humanity stands at about 0.73 on 2025 energy data.
+technical:
+  tr: >-
+    Sagan'ın interpolasyonu K = (log₁₀ P − 6)/10 biçimindedir (P watt cinsinden). Buna göre Tip I 10¹⁶ W'a, Tip II 10²⁶
+    W'a, Tip III 10³⁶ W'a karşılık gelir. 2025'te dünyanın toplam birincil enerji arzı yaklaşık 600 EJ'dur. Bu, yaklaşık
+    1,9 × 10¹³ W ortalama güç demektir ve K ≈ 0,728 değerini verir. Ölçek, enerjinin yerine bilgi, verimlilik veya
+    sürdürülebilirlik gibi ölçütleri dışarıda bıraktığı için eleştirilir.
+  en: >-
+    Sagan's interpolation is K = (log₁₀ P − 6)/10 with P in watts, so Type I corresponds to 10¹⁶ W, Type II to 10²⁶ W and
+    Type III to 10³⁶ W. World total primary energy supply in 2025 was about 600 EJ, an average power of about
+    1.9 × 10¹³ W, which gives K ≈ 0.728. The scale is criticised for leaving out measures such as information,
+    efficiency or sustainability.
+claims:
+  - tr: İnsanlık Kardaşev ölçeğinde yaklaşık 0,73 düzeyindedir.
+    en: Humanity stands at about 0.73 on the Kardashev scale.
+    src: [sagan1973, ei2026]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Dünya birincil enerji arzı 2025'te yaklaşık 600 EJ'dur. Bu, 1,9 × 10¹³ W'a karşılık gelir.
+    en: World primary energy supply was about 600 EJ in 2025, equivalent to 1.9 × 10¹³ W.
+    src: [ei2026]
+sources:
+  kardashev1964:
+    type: article
+    authors: Kardashev, N. S.
+    title: Transmission of information by extraterrestrial civilizations
+    year: 1964
+    in: Soviet Astronomy 8, 217–221
+  sagan1973:
+    type: book
+    authors: Sagan, C.
+    title: 'The Cosmic Connection: An Extraterrestrial Perspective'
+    year: 1973
+    in: Doubleday, New York
+  ei2026:
+    type: report
+    authors: Energy Institute
+    title: Statistical Review of World Energy 2026
+    year: 2026
+    url: https://www.energyinst.org/statistical-review
+positions:
+  - who:
+      tr: Kardaşev (1964)
+      en: Kardashev (1964)
+    tr: Enerji kullanımı, uzaydan tespit edilebilecek medeniyetlerin sınıflandırılması için uygun bir ölçüttür.
+    en: Energy use is a suitable measure for classifying civilisations that might be detected from space.
+    src: [kardashev1964]
+related: [ote-gezegenler]

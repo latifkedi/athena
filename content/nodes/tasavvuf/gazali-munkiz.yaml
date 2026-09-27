@@ -1,0 +1,58 @@
+id: gazali-munkiz
+parent: tasavvuf
+type: text
+date: { year: 1108, approx: true }
+people: [Gazzâlî / al-Ghazālī]
+title:
+  tr: Gazzâlî'nin el-Munkız mine'd-Dalâl'i
+  en: "Al-Ghazālī's Deliverance from Error"
+summary:
+  tr: >-
+    Gazzâlî bu otobiyografik eserde, kesin bilgi arayışında duyulara ve akla güvenini yitirdiğini anlatır. Descartes'tan
+    yaklaşık beş yüzyıl önce yöntemli bir şüpheden geçer. Kelamı, felsefeyi ve Bâtınîliği inceledikten sonra kesin
+    bilgiye tasavvuf yolunda, tecrübe ("zevk") ile ulaştığını söyler.
+  en: >-
+    In this autobiographical work al-Ghazālī describes losing trust in the senses and in reason in his search for
+    certain knowledge, passing through methodical doubt some five centuries before Descartes. After examining theology,
+    philosophy and the Bāṭiniyya, he says he reached certainty on the Sufi path, through experience ("dhawq", taste).
+technical:
+  tr: >-
+    Gazzâlî, duyu verilerinin akılla düzeltilebildiğini, aklın da kendinden üstün bir yetiyle ("nübüvvet ötesi" ya da
+    rüyadaki gibi bir hâl) düzeltilebileceğini düşündüğünü anlatır. Şüphe krizinden çıkışını delille değil, "Allah'ın
+    kalbe attığı bir nur" ile açıklar. Descartes ile karşılaştırmalar yapılmıştır. Descartes'ın eseri doğrudan bilip
+    bilmediği ise belgelenmemiştir.
+  en: >-
+    Al-Ghazālī relates that just as sense data can be corrected by reason, he wondered whether reason might be corrected
+    by a higher faculty, as in a dream-like state. He explains his exit from the crisis of doubt not by proof but by "a
+    light that God cast into the breast". Comparisons with Descartes have been made; whether Descartes knew the work
+    directly is undocumented.
+claims:
+  - tr: Kesin bilgiye ulaşmanın yolu yalnızca akıl yürütme değil, tasavvufi tecrübedir (zevk).
+    en: The way to certain knowledge is not reasoning alone but Sufi experience (dhawq).
+    src: [watt1953]
+evidence:
+  - kind: experience
+    stance: for
+    tr: Gazzâlî, altı aylık bir bunalım ve ardından gelen inziva döneminde yaşadıklarını birinci ağızdan aktarır.
+    en: Al-Ghazālī gives a first-hand account of a six-month crisis and the period of retreat that followed.
+    src: [watt1953]
+sources:
+  watt1953:
+    type: book
+    authors: Gazzâlî / al-Ghazālī; Watt, W. M. (trans.)
+    title: 'The Faith and Practice of al-Ghazālī (translation of al-Munqidh min al-Ḍalāl)'
+    year: 1953
+    in: George Allen & Unwin, London
+  tdv-gazzali:
+    type: encyclopedia
+    title: Gazzâlî
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/gazzali
+positions:
+  - who:
+      tr: TDV İslâm Ansiklopedisi
+      en: TDV Encyclopaedia of Islam
+    tr: Gazzâlî'nin şüphe dönemi ve tasavvufa yönelişi, onun düşünce hayatının dönüm noktasıdır.
+    en: "Al-Ghazālī's period of doubt and turn to Sufism mark the turning point of his intellectual life."
+    src: [tdv-gazzali]
+related: [descartes, gazali-tehafut]

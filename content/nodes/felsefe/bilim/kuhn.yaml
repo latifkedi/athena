@@ -1,0 +1,53 @@
+id: kuhn
+parent: bilim-felsefesi
+type: idea
+date: { year: 1962 }
+people: [Thomas Kuhn]
+title:
+  tr: Kuhn ve paradigma değişimleri
+  en: Kuhn and paradigm shifts
+summary:
+  tr: >-
+    Kuhn, bilimin düz bir çizgide birikerek ilerlemediğini savundu. "Olağan bilim" dönemlerinde bilim insanları kabul
+    gören bir çerçeve (paradigma) içinde çalışır. Açıklanamayan aykırılıklar biriktiğinde bir kriz çıkar ve "bilimsel
+    devrim" ile yeni bir paradigmaya geçilir. Kopernik ve Einstein devrimlerini örnek gösterdi.
+  en: >-
+    Kuhn argued that science does not progress by linear accumulation. In periods of "normal science" scientists work
+    within an accepted framework (paradigm); when unexplained anomalies accumulate a crisis arises and a "scientific
+    revolution" leads to a new paradigm. He cited the Copernican and Einsteinian revolutions as examples.
+technical:
+  tr: >-
+    Kuhn'a göre ardışık paradigmalar "ölçüşülemez"dir. Kavramları ve problemleri birebir çevrilemez, bu nedenle seçim
+    yalnızca mantıksal kurallarla yapılamaz. Eleştirmenler bu görüşün bilimi göreceli ve irrasyonel kıldığını savundu.
+    Kuhn sonraki yazılarında doğruluk, tutarlılık, kapsam, sadelik ve verimlilik gibi ortak değerlerin kuram seçimini
+    yönlendirdiğini vurguladı.
+  en: >-
+    For Kuhn successive paradigms are "incommensurable": their concepts and problems do not translate one-to-one, so the
+    choice between them cannot be made by logical rules alone. Critics argued this makes science relativist and
+    irrational. In later writings Kuhn stressed shared values such as accuracy, consistency, scope, simplicity and
+    fruitfulness guiding theory choice.
+claims:
+  - tr: Bilim, olağan bilim dönemleri ve paradigma değişimleriyle ilerler. Paradigmalar arasındaki seçim tamamen mantık kurallarına indirgenemez.
+    en: Science advances through periods of normal science and paradigm shifts; the choice between paradigms cannot be reduced entirely to logical rules.
+    src: [kuhn1962]
+positions:
+  - who:
+      tr: Kuhn'un eleştirmenleri
+      en: "Kuhn's critics"
+    tr: Ölçüşülemezlik tezi abartılıdır. Farklı kuramlar ortak gözlemler ve kanıtlarla karşılaştırılabilir.
+    en: The incommensurability thesis is exaggerated; different theories can be compared by common observations and evidence.
+    src: [sep-kuhn]
+sources:
+  kuhn1962:
+    type: book
+    authors: Kuhn, T. S.
+    title: The Structure of Scientific Revolutions
+    year: 1962
+    in: University of Chicago Press
+  sep-kuhn:
+    type: encyclopedia
+    authors: Bird, A.
+    title: Thomas Kuhn
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/thomas-kuhn/
+related: [popper, kopernik]

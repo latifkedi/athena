@@ -1,0 +1,79 @@
+id: sayma
+parent: ilk-bilgiler
+type: question
+order: 3.5
+title:
+  tr: Sayma ve Ishango kemiği
+  en: Counting and the Ishango bone
+summary:
+  tr: >-
+    Saymanın ne zaman başladığı bilinmiyor. Kongo'da bulunan ve üzerinde çentik grupları olan yaklaşık 20.000 yıllık
+    Ishango kemiği, kimilerine göre bir sayma aracı ya da ay takvimi, kimilerine göre ise yalnızca bir süsleme ya da
+    kavrama yüzeyidir.
+  en: >-
+    When counting began is unknown. The Ishango bone from the Congo, about 20,000 years old and marked with groups of
+    notches, is read by some as a counting tool or lunar calendar and by others as mere decoration or a grip surface.
+technical:
+  tr: >-
+    Ishango kemiği üç sütunda gruplanmış çentikler taşır. Sütunlardan birinde 11, 13, 17, 19 dizisi yer alır. Bu dizi
+    asal sayılar olarak okunmuş, başka bir sütun da ikiye katlama ve 12 tabanı ile ilişkilendirilmiştir (Pletser ve
+    Huylebrouck). Marshack, çentikleri altı aylık bir ay takvimi olarak yorumlamıştır. Eleştirel görüşler ise bu
+    okumaların küçük bir örneklemden fazlasını çıkardığını ve asal sayı kavramının bölme işlemini gerektirdiğini
+    vurgular.
+  en: >-
+    The Ishango bone carries notches grouped in three columns. One column contains the sequence 11, 13, 17, 19. This has
+    been read as prime numbers, and another column has been linked to doubling and base 12 (Pletser and Huylebrouck).
+    Marshack interpreted the notches as a six-month lunar calendar. Critical views stress that these readings extract
+    too much from a small sample and that the concept of a prime number presupposes division.
+datings:
+  - view:
+      tr: Arkeoloji (Ishango, Demokratik Kongo Cumhuriyeti)
+      en: Archaeology (Ishango, Democratic Republic of the Congo)
+    value:
+      tr: Yaklaşık 20.000 yıl önce
+      en: About 20,000 years ago
+    src: [deheinzelin1962, pletser2012]
+claims:
+  - tr: Ishango kemiğindeki çentikler kasıtlı bir aritmetik yapı (12 tabanı, ikiye katlama) gösterir.
+    en: The notches on the Ishango bone show a deliberate arithmetic structure (base 12, doubling).
+    src: [pletser2012]
+  - tr: Ishango kemiği bir ay takvimidir.
+    en: The Ishango bone is a lunar calendar.
+    src: [marshack1972]
+evidence:
+  - kind: archaeological
+    stance: for
+    tr: Çentikler rastgele değil, sütunlar hâlinde gruplanmıştır ve bazı sütun toplamları (60, 48) sayısal ilişkiler gösterir.
+    en: The notches are not random but grouped in columns, and some column totals (60, 48) show numerical relations.
+    src: [deheinzelin1962, pletser2012]
+  - kind: critique
+    stance: against
+    tr: Asal sayı ve takvim yorumlarının tek bir nesneye dayanan aşırı yorumlar olduğu, çentiklerin anlamının bilinemeyeceği savunuldu.
+    en: It was argued that the prime-number and calendar readings over-interpret a single object and that the meaning of the notches cannot be known.
+    src: [keller2010]
+sources:
+  deheinzelin1962:
+    type: article
+    authors: de Heinzelin, J.
+    title: Ishango
+    year: 1962
+    in: Scientific American 206(6), 105–116
+  pletser2012:
+    type: preprint
+    authors: Pletser, V.
+    title: Does the Ishango bone indicate knowledge of the base 12? An interpretation of a prehistoric discovery, the first mathematical tool of humankind
+    year: 2012
+    arxiv: '1204.1019'
+  marshack1972:
+    type: book
+    authors: Marshack, A.
+    title: The Roots of Civilization
+    year: 1972
+    in: McGraw-Hill, New York
+  keller2010:
+    type: article
+    authors: Keller, O.
+    title: "Les fables d'Ishango, ou l'irrésistible tentation de la mathématique-fiction"
+    year: 2010
+    in: BibNum (Fondation Maison des Sciences de l'Homme)
+related: [babil-matematigi]

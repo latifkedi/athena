@@ -1,0 +1,36 @@
+id: hint-felsefesi
+parent: felsefe
+type: tradition
+title:
+  tr: Hint felsefesi
+  en: Indian philosophy
+summary:
+  tr: >-
+    Hindistan'da Upanişadlar, Budizm, Caynizm ve altı klasik Hindu ekolü (darśana) varlık, bilgi ve kurtuluş üzerine
+    derin sistemler geliştirdi. Nyāya ekolü algı, çıkarım, karşılaştırma ve güvenilir tanıklığı bilgi kaynakları olarak
+    sayar. Nāgārjuna'nın "boşluk" (śūnyatā) felsefesi, her şeyin başka şeylere bağımlı olarak var olduğunu savunur.
+  en: >-
+    In India the Upaniṣads, Buddhism, Jainism and the six classical Hindu schools (darśanas) developed deep systems on
+    being, knowledge and liberation. The Nyāya school counts perception, inference, comparison and reliable testimony as
+    sources of knowledge. Nāgārjuna's philosophy of "emptiness" (śūnyatā) holds that everything exists dependently on
+    other things.
+technical:
+  tr: >-
+    Pramāṇa kuramı, geçerli bilgi araçlarını tartışır ve ekoller bu araçların sayısında ayrışır. Cārvāka yalnızca algıyı,
+    Nyāya ise dört pramāṇayı kabul eder. Vaiśeṣika ekolü atomcu bir doğa felsefesi geliştirdi (paramāṇu). Advaita Vedānta,
+    bireysel benlik (ātman) ile mutlak gerçekliğin (brahman) özdeşliğini savunur.
+  en: >-
+    Pramāṇa theory discusses the valid means of knowledge, and schools differ over their number: Cārvāka accepts only
+    perception, Nyāya four pramāṇas. The Vaiśeṣika school developed an atomist natural philosophy (paramāṇu). Advaita
+    Vedānta holds the identity of the individual self (ātman) and absolute reality (brahman).
+claims:
+  - tr: Bireysel benlik (ātman) ile mutlak gerçeklik (brahman) özünde aynıdır (Advaita Vedānta).
+    en: The individual self (ātman) and absolute reality (brahman) are in essence identical (Advaita Vedānta).
+    src: [sep-indian-epistemology]
+sources:
+  sep-indian-epistemology:
+    type: encyclopedia
+    title: Epistemology in Classical Indian Philosophy
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/epistemology-india/
+related: [hinduizm, budizm]

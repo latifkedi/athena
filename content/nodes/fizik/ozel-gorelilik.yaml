@@ -1,0 +1,97 @@
+id: ozel-gorelilik
+parent: fizik
+type: idea
+date: { year: 1905 }
+people: [Albert Einstein, Hendrik Lorentz, Henri Poincaré]
+title:
+  tr: Özel görelilik
+  en: Special relativity
+summary:
+  tr: >-
+    Einstein iki varsayımdan yola çıktı: fizik yasaları düzgün hareket eden herkes için aynıdır ve ışığın boşluktaki hızı
+    herkes için aynıdır. Bu varsayımlardan, hızlı hareket eden saatlerin yavaş işlediği, boyların kısaldığı ve kütle
+    ile enerjinin eşdeğer olduğu (E = mc²) sonuçları çıkar.
+  en: >-
+    Einstein started from two assumptions: the laws of physics are the same for everyone in uniform motion, and the speed
+    of light in vacuum is the same for everyone. From these it follows that fast-moving clocks run slow, lengths contract
+    and mass and energy are equivalent (E = mc²).
+technical:
+  tr: >-
+    Kuram Lorentz dönüşümlerini kinematik ilkelerden türetir ve eşzamanlılığı çerçeveye göreli kılar. Minkowski (1908)
+    kuramı dört boyutlu uzay-zaman geometrisi olarak yeniden biçimlendirdi. Zaman genişlemesi, parçacık hızlandırıcılarında
+    müonların ömrü (Bailey vd. 1977, γ ≈ 29,3) ve atom saatleriyle yapılan uçuş deneyleriyle (Hafele–Keating 1972)
+    ölçülmüştür. Lorentz ve Poincaré'nin önceki katkıları nedeniyle kuramın kime ne ölçüde ait olduğu tarihçiler arasında
+    tartışılmıştır.
+  en: >-
+    The theory derives the Lorentz transformations from kinematic principles and makes simultaneity frame-dependent.
+    Minkowski (1908) reformulated it as the four-dimensional geometry of spacetime. Time dilation has been measured in
+    the lifetime of muons in storage rings (Bailey et al. 1977, γ ≈ 29.3) and in flights with atomic clocks
+    (Hafele–Keating 1972). Because of earlier contributions by Lorentz and Poincaré, historians have debated how much of
+    the theory is due to whom.
+claims:
+  - tr: Hareketli saatler, durgun gözlemciye göre daha yavaş işler (zaman genişlemesi).
+    en: Moving clocks run slow relative to a stationary observer (time dilation).
+    src: [einstein1905]
+  - tr: Kütle ve enerji eşdeğerdir (E = mc²).
+    en: Mass and energy are equivalent (E = mc²).
+    src: [einstein1905b]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Depolama halkasında ışık hızına yakın dolaşan müonların ömrü, kuramın öngördüğü oranda uzamış olarak ölçüldü.
+    en: The lifetime of muons circulating near light speed in a storage ring was measured to be extended by the predicted factor.
+    src: [bailey1977]
+  - kind: experiment
+    stance: for
+    tr: Uçaklarla dünya çevresinde taşınan atom saatleri, yerdeki saatlere göre öngörülen zaman farklarını gösterdi.
+    en: Atomic clocks flown around the world showed the predicted time differences relative to ground clocks.
+    src: [hafele1972]
+positions:
+  - who:
+      tr: Öncelik tartışması
+      en: Priority debate
+    tr: Whittaker (1953), kuramın esas olarak Poincaré ve Lorentz'e ait olduğunu savundu. Çoğu tarihçi ise Einstein'ın kinematik temellendirmesini belirleyici bulur.
+    en: Whittaker (1953) argued the theory was essentially due to Poincaré and Lorentz; most historians regard Einstein's kinematic foundation as decisive.
+    src: [whittaker1953, pais1982]
+sources:
+  einstein1905:
+    type: article
+    authors: Einstein, A.
+    title: Zur Elektrodynamik bewegter Körper
+    year: 1905
+    in: Annalen der Physik 322(10), 891–921
+    doi: 10.1002/andp.19053221004
+  einstein1905b:
+    type: article
+    authors: Einstein, A.
+    title: Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?
+    year: 1905
+    in: Annalen der Physik 323(13), 639–641
+    doi: 10.1002/andp.19053231314
+  bailey1977:
+    type: article
+    authors: Bailey, J. et al.
+    title: Measurements of relativistic time dilatation for positive and negative muons in a circular orbit
+    year: 1977
+    in: Nature 268, 301–305
+    doi: 10.1038/268301a0
+  hafele1972:
+    type: article
+    authors: Hafele, J. C.; Keating, R. E.
+    title: 'Around-the-world atomic clocks: observed relativistic time gains'
+    year: 1972
+    in: Science 177, 168–170
+    doi: 10.1126/science.177.4044.168
+  whittaker1953:
+    type: book
+    authors: Whittaker, E. T.
+    title: 'A History of the Theories of Aether and Electricity, Vol. 2: The Modern Theories 1900–1926'
+    year: 1953
+    in: Thomas Nelson, London
+  pais1982:
+    type: book
+    authors: Pais, A.
+    title: "'Subtle is the Lord...': The Science and the Life of Albert Einstein"
+    year: 1982
+    in: Oxford University Press
+related: [eter, maxwell, nukleer-fisyon]

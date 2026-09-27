@@ -1,0 +1,77 @@
+id: kopernik
+parent: astronomi
+type: text
+date: { year: 1543 }
+people: [Nicolaus Copernicus]
+title:
+  tr: Kopernik ve güneş merkezli model
+  en: Copernicus and the heliocentric model
+summary:
+  tr: >-
+    Kopernik 1543'te, Güneş'i merkeze alan ve Dünya'yı yıllık bir yörüngede dönen bir gezegen olarak gösteren modelini
+    yayımladı. Model başlangıçta Batlamyus'unkinden daha doğru tahminler vermedi. Kopernik'in bazı geometrik
+    tekniklerinin İslam dünyasındaki Merağa okulunun modellerine çok benzediği, tarihçiler arasında tartışılan bir
+    konudur.
+  en: >-
+    In 1543 Copernicus published his model placing the Sun at the centre and the Earth as a planet orbiting it yearly.
+    Initially the model did not give more accurate predictions than Ptolemy's. That some of Copernicus's geometric
+    techniques closely resemble models of the Maragha school in the Islamic world is debated among historians.
+technical:
+  tr: >-
+    De revolutionibus orbium coelestium, gezegenlerin geriye doğru hareketini Dünya'nın hareketinin bir sonucu olarak
+    açıklar ve gezegenlerin göreli uzaklıklarını hesaplamayı mümkün kılar. Ancak dairesel yörüngeleri koruduğu için
+    episikller kullanmaya devam eder. Kopernik'in ay modeli ve Merkür modeli, İbnü'ş-Şâtır'ın modelleriyle ve Tûsî
+    çiftiyle matematiksel olarak eşdeğerdir. Aktarım yolu belgelenmemiştir.
+  en: >-
+    De revolutionibus orbium coelestium explains the retrograde motion of the planets as a consequence of the Earth's
+    motion and makes it possible to compute the planets' relative distances. Because it keeps circular orbits, however, it
+    still uses epicycles. Copernicus's lunar and Mercury models are mathematically equivalent to those of Ibn al-Shāṭir
+    and use the Ṭūsī couple; the route of transmission is undocumented.
+claims:
+  - tr: Güneş merkezde durur, Dünya ve diğer gezegenler onun çevresinde döner.
+    en: The Sun stands at the centre; the Earth and the other planets revolve around it.
+    src: [copernicus1543]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Galileo'nun Venüs'ün evrelerini gözlemesi (1610), Venüs'ün Güneş çevresinde döndüğünü gösterdi. Bu gözlem Batlamyus modeliyle bağdaşmıyordu.
+    en: "Galileo's observation of the phases of Venus (1610) showed that Venus orbits the Sun, which was incompatible with Ptolemy's model."
+    src: [galileo1613]
+  - kind: observation
+    stance: against
+    tr: Dünya Güneş'in çevresinde dönüyorsa yıldızların yıllık paralaks göstermesi gerekir. Bu paralaks 1838'e kadar ölçülemedi. Tycho Brahe bunu güneş merkezli modele karşı bir kanıt olarak kullandı.
+    en: If the Earth orbits the Sun, stars should show annual parallax; this was not measured until 1838. Tycho Brahe used this as evidence against the heliocentric model.
+    src: [bessel1838]
+positions:
+  - who:
+      tr: Merağa etkisini savunan tarihçiler
+      en: Historians arguing for a Maragha influence
+    tr: Kopernik'in kullandığı Tûsî çifti ve ay modeli, İslam gökbilimcilerinin eserleriyle birebir örtüşür. Bu durum bir aktarım olduğunu düşündürür.
+    en: The Ṭūsī couple and lunar model used by Copernicus match the works of Islamic astronomers exactly, suggesting transmission.
+    src: [saliba2007]
+sources:
+  copernicus1543:
+    type: book
+    authors: Copernicus, N.
+    title: De revolutionibus orbium coelestium
+    year: 1543
+    in: Johannes Petreius, Nuremberg
+  galileo1613:
+    type: book
+    authors: Galilei, G.
+    title: Istoria e dimostrazioni intorno alle macchie solari
+    year: 1613
+    in: Giacomo Mascardi, Rome
+  bessel1838:
+    type: article
+    authors: Bessel, F. W.
+    title: Bestimmung der Entfernung des 61sten Sterns des Schwans
+    year: 1838
+    in: Astronomische Nachrichten 16, 65–96
+  saliba2007:
+    type: book
+    authors: Saliba, G.
+    title: Islamic Science and the Making of the European Renaissance
+    year: 2007
+    in: MIT Press, Cambridge MA
+related: [batlamyus, kepler]

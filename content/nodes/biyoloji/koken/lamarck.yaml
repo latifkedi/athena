@@ -1,0 +1,67 @@
+id: lamarck
+parent: canlilarin-kokeni
+type: idea
+date: { year: 1809 }
+people: [Jean-Baptiste Lamarck]
+title:
+  tr: Lamarck ve kazanılmış özelliklerin kalıtımı
+  en: Lamarck and the inheritance of acquired characteristics
+summary:
+  tr: >-
+    Lamarck, canlıların zamanla daha karmaşık hâle geldiğini ve bir organın kullanımıyla gelişip kullanılmamasıyla
+    körelmesinin yavrulara aktarıldığını savundu. Bu görüş 20. yüzyılda büyük ölçüde terk edildi. Epigenetik kalıtım
+    üzerine yapılan son çalışmalar ise bazı araştırmacıların Lamarck'ı yeniden tartışmasına yol açtı.
+  en: >-
+    Lamarck argued that living things become more complex over time and that the development of an organ through use,
+    or its withering through disuse, is passed to offspring. This view was largely abandoned in the 20th century. Recent
+    work on epigenetic inheritance has led some researchers to discuss Lamarck again.
+technical:
+  tr: >-
+    Philosophie zoologique (1809) iki ilke önerir: karmaşıklığa doğru içsel bir eğilim ve çevreye bağlı kullanım/kullanmama
+    ile kazanılan özelliklerin kalıtımı. Weismann'ın germ plazması kuramı (1892) somatik değişikliklerin eşey hücrelerine
+    geçemeyeceğini savundu. Luria–Delbrück deneyi (1943) bakteri mutasyonlarının seçilimden önce ve rastgele oluştuğunu
+    gösterdi. DNA metilasyonu, küçük RNA'lar ve kromatin durumlarıyla birkaç kuşak süren aktarım bitkilerde ve bazı
+    hayvanlarda belgelenmiştir. Bunun memelilerdeki kapsamı tartışmalıdır.
+  en: >-
+    Philosophie zoologique (1809) proposes two principles: an inherent tendency toward complexity, and the inheritance of
+    characteristics acquired by environment-driven use and disuse. Weismann's germ-plasm theory (1892) held that somatic
+    changes cannot pass to the germ line. The Luria–Delbrück experiment (1943) showed that bacterial mutations arise
+    randomly before selection. Transmission over several generations via DNA methylation, small RNAs and chromatin states
+    has been documented in plants and some animals; its extent in mammals is debated.
+claims:
+  - tr: Bir canlının yaşamı boyunca kazandığı özellikler yavrularına aktarılabilir.
+    en: Characteristics acquired by an organism during its life can be passed to its offspring.
+    src: [lamarck1809]
+evidence:
+  - kind: experiment
+    stance: against
+    tr: Bakterilerde virüse direnç mutasyonlarının, virüsle karşılaşmadan önce rastgele oluştuğu istatistiksel olarak gösterildi.
+    en: It was shown statistically that virus-resistance mutations in bacteria arise randomly before exposure to the virus.
+    src: [luria1943]
+  - kind: genetic
+    stance: for
+    tr: Çevresel etkilerle oluşan bazı epigenetik işaretlerin birden fazla kuşak boyunca aktarıldığı çeşitli canlılarda belgelendi.
+    en: Some environmentally induced epigenetic marks have been documented to pass through more than one generation in various organisms.
+    src: [jablonka2009]
+sources:
+  lamarck1809:
+    type: book
+    authors: Lamarck, J.-B.
+    title: Philosophie zoologique
+    year: 1809
+    in: Dentu, Paris
+  luria1943:
+    type: article
+    authors: Luria, S. E.; Delbrück, M.
+    title: Mutations of bacteria from virus sensitivity to virus resistance
+    year: 1943
+    in: Genetics 28(6), 491–511
+    doi: 10.1093/genetics/28.6.491
+  jablonka2009:
+    type: article
+    authors: Jablonka, E.; Raz, G.
+    title: 'Transgenerational epigenetic inheritance: prevalence, mechanisms, and implications for the study of heredity and evolution'
+    year: 2009
+    in: The Quarterly Review of Biology 84(2), 131–176
+    doi: 10.1086/598822
+related: [genisletilmis-sentez]

@@ -1,0 +1,83 @@
+id: ganzfeld
+parent: parapsikoloji
+type: idea
+date: { year: 1974 }
+people: [Charles Honorton, Daryl Bem, Ray Hyman, Richard Wiseman]
+title:
+  tr: Ganzfeld telepati deneyleri
+  en: Ganzfeld telepathy experiments
+summary:
+  tr: >-
+    Ganzfeld deneylerinde gözleri kapatılıp beyaz gürültü dinletilen bir "alıcı", başka odadaki "gönderici"nin baktığı
+    görüntüyü dört seçenek arasından tahmin eder. Rastlantıya göre isabet oranı %25'tir. Bazı meta-analizler yaklaşık
+    %32 isabet bildirdi, bazıları ise etkinin rastlantı düzeyinde olduğunu buldu.
+  en: >-
+    In ganzfeld experiments a "receiver", with eyes covered and listening to white noise, tries to identify from four
+    options the image a "sender" in another room is viewing. Chance gives a 25% hit rate. Some meta-analyses reported
+    about 32% hits; others found the effect at chance level.
+technical:
+  tr: >-
+    Hyman ve Honorton'ın 1986'daki ortak bildirisi, gelecekteki deneyler için katı protokoller tanımladı. Bem ve Honorton
+    (1994), otomatikleştirilmiş "autoganzfeld" deneylerinde %32 isabet bildirdi. Milton ve Wiseman (1999), 30 yeni
+    çalışmanın meta-analizinde anlamlı bir etki bulmadı. Storm, Tressoldi ve Di Risio (2010) ise 29 çalışmada yeniden
+    anlamlı bir etki bildirdi. Rouder ve arkadaşları (2013), Bayesçi yeniden analizle bu kanıtın daha zayıf olduğunu
+    savundu.
+  en: >-
+    Hyman and Honorton's 1986 joint communiqué set strict protocols for future experiments. Bem and Honorton (1994)
+    reported 32% hits in automated "autoganzfeld" experiments. Milton and Wiseman (1999) found no significant effect in a
+    meta-analysis of 30 new studies. Storm, Tressoldi and Di Risio (2010) again reported a significant effect across 29
+    studies. Rouder et al. (2013) argued in a Bayesian reanalysis that this evidence is weaker.
+claims:
+  - tr: Ganzfeld koşullarında alıcılar hedef görüntüyü rastlantıdan anlamlı biçimde daha sık doğru seçer.
+    en: Under ganzfeld conditions receivers pick the target image significantly more often than chance.
+    src: [bem1994, storm2010]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: Otomatikleştirilmiş ganzfeld deneylerinde isabet oranı %25'lik rastlantı beklentisine karşı yaklaşık %32 bulundu.
+    en: In automated ganzfeld experiments the hit rate was about 32% against a chance expectation of 25%.
+    src: [bem1994]
+  - kind: statistical
+    stance: for
+    tr: 1997–2008 arasındaki 29 ganzfeld çalışmasının meta-analizi anlamlı bir etki bildirdi.
+    en: A meta-analysis of 29 ganzfeld studies from 1997–2008 reported a significant effect.
+    src: [storm2010]
+  - kind: statistical
+    stance: against
+    tr: 30 yeni ganzfeld çalışmasını kapsayan meta-analiz, rastlantıdan anlamlı bir sapma bulmadı.
+    en: A meta-analysis of 30 new ganzfeld studies found no significant departure from chance.
+    src: [milton1999]
+  - kind: statistical
+    stance: against
+    tr: Bayesçi yeniden analiz, heterojenlik ve olası yanlılıklar hesaba katıldığında kanıtın çok daha zayıf olduğunu savundu.
+    en: A Bayesian reanalysis argued that the evidence is much weaker once heterogeneity and possible biases are taken into account.
+    src: [rouder2013]
+sources:
+  bem1994:
+    type: article
+    authors: Bem, D. J.; Honorton, C.
+    title: 'Does psi exist? Replicable evidence for an anomalous process of information transfer'
+    year: 1994
+    in: Psychological Bulletin 115(1), 4–18
+    doi: 10.1037/0033-2909.115.1.4
+  milton1999:
+    type: article
+    authors: Milton, J.; Wiseman, R.
+    title: 'Does psi exist? Lack of replication of an anomalous process of information transfer'
+    year: 1999
+    in: Psychological Bulletin 125(4), 387–391
+    doi: 10.1037/0033-2909.125.4.387
+  storm2010:
+    type: article
+    authors: Storm, L.; Tressoldi, P. E.; Di Risio, L.
+    title: 'Meta-analysis of free-response studies, 1992–2008: assessing the noise reduction model in parapsychology'
+    year: 2010
+    in: Psychological Bulletin 136(4), 471–485
+    doi: 10.1037/a0019457
+  rouder2013:
+    type: article
+    authors: Rouder, J. N.; Morey, R. D.; Province, J. M.
+    title: 'A Bayes factor meta-analysis of recent extrasensory perception experiments: comment on Storm, Tressoldi, and Di Risio (2010)'
+    year: 2013
+    in: Psychological Bulletin 139(1), 241–247
+    doi: 10.1037/a0029008

@@ -1,0 +1,58 @@
+id: boyle
+parent: kimya
+type: text
+date: { year: 1661 }
+people: [Robert Boyle]
+title:
+  tr: Boyle ve "Şüpheci Kimyager"
+  en: Boyle and "The Sceptical Chymist"
+summary:
+  tr: >-
+    Robert Boyle, Aristoteles'in dört element ve Paracelsus'un üç ilke kuramlarını deneyler üzerinden sorguladı ve
+    maddenin küçük parçacıklardan oluştuğunu savundu. Genellikle modern kimyanın kurucularından sayılır. Öte yandan
+    ölümüne kadar metalleri altına dönüştürmek için simya çalışmaları da yaptığı bilinmektedir.
+  en: >-
+    Robert Boyle questioned Aristotle's four elements and Paracelsus' three principles through experiment and argued that
+    matter consists of small particles. He is usually counted among the founders of modern chemistry. It is also known
+    that he pursued alchemical work on transmuting metals into gold until his death.
+technical:
+  tr: >-
+    The Sceptical Chymist (1661), ateşle analiz yoluyla elde edilen ürünlerin maddenin gerçek bileşenleri olduğu
+    varsayımını eleştirir ve korpüsküler bir madde kuramı önerir. Boyle aynı zamanda gaz basıncı ile hacim arasındaki
+    ters orantıyı (1662) yayımladı. Principe'nin arşiv çalışmaları, Boyle'un "philosophers' stone" arayışının ve simyacı
+    ağlarla yazışmalarının ciddi bir uğraş olduğunu göstermiştir.
+  en: >-
+    The Sceptical Chymist (1661) criticises the assumption that products obtained by fire analysis are the true
+    constituents of matter and proposes a corpuscular theory of matter. Boyle also published the inverse relation between
+    gas pressure and volume (1662). Principe's archival studies showed that Boyle's quest for the philosophers' stone and
+    his correspondence with alchemical networks were a serious pursuit.
+claims:
+  - tr: Maddeler, ateşle ayrıştırılarak bulunan dört element ya da üç ilkeden değil, küçük parçacıklardan oluşur.
+    en: Substances are made of small corpuscles, not of four elements or three principles revealed by fire analysis.
+    src: [boyle1661]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Boyle, farklı maddelerin ateşle ayrıştırılmasının dört ya da üç sabit ürün vermediğini gösteren deneyler aktardı.
+    en: Boyle reported experiments showing that fire analysis of different substances does not yield four or three fixed products.
+    src: [boyle1661]
+  - kind: historical
+    stance: against
+    tr: Boyle'un simyadan kopmuş bir "modern kimyager" olduğu imajı, onun sürdürdüğü dönüştürme çalışmalarını gösteren belgelerle sorgulanmıştır.
+    en: The image of Boyle as a "modern chemist" who broke with alchemy has been challenged by documents showing his continued transmutation work.
+    src: [principe1998]
+sources:
+  boyle1661:
+    type: book
+    authors: Boyle, R.
+    title: The Sceptical Chymist
+    year: 1661
+    in: J. Cadwell for J. Crooke, London
+    url: https://www.gutenberg.org/ebooks/22914
+  principe1998:
+    type: book
+    authors: Principe, L. M.
+    title: 'The Aspiring Adept: Robert Boyle and His Alchemical Quest'
+    year: 1998
+    in: Princeton University Press
+related: [simya]

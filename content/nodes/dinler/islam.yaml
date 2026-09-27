@@ -1,0 +1,84 @@
+id: islam
+parent: dinler
+type: tradition
+date: { year: 610 }
+people: [Hz. Muhammed / Prophet Muhammad]
+title:
+  tr: İslam ve Kur'an
+  en: Islam and the Qur'an
+summary:
+  tr: >-
+    İslam inancına göre Kur'an, Allah'ın Hz. Muhammed'e 610 yılından itibaren yaklaşık 23 yıl boyunca vahyettiği
+    sözüdür. İslam'ın temel inanç esasları Allah'ın birliği (tevhid), peygamberlik, kitaplar, melekler, âhiret ve
+    kaderdir. Kur'an insanı akletmeye, düşünmeye ve evrendeki "ayetler"e (işaretlere) bakmaya çağırır. Dünyada yaklaşık
+    2 milyar Müslüman vardır.
+  en: >-
+    In Islamic belief the Qur'an is the word of God revealed to the Prophet Muhammad over about 23 years from 610
+    onward. Islam's basic articles of faith are God's oneness (tawḥīd), prophethood, the scriptures, angels, the
+    hereafter and divine decree. The Qur'an calls people to reason, to reflect and to look at the "signs" (āyāt) in the
+    universe. There are about 2 billion Muslims in the world.
+technical:
+  tr: >-
+    Kur'an 114 sureden oluşur. İslam geleneğine göre metin Hz. Ebû Bekir döneminde bir araya getirilmiş, Hz. Osman
+    döneminde de mushaf olarak çoğaltılmıştır. Birmingham el yazması gibi erken dönem parşömenler radyokarbon yöntemiyle
+    7. yüzyıla tarihlendirilmiştir. İslam düşüncesinde bilgi kaynakları nakil (Kur'an ve Sünnet), akıl ve bazı ekollere
+    göre keşftir. Kelam, fıkıh, tefsir ve tasavvuf bu kaynakların farklı yorum geleneklerini oluşturur.
+  en: >-
+    The Qur'an has 114 chapters (sūras). According to Islamic tradition the text was compiled under Abū Bakr and
+    reproduced as a codex under ʿUthmān. Early parchments such as the Birmingham manuscript have been radiocarbon-dated to
+    the 7th century. In Islamic thought the sources of knowledge are transmission (Qur'an and Sunna), reason and, for some
+    schools, unveiling; theology, law, exegesis and Sufism form different interpretive traditions of these sources.
+claims:
+  - tr: Kur'an Allah'ın sözüdür. Allah birdir ve Muhammed O'nun elçisidir.
+    en: The Qur'an is the word of God; God is one and Muhammad is His messenger.
+    src: [kuran-112, kuran-48-29]
+  - tr: Evrendeki düzen ve canlılar, Allah'ın varlığına ve kudretine işaret eden ayetlerdir.
+    en: The order of the universe and living things are signs pointing to God's existence and power.
+    src: [kuran-3-190]
+evidence:
+  - kind: scripture
+    stance: for
+    tr: Kur'an kendisinin Allah katından indirildiğini bildirir ve benzerini getirmeye meydan okur.
+    en: The Qur'an declares itself sent down from God and challenges others to produce its like.
+    src: [kuran-2-23]
+  - kind: historical
+    stance: for
+    tr: Birmingham Üniversitesi'ndeki Kur'an yaprakları radyokarbon yöntemiyle %95,4 olasılıkla 568–645 yılları arasına tarihlendirildi. Bu, metnin erken döneme ait olduğunu gösterir.
+    en: Qur'an leaves at the University of Birmingham were radiocarbon-dated with 95.4% probability to 568–645, indicating the text's early date.
+    src: [birmingham2015]
+sources:
+  kuran-112:
+    type: scripture
+    title: Kur'an-ı Kerim, İhlâs 112
+    url: https://quran.com/112
+  kuran-48-29:
+    type: scripture
+    title: Kur'an-ı Kerim, Fetih 48:29
+    url: https://quran.com/48/29
+  kuran-3-190:
+    type: scripture
+    title: Kur'an-ı Kerim, Âl-i İmrân 3:190–191
+    url: https://quran.com/3/190-191
+  kuran-2-23:
+    type: scripture
+    title: Kur'an-ı Kerim, Bakara 2:23
+    url: https://quran.com/2/23
+  birmingham2015:
+    type: web
+    title: Birmingham Qur'an manuscript dated among the oldest in the world
+    year: 2015
+    in: University of Birmingham
+    url: https://www.birmingham.ac.uk/news-archive/2015/birmingham-quran-manuscript-dated-among-the-oldest-in-the-world
+  tdv-islam:
+    type: encyclopedia
+    title: İslâm
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/islam
+positions:
+  - who:
+      tr: İslam âlimleri
+      en: Islamic scholars
+    tr: İslam, Hz. Âdem'den beri gönderilen hak dinin son ve tamamlanmış hâlidir.
+    en: Islam is the final and completed form of the true religion sent since Adam.
+    src: [tdv-islam]
+related: [kelam, tasavvuf, yaratilis-anlatilari]

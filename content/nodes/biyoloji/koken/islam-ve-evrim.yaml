@@ -1,0 +1,100 @@
+id: islam-ve-evrim
+parent: canlilarin-kokeni
+type: idea
+date: { year: 2021 }
+people: [Câhiz / al-Jāḥiẓ, İbn Haldun / Ibn Khaldūn, Mehmet Bayrakdar, David Solomon Jalajel, Shoaib Ahmed Malik, Nidhal Guessoum]
+title:
+  tr: İslam düşüncesinde canlıların kökeni üzerine görüşler
+  en: Views on the origin of living things in Islamic thought
+summary:
+  tr: >-
+    İslam dünyasında canlıların kökeni konusunda tek bir görüş yoktur. Bazı yazarlar Câhiz ve İbn Haldun'un eserlerinde
+    evrim fikrinin öncülerini görür, bazıları bunun bugünkü kavramları geçmişe yansıtmak olduğunu savunur. Günümüzde
+    görüşler, türlerin ayrı yaratıldığını savunan yaratılışçılıktan yalnızca Âdem ile Havva'yı istisna tutan görüşe ve
+    istisnasız teistik evrime kadar uzanır.
+  en: >-
+    There is no single view on the origin of living things in the Muslim world. Some authors see precursors of
+    evolutionary ideas in the works of al-Jāḥiẓ and Ibn Khaldūn; others argue this projects modern concepts onto the
+    past. Today views range from creationism, holding that species were created separately, through a view that exempts
+    only Adam and Eve, to theistic evolution without exceptions.
+technical:
+  tr: >-
+    Câhiz'in Kitâbü'l-Hayevân'ı (9. yüzyıl) hayvanlar arasındaki rekabeti ve çevrenin etkisini tartışır. İbn Haldun'un
+    Mukaddime'si (1377) maden, bitki, hayvan ve insan âlemlerinin kademeli olarak birbirine bağlandığından söz eder. Malik
+    (2021), çağdaş görüşleri Eş'ari kelamı çerçevesinde dört gruba ayırır: yaratılışçılık, insan istisnacılığı, Âdem
+    istisnacılığı ve istisnasızlık. Bu gruplamada Eş'ari vesileciliği, doğal süreçlerin ilahi fiilin aracı sayılmasına
+    kelami bir zemin olarak ele alınır.
+  en: >-
+    Al-Jāḥiẓ's Kitāb al-Ḥayawān (9th century) discusses competition among animals and the influence of environment. Ibn
+    Khaldūn's Muqaddimah (1377) speaks of the gradual connection of the mineral, plant, animal and human realms. Malik
+    (2021) sorts contemporary views, within the framework of Ash'arite kalām, into four groups: creationism, human
+    exceptionalism, Adamic exceptionalism and no exceptions. In this classification Ash'arite occasionalism serves as a
+    theological basis for regarding natural processes as instruments of divine action.
+positions:
+  - who:
+      tr: Câhiz'de evrim fikrinin öncülerini görenler
+      en: Those who see precursors of evolution in al-Jāḥiẓ
+    tr: Câhiz, canlıların çevreye uyum sağlamasını ve varoluş mücadelesini tarif ederek biyolojik evrimciliğin erken bir örneğini verir.
+    en: Al-Jāḥiẓ gives an early instance of biological evolutionism by describing adaptation to the environment and the struggle for existence.
+    src: [bayrakdar1983]
+  - who:
+      tr: İbn Haldun'un Mukaddime'si
+      en: "Ibn Khaldūn's Muqaddimah"
+    tr: Varlık âlemleri kademeli olarak birbirine bağlıdır. Hayvan âleminin son basamağı insan âleminin ilk basamağına bitişir.
+    en: The realms of being are gradually connected; the last stage of the animal realm adjoins the first stage of the human realm.
+    src: [ibnkhaldun1377]
+  - who:
+      tr: Âdem istisnacılığı
+      en: Adamic exceptionalism
+    tr: Kutsal metinler Âdem ile Havva'nın özel yaratılışını bildirir, ancak diğer canlıların (hatta diğer insan benzeri varlıkların) evrimle ortaya çıkmasına engel oluşturmaz.
+    en: The scriptures report the special creation of Adam and Eve but do not preclude other living things, even other human-like beings, from arising through evolution.
+    src: [jalajel2009, malik2021]
+  - who:
+      tr: İstisnasız teistik evrim
+      en: Theistic evolution without exceptions
+    tr: İnsan dahil tüm canlılar evrimle ortaya çıkmıştır. Kutsal metinlerdeki Âdem anlatısı sembolik ya da ahlaki bir anlatım olarak yorumlanabilir.
+    en: All living things, humans included, arose through evolution; the Adam narrative in scripture may be read as symbolic or moral.
+    src: [guessoum2011]
+  - who:
+      tr: Yaratılışçı görüş
+      en: Creationist view
+    tr: Kur'an'daki Âdem'in çamurdan yaratılışı ve canlıların yaratılışına dair ayetler, türlerin ayrı ayrı yaratıldığını gösterir.
+    en: The Qur'anic verses on Adam's creation from clay and on the creation of living beings show that species were created separately.
+    src: [malik2021, kuran-15-26]
+sources:
+  bayrakdar1983:
+    type: article
+    authors: Bayrakdar, M.
+    title: Al-Jahiz and the rise of biological evolutionism
+    year: 1983
+    in: The Islamic Quarterly 27(3), 149–155
+  ibnkhaldun1377:
+    type: book
+    authors: İbn Haldun / Ibn Khaldūn; Rosenthal, F. (trans.)
+    title: 'The Muqaddimah: An Introduction to History'
+    year: 1958
+    in: Princeton University Press (Bollingen Series XLIII), original 1377
+  jalajel2009:
+    type: book
+    authors: Jalajel, D. S.
+    title: 'Islam and Biological Evolution: Exploring Classical Sources and Methodologies'
+    year: 2009
+    in: University of the Western Cape, Bellville
+  malik2021:
+    type: book
+    authors: Malik, S. A.
+    title: 'Islam and Evolution: Al-Ghazālī and the Modern Evolutionary Paradigm'
+    year: 2021
+    in: Routledge, London
+    isbn: 978-0367364137
+  guessoum2011:
+    type: book
+    authors: Guessoum, N.
+    title: "Islam's Quantum Question: Reconciling Muslim Tradition and Modern Science"
+    year: 2011
+    in: I.B. Tauris, London
+  kuran-15-26:
+    type: scripture
+    title: Kur'an-ı Kerim, Hicr 15:26–29
+    url: https://quran.com/15/26-29
+related: [esarilik, teistik-evrim, yaratiliscilik, ibn-haldun]

@@ -1,0 +1,38 @@
+id: tip
+parent: insanlik
+side: canopy
+type: field
+order: 6
+feed: ['medrxiv']
+title:
+  tr: Tıp
+  en: Medicine
+summary:
+  tr: >-
+    Hastalıkları anlamayı, önlemeyi ve tedavi etmeyi amaçlayan alan. Hipokrat, Galen ve İbn Sina'nın eserleri yüzyıllarca
+    ders kitabı olarak okundu. Mikrop kuramı, aşılar ve antibiyotikler, son iki yüzyılda insan ömrünü büyük ölçüde uzattı.
+    Günümüzde tedavilerin etkisi çoğunlukla kontrollü klinik çalışmalarla sınanır.
+  en: >-
+    The field that aims to understand, prevent and treat disease. The works of Hippocrates, Galen and Ibn Sīnā were read
+    as textbooks for centuries. Germ theory, vaccines and antibiotics greatly extended human lifespan over the last two
+    centuries. Today the effect of treatments is mostly tested in controlled clinical trials.
+technical:
+  tr: >-
+    Kanıta dayalı tıp, randomize kontrollü çalışmaları ve bunların sistematik derlemelerini tedavi kararlarının temeli
+    sayar. Plasebo etkisi, yayın yanlılığı ve tekrarlanabilirlik sorunları bu yaklaşımın bilinen sınırlarıdır. Küresel
+    ortalama yaşam beklentisi 1900'de yaklaşık 32 yıldı. 2021'de bu değer yaklaşık 71 yıla yükseldi.
+  en: >-
+    Evidence-based medicine treats randomised controlled trials and their systematic reviews as the basis for treatment
+    decisions. Placebo effects, publication bias and reproducibility problems are known limits of this approach. Global
+    average life expectancy was about 32 years in 1900 and about 71 years in 2021.
+claims:
+  - tr: Küresel ortalama yaşam beklentisi 1900'den bu yana iki katından fazla arttı.
+    en: Global average life expectancy has more than doubled since 1900.
+    src: [owid-life]
+sources:
+  owid-life:
+    type: dataset
+    authors: Roser, M.; Ortiz-Ospina, E.; Ritchie, H.
+    title: Life Expectancy
+    in: Our World in Data
+    url: https://ourworldindata.org/life-expectancy

@@ -1,0 +1,71 @@
+id: nukleer-donusum
+parent: fizik
+type: event
+date: { year: 1981 }
+people: [Glenn T. Seaborg, Kjell Aleklett, ALICE Collaboration]
+title:
+  tr: Çekirdek dönüşümü ile altın elde etmek
+  en: Making gold by nuclear transmutation
+summary:
+  tr: >-
+    Simyacıların eski hedefi olan bir elementi başka bir elemente dönüştürmek, çekirdek fiziğiyle mümkün hâle geldi.
+    Seaborg'un ekibi 1980'de bizmutu hızlandırıcıda altına dönüştürdü. CERN'deki ALICE deneyi ise 2025'te, kurşun
+    çekirdeklerinin birbirini sıyırarak geçtiği çarpışmalarda altın oluştuğunu ölçtü. Her iki yöntemde de elde edilen
+    miktar çok küçüktür ve maliyeti son derece yüksektir.
+  en: >-
+    Turning one element into another, an old goal of the alchemists, became possible with nuclear physics. Seaborg's
+    team converted bismuth into gold in an accelerator in 1980. In 2025 the ALICE experiment at CERN measured gold being
+    produced when lead nuclei graze past one another in collisions. In both cases the amount is tiny and the cost
+    enormous.
+technical:
+  tr: >-
+    Aleklett ve arkadaşları 209Bi hedefini Bevalac'ta relativistik 12C ve 20Ne iyonlarıyla bombardıman ederek parçalanma
+    ürünleri arasında altın izotoplarını ölçtü. ALICE, ultra-periferik Pb–Pb çarpışmalarında elektromanyetik ayrışma
+    sonucu 208Pb'den üç proton (ve birkaç nötron) koparak 203Au ve diğer altın izotoplarının oluştuğunu sıfır derece
+    kalorimetreleriyle belirledi. LHC Run 2 boyunca (2015–2018) dört deneyde yaklaşık 86 milyar altın çekirdeği,
+    yani yaklaşık 29 pikogram oluştuğu hesaplandı. Oluşan çekirdekler mikrosaniyeler içinde demet borusuna çarparak
+    parçalanır.
+  en: >-
+    Aleklett and colleagues bombarded a 209Bi target at the Bevalac with relativistic 12C and 20Ne ions and measured gold
+    isotopes among the fragmentation products. ALICE used zero-degree calorimeters to identify 203Au and other gold
+    isotopes formed when electromagnetic dissociation in ultraperipheral Pb–Pb collisions strips three protons (and some
+    neutrons) from 208Pb. About 86 billion gold nuclei, roughly 29 picograms, were estimated to have been produced
+    across the four experiments during LHC Run 2 (2015–2018). The nuclei break apart within microseconds on striking the
+    beam pipe.
+claims:
+  - tr: Kurşun ve bizmut, çekirdek tepkimeleriyle altına dönüştürülebilir.
+    en: Lead and bismuth can be converted into gold by nuclear reactions.
+    src: [aleklett1981, alice2025]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Bizmut hedeflerinde oluşan altın izotopları radyoaktif bozunmalarından tanımlandı.
+    en: Gold isotopes formed in bismuth targets were identified from their radioactive decays.
+    src: [aleklett1981]
+  - kind: measurement
+    stance: for
+    tr: ALICE, kurşunun üç proton kaybettiği olayları sayarak altın üretim hızını ölçtü.
+    en: ALICE measured the rate of gold production by counting events in which lead lost three protons.
+    src: [alice2025, alice-news]
+sources:
+  aleklett1981:
+    type: article
+    authors: Aleklett, K.; Morrissey, D. J.; Loveland, W.; McGaughey, P. L.; Seaborg, G. T.
+    title: Energy dependence of 209Bi fragmentation in relativistic nuclear collisions
+    year: 1981
+    in: Physical Review C 23, 1044–1046
+    doi: 10.1103/PhysRevC.23.1044
+  alice2025:
+    type: article
+    authors: ALICE Collaboration
+    title: Proton emission in ultraperipheral Pb–Pb collisions at √sNN = 5.02 TeV
+    year: 2025
+    in: Physical Review C 111, 054906
+    doi: 10.1103/PhysRevC.111.054906
+  alice-news:
+    type: web
+    title: ALICE detects the transformation of lead into gold at the LHC
+    year: 2025
+    in: ALICE Collaboration, CERN
+    url: https://alice-collaboration.web.cern.ch/2025-alice-lead-to-gold
+related: [simya, nukleer-fisyon]

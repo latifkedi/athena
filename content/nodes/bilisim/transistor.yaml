@@ -1,0 +1,57 @@
+id: transistor
+parent: bilisim
+type: technology
+date: { year: 1947, month: 12 }
+people: [John Bardeen, Walter Brattain, William Shockley]
+title:
+  tr: Transistör
+  en: The transistor
+summary:
+  tr: >-
+    Bell Laboratuvarları'nda Aralık 1947'de yapılan ilk transistör, elektrik sinyallerini yükselten ve anahtarlayan
+    küçük bir yarı iletken aygıttı. Bugünkü işlemciler bir parmak ucu büyüklüğünde on milyarlarca transistör içerir.
+    Transistör sayısının yaklaşık iki yılda bir ikiye katlanması "Moore yasası" olarak bilinir.
+  en: >-
+    The first transistor, built at Bell Laboratories in December 1947, was a small semiconductor device that amplifies and
+    switches electrical signals. Today's processors contain tens of billions of transistors on a fingertip-sized chip. The
+    doubling of transistor counts roughly every two years is known as "Moore's law".
+technical:
+  tr: >-
+    İlk aygıt, germanyum üzerinde nokta temaslı bir transistördü. Shockley 1948'de eklem transistörünü tasarladı. Entegre
+    devre (Kilby 1958, Noyce 1959) ve MOSFET (1959) ölçeklemenin yolunu açtı. Moore (1965) bileşen sayısının her yıl, daha
+    sonra (1975) iki yılda bir ikiye katlanacağını öngördü. Boyutlar atom ölçeğine yaklaştıkça bu eğilimin yavaşladığı
+    tartışılmaktadır.
+  en: >-
+    The first device was a point-contact transistor on germanium; Shockley designed the junction transistor in 1948. The
+    integrated circuit (Kilby 1958, Noyce 1959) and the MOSFET (1959) opened the way to scaling. Moore (1965) predicted
+    component counts doubling every year, later (1975) every two years; whether this trend is slowing as dimensions
+    approach the atomic scale is debated.
+claims:
+  - tr: Yarı iletken bir kristal, vakum tüplerinin yerine sinyal yükseltici olarak kullanılabilir.
+    en: A semiconductor crystal can replace vacuum tubes as a signal amplifier.
+    src: [bardeen1948]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Germanyum üzerindeki iki altın temas noktası, girişteki küçük akım değişimlerinin çıkışta yükseltilmesini sağladı.
+    en: Two gold contact points on germanium amplified small input current changes at the output.
+    src: [bardeen1948]
+  - kind: observation
+    stance: for
+    tr: Tek bir çipteki bileşen sayısının düzenli olarak ikiye katlandığı gözlemlendi.
+    en: The number of components on a single chip was observed to double regularly.
+    src: [moore1965]
+sources:
+  bardeen1948:
+    type: article
+    authors: Bardeen, J.; Brattain, W. H.
+    title: The transistor, a semi-conductor triode
+    year: 1948
+    in: Physical Review 74, 230–231
+    doi: 10.1103/PhysRev.74.230
+  moore1965:
+    type: article
+    authors: Moore, G. E.
+    title: Cramming more components onto integrated circuits
+    year: 1965
+    in: Electronics 38(8), 114–117

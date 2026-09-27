@@ -1,0 +1,59 @@
+id: kara-delik
+parent: astronomi
+type: event
+date: { year: 2019, month: 4 }
+people: [Karl Schwarzschild, Event Horizon Telescope Collaboration]
+title:
+  tr: Kara deliğin ilk görüntüsü
+  en: The first image of a black hole
+summary:
+  tr: >-
+    Genel görelilik, ışığın bile kaçamayacağı kadar yoğun cisimler, yani kara delikler öngörür. Nisan 2019'da Olay
+    Ufku Teleskobu, M87 galaksisinin merkezindeki kara deliğin çevresindeki parlak halkanın ilk görüntüsünü yayımladı.
+    2022'de de Samanyolu'nun merkezindeki kara delik Sagittarius A* görüntülendi.
+  en: >-
+    General relativity predicts objects so dense that not even light can escape: black holes. In April 2019 the Event
+    Horizon Telescope published the first image of the bright ring around the black hole at the centre of the galaxy M87.
+    In 2022 the black hole at the centre of the Milky Way, Sagittarius A*, was imaged too.
+technical:
+  tr: >-
+    Dünya genelindeki radyo antenleri çok uzun taban çizgili interferometriyle 1,3 mm dalga boyunda birleştirildi ve
+    Dünya büyüklüğünde sanal bir teleskop oluşturuldu. M87* için yaklaşık 42 mikro yay saniyesi çaplı bir halka ölçüldü.
+    Bu ölçüm 6,5 milyar güneş kütlesi ile uyumludur. Görüntü, birden fazla bağımsız algoritmayla yeniden oluşturuldu.
+    Bir bağımsız yeniden analiz ise halka yapısının görüntüleme yönteminden etkilenebileceğini ileri sürdü.
+  en: >-
+    Radio antennas around the world were combined by very-long-baseline interferometry at 1.3 mm to form an Earth-sized
+    virtual telescope. For M87* a ring about 42 microarcseconds across was measured, consistent with 6.5 billion solar
+    masses. The image was reconstructed with several independent algorithms; one independent reanalysis argued that the
+    ring structure could be influenced by the imaging method.
+claims:
+  - tr: M87 galaksisinin merkezinde, genel göreliliğin öngördüğü gölgeye sahip bir süper kütleli kara delik vardır.
+    en: At the centre of M87 is a supermassive black hole with the shadow predicted by general relativity.
+    src: [eht2019]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Farklı ekiplerin farklı yöntemlerle oluşturduğu görüntülerde aynı çaplı halka elde edildi.
+    en: Images made by different teams with different methods showed a ring of the same diameter.
+    src: [eht2019]
+  - kind: critique
+    stance: against
+    tr: EHT verilerinin bağımsız bir yeniden analizi, halka yapısının görüntüleme işlemi sırasında oluşmuş olabileceğini savundu. EHT ekibi bu analize yanıt verdi.
+    en: An independent reanalysis of the EHT data argued that the ring structure might be an artefact of the imaging process; the EHT team responded to this analysis.
+    src: [miyoshi2022]
+sources:
+  eht2019:
+    type: article
+    authors: Event Horizon Telescope Collaboration
+    title: 'First M87 Event Horizon Telescope results. I. The shadow of the supermassive black hole'
+    year: 2019
+    in: The Astrophysical Journal Letters 875, L1
+    doi: 10.3847/2041-8213/ab0ec7
+  miyoshi2022:
+    type: article
+    authors: Miyoshi, M.; Kato, Y.; Makino, J.
+    title: 'The jet and resolved features of the central supermassive black hole of M87 observed with the Event Horizon Telescope (EHT)'
+    year: 2022
+    in: The Astrophysical Journal 933, 36
+    doi: 10.3847/1538-4357/ac6ddb
+related: [genel-gorelilik]

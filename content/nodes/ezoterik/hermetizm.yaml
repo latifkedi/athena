@@ -1,0 +1,65 @@
+id: hermetizm
+parent: ezoterik
+type: tradition
+people: [Hermes Trismegistos, Marsilio Ficino, Isaac Casaubon]
+title:
+  tr: Hermetizm
+  en: Hermeticism
+summary:
+  tr: >-
+    Hermetizm, "üç kez büyük Hermes"e (Hermes Trismegistos) atfedilen metinlere dayanan bir gelenektir. "Ne yukardaysa
+    aşağıda da odur" ilkesiyle evren ile insan arasında bir karşılıklılık kurar. Rönesans'ta bu metinlerin Musa kadar eski
+    olduğu düşünüldü. 1614'te Casaubon, dil incelemesiyle bunların MS 2.–3. yüzyıla ait olduğunu gösterdi. İslam
+    geleneğinde Hermes bazen İdris peygamberle özdeşleştirilmiştir.
+  en: >-
+    Hermeticism is a tradition based on texts attributed to "thrice-great Hermes" (Hermes Trismegistus). With the
+    principle "as above, so below" it sets up a correspondence between cosmos and human. In the Renaissance these texts
+    were thought to be as old as Moses; in 1614 Casaubon showed by linguistic analysis that they belong to the 2nd–3rd
+    centuries CE. In Islamic tradition Hermes has sometimes been identified with the prophet Idris.
+technical:
+  tr: >-
+    Corpus Hermeticum, Yunanca yazılmış ve Helenistik Mısır'da oluşmuş dini-felsefi risalelerden oluşur. Ficino bu
+    metinleri 1463'te Latinceye çevirdi. Zümrüt Tablet (Tabula Smaragdina), ilk kez Arapça kaynaklarda (Sirrü'l-halîka,
+    9. yüzyıl) görülür ve simya geleneğinin temel metinlerinden biri oldu. Yates'in Rönesans biliminde hermetizmin
+    rolüne dair tezi sonradan eleştirilmiş ve sınırlandırılmıştır.
+  en: >-
+    The Corpus Hermeticum consists of religio-philosophical treatises written in Greek in Hellenistic Egypt; Ficino
+    translated them into Latin in 1463. The Emerald Tablet (Tabula Smaragdina) first appears in Arabic sources (Sirr
+    al-khalīqa, 9th century) and became a foundational text of the alchemical tradition. Yates's thesis on the role of
+    Hermeticism in Renaissance science was later criticised and qualified.
+claims:
+  - tr: Evren ile insan birbirinin yansımasıdır ("ne yukardaysa aşağıda da odur"). Gizli bilgi, doğanın ve Tanrı'nın bilgisine götürür.
+    en: Cosmos and human mirror one another ("as above, so below"); hidden knowledge leads to knowledge of nature and God.
+    src: [copenhaver1992]
+evidence:
+  - kind: historical
+    stance: against
+    tr: Casaubon, metinlerin dilinin ve kavramlarının Hristiyanlık sonrası Helenistik döneme ait olduğunu, dolayısıyla Musa çağından olamayacağını gösterdi.
+    en: Casaubon showed that the texts' language and concepts belong to the post-Christian Hellenistic period and so cannot date from the age of Moses.
+    src: [grafton1983]
+sources:
+  copenhaver1992:
+    type: book
+    authors: Copenhaver, B. P. (trans.)
+    title: 'Hermetica: The Greek Corpus Hermeticum and the Latin Asclepius'
+    year: 1992
+    in: Cambridge University Press
+  grafton1983:
+    type: article
+    authors: Grafton, A.
+    title: "Protestant versus prophet: Isaac Casaubon on Hermes Trismegistus"
+    year: 1983
+    in: Journal of the Warburg and Courtauld Institutes 46, 78–93
+  tdv-idris:
+    type: encyclopedia
+    title: İdrîs
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/idris
+positions:
+  - who:
+      tr: İslam geleneğindeki bazı yazarlar
+      en: Some authors in the Islamic tradition
+    tr: Hermes, ilk kez kalemle yazan, astronomi ve hikmet bilgisini öğreten İdris peygamberle aynı kişidir.
+    en: Hermes is the same person as the prophet Idris, who first wrote with the pen and taught astronomy and wisdom.
+    src: [tdv-idris]
+related: [simya, yazi]

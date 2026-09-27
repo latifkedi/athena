@@ -1,0 +1,65 @@
+id: mof
+parent: kimya
+type: event
+date: { year: 2025, month: 10 }
+people: [Susumu Kitagawa, Richard Robson, Omar M. Yaghi]
+title:
+  tr: Metal-organik kafesler (Nobel 2025)
+  en: Metal–organic frameworks (Nobel 2025)
+summary:
+  tr: >-
+    Metal-organik kafesler (MOF), metal iyonlarının organik moleküllerle bağlanarak oluşturduğu, içinde çok büyük boş
+    hacimler bulunan kristallerdir. Bir gramlık MOF'un iç yüzey alanı bir futbol sahasına yaklaşabilir. Havadan su ve
+    karbondioksit toplamak gibi uygulamalar için geliştirilmektedir. 2025 Nobel Kimya Ödülü'ne konu oldular.
+  en: >-
+    Metal–organic frameworks (MOFs) are crystals built from metal ions linked by organic molecules, with very large empty
+    volumes inside. The internal surface area of one gram of MOF can approach that of a football pitch. They are being
+    developed for uses such as harvesting water and carbon dioxide from the air. They were the subject of the 2025 Nobel
+    Prize in Chemistry.
+technical:
+  tr: >-
+    Robson (1989) bakır iyonları ve dört dişli nitrillerle elmas benzeri bir koordinasyon ağı kurdu. Kitagawa, gaz
+    soğurup salabilen esnek gözenekli çerçeveler geliştirdi. Yaghi'nin MOF-5'i (1999), çözücü uzaklaştırıldıktan sonra
+    da kararlılığını koruyan ve yaklaşık 2900 m²/g yüzey alanına sahip bir yapıydı. "Retiküler kimya", bağlayıcı ve düğüm
+    geometrisinden hareketle önceden tasarlanmış ağ yapılarının sentezini ifade eder.
+  en: >-
+    Robson (1989) built a diamond-like coordination network from copper ions and a four-armed nitrile. Kitagawa developed
+    flexible porous frameworks that take up and release gases. Yaghi's MOF-5 (1999) remained stable after solvent removal
+    and had a surface area of about 2,900 m²/g. "Reticular chemistry" means synthesising pre-designed network structures
+    from linker and node geometry.
+claims:
+  - tr: Metal düğümler ve organik bağlayıcılarla, önceden tasarlanmış, kalıcı gözenekli kristal yapılar sentezlenebilir.
+    en: Pre-designed, permanently porous crystalline structures can be synthesised from metal nodes and organic linkers.
+    src: [li1999, nobel-chem2025]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: MOF-5, çözücü uzaklaştırılıp 300 °C'ye ısıtıldığında da yapısını koruyarak kalıcı gözeneklilik gösterdi.
+    en: MOF-5 kept its structure after solvent removal and heating to 300 °C, showing permanent porosity.
+    src: [li1999]
+  - kind: experiment
+    stance: for
+    tr: Bakır ve tetranitril bağlayıcıyla elmas benzeri, geniş boşluklu bir üç boyutlu ağ kristallendi.
+    en: A diamond-like three-dimensional network with large cavities was crystallised from copper and a tetranitrile linker.
+    src: [hoskins1989]
+sources:
+  hoskins1989:
+    type: article
+    authors: Hoskins, B. F.; Robson, R.
+    title: Infinite polymeric frameworks consisting of three dimensionally linked rod-like segments
+    year: 1989
+    in: Journal of the American Chemical Society 111, 5962–5964
+    doi: 10.1021/ja00197a079
+  li1999:
+    type: article
+    authors: Li, H.; Eddaoudi, M.; O'Keeffe, M.; Yaghi, O. M.
+    title: Design and synthesis of an exceptionally stable and highly porous metal-organic framework
+    year: 1999
+    in: Nature 402, 276–279
+    doi: 10.1038/46248
+  nobel-chem2025:
+    type: web
+    title: The Nobel Prize in Chemistry 2025 (press release)
+    year: 2025
+    in: NobelPrize.org
+    url: https://www.nobelprize.org/prizes/chemistry/2025/press-release/

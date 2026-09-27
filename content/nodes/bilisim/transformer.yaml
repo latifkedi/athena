@@ -1,0 +1,71 @@
+id: transformer
+parent: bilisim
+type: technology
+date: { year: 2017, month: 6 }
+people: [Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan Gomez, Łukasz Kaiser, Illia Polosukhin]
+title:
+  tr: Transformer ve büyük dil modelleri
+  en: The Transformer and large language models
+summary:
+  tr: >-
+    2017'de önerilen Transformer mimarisi, bir metindeki kelimelerin birbirleriyle ilişkisini "dikkat" mekanizmasıyla
+    hesaplar. GPT, Claude ve Gemini gibi büyük dil modelleri bu mimari üzerine kuruludur. Bu modeller metin yazma,
+    çeviri, programlama ve akıl yürütme görevlerinde büyük ilerleme gösterdi. Modellerin gerçekten "anlayıp anlamadığı"
+    tartışmalıdır.
+  en: >-
+    The Transformer architecture, proposed in 2017, computes how the words in a text relate to one another with an
+    "attention" mechanism. Large language models such as GPT, Claude and Gemini are built on it. They have shown great
+    progress in writing, translation, programming and reasoning tasks. Whether they really "understand" is debated.
+technical:
+  tr: >-
+    Öz-dikkat mekanizması, sorgu (Q), anahtar (K) ve değer (V) matrisleriyle softmax(QKᵀ/√d)V olarak hesaplanır. Bu,
+    tekrarlayan ağlara göre paralel eğitimi mümkün kılar. Ölçekleme yasaları, kayıp fonksiyonunun parametre, veri ve
+    hesaplama miktarıyla güç yasasına göre azaldığını gösterir (Kaplan vd. 2020). Eleştirmenler, bu modellerin istatistiksel
+    örüntü eşleştirmeye dayandığını, gerçek anlama sahip olmadığını ve yanlış bilgi uydurabildiğini ("halüsinasyon")
+    vurgular.
+  en: >-
+    Self-attention is computed as softmax(QKᵀ/√d)V with query (Q), key (K) and value (V) matrices, which permits parallel
+    training compared with recurrent networks. Scaling laws show loss falling as a power law with parameters, data and
+    compute (Kaplan et al. 2020). Critics stress that these models rely on statistical pattern matching, lack genuine
+    understanding and can fabricate false information ("hallucination").
+claims:
+  - tr: Yalnızca dikkat mekanizmasına dayanan bir mimari, dil görevlerinde tekrarlayan ve evrişimli ağlardan daha iyi performans gösterir.
+    en: An architecture based solely on attention outperforms recurrent and convolutional networks on language tasks.
+    src: [vaswani2017]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Transformer, WMT 2014 İngilizce–Almanca çeviri görevinde o dönemin en iyi sonucunu daha az eğitim maliyetiyle elde etti.
+    en: The Transformer achieved the then-best result on the WMT 2014 English–German translation task at lower training cost.
+    src: [vaswani2017]
+  - kind: measurement
+    stance: for
+    tr: Model kaybının, model boyutu, veri ve hesaplama arttıkça öngörülebilir bir güç yasasıyla azaldığı ölçüldü.
+    en: Model loss was measured to fall according to a predictable power law as model size, data and compute increase.
+    src: [kaplan2020]
+  - kind: critique
+    stance: against
+    tr: Büyük dil modellerinin anlamı kavramadan dilsel biçimi taklit eden "stokastik papağanlar" olduğu ve bunun riskler doğurduğu savunuldu.
+    en: It was argued that large language models are "stochastic parrots" imitating linguistic form without grasping meaning, and that this carries risks.
+    src: [bender2021]
+sources:
+  vaswani2017:
+    type: preprint
+    authors: Vaswani, A. et al.
+    title: Attention is all you need
+    year: 2017
+    arxiv: '1706.03762'
+  kaplan2020:
+    type: preprint
+    authors: Kaplan, J. et al.
+    title: Scaling laws for neural language models
+    year: 2020
+    arxiv: '2001.08361'
+  bender2021:
+    type: article
+    authors: Bender, E. M.; Gebru, T.; McMillan-Major, A.; Shmitchell, S.
+    title: 'On the dangers of stochastic parrots: can language models be too big?'
+    year: 2021
+    in: Proceedings of FAccT 2021, 610–623
+    doi: 10.1145/3442188.3445922
+related: [yapay-zeka-imo]

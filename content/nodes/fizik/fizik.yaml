@@ -1,0 +1,40 @@
+id: fizik
+parent: insanlik
+side: canopy
+type: field
+order: 2
+feed: ['arxiv:hep-ph', 'arxiv:hep-ex', 'arxiv:gr-qc', 'arxiv:quant-ph', 'arxiv:cond-mat', 'arxiv:nucl-ex']
+title:
+  tr: Fizik
+  en: Physics
+summary:
+  tr: >-
+    Madde, enerji, uzay, zaman ve bunlar arasındaki etkileşimleri inceleyen alan. Fizikte bir kuram, yaptığı
+    tahminlerin deney ve gözlemle ne kadar örtüştüğüne göre değerlendirilir. Yeni ölçümler eski kuramları
+    sınırlandırabilir ya da değiştirebilir.
+  en: >-
+    The field that studies matter, energy, space, time and their interactions. In physics a theory is judged by how well
+    its predictions agree with experiment and observation. New measurements can limit or change older theories.
+technical:
+  tr: >-
+    Bugünkü fizik iki temel çerçeveye dayanır. Kütleçekimi uzay-zamanın eğriliği olarak açıklayan genel görelilik ve
+    elektromanyetik, zayıf ve güçlü etkileşimleri açıklayan kuantum alan kuramı, yani Standart Model. İkisini tek bir
+    kuantum kütleçekim kuramında birleştirmek, karanlık madde ve karanlık enerjinin doğası ve nötrino kütleleri başlıca
+    açık sorulardır.
+  en: >-
+    Present-day physics rests on two basic frameworks: general relativity, which describes gravity as the curvature of
+    spacetime, and quantum field theory, which describes the electromagnetic, weak and strong interactions in the
+    Standard Model. Combining the two in a single theory of quantum gravity, the nature of dark matter and dark energy,
+    and the neutrino masses are major open questions.
+sources:
+  pdg2024:
+    type: article
+    authors: Particle Data Group (Navas, S. et al.)
+    title: Review of Particle Physics
+    year: 2024
+    in: Physical Review D 110, 030001
+    doi: 10.1103/PhysRevD.110.030001
+claims:
+  - tr: Standart Model'in parametreleri ve deneysel testleri Parçacık Veri Grubu tarafından düzenli olarak derlenir.
+    en: The parameters and experimental tests of the Standard Model are compiled regularly by the Particle Data Group.
+    src: [pdg2024]

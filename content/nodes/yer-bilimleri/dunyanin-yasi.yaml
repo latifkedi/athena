@@ -1,0 +1,122 @@
+id: dunyanin-yasi
+parent: yer-bilimleri
+type: question
+title:
+  tr: Dünya'nın yaşı
+  en: The age of the Earth
+summary:
+  tr: >-
+    Dünya'nın yaşı konusunda binlerce yıllık bir tartışma vardır. Kutsal metinlerin lafzi okumasına dayanan hesaplar
+    birkaç bin yıl verir. 19. yüzyılda Lord Kelvin soğuma hesabıyla on milyonlarca yıl buldu. Günümüz radyometrik
+    tarihlendirmesi ise yaklaşık 4,54 milyar yıl vermektedir.
+  en: >-
+    The age of the Earth has been debated for millennia. Calculations based on a literal reading of scripture give a few
+    thousand years; in the 19th century Lord Kelvin found tens of millions of years from a cooling calculation; present-day
+    radiometric dating gives about 4.54 billion years.
+technical:
+  tr: >-
+    Patterson (1956), meteoritlerin ve karasal kurşunun izotop oranlarından tek bir "izokron" ile 4,55 ± 0,07 milyar yıl
+    elde etti. Kelvin'in hesabı radyoaktif ısınmayı ve mantodaki konveksiyonu bilmediği için çok kısa bir yaş verdi.
+    Genç Dünya yaratılışçıları, bozunma hızlarının geçmişte değişmiş olabileceğini savunur (ör. RATE projesi). Bu görüşe
+    karşı, bozunma hızlarının sıcaklık, basınç ve kimyasal ortamdan neredeyse bağımsız olduğunu gösteren ölçümler vardır.
+    Oklo doğal reaktörünün yaklaşık 2 milyar yıl önceki fizik sabitleriyle uyumlu olması da bu görüşe karşı gösterilir.
+  en: >-
+    Patterson (1956) obtained 4.55 ± 0.07 billion years from a single "isochron" of lead isotope ratios in meteorites and
+    terrestrial lead. Kelvin's calculation gave far too short an age because he did not know of radioactive heating and
+    mantle convection. Young-earth creationists argue that decay rates may have changed in the past (e.g. the RATE
+    project). Against this view are measurements showing decay rates to be almost independent of temperature, pressure
+    and chemical environment, and the consistency of the Oklo natural reactor with the physical constants of about 2
+    billion years ago.
+datings:
+  - view:
+      tr: Radyometrik tarihlendirme (güncel jeoloji)
+      en: Radiometric dating (current geology)
+    value:
+      tr: Yaklaşık 4,54 milyar yıl
+      en: About 4.54 billion years
+    src: [patterson1956, dalrymple1991]
+  - view:
+      tr: Lord Kelvin (1862, soğuma hesabı)
+      en: Lord Kelvin (1862, cooling calculation)
+    value:
+      tr: 20–400 milyon yıl, daha sonra 20–40 milyon yıl
+      en: 20–400 million years, later 20–40 million years
+    src: [thomson1862]
+  - view:
+      tr: Genç Dünya yaratılışçılığı (Tekvin'in lafzi okuması)
+      en: Young-earth creationism (literal reading of Genesis)
+    value:
+      tr: Yaklaşık 6.000–10.000 yıl
+      en: About 6,000–10,000 years
+    src: [vardiman2005, ussher1650]
+  - view:
+      tr: İslam (Kur'an)
+      en: Islam (Qur'an)
+    value:
+      tr: Yer, "iki günde" yaratılmıştır (Fussilet 41:9–12). Kur'an'da "gün"ün süresi farklı ayetlerde farklı anılır ve bir takvim tarihi verilmez.
+      en: The earth was created "in two days" (Fuṣṣilat 41:9–12); the length of a "day" is given differently in different verses and no calendar date is given.
+    src: [kuran-41-9]
+claims:
+  - tr: Dünya yaklaşık 4,54 milyar yaşındadır.
+    en: The Earth is about 4.54 billion years old.
+    src: [patterson1956]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Farklı meteoritlerin ve karasal kurşunun izotop oranları aynı doğru (izokron) üzerine düştü ve yaklaşık 4,55 milyar yıl verdi.
+    en: Isotope ratios of different meteorites and terrestrial lead fell on a single line (isochron) giving about 4.55 billion years.
+    src: [patterson1956]
+  - kind: argument
+    stance: against
+    tr: RATE projesi, zirkonlardaki helyum tutulumu gibi verilerin geçmişte hızlanmış bir radyoaktif bozunmayla daha iyi açıklandığını savundu.
+    en: The RATE project argued that data such as helium retention in zircons are better explained by accelerated radioactive decay in the past.
+    src: [vardiman2005]
+  - kind: measurement
+    stance: for
+    tr: Oklo'daki doğal nükleer reaktörün izotop kalıntıları, yaklaşık 2 milyar yıl önceki çekirdek fiziği sabitlerinin bugünkülerle neredeyse aynı olduğunu gösterdi.
+    en: Isotopic residues of the natural nuclear reactor at Oklo showed that nuclear-physics constants about 2 billion years ago were almost the same as today.
+    src: [shlyakhter1976]
+sources:
+  patterson1956:
+    type: article
+    authors: Patterson, C.
+    title: Age of meteorites and the earth
+    year: 1956
+    in: Geochimica et Cosmochimica Acta 10(4), 230–237
+    doi: 10.1016/0016-7037(56)90036-9
+  thomson1862:
+    type: article
+    authors: Thomson, W. (Lord Kelvin)
+    title: On the secular cooling of the earth
+    year: 1862
+    in: Transactions of the Royal Society of Edinburgh 23, 157–170
+  vardiman2005:
+    type: book
+    authors: Vardiman, L.; Snelling, A. A.; Chaffin, E. F. (eds.)
+    title: 'Radioisotopes and the Age of the Earth, Vol. II: Results of a Young-Earth Creationist Research Initiative'
+    year: 2005
+    in: Institute for Creation Research / Creation Research Society
+  shlyakhter1976:
+    type: article
+    authors: Shlyakhter, A. I.
+    title: Direct test of the constancy of fundamental nuclear constants
+    year: 1976
+    in: Nature 264, 340
+    doi: 10.1038/264340a0
+  dalrymple1991:
+    type: book
+    authors: Dalrymple, G. B.
+    title: The Age of the Earth
+    year: 1991
+    in: Stanford University Press
+  ussher1650:
+    type: book
+    authors: Ussher, J.
+    title: Annales Veteris Testamenti, a prima mundi origine deducti
+    year: 1650
+    in: London
+  kuran-41-9:
+    type: scripture
+    title: Kur'an-ı Kerim, Fussilet 41:9–12
+    url: https://quran.com/41/9-12
+related: [yaratiliscilik, buyuk-patlama]

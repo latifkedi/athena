@@ -1,0 +1,75 @@
+id: kuantum-kutlecekim
+parent: fizik
+type: question
+title:
+  tr: Kuantum kütleçekim (açık soru)
+  en: Quantum gravity (open question)
+summary:
+  tr: >-
+    Genel görelilik ve kuantum mekaniği kendi alanlarında çok başarılıdır, ama ikisi tek bir kuramda birleştirilemedi.
+    Sicim kuramı ve döngü kuantum kütleçekimi başlıca adaylardır. Hiçbirinin kendine özgü bir tahmini henüz deneyle
+    test edilemedi. Bu adayların bilimsel değeri fizikçiler arasında tartışmalıdır.
+  en: >-
+    General relativity and quantum mechanics are each very successful in their domains, but they have not been combined
+    into a single theory. String theory and loop quantum gravity are the main candidates. No distinctive prediction of
+    either has yet been tested by experiment, and their scientific status is debated among physicists.
+technical:
+  tr: >-
+    Genel göreliliğin pertürbatif kuantizasyonu iki döngüde renormalize edilemez (Goroff–Sagnotti 1986). Sicim kuramı,
+    ekstra boyutlar ve süpersimetri gerektiren, kütleçekimini doğal olarak içeren bir çerçevedir. AdS/CFT eşlemesi gibi
+    güçlü matematiksel sonuçlar üretmiştir, ancak yaklaşık 10⁵⁰⁰ vakumdan oluşan bir "manzara" sorunu vardır. Döngü
+    kuantum kütleçekimi arka plandan bağımsız bir kanonik kuantizasyondur ve alan ile hacim için kesikli spektrumlar
+    öngörür.
+  en: >-
+    The perturbative quantisation of general relativity is non-renormalisable at two loops (Goroff–Sagnotti 1986).
+    String theory is a framework that naturally includes gravity and requires extra dimensions and supersymmetry. It has
+    produced strong mathematical results such as the AdS/CFT correspondence, but it faces a "landscape" of roughly 10⁵⁰⁰
+    vacua. Loop quantum gravity is a background-independent canonical quantisation that predicts discrete spectra for
+    area and volume.
+positions:
+  - who:
+      tr: Sicim kuramı savunucuları
+      en: String theory proponents
+    tr: Sicim kuramı kütleçekimini ve diğer etkileşimleri tutarlı biçimde birleştiren bilinen tek çerçevedir.
+    en: String theory is the only known framework that consistently unifies gravity with the other interactions.
+    src: [polchinski1998]
+  - who:
+      tr: Döngü kuantum kütleçekimi savunucuları
+      en: Loop quantum gravity proponents
+    tr: Kuantum kütleçekimi, ekstra boyut gerektirmeden, uzay-zamanın kendisinin kuantize edilmesiyle kurulmalıdır.
+    en: Quantum gravity should be built by quantising spacetime itself, without extra dimensions.
+    src: [rovelli2004]
+  - who:
+      tr: Eleştirel görüş
+      en: Critical view
+    tr: Test edilebilir tahmin üretmeyen kuramlar bilimsel yöntem açısından sorunludur ve sicim kuramına aşırı kaynak ayrılmıştır.
+    en: Theories that make no testable predictions are problematic for scientific method, and string theory has received disproportionate resources.
+    src: [smolin2006, woit2006]
+sources:
+  polchinski1998:
+    type: book
+    authors: Polchinski, J.
+    title: String Theory (2 vols.)
+    year: 1998
+    in: Cambridge University Press
+  rovelli2004:
+    type: book
+    authors: Rovelli, C.
+    title: Quantum Gravity
+    year: 2004
+    in: Cambridge University Press
+  smolin2006:
+    type: book
+    authors: Smolin, L.
+    title: 'The Trouble with Physics: The Rise of String Theory, the Fall of a Science, and What Comes Next'
+    year: 2006
+    in: Houghton Mifflin, Boston
+  woit2006:
+    type: book
+    authors: Woit, P.
+    title: 'Not Even Wrong: The Failure of String Theory and the Search for Unity in Physical Law'
+    year: 2006
+    in: Jonathan Cape, London
+open:
+  - tr: Kara deliklerin içindeki tekillikler ve bilgi kaybı paradoksu nasıl çözülür?
+    en: How are the singularities inside black holes and the information-loss paradox resolved?

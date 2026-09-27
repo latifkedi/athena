@@ -1,0 +1,85 @@
+id: fuzyon
+parent: enerji
+type: event
+date: { year: 2022, month: 12, day: 5 }
+people: [Lawrence Livermore National Laboratory (NIF), CEA (WEST), IPP (Wendelstein 7-X)]
+title:
+  tr: Füzyon enerjisi ve ateşleme
+  en: Fusion energy and ignition
+summary:
+  tr: >-
+    Güneş'in enerjisi hafif çekirdeklerin birleşmesinden (füzyon) gelir. ABD'deki Ulusal Ateşleme Tesisi (NIF), 5 Aralık
+    2022'de yakıta verilen lazer enerjisinden daha fazla füzyon enerjisi elde ederek ilk kez "ateşleme"ye ulaştı. Nisan
+    2025'te bu oran dört katı aştı. Ancak lazerlerin çektiği toplam elektrik hâlâ çok daha fazladır ve ticari bir füzyon
+    santrali henüz yoktur.
+  en: >-
+    The Sun's energy comes from the joining of light nuclei (fusion). On 5 December 2022 the US National Ignition
+    Facility (NIF) reached "ignition" for the first time, getting more fusion energy out than the laser energy delivered to
+    the fuel. In April 2025 this ratio exceeded four. However, the total electricity drawn by the lasers is still far
+    larger, and there is no commercial fusion power plant yet.
+technical:
+  tr: >-
+    NIF'te 2,05 MJ lazer enerjisi 3,15 MJ füzyon verimi üretti (hedef kazancı yaklaşık 1,5). 7 Nisan 2025'teki atışta
+    2,08 MJ girdiyle 8,6 MJ elde edildi (hedef kazancı yaklaşık 4,13). Duvar prizinden çekilen toplam enerji hesaba
+    katıldığında kazanç 1'in çok altındadır. Manyetik hapsetmede WEST tokamağı Şubat 2025'te 1337 saniyelik plazma
+    süresi rekoru kırdı. Wendelstein 7-X yıldızlatıcısı Mayıs 2025'te uzun deşarjlarda üçlü çarpım rekorunu 43 saniye
+    boyunca korudu.
+  en: >-
+    At NIF, 2.05 MJ of laser energy produced 3.15 MJ of fusion yield (target gain about 1.5). The shot of 7 April 2025
+    produced 8.6 MJ from 2.08 MJ (target gain about 4.13). Counting the total energy drawn from the wall plug, the gain is
+    far below 1. In magnetic confinement, the WEST tokamak set a plasma-duration record of 1,337 seconds in February
+    2025, and the Wendelstein 7-X stellarator held a record triple product for long discharges for 43 seconds in May 2025.
+claims:
+  - tr: Eylemsiz hapsetmeli bir füzyon deneyinde, hedefe verilen enerjiden fazla füzyon enerjisi elde edilmiştir.
+    en: An inertial-confinement fusion experiment has produced more fusion energy than was delivered to the target.
+    src: [nif2024, llnl2025]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Nötron verimi ölçümleri 5 Aralık 2022 atışında 3,15 MJ füzyon enerjisi üretildiğini gösterdi.
+    en: Neutron-yield measurements showed 3.15 MJ of fusion energy in the 5 December 2022 shot.
+    src: [nif2024]
+  - kind: measurement
+    stance: for
+    tr: Uzun süreli plazmalarda WEST 22 dakika, Wendelstein 7-X ise yüksek performanslı plazmayı 43 saniye boyunca sürdürdü.
+    en: In long plasmas, WEST sustained a plasma for 22 minutes, and Wendelstein 7-X sustained high performance for 43 seconds.
+    src: [west2025, w7x2025]
+  - kind: critique
+    stance: against
+    tr: NIF'in lazerleri her atış için şebekeden yaklaşık 300 MJ elektrik çeker. Bu hesaba katıldığında net enerji kazancı yoktur. Tesis enerji verimliliği için değil, bilimsel başa baş noktasını göstermek için tasarlanmıştır.
+    en: NIF's lasers draw about 300 MJ of electricity from the grid per shot; counting this, there is no net energy gain. The facility was designed to demonstrate scientific breakeven, not energy efficiency.
+    src: [llnl-ignition]
+sources:
+  nif2024:
+    type: article
+    authors: Abu-Shawareb, H. et al. (Indirect Drive ICF Collaboration)
+    title: Achievement of target gain larger than unity in an inertial fusion experiment
+    year: 2024
+    in: Physical Review Letters 132, 065102
+    doi: 10.1103/PhysRevLett.132.065102
+  llnl2025:
+    type: web
+    title: Target breakthrough enabled fusion record at NIF
+    year: 2025
+    in: Lawrence Livermore National Laboratory
+    url: https://lasers.llnl.gov/news/target-breakthrough-enabled-fusion-record-nif
+  llnl-ignition:
+    type: web
+    title: NIF frequently asked questions
+    in: Lawrence Livermore National Laboratory
+    url: https://lasers.llnl.gov/about/faqs
+  west2025:
+    type: web
+    title: WEST sets a new plasma duration record
+    year: 2025
+    in: CEA-IRFM
+    url: https://irfm.cea.fr/en/2025/02/west-sets-a-new-plasma-duration-record/
+  w7x2025:
+    type: web
+    title: New performance records at Wendelstein 7-X
+    year: 2025
+    in: Max-Planck-Institut für Plasmaphysik
+    url: https://www.ipp.mpg.de/5532945/w7x
+open:
+  - tr: Füzyon ne zaman şebekeye net elektrik verebilecek? ITER ve özel girişimlerin hedef tarihleri sık sık ertelenmiştir.
+    en: When will fusion deliver net electricity to the grid? The target dates of ITER and private ventures have often slipped.

@@ -1,0 +1,30 @@
+---
+interface Props {
+  keys?: string[];
+  index: Record<string, number>;
+}
+const { keys = [], index } = Astro.props;
+const valid = keys.filter((k) => index[k] !== undefined);
+---
+
+{
+  valid.length > 0 && (
+    <sup class="cite">
+      {valid.map((k) => (
+        <a href={`#src-${k.replace('@', '_')}`}>[{index[k]}]</a>
+      ))}
+    </sup>
+  )
+}
+
+<style>
+  .cite {
+    font-size: 0.72em;
+    margin-left: 2px;
+    white-space: nowrap;
+  }
+  .cite a {
+    text-decoration: none;
+    margin-left: 1px;
+  }
+</style>

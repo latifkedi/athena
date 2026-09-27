@@ -1,0 +1,57 @@
+id: gunes-pili
+parent: enerji
+type: technology
+date: { year: 1954 }
+people: [Daryl Chapin, Calvin Fuller, Gerald Pearson]
+title:
+  tr: Silisyum güneş pili
+  en: The silicon solar cell
+summary:
+  tr: >-
+    Bell Laboratuvarları 1954'te güneş ışığını yaklaşık %6 verimle doğrudan elektriğe çeviren ilk pratik silisyum güneş
+    pilini tanıttı. Bugün güneş panelleri dünyanın en hızlı büyüyen elektrik kaynağıdır. 2025'te küresel enerji talebi
+    artışının dörtte birinden fazlasını tek başına karşıladı.
+  en: >-
+    In 1954 Bell Laboratories introduced the first practical silicon solar cell, converting sunlight directly into
+    electricity with about 6% efficiency. Solar panels are now the world's fastest-growing source of electricity. In
+    2025 solar alone met more than a quarter of the growth in global energy demand.
+technical:
+  tr: >-
+    Fotovoltaik etki (Becquerel 1839) p-n eklemindeki yerleşik elektrik alanının, soğurulan fotonların oluşturduğu
+    elektron-boşluk çiftlerini ayırmasıyla akım üretir. Tek eklemli silisyum hücrelerin kuramsal verim sınırı
+    Shockley–Queisser sınırı olarak bilinir (yaklaşık %33). Perovskit/silisyum tandem hücrelerde laboratuvar verimleri
+    %30'u aşmıştır.
+  en: >-
+    The photovoltaic effect (Becquerel 1839) produces current as the built-in field of a p–n junction separates
+    electron–hole pairs created by absorbed photons. The theoretical efficiency limit for single-junction cells is the
+    Shockley–Queisser limit (about 33%). Laboratory efficiencies of perovskite/silicon tandem cells have exceeded 30%.
+claims:
+  - tr: Silisyum p-n eklemi güneş ışığını doğrudan elektriğe çevirebilir.
+    en: A silicon p–n junction can convert sunlight directly into electricity.
+    src: [chapin1954]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: İlk hücreler güneş ışığı altında yaklaşık %6 verim gösterdi.
+    en: The first cells showed about 6% efficiency in sunlight.
+    src: [chapin1954]
+  - kind: theoretical
+    stance: for
+    tr: Tek eklemli hücrelerin ulaşabileceği en yüksek verim ayrıntılı denge hesabıyla belirlendi.
+    en: The maximum efficiency attainable by single-junction cells was derived from a detailed-balance calculation.
+    src: [shockley1961]
+sources:
+  chapin1954:
+    type: article
+    authors: Chapin, D. M.; Fuller, C. S.; Pearson, G. L.
+    title: A new silicon p-n junction photocell for converting solar radiation into electrical power
+    year: 1954
+    in: Journal of Applied Physics 25, 676–677
+    doi: 10.1063/1.1721711
+  shockley1961:
+    type: article
+    authors: Shockley, W.; Queisser, H. J.
+    title: Detailed balance limit of efficiency of p-n junction solar cells
+    year: 1961
+    in: Journal of Applied Physics 32, 510–519
+    doi: 10.1063/1.1736034

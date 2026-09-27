@@ -1,0 +1,77 @@
+id: dalton
+parent: kimya
+type: idea
+date: { year: 1808 }
+people: [John Dalton, Albert Einstein, Jean Perrin]
+title:
+  tr: Atom kuramı
+  en: Atomic theory
+summary:
+  tr: >-
+    Dalton, her elementin kendine özgü ağırlıktaki bölünmez atomlardan oluştuğunu ve bileşiklerin atomların basit
+    oranlarla birleşmesiyle oluştuğunu savundu. Pek çok bilim insanı 20. yüzyılın başına kadar atomları yalnızca yararlı
+    bir hesap aracı olarak gördü. Einstein'ın 1905'teki Brown hareketi açıklaması ve Perrin'in 1908–1909'daki ölçümleri
+    bu tartışmada belirleyici oldu. Atom fikrinin eski Yunan'da ve İslam kelamında da farklı biçimleri vardır.
+  en: >-
+    Dalton argued that each element consists of indivisible atoms of characteristic weight and that compounds form when
+    atoms combine in simple ratios. Many scientists regarded atoms only as a useful calculating device until the early
+    20th century. Einstein's 1905 explanation of Brownian motion and Perrin's measurements of 1908–1909 were decisive in
+    that debate. The idea of atoms also appears in other forms in ancient Greece and in Islamic kalām.
+technical:
+  tr: >-
+    Katlı oranlar yasası (ör. CO ve CO₂'de karbonla birleşen oksijen kütlelerinin 1:2 oranı), Dalton kuramının temel
+    desteğiydi. Ostwald ve Mach gibi "enerjetikçiler" gözlenemeyen varlıkları reddetti. Einstein, Brown hareketindeki
+    ortalama karesel yer değiştirmeyi Avogadro sayısına bağladı. Perrin bu sayıyı bağımsız yöntemlerle birbiriyle uyumlu
+    biçimde ölçtü. Ostwald 1909'da atomların varlığını kabul etti.
+  en: >-
+    The law of multiple proportions (e.g. the 1:2 ratio of oxygen masses combining with carbon in CO and CO₂) was the main
+    support for Dalton's theory. "Energeticists" such as Ostwald and Mach rejected unobservable entities. Einstein linked
+    the mean-square displacement in Brownian motion to Avogadro's number; Perrin measured it consistently by independent
+    methods. Ostwald accepted the existence of atoms in 1909.
+claims:
+  - tr: Madde, her element için belirli kütleye sahip atomlardan oluşur.
+    en: Matter is made of atoms with a definite mass for each element.
+    src: [dalton1808]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Aynı iki element birden fazla bileşik oluşturduğunda, bunlardan birinin sabit kütlesiyle birleşen diğerinin kütleleri küçük tam sayı oranlarındadır.
+    en: When two elements form more than one compound, the masses of one that combine with a fixed mass of the other are in small whole-number ratios.
+    src: [dalton1808]
+  - kind: experiment
+    stance: for
+    tr: Perrin, Brown hareketi, çökelme dengesi ve difüzyondan Avogadro sayısını birbiriyle uyumlu değerlerle ölçtü.
+    en: Perrin measured Avogadro's number with mutually consistent values from Brownian motion, sedimentation equilibrium and diffusion.
+    src: [perrin1909, einstein1905c]
+  - kind: theoretical
+    stance: against
+    tr: 19. yüzyılın sonunda bazı fizikçi ve kimyacılar, doğrudan gözlenemeyen atomların varsayılmasını gereksiz ve bilim dışı buldu. Termodinamiğin atom varsaymadan çalışabileceğini savundular.
+    en: In the late 19th century some physicists and chemists found the postulation of directly unobservable atoms unnecessary and unscientific, arguing that thermodynamics could work without them.
+    src: [nye1972]
+sources:
+  dalton1808:
+    type: book
+    authors: Dalton, J.
+    title: A New System of Chemical Philosophy, Part I
+    year: 1808
+    in: R. Bickerstaff, Manchester
+  einstein1905c:
+    type: article
+    authors: Einstein, A.
+    title: Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen
+    year: 1905
+    in: Annalen der Physik 322(8), 549–560
+    doi: 10.1002/andp.19053220806
+  perrin1909:
+    type: article
+    authors: Perrin, J.
+    title: Mouvement brownien et réalité moléculaire
+    year: 1909
+    in: Annales de Chimie et de Physique 18, 5–114
+  nye1972:
+    type: book
+    authors: Nye, M. J.
+    title: "Molecular Reality: A Perspective on the Scientific Work of Jean Perrin"
+    year: 1972
+    in: Macdonald, London
+related: [kelam-atomculugu, mendeleyev]

@@ -1,0 +1,64 @@
+id: fermat-wiles
+parent: matematik
+type: event
+date: { year: 1995 }
+people: [Pierre de Fermat, Andrew Wiles, Richard Taylor]
+title:
+  tr: Fermat'nın son teoremi
+  en: "Fermat's Last Theorem"
+summary:
+  tr: >-
+    Fermat 1637'de bir kitabın kenarına, n > 2 için aⁿ + bⁿ = cⁿ denkleminin pozitif tam sayılarda çözümü olmadığını
+    ve bunun için "harika bir ispat" bulduğunu yazdı. İspat 358 yıl boyunca bulunamadı ve 1995'te Andrew Wiles
+    tarafından yayımlandı.
+  en: >-
+    In 1637 Fermat wrote in the margin of a book that aⁿ + bⁿ = cⁿ has no solution in positive integers for n > 2, and
+    that he had "a marvellous proof". No proof was found for 358 years, until Andrew Wiles published one in 1995.
+technical:
+  tr: >-
+    Wiles, Q üzerindeki yarı kararlı eliptik eğrilerin modüler olduğunu (Taniyama–Shimura–Weil sanısının yarı kararlı
+    durumu) ispatladı. Frey eğrisi ve Ribet'in ε-sanısı ispatı (1986) aracılığıyla bu, Fermat'nın son teoremini
+    gerektirir. 1993'teki ilk sürümdeki boşluk, Taylor ile ortak çalışmada Hecke cebirlerinin tam kesişim olduğunun
+    gösterilmesiyle kapatıldı. Tam modülerlik teoremi 2001'de Breuil, Conrad, Diamond ve Taylor tarafından tamamlandı.
+  en: >-
+    Wiles proved that semistable elliptic curves over Q are modular (the semistable case of the Taniyama–Shimura–Weil
+    conjecture). Via the Frey curve and Ribet's proof of the ε-conjecture (1986) this implies Fermat's Last Theorem. A
+    gap in the 1993 version was closed in joint work with Taylor showing that certain Hecke algebras are complete
+    intersections. The full modularity theorem was completed in 2001 by Breuil, Conrad, Diamond and Taylor.
+claims:
+  - tr: n > 2 için aⁿ + bⁿ = cⁿ denkleminin pozitif tam sayı çözümü yoktur.
+    en: For n > 2, aⁿ + bⁿ = cⁿ has no solution in positive integers.
+    src: [wiles1995, taylorwiles1995]
+evidence:
+  - kind: proof
+    stance: for
+    tr: Wiles ile Taylor-Wiles makaleleri Annals of Mathematics'te hakem değerlendirmesinden geçerek yayımlandı ve matematik camiasınca ayrıntılı biçimde incelendi.
+    en: The Wiles and Taylor–Wiles papers were published after peer review in the Annals of Mathematics and examined in detail by the mathematical community.
+    src: [wiles1995, taylorwiles1995]
+positions:
+  - who:
+      tr: Fermat'nın iddia ettiği "harika ispat" hakkında
+      en: On Fermat's claimed "marvellous proof"
+    tr: Fermat'nın bu kadar genel bir ispata sahip olduğunu gösteren bir kayıt yoktur. Yalnızca n = 4 durumu için bir ispatı bilinir.
+    en: There is no record that Fermat possessed so general a proof; only his proof for the case n = 4 is known.
+    src: [mactutor-flt]
+sources:
+  wiles1995:
+    type: article
+    authors: Wiles, A.
+    title: "Modular elliptic curves and Fermat's Last Theorem"
+    year: 1995
+    in: Annals of Mathematics 141(3), 443–551
+    doi: 10.2307/2118559
+  taylorwiles1995:
+    type: article
+    authors: Taylor, R.; Wiles, A.
+    title: Ring-theoretic properties of certain Hecke algebras
+    year: 1995
+    in: Annals of Mathematics 141(3), 553–572
+    doi: 10.2307/2118560
+  mactutor-flt:
+    type: web
+    title: "Fermat's last theorem"
+    in: MacTutor History of Mathematics, University of St Andrews
+    url: https://mathshistory.st-andrews.ac.uk/HistTopics/Fermat's_last_theorem/

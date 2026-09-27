@@ -1,0 +1,239 @@
+updated: '2026-09-27'
+intro:
+  tr: >-
+    İnsanlığın bugün ulaştığı bazı ölçülebilir sınırlar ve hâlâ açık olan büyük sorular. Her değer bir kaynağa
+    dayanır ve aylık olarak gözden geçirilir.
+  en: >-
+    Some measurable frontiers humanity has reached today, and the big questions still open. Every value rests on a
+    source and is reviewed monthly.
+sections:
+  - title: { tr: Enerji, en: Energy }
+    items:
+      - title: { tr: Kardaşev ölçeği, en: Kardashev scale }
+        value: { tr: '≈ 0,73', en: '≈ 0.73' }
+        text:
+          tr: Sagan formülüne göre, 2025'teki yaklaşık 600 EJ'luk küresel birincil enerji arzıyla hesaplanmıştır (Tip I = 1,0).
+          en: By Sagan's formula, computed from about 600 EJ of global primary energy supply in 2025 (Type I = 1.0).
+        src: [ei2026, sagan1973]
+        node: kardasev
+      - title: { tr: Küresel birincil enerji arzı, en: Global primary energy supply }
+        value: { tr: '≈ 600 EJ (2025)', en: '≈ 600 EJ (2025)' }
+        text:
+          tr: Tarihteki en yüksek değer. Yaklaşık %86'sı fosil yakıtlardan gelmektedir.
+          en: The highest ever; about 86% comes from fossil fuels.
+        src: [ei2026]
+        node: enerji
+      - title: { tr: Füzyon hedef kazancı, en: Fusion target gain }
+        value: { tr: '4,13', en: '4.13' }
+        text:
+          tr: NIF, 7 Nisan 2025'te 2,08 MJ lazer enerjisiyle 8,6 MJ füzyon enerjisi elde etti.
+          en: On 7 April 2025 NIF produced 8.6 MJ of fusion energy from 2.08 MJ of laser energy.
+        src: [llnl2025]
+        node: fuzyon
+      - title: { tr: En uzun tokamak plazması, en: Longest tokamak plasma }
+        value: { tr: '1337 s', en: '1,337 s' }
+        text:
+          tr: Fransa'daki WEST tokamağı, Şubat 2025'te yaklaşık 22 dakika plazma sürdürdü.
+          en: The WEST tokamak in France sustained a plasma for about 22 minutes in February 2025.
+        src: [west2025]
+        node: fuzyon
+  - title: { tr: Evren, en: The universe }
+    items:
+      - title: { tr: Evrenin yaşı (ΛCDM), en: Age of the universe (ΛCDM) }
+        value: { tr: '13,787 milyar yıl', en: '13.787 billion years' }
+        text:
+          tr: Planck uydusu verilerine göre (±0,020). Farklı görüşler ilgili sayfada listelenmiştir.
+          en: From Planck satellite data (±0.020); other views are listed on the node page.
+        src: [planck2018]
+        node: buyuk-patlama
+      - title: { tr: Onaylanmış öte gezegenler, en: Confirmed exoplanets }
+        value: { tr: '> 6.000', en: '> 6,000' }
+        text:
+          tr: NASA sayımı Eylül 2025'te 6.000'i geçti. 8.000'den fazla aday onay bekliyor.
+          en: NASA's tally passed 6,000 in September 2025; more than 8,000 candidates await confirmation.
+        src: [nasa6000]
+        node: ote-gezegenler
+      - title: { tr: Bilinmeyen içerik, en: Unknown content }
+        value: { tr: '≈ %95', en: '≈ 95%' }
+        text:
+          tr: ΛCDM modeline göre evrenin enerji içeriğinin yaklaşık %68'i karanlık enerji, %27'si karanlık maddedir. İkisinin de doğası bilinmiyor.
+          en: In the ΛCDM model about 68% of the universe's energy content is dark energy and 27% dark matter; the nature of both is unknown.
+        src: [planck2018]
+        node: karanlik-madde
+  - title: { tr: Yaşam ve sağlık, en: Life and health }
+    items:
+      - title: { tr: Dünya nüfusu, en: World population }
+        value: { tr: '≈ 8,2 milyar', en: '≈ 8.2 billion' }
+        text:
+          tr: BM Dünya Nüfus Beklentileri 2024 tahmini.
+          en: UN World Population Prospects 2024 estimate.
+        src: [unwpp2024]
+      - title: { tr: Doğumda yaşam beklentisi, en: Life expectancy at birth }
+        value: { tr: '≈ 73 yıl', en: '≈ 73 years' }
+        text:
+          tr: Küresel ortalama. 1900'de bu değer yaklaşık 32 yıldı.
+          en: Global average; in 1900 it was about 32 years.
+        src: [unwpp2024, owid-life]
+        node: tip
+      - title: { tr: İnsan genomu, en: Human genome }
+        value: { tr: '%100 dizilendi (2022)', en: '100% sequenced (2022)' }
+        text:
+          tr: Telomerden telomere (T2T) konsorsiyumu, 3,055 milyar baz çiftlik ilk boşluksuz insan genomunu yayımladı.
+          en: The Telomere-to-Telomere (T2T) consortium published the first gapless human genome of 3.055 billion base pairs.
+        src: [nurk2022]
+        node: dna
+      - title: { tr: Kişiye özel gen düzenleme, en: Personalised gene editing }
+        value: { tr: '1 hasta (2025)', en: '1 patient (2025)' }
+        text:
+          tr: Tek bir bebeğin mutasyonu için altı ayda tasarlanan baz düzenleme tedavisi.
+          en: A base-editing therapy designed in six months for one baby's mutation.
+        src: [musunuru2025]
+        node: kisiye-ozel-crispr
+  - title: { tr: Hesaplama ve matematik, en: Computing and mathematics }
+    items:
+      - title: { tr: Kuantum hata düzeltme, en: Quantum error correction }
+        value: { tr: 'Eşik altı (2024)', en: 'Below threshold (2024)' }
+        text:
+          tr: Google Willow'da 101 kübitlik mesafe-7 kodu, döngü başına yaklaşık %0,143 mantıksal hata verdi.
+          en: On Google Willow a 101-qubit distance-7 code gave about 0.143% logical error per cycle.
+        src: [google2025]
+        node: kuantum-bilgisayar
+      - title: { tr: Yapay zekâ ve olimpiyat, en: AI and the olympiad }
+        value: { tr: '35/42 (2025)', en: '35/42 (2025)' }
+        text:
+          tr: Bir dil modeli IMO 2025'te resmî değerlendirmeyle altın madalya düzeyine ulaştı.
+          en: A language model reached gold-medal level at IMO 2025 under official grading.
+        src: [deepmind2025]
+        node: yapay-zeka-imo
+      - title: { tr: Milenyum Problemleri, en: Millennium Prize Problems }
+        value: { tr: '1 / 7 çözüldü', en: '1 / 7 solved' }
+        text:
+          tr: Yalnızca Poincaré sanısı çözüldü (Perelman). Riemann hipotezi ve P = NP dahil altısı açık.
+          en: Only the Poincaré conjecture has been solved (Perelman); six, including the Riemann hypothesis and P = NP, remain open.
+        src: [clay]
+        node: riemann
+  - title: { tr: Açık büyük sorular, en: Big open questions }
+    items:
+      - title: { tr: Bilinç, en: Consciousness }
+        value: { tr: Açık, en: Open }
+        text:
+          tr: 2025'teki ön kayıtlı deneyde iki önde gelen kuramın da bazı temel öngörüleri tutmadı.
+          en: In a 2025 preregistered experiment some core predictions of both leading theories failed.
+        src: [cogitate2025]
+        node: bilinc
+      - title: { tr: Yaşamın kökeni, en: Origin of life }
+        value: { tr: Açık, en: Open }
+        text:
+          tr: Hiçbir laboratuvarda cansız maddeden canlı hücre elde edilemedi.
+          en: No laboratory has produced a living cell from non-living matter.
+        src: [shapiro2006]
+        node: abiyogenez
+      - title: { tr: Kuantum kütleçekim, en: Quantum gravity }
+        value: { tr: Açık, en: Open }
+        text:
+          tr: Genel görelilik ile kuantum mekaniğini birleştiren ve deneyle sınanmış bir kuram yok.
+          en: There is no experimentally tested theory unifying general relativity and quantum mechanics.
+        src: [smolin2006]
+        node: kuantum-kutlecekim
+sources:
+  ei2026:
+    type: report
+    authors: Energy Institute
+    title: Statistical Review of World Energy 2026
+    year: 2026
+    url: https://www.energyinst.org/statistical-review
+  sagan1973:
+    type: book
+    authors: Sagan, C.
+    title: 'The Cosmic Connection: An Extraterrestrial Perspective'
+    year: 1973
+    in: Doubleday, New York
+  llnl2025:
+    type: web
+    title: Target breakthrough enabled fusion record at NIF
+    year: 2025
+    in: Lawrence Livermore National Laboratory
+    url: https://lasers.llnl.gov/news/target-breakthrough-enabled-fusion-record-nif
+  west2025:
+    type: web
+    title: WEST sets a new plasma duration record
+    year: 2025
+    in: CEA-IRFM
+    url: https://irfm.cea.fr/en/2025/02/west-sets-a-new-plasma-duration-record/
+  planck2018:
+    type: article
+    authors: Planck Collaboration
+    title: 'Planck 2018 results. VI. Cosmological parameters'
+    year: 2020
+    in: Astronomy & Astrophysics 641, A6
+    doi: 10.1051/0004-6361/201833910
+  nasa6000:
+    type: web
+    title: "NASA's tally of planets outside our solar system reaches 6,000"
+    year: 2025
+    in: NASA Jet Propulsion Laboratory
+    url: https://www.jpl.nasa.gov/news/nasas-tally-of-planets-outside-our-solar-system-reaches-6000/
+  unwpp2024:
+    type: dataset
+    authors: United Nations, Department of Economic and Social Affairs, Population Division
+    title: World Population Prospects 2024
+    year: 2024
+    url: https://population.un.org/wpp/
+  owid-life:
+    type: dataset
+    authors: Roser, M.; Ortiz-Ospina, E.; Ritchie, H.
+    title: Life Expectancy
+    in: Our World in Data
+    url: https://ourworldindata.org/life-expectancy
+  nurk2022:
+    type: article
+    authors: Nurk, S. et al.
+    title: The complete sequence of a human genome
+    year: 2022
+    in: Science 376, 44–53
+    doi: 10.1126/science.abj6987
+  musunuru2025:
+    type: article
+    authors: Musunuru, K. et al.
+    title: Patient-specific in vivo gene editing to treat a rare genetic disease
+    year: 2025
+    in: New England Journal of Medicine
+    doi: 10.1056/NEJMoa2504747
+  google2025:
+    type: article
+    authors: Google Quantum AI and Collaborators
+    title: Quantum error correction below the surface code threshold
+    year: 2025
+    in: Nature 638, 920–926
+    doi: 10.1038/s41586-024-08449-y
+  deepmind2025:
+    type: web
+    title: Advanced version of Gemini with Deep Think officially achieves gold-medal standard at the International Mathematical Olympiad
+    year: 2025
+    in: Google DeepMind
+    url: https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/
+  clay:
+    type: web
+    title: The Millennium Prize Problems
+    in: Clay Mathematics Institute
+    url: https://www.claymath.org/millennium-problems/
+  cogitate2025:
+    type: article
+    authors: Cogitate Consortium
+    title: Adversarial testing of global neuronal workspace and integrated information theories of consciousness
+    year: 2025
+    in: Nature 642, 133–142
+    doi: 10.1038/s41586-025-08888-1
+  shapiro2006:
+    type: article
+    authors: Shapiro, R.
+    title: Small molecule interactions were central to the origin of life
+    year: 2006
+    in: The Quarterly Review of Biology 81(2), 105–125
+    doi: 10.1086/506024
+  smolin2006:
+    type: book
+    authors: Smolin, L.
+    title: 'The Trouble with Physics: The Rise of String Theory, the Fall of a Science, and What Comes Next'
+    year: 2006
+    in: Houghton Mifflin, Boston

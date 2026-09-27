@@ -1,0 +1,63 @@
+id: harvey
+parent: tip
+type: text
+date: { year: 1628 }
+people: [William Harvey, İbn Nefîs / Ibn al-Nafīs]
+title:
+  tr: Kan dolaşımı
+  en: The circulation of the blood
+summary:
+  tr: >-
+    Galen'e göre kan karaciğerde sürekli üretilip vücutta tüketiliyordu. William Harvey 1628'de, kalbin pompaladığı kan
+    miktarını hesaplayarak kanın bir döngü içinde sürekli dolaştığını savundu. Akciğer dolaşımını ise 13. yüzyılda
+    Şamlı hekim İbn Nefîs tarif etmişti.
+  en: >-
+    According to Galen, blood was continually produced in the liver and consumed in the body. In 1628 William Harvey,
+    by calculating the amount of blood the heart pumps, argued that blood circulates continuously in a loop. The
+    pulmonary circulation had been described in the 13th century by the Damascene physician Ibn al-Nafīs.
+technical:
+  tr: >-
+    Harvey'in nicel argümanına göre kalp her atımda yaklaşık yarım ons (≈15 g) kan pompalarsa, yarım saatte vücuttaki
+    toplam kandan fazlasını pompalar. Bu kadar kan besinden üretilemez. Kılcal damarların kendisi Harvey'in döneminde
+    görülemedi ve 1661'de Malpighi tarafından mikroskopla gözlendi. İbn Nefîs, Şerhu Teşrîhi'l-Kânûn'da kalbin iki
+    karıncığı arasındaki bölmede Galen'in öne sürdüğü gözeneklerin bulunmadığını ve kanın akciğerden geçtiğini yazdı.
+  en: >-
+    Harvey's quantitative argument: if the heart pumps about half an ounce (≈15 g) per beat, in half an hour it pumps
+    more than all the blood in the body, far more than food could produce. The capillaries themselves could not be seen
+    in Harvey's time and were observed microscopically by Malpighi in 1661. In his Commentary on the Anatomy of the Canon,
+    Ibn al-Nafīs wrote that there are no pores in the septum between the ventricles, as Galen had claimed, and that the
+    blood passes through the lungs.
+claims:
+  - tr: Kan, kalp tarafından pompalanarak atardamarlar ve toplardamarlar aracılığıyla kapalı bir döngü içinde dolaşır.
+    en: Blood circulates in a closed loop, pumped by the heart through arteries and veins.
+    src: [harvey1628]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Kalbin kısa sürede pompaladığı kan miktarı, vücudun üretebileceğinden çok daha fazladır. Bu nedenle kanın geri dönüp yeniden kullanılması gerekir.
+    en: The quantity of blood the heart pumps in a short time far exceeds what the body could produce, so the blood must return and be reused.
+    src: [harvey1628]
+  - kind: experiment
+    stance: for
+    tr: Kola bağlanan turnike deneyleri, toplardamarlardaki kanın yalnızca kalbe doğru aktığını gösterdi.
+    en: Ligature experiments on the arm showed that blood in the veins flows only toward the heart.
+    src: [harvey1628]
+  - kind: historical
+    stance: for
+    tr: Akciğer dolaşımı 13. yüzyılda İbn Nefîs tarafından tarif edilmişti.
+    en: The pulmonary circulation had been described in the 13th century by Ibn al-Nafīs.
+    src: [west2008]
+sources:
+  harvey1628:
+    type: book
+    authors: Harvey, W.
+    title: Exercitatio Anatomica de Motu Cordis et Sanguinis in Animalibus
+    year: 1628
+    in: William Fitzer, Frankfurt
+  west2008:
+    type: article
+    authors: West, J. B.
+    title: 'Ibn al-Nafis, the pulmonary circulation, and the Islamic Golden Age'
+    year: 2008
+    in: Journal of Applied Physiology 105(6), 1877–1880
+    doi: 10.1152/japplphysiol.91171.2008

@@ -1,0 +1,55 @@
+id: ezoterik
+parent: insanlik
+side: roots
+type: field
+order: 6
+title:
+  tr: Ezoterik gelenekler
+  en: Esoteric traditions
+summary:
+  tr: >-
+    Ezoterik gelenekler, doğa ve insan hakkında yalnızca belirli bir yoldan geçenlere açılan "gizli" bir bilgi
+    bulunduğunu savunan akımlardır. Hermetizm, simya ve astroloji bu geleneklerin başlıcalarıdır. Bu gelenekler tarih
+    boyunca bilimle iç içe gelişti. Kepler saray astroloğuydu, Newton da yıllarca simya çalıştı. Bugün de hem maddi hem
+    de manevi biçimleriyle uygulanmaya devam etmektedirler.
+  en: >-
+    Esoteric traditions are currents holding that there is a "hidden" knowledge of nature and humanity open only to those
+    who follow a particular path. Hermeticism, alchemy and astrology are the main ones. Throughout history they developed
+    intertwined with science: Kepler was a court astrologer and Newton studied alchemy for years. Today they continue to be
+    practised in both material and spiritual forms.
+technical:
+  tr: >-
+    Batı ezoterizmi akademik bir araştırma alanı olarak Faivre ve Hanegraaff tarafından tanımlandı. Faivre'ye göre temel
+    özellikler şunlardır: karşılıklılıklar (evren ile insan arasında), canlı doğa, imgelem ve aracılar, dönüşüm tecrübesi,
+    gelenekler arası uyum ve bilginin aktarımı. İslam dünyasında da ilm-i nücûm (yıldızlar ilmi), simya ve harflerin
+    sırları gibi alanlar geniş bir literatüre sahiptir.
+  en: >-
+    Western esotericism as an academic field was defined by Faivre and Hanegraaff. For Faivre its core features are
+    correspondences (between cosmos and human), living nature, imagination and mediations, the experience of
+    transmutation, concordance among traditions, and transmission of knowledge. In the Islamic world too, fields such as
+    the science of the stars (ʿilm al-nujūm), alchemy and the secrets of letters have an extensive literature.
+claims:
+  - tr: Batı ezoterizmi, karşılıklılıklar, canlı doğa ve dönüşüm gibi ortak özelliklerle tanımlanabilecek bir düşünce biçimidir.
+    en: Western esotericism is a form of thought definable by shared features such as correspondences, living nature and transmutation.
+    src: [faivre1994]
+sources:
+  faivre1994:
+    type: book
+    authors: Faivre, A.
+    title: Access to Western Esotericism
+    year: 1994
+    in: SUNY Press, Albany
+  hanegraaff2012:
+    type: book
+    authors: Hanegraaff, W. J.
+    title: 'Esotericism and the Academy: Rejected Knowledge in Western Culture'
+    year: 2012
+    in: Cambridge University Press
+positions:
+  - who:
+      tr: Wouter Hanegraaff
+      en: Wouter Hanegraaff
+    tr: Ezoterizm, Aydınlanma sonrası akademinin "reddedilmiş bilgi" olarak dışladığı bir alandır ve tarihsel olarak ciddiyetle incelenmelidir.
+    en: Esotericism is a field excluded by the post-Enlightenment academy as "rejected knowledge" and should be studied seriously as history.
+    src: [hanegraaff2012]
+related: [kimya-yi-saadet]

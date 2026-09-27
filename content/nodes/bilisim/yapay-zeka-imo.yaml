@@ -1,0 +1,47 @@
+id: yapay-zeka-imo
+parent: transformer
+type: event
+date: { year: 2025, month: 7 }
+people: [Google DeepMind, OpenAI]
+title:
+  tr: Yapay zekânın Uluslararası Matematik Olimpiyatı'nda altın madalya düzeyine ulaşması
+  en: AI reaching gold-medal level at the International Mathematical Olympiad
+summary:
+  tr: >-
+    Temmuz 2025'te Google DeepMind'ın Gemini Deep Think modeli, Uluslararası Matematik Olimpiyatı'nın altı sorusundan
+    beşini doğal dilde ispatlarla çözdü ve resmî değerlendiricilerce altın madalya düzeyinde (42 üzerinden 35) puanlandı.
+    OpenAI da kendi değerlendirmesinde aynı puanı bildirdi. Modeller, en zor kabul edilen altıncı soruyu çözemedi.
+  en: >-
+    In July 2025 Google DeepMind's Gemini Deep Think model solved five of the six International Mathematical Olympiad
+    problems with natural-language proofs and was graded by official coordinators at gold-medal level (35 of 42). OpenAI
+    reported the same score in its own evaluation. The models did not solve the sixth problem, regarded as the hardest.
+technical:
+  tr: >-
+    Bir yıl önce (2024) AlphaProof ve AlphaGeometry 2, soruların Lean diline elle çevrilmesiyle gümüş düzeyine ulaşmıştı.
+    2025'teki sonuçlar araç kullanmadan, doğrudan doğal dilde ve yarışma süresi içinde elde edildi. DeepMind'ın çözümleri
+    IMO koordinatörlerince resmî olarak derecelendirildi. OpenAI'ın puanı ise eski madalyalı yarışmacılardan oluşan
+    kendi değerlendirme grubuna aittir.
+  en: >-
+    A year earlier (2024) AlphaProof and AlphaGeometry 2 reached silver level with the problems hand-translated into Lean.
+    The 2025 results were obtained without tools, directly in natural language and within contest time. DeepMind's
+    solutions were officially graded by IMO coordinators; OpenAI's score comes from its own panel of former medallists.
+claims:
+  - tr: Bir dil modeli, olimpiyat düzeyindeki matematik problemlerinin çoğu için insan değerlendiricilerce kabul edilen ispatlar üretebilir.
+    en: A language model can produce proofs, accepted by human graders, for most olympiad-level mathematics problems.
+    src: [deepmind2025]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: IMO koordinatörleri, Gemini Deep Think'in beş çözümünü öğrenci çözümleriyle aynı ölçütlerle değerlendirerek tam puan verdi.
+    en: IMO coordinators graded Gemini Deep Think's five solutions with the same criteria as student solutions and awarded full marks.
+    src: [deepmind2025]
+sources:
+  deepmind2025:
+    type: web
+    title: Advanced version of Gemini with Deep Think officially achieves gold-medal standard at the International Mathematical Olympiad
+    year: 2025
+    in: Google DeepMind
+    url: https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/
+open:
+  - tr: Bu sistemlerin, yarışma problemlerinden farklı olarak araştırma düzeyindeki açık problemlerde ne kadar ilerleme sağlayabileceği henüz belli değil.
+    en: How far these systems can advance on research-level open problems, as opposed to competition problems, is not yet clear.

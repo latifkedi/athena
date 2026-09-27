@@ -1,0 +1,172 @@
+id: buyuk-patlama
+parent: astronomi
+type: idea
+date: { year: 1927 }
+people: [Georges Lemaître, Alexander Friedmann, Edwin Hubble, George Gamow, Fred Hoyle]
+title:
+  tr: Evrenin başlangıcı ve Büyük Patlama
+  en: The beginning of the universe and the Big Bang
+summary:
+  tr: >-
+    Lemaître 1927'de evrenin genişlediğini ve geçmişte çok yoğun ve sıcak bir başlangıç durumundan çıktığını öne sürdü.
+    Hubble'ın galaksilerin uzaklaşmasını ölçmesi ve 1965'te kozmik mikrodalga arka plan ışımasının bulunması bu
+    görüşü destekledi. Buna karşın Hoyle ve başkaları başlangıcı olmayan "durağan durum" evrenini savundu. Dinlerin
+    yaratılış anlatıları evrenin başlangıcını farklı biçimlerde tarif eder.
+  en: >-
+    In 1927 Lemaître proposed that the universe is expanding and emerged from a very dense, hot initial state in the
+    past. Hubble's measurement of galaxies receding and the discovery of the cosmic microwave background in 1965
+    supported this view; Hoyle and others advocated a "steady state" universe without a beginning. The creation
+    narratives of religions describe the beginning of the universe in different ways.
+technical:
+  tr: >-
+    Friedmann–Lemaître–Robertson–Walker çözümleri, genel görelilikte homojen ve izotrop bir evrenin genişlemesini tarif
+    eder. Büyük Patlama nükleosentezi, hafif elementlerin (He-4 yaklaşık %25, döteryum, lityum) bolluğunu öngörür.
+    Lityum-7 için gözlenen değer öngörüden yaklaşık üç kat düşüktür ("lityum problemi"). Kozmik mikrodalga arka plan
+    ışımasının 2,725 K sıcaklıkta kusursuza yakın bir kara cisim tayfı olması en güçlü destek sayılır. Yerel ölçümlerle
+    bulunan Hubble sabiti (≈73 km/s/Mpc) ile CMB'den çıkarılan değer (≈67,4) arasındaki fark ("Hubble gerilimi")
+    çözülmemiştir.
+  en: >-
+    The Friedmann–Lemaître–Robertson–Walker solutions of general relativity describe the expansion of a homogeneous,
+    isotropic universe. Big Bang nucleosynthesis predicts the abundances of light elements (He-4 about 25%, deuterium,
+    lithium); the observed lithium-7 is about three times lower than predicted (the "lithium problem"). The nearly perfect
+    black-body spectrum of the cosmic microwave background at 2.725 K is regarded as the strongest support. The difference
+    between the Hubble constant from local measurements (≈73 km/s/Mpc) and from the CMB (≈67.4), the "Hubble tension",
+    is unresolved.
+datings:
+  - view:
+      tr: Güncel kozmoloji (Planck, ΛCDM)
+      en: Current cosmology (Planck, ΛCDM)
+    value:
+      tr: Evrenin yaşı yaklaşık 13,8 milyar yıldır (13,787 ± 0,020 milyar yıl).
+      en: The universe is about 13.8 billion years old (13.787 ± 0.020 billion years).
+    src: [planck2018]
+  - view:
+      tr: İslam (Kur'an)
+      en: Islam (Qur'an)
+    value:
+      tr: Gökler ve yer "altı günde" (eyyâm) yaratılmıştır. Kur'an bir "gün"ün uzunluğunu farklı ayetlerde bin yıl ve elli bin yıl olarak anar. Takvim yılı olarak bir tarih vermez.
+      en: The heavens and the earth were created "in six days" (ayyām); the Qur'an describes a "day" in different verses as a thousand years and as fifty thousand years. It gives no calendar date.
+    src: [kuran-7-54, kuran-22-47, kuran-70-4]
+  - view:
+      tr: Yahudilik ve Hristiyanlık (Tekvin; lafzi okuma)
+      en: Judaism and Christianity (Genesis; literal reading)
+    value:
+      tr: Evren altı günde yaratılmıştır. Soy kütüklerinden yapılan hesaplara göre yaklaşık 6.000 yıl önce (ör. Ussher, MÖ 4004).
+      en: The universe was created in six days; by genealogical calculations, about 6,000 years ago (e.g. Ussher, 4004 BCE).
+    src: [genesis-1-full, ussher1650]
+  - view:
+      tr: Hinduizm (Puranalar)
+      en: Hinduism (Puranas)
+    value:
+      tr: Evren döngüsel olarak yaratılıp yok olur. Brahma'nın bir "günü" (kalpa) 4,32 milyar yıldır.
+      en: The universe is cyclically created and dissolved; one "day" of Brahma (a kalpa) lasts 4.32 billion years.
+    src: [britannica-kalpa]
+  - view:
+      tr: Durağan durum kozmolojisi (Hoyle, Bondi, Gold)
+      en: Steady-state cosmology (Hoyle, Bondi, Gold)
+    value:
+      tr: Evrenin bir başlangıcı yoktur. Genişleme sırasında sürekli yeni madde oluşur.
+      en: The universe has no beginning; new matter is continually created as it expands.
+    src: [bondi1948]
+claims:
+  - tr: Evren geçmişte çok daha sıcak ve yoğundu ve o zamandan beri genişlemektedir.
+    en: The universe was much hotter and denser in the past and has been expanding since.
+    src: [lemaitre1927, hubble1929]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Galaksilerin tayflarındaki kırmızıya kayma, uzaklıklarıyla orantılı olarak artar (Hubble–Lemaître yasası).
+    en: The redshift in galaxy spectra increases in proportion to distance (the Hubble–Lemaître law).
+    src: [hubble1929]
+  - kind: observation
+    stance: for
+    tr: Her yönden gelen ve yaklaşık 3 K sıcaklığa karşılık gelen mikrodalga ışıma bulundu. Bu ışıma, sıcak ve yoğun erken evrenin kalıntısı olarak yorumlandı.
+    en: Microwave radiation corresponding to about 3 K was found coming from every direction and was interpreted as a relic of the hot, dense early universe.
+    src: [penzias1965]
+  - kind: measurement
+    stance: against
+    tr: Yerel uzaklık merdiveniyle ölçülen genişleme hızı, CMB'ye dayanan ΛCDM tahmininden istatistiksel olarak anlamlı biçimde yüksektir.
+    en: The expansion rate measured with the local distance ladder is statistically significantly higher than the ΛCDM prediction based on the CMB.
+    src: [riess2022]
+  - kind: observation
+    stance: against
+    tr: JWST'nin ilk verilerinde, evrenin ilk birkaç yüz milyon yılında beklenenden daha büyük kütleli olduğu düşünülen galaksiler bildirildi. Sonraki analizler bu kütle tahminlerini tartışmaya açtı.
+    en: Early JWST data reported galaxies in the first few hundred million years thought to be more massive than expected; later analyses have debated these mass estimates.
+    src: [labbe2023]
+sources:
+  lemaitre1927:
+    type: article
+    authors: Lemaître, G.
+    title: Un univers homogène de masse constante et de rayon croissant rendant compte de la vitesse radiale des nébuleuses extra-galactiques
+    year: 1927
+    in: Annales de la Société Scientifique de Bruxelles A47, 49–59
+  hubble1929:
+    type: article
+    authors: Hubble, E.
+    title: A relation between distance and radial velocity among extra-galactic nebulae
+    year: 1929
+    in: PNAS 15(3), 168–173
+    doi: 10.1073/pnas.15.3.168
+  penzias1965:
+    type: article
+    authors: Penzias, A. A.; Wilson, R. W.
+    title: A measurement of excess antenna temperature at 4080 Mc/s
+    year: 1965
+    in: The Astrophysical Journal 142, 419–421
+    doi: 10.1086/148307
+  planck2018:
+    type: article
+    authors: Planck Collaboration
+    title: 'Planck 2018 results. VI. Cosmological parameters'
+    year: 2020
+    in: Astronomy & Astrophysics 641, A6
+    doi: 10.1051/0004-6361/201833910
+  riess2022:
+    type: article
+    authors: Riess, A. G. et al.
+    title: A comprehensive measurement of the local value of the Hubble constant with 1 km/s/Mpc uncertainty from the Hubble Space Telescope and the SH0ES team
+    year: 2022
+    in: The Astrophysical Journal Letters 934, L7
+    doi: 10.3847/2041-8213/ac5c5b
+  labbe2023:
+    type: article
+    authors: Labbé, I. et al.
+    title: A population of red candidate massive galaxies ~600 Myr after the Big Bang
+    year: 2023
+    in: Nature 616, 266–269
+    doi: 10.1038/s41586-023-05786-2
+  bondi1948:
+    type: article
+    authors: Bondi, H.; Gold, T.
+    title: The steady-state theory of the expanding universe
+    year: 1948
+    in: Monthly Notices of the Royal Astronomical Society 108(3), 252–270
+    doi: 10.1093/mnras/108.3.252
+  kuran-7-54:
+    type: scripture
+    title: Kur'an-ı Kerim, A'râf 7:54
+    url: https://quran.com/7/54
+  kuran-22-47:
+    type: scripture
+    title: Kur'an-ı Kerim, Hac 22:47
+    url: https://quran.com/22/47
+  kuran-70-4:
+    type: scripture
+    title: Kur'an-ı Kerim, Meâric 70:4
+    url: https://quran.com/70/4
+  genesis-1-full:
+    type: scripture
+    title: Tekvin / Genesis 1:1–2:3
+    url: https://www.sefaria.org/Genesis.1
+  ussher1650:
+    type: book
+    authors: Ussher, J.
+    title: Annales Veteris Testamenti, a prima mundi origine deducti
+    year: 1650
+    in: London
+  britannica-kalpa:
+    type: encyclopedia
+    title: Kalpa
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/kalpa
+related: [genel-gorelilik, yaratilis-anlatilari, karanlik-enerji]

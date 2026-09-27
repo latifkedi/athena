@@ -1,0 +1,55 @@
+id: kakeya
+parent: matematik
+type: event
+date: { year: 2025, month: 2 }
+people: [Hong Wang, Joshua Zahl]
+title:
+  tr: Üç boyutta Kakeya sanısının ispatı
+  en: Proof of the Kakeya conjecture in three dimensions
+summary:
+  tr: >-
+    Her yönde birim uzunlukta bir doğru parçası içeren kümeler (Kakeya kümeleri) sıfır hacimli olabilir. Buna rağmen
+    sanı, bu kümelerin "boyut" olarak içinde bulundukları uzay kadar büyük olduğunu söyler. Hong Wang ve Joshua Zahl
+    Şubat 2025'te üç boyutlu durumun ispatını arXiv'de yayımladı.
+  en: >-
+    Sets that contain a unit line segment in every direction (Kakeya sets) can have zero volume. Even so, the conjecture
+    says they are as large, in "dimension", as the space they live in. Hong Wang and Joshua Zahl posted a proof of the
+    three-dimensional case to arXiv in February 2025.
+technical:
+  tr: >-
+    Wang ve Zahl, ℝ³'te δ-tüplerden oluşan ve ortak bir dışbükey küme içinde çok fazla tüp barındırmayan ailelerin
+    birleşiminin neredeyse maksimal hacme sahip olduğunu gösterir. Bunun sonucu olarak ℝ³'teki her Kakeya kümesinin
+    Minkowski ve Hausdorff boyutu 3'tür. İki boyutlu durum Davies (1971) tarafından çözülmüştü. n ≥ 4 için sanı açıktır.
+    Sonuç, harmonik analizdeki kısıtlama ve Bochner–Riesz sanılarıyla bağlantılıdır.
+  en: >-
+    Wang and Zahl show that for families of δ-tubes in ℝ³ in which not too many tubes lie inside a common convex set,
+    the union has almost maximal volume. Consequently every Kakeya set in ℝ³ has Minkowski and Hausdorff dimension 3.
+    The two-dimensional case was settled by Davies (1971). For n ≥ 4 the conjecture remains open. The result connects
+    to the restriction and Bochner–Riesz conjectures in harmonic analysis.
+claims:
+  - tr: ℝ³'teki her Kakeya kümesinin Hausdorff ve Minkowski boyutu 3'tür.
+    en: Every Kakeya set in ℝ³ has Hausdorff and Minkowski dimension 3.
+    src: [wangzahl2025]
+evidence:
+  - kind: proof
+    stance: for
+    tr: İspat ön baskı olarak yayımlandı ve alanın önde gelen uzmanlarınca olumlu karşılandı. Hakem süreci yayımlandığı tarihte sürüyordu.
+    en: The proof was posted as a preprint and received positively by leading experts in the field. Peer review was ongoing at the time of posting.
+    src: [wangzahl2025, tao2025]
+sources:
+  wangzahl2025:
+    type: preprint
+    authors: Wang, H.; Zahl, J.
+    title: Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions
+    year: 2025
+    arxiv: '2502.17655'
+  tao2025:
+    type: web
+    authors: Tao, T.
+    title: The three-dimensional Kakeya conjecture, after Wang and Zahl
+    year: 2025
+    in: "What's new (blog)"
+    url: https://terrytao.wordpress.com/2025/02/25/the-three-dimensional-kakeya-conjecture-after-wang-and-zahl/
+open:
+  - tr: Dört ve daha yüksek boyutlarda Kakeya sanısı hâlâ açıktır.
+    en: The Kakeya conjecture in four and higher dimensions is still open.

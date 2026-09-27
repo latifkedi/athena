@@ -1,0 +1,9 @@
+---
+import NodeView from '../../../views/NodeView.astro';
+import { allNodes, type NodeData } from '../../../lib/data';
+export function getStaticPaths() {
+  return allNodes.map((node) => ({ params: { id: node.id }, props: { node } }));
+}
+const { node } = Astro.props as { node: NodeData };
+---
+<NodeView node={node} lang="en" />

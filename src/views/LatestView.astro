@@ -1,0 +1,90 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../lib/data';
+import { getNode, centerNode } from '../lib/data';
+import { feed } from '../lib/feed';
+import { ui, t, url, nodePath, REPO } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const order = centerNode.children;
+const branches = Object.entries(feed.branches)
+  .filter(([id, papers]) => getNode(id) && papers.length)
+  .sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0]));
+---
+
+<Base lang={lang} title={t(ui.nav.latest, lang)} route="latest">
+  <main class="wrap">
+    <h1>{t(ui.nav.latest, lang)}</h1>
+    <p class="muted">
+      {
+        lang === 'tr'
+          ? 'Bu liste her ay otomatik olarak arXiv, bioRxiv ve medRxiv ön baskı arşivlerinden alınır ve git geçmişinde saklanır. Ön baskılar yayımlandıkları anda hakem değerlendirmesinden geçmemiş olabilir; öne çıkan çalışmalar incelendikten sonra ağaca düğüm olarak eklenir.'
+          : 'This list is pulled automatically every month from the arXiv, bioRxiv and medRxiv preprint servers and kept in the git history. Preprints may not yet be peer-reviewed at the time of posting; notable work is added to the tree as a node after review.'
+      }
+    </p>
+    {
+      feed.generated ? (
+        <p class="small muted">
+          {t(ui.lastUpdate, lang)}: {feed.generated.slice(0, 10)}
+        </p>
+      ) : (
+        <p class="card">
+          {lang === 'tr' ? (
+            <>
+              İlk otomatik güncelleme henüz çalışmadı. GitHub'daki{' '}
+              <a href={`${REPO}/actions`}>Actions</a> sekmesinden “Deploy” iş akışını elle çalıştırarak hemen
+              başlatabilirsiniz; sonra her ayın 1'inde kendiliğinden çalışır.
+            </>
+          ) : (
+            <>
+              The first automatic update has not run yet. Run the “Deploy” workflow from the{' '}
+              <a href={`${REPO}/actions`}>Actions</a> tab on GitHub to start it now; after that it runs on the 1st of
+              every month.
+            </>
+          )}
+        </p>
+      )
+    }
+
+    {
+      branches.map(([id, papers]) => {
+        const n = getNode(id)!;
+        return (
+          <section>
+            <h2>
+              <span class={`dot ${n.side}`} /> <a href={url(nodePath(id, lang))}>{t(n.title, lang)}</a>
+            </h2>
+            <ul class="papers">
+              {papers.map((p) => (
+                <li>
+                  <a href={p.url} rel="noopener">
+                    {p.title}
+                  </a>
+                  <div class="small muted">
+                    {p.authors} · {p.date} · {p.source} {p.category}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })
+    }
+  </main>
+</Base>
+
+<style>
+  .papers {
+    padding-left: 1.1em;
+  }
+  .papers li {
+    margin-bottom: 10px;
+  }
+  h2 a {
+    color: var(--text);
+    text-decoration: none;
+  }
+</style>

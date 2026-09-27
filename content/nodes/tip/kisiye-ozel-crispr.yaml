@@ -1,0 +1,54 @@
+id: kisiye-ozel-crispr
+parent: tip
+type: event
+date: { year: 2025, month: 5 }
+people: [Kiran Musunuru, Rebecca Ahrens-Nicklas]
+title:
+  tr: Kişiye özel gen düzenleme tedavisi
+  en: Personalised in vivo gene-editing therapy
+summary:
+  tr: >-
+    2025'te ABD'de, ağır ve nadir bir metabolik hastalıkla (CPS1 eksikliği) doğan KJ adlı bebeğe, yalnızca onun
+    mutasyonunu düzeltmek için altı ayda tasarlanıp üretilen bir baz düzenleme tedavisi verildi. Sonuçlar New England
+    Journal of Medicine'de yayımlandı. Tek bir hastada elde edilen bu sonucun uzun vadeli etkisi ve güvenliği henüz
+    bilinmiyor.
+  en: >-
+    In 2025 in the US, a baby named KJ, born with a severe rare metabolic disease (CPS1 deficiency), received a
+    base-editing therapy designed and manufactured in six months solely to correct his mutation. The results were published
+    in the New England Journal of Medicine. The long-term effect and safety of this single-patient result are not yet
+    known.
+technical:
+  tr: >-
+    Tedavi, lipit nanoparçacıklarla karaciğere taşınan bir adenin baz düzenleyici mRNA'sı ve hastaya özgü bir kılavuz
+    RNA'dan oluşuyordu. Şubat–Nisan 2025 arasında üç doz uygulandı. Protein alımı artırılabildi ve azot uzaklaştırıcı
+    ilaç ihtiyacı azaldı. Ciddi yan etki bildirilmedi. Düzenlemenin karaciğer hücrelerinin ne kadarında gerçekleştiği
+    doğrudan ölçülemedi.
+  en: >-
+    The therapy consisted of adenine base-editor mRNA and a patient-specific guide RNA delivered to the liver in lipid
+    nanoparticles. Three doses were given between February and April 2025. Protein intake could be increased and the need
+    for nitrogen-scavenger medication fell; no serious adverse events were reported. The fraction of liver cells edited
+    could not be measured directly.
+claims:
+  - tr: Tek bir hastanın mutasyonuna özel bir gen düzenleme tedavisi aylar içinde tasarlanıp güvenle uygulanabilir.
+    en: A gene-editing therapy tailored to a single patient's mutation can be designed within months and administered safely.
+    src: [musunuru2025]
+evidence:
+  - kind: clinical
+    stance: for
+    tr: Hastada tedaviden sonra kan amonyak düzeyleri kontrol altında kaldı ve beslenme toleransı arttı.
+    en: After treatment the patient's blood ammonia levels stayed under control and dietary tolerance increased.
+    src: [musunuru2025]
+  - kind: critique
+    stance: against
+    tr: Sonuç tek bir hastaya ve kısa izlem süresine dayanıyor. Hasta aynı dönemde standart tedavileri de aldığı için etkinin ne kadarının düzenlemeden kaynaklandığı kesin olarak ayrıştırılamıyor.
+    en: The result rests on a single patient and short follow-up; because the patient also received standard treatments, how much of the effect is due to the edit cannot be separated with certainty.
+    src: [musunuru2025]
+sources:
+  musunuru2025:
+    type: article
+    authors: Musunuru, K. et al.
+    title: Patient-specific in vivo gene editing to treat a rare genetic disease
+    year: 2025
+    in: New England Journal of Medicine
+    doi: 10.1056/NEJMoa2504747
+related: [crispr]

@@ -1,0 +1,78 @@
+id: levha-tektonigi
+parent: yer-bilimleri
+type: idea
+date: { year: 1915 }
+people: [Alfred Wegener, Harry Hess, Fred Vine, Drummond Matthews, Lawrence Morley]
+title:
+  tr: Kıtaların kayması ve levha tektoniği
+  en: Continental drift and plate tectonics
+summary:
+  tr: >-
+    Wegener 1915'te kıtaların bir zamanlar birleşik olduğunu ve yavaşça birbirinden uzaklaştığını öne sürdü. Kıtaları
+    hareket ettirecek bir mekanizma gösteremediği için görüşü yaklaşık 40 yıl büyük ölçüde reddedildi. 1960'larda deniz
+    tabanındaki manyetik şeritlerin keşfiyle levha tektoniği kuramı kabul görmeye başladı. Türkiye'deki depremler de bu
+    kuramla açıklanır.
+  en: >-
+    In 1915 Wegener proposed that the continents were once joined and are slowly drifting apart. Because he could show no
+    mechanism to move them, his view was largely rejected for some 40 years. With the discovery of magnetic stripes on the
+    sea floor in the 1960s, plate tectonics came to be accepted. Earthquakes in Turkey are explained by this theory too.
+technical:
+  tr: >-
+    Wegener'in kanıtları kıyı şekillerinin uyumu, okyanusun iki yakasındaki fosil ve kayaç benzerlikleri ve buzul
+    izleriydi. Vine–Matthews–Morley hipotezi, okyanus ortası sırtlarının iki yanında simetrik manyetik anomali
+    şeritlerinin deniz tabanı yayılması ve jeomanyetik terslenmelerle oluştuğunu açıkladı. Türkiye'deki Kuzey Anadolu ve
+    Doğu Anadolu faylarında deprem oluşur. Bunun nedeni Anadolu levhasının batıya doğru kaçışı ve bu faylar boyunca
+    oluşan doğrultu atımlı harekettir.
+  en: >-
+    Wegener's evidence was the fit of coastlines, similarities of fossils and rocks on both sides of the ocean, and
+    glacial traces. The Vine–Matthews–Morley hypothesis explained symmetric magnetic anomaly stripes on either side of
+    mid-ocean ridges by sea-floor spreading and geomagnetic reversals. Earthquakes occur on the North and East Anatolian
+    faults in Turkey. They result from the westward escape of the Anatolian plate and the strike-slip motion along these
+    faults.
+claims:
+  - tr: Kıtalar ve okyanus tabanları, mantonun üzerinde yavaşça hareket eden levhaların parçalarıdır.
+    en: Continents and ocean floors are parts of plates moving slowly over the mantle.
+    src: [wegener1915, vine1963]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Okyanus ortası sırtlarının iki yanında birbirinin ayna görüntüsü olan manyetik şeritler ölçüldü.
+    en: Magnetic stripes forming mirror images of each other were measured on either side of mid-ocean ridges.
+    src: [vine1963]
+  - kind: measurement
+    stance: for
+    tr: GPS ölçümleri, levhaların yılda birkaç santimetre hızla hareket ettiğini doğrudan göstermektedir.
+    en: GPS measurements directly show plates moving at a few centimetres per year.
+    src: [reilinger2006]
+  - kind: theoretical
+    stance: against
+    tr: 1920'lerde jeofizikçiler, katı kıtaların okyanus kabuğunu yararak hareket edemeyeceğini ve Wegener'in önerdiği kuvvetlerin çok zayıf olduğunu savundu.
+    en: In the 1920s geophysicists argued that solid continents could not plough through oceanic crust and that the forces Wegener proposed were far too weak.
+    src: [oreskes1999]
+sources:
+  wegener1915:
+    type: book
+    authors: Wegener, A.
+    title: Die Entstehung der Kontinente und Ozeane
+    year: 1915
+    in: Vieweg, Braunschweig
+  vine1963:
+    type: article
+    authors: Vine, F. J.; Matthews, D. H.
+    title: Magnetic anomalies over oceanic ridges
+    year: 1963
+    in: Nature 199, 947–949
+    doi: 10.1038/199947a0
+  reilinger2006:
+    type: article
+    authors: Reilinger, R. et al.
+    title: GPS constraints on continental deformation in the Africa-Arabia-Eurasia continental collision zone and implications for the dynamics of plate interactions
+    year: 2006
+    in: Journal of Geophysical Research 111, B05411
+    doi: 10.1029/2005JB004051
+  oreskes1999:
+    type: book
+    authors: Oreskes, N.
+    title: 'The Rejection of Continental Drift: Theory and Method in American Earth Science'
+    year: 1999
+    in: Oxford University Press

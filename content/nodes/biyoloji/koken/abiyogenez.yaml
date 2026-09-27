@@ -1,0 +1,135 @@
+id: abiyogenez
+parent: canlilarin-kokeni
+type: question
+order: 1
+title:
+  tr: Yaşamın ilk ortaya çıkışı (abiyogenez)
+  en: The first origin of life (abiogenesis)
+summary:
+  tr: >-
+    Cansız maddeden ilk canlının nasıl ortaya çıktığı, biyolojinin en büyük açık sorularından biridir. Laboratuvarlarda
+    yaşamın bazı yapı taşları üretilmiştir. Ancak hiçbir laboratuvarda cansız maddeden canlı bir hücre elde edilmemiştir.
+    Önerilen modeller arasında "RNA dünyası", deniz tabanı sıcak su kaynakları ve yaşamın uzaydan gelmesi (panspermi)
+    vardır. Dinler, yaşamı Allah'ın/Tanrı'nın yaratmasına bağlar.
+  en: >-
+    How the first living thing arose from non-living matter is one of the biggest open questions in biology. Some
+    building blocks of life have been produced in the laboratory, but no laboratory has produced a living cell from
+    non-living matter. Proposed models include the "RNA world", deep-sea hydrothermal vents and life arriving from space
+    (panspermia). Religions attribute life to God's creation.
+technical:
+  tr: >-
+    Miller–Urey deneyi (1953), indirgeyici bir gaz karışımında elektrik boşalmasıyla amino asitler elde etti. Sonradan
+    erken atmosferin daha az indirgeyici olduğu düşünüldü. RNA dünyası hipotezi (Gilbert 1986), RNA'nın hem bilgi
+    taşıyıcı hem katalizör olabilmesine dayanır. Powner ve arkadaşları (2009), aktive pirimidin nükleotitlerini
+    prebiyotik açıdan makul koşullarda sentezledi. Shapiro gibi eleştirmenler, uzun RNA zincirlerinin kendiliğinden
+    oluşma olasılığını çok düşük bulur ve "önce metabolizma" modellerini savunur.
+  en: >-
+    The Miller–Urey experiment (1953) produced amino acids by electric discharge in a reducing gas mixture; the early
+    atmosphere was later thought to be less reducing. The RNA-world hypothesis (Gilbert 1986) rests on RNA's ability to be
+    both an information carrier and a catalyst. Powner et al. (2009) synthesised activated pyrimidine nucleotides under
+    prebiotically plausible conditions. Critics such as Shapiro find the spontaneous formation of long RNA chains highly
+    improbable and favour "metabolism-first" models.
+datings:
+  - view:
+      tr: Jeoloji (Isua, Grönland; tartışmalı)
+      en: Geology (Isua, Greenland; disputed)
+    value:
+      tr: 3,7 milyar yıllık stromatolit benzeri yapılar yaşam izi olarak yorumlandı. Başka bir ekip bunların tortul değil deformasyon kökenli olduğunu savundu.
+      en: 3.7-billion-year-old stromatolite-like structures were interpreted as signs of life; another team argued they are deformational rather than sedimentary in origin.
+    src: [nutman2016, allwood2018]
+  - view:
+      tr: İslam (Kur'an)
+      en: Islam (Qur'an)
+    value:
+      tr: Her canlı sudan yaratılmıştır (Enbiyâ 21:30). Bir tarih verilmez.
+      en: Every living thing was made from water (al-Anbiyāʾ 21:30); no date is given.
+    src: [kuran-21-30]
+  - view:
+      tr: Yahudilik ve Hristiyanlık (Tekvin)
+      en: Judaism and Christianity (Genesis)
+    value:
+      tr: Bitkiler üçüncü, deniz ve kara canlıları beşinci ve altıncı yaratılış gününde yaratılır.
+      en: Plants are created on the third day of creation, sea and land creatures on the fifth and sixth.
+    src: [genesis-1]
+claims:
+  - tr: Yaşam, kendini kopyalayabilen RNA moleküllerinin kimyasal evrimiyle başlamıştır (RNA dünyası).
+    en: Life began with the chemical evolution of self-replicating RNA molecules (the RNA world).
+    src: [gilbert1986]
+  - tr: Yaşamın tohumları Dünya'ya uzaydan gelmiş olabilir (yönlendirilmiş panspermi dahil).
+    en: The seeds of life may have come to Earth from space (including directed panspermia).
+    src: [crick1973]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Metan, amonyak, hidrojen ve su buharı karışımına elektrik boşalması uygulanınca amino asitler oluştu.
+    en: Amino acids formed when an electric discharge was applied to a mixture of methane, ammonia, hydrogen and water vapour.
+    src: [miller1953]
+  - kind: experiment
+    stance: for
+    tr: Aktive pirimidin ribonükleotitleri, serbest şeker ve baz aşamasından geçmeden basit öncüllerden sentezlendi.
+    en: Activated pyrimidine ribonucleotides were synthesised from simple precursors without passing through free sugar and base stages.
+    src: [powner2009]
+  - kind: theoretical
+    stance: against
+    tr: Uzun ve kendini kopyalayan RNA zincirlerinin prebiyotik koşullarda kendiliğinden oluşmasının son derece olasılık dışı olduğu savunuldu.
+    en: It was argued that the spontaneous formation of long, self-replicating RNA chains under prebiotic conditions is extremely improbable.
+    src: [shapiro2006]
+sources:
+  miller1953:
+    type: article
+    authors: Miller, S. L.
+    title: A production of amino acids under possible primitive Earth conditions
+    year: 1953
+    in: Science 117, 528–529
+    doi: 10.1126/science.117.3046.528
+  gilbert1986:
+    type: article
+    authors: Gilbert, W.
+    title: 'Origin of life: the RNA world'
+    year: 1986
+    in: Nature 319, 618
+    doi: 10.1038/319618a0
+  powner2009:
+    type: article
+    authors: Powner, M. W.; Gerland, B.; Sutherland, J. D.
+    title: Synthesis of activated pyrimidine ribonucleotides in prebiotically plausible conditions
+    year: 2009
+    in: Nature 459, 239–242
+    doi: 10.1038/nature08013
+  shapiro2006:
+    type: article
+    authors: Shapiro, R.
+    title: Small molecule interactions were central to the origin of life
+    year: 2006
+    in: The Quarterly Review of Biology 81(2), 105–125
+    doi: 10.1086/506024
+  crick1973:
+    type: article
+    authors: Crick, F. H. C.; Orgel, L. E.
+    title: Directed panspermia
+    year: 1973
+    in: Icarus 19(3), 341–346
+    doi: 10.1016/0019-1035(73)90110-3
+  nutman2016:
+    type: article
+    authors: Nutman, A. P. et al.
+    title: Rapid emergence of life shown by discovery of 3,700-million-year-old microbial structures
+    year: 2016
+    in: Nature 537, 535–538
+    doi: 10.1038/nature19355
+  allwood2018:
+    type: article
+    authors: Allwood, A. C. et al.
+    title: Reassessing evidence of life in 3,700-million-year-old rocks of Greenland
+    year: 2018
+    in: Nature 563, 241–244
+    doi: 10.1038/s41586-018-0610-4
+  kuran-21-30:
+    type: scripture
+    title: Kur'an-ı Kerim, Enbiyâ 21:30
+    url: https://quran.com/21/30
+  genesis-1:
+    type: scripture
+    title: Tekvin / Genesis 1:11–25
+    url: https://www.sefaria.org/Genesis.1.11-25
+related: [k2-18b]

@@ -1,0 +1,51 @@
+id: hucre-teorisi
+parent: biyoloji
+type: idea
+date: { year: 1839 }
+people: [Robert Hooke, Matthias Schleiden, Theodor Schwann, Rudolf Virchow]
+title:
+  tr: Hücre kuramı
+  en: Cell theory
+summary:
+  tr: >-
+    Tüm canlıların hücrelerden oluştuğu ve her hücrenin başka bir hücreden geldiği görüşü. Hooke 1665'te mantarda
+    "hücre"leri gördü. Schleiden ve Schwann 1838–1839'da bitki ve hayvanların hücrelerden oluştuğunu savundu. Virchow
+    1855'te "her hücre bir hücreden gelir" ilkesini ekledi.
+  en: >-
+    The view that all living things are made of cells and that every cell comes from another cell. Hooke saw "cells" in
+    cork in 1665. Schleiden and Schwann argued in 1838–1839 that plants and animals are made of cells. Virchow added the
+    principle "every cell from a cell" in 1855.
+technical:
+  tr: >-
+    Schwann'ın Mikroskopische Untersuchungen (1839) eseri, hayvan dokularının da çekirdekli hücrelerden oluştuğunu
+    gösterdi. Hücrelerin kristalleşmeye benzer biçimde "serbest oluşum"la ortaya çıktığı yolundaki ilk görüş, Remak ve
+    Virchow'un hücre bölünmesi gözlemleriyle bırakıldı. Virüsler hücresel değildir. Canlı sayılıp sayılmamaları hücre
+    kuramının sınırlarına dair bir tartışma konusudur.
+  en: >-
+    Schwann's Mikroskopische Untersuchungen (1839) showed that animal tissues are also made of nucleated cells. The
+    early view that cells arise by "free formation", like crystallisation, was abandoned after Remak's and Virchow's
+    observations of cell division. Viruses are not cellular; whether they count as living is a debate about the limits of
+    cell theory.
+claims:
+  - tr: Bütün canlılar bir veya daha fazla hücreden oluşur ve her hücre önceden var olan bir hücreden gelir.
+    en: All living things consist of one or more cells, and every cell arises from a pre-existing cell.
+    src: [schwann1839, virchow1858]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Mikroskopla incelenen bitki ve hayvan dokularının tamamında çekirdekli hücre yapıları gözlendi.
+    en: Nucleated cell structures were observed in all plant and animal tissues examined under the microscope.
+    src: [schwann1839]
+sources:
+  schwann1839:
+    type: book
+    authors: Schwann, T.
+    title: Mikroskopische Untersuchungen über die Uebereinstimmung in der Struktur und dem Wachsthum der Thiere und Pflanzen
+    year: 1839
+    in: Sander, Berlin
+  virchow1858:
+    type: book
+    authors: Virchow, R.
+    title: Die Cellularpathologie in ihrer Begründung auf physiologische und pathologische Gewebelehre
+    year: 1858
+    in: Hirschwald, Berlin

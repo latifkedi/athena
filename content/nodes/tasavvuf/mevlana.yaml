@@ -1,0 +1,36 @@
+id: mevlana
+parent: tasavvuf
+type: text
+date: { year: 1273 }
+people: [Mevlânâ Celâleddîn-i Rûmî / Rūmī]
+title:
+  tr: Mevlânâ ve Mesnevî
+  en: Rūmī and the Masnavi
+summary:
+  tr: >-
+    Konya'da yaşayan Mevlânâ'nın yaklaşık 25.000 beyitlik Farsça eseri Mesnevî, hikâyeler aracılığıyla tasavvufi
+    öğretileri anlatır. İnsanın asıl vatanından ayrılışını ve ona dönüş özlemini "ney"in feryadıyla başlatır. Eser, İslam
+    kültürünün en çok okunan ve şerh edilen eserlerindendir. Bugün dünyada da geniş bir okur kitlesine ulaşır.
+  en: >-
+    The Masnavi, the Persian work of about 25,000 couplets by Rūmī, who lived in Konya, conveys Sufi teachings through
+    stories. It opens with the lament of the reed flute for its separation from its origin and its longing to return. The
+    work is among the most read and commented-on works of Islamic culture and reaches a wide readership worldwide today.
+technical:
+  tr: >-
+    Mesnevî altı defterden oluşur ve Mevlânâ'nın öğrencisi Hüsâmeddin Çelebi'ye yazdırılmıştır. Eserin Türkçe şerhleri
+    arasında Ankaravî'ninki öne çıkar. Mevlevîlik, Mevlânâ'nın oğlu Sultan Veled tarafından bir tarikat olarak
+    kurumsallaştırıldı. Bu gelenekte semâ, önemli bir zikir biçimi olarak yer alır.
+  en: >-
+    The Masnavi has six books and was dictated to Rūmī's disciple Ḥusām al-Dīn Chalabī. Among its Turkish commentaries
+    that of Ankaravī stands out. The Mevlevi order was institutionalised by Rūmī's son Sulṭān Walad; in this tradition the
+    samāʿ is an important form of remembrance.
+claims:
+  - tr: İnsan ruhu asıl kaynağından ayrılmıştır ve aşk yoluyla ona dönmeyi özler.
+    en: The human soul has been separated from its true source and longs to return to it through love.
+    src: [tdv-mesnevi]
+sources:
+  tdv-mesnevi:
+    type: encyclopedia
+    title: Mesnevî (Mevlânâ)
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/mesnevi--mevlana

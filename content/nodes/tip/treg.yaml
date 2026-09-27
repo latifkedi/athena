@@ -1,0 +1,65 @@
+id: treg
+parent: tip
+type: event
+date: { year: 2025, month: 10 }
+people: [Shimon Sakaguchi, Mary E. Brunkow, Fred Ramsdell]
+title:
+  tr: Düzenleyici T hücreleri ve bağışıklık toleransı (Nobel 2025)
+  en: Regulatory T cells and immune tolerance (Nobel 2025)
+summary:
+  tr: >-
+    Bağışıklık sistemi mikroplara saldırırken kendi dokularımıza neden saldırmaz? Sakaguchi 1995'te, bağışıklık
+    tepkisini frenleyen özel bir T hücresi grubunu (düzenleyici T hücreleri) tanımladı. Brunkow ve Ramsdell 2001'de bu
+    hücrelerin gelişimini yöneten FOXP3 genini buldu. 2025 Nobel Tıp Ödülü bu keşiflere verildi. Otoimmün hastalıklar ve
+    kanser tedavileri bu bilgiye dayanarak geliştiriliyor.
+  en: >-
+    Why does the immune system attack microbes but not our own tissues? In 1995 Sakaguchi identified a special group of T
+    cells that brake immune responses (regulatory T cells). In 2001 Brunkow and Ramsdell found FOXP3, the gene that
+    controls their development. These discoveries received the 2025 Nobel Prize in Physiology or Medicine. Treatments for
+    autoimmune disease and cancer are being developed on this basis.
+technical:
+  tr: >-
+    Sakaguchi, CD25 (IL-2 reseptörü α zinciri) ifade eden CD4⁺ T hücreleri uzaklaştırılan farelerde çoklu organ
+    otoimmünitesi geliştiğini gösterdi. Brunkow ve arkadaşları, "scurfy" farelerindeki ölümcül otoimmün hastalığın
+    Foxp3 mutasyonundan kaynaklandığını buldu. İnsanlarda FOXP3 mutasyonları IPEX sendromuna yol açar. Treg'ler periferik
+    toleransın temel aracıdır.
+  en: >-
+    Sakaguchi showed that mice depleted of CD4⁺ T cells expressing CD25 (the IL-2 receptor α chain) develop multi-organ
+    autoimmunity. Brunkow and colleagues found that the fatal autoimmune disease of "scurfy" mice is caused by a Foxp3
+    mutation; in humans FOXP3 mutations cause IPEX syndrome. Tregs are a key mechanism of peripheral tolerance.
+claims:
+  - tr: Özel bir T hücresi grubu bağışıklık sisteminin kendi dokulara saldırmasını baskılar. Bu hücrelerin gelişimi FOXP3 genine bağlıdır.
+    en: A special group of T cells suppresses immune attack on the body's own tissues; their development depends on the FOXP3 gene.
+    src: [sakaguchi1995, brunkow2001, nobel-med2025]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: CD25⁺ CD4⁺ hücreleri alınmış T hücrelerinin aktarıldığı farelerde otoimmün hastalık gelişti. Bu hücrelerin geri eklenmesi hastalığı önledi.
+    en: Mice receiving T cells depleted of CD25⁺ CD4⁺ cells developed autoimmune disease; adding those cells back prevented it.
+    src: [sakaguchi1995]
+  - kind: genetic
+    stance: for
+    tr: Scurfy farelerinde Foxp3 genindeki mutasyon ölümcül bir otoimmün hastalığa yol açtı.
+    en: A mutation in the Foxp3 gene of scurfy mice caused fatal autoimmune disease.
+    src: [brunkow2001]
+sources:
+  sakaguchi1995:
+    type: article
+    authors: Sakaguchi, S.; Sakaguchi, N.; Asano, M.; Itoh, M.; Toda, M.
+    title: Immunologic self-tolerance maintained by activated T cells expressing IL-2 receptor alpha-chains (CD25)
+    year: 1995
+    in: Journal of Immunology 155(3), 1151–1164
+    doi: 10.4049/jimmunol.155.3.1151
+  brunkow2001:
+    type: article
+    authors: Brunkow, M. E. et al.
+    title: Disruption of a new forkhead/winged-helix protein, scurfin, results in the fatal lymphoproliferative disorder of the scurfy mouse
+    year: 2001
+    in: Nature Genetics 27, 68–73
+    doi: 10.1038/83784
+  nobel-med2025:
+    type: web
+    title: The Nobel Prize in Physiology or Medicine 2025 (press release)
+    year: 2025
+    in: NobelPrize.org
+    url: https://www.nobelprize.org/prizes/medicine/2025/press-release/

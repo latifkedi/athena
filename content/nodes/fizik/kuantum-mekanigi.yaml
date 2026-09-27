@@ -1,0 +1,126 @@
+id: kuantum-mekanigi
+parent: fizik
+type: idea
+date: { year: 1926 }
+people: [Max Planck, Niels Bohr, Werner Heisenberg, Erwin Schrödinger, Paul Dirac, Max Born]
+title:
+  tr: Kuantum mekaniği
+  en: Quantum mechanics
+summary:
+  tr: >-
+    Atom ve atomaltı dünyada enerji paketler (kuantum) hâlinde alınıp verilir ve ölçüm sonuçları yalnızca olasılıklarla
+    öngörülebilir. Kuram yarı iletkenlerden lazerlere kadar modern teknolojinin temelidir. Ölçümün ve "dalga
+    fonksiyonunun" gerçekte ne anlama geldiği konusunda ise fizikçiler hâlâ farklı yorumlara sahiptir.
+  en: >-
+    In the atomic and subatomic world, energy is exchanged in packets (quanta) and the results of measurements can be
+    predicted only as probabilities. The theory underlies modern technology from semiconductors to lasers. Physicists
+    still hold different interpretations of what measurement and the "wave function" really mean.
+technical:
+  tr: >-
+    Planck (1900) kara cisim ışımasını E = hν varsayımıyla açıkladı. Heisenberg'in matris mekaniği (1925) ve
+    Schrödinger'in dalga mekaniği (1926) eşdeğer çıktı. Born kuralı |ψ|²'yi olasılık yoğunluğu olarak yorumlar.
+    Kopenhag, çok dünyalı (Everett), de Broglie–Bohm pilot dalga ve nesnel çöküş (GRW) yorumları aynı deneysel
+    tahminlerin çoğunu verir. Bell eşitsizliklerinin ihlali yerel gizli değişken kuramlarını dışlar. Boşluksuz testler
+    2015'te yapılmıştır.
+  en: >-
+    Planck (1900) explained black-body radiation with the assumption E = hν. Heisenberg's matrix mechanics (1925) and
+    Schrödinger's wave mechanics (1926) proved equivalent. The Born rule interprets |ψ|² as a probability density. The
+    Copenhagen, many-worlds (Everett), de Broglie–Bohm pilot-wave and objective-collapse (GRW) interpretations share
+    most experimental predictions. Violation of Bell inequalities rules out local hidden-variable theories; loophole-free
+    tests were carried out in 2015.
+claims:
+  - tr: Enerji, frekansla orantılı paketler hâlinde (E = hν) alınıp verilir. Kuantum durumları dalga denklemiyle betimlenir.
+    en: Energy is exchanged in packets proportional to frequency (E = hν); quantum states are described by a wave equation.
+    src: [planck1901, schrodinger1926]
+  - tr: Doğada yerel gizli değişkenlerle açıklanamayan korelasyonlar (dolanıklık) vardır.
+    en: Nature contains correlations (entanglement) that cannot be explained by local hidden variables.
+    src: [bell1964, hensen2015]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: 1,3 km ayrılmış elektron spinleriyle yapılan boşluksuz Bell testi, yerel gerçekçiliğin öngördüğü sınırın ihlal edildiğini gösterdi.
+    en: A loophole-free Bell test with electron spins separated by 1.3 km showed a violation of the bound predicted by local realism.
+    src: [hensen2015]
+  - kind: experiment
+    stance: for
+    tr: Aspect ve ekibinin 1982'deki deneyi, ölçüm ayarlarını foton uçuştayken değiştirerek Bell eşitsizliğinin ihlalini gösterdi.
+    en: The 1982 experiment of Aspect and colleagues showed a violation of Bell's inequality with settings switched while the photons were in flight.
+    src: [aspect1982]
+positions:
+  - who:
+      tr: Kopenhag yorumu
+      en: Copenhagen interpretation
+    tr: Dalga fonksiyonu ölçüm sonuçlarına dair bilgimizi temsil eder. Ölçüm, klasik bir aygıtla yapılan ve olasılıklı sonuç veren bir süreçtir.
+    en: The wave function represents our knowledge of measurement outcomes; measurement is a process involving a classical apparatus with probabilistic results.
+    src: [sep-qm-copenhagen]
+  - who:
+      tr: Çok dünyalı yorum (Everett)
+      en: Many-worlds interpretation (Everett)
+    tr: Dalga fonksiyonu hiç çökmez. Her ölçümde evren, her olası sonucun gerçekleştiği dallara ayrılır.
+    en: The wave function never collapses; at each measurement the universe branches into versions in which each possible outcome occurs.
+    src: [everett1957]
+  - who:
+      tr: Pilot dalga yorumu (de Broglie–Bohm)
+      en: Pilot-wave interpretation (de Broglie–Bohm)
+    tr: Parçacıkların her zaman belirli konumları vardır. Bu konumlar yerel olmayan bir dalga tarafından yönlendirilir.
+    en: Particles always have definite positions, guided by a non-local wave.
+    src: [bohm1952]
+sources:
+  bell1964:
+    type: article
+    authors: Bell, J. S.
+    title: On the Einstein Podolsky Rosen paradox
+    year: 1964
+    in: Physics Physique Fizika 1(3), 195–200
+    doi: 10.1103/PhysicsPhysiqueFizika.1.195
+  aspect1982:
+    type: article
+    authors: Aspect, A.; Dalibard, J.; Roger, G.
+    title: Experimental test of Bell's inequalities using time-varying analyzers
+    year: 1982
+    in: Physical Review Letters 49, 1804–1807
+    doi: 10.1103/PhysRevLett.49.1804
+  hensen2015:
+    type: article
+    authors: Hensen, B. et al.
+    title: Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres
+    year: 2015
+    in: Nature 526, 682–686
+    doi: 10.1038/nature15759
+  everett1957:
+    type: article
+    authors: Everett, H.
+    title: '"Relative state" formulation of quantum mechanics'
+    year: 1957
+    in: Reviews of Modern Physics 29, 454–462
+    doi: 10.1103/RevModPhys.29.454
+  bohm1952:
+    type: article
+    authors: Bohm, D.
+    title: A suggested interpretation of the quantum theory in terms of "hidden" variables. I
+    year: 1952
+    in: Physical Review 85, 166–179
+    doi: 10.1103/PhysRev.85.166
+  sep-qm-copenhagen:
+    type: encyclopedia
+    authors: Faye, J.
+    title: Copenhagen Interpretation of Quantum Mechanics
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/qm-copenhagen/
+  planck1901:
+    type: article
+    authors: Planck, M.
+    title: Ueber das Gesetz der Energieverteilung im Normalspectrum
+    year: 1901
+    in: Annalen der Physik 309(3), 553–563
+    doi: 10.1002/andp.19013090310
+  schrodinger1926:
+    type: article
+    authors: Schrödinger, E.
+    title: Quantisierung als Eigenwertproblem
+    year: 1926
+    in: Annalen der Physik 384(4), 361–376
+    doi: 10.1002/andp.19263840404
+open:
+  - tr: Ölçüm problemi, yani dalga fonksiyonunun neden tek bir sonuç verdiği, yorumlar arasında tartışmalıdır.
+    en: The measurement problem, that is, why the wave function yields a single outcome, is disputed among interpretations.

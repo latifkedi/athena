@@ -1,0 +1,38 @@
+id: ilk-bilgiler
+parent: insanlik
+side: canopy
+type: field
+order: 0
+title:
+  tr: İlk bilgiler
+  en: First knowledge
+summary:
+  tr: >-
+    Yazıdan önceki dönemde insanlığın edindiği temel beceri ve bilgiler: taş alet yapımı, ateşin kullanımı, dil,
+    tarım, sayma ve sonunda yazı. Bu konuların çoğunun tarihi kesin olarak bilinmediği için sayfalarda farklı
+    tarihlendirme görüşleri yan yana verilir.
+  en: >-
+    The basic skills and knowledge humanity acquired before writing: stone toolmaking, the use of fire, language,
+    farming, counting and finally writing itself. Because the dates of most of these are not known with certainty,
+    their pages list different dating views side by side.
+technical:
+  tr: >-
+    Tarih öncesi bilginin izleri arkeolojik kayıt (taş endüstrileri, yanık kemik ve tortular, sembolik nesneler), fosil
+    anatomisi ve genetik veriler aracılığıyla incelenir. Tarihlendirmede radyokarbon, argon-argon, uranyum serisi ve
+    termolüminesans gibi yöntemler kullanılır. Her yöntemin belirli bir yaş aralığı ve kendine özgü belirsizlikleri
+    vardır.
+  en: >-
+    Traces of prehistoric knowledge are studied through the archaeological record (lithic industries, burnt bone and
+    sediments, symbolic objects), fossil anatomy and genetic data. Dating relies on radiocarbon, argon–argon, uranium-
+    series and thermoluminescence methods. Each method has its own age range and its own uncertainties.
+sources:
+  renfrew-bahn:
+    type: book
+    authors: Renfrew, C.; Bahn, P.
+    title: 'Archaeology: Theories, Methods and Practice'
+    year: 2020
+    in: Thames & Hudson, 8th edition
+claims:
+  - tr: Tarih öncesi bilgiye dair çıkarımlar arkeolojik kalıntılara ve bu kalıntıların tarihlendirilmesine dayanır.
+    en: Inferences about prehistoric knowledge rest on archaeological remains and on how those remains are dated.
+    src: [renfrew-bahn]

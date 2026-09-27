@@ -1,0 +1,70 @@
+id: kuantum-bilgisayar
+parent: bilisim
+type: technology
+date: { year: 2024, month: 12 }
+people: [Richard Feynman, Peter Shor, Google Quantum AI]
+title:
+  tr: Kuantum bilgisayarlar
+  en: Quantum computers
+summary:
+  tr: >-
+    Kuantum bilgisayarlar, bitler yerine üst üste binme ve dolanıklık özellikleri olan "kübitler" kullanır. Bazı
+    problemleri, örneğin büyük sayıları çarpanlarına ayırmayı, klasik bilgisayarlardan çok daha hızlı çözebilecekleri
+    kuramsal olarak gösterilmiştir. Kübitler hataya çok yatkındır. Google'ın Willow işlemcisi 2024'te, kübit sayısı
+    arttıkça hata oranının azaldığını gösteren ilk deney oldu. Kullanışlı, büyük ölçekli bir kuantum bilgisayar henüz yoktur.
+  en: >-
+    Quantum computers use "qubits" with superposition and entanglement instead of bits. It has been shown theoretically
+    that they could solve some problems, such as factoring large numbers, much faster than classical computers. Qubits are
+    very error-prone; Google's Willow processor in 2024 was the first experiment to show error rates falling as the number
+    of qubits grows. A useful, large-scale quantum computer does not yet exist.
+technical:
+  tr: >-
+    Shor algoritması (1994) çarpanlara ayırmayı polinom zamanda yapar. Bu, RSA şifrelemesini tehdit eder. Google 2019'da
+    53 kübitlik Sycamore ile "kuantum üstünlüğü" iddia etti. IBM, aynı görevin klasik bilgisayarda günler içinde
+    yapılabileceğini savundu. Willow'da yüzey kodu mesafesi 3'ten 5'e ve 7'ye çıkarıldığında mantıksal hata oranı her
+    adımda yaklaşık 2,14 kat düştü. 101 kübitlik mesafe-7 kodunda döngü başına hata yaklaşık %0,143 oldu.
+  en: >-
+    Shor's algorithm (1994) factors in polynomial time, which threatens RSA encryption. In 2019 Google claimed "quantum
+    supremacy" with the 53-qubit Sycamore; IBM argued the same task could be done classically in days. On Willow, as the
+    surface-code distance was raised from 3 to 5 to 7, the logical error rate fell by about 2.14 times per step; the
+    101-qubit distance-7 code had an error of about 0.143% per cycle.
+claims:
+  - tr: Kuantum hata düzeltme, fiziksel kübit sayısı arttıkça mantıksal hataları üstel olarak azaltabilir (eşik altı çalışma).
+    en: Quantum error correction can suppress logical errors exponentially as the number of physical qubits grows (below-threshold operation).
+    src: [google2025]
+  - tr: Programlanabilir bir kuantum işlemci, klasik süper bilgisayarların pratikte yapamayacağı bir hesaplamayı yapmıştır.
+    en: A programmable quantum processor has performed a computation that classical supercomputers cannot practically perform.
+    src: [arute2019]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Willow işlemcisinde kod mesafesi büyüdükçe mantıksal hata oranı düştü ve mantıksal kübit, en iyi fiziksel kübitten daha uzun ömürlü oldu.
+    en: On Willow the logical error rate fell as code distance grew, and the logical qubit outlived the best physical qubit.
+    src: [google2025]
+  - kind: critique
+    stance: against
+    tr: IBM araştırmacıları, 2019'daki üstünlük görevinin geliştirilmiş klasik yöntemlerle yaklaşık 2,5 günde yapılabileceğini savundu.
+    en: IBM researchers argued that the 2019 supremacy task could be done in about 2.5 days with improved classical methods.
+    src: [pednault2019]
+sources:
+  arute2019:
+    type: article
+    authors: Arute, F. et al.
+    title: Quantum supremacy using a programmable superconducting processor
+    year: 2019
+    in: Nature 574, 505–510
+    doi: 10.1038/s41586-019-1666-5
+  google2025:
+    type: article
+    authors: Google Quantum AI and Collaborators
+    title: Quantum error correction below the surface code threshold
+    year: 2025
+    in: Nature 638, 920–926
+    doi: 10.1038/s41586-024-08449-y
+  pednault2019:
+    type: preprint
+    authors: Pednault, E.; Gunnels, J. A.; Nannicini, G.; Horesh, L.; Wisnieff, R.
+    title: Leveraging secondary storage to simulate deep 54-qubit Sycamore circuits
+    year: 2019
+    arxiv: '1910.09534'
+related: [makroskopik-tunelleme, kuantum-mekanigi]

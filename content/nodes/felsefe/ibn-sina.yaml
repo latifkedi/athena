@@ -1,0 +1,59 @@
+id: ibn-sina
+parent: islam-felsefesi
+type: text
+date: { year: 1027, approx: true }
+people: [İbn Sina / Ibn Sīnā (Avicenna)]
+title:
+  tr: İbn Sina ve Kitâbü'ş-Şifâ
+  en: Ibn Sīnā and the Book of Healing
+summary:
+  tr: >-
+    İbn Sina'nın Kitâbü'ş-Şifâ adlı ansiklopedik eseri mantık, fizik, matematik ve metafiziği kapsar. Zorunlu varlık
+    argümanıyla Allah'ın varlığını akıl yoluyla temellendirmeye çalıştı. Gözleri bağlı ve boşlukta asılı duran bir insanın
+    bile kendi varlığının farkında olacağını söyleyen "uçan adam" düşünce deneyi ile de ünlüdür.
+  en: >-
+    Ibn Sīnā's encyclopedic Book of Healing (Kitāb al-Shifāʾ) covers logic, physics, mathematics and metaphysics. He
+    sought to ground God's existence by reason with the argument from the necessary existent. He is also famous for the
+    "flying man" thought experiment, which says that a person blindfolded and suspended in empty space would still be
+    aware of their own existence.
+technical:
+  tr: >-
+    İbn Sina, mâhiyet (öz) ile vücûd (varlık) arasında ayrım yapar. Mümkün varlıklar kendi özlerinden ötürü var olmayı
+    gerektirmez. Mümkünler zinciri sonsuza kadar gidemeyeceğinden, özü varlığı olan bir Zorunlu Varlık bulunmalıdır. Bu
+    argüman Batı'da Aquinas'ın "üçüncü yol"unu etkiledi. Gazzâlî, İbn Sina'nın âlemin ezelîliği ve Tanrı'nın tikelleri
+    bilmesi konusundaki görüşlerini eleştirdi.
+  en: >-
+    Ibn Sīnā distinguishes essence (māhiyya) from existence (wujūd): contingent beings do not require existence by their
+    essence; since a chain of contingents cannot go on forever, there must be a Necessary Existent whose essence is its
+    existence. The argument influenced Aquinas's "third way" in the West. Al-Ghazālī criticised Ibn Sīnā's views on the
+    eternity of the world and on God's knowledge of particulars.
+claims:
+  - tr: Varlığı başkasına bağlı olan mümkün varlıklar, sonunda varlığı kendinden olan bir Zorunlu Varlığa dayanmalıdır.
+    en: Contingent beings, whose existence depends on another, must ultimately depend on a Necessary Existent whose existence is from itself.
+    src: [sep-ibnsina]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Mümkün varlıklardan oluşan bir bütün de mümkündür ve varlığı için dışarıda bir nedene ihtiyaç duyar.
+    en: A totality of contingent beings is itself contingent and needs an external cause for its existence.
+    src: [sep-ibnsina]
+  - kind: argument
+    stance: against
+    tr: Parçaların her birinin bir nedeni olması, bütünün ayrı bir nedeni olmasını gerektirmez (bileşim hatası itirazı).
+    en: That each part has a cause does not require the whole to have a separate cause (the fallacy-of-composition objection).
+    src: [hume1779]
+sources:
+  sep-ibnsina:
+    type: encyclopedia
+    authors: McGinnis, J.
+    title: Ibn Sina [Avicenna]
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/ibn-sina/
+  hume1779:
+    type: book
+    authors: Hume, D.
+    title: Dialogues Concerning Natural Religion
+    year: 1779
+    in: London (Part IX)
+    url: https://www.gutenberg.org/ebooks/4583
+related: [ibn-sina-kanun, gazali-tehafut]

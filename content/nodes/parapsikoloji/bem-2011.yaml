@@ -1,0 +1,84 @@
+id: bem-2011
+parent: parapsikoloji
+type: event
+date: { year: 2011, month: 3 }
+people: [Daryl Bem, Stuart Ritchie, Richard Wiseman, Christopher French]
+title:
+  tr: '"Geleceği hissetmek" deneyleri'
+  en: The "Feeling the future" experiments
+summary:
+  tr: >-
+    Sosyal psikolog Daryl Bem, 2011'de psikolojinin en saygın dergilerinden birinde dokuz deney yayımladı. Bu deneylerde
+    katılımcıların henüz gerçekleşmemiş olayları rastlantıdan biraz daha iyi "sezdiğini" bildirdi. Bağımsız tekrar
+    çalışmaları etkiyi bulamadı. Tartışma, psikolojideki tekrarlama krizini başlatan olaylardan biri oldu.
+  en: >-
+    In 2011 the social psychologist Daryl Bem published nine experiments in one of psychology's most respected journals,
+    reporting that participants "sensed" events that had not yet happened slightly better than chance. Independent
+    replications did not find the effect. The controversy became one of the events that set off psychology's replication
+    crisis.
+technical:
+  tr: >-
+    Bem, bilinen etkileri (ör. duygusal hazırlama, alıştırma etkisi) zaman yönü tersine çevrilmiş biçimde test etti.
+    Dokuz deneyin sekizinde anlamlı sonuç bildirdi. Ritchie, Wiseman ve French'in üç tekrarı etkiyi bulamadı ve makaleleri
+    önce aynı dergi tarafından tekrar çalışması yayımlanmadığı gerekçesiyle reddedildi. Bem ve arkadaşlarının 2015'teki
+    90 deneylik meta-analizi ise anlamlı bir etki bildirdi.
+  en: >-
+    Bem tested known effects (e.g. affective priming, practice effects) with the direction of time reversed and reported
+    significant results in eight of nine experiments. Three replications by Ritchie, Wiseman and French found no effect;
+    their paper was initially rejected by the same journal on the grounds that it did not publish replications. A 2015
+    meta-analysis of 90 experiments by Bem and colleagues reported a significant effect.
+claims:
+  - tr: İnsanlar gelecekteki olayların etkisini rastlantıdan anlamlı biçimde daha iyi sezebilir (önsezi).
+    en: People can anticipate the effect of future events significantly better than chance (precognition).
+    src: [bem2011]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Dokuz deneyin sekizinde, ters zamanlı düzeneklerde küçük ama anlamlı etkiler bildirildi.
+    en: Small but significant effects were reported in eight of nine time-reversed paradigms.
+    src: [bem2011]
+  - kind: statistical
+    stance: for
+    tr: 33 laboratuvardan 90 deneyi kapsayan bir meta-analiz anlamlı bir etki bildirdi.
+    en: A meta-analysis of 90 experiments from 33 laboratories reported a significant effect.
+    src: [bem2015]
+  - kind: replication
+    stance: against
+    tr: Üç bağımsız tekrar çalışması, "hatırlamanın geriye dönük kolaylaştırılması" etkisini bulamadı.
+    en: Three independent replications failed to find the "retroactive facilitation of recall" effect.
+    src: [ritchie2012]
+  - kind: critique
+    stance: against
+    tr: Sonuçların, analiz esnekliği ve psikolojideki standart istatistik uygulamalarının zayıflıklarıyla açıklanabileceği savunuldu.
+    en: It was argued that the results can be explained by analytic flexibility and weaknesses in psychology's standard statistical practices.
+    src: [wagenmakers2011]
+sources:
+  bem2011:
+    type: article
+    authors: Bem, D. J.
+    title: 'Feeling the future: experimental evidence for anomalous retroactive influences on cognition and affect'
+    year: 2011
+    in: Journal of Personality and Social Psychology 100(3), 407–425
+    doi: 10.1037/a0021524
+  bem2015:
+    type: article
+    authors: Bem, D.; Tressoldi, P.; Rabeyron, T.; Duggan, M.
+    title: 'Feeling the future: a meta-analysis of 90 experiments on the anomalous anticipation of random future events'
+    year: 2015
+    in: F1000Research 4, 1188
+    doi: 10.12688/f1000research.7177.2
+  ritchie2012:
+    type: article
+    authors: Ritchie, S. J.; Wiseman, R.; French, C. C.
+    title: "Failing the future: three unsuccessful attempts to replicate Bem's 'retroactive facilitation of recall' effect"
+    year: 2012
+    in: PLoS ONE 7(3), e33423
+    doi: 10.1371/journal.pone.0033423
+  wagenmakers2011:
+    type: article
+    authors: Wagenmakers, E.-J.; Wetzels, R.; Borsboom, D.; van der Maas, H. L. J.
+    title: 'Why psychologists must change the way they analyze their data: the case of psi — comment on Bem (2011)'
+    year: 2011
+    in: Journal of Personality and Social Psychology 100(3), 426–432
+    doi: 10.1037/a0022790
+related: [tekrarlama-krizi]

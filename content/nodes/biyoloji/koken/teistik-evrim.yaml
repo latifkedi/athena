@@ -1,0 +1,78 @@
+id: teistik-evrim
+parent: canlilarin-kokeni
+type: idea
+date: { year: 2006 }
+people: [Francis Collins, Theodosius Dobzhansky, Pope John Paul II]
+title:
+  tr: Teistik evrim (evrimsel yaratılış)
+  en: Theistic evolution (evolutionary creation)
+summary:
+  tr: >-
+    Teistik evrim görüşüne göre Tanrı canlıları, bilimin tarif ettiği evrimsel süreçler aracılığıyla yaratmıştır. Bu
+    görüşte bilim ile din arasında bir çelişki görülmez. İnsan Genom Projesi'nin eski yöneticisi Francis Collins ile
+    Katolik Kilisesi'nin 1996'daki resmi açıklaması bu görüşe örnektir. Hem ateist bilim insanları hem de yaratılışçılar
+    farklı gerekçelerle bu görüşü eleştirir.
+  en: >-
+    According to theistic evolution, God created living things through the evolutionary processes that science
+    describes, and no conflict is seen between science and religion. Francis Collins, former director of the Human
+    Genome Project, and the Catholic Church's official statement of 1996 are examples. Both atheist scientists and
+    creationists criticise the view, for different reasons.
+technical:
+  tr: >-
+    Görüşün farklı sürümleri, ilahi etkinin nasıl işlediği konusunda ayrışır. Bir sürüme göre Tanrı yasaları başta
+    koymuştur. Bir diğeri kuantum belirsizliği üzerinden sürekli bir etki öngörür. Başka bir sürüme göre ise tüm doğal
+    nedenler ilahi iradenin aracıdır. Bu sonuncusu İslam kelamındaki Eş'ari vesilecilikle de ilişkilendirilmiştir.
+    Katolik öğretide insan ruhunun doğrudan yaratıldığı ayrıca vurgulanır.
+  en: >-
+    Versions of the view differ on how divine action operates: God set the laws at the start; continuous action through
+    quantum indeterminacy; or all natural causes as instruments of divine will, which has been linked to Ash'arite
+    occasionalism in Islamic kalām. Catholic teaching additionally stresses that the human soul is created directly.
+claims:
+  - tr: Evrimsel süreçler Tanrı'nın yaratma aracıdır. Bilimsel evrim anlatısı ile yaratılış inancı birbiriyle bağdaşır.
+    en: Evolutionary processes are God's means of creation; the scientific account of evolution and belief in creation are compatible.
+    src: [collins2006]
+positions:
+  - who:
+      tr: Katolik Kilisesi (Papa II. Jean Paul, 1996)
+      en: Catholic Church (Pope John Paul II, 1996)
+    tr: Evrim kuramı "bir hipotezden fazlası"dır. Ancak insan ruhu doğrudan Tanrı tarafından yaratılır.
+    en: The theory of evolution is "more than a hypothesis"; the human soul, however, is created directly by God.
+    src: [jp2-1996]
+  - who:
+      tr: Yaratılışçı eleştiri
+      en: Creationist critique
+    tr: Teistik evrim, kutsal metinlerin yaratılış anlatısıyla bağdaşmaz.
+    en: Theistic evolution is incompatible with the creation account of scripture.
+    src: [numbers2006]
+  - who:
+      tr: Natüralist eleştiri
+      en: Naturalist critique
+    tr: Evrim yönlendirilmemiş bir süreçtir ve Tanrı'ya yer bırakmaz. Teistik evrim gereksiz bir ek varsayımdır.
+    en: Evolution is an unguided process leaving no room for God; theistic evolution is a superfluous extra assumption.
+    src: [dawkins2006]
+sources:
+  collins2006:
+    type: book
+    authors: Collins, F. S.
+    title: 'The Language of God: A Scientist Presents Evidence for Belief'
+    year: 2006
+    in: Free Press, New York
+  jp2-1996:
+    type: report
+    authors: John Paul II
+    title: 'Message to the Pontifical Academy of Sciences: On Evolution (22 October 1996)'
+    year: 1996
+    in: "L'Osservatore Romano (English edition), 30 October 1996"
+  numbers2006:
+    type: book
+    authors: Numbers, R. L.
+    title: 'The Creationists: From Scientific Creationism to Intelligent Design'
+    year: 2006
+    in: Harvard University Press, expanded edition
+  dawkins2006:
+    type: book
+    authors: Dawkins, R.
+    title: The God Delusion
+    year: 2006
+    in: Bantam Press, London
+related: [esarilik, islam-ve-evrim]

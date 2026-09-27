@@ -1,0 +1,81 @@
+id: notr-teori
+parent: canlilarin-kokeni
+type: idea
+date: { year: 1968 }
+people: [Motoo Kimura, Jack King, Thomas Jukes, Tomoko Ohta]
+title:
+  tr: Nötr kuram
+  en: The neutral theory
+summary:
+  tr: >-
+    Kimura, moleküler düzeydeki (DNA ve protein dizilerindeki) değişikliklerin çoğunun seçilimle değil, ne yararlı ne
+    zararlı olan mutasyonların rastgele yayılmasıyla (genetik sürüklenme) oluştuğunu öne sürdü. Kuram, Darwinci
+    seçilimin moleküler düzeydeki rolüne itiraz olarak ortaya çıktı. Günümüzde seçilimin ne kadar yaygın olduğu
+    konusundaki tartışmalar sürmektedir.
+  en: >-
+    Kimura proposed that most changes at the molecular level (in DNA and protein sequences) arise not by selection but by
+    the random spread (genetic drift) of mutations that are neither beneficial nor harmful. The theory arose as a
+    challenge to the role of Darwinian selection at the molecular level. Debates about how pervasive selection is
+    continue today.
+technical:
+  tr: >-
+    Kuram, protein polimorfizminin yüksek düzeyini ve moleküler saatin görece sabitliğini, seçici olarak nötr alellerin
+    sürüklenmeyle sabitlenmesiyle açıklar. Nötr bir mutasyon için ikame hızı mutasyon hızına eşittir (k = μ). Ohta'nın
+    neredeyse nötr kuramı, zayıf seçilimin popülasyon büyüklüğüne bağlı etkisini ekler. Kern ve Hahn (2018), genom verileri
+    ışığında bağlı seçilimin yaygın olduğunu ve nötr kuramın terk edilmesi gerektiğini savundu. Jensen ve arkadaşları
+    (2019) buna itiraz etti.
+  en: >-
+    The theory explains high levels of protein polymorphism and the relative constancy of the molecular clock by the
+    fixation of selectively neutral alleles through drift. For a neutral mutation the substitution rate equals the
+    mutation rate (k = μ). Ohta's nearly neutral theory adds the population-size-dependent effect of weak selection. Kern
+    and Hahn (2018) argued that genomic data show pervasive linked selection and that the neutral theory should be
+    abandoned; Jensen et al. (2019) disputed this.
+claims:
+  - tr: Moleküler evrimsel değişikliklerin ve polimorfizmin büyük kısmı seçici olarak nötr mutasyonların sürüklenmesinden kaynaklanır.
+    en: Most molecular evolutionary change and polymorphism results from the drift of selectively neutral mutations.
+    src: [kimura1968, king1969]
+evidence:
+  - kind: genetic
+    stance: for
+    tr: Protein dizilerindeki değişim hızının farklı soy hatlarında yaklaşık sabit olması (moleküler saat), nötr kuramın öngörüsüyle uyumludur.
+    en: The roughly constant rate of change in protein sequences across lineages (the molecular clock) matches the neutral theory's prediction.
+    src: [kimura1968]
+  - kind: genetic
+    stance: against
+    tr: Genom verileri, bağlı seçilimin genetik çeşitlilik üzerinde yaygın etkileri olduğunu ve nötr modelin bu örüntüleri açıklayamadığını gösterdi.
+    en: Genomic data show widespread effects of linked selection on genetic diversity, patterns the neutral model fails to explain.
+    src: [kern2018]
+  - kind: critique
+    stance: for
+    tr: Nötr kuramın bir sıfır hipotezi olarak vazgeçilmez olduğu ve seçilim iddialarının bu modele göre test edilmesi gerektiği savunuldu.
+    en: It was argued that the neutral theory is indispensable as a null hypothesis against which claims of selection must be tested.
+    src: [jensen2019]
+sources:
+  kimura1968:
+    type: article
+    authors: Kimura, M.
+    title: Evolutionary rate at the molecular level
+    year: 1968
+    in: Nature 217, 624–626
+    doi: 10.1038/217624a0
+  king1969:
+    type: article
+    authors: King, J. L.; Jukes, T. H.
+    title: Non-Darwinian evolution
+    year: 1969
+    in: Science 164, 788–798
+    doi: 10.1126/science.164.3881.788
+  kern2018:
+    type: article
+    authors: Kern, A. D.; Hahn, M. W.
+    title: The neutral theory in light of natural selection
+    year: 2018
+    in: Molecular Biology and Evolution 35(6), 1366–1371
+    doi: 10.1093/molbev/msy092
+  jensen2019:
+    type: article
+    authors: Jensen, J. D. et al.
+    title: 'The importance of the Neutral Theory in 1968 and 50 years on: a response to Kern and Hahn 2018'
+    year: 2019
+    in: Evolution 73(1)
+    doi: 10.1111/evo.13650

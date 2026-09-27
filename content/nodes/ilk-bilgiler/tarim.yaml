@@ -1,0 +1,92 @@
+id: tarim
+parent: ilk-bilgiler
+type: technology
+order: 4
+title:
+  tr: Tarım ve Göbekli Tepe
+  en: Farming and Göbekli Tepe
+summary:
+  tr: >-
+    Bitkileri ekip hayvanları evcilleştirmek yerleşik hayatı ve kentleri mümkün kıldı. Şanlıurfa'daki Göbekli Tepe'nin
+    anıtsal yapıları, tarımdan önce ya da tarımın başlangıcında avcı-toplayıcılar tarafından inşa edilmiş olarak
+    tarihlenir. Bu yapıların tapınak mı, ev mi olduğu tartışılır.
+  en: >-
+    Sowing plants and domesticating animals made settled life and cities possible. The monumental structures of Göbekli
+    Tepe near Şanlıurfa, Turkey, are dated to before or at the very start of farming and are attributed to hunter-
+    gatherers. Whether they were temples or houses is debated.
+technical:
+  tr: >-
+    Bereketli Hilal'de buğday, arpa, mercimek gibi "kurucu bitkilerin" ve koyun, keçi, sığır, domuz gibi hayvanların
+    evcilleştirilmesi, Çanak Çömleksiz Neolitik A ve B dönemlerine (kalibre edilmiş yaklaşık MÖ 9600–7000) yayılan
+    uzun bir süreç olarak görülür. Göbekli Tepe'nin T biçimli dikilitaşlı daire yapıları bu döneme tarihlenir. Klaus
+    Schmidt bunları, yerleşim içermeyen ve toplanma ile şölen için kullanılan kült merkezleri olarak yorumlamıştır.
+    Banning ise yapıların sembolik içerikli konutlar olabileceğini ileri sürmüştür.
+  en: >-
+    In the Fertile Crescent, the domestication of "founder crops" such as wheat, barley and lentil and of animals such
+    as sheep, goat, cattle and pig is seen as a long process spanning the Pre-Pottery Neolithic A and B (roughly
+    9600–7000 BCE, calibrated). Göbekli Tepe's circular enclosures with T-shaped pillars date to this period. Klaus
+    Schmidt interpreted them as cult centres for gathering and feasting, with no settlement. Banning argued they may
+    have been dwellings rich in symbolic content.
+datings:
+  - view:
+      tr: Arkeoloji (Bereketli Hilal)
+      en: Archaeology (Fertile Crescent)
+    value:
+      tr: Evcilleştirme yaklaşık 11.500–10.000 yıl önce başlayıp birkaç bin yıla yayılan bir süreçtir.
+      en: Domestication began roughly 11,500–10,000 years ago and unfolded over several thousand years.
+    src: [zeder2011]
+  - view:
+      tr: Arkeoloji (Göbekli Tepe)
+      en: Archaeology (Göbekli Tepe)
+    value:
+      tr: Anıtsal yapılar radyokarbon yöntemiyle yaklaşık MÖ 9600–8200'e tarihlenir.
+      en: The monumental enclosures are radiocarbon-dated to about 9600–8200 BCE.
+    src: [dietrich2012]
+  - view:
+      tr: Yahudilik ve Hristiyanlık (Tekvin)
+      en: Judaism and Christianity (Genesis)
+    value:
+      tr: Âdem'in oğullarından Kabil toprağı işleyen, Habil ise çobandır. Tarım ilk insan kuşağıyla başlar.
+      en: Of Adam's sons, Cain was a tiller of the ground and Abel a shepherd. Farming begins with the first human generation.
+    src: [genesis-4]
+claims:
+  - tr: Göbekli Tepe, tarımdan önce avcı-toplayıcıların toplanıp şölen yaptığı bir kült merkeziydi.
+    en: Göbekli Tepe was a cult centre where hunter-gatherers gathered and feasted before farming.
+    src: [dietrich2012]
+evidence:
+  - kind: archaeological
+    stance: for
+    tr: Alanda büyük miktarda hayvan kemiği ve öğütme taşları bulunması, büyük toplulukların bir araya geldiği şölenler olarak yorumlandı.
+    en: Large quantities of animal bone and grinding stones at the site were interpreted as evidence of feasts bringing large groups together.
+    src: [dietrich2012]
+  - kind: critique
+    stance: against
+    tr: Yapıların "tapınak" olarak yorumlanmasının zayıf kanıtlara dayandığı ve bunların sembol yüklü konutlar olabileceği savunuldu.
+    en: It was argued that interpreting the structures as "temples" rests on weak evidence and that they may have been symbol-laden houses.
+    src: [banning2011]
+sources:
+  zeder2011:
+    type: article
+    authors: Zeder, M. A.
+    title: 'The origins of agriculture in the Near East'
+    year: 2011
+    in: Current Anthropology 52(S4), S221–S235
+    doi: 10.1086/659307
+  dietrich2012:
+    type: article
+    authors: Dietrich, O.; Heun, M.; Notroff, J.; Schmidt, K.; Zarnkow, M.
+    title: 'The role of cult and feasting in the emergence of Neolithic communities. New evidence from Göbekli Tepe, south-eastern Turkey'
+    year: 2012
+    in: Antiquity 86(333), 674–695
+    doi: 10.1017/S0003598X00047840
+  banning2011:
+    type: article
+    authors: Banning, E. B.
+    title: 'So fair a house: Göbekli Tepe and the identification of temples in the Pre-Pottery Neolithic of the Near East'
+    year: 2011
+    in: Current Anthropology 52(5), 619–660
+    doi: 10.1086/661207
+  genesis-4:
+    type: scripture
+    title: Tekvin / Genesis 4:2
+    url: https://www.sefaria.org/Genesis.4.2

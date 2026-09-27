@@ -1,0 +1,93 @@
+id: karanlik-madde
+parent: astronomi
+type: question
+date: { year: 1933 }
+people: [Fritz Zwicky, Vera Rubin, Kent Ford, Mordehai Milgrom]
+title:
+  tr: Karanlık madde
+  en: Dark matter
+summary:
+  tr: >-
+    Galaksiler ve galaksi kümeleri, görünen maddenin kütleçekiminin açıklayabileceğinden daha hızlı dönüp hareket
+    ediyor. Çoğu gökbilimci bunu görünmeyen bir "karanlık madde" ile açıklar. Ancak onlarca yıllık aramaya rağmen bu
+    maddenin parçacıkları doğrudan tespit edilemedi. Bir azınlık ise kütleçekim yasasının çok zayıf ivmelerde farklı
+    işlediğini (MOND) savunur.
+  en: >-
+    Galaxies and galaxy clusters rotate and move faster than the gravity of visible matter can explain. Most astronomers
+    explain this with invisible "dark matter", but despite decades of searches its particles have not been detected
+    directly. A minority argues that the law of gravity works differently at very weak accelerations (MOND).
+technical:
+  tr: >-
+    Zwicky (1933) Coma kümesinde virial kütlenin ışıma kütlesinden çok büyük olduğunu buldu. Rubin ve Ford (1970)
+    Andromeda'nın dönüş eğrisinin dış bölgelerde düşmediğini gösterdi. Mermi Kümesi'nde (1E 0657-558) kütleçekimsel
+    merceklemenin gösterdiği kütle ile X-ışını yayan gazın konumu birbirinden ayrışmıştır. Bu ayrışma karanlık maddenin
+    lehine yorumlanır. WIMP'lere yönelik doğrudan algılama deneyleri (LZ, XENONnT) giderek sıkılaşan üst sınırlar vermiştir.
+    MOND, galaksi ölçeğinde baryonik Tully–Fisher bağıntısını başarıyla öngörür. Galaksi kümelerinde ve CMB'de ise
+    zorlanır.
+  en: >-
+    Zwicky (1933) found the virial mass of the Coma cluster far larger than its luminous mass. Rubin and Ford (1970) showed
+    that Andromeda's rotation curve does not fall off in the outer regions. In the Bullet Cluster (1E 0657-558) the mass
+    traced by gravitational lensing is offset from the X-ray-emitting gas, which is interpreted in favour of dark matter.
+    Direct-detection experiments for WIMPs (LZ, XENONnT) have set increasingly strict upper limits. MOND successfully
+    predicts the baryonic Tully–Fisher relation at galaxy scale but struggles with clusters and the CMB.
+claims:
+  - tr: Evrendeki maddenin büyük kısmı ışıkla etkileşmeyen, görünmeyen bir maddedir.
+    en: Most matter in the universe is an invisible form that does not interact with light.
+    src: [zwicky1933, rubin1970]
+  - tr: Gözlenen etkiler görünmeyen madde yerine değiştirilmiş bir kütleçekim yasasıyla açıklanabilir.
+    en: The observed effects can be explained by a modified law of gravity instead of invisible matter.
+    src: [milgrom1983]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Andromeda galaksisinin dış bölgelerindeki yıldızlar ve gaz, merkezden uzaklaştıkça yavaşlamadı.
+    en: Stars and gas in the outer parts of the Andromeda galaxy did not slow down with distance from the centre.
+    src: [rubin1970]
+  - kind: observation
+    stance: for
+    tr: Çarpışan iki galaksi kümesinde kütleçekimsel kütlenin merkezi, görünen gazın merkezinden ayrışmış olarak ölçüldü.
+    en: In two colliding galaxy clusters, the centre of gravitational mass was measured to be offset from the centre of the visible gas.
+    src: [clowe2006]
+  - kind: experiment
+    stance: against
+    tr: Dünya'daki en hassas doğrudan algılama deneylerinde karanlık madde parçacığı sinyali bulunamadı.
+    en: The most sensitive direct-detection experiments on Earth found no dark-matter particle signal.
+    src: [lz2023]
+sources:
+  zwicky1933:
+    type: article
+    authors: Zwicky, F.
+    title: Die Rotverschiebung von extragalaktischen Nebeln
+    year: 1933
+    in: Helvetica Physica Acta 6, 110–127
+  rubin1970:
+    type: article
+    authors: Rubin, V. C.; Ford, W. K.
+    title: Rotation of the Andromeda Nebula from a spectroscopic survey of emission regions
+    year: 1970
+    in: The Astrophysical Journal 159, 379–403
+    doi: 10.1086/150317
+  milgrom1983:
+    type: article
+    authors: Milgrom, M.
+    title: A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis
+    year: 1983
+    in: The Astrophysical Journal 270, 365–370
+    doi: 10.1086/161130
+  clowe2006:
+    type: article
+    authors: Clowe, D. et al.
+    title: A direct empirical proof of the existence of dark matter
+    year: 2006
+    in: The Astrophysical Journal Letters 648, L109–L113
+    doi: 10.1086/508162
+  lz2023:
+    type: article
+    authors: LZ Collaboration (Aalbers, J. et al.)
+    title: First dark matter search results from the LUX-ZEPLIN (LZ) experiment
+    year: 2023
+    in: Physical Review Letters 131, 041002
+    doi: 10.1103/PhysRevLett.131.041002
+open:
+  - tr: Karanlık madde varsa, hangi parçacıklardan oluşur?
+    en: If dark matter exists, what particles is it made of?

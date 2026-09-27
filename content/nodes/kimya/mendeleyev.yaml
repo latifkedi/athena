@@ -1,0 +1,56 @@
+id: mendeleyev
+parent: kimya
+type: event
+date: { year: 1869 }
+people: [Dmitri Mendeleev, Lothar Meyer]
+title:
+  tr: Periyodik tablo
+  en: The periodic table
+summary:
+  tr: >-
+    Mendeleyev elementleri atom ağırlığına ve özelliklerine göre sıraladı ve özelliklerin düzenli aralıklarla
+    tekrarlandığını gösterdi. Tabloda boş yerler bıraktı ve henüz bulunmamış elementlerin özelliklerini önceden tahmin
+    etti. Bunlardan galyum, skandiyum ve germanyum sonraki yıllarda bulundu.
+  en: >-
+    Mendeleev arranged the elements by atomic weight and properties and showed that properties recur at regular
+    intervals. He left gaps in the table and predicted the properties of elements not yet discovered. Gallium, scandium
+    and germanium were found in the following years.
+technical:
+  tr: >-
+    Mendeleyev "eka-silisyum" için yaklaşık 72 atom ağırlığı ve 5,5 g/cm³ yoğunluk öngördü. Winkler'in 1886'da bulduğu
+    germanyumun değerleri 72,6 ve 5,35'tir. Tablonun periyodikliği, sonradan atom numarası (Moseley 1913) ve elektron
+    kabuk yapısıyla açıklandı. Lothar Meyer benzer bir tabloyu bağımsız olarak geliştirdi. Mendeleyev'in bazı tahminleri,
+    örneğin eter için önerdiği hafif elementler, doğrulanmadı.
+  en: >-
+    For "eka-silicon" Mendeleev predicted an atomic weight of about 72 and a density of 5.5 g/cm³; germanium, found by
+    Winkler in 1886, has 72.6 and 5.35. The periodicity was later explained by atomic number (Moseley 1913) and electron
+    shell structure. Lothar Meyer developed a similar table independently. Some of Mendeleev's predictions, such as light
+    elements he proposed for the aether, were not confirmed.
+claims:
+  - tr: Elementlerin özellikleri atom ağırlıklarının periyodik bir fonksiyonudur ve bu, bilinmeyen elementleri öngörmeye olanak tanır.
+    en: The properties of the elements are a periodic function of their atomic weights, allowing unknown elements to be predicted.
+    src: [mendeleev1869]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Öngörülen üç element (galyum 1875, skandiyum 1879, germanyum 1886) tahmin edilene yakın özelliklerle bulundu.
+    en: Three predicted elements (gallium 1875, scandium 1879, germanium 1886) were found with properties close to those predicted.
+    src: [scerri2007]
+  - kind: historical
+    stance: against
+    tr: Mendeleyev'in öngördüğü bazı elementler (ör. "koronyum", eter için hafif elementler) hiç bulunmadı. Başarılı tahminlerin tablonun kabulündeki rolü tartışılmaktadır.
+    en: Some elements Mendeleev predicted (e.g. "coronium", light elements for the aether) were never found; the role of successful predictions in the table's acceptance is debated.
+    src: [scerri2007]
+sources:
+  mendeleev1869:
+    type: article
+    authors: Mendeleev, D. I.
+    title: Sootnoshenie svoistv s atomnym vesom elementov (The relation between the properties and atomic weights of the elements)
+    year: 1869
+    in: Zhurnal Russkago Khimicheskago Obshchestva 1, 60–77
+  scerri2007:
+    type: book
+    authors: Scerri, E. R.
+    title: 'The Periodic Table: Its Story and Its Significance'
+    year: 2007
+    in: Oxford University Press

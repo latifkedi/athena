@@ -1,0 +1,53 @@
+id: kelam
+parent: insanlik
+side: roots
+type: tradition
+order: 2
+title:
+  tr: Kelam
+  en: Kalām (Islamic theology)
+summary:
+  tr: >-
+    Kelam, İslam inanç esaslarını aklî delillerle açıklayan ve savunan ilimdir. Allah'ın varlığı ve sıfatları, âlemin
+    yaratılışı, insan iradesi ve nedensellik gibi konuları tartışır. Mu'tezile, Eş'arîlik ve Mâtürîdîlik başlıca
+    ekolleridir. Kelamcılar, maddenin bölünmez parçalardan oluştuğunu savunan özgün bir atomculuk da geliştirdi.
+  en: >-
+    Kalām is the discipline that explains and defends the tenets of Islamic belief with rational arguments. It discusses
+    topics such as God's existence and attributes, the creation of the world, human will and causality. Its main schools
+    are the Muʿtazila, the Ashʿariyya and the Māturīdiyya. The theologians also developed a distinctive atomism holding
+    that matter consists of indivisible parts.
+technical:
+  tr: >-
+    Kelam, "delil" temelli bir yöntemle çalışır. Âlemin hâdis (sonradan olma) olduğunu ispatlayıp oradan bir muhdise
+    (yaratıcıya) ulaşmayı hedefler. Klasik dönemde cevher-araz ontolojisi kullanıldı. Gazzâlî ve Fahreddin er-Râzî'den
+    sonra kelam, felsefenin kavram ve yöntemlerini büyük ölçüde içine aldı ("müteahhirîn" dönemi). 19. yüzyılın sonunda
+    modern bilim ve felsefeye cevap vermeyi amaçlayan "Yeni İlm-i Kelâm" akımı doğdu.
+  en: >-
+    Kalām works by a method based on proof (dalīl), aiming to demonstrate that the world is originated (ḥādith) and to
+    infer from this an originator (muḥdith). The classical period used a substance–accident ontology. After al-Ghazālī
+    and Fakhr al-Dīn al-Rāzī, kalām absorbed much of philosophy's concepts and methods (the "later theologians"). In the
+    late 19th century the "New Kalām" movement arose, aiming to respond to modern science and philosophy.
+claims:
+  - tr: İslam'ın inanç esasları aklî delillerle temellendirilebilir ve savunulabilir.
+    en: The tenets of Islamic belief can be grounded and defended with rational proofs.
+    src: [tdv-kelam]
+sources:
+  tdv-kelam:
+    type: encyclopedia
+    title: Kelâm
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/kelam--ilim
+  wolfson1976:
+    type: book
+    authors: Wolfson, H. A.
+    title: The Philosophy of the Kalam
+    year: 1976
+    in: Harvard University Press
+positions:
+  - who:
+      tr: Kelamın tarihçisi H. A. Wolfson
+      en: Historian of kalām H. A. Wolfson
+    tr: Kelam, Yunan felsefesiyle etkileşim içinde gelişmiş ve kendine özgü bir sistem kurmuştur.
+    en: Kalām developed in interaction with Greek philosophy and built a distinctive system of its own.
+    src: [wolfson1976]
+related: [islam-felsefesi, islam]

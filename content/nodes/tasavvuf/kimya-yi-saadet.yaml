@@ -1,0 +1,38 @@
+id: kimya-yi-saadet
+parent: tasavvuf
+type: text
+date: { year: 1105, approx: true }
+people: [Gazzâlî / al-Ghazālī]
+title:
+  tr: Kimyâ-yı Saâdet (Mutluluğun Simyası)
+  en: Kīmiyā-yi Saʿādat (The Alchemy of Happiness)
+summary:
+  tr: >-
+    Gazzâlî'nin Farsça yazdığı bu eser, simya kavramını manevi bir anlamda kullanır. Simyacıların bakırı altına
+    çevirmeye çalışması gibi, insanın da nefsini arındırarak "altın gibi" bir kalbe ulaşabileceğini anlatır. Eser, simyanın
+    maddi ve manevi yönlerinin İslam düşüncesinde nasıl iç içe geçtiğini gösteren bir örnektir.
+  en: >-
+    In this work written in Persian, al-Ghazālī uses the notion of alchemy in a spiritual sense: just as alchemists try to
+    turn copper into gold, a person can reach a heart "like gold" by purifying the self. It is an example of how the
+    material and spiritual aspects of alchemy interweave in Islamic thought.
+technical:
+  tr: >-
+    Eser, İhyâü Ulûmi'd-dîn'in Farsça ve daha kısa bir karşılığı olarak görülür. Nefsin, kalbin, ruhun ve aklın tanınması,
+    Allah'ı tanıma, dünya ve âhiret konularını işleyen dört "unvan" ve dört "rükün"den oluşur. "Kimya" terimi burada,
+    bayağı olanı değerli olana dönüştürme metaforu olarak kullanılır.
+  en: >-
+    The work is seen as a shorter Persian counterpart of the Iḥyāʾ ʿUlūm al-Dīn. It consists of four "headings" on
+    knowing the self, God, this world and the hereafter, and four "pillars". The term "alchemy" is used here as a metaphor
+    for transforming the base into the precious.
+claims:
+  - tr: Manevi arınma, insan kalbini değersiz bir metalin altına dönüşmesi gibi dönüştürür.
+    en: Spiritual purification transforms the human heart as a base metal is turned into gold.
+    src: [ghazali-kimiya]
+sources:
+  ghazali-kimiya:
+    type: book
+    authors: Gazzâlî / al-Ghazālī; Field, C. (trans.)
+    title: The Alchemy of Happiness
+    year: 1910
+    in: John Murray, London (Wisdom of the East series)
+related: [simya]

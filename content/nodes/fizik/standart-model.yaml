@@ -1,0 +1,65 @@
+id: standart-model
+parent: fizik
+type: idea
+date: { year: 1967 }
+people: [Sheldon Glashow, Steven Weinberg, Abdus Salam, Peter Higgs, François Englert]
+title:
+  tr: Standart Model
+  en: The Standard Model
+summary:
+  tr: >-
+    Bilinen temel parçacıkları (kuarklar, leptonlar) ve kütleçekim dışındaki üç temel etkileşimi açıklayan kuramdır.
+    Bugüne kadarki deneylerin büyük çoğunluğunu çok yüksek hassasiyetle öngörür. Buna karşın kütleçekimini, karanlık
+    maddeyi ve nötrinoların kütlesini içermez.
+  en: >-
+    The theory describing the known elementary particles (quarks, leptons) and three of the four fundamental interactions,
+    all except gravity. It predicts the great majority of experiments to date with very high precision. It does not
+    include gravity, dark matter or neutrino masses.
+technical:
+  tr: >-
+    Model SU(3)_C × SU(2)_L × U(1)_Y ayar grubuna sahip bir kuantum alan kuramıdır. Elektrozayıf simetri Higgs mekanizmasıyla
+    kırılır. Üç kuşak fermiyon, 12 ayar bozonu ve bir skaler Higgs bozonu içerir. Elektronun anormal manyetik momenti
+    kuramla 10⁻¹² düzeyinde uyuşur. Nötrino salınımları, baryon asimetrisi ve karanlık madde modelin ötesinde fizik
+    gerektiren gözlemler olarak kabul edilir.
+  en: >-
+    The model is a quantum field theory with gauge group SU(3)_C × SU(2)_L × U(1)_Y, with electroweak symmetry broken by
+    the Higgs mechanism. It contains three generations of fermions, 12 gauge bosons and one scalar Higgs boson. The
+    electron's anomalous magnetic moment agrees with theory at the 10⁻¹² level. Neutrino oscillations, the baryon
+    asymmetry and dark matter are regarded as observations requiring physics beyond the model.
+claims:
+  - tr: Kütleçekim dışındaki bilinen tüm temel etkileşimler, SU(3)×SU(2)×U(1) ayar kuramıyla açıklanır.
+    en: All known fundamental interactions except gravity are described by an SU(3)×SU(2)×U(1) gauge theory.
+    src: [weinberg1967, pdg]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: W ve Z bozonları (1983) ve üst kuark (1995), modelin öngördüğü özelliklerle bulundu.
+    en: The W and Z bosons (1983) and the top quark (1995) were found with the properties the model predicts.
+    src: [pdg]
+  - kind: observation
+    stance: against
+    tr: Nötrinoların tür değiştirmesi (salınım), onların kütleli olduğunu gösterir. Orijinal model nötrinoları kütlesiz kabul eder.
+    en: Neutrino flavour oscillation shows that neutrinos have mass; the original model treats them as massless.
+    src: [fukuda1998]
+sources:
+  weinberg1967:
+    type: article
+    authors: Weinberg, S.
+    title: A model of leptons
+    year: 1967
+    in: Physical Review Letters 19, 1264–1266
+    doi: 10.1103/PhysRevLett.19.1264
+  pdg:
+    type: article
+    authors: Particle Data Group (Navas, S. et al.)
+    title: Review of Particle Physics
+    year: 2024
+    in: Physical Review D 110, 030001
+    doi: 10.1103/PhysRevD.110.030001
+  fukuda1998:
+    type: article
+    authors: Fukuda, Y. et al. (Super-Kamiokande Collaboration)
+    title: Evidence for oscillation of atmospheric neutrinos
+    year: 1998
+    in: Physical Review Letters 81, 1562–1567
+    doi: 10.1103/PhysRevLett.81.1562

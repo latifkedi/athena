@@ -1,0 +1,63 @@
+id: ibn-arabi
+parent: tasavvuf
+type: tradition
+date: { year: 1229, approx: true }
+people: [Muhyiddin İbn Arabî / Ibn ʿArabī]
+title:
+  tr: İbn Arabî ve vahdet-i vücûd
+  en: Ibn ʿArabī and the unity of being
+summary:
+  tr: >-
+    Endülüslü mutasavvıf İbn Arabî'nin görüşleri sonradan "vahdet-i vücûd" (varlığın birliği) olarak adlandırıldı. Bu
+    görüşe göre gerçek varlık yalnızca Allah'ındır. Âlemdeki her şey O'nun isim ve sıfatlarının tecellileridir. Görüş
+    İslam dünyasında derin etki bıraktı ve aynı zamanda sert tartışmalara yol açtı.
+  en: >-
+    The views of the Andalusian Sufi Ibn ʿArabī were later called "waḥdat al-wujūd" (the unity of being): true being
+    belongs to God alone, and everything in the world is a manifestation of God's names and attributes. The view had a
+    deep influence in the Islamic world and also sparked fierce debate.
+technical:
+  tr: >-
+    Fusûsü'l-Hikem ve el-Fütûhâtü'l-Mekkiyye başlıca eserleridir. Vahdet-i vücûd, tenzih ile teşbihi birlikte savunarak
+    paradoksal bir Tanrı anlayışı ortaya koyar. İmam Rabbânî, buna karşı "vahdet-i şühûd" (birliğin bir müşahede olduğu,
+    varlıkta olmadığı) görüşünü geliştirdi. Eleştirmenler vahdet-i vücûdu panteizmle ilişkilendirmiştir. Savunucular ise
+    bu nitelendirmeyi reddeder.
+  en: >-
+    Fuṣūṣ al-Ḥikam and al-Futūḥāt al-Makkiyya are his main works. The unity of being affirms transcendence (tanzīh) and
+    immanence (tashbīh) together, yielding a paradoxical conception of God. Imām Rabbānī developed against it the view of
+    "waḥdat al-shuhūd" (unity is in witnessing, not in being). Critics have associated the unity of being with pantheism;
+    defenders reject this characterisation.
+claims:
+  - tr: Gerçek anlamda var olan yalnızca Allah'tır. Âlem O'nun isim ve sıfatlarının tecellisidir.
+    en: Only God truly exists; the world is the manifestation of God's names and attributes.
+    src: [tdv-vahdet, chittick1989]
+positions:
+  - who:
+      tr: İmam Rabbânî (vahdet-i şühûd)
+      en: Imām Rabbānī (unity of witnessing)
+    tr: Birlik, sâlikin müşahedesindedir, varlığın kendisinde değildir. Yaratan ile yaratılan ayrıdır.
+    en: Unity lies in the seeker's witnessing, not in being itself; Creator and creation are distinct.
+    src: [tdv-vahdet]
+  - who:
+      tr: İbn Teymiyye
+      en: Ibn Taymiyya
+    tr: Vahdet-i vücûd, yaratan ile yaratılanı birbirine karıştırır ve İslam akidesine aykırıdır.
+    en: The unity of being confuses Creator and creation and is contrary to Islamic creed.
+    src: [knysh1999]
+sources:
+  tdv-vahdet:
+    type: encyclopedia
+    title: Vahdet-i vücûd
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/vahdet-i-vucud
+  chittick1989:
+    type: book
+    authors: Chittick, W. C.
+    title: "The Sufi Path of Knowledge: Ibn al-'Arabi's Metaphysics of Imagination"
+    year: 1989
+    in: SUNY Press, Albany
+  knysh1999:
+    type: book
+    authors: Knysh, A.
+    title: 'Ibn ʿArabi in the Later Islamic Tradition: The Making of a Polemical Image in Medieval Islam'
+    year: 1999
+    in: SUNY Press, Albany

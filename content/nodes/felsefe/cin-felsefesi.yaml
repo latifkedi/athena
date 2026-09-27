@@ -1,0 +1,50 @@
+id: cin-felsefesi
+parent: felsefe
+type: tradition
+people: [Konfüçyüs / Confucius, Laozi, Zhuangzi, Mozi]
+title:
+  tr: Çin felsefesi
+  en: Chinese philosophy
+summary:
+  tr: >-
+    Konfüçyüs toplumsal düzeni erdem, saygı ve doğru ilişkiler üzerine kurmayı öğütledi. Laozi'ye atfedilen Dao De Jing
+    ise evrendeki doğal akışa (Dao) uyumu ve zorlamadan eylemeyi (wu wei) öne çıkardı. Bu gelenekler Doğu Asya'nın
+    ahlak, siyaset ve tıp anlayışını derinden etkiledi.
+  en: >-
+    Confucius taught that social order should rest on virtue, respect and right relationships. The Dao De Jing,
+    attributed to Laozi, emphasised harmony with the natural course of the universe (Dao) and acting without forcing (wu
+    wei). These traditions deeply shaped ethics, politics and medicine in East Asia.
+technical:
+  tr: >-
+    Analektler (Lunyu), Konfüçyüs'ün öğrencilerince derlenen konuşmalardır. Temel kavramları ren (insanlık/erdem), li
+    (ritüel/usul) ve xiao'dur (evlat saygısı). Dao De Jing'in yazarlığı ve tarihi tartışmalıdır. Guodian'da bulunan
+    bambu metinler (MÖ yaklaşık 300) eserin erken bir sürümünü içerir. Mohizm, evrensel sevgiyi ve faydayı savunarak
+    Konfüçyüsçülüğe karşı çıktı.
+  en: >-
+    The Analects (Lunyu) are conversations compiled by Confucius' disciples; key concepts are ren (humaneness), li
+    (ritual propriety) and xiao (filial piety). The authorship and date of the Dao De Jing are disputed; the Guodian bamboo
+    texts (c. 300 BCE) contain an early version. Mohism opposed Confucianism by advocating impartial care and utility.
+claims:
+  - tr: İyi bir toplum, kişisel erdemin ve doğru ilişkilerin geliştirilmesiyle kurulur (Konfüçyüsçülük).
+    en: A good society is built by cultivating personal virtue and right relationships (Confucianism).
+    src: [sep-confucius]
+sources:
+  sep-confucius:
+    type: encyclopedia
+    authors: Riegel, J.
+    title: Confucius
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/confucius/
+  sep-laozi:
+    type: encyclopedia
+    authors: Chan, A.
+    title: Laozi
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/laozi/
+positions:
+  - who:
+      tr: Daoculuk
+      en: Daoism
+    tr: Toplumsal kurallar ve zorlama yerine doğanın kendiliğinden işleyişine uyum aranmalıdır.
+    en: Harmony with the spontaneous workings of nature should be sought instead of social rules and force.
+    src: [sep-laozi]

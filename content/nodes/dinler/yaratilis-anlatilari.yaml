@@ -1,0 +1,77 @@
+id: yaratilis-anlatilari
+parent: dinler
+type: question
+order: 5000
+title:
+  tr: Yaratılış anlatıları
+  en: Creation narratives
+summary:
+  tr: >-
+    Hemen her kültürün evrenin ve insanın nasıl ortaya çıktığına dair bir anlatısı vardır. Kur'an, göklerin ve yerin altı
+    "gün"de yaratıldığını ve ilk insanın Âdem olduğunu bildirir. Tekvin yedi günlük bir yaratılışı anlatır. Babil Enuma
+    Eliş destanı ilk kaostan bir düzenin doğuşunu, Ṛgveda ise yaratılışın kaynağını soran bir ilahiyi içerir. Bu
+    anlatıların bilimsel kozmoloji ve biyolojiyle ilişkisi, her gelenek içinde farklı biçimlerde yorumlanır.
+  en: >-
+    Almost every culture has a narrative of how the universe and humans came to be. The Qur'an states that the heavens and
+    the earth were created in six "days" and that the first human was Adam; Genesis tells of a seven-day creation; the
+    Babylonian Enūma Eliš tells of order arising from primordial chaos; the Ṛgveda contains a hymn questioning the source
+    of creation. How these narratives relate to scientific cosmology and biology is interpreted differently within each
+    tradition.
+technical:
+  tr: >-
+    Karşılaştırmalı mitoloji ve din araştırmaları, yaratılış anlatılarını tiplere ayırır. Yoktan yaratma (creatio ex
+    nihilo), kaostan düzen, kozmik yumurta, ilk ebeveynlerin ayrılması ve dalıcı hayvan bunlara örnektir. İbrahimi
+    geleneklerde lafzi, mecazi ve uzlaştırmacı yorumlar bir arada bulunur.
+  en: >-
+    Comparative mythology and religious studies classify creation narratives into types: creation from nothing (creatio
+    ex nihilo), order from chaos, the cosmic egg, the separation of the first parents, the earth-diver and others. In the
+    Abrahamic traditions literal, figurative and harmonising interpretations coexist.
+positions:
+  - who:
+      tr: İslam (Kur'an)
+      en: Islam (Qur'an)
+    tr: Allah gökleri ve yeri altı günde yaratmıştır. Gökler ve yer bitişikken ayrılmıştır. Her canlı sudan yaratılmıştır.
+    en: God created the heavens and the earth in six days; the heavens and the earth were joined and then parted; every living thing was made from water.
+    src: [kuran-7-54, kuran-21-30]
+  - who:
+      tr: Yahudilik ve Hristiyanlık (Tekvin)
+      en: Judaism and Christianity (Genesis)
+    tr: Tanrı evreni altı günde yaratmış ve yedinci gün dinlenmiştir. İnsan, Tanrı'nın suretinde yaratılmıştır.
+    en: God created the universe in six days and rested on the seventh; humans were created in God's image.
+    src: [genesis-1]
+  - who:
+      tr: Babil (Enuma Eliş)
+      en: Babylon (Enūma Eliš)
+    tr: Tanrı Marduk, ilk kaosu temsil eden Tiamat'ı yenip bedeninden gökyüzünü ve yeri kurmuştur.
+    en: The god Marduk defeated Tiamat, representing primordial chaos, and made the sky and earth from her body.
+    src: [dalley1989]
+  - who:
+      tr: Hinduizm (Ṛgveda 10.129)
+      en: Hinduism (Ṛgveda 10.129)
+    tr: Başlangıçta ne var olan ne de var olmayan vardı. Yaratılışın kaynağını belki en yüksekteki bilir, belki o da bilmez.
+    en: In the beginning there was neither being nor non-being; the source of creation perhaps the one on high knows, or perhaps not.
+    src: [rigveda]
+sources:
+  kuran-7-54:
+    type: scripture
+    title: Kur'an-ı Kerim, A'râf 7:54
+    url: https://quran.com/7/54
+  kuran-21-30:
+    type: scripture
+    title: Kur'an-ı Kerim, Enbiyâ 21:30
+    url: https://quran.com/21/30
+  genesis-1:
+    type: scripture
+    title: Tekvin / Genesis 1:1–2:3
+    url: https://www.sefaria.org/Genesis.1
+  dalley1989:
+    type: book
+    authors: Dalley, S. (trans.)
+    title: 'Myths from Mesopotamia: Creation, the Flood, Gilgamesh, and Others'
+    year: 1989
+    in: Oxford University Press
+  rigveda:
+    type: scripture
+    title: Ṛgveda 10.129 (Nāsadīya Sūkta), trans. R. T. H. Griffith
+    url: https://en.wikisource.org/wiki/The_Rig_Veda/Mandala_10/Hymn_129
+related: [buyuk-patlama, canlilarin-kokeni, insanlik, gilgamis]

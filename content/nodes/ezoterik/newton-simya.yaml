@@ -1,0 +1,66 @@
+id: newton-simya
+parent: simya
+type: event
+date: { year: 1669, approx: true }
+people: [Isaac Newton, John Maynard Keynes]
+title:
+  tr: Newton'un simya çalışmaları
+  en: "Newton's alchemical work"
+summary:
+  tr: >-
+    Modern fiziğin kurucularından Newton, yaklaşık otuz yıl boyunca gizlice simya çalıştı ve bu konuda bir milyon
+    kelimeyi aşan not bıraktı. Bu el yazmaları 1936'da açık artırmaya çıkınca iktisatçı Keynes, Newton'u "akıl çağının
+    ilki değil, büyücülerin sonuncusu" olarak nitelendirdi. Tarihçiler bu çalışmaların Newton'un fiziğini ne ölçüde
+    etkilediğini tartışır.
+  en: >-
+    Newton, one of the founders of modern physics, secretly studied alchemy for about thirty years and left more than a
+    million words of notes on it. When these manuscripts were auctioned in 1936, the economist Keynes called Newton "not
+    the first of the age of reason, but the last of the magicians". Historians debate how far this work influenced
+    Newton's physics.
+technical:
+  tr: >-
+    Newton'un simya notları, okuma özetleri, laboratuvar kayıtları ve "Praxis" gibi kendi metinlerini içerir. Dobbs,
+    Newton'un simya ile ilgili aktif ilkeler ve uzaktan etki fikirlerinin kütleçekim anlayışını etkilediğini savundu.
+    Newman ise Newton'un simyasını, dönemin deneysel "chymistry"sinin bir parçası olarak inceler. Newton'un el yazmaları
+    bugün Newton Projesi'nde dijital olarak erişilebilirdir.
+  en: >-
+    Newton's alchemical notes include reading summaries, laboratory records and his own texts such as "Praxis". Dobbs
+    argued that alchemical ideas of active principles and action at a distance influenced his understanding of gravity;
+    Newman studies Newton's alchemy as part of the experimental "chymistry" of the day. Newton's manuscripts are now
+    digitally accessible through the Newton Project.
+claims:
+  - tr: Newton'un simya çalışmaları, onun doğa felsefesinin ayrılmaz bir parçasıydı.
+    en: "Newton's alchemical studies were an integral part of his natural philosophy."
+    src: [dobbs1975, newman2019, newton-project]
+positions:
+  - who:
+      tr: Betty Jo Teeter Dobbs
+      en: Betty Jo Teeter Dobbs
+    tr: Simyasal fikirler, Newton'un maddenin aktif ilkeleri ve kütleçekim anlayışını şekillendirdi.
+    en: Alchemical ideas shaped Newton's understanding of the active principles of matter and of gravity.
+    src: [dobbs1975]
+  - who:
+      tr: William R. Newman
+      en: William R. Newman
+    tr: Newton'un simyası mistik değil, deneysel bir madde kuramı arayışıydı ve dönemin kimyasıyla iç içeydi.
+    en: "Newton's alchemy was not mystical but a search for an experimental theory of matter, intertwined with the chemistry of the time."
+    src: [newman2019]
+sources:
+  dobbs1975:
+    type: book
+    authors: Dobbs, B. J. T.
+    title: "The Foundations of Newton's Alchemy, or 'The Hunting of the Greene Lyon'"
+    year: 1975
+    in: Cambridge University Press
+  newman2019:
+    type: book
+    authors: Newman, W. R.
+    title: 'Newton the Alchemist: Science, Enigma, and the Quest for Nature''s "Secret Fire"'
+    year: 2019
+    in: Princeton University Press
+  newton-project:
+    type: web
+    title: The Newton Project
+    in: University of Oxford
+    url: https://www.newtonproject.ox.ac.uk/
+related: [newton-principia]

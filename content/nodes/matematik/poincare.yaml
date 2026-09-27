@@ -1,0 +1,60 @@
+id: poincare
+parent: matematik
+type: event
+date: { year: 2003 }
+people: [Henri Poincaré, Grigori Perelman, Richard Hamilton]
+title:
+  tr: Poincaré sanısının ispatı
+  en: Proof of the Poincaré conjecture
+summary:
+  tr: >-
+    Poincaré 1904'te üç boyutlu "küre benzeri" uzayların tanımına dair bir sanı ortaya attı. Grigori Perelman 2002–2003
+    yıllarında arXiv'de yayımladığı üç makaleyle bunu ispatladı. Clay Enstitüsü'nün bir milyon dolarlık ödülünü ve Fields
+    Madalyası'nı reddetti. Milenyum Problemleri'nden bugüne kadar çözülen tek problem budur.
+  en: >-
+    In 1904 Poincaré posed a conjecture characterising three-dimensional "sphere-like" spaces. Grigori Perelman proved it
+    in three papers posted to arXiv in 2002–2003. He declined the Clay Institute's million-dollar prize and the Fields
+    Medal. It is the only Millennium Prize Problem solved to date.
+technical:
+  tr: >-
+    Sanı, her basit bağlantılı, kapalı 3-manifoldun S³'e homeomorf olduğunu söyler. Perelman, Hamilton'ın Ricci akışı
+    programını cerrahi (surgery) ile tamamlayarak Thurston'ın geometrikleştirme sanısını ispatladı. Poincaré sanısı bunun
+    bir sonucudur. İspat Kleiner–Lott, Morgan–Tian ve Cao–Zhu tarafından ayrıntılı biçimde doğrulandı.
+  en: >-
+    The conjecture states that every simply connected closed 3-manifold is homeomorphic to S³. Perelman completed
+    Hamilton's Ricci-flow programme with surgery and proved Thurston's geometrisation conjecture, of which the Poincaré
+    conjecture is a corollary. The proof was verified in detail by Kleiner–Lott, Morgan–Tian and Cao–Zhu.
+claims:
+  - tr: Her basit bağlantılı, kapalı 3-manifold 3-küreye homeomorftur.
+    en: Every simply connected closed 3-manifold is homeomorphic to the 3-sphere.
+    src: [perelman1, perelman2, perelman3]
+evidence:
+  - kind: proof
+    stance: for
+    tr: Perelman'ın ön baskıları birkaç bağımsız ekip tarafından yüzlerce sayfalık ayrıntılı açıklamalarla doğrulandı.
+    en: Perelman's preprints were verified by several independent teams in detailed expositions running to hundreds of pages.
+    src: [clay-poincare]
+sources:
+  perelman1:
+    type: preprint
+    authors: Perelman, G.
+    title: The entropy formula for the Ricci flow and its geometric applications
+    year: 2002
+    arxiv: math/0211159
+  perelman2:
+    type: preprint
+    authors: Perelman, G.
+    title: Ricci flow with surgery on three-manifolds
+    year: 2003
+    arxiv: math/0303109
+  perelman3:
+    type: preprint
+    authors: Perelman, G.
+    title: Finite extinction time for the solutions to the Ricci flow on certain three-manifolds
+    year: 2003
+    arxiv: math/0307245
+  clay-poincare:
+    type: web
+    title: Poincaré Conjecture
+    in: Clay Mathematics Institute
+    url: https://www.claymath.org/millennium/poincare-conjecture/

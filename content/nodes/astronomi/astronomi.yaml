@@ -1,0 +1,42 @@
+id: astronomi
+parent: insanlik
+side: canopy
+type: field
+order: 7
+feed: ['arxiv:astro-ph']
+title:
+  tr: Astronomi ve kozmoloji
+  en: Astronomy and cosmology
+summary:
+  tr: >-
+    Gök cisimlerini ve evrenin bütününü inceleyen alan. Gökyüzü gözlemleri takvim, tarım ve yön bulma için binlerce
+    yıldır yapılmaktadır. Teleskop, spektroskopi ve uzay araçları, evrenin yaşı, büyüklüğü ve içeriği hakkındaki bilgimizi
+    kökten değiştirdi. Evrenin başlangıcı hakkında dinlerin ve bilimin farklı anlatıları vardır.
+  en: >-
+    The field that studies celestial bodies and the universe as a whole. The sky has been observed for thousands of years
+    for calendars, agriculture and navigation. Telescopes, spectroscopy and spacecraft have radically changed our
+    knowledge of the age, size and contents of the universe. Religions and science give different accounts of the
+    beginning of the universe.
+technical:
+  tr: >-
+    Standart kozmolojik model (ΛCDM), evrenin enerji içeriğinin yaklaşık %5'inin sıradan madde, %27'sinin karanlık madde,
+    %68'inin karanlık enerji olduğunu öngörür. Bu model kozmik mikrodalga arka plan ışımasının ölçümlerine
+    dayanmaktadır. Hubble sabitinin farklı yöntemlerle ölçülen değerleri arasındaki gerilim ve DESI'nin karanlık enerjinin
+    zamanla değişebileceğine işaret eden verileri, modelin güncel sınavlarıdır.
+  en: >-
+    The standard cosmological model (ΛCDM) holds that about 5% of the universe's energy content is ordinary matter, 27%
+    dark matter and 68% dark energy, based on measurements of the cosmic microwave background. The tension between values
+    of the Hubble constant measured by different methods, and DESI data hinting that dark energy may change over time, are
+    current tests of the model.
+claims:
+  - tr: Planck uydusu verilerine göre evrenin enerji içeriğinin yaklaşık %68'i karanlık enerji, %27'si karanlık madde ve %5'i sıradan maddedir.
+    en: According to Planck satellite data, about 68% of the universe's energy content is dark energy, 27% dark matter and 5% ordinary matter.
+    src: [planck2018]
+sources:
+  planck2018:
+    type: article
+    authors: Planck Collaboration
+    title: 'Planck 2018 results. VI. Cosmological parameters'
+    year: 2020
+    in: Astronomy & Astrophysics 641, A6
+    doi: 10.1051/0004-6361/201833910

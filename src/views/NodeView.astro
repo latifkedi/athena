@@ -1,0 +1,429 @@
+---
+import Base from '../layouts/Base.astro';
+import Cite from '../components/Cite.astro';
+import SourceList from '../components/SourceList.astro';
+import type { Lang, NodeData } from '../lib/data';
+import { ancestors, getNode, relatedTo, nodeSources, descendantCount } from '../lib/data';
+import { latestFor } from '../lib/feed';
+import { ui, t, url, nodePath, routes, typeLabels, evidenceKinds, formatDate, suggestUrl, otherLang } from '../lib/i18n';
+
+interface Props {
+  node: NodeData;
+  lang: Lang;
+}
+const { node, lang } = Astro.props;
+const other = otherLang(lang);
+const chain = ancestors(node.id);
+const sources = nodeSources(node);
+const index: Record<string, number> = {};
+sources.forEach((s, i) => (index[s.key] = i + 1));
+const children = node.children.map((id) => getNode(id)!);
+const relIds = new Set([...node.related, ...relatedTo(node.id).map((n) => n.id)]);
+const related = [...relIds].map((id) => getNode(id)).filter(Boolean) as NodeData[];
+const evFor = node.evidence.filter((e) => e.stance === 'for');
+const evAgainst = node.evidence.filter((e) => e.stance === 'against');
+const papers = node.depth === 1 ? latestFor(node.id) : [];
+const title = t(node.title, lang);
+const sideLabel = node.side === 'roots' ? t(ui.roots, lang) : node.side === 'canopy' ? t(ui.canopy, lang) : '';
+const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
+---
+
+<Base
+  lang={lang}
+  title={title}
+  description={t(node.summary, lang)}
+  altPath={nodePath(node.id, other)}
+  nodeId={node.id}
+  nodeTitle={title}
+>
+  <main class="wrap node">
+    <nav class="crumbs small" aria-label="breadcrumb">
+      {
+        chain.map((a) => (
+          <>
+            <a href={url(nodePath(a.id, lang))}>{t(a.title, lang)}</a>
+            <span aria-hidden="true">›</span>
+          </>
+        ))
+      }
+      <span>{title}</span>
+    </nav>
+
+    <div class="meta">
+      <span class="chip"><span class={`dot ${node.side}`}></span>{t(typeLabels[node.type], lang)}</span>
+      {sideLabel && <span class="chip">{sideLabel}</span>}
+      {node.date && <span class="chip">{formatDate(node.date, lang)}</span>}
+      {node.datings.length > 0 && <a class="chip" href="#datings">{t(ui.datings, lang)}</a>}
+      {node.children.length > 0 && <span class="chip">{descendantCount(node.id)} {t(ui.nodes, lang)}</span>}
+    </div>
+
+    <h1>{title}</h1>
+    {node.people.length > 0 && <p class="people muted">{node.people.join(' · ')}</p>}
+    {
+      !['center', 'field'].includes(node.type) && (
+        <p class="note small">
+          <span aria-hidden="true">ⓘ</span> {t(ui.nodeNote, lang)}{' '}
+          <a href={url(routes.method[lang])}>{t(ui.nav.method, lang)}</a>
+        </p>
+      )
+    }
+
+    <section class="levels">
+      <div class="level">
+        <h2>{t(ui.forEveryone, lang)}</h2>
+        <p set:html={para(t(node.summary, lang))} />
+      </div>
+      {
+        node.technical && (
+          <div class="level expert">
+            <h2>{t(ui.forExperts, lang)}</h2>
+            <p set:html={para(t(node.technical, lang))} />
+          </div>
+        )
+      }
+    </section>
+
+    {
+      node.datings.length > 0 && (
+        <section id="datings">
+          <h2>{t(ui.datings, lang)}</h2>
+          <p class="muted small">{t(ui.datingsNote, lang)}</p>
+          <table class="datings">
+            <tbody>
+              {node.datings.map((d) => (
+                <tr>
+                  <th scope="row">{t(d.view, lang)}</th>
+                  <td>
+                    {t(d.value, lang)}
+                    <Cite keys={d.src} index={index} />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      )
+    }
+
+    {
+      node.claims.length > 0 && (
+        <section>
+          <h2>{t(ui.claims, lang)}</h2>
+          <ul class="claims">
+            {node.claims.map((c) => (
+              <li>
+                {t(c, lang)}
+                <Cite keys={c.src} index={index} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      node.evidence.length > 0 && (
+        <section>
+          <h2>{t(ui.evidence, lang)}</h2>
+          <div class="evidence">
+            <div class="col for">
+              <h3>{t(ui.evFor, lang)}</h3>
+              {evFor.length === 0 && <p class="muted small">—</p>}
+              {evFor.map((e) => (
+                <div class="ev">
+                  <span class="kind">{t(evidenceKinds[e.kind] ?? { tr: e.kind, en: e.kind }, lang)}</span>
+                  <p>
+                    {t(e, lang)}
+                    <Cite keys={e.src} index={index} />
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div class="col against">
+              <h3>{t(ui.evAgainst, lang)}</h3>
+              {evAgainst.length === 0 && <p class="muted small">—</p>}
+              {evAgainst.map((e) => (
+                <div class="ev">
+                  <span class="kind">{t(evidenceKinds[e.kind] ?? { tr: e.kind, en: e.kind }, lang)}</span>
+                  <p>
+                    {t(e, lang)}
+                    <Cite keys={e.src} index={index} />
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      node.positions.length > 0 && (
+        <section>
+          <h2>{t(ui.positions, lang)}</h2>
+          <dl class="positions">
+            {node.positions.map((p) => (
+              <div>
+                <dt>{t(p.who, lang)}</dt>
+                <dd>
+                  {t(p, lang)}
+                  <Cite keys={p.src} index={index} />
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )
+    }
+
+    {
+      node.open.length > 0 && (
+        <section>
+          <h2>{t(ui.open, lang)}</h2>
+          <ul>
+            {node.open.map((o) => (
+              <li>{t(o, lang)}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <section>
+      <h2>{t(ui.connections, lang)}</h2>
+      <div class="conn">
+        {
+          chain.length > 0 && (
+            <div>
+              <h3>{t(ui.parentLabel, lang)}</h3>
+              <a class="chip" href={url(nodePath(chain[chain.length - 1].id, lang))}>
+                <span class={`dot ${chain[chain.length - 1].side}`} />
+                {t(chain[chain.length - 1].title, lang)}
+              </a>
+            </div>
+          )
+        }
+        {
+          children.length > 0 && (
+            <div>
+              <h3>{t(ui.children, lang)}</h3>
+              <div class="chips">
+                {children.map((c) => (
+                  <a class="chip" href={url(nodePath(c.id, lang))}>
+                    <span class={`dot ${c.side}`} />
+                    {t(c.title, lang)}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )
+        }
+        {
+          related.length > 0 && (
+            <div>
+              <h3>{t(ui.related, lang)}</h3>
+              <div class="chips">
+                {related.map((c) => (
+                  <a class="chip" href={url(nodePath(c.id, lang))}>
+                    <span class={`dot ${c.side}`} />
+                    {t(c.title, lang)}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )
+        }
+        <p class="small">
+          <a href={url(routes.home[lang]) + '#' + node.id}>{lang === 'tr' ? 'Ağaçta göster →' : 'Show in tree →'}</a>
+        </p>
+      </div>
+    </section>
+
+    {
+      papers.length > 0 && (
+        <section>
+          <h2>{t(ui.latestInBranch, lang)}</h2>
+          <ul class="papers">
+            {papers.slice(0, 6).map((p) => (
+              <li>
+                <a href={p.url} rel="noopener">
+                  {p.title}
+                </a>
+                <span class="muted small">
+                  {' '}
+                  — {p.authors} · {p.date} · {p.source}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p class="small">
+            <a href={url(routes.latest[lang])}>{t(ui.nav.latest, lang)} →</a>
+          </p>
+        </section>
+      )
+    }
+
+    <section>
+      <h2>{t(ui.sources, lang)}</h2>
+      <SourceList sources={sources} lang={lang} />
+    </section>
+
+    <p>
+      <a class="btn" href={suggestUrl(lang, node.id, title)}>✎ {t(ui.suggest, lang)}</a>
+    </p>
+  </main>
+</Base>
+
+<style>
+  .node {
+    padding-top: 20px;
+  }
+  .crumbs {
+    color: var(--text-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .crumbs a {
+    color: var(--text-2);
+    text-decoration: none;
+  }
+  .crumbs a:hover {
+    text-decoration: underline;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 14px 0 4px;
+  }
+  a.chip {
+    text-decoration: none;
+  }
+  a.chip:hover {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+  .people {
+    margin-top: -6px;
+  }
+  .note {
+    color: var(--text-3);
+    margin: 4px 0 18px;
+  }
+  .levels {
+    display: grid;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  .level h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-3);
+    margin: 0 0 6px;
+  }
+  .level p {
+    margin: 0;
+  }
+  .level.expert {
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+  .level.expert p {
+    font-size: 0.95rem;
+    color: var(--text-2);
+  }
+  table.datings {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  table.datings th,
+  table.datings td {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 8px;
+    border-top: 1px solid var(--border);
+  }
+  table.datings th {
+    width: 34%;
+    font-weight: 600;
+  }
+  .claims li {
+    margin-bottom: 6px;
+  }
+  .evidence {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .evidence h3 {
+    margin-top: 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .col.for h3 {
+    color: var(--for);
+  }
+  .col.against h3 {
+    color: var(--against);
+  }
+  .col {
+    border-top: 3px solid var(--border);
+    padding-top: 10px;
+  }
+  .col.for {
+    border-top-color: var(--for);
+  }
+  .col.against {
+    border-top-color: var(--against);
+  }
+  .ev {
+    margin-bottom: 14px;
+  }
+  .ev p {
+    margin: 2px 0 0;
+    font-size: 0.95rem;
+  }
+  .kind {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-3);
+  }
+  .positions div {
+    margin-bottom: 12px;
+  }
+  .positions dt {
+    font-weight: 600;
+  }
+  .positions dd {
+    margin: 2px 0 0;
+    color: var(--text-2);
+  }
+  .conn h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-3);
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .papers li {
+    margin-bottom: 6px;
+  }
+  @media (max-width: 640px) {
+    .evidence {
+      grid-template-columns: 1fr;
+    }
+    table.datings th {
+      width: 40%;
+    }
+  }
+</style>

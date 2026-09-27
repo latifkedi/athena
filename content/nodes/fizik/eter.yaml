@@ -1,0 +1,72 @@
+id: eter
+parent: fizik
+type: idea
+people: [Albert A. Michelson, Edward W. Morley, Hendrik Lorentz]
+title:
+  tr: Esir (ışık taşıyıcı eter)
+  en: The luminiferous aether
+summary:
+  tr: >-
+    19. yüzyılda ışık dalgalarının, ses dalgalarının havada yayılması gibi, uzayı dolduran "esir" adlı bir ortamda
+    yayıldığı düşünülüyordu. 1887'deki Michelson–Morley deneyi, Dünya'nın bu ortam içindeki hareketini ölçemedi. Özel
+    görelilik esire ihtiyaç duymaz. Bazı fizikçiler ise esir benzeri kavramların farklı biçimlerde tartışılmasını
+    sürdürmüştür.
+  en: >-
+    In the 19th century light waves were thought to travel through a space-filling medium called the "aether", just as
+    sound travels through air. The 1887 Michelson–Morley experiment could not detect Earth's motion through this medium.
+    Special relativity does not need an aether. Some physicists have nevertheless continued to discuss aether-like
+    concepts in various forms.
+technical:
+  tr: >-
+    Michelson–Morley girişimölçeri, esir rüzgârından beklenen yaklaşık 0,4 saçaklık kaymayı arıyordu. Gözlenen kayma bunun
+    %1'inden küçüktü. Lorentz ve FitzGerald boy kısalması hipoteziyle esiri korumaya çalıştı. Lorentz esir kuramı, özel
+    görelilikle deneysel olarak ayırt edilemeyen tahminler verir, ancak gözlenemeyen ayrıcalıklı bir çerçeve varsayar.
+    Modern Lorentz ihlali testleri (ör. Standart Model Uzantısı) eşdeğerlik sınırlarını 10⁻¹⁸ düzeyine kadar indirmiştir.
+  en: >-
+    The Michelson–Morley interferometer looked for a fringe shift of about 0.4 expected from the aether wind; the shift
+    observed was less than 1% of that. Lorentz and FitzGerald tried to preserve the aether with the length-contraction
+    hypothesis. Lorentz aether theory makes predictions experimentally indistinguishable from special relativity but
+    assumes an unobservable preferred frame. Modern tests of Lorentz violation (e.g. the Standard-Model Extension) have
+    pushed limits to the 10⁻¹⁸ level.
+claims:
+  - tr: Işık, uzayı dolduran ve durgun bir referans çerçevesi tanımlayan bir ortamda yayılır.
+    en: Light propagates in a space-filling medium that defines a rest frame.
+    src: [whittaker1910]
+evidence:
+  - kind: experiment
+    stance: against
+    tr: Michelson–Morley deneyi, Dünya'nın esire göre hareketinden beklenen girişim kaymasını bulamadı.
+    en: The Michelson–Morley experiment found no interference shift from Earth's motion relative to the aether.
+    src: [michelson1887]
+  - kind: theoretical
+    stance: for
+    tr: Lorentz'in boy kısalması ve yerel zaman kavramları, esirin varlığını deneyin sıfır sonucuyla uzlaştırdı. Bu kuram özel görelilikle aynı gözlemsel tahminleri verir.
+    en: Lorentz's length contraction and local time reconciled the aether with the null result; this theory makes the same observable predictions as special relativity.
+    src: [whittaker1910]
+  - kind: measurement
+    stance: against
+    tr: Günümüzde yapılan Lorentz simetrisi testleri, ayrıcalıklı bir çerçevenin etkilerini çok küçük sınırların altında bulmaktadır.
+    en: Present-day tests of Lorentz symmetry find the effects of a preferred frame to be below very small limits.
+    src: [kostelecky2011]
+sources:
+  michelson1887:
+    type: article
+    authors: Michelson, A. A.; Morley, E. W.
+    title: On the relative motion of the Earth and the luminiferous ether
+    year: 1887
+    in: American Journal of Science 34, 333–345
+    doi: 10.2475/ajs.s3-34.203.333
+  whittaker1910:
+    type: book
+    authors: Whittaker, E. T.
+    title: A History of the Theories of Aether and Electricity
+    year: 1910
+    in: Longmans, Green and Co., London
+  kostelecky2011:
+    type: article
+    authors: Kostelecký, V. A.; Russell, N.
+    title: Data tables for Lorentz and CPT violation
+    year: 2011
+    in: Reviews of Modern Physics 83, 11–31
+    doi: 10.1103/RevModPhys.83.11
+related: [maxwell, ozel-gorelilik]

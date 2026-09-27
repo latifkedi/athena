@@ -1,0 +1,41 @@
+id: matematik
+parent: insanlik
+side: canopy
+type: field
+order: 1
+feed: ['arxiv:math']
+title:
+  tr: Matematik
+  en: Mathematics
+summary:
+  tr: >-
+    Sayılar, şekiller, yapılar ve bunlar arasındaki ilişkilerle uğraşan alan. Matematikte bir önermenin doğru kabul
+    edilmesi deneye değil, kabul edilmiş aksiyomlardan mantıksal olarak türetilmesine, yani ispata dayanır. İspatı
+    bulunmayan önermelere "sanı" (konjektür) denir.
+  en: >-
+    The field concerned with numbers, shapes, structures and the relations between them. In mathematics a statement
+    is accepted not by experiment but by being logically derived from accepted axioms, that is, by proof. Statements
+    without a proof are called conjectures.
+technical:
+  tr: >-
+    Modern matematiğin temeli genellikle Zermelo–Fraenkel küme kuramı ve seçim aksiyomu (ZFC) içinde birinci dereceden
+    mantıkla kurulur. Bir teoremin geçerliliği seçilen aksiyom sistemine görelidir. Gödel'in eksiklik teoremleri, yeterince
+    güçlü tutarlı bir sistemin kendi tutarlılığını ispatlayamayacağını gösterir. Son yıllarda Lean ve Coq/Rocq gibi ispat
+    asistanlarıyla yapılan biçimsel doğrulama yaygınlaşmaktadır.
+  en: >-
+    Modern mathematics is usually founded on Zermelo–Fraenkel set theory with the axiom of choice (ZFC) in first-order
+    logic. A theorem's validity is relative to the chosen axiom system. Gödel's incompleteness theorems show that a
+    sufficiently strong consistent system cannot prove its own consistency. Formal verification with proof assistants
+    such as Lean and Coq/Rocq has become increasingly common in recent years.
+sources:
+  sep-philmath:
+    type: encyclopedia
+    authors: Horsten, L.
+    title: Philosophy of Mathematics
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/philosophy-mathematics/
+claims:
+  - tr: Matematiksel bilginin kaynağı ve doğası (keşif mi, icat mı) felsefede tartışmalıdır. Platoncu, biçimci, sezgici ve yapılandırmacı görüşler vardır.
+    en: The source and nature of mathematical knowledge (discovered or invented?) is debated in philosophy. There are Platonist, formalist, intuitionist and constructivist views.
+    src: [sep-philmath]
+related: [felsefe]

@@ -1,0 +1,35 @@
+id: yer-bilimleri
+parent: insanlik
+side: canopy
+type: field
+order: 8
+feed: ['arxiv:physics.geo-ph', 'arxiv:physics.ao-ph']
+title:
+  tr: Yer bilimleri
+  en: Earth sciences
+summary:
+  tr: >-
+    Dünya'nın yapısını, yaşını, kayaçlarını, okyanuslarını, atmosferini ve iklimini inceleyen alanlar. Dünya'nın yaşı
+    ve kıtaların hareketi, bu alanın en çok tartışılmış soruları arasında yer almıştır.
+  en: >-
+    The fields that study the Earth's structure, age, rocks, oceans, atmosphere and climate. The age of the Earth and the
+    movement of the continents have been among the field's most debated questions.
+technical:
+  tr: >-
+    Jeokronoloji radyometrik bozunma sistemlerine (U–Pb, K–Ar, Rb–Sr) dayanır. Levha tektoniği, yer kabuğunun
+    manto üzerinde hareket eden levhalardan oluştuğunu söyler ve depremleri, volkanları ve dağ oluşumunu bu çerçevede
+    açıklar.
+  en: >-
+    Geochronology relies on radiometric decay systems (U–Pb, K–Ar, Rb–Sr). Plate tectonics holds that the crust is made of
+    plates moving over the mantle, and explains earthquakes, volcanoes and mountain building within that framework.
+claims:
+  - tr: Radyometrik tarihlendirme, kayaçlardaki kararsız izotopların bilinen hızlarla bozunmasına dayanır.
+    en: Radiometric dating relies on unstable isotopes in rocks decaying at known rates.
+    src: [dalrymple1991]
+sources:
+  dalrymple1991:
+    type: book
+    authors: Dalrymple, G. B.
+    title: The Age of the Earth
+    year: 1991
+    in: Stanford University Press

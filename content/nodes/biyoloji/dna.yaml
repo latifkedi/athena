@@ -1,0 +1,63 @@
+id: dna
+parent: biyoloji
+type: event
+date: { year: 1953, month: 4 }
+people: [James Watson, Francis Crick, Rosalind Franklin, Maurice Wilkins]
+title:
+  tr: DNA'nın çift sarmal yapısı
+  en: The double-helix structure of DNA
+summary:
+  tr: >-
+    Watson ve Crick 1953'te kalıtım molekülü DNA'nın iki ipliğin birbirine sarıldığı bir çift sarmal olduğunu önerdi.
+    Bu yapı, DNA'nın kendini nasıl kopyalayabildiğini açıklıyordu. Modelin kurulmasında Rosalind Franklin'in X-ışını
+    kırınım verileri belirleyici oldu. Bu veriler Franklin'in bilgisi dışında paylaşılmıştı.
+  en: >-
+    In 1953 Watson and Crick proposed that DNA, the molecule of heredity, is a double helix of two intertwined strands.
+    The structure explained how DNA can copy itself. Rosalind Franklin's X-ray diffraction data were decisive in building
+    the model; they had been shared without her knowledge.
+technical:
+  tr: >-
+    Model, antiparalel iki şeker-fosfat omurgası ile iç tarafta A–T ve G–C baz eşleşmelerinden oluşur. Bu eşleşme
+    Chargaff kurallarını açıklar. Franklin ve Gosling'in B-formu kırınım deseni ("Fotoğraf 51") sarmal simetriyi ve
+    boyutları gösteriyordu. Meselson–Stahl deneyi (1958) yarı korunumlu kopyalanmayı doğruladı.
+  en: >-
+    The model consists of two antiparallel sugar–phosphate backbones with A–T and G–C base pairs inside, which accounts
+    for Chargaff's rules. The B-form diffraction pattern of Franklin and Gosling ("Photo 51") showed the helical symmetry
+    and dimensions. The Meselson–Stahl experiment (1958) confirmed semi-conservative replication.
+claims:
+  - tr: DNA, baz eşleşmesiyle bir arada tutulan iki antiparalel iplikten oluşan bir çift sarmaldır.
+    en: DNA is a double helix of two antiparallel strands held together by base pairing.
+    src: [watson1953]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: X-ışını kırınım desenleri sarmal bir yapıyla uyumlu çıktı.
+    en: X-ray diffraction patterns were consistent with a helical structure.
+    src: [franklin1953]
+  - kind: experiment
+    stance: for
+    tr: Ağır azotla işaretlenmiş DNA'nın kopyalanması, her yeni molekülün bir eski ve bir yeni iplik içerdiğini gösterdi.
+    en: Replication of heavy-nitrogen-labelled DNA showed each new molecule contains one old and one new strand.
+    src: [meselson1958]
+sources:
+  watson1953:
+    type: article
+    authors: Watson, J. D.; Crick, F. H. C.
+    title: 'Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid'
+    year: 1953
+    in: Nature 171, 737–738
+    doi: 10.1038/171737a0
+  franklin1953:
+    type: article
+    authors: Franklin, R. E.; Gosling, R. G.
+    title: Molecular configuration in sodium thymonucleate
+    year: 1953
+    in: Nature 171, 740–741
+    doi: 10.1038/171740a0
+  meselson1958:
+    type: article
+    authors: Meselson, M.; Stahl, F. W.
+    title: The replication of DNA in Escherichia coli
+    year: 1958
+    in: PNAS 44(7), 671–682
+    doi: 10.1073/pnas.44.7.671

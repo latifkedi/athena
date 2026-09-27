@@ -1,0 +1,49 @@
+id: lavoisier
+parent: kimya
+type: text
+date: { year: 1789 }
+people: [Antoine-Laurent Lavoisier, Marie-Anne Paulze Lavoisier]
+title:
+  tr: Lavoisier ve kütlenin korunumu
+  en: Lavoisier and the conservation of mass
+summary:
+  tr: >-
+    Lavoisier kimyasal tepkimelerde maddenin yoktan var olmadığını ve yok olmadığını, toplam kütlenin korunduğunu
+    titiz tartımlarla gösterdi. Yanmayı oksijenle birleşme olarak açıkladı ve kimyasal adlandırmayı yeniden düzenledi.
+    1794'te Fransız Devrimi sırasında vergi toplayıcılığı nedeniyle giyotinle idam edildi.
+  en: >-
+    Lavoisier showed by careful weighing that in chemical reactions matter is neither created nor destroyed and total
+    mass is conserved. He explained combustion as combination with oxygen and reorganised chemical nomenclature. In 1794,
+    during the French Revolution, he was guillotined for his role as a tax farmer.
+technical:
+  tr: >-
+    Traité élémentaire de chimie (1789), 33 "basit madde"lik bir element listesi verir. Bu listede ışık ve kalorik de
+    yer alır. Lavoisier, suyun hidrojen ve oksijenden oluştuğunu sentez ve ayrıştırma deneyleriyle gösterdi. Kütlenin
+    korunumu ilkesi, özel görelilikte kütle-enerji eşdeğerliğiyle genelleştirilmiştir. Kimyasal tepkimelerde kütle
+    değişimi ölçülemeyecek kadar küçüktür (yaklaşık 10⁻¹⁰ oranında).
+  en: >-
+    The Traité élémentaire de chimie (1789) gives a list of 33 "simple substances", including light and caloric.
+    Lavoisier showed by synthesis and decomposition that water consists of hydrogen and oxygen. The principle of
+    conservation of mass was generalised by mass–energy equivalence in special relativity; in chemical reactions the
+    change in mass is too small to measure (of order 10⁻¹⁰).
+claims:
+  - tr: Kimyasal tepkimelerde toplam kütle değişmez.
+    en: Total mass does not change in chemical reactions.
+    src: [lavoisier1789]
+  - tr: Yanma, maddenin havadaki oksijenle birleşmesidir.
+    en: Combustion is the combination of a substance with oxygen from the air.
+    src: [lavoisier1789]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Kapalı cam kaplarda yapılan yanma ve kireçlenme deneylerinde kabın toplam ağırlığı değişmedi.
+    en: In combustion and calcination experiments in sealed glass vessels, the total weight of the vessel did not change.
+    src: [lavoisier1789]
+sources:
+  lavoisier1789:
+    type: book
+    authors: Lavoisier, A.-L.
+    title: Traité élémentaire de chimie
+    year: 1789
+    in: Cuchet, Paris
+related: [flojiston, dalton]

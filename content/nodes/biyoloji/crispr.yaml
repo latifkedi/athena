@@ -1,0 +1,59 @@
+id: crispr
+parent: biyoloji
+type: technology
+date: { year: 2012, month: 6 }
+people: [Jennifer Doudna, Emmanuelle Charpentier, Feng Zhang]
+title:
+  tr: CRISPR gen düzenleme
+  en: CRISPR gene editing
+summary:
+  tr: >-
+    Bakterilerin virüslere karşı kullandığı bir savunma sisteminden türetilen CRISPR-Cas9, DNA'yı istenen yerden kesip
+    değiştirmeyi kolay ve ucuz hâle getirdi. 2020 Nobel Kimya Ödülü'ne konu oldu. 2023'te orak hücre hastalığı için ilk
+    CRISPR tedavisi onaylandı. 2018'de embriyolarda yapılan izinsiz bir düzenleme ise uluslararası tepki gördü.
+  en: >-
+    Derived from a defence system bacteria use against viruses, CRISPR-Cas9 made it easy and cheap to cut and change DNA
+    at a chosen site. It was the subject of the 2020 Nobel Prize in Chemistry. In 2023 the first CRISPR therapy was
+    approved for sickle-cell disease. An unauthorised edit of human embryos in 2018 drew international condemnation.
+technical:
+  tr: >-
+    Jinek ve arkadaşları (2012), Cas9'un ikili tracrRNA:crRNA (sonradan tek kılavuz RNA) ile programlanabilen, PAM'e
+    bağımlı bir DNA endonükleazı olduğunu gösterdi. Memeli hücrelerinde uygulama 2013'te Cong vd. ve Mali vd. tarafından
+    yayımlandı. Hedef dışı kesimler, mozaisizm ve büyük silinmeler güvenlik sorunları olarak araştırılmaktadır. Baz ve
+    prime düzenleme, çift iplik kırığı oluşturmadan nokta değişikliği yapar.
+  en: >-
+    Jinek et al. (2012) showed that Cas9 is a PAM-dependent DNA endonuclease programmable by a dual tracrRNA:crRNA (later a
+    single guide RNA). Application in mammalian cells was published in 2013 by Cong et al. and Mali et al. Off-target cuts,
+    mosaicism and large deletions are studied as safety issues. Base and prime editing make point changes without
+    double-strand breaks.
+claims:
+  - tr: Cas9 enzimi, kılavuz RNA ile belirlenen herhangi bir DNA dizisini kesecek biçimde programlanabilir.
+    en: The Cas9 enzyme can be programmed with a guide RNA to cut any chosen DNA sequence.
+    src: [jinek2012]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Saflaştırılmış Cas9 ve tasarlanmış RNA'lar, test tüpünde hedef DNA'yı öngörülen yerlerden kesti.
+    en: Purified Cas9 and designed RNAs cut target DNA in the test tube at the predicted sites.
+    src: [jinek2012]
+  - kind: experiment
+    stance: against
+    tr: Bazı düzenlemelerde hedef bölgede öngörülmeyen büyük silinmeler ve yeniden düzenlenmeler bulundu. Bu durum güvenlik değerlendirmelerinde dikkate alınması gereken bir risk olarak raporlandı.
+    en: Some edits produced unexpected large deletions and rearrangements at the target site, reported as a risk to be considered in safety assessment.
+    src: [kosicki2018]
+sources:
+  jinek2012:
+    type: article
+    authors: Jinek, M. et al.
+    title: A programmable dual-RNA–guided DNA endonuclease in adaptive bacterial immunity
+    year: 2012
+    in: Science 337, 816–821
+    doi: 10.1126/science.1225829
+  kosicki2018:
+    type: article
+    authors: Kosicki, M.; Tomberg, K.; Bradley, A.
+    title: Repair of double-strand breaks induced by CRISPR–Cas9 leads to large deletions and complex rearrangements
+    year: 2018
+    in: Nature Biotechnology 36, 765–771
+    doi: 10.1038/nbt.4192
+related: [kisiye-ozel-crispr, dna]

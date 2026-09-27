@@ -1,0 +1,65 @@
+id: hudus-delili
+parent: kelam
+type: idea
+people: [Kindî, Gazzâlî, William Lane Craig]
+title:
+  tr: Hudûs delili (kelam kozmolojik argümanı)
+  en: The argument from origination (kalām cosmological argument)
+summary:
+  tr: >-
+    Kelamcılara göre âlem sonradan var olmuştur (hâdistir). Sonradan var olan her şeyin bir var edeni olmalıdır. Öyleyse
+    âlemin de bir yaratıcısı vardır. Argüman, sonsuz bir geçmişin imkânsız olduğu öncülüne dayanır. 20. yüzyılda
+    William Lane Craig argümanı Büyük Patlama kozmolojisiyle birlikte yeniden gündeme getirdi. Eleştirmenler ise
+    öncüllerini ve Büyük Patlama'nın bu şekilde yorumlanmasını sorgular.
+  en: >-
+    For the theologians the world came into existence (is originated); everything that comes into existence must have a
+    cause of its existence; therefore the world has a creator. The argument rests on the premise that an infinite past is
+    impossible. In the 20th century William Lane Craig revived it together with Big Bang cosmology; critics question its
+    premises and this reading of the Big Bang.
+technical:
+  tr: >-
+    Klasik biçim, cisimlerin arazlardan ayrı olamadığını ve arazların hâdis olduğunu gösterip cisimlerin de hâdis olduğu
+    sonucuna varır. Craig'in biçimi iki öncüle dayanır: aktüel sonsuzluğun imkânsızlığı (Hilbert oteli) ve ardışık
+    toplamayla sonsuzun oluşturulamayacağı. Eleştiriler şunları içerir. Aktüel sonsuzun matematikte tutarlı olduğu
+    (Cantor) söylenmiştir. Nedensellik ilkesinin evrenin kendisine uygulanması sorgulanmıştır. Kuantum kozmolojide
+    "sınırsız" (Hartle–Hawking) modellerin varlığı ve Kant'ın ilk antinomisi de karşı argüman olarak gösterilmiştir.
+  en: >-
+    The classical form shows that bodies cannot be without accidents and that accidents are originated, concluding that
+    bodies are originated. Craig's version rests on two premises: the impossibility of an actual infinite (Hilbert's
+    hotel) and the impossibility of forming an infinite by successive addition. Objections include the consistency of the
+    actual infinite in mathematics (Cantor), doubts about applying the causal principle to the universe itself,
+    "no-boundary" models in quantum cosmology (Hartle–Hawking) and Kant's first antinomy.
+claims:
+  - tr: Var olmaya başlayan her şeyin bir nedeni vardır. Evren var olmaya başlamıştır. O hâlde evrenin bir nedeni vardır.
+    en: Whatever begins to exist has a cause; the universe began to exist; therefore the universe has a cause.
+    src: [craig1979]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Sonsuz sayıda geçmiş olay ardışık olarak tamamlanamaz. Bu nedenle geçmişin bir başlangıcı olmalıdır.
+    en: An infinite number of past events cannot be completed by successive addition, so the past must have a beginning.
+    src: [craig1979]
+  - kind: observation
+    stance: for
+    tr: Savunucular, Büyük Patlama kozmolojisinin evrenin sonlu bir geçmişi olduğunu desteklediğini ileri sürer.
+    en: Proponents argue that Big Bang cosmology supports a finite past for the universe.
+    src: [craig1979]
+  - kind: argument
+    stance: against
+    tr: Aktüel sonsuzluğun tutarsız olduğu gösterilmemiştir. Nedensellik ilkesinin evrenin bütününe uygulanması da gerekçelendirilmemiştir.
+    en: It has not been shown that an actual infinite is inconsistent, nor has applying the causal principle to the universe as a whole been justified.
+    src: [oppy2006]
+sources:
+  craig1979:
+    type: book
+    authors: Craig, W. L.
+    title: The Kalām Cosmological Argument
+    year: 1979
+    in: Macmillan, London
+  oppy2006:
+    type: book
+    authors: Oppy, G.
+    title: Arguing about Gods
+    year: 2006
+    in: Cambridge University Press
+related: [buyuk-patlama, kant]

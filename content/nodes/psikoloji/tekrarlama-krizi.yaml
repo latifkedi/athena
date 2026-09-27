@@ -1,0 +1,59 @@
+id: tekrarlama-krizi
+parent: psikoloji
+type: event
+date: { year: 2015, month: 8 }
+people: [Open Science Collaboration, Brian Nosek]
+title:
+  tr: Tekrarlama krizi
+  en: The replication crisis
+summary:
+  tr: >-
+    2015'te 270 araştırmacı, saygın dergilerde yayımlanmış 100 psikoloji deneyini tekrarladı. Orijinallerin %97'si
+    anlamlı sonuç bildirmişken, tekrarların yalnızca yaklaşık %36'sı anlamlı sonuç verdi. Benzer sorunlar tıp ve
+    ekonomide de bildirildi. Bu, bilimsel bulguların tek bir çalışmayla kesinleşmediğinin güçlü bir örneği oldu.
+  en: >-
+    In 2015, 270 researchers repeated 100 psychology experiments published in respected journals. While 97% of the
+    originals had reported significant results, only about 36% of the replications did. Similar problems were reported in
+    medicine and economics. It became a strong example that scientific findings are not settled by a single study.
+technical:
+  tr: >-
+    Tekrarlarda etki büyüklükleri ortalama olarak orijinallerin yaklaşık yarısıydı. Başlıca nedenler olarak şunlar
+    gösterildi: yayın yanlılığı, düşük istatistiksel güç, "p-hacking" (analiz esnekliği) ve HARKing (sonuçlar bilindikten
+    sonra hipotez kurma). Gilbert ve arkadaşları, tekrar çalışmalarındaki örneklem ve protokol farklarının düşük tekrarlama
+    oranını açıkladığını savundu. Proje yazarları bu eleştiriye yanıt verdi.
+  en: >-
+    Replication effect sizes were on average about half those of the originals. Main causes cited were publication bias,
+    low statistical power, "p-hacking" (analytic flexibility) and HARKing (hypothesising after results are known). Gilbert
+    and colleagues argued that differences in samples and protocols in the replications explained the low replication
+    rate; the project authors responded.
+claims:
+  - tr: Yayımlanmış psikoloji bulgularının önemli bir kısmı bağımsız tekrarlarda aynı sonucu vermemektedir.
+    en: A substantial share of published psychology findings do not give the same result in independent replications.
+    src: [osc2015]
+evidence:
+  - kind: replication
+    stance: for
+    tr: 100 tekrarın yaklaşık %36'sı istatistiksel olarak anlamlı sonuç verdi ve etki büyüklükleri ortalama yarıya indi.
+    en: About 36% of the 100 replications gave statistically significant results, and effect sizes halved on average.
+    src: [osc2015]
+  - kind: critique
+    stance: against
+    tr: Tekrar çalışmalarının orijinallerden farklı popülasyonlarda ve protokollerle yapıldığı, bu nedenle tekrarlama oranının olduğundan düşük tahmin edildiği savunuldu.
+    en: It was argued that the replications used different populations and protocols from the originals, so the replication rate was underestimated.
+    src: [gilbert2016]
+sources:
+  osc2015:
+    type: article
+    authors: Open Science Collaboration
+    title: Estimating the reproducibility of psychological science
+    year: 2015
+    in: Science 349, aac4716
+    doi: 10.1126/science.aac4716
+  gilbert2016:
+    type: article
+    authors: Gilbert, D. T.; King, G.; Pettigrew, S.; Wilson, T. D.
+    title: 'Comment on "Estimating the reproducibility of psychological science"'
+    year: 2016
+    in: Science 351, 1037
+    doi: 10.1126/science.aad7243
+related: [bem-2011]

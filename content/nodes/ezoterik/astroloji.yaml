@@ -1,0 +1,113 @@
+id: astroloji
+parent: ezoterik
+type: practice
+people: [Batlamyus / Ptolemy, Ebû Ma'şer el-Belhî, Johannes Kepler, Michel Gauquelin]
+title:
+  tr: Astroloji
+  en: Astrology
+summary:
+  tr: >-
+    Astroloji, gök cisimlerinin konumlarının insan karakteri ve dünyadaki olaylarla ilişkili olduğunu savunan kadim bir
+    gelenektir. Yüzyıllarca astronomiyle birlikte gelişti ve pek çok gökbilimci astroloji de yaptı. Kontrollü
+    deneylerde astrologların doğum haritasından kişilik tahminleri genellikle rastlantı düzeyinde bulunmuştur. Bazı
+    istatistiksel çalışmalar ise belirli etkiler bildirmiştir. İslam dünyasında Fârâbî gibi düşünürler, yıldızlardan hüküm
+    çıkarmayı (ahkâm-ı nücûm) matematiksel astronomiden ayırmış ve bu uygulama pek çok âlim tarafından eleştirilmiştir.
+  en: >-
+    Astrology is an ancient tradition holding that the positions of celestial bodies are related to human character and
+    events on Earth. It developed alongside astronomy for centuries, and many astronomers also practised astrology. In
+    controlled experiments astrologers' personality predictions from birth charts have generally been found at chance
+    level; some statistical studies have reported particular effects. In the Islamic world thinkers such as al-Fārābī
+    distinguished drawing judgements from the stars (aḥkām al-nujūm) from mathematical astronomy, and the practice was
+    criticised by many scholars.
+technical:
+  tr: >-
+    Batlamyus'un Tetrabiblos'u astrolojinin klasik kaynağıdır. Carlson'ın (1985) çift kör deneyinde astrologlar, kişilik
+    testi profillerini doğum haritalarıyla rastlantıdan daha iyi eşleştiremedi. Gauquelin, ünlü sporcuların doğumunda
+    Mars'ın belirli konumlarda rastlantıdan sık bulunduğunu bildirdi ("Mars etkisi"). Fransız, Belçika ve ABD'deki şüpheci
+    komitelerin tekrarları bu etkiyi doğrulamadı. Ertel, yeniden analizlerinde etkinin sürdüğünü savundu. Dean ve
+    Kelly'nin "zaman ikizleri" çalışmasında, birkaç dakika arayla doğan 2000'den fazla kişi arasında beklenen
+    benzerlikler bulunmadı.
+  en: >-
+    Ptolemy's Tetrabiblos is the classical source of astrology. In Carlson's (1985) double-blind test, astrologers could
+    not match personality-test profiles to birth charts better than chance. Gauquelin reported that Mars was found more
+    often than chance in certain positions at the births of eminent athletes (the "Mars effect"). Replications by sceptic
+    committees in France, Belgium and the US did not confirm it; Ertel argued in reanalyses that the effect persists. In
+    Dean and Kelly's "time twins" study, the expected similarities were not found among more than 2,000 people born
+    minutes apart.
+claims:
+  - tr: Doğum anındaki gök cisimlerinin konumları, kişinin karakterini ve hayatındaki olayları etkiler veya bunlarla ilişkilidir.
+    en: The positions of celestial bodies at the moment of birth influence or are related to a person's character and life events.
+    src: [ptolemy-tetrabiblos]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: Gauquelin, ünlü sporcuların doğum saatlerinde Mars'ın doğuş ya da tepe noktasından hemen sonraki bölgelerde rastlantıdan anlamlı biçimde sık bulunduğunu bildirdi.
+    en: Gauquelin reported that at the birth times of eminent athletes Mars was found significantly more often than chance in the zones just after rising or culmination.
+    src: [gauquelin1955, ertel1996]
+  - kind: experiment
+    stance: against
+    tr: Çift kör bir deneyde astrologlar, kişilik profillerini doğru doğum haritasıyla rastlantıdan daha iyi eşleştiremedi.
+    en: In a double-blind experiment astrologers could not match personality profiles to the correct birth chart better than chance.
+    src: [carlson1985]
+  - kind: replication
+    stance: against
+    tr: Fransız şüpheci komitenin 1000'den fazla sporcu üzerinde yaptığı test, Mars etkisini doğrulamadı.
+    en: A test by a French sceptic committee on more than 1,000 athletes did not confirm the Mars effect.
+    src: [benski1996]
+  - kind: statistical
+    stance: against
+    tr: Birkaç dakika arayla doğan 2101 kişi ("zaman ikizleri"), astrolojinin öngördüğü benzerlikleri göstermedi.
+    en: 2,101 people born minutes apart ("time twins") did not show the similarities astrology predicts.
+    src: [dean2003]
+sources:
+  ptolemy-tetrabiblos:
+    type: manuscript
+    authors: Batlamyus / Ptolemy; Robbins, F. E. (trans.)
+    title: Tetrabiblos
+    year: 1940
+    in: Loeb Classical Library 435, Harvard University Press
+  gauquelin1955:
+    type: book
+    authors: Gauquelin, M.
+    title: "L'Influence des astres: étude critique et expérimentale"
+    year: 1955
+    in: Éditions du Dauphin, Paris
+  ertel1996:
+    type: book
+    authors: Ertel, S.; Irving, K.
+    title: The Tenacious Mars Effect
+    year: 1996
+    in: Urania Trust, London
+  carlson1985:
+    type: article
+    authors: Carlson, S.
+    title: A double-blind test of astrology
+    year: 1985
+    in: Nature 318, 419–425
+    doi: 10.1038/318419a0
+  benski1996:
+    type: book
+    authors: Benski, C. et al.
+    title: "The \"Mars Effect\": A French Test of Over 1,000 Sports Champions"
+    year: 1996
+    in: Prometheus Books, Amherst NY
+  tdv-nucum:
+    type: encyclopedia
+    authors: Fehd, T.
+    title: İlm-i ahkâm-ı nücûm
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/ilm-i-ahkam-i-nucum
+  dean2003:
+    type: article
+    authors: Dean, G.; Kelly, I. W.
+    title: Is astrology relevant to consciousness and psi?
+    year: 2003
+    in: Journal of Consciousness Studies 10(6–7), 175–198
+positions:
+  - who:
+      tr: Fârâbî ve İslam bilim sınıflamaları
+      en: al-Fārābī and Islamic classifications of the sciences
+    tr: İki ayrı "yıldızlar ilmi" vardır. Biri yıldızların olaylara delâletini yorumlayan ahkâm-ı nücûm, diğeri matematiksel astronomi olan ta'lîmî nücûmdur.
+    en: There are two distinct "sciences of the stars". One is aḥkām al-nujūm, which interprets what the stars signify about events; the other is mathematical astronomy (ʿilm al-nujūm al-taʿlīmī).
+    src: [tdv-nucum]
+related: [astronomi, kepler, batlamyus]

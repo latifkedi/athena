@@ -1,0 +1,89 @@
+id: homeopati
+parent: tamamlayici-tip
+type: practice
+date: { year: 1810 }
+people: [Samuel Hahnemann]
+title:
+  tr: Homeopati
+  en: Homeopathy
+summary:
+  tr: >-
+    Hahnemann'ın 1810'da sistemleştirdiği homeopati, "benzer benzeri iyileştirir" ilkesine ve maddelerin çok yüksek
+    oranlarda seyreltilip çalkalanmasıyla güç kazandığı fikrine dayanır. Birçok ülkede yaygın olarak kullanılır. Etkisinin
+    plasebodan farklı olup olmadığı konusunda meta-analizler farklı sonuçlara ulaşmıştır.
+  en: >-
+    Homeopathy, systematised by Hahnemann in 1810, rests on the principle "like cures like" and on the idea that
+    substances gain potency by extreme dilution and shaking. It is widely used in many countries. Meta-analyses have
+    reached differing conclusions on whether its effects differ from placebo.
+technical:
+  tr: >-
+    30C seyreltme 10⁶⁰ kat seyreltmeye karşılık gelir. Bu, Avogadro sayısına (≈6×10²³) göre çözeltide başlangıç
+    maddesinden tek bir molekül bile kalmasının beklenmediği anlamına gelir. Savunucular bunu "suyun belleği" gibi
+    kavramlarla açıklamaya çalışır. Linde vd. (1997) etkinin tamamen plaseboya bağlanamayacağı sonucuna vardı. Shang vd.
+    (2005) büyük ve kaliteli çalışmalarla sınırlandığında etkinin plaseboyla uyumlu olduğunu bildirdi. Mathie vd. (2014)
+    bireyselleştirilmiş homeopatide küçük bir etki bildirdi ve kanıt kalitesinin düşük olduğunu belirtti.
+  en: >-
+    A 30C dilution corresponds to a dilution of 10⁶⁰, meaning that, given Avogadro's number (≈6×10²³), not a single
+    molecule of the starting substance is expected to remain. Proponents try to explain this with concepts such as "water
+    memory". Linde et al. (1997) concluded that the effects cannot be attributed entirely to placebo; Shang et al. (2005)
+    reported that when restricted to large, high-quality trials the effects were compatible with placebo; Mathie et al.
+    (2014) reported a small effect for individualised homeopathy while noting the low quality of the evidence.
+claims:
+  - tr: Yüksek oranda seyreltilmiş ve çalkalanmış maddeler, sağlıklı insanda oluşturdukları belirtilere benzeyen hastalıkları iyileştirir.
+    en: Highly diluted and succussed substances cure illnesses resembling the symptoms they produce in healthy people.
+    src: [hahnemann1810]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: 89 plasebo kontrollü çalışmanın meta-analizinde, homeopatinin etkisinin tamamen plaseboyla açıklanamayacağı sonucuna varıldı.
+    en: A meta-analysis of 89 placebo-controlled trials concluded that the effects of homeopathy cannot be fully explained by placebo.
+    src: [linde1997]
+  - kind: statistical
+    stance: for
+    tr: Bireyselleştirilmiş homeopati üzerine bir meta-analiz, plasebodan küçük ama anlamlı bir fark bildirdi. Yazarlar kanıt kalitesinin düşük olduğunu vurguladı.
+    en: A meta-analysis of individualised homeopathy reported a small but significant difference from placebo, with the authors stressing the low quality of evidence.
+    src: [mathie2014]
+  - kind: statistical
+    stance: against
+    tr: Homeopati ve konvansiyonel tıp çalışmalarının karşılaştırmalı analizinde, büyük ve kaliteli homeopati çalışmalarında etki plaseboyla uyumlu bulundu.
+    en: In a comparative analysis of homeopathy and conventional-medicine trials, the effects in large, high-quality homeopathy trials were compatible with placebo.
+    src: [shang2005]
+  - kind: statistical
+    stance: against
+    tr: Avustralya Ulusal Sağlık ve Tıbbi Araştırma Konseyi, sistematik derlemeleri inceleyerek hiçbir sağlık sorunu için güvenilir etkinlik kanıtı bulunmadığı sonucuna vardı.
+    en: "Australia's National Health and Medical Research Council, reviewing systematic reviews, concluded that there was no reliable evidence of effectiveness for any health condition."
+    src: [nhmrc2015]
+sources:
+  hahnemann1810:
+    type: book
+    authors: Hahnemann, S.
+    title: Organon der rationellen Heilkunde
+    year: 1810
+    in: Arnold, Dresden
+  linde1997:
+    type: article
+    authors: Linde, K. et al.
+    title: 'Are the clinical effects of homoeopathy placebo effects? A meta-analysis of placebo-controlled trials'
+    year: 1997
+    in: The Lancet 350, 834–843
+    doi: 10.1016/S0140-6736(97)02293-9
+  shang2005:
+    type: article
+    authors: Shang, A. et al.
+    title: 'Are the clinical effects of homoeopathy placebo effects? Comparative study of placebo-controlled trials of homoeopathy and allopathy'
+    year: 2005
+    in: The Lancet 366, 726–732
+    doi: 10.1016/S0140-6736(05)67177-2
+  mathie2014:
+    type: article
+    authors: Mathie, R. T. et al.
+    title: 'Randomised placebo-controlled trials of individualised homeopathic treatment: systematic review and meta-analysis'
+    year: 2014
+    in: Systematic Reviews 3, 142
+    doi: 10.1186/2046-4053-3-142
+  nhmrc2015:
+    type: report
+    authors: National Health and Medical Research Council (Australia)
+    title: NHMRC Information Paper — Evidence on the effectiveness of homeopathy for treating health conditions
+    year: 2015
+    in: NHMRC, Canberra

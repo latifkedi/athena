@@ -1,0 +1,59 @@
+id: kutlecekim-dalgalari
+parent: genel-gorelilik
+type: event
+date: { year: 2016, month: 2 }
+people: [LIGO Scientific Collaboration, Virgo Collaboration]
+title:
+  tr: Kütleçekim dalgalarının doğrudan gözlenmesi
+  en: Direct detection of gravitational waves
+summary:
+  tr: >-
+    Genel göreliliğe göre çarpışan kara delikler uzay-zamanda dalgalanmalar yaratır. LIGO dedektörleri 14 Eylül 2015'te,
+    1,3 milyar ışık yılı uzaktaki iki kara deliğin birleşmesinden gelen böyle bir sinyali kaydetti. Sonuç Şubat 2016'da
+    duyuruldu. O zamandan beri yüzlerce benzer olay gözlendi.
+  en: >-
+    According to general relativity, colliding black holes create ripples in spacetime. On 14 September 2015 the LIGO
+    detectors recorded such a signal from the merger of two black holes 1.3 billion light-years away. The result was
+    announced in February 2016. Hundreds of similar events have been observed since.
+technical:
+  tr: >-
+    GW150914 sinyali, 4 km kollu iki lazer girişimölçerinde yaklaşık 10⁻²¹ gerinim genliğiyle ve 7 ms arayla kaydedildi.
+    Sinyal, yaklaşık 36 ve 29 güneş kütleli kara deliklerin birleşmesine ait sayısal görelilik dalga biçimiyle eşleşti.
+    Tespitin anlamlılığı 5,1σ'nın üzerindedir. 2017'deki GW170817 nötron yıldızı birleşmesi elektromanyetik karşılıklarıyla
+    birlikte gözlendi. Bu gözlem kütleçekim dalgalarının hızının ışık hızına eşit olduğunu yaklaşık 10⁻¹⁵ hassasiyetle
+    gösterdi.
+  en: >-
+    The GW150914 signal was recorded by two laser interferometers with 4 km arms at a strain amplitude of about 10⁻²¹,
+    7 ms apart. It matched a numerical-relativity waveform for the merger of black holes of about 36 and 29 solar masses.
+    The significance exceeds 5.1σ. The 2017 neutron-star merger GW170817 was observed together with its electromagnetic
+    counterparts, showing that gravitational waves travel at the speed of light to about 10⁻¹⁵.
+claims:
+  - tr: Kütleçekim dalgaları vardır ve genel göreliliğin öngördüğü biçimdedir.
+    en: Gravitational waves exist and have the form predicted by general relativity.
+    src: [abbott2016]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Birbirinden 3000 km uzaktaki iki dedektör, aynı dalga biçimini ışık yolculuk süresiyle uyumlu bir gecikmeyle kaydetti.
+    en: Two detectors 3,000 km apart recorded the same waveform with a delay consistent with light travel time.
+    src: [abbott2016]
+  - kind: critique
+    stance: against
+    tr: Bağımsız bir grup, iki dedektörün gürültüsünde beklenmeyen korelasyonlar bulunduğunu ileri sürdü. LIGO ekibi ve başka analizler bu korelasyonların sonucu etkilemediğini savundu.
+    en: An independent group claimed to find unexpected correlations in the noise of the two detectors; the LIGO team and other analyses argued these do not affect the result.
+    src: [creswell2017]
+sources:
+  abbott2016:
+    type: article
+    authors: Abbott, B. P. et al. (LIGO Scientific Collaboration and Virgo Collaboration)
+    title: Observation of gravitational waves from a binary black hole merger
+    year: 2016
+    in: Physical Review Letters 116, 061102
+    doi: 10.1103/PhysRevLett.116.061102
+  creswell2017:
+    type: article
+    authors: Creswell, J.; von Hausegger, S.; Jackson, A. D.; Naselsky, H.; Naselsky, P.
+    title: On the time lags of the LIGO signals
+    year: 2017
+    in: Journal of Cosmology and Astroparticle Physics 2017(08), 013
+    doi: 10.1088/1475-7516/2017/08/013

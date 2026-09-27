@@ -1,0 +1,69 @@
+id: mikrop-kurami
+parent: tip
+type: idea
+date: { year: 1876 }
+people: [Ignaz Semmelweis, Louis Pasteur, Robert Koch, John Snow]
+title:
+  tr: Mikrop kuramı
+  en: Germ theory of disease
+summary:
+  tr: >-
+    19. yüzyılın ortasına kadar birçok hastalığın "kötü hava" (miazma) yoluyla yayıldığı düşünülüyordu. Semmelweis'in el
+    yıkama gözlemleri, Snow'un kolera haritası, Pasteur'ün deneyleri ve Koch'un şarbon ile verem bakterisini
+    tanımlaması, belirli hastalıklara belirli mikroorganizmaların yol açtığı görüşünü yerleştirdi.
+  en: >-
+    Until the mid-19th century many diseases were thought to spread through "bad air" (miasma). Semmelweis's
+    hand-washing observations, Snow's cholera map, Pasteur's experiments and Koch's identification of the anthrax and
+    tuberculosis bacteria established the view that specific microorganisms cause specific diseases.
+technical:
+  tr: >-
+    Koch (1876), Bacillus anthracis'i saf kültürde üretip hastalığı yeniden oluşturdu. Koch'un postulatları bir
+    mikroorganizmanın bir hastalığın nedeni sayılması için ölçütler koyar. Asemptomatik taşıyıcılar, kültürü yapılamayan
+    etkenler ve prionlar bu ölçütlerin sınırlarını göstermiştir. Semmelweis 1847'de klorlu kireçle el yıkamanın
+    lohusa humması ölümlerini ciddi ölçüde düşürdüğünü gösterdi. Ancak çağdaşları bu bulguyu büyük ölçüde reddetti.
+  en: >-
+    Koch (1876) grew Bacillus anthracis in pure culture and reproduced the disease. Koch's postulates set criteria for
+    regarding a microorganism as the cause of a disease; asymptomatic carriers, unculturable agents and prions have shown
+    their limits. In 1847 Semmelweis showed that washing hands with chlorinated lime sharply reduced deaths from puerperal
+    fever, a finding largely rejected by his contemporaries.
+claims:
+  - tr: Bulaşıcı hastalıkların her birine belirli mikroorganizmalar neden olur.
+    en: Each infectious disease is caused by specific microorganisms.
+    src: [koch1876]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Saf kültürde üretilen şarbon basili sağlıklı hayvanlara verildiğinde aynı hastalığı oluşturdu.
+    en: Anthrax bacilli grown in pure culture produced the same disease when given to healthy animals.
+    src: [koch1876]
+  - kind: statistical
+    stance: for
+    tr: Klorlu suyla el yıkamanın başlatılmasından sonra doğum kliniğinde anne ölüm oranı yaklaşık %18'den %2'nin altına düştü.
+    en: After hand-washing with chlorinated water was introduced, maternal mortality in the clinic fell from about 18% to below 2%.
+    src: [semmelweis1861]
+  - kind: critique
+    stance: against
+    tr: Taşıyıcılar, kültürü yapılamayan etkenler ve prion hastalıkları, Koch postulatlarının her durumda uygulanamayacağını gösterdi.
+    en: Carriers, unculturable agents and prion diseases showed that Koch's postulates cannot be applied in every case.
+    src: [fredricks1996]
+sources:
+  koch1876:
+    type: article
+    authors: Koch, R.
+    title: Die Ätiologie der Milzbrand-Krankheit, begründet auf die Entwicklungsgeschichte des Bacillus Anthracis
+    year: 1876
+    in: Beiträge zur Biologie der Pflanzen 2, 277–310
+  semmelweis1861:
+    type: book
+    authors: Semmelweis, I.
+    title: Die Ätiologie, der Begriff und die Prophylaxis des Kindbettfiebers
+    year: 1861
+    in: Hartleben, Pest–Wien–Leipzig
+  fredricks1996:
+    type: article
+    authors: Fredricks, D. N.; Relman, D. A.
+    title: "Sequence-based identification of microbial pathogens: a reconsideration of Koch's postulates"
+    year: 1996
+    in: Clinical Microbiology Reviews 9(1), 18–33
+    doi: 10.1128/CMR.9.1.18
+related: [asi, penisilin]

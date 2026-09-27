@@ -1,0 +1,61 @@
+id: hammurabi
+parent: toplum
+type: text
+date: { year: -1754, approx: true }
+people: [Hammurabi]
+title:
+  tr: Hammurabi Kanunları
+  en: The Laws of Hammurabi
+summary:
+  tr: >-
+    Babil kralı Hammurabi'nin döneminde bir taş dikmeye kazınan yaklaşık 280 hüküm, bilinen en kapsamlı eski yazılı
+    hukuk metinlerinden biridir. Hükümler "göze göz" ilkesini, ticareti, aileyi ve cezaları düzenler. Cezalar, kişinin
+    toplumsal sınıfına göre değişir. Metnin günlük hayatta gerçekten uygulanan bir kanun mu, yoksa kralın adaletini
+    gösteren bir metin mi olduğu tartışılır.
+  en: >-
+    Around 280 provisions carved on a stone stele under the Babylonian king Hammurabi form one of the most extensive
+    early written legal texts known. They regulate "an eye for an eye", trade, family and punishments, which vary with a
+    person's social class. Whether the text was a code actually applied in daily life or a display of the king's justice
+    is debated.
+technical:
+  tr: >-
+    Dikme bugün Louvre'dadır. Metin bir önsöz, hükümler ve bir sonsözden oluşur. Önceki Ur-Nammu ve Lipit-İştar yasa
+    derlemeleri daha kısadır. Hukuk tarihçilerinin bir kısmı, dönemin mahkeme belgelerinde bu metne nadiren atıf
+    yapıldığını not eder. Bu nedenle metni bağlayıcı bir yasa kitabından çok bir adalet örnekleri derlemesi olarak
+    yorumlar.
+  en: >-
+    The stele is now in the Louvre. The text consists of a prologue, the provisions and an epilogue. The earlier law
+    collections of Ur-Nammu and Lipit-Ishtar are shorter. Some legal historians note that the text is rarely cited in
+    the court records of the period and therefore read it as a collection of exemplary judgements rather than a binding
+    law code.
+claims:
+  - tr: Hammurabi Kanunları, Babil'de uygulanan bağlayıcı bir hukuk kitabıydı.
+    en: The Laws of Hammurabi were a binding law code applied in Babylon.
+    src: [roth1997]
+positions:
+  - who:
+      tr: Hukuk kitabı yorumu
+      en: Law-code reading
+    tr: Metin, krallık genelinde uygulanmak üzere yazılmış yasal düzenlemeler içerir.
+    en: The text contains legal rules written to be applied across the kingdom.
+    src: [roth1997]
+  - who:
+      tr: Adalet örnekleri yorumu
+      en: Exemplary-justice reading
+    tr: Metin bağlayıcı bir kanun değil, kralın adil hükümdar imajını yansıtan örnek kararların derlemesidir.
+    en: The text is not binding law but a collection of model judgements projecting the king's image as a just ruler.
+    src: [westbrook1989]
+sources:
+  roth1997:
+    type: book
+    authors: Roth, M. T.
+    title: Law Collections from Mesopotamia and Asia Minor
+    year: 1997
+    in: Scholars Press, Atlanta (SBL Writings from the Ancient World 6), 2nd edition
+  westbrook1989:
+    type: article
+    authors: Westbrook, R.
+    title: Cuneiform law codes and the origins of legislation
+    year: 1989
+    in: Zeitschrift für Assyriologie 79, 201–222
+related: [yazi]

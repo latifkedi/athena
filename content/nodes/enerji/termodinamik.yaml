@@ -1,0 +1,68 @@
+id: termodinamik
+parent: enerji
+type: idea
+date: { year: 1850 }
+people: [Sadi Carnot, James Prescott Joule, Rudolf Clausius, William Thomson (Lord Kelvin)]
+title:
+  tr: Termodinamik yasaları
+  en: The laws of thermodynamics
+summary:
+  tr: >-
+    Enerji yoktan var edilemez ve yok edilemez, yalnızca biçim değiştirir (birinci yasa). Isı kendiliğinden soğuktan
+    sıcağa akmaz ve hiçbir makine ısının tamamını işe çeviremez (ikinci yasa). Bu yasalar buhar makinesinden buzdolabına
+    kadar tüm makinelerin sınırlarını belirler.
+  en: >-
+    Energy cannot be created or destroyed, only changed in form (first law). Heat does not flow by itself from cold to
+    hot, and no engine can turn all heat into work (second law). These laws set the limits of every machine from the
+    steam engine to the refrigerator.
+technical:
+  tr: >-
+    Carnot (1824) ideal bir ısı makinesinin veriminin yalnızca sıcaklıklara bağlı olduğunu gösterdi (η = 1 − T_c/T_h).
+    Joule'un kürek çarkı deneyleri ısının mekanik eşdeğerini ölçtü. Clausius (1850, 1865) birinci ve ikinci yasayı
+    biçimlendirip entropi kavramını tanımladı. Boltzmann ikinci yasaya istatistiksel bir yorum getirdi (S = k log W).
+    Buna göre yasa kesin değil, aşırı yüksek olasılıklı bir davranıştır. Küçük sistemlerde entropinin geçici olarak
+    azaldığı dalgalanmalar deneyle gözlenmiştir.
+  en: >-
+    Carnot (1824) showed that the efficiency of an ideal heat engine depends only on temperatures (η = 1 − T_c/T_h).
+    Joule's paddle-wheel experiments measured the mechanical equivalent of heat. Clausius (1850, 1865) formulated the
+    first and second laws and defined entropy. Boltzmann gave the second law a statistical interpretation
+    (S = k log W): it is not strict but overwhelmingly probable behaviour. Fluctuations in which entropy decreases
+    temporarily in small systems have been observed experimentally.
+claims:
+  - tr: Kapalı bir sistemde enerji korunur. Yalıtılmış bir sistemin entropisi azalmaz.
+    en: Energy is conserved in a closed system; the entropy of an isolated system does not decrease.
+    src: [clausius1850]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Joule, düşen ağırlıkların çevirdiği bir kürek çarkının suyu ısıttığını ve harcanan iş ile üretilen ısının sabit bir oranda olduğunu ölçtü.
+    en: Joule measured that a paddle wheel driven by falling weights heats water, with a constant ratio between work done and heat produced.
+    src: [joule1850]
+  - kind: experiment
+    stance: against
+    tr: Mikroskobik sistemlerde kısa süreler boyunca entropinin azaldığı ve ikinci yasanın "ihlal edildiği" durumlar ölçüldü. Bu, dalgalanma teoreminin istatistiksel tahminleriyle uyumludur.
+    en: Short-lived entropy decreases, apparent "violations" of the second law, were measured in microscopic systems, in line with the statistical predictions of the fluctuation theorem.
+    src: [wang2002]
+sources:
+  clausius1850:
+    type: article
+    authors: Clausius, R.
+    title: Ueber die bewegende Kraft der Wärme und die Gesetze, welche sich daraus für die Wärmelehre selbst ableiten lassen
+    year: 1850
+    in: Annalen der Physik 155(3), 368–397
+    doi: 10.1002/andp.18501550306
+  joule1850:
+    type: article
+    authors: Joule, J. P.
+    title: On the mechanical equivalent of heat
+    year: 1850
+    in: Philosophical Transactions of the Royal Society of London 140, 61–82
+    doi: 10.1098/rstl.1850.0004
+  wang2002:
+    type: article
+    authors: Wang, G. M.; Sevick, E. M.; Mittag, E.; Searles, D. J.; Evans, D. J.
+    title: Experimental demonstration of violations of the second law of thermodynamics for small systems and short time scales
+    year: 2002
+    in: Physical Review Letters 89, 050601
+    doi: 10.1103/PhysRevLett.89.050601
+related: [buhar-makinesi, surekli-hareket]

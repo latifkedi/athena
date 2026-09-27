@@ -1,0 +1,61 @@
+id: k2-18b
+parent: ote-gezegenler
+type: event
+date: { year: 2025, month: 4 }
+people: [Nikku Madhusudhan]
+title:
+  tr: K2-18 b'de yaşam izi iddiası
+  en: The claimed biosignature on K2-18 b
+summary:
+  tr: >-
+    Nisan 2025'te bir ekip, JWST verilerine dayanarak K2-18 b gezegeninin atmosferinde, Dünya'da yalnızca canlıların
+    ürettiği bilinen dimetil sülfit (DMS) gazına dair "şimdiye kadarki en güçlü işaretleri" bulduğunu açıkladı. Diğer
+    ekiplerin yaptığı yeniden analizler, verilerin bu gazın varlığını gösterecek kadar güçlü olmadığı sonucuna vardı.
+  en: >-
+    In April 2025 a team announced, based on JWST data, "the strongest hints yet" of dimethyl sulfide (DMS), a gas known on
+    Earth to be produced only by living things, in the atmosphere of the planet K2-18 b. Reanalyses by other teams
+    concluded that the data are not strong enough to show that the gas is present.
+technical:
+  tr: >-
+    Madhusudhan ve arkadaşları, MIRI orta kızılötesi geçiş tayfında DMS ve/veya DMDS için yaklaşık 3σ anlamlılık bildirdi.
+    Taylor (2025), MIRI verisinin düz bir çizgiden istatistiksel olarak ayırt edilemediğini gösterdi. Welbanks ve
+    arkadaşları (2025) sınırlı molekül kümeleriyle yapılan Bayesçi model karşılaştırmalarının bir "tespit" anlamına
+    gelmediğini, propin gibi başka moleküllerin de eşit ya da daha iyi uyum sağladığını gösterdi. NIRISS, NIRSpec ve MIRI
+    verilerinin ortak analizi DMS için yetersiz kanıt buldu.
+  en: >-
+    Madhusudhan and colleagues reported about 3σ significance for DMS and/or DMDS in the MIRI mid-infrared transmission
+    spectrum. Taylor (2025) showed that the MIRI data are statistically indistinguishable from a flat line. Welbanks et al.
+    (2025) showed that Bayesian model comparisons with limited sets of molecules do not amount to a "detection", and that
+    other molecules such as propyne fit equally well or better. A joint analysis of NIRISS, NIRSpec and MIRI data found
+    insufficient evidence for DMS.
+claims:
+  - tr: K2-18 b atmosferinde dimetil sülfit ve/veya dimetil disülfit vardır. Bu gazlar biyolojik bir kökene işaret edebilir.
+    en: The atmosphere of K2-18 b contains dimethyl sulfide and/or dimethyl disulfide, which may indicate a biological origin.
+    src: [madhusudhan2025]
+evidence:
+  - kind: observation
+    stance: for
+    tr: MIRI tayfındaki özellikler, DMS/DMDS içeren modellerle yaklaşık 3σ düzeyinde daha iyi açıklandı.
+    en: Features in the MIRI spectrum were better explained by models including DMS/DMDS at about 3σ.
+    src: [madhusudhan2025]
+  - kind: statistical
+    stance: against
+    tr: NIRISS, NIRSpec ve MIRI verilerinin ortak analizinde, DMS eklenmesi Bayesçi kanıtı anlamlı biçimde artırmadı ve başka moleküller benzer uyum sağladı.
+    en: In a joint analysis of NIRISS, NIRSpec and MIRI data, adding DMS did not significantly increase the Bayesian evidence, and other molecules gave similar fits.
+    src: [schmidt2025]
+sources:
+  madhusudhan2025:
+    type: article
+    authors: Madhusudhan, N. et al.
+    title: New constraints on DMS and DMDS in the atmosphere of K2-18 b from JWST MIRI
+    year: 2025
+    in: The Astrophysical Journal Letters 983, L40
+    arxiv: '2504.12267'
+  schmidt2025:
+    type: article
+    authors: Schmidt, S. P. et al.
+    title: Insufficient evidence for DMS and DMDS in the atmosphere of K2-18 b. From a joint analysis of JWST NIRISS, NIRSpec, and MIRI observations
+    year: 2025
+    in: Astronomy & Astrophysics
+    url: https://www.aanda.org/articles/aa/full_html/2025/08/aa55580-25/aa55580-25.html
+related: [abiyogenez]

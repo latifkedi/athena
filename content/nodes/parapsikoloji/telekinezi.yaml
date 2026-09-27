@@ -1,0 +1,96 @@
+id: telekinezi
+parent: parapsikoloji
+type: idea
+people: [Robert Jahn, Brenda Dunne, Holger Bösch, Dean Radin]
+title:
+  tr: Telekinezi ve psikokinezi
+  en: Telekinesis and psychokinesis
+summary:
+  tr: >-
+    Telekinezi ya da psikokinezi, zihnin fiziksel dokunma olmadan maddeyi veya fiziksel süreçleri etkileyebileceği
+    iddiasıdır. Tarih boyunca pek çok kişi büyük nesneleri hareket ettirebildiğini iddia etti. Laboratuvar araştırmaları
+    ise daha çok, insanların niyetiyle rastgele sayı üreteçlerinin çıktısını az da olsa etkileyip etkileyemeyeceğine
+    odaklandı. Bu deneylerin sonuçları tartışmalıdır.
+  en: >-
+    Telekinesis or psychokinesis is the claim that the mind can influence matter or physical processes without physical
+    contact. Throughout history many people have claimed to move large objects. Laboratory research has focused mostly on
+    whether human intention can slightly influence the output of random number generators. The results of these
+    experiments are disputed.
+technical:
+  tr: >-
+    Princeton Engineering Anomalies Research (PEAR) laboratuvarı 1979–2007 yılları arasında milyonlarca RNG denemesinde
+    niyet yönünde çok küçük bir sapma (yaklaşık 10⁻⁴ düzeyinde) bildirdi. Almanya ve ABD'de yapılan üç merkezli bir
+    tekrar çalışması bu etkiyi doğrulayamadı. Bösch ve arkadaşlarının 380 çalışmalık meta-analizi küçük ama anlamlı bir
+    etki buldu. Ancak etki büyüklüğü ile örneklem büyüklüğü arasındaki ters ilişki nedeniyle bunun yayın yanlılığıyla
+    açıklanabileceğini belirtti. Radin ve arkadaşları bu yoruma itiraz etti.
+  en: >-
+    The Princeton Engineering Anomalies Research (PEAR) laboratory reported a very small shift in the direction of
+    intention (of order 10⁻⁴) over millions of RNG trials between 1979 and 2007. A three-centre replication in Germany
+    and the US could not confirm the effect. Bösch and colleagues' meta-analysis of 380 studies found a small but
+    significant effect but noted that, because of an inverse relation between effect size and sample size, it could be
+    explained by publication bias. Radin and colleagues disputed this interpretation.
+claims:
+  - tr: İnsan niyeti, rastgele fiziksel süreçlerin sonuçlarını dokunmadan etkileyebilir.
+    en: Human intention can influence the outcomes of random physical processes without contact.
+    src: [jahn1997]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: PEAR laboratuvarındaki çok sayıda denemede, rastgele sayı üreteçlerinin çıktısı katılımcıların niyet ettiği yönde istatistiksel olarak anlamlı ama çok küçük bir sapma gösterdi.
+    en: Over a very large number of trials at the PEAR laboratory, RNG output showed a statistically significant but very small shift in the direction participants intended.
+    src: [jahn1997]
+  - kind: statistical
+    stance: for
+    tr: 380 RNG çalışmasının meta-analizinde rastlantıdan anlamlı biçimde farklı, çok küçük bir ortalama etki bulundu.
+    en: A meta-analysis of 380 RNG studies found a very small mean effect significantly different from chance.
+    src: [bosch2006]
+  - kind: replication
+    stance: against
+    tr: Üç laboratuvarda yürütülen ortak tekrar çalışması, PEAR'ın bildirdiği etkiyi yeniden üretemedi.
+    en: A joint replication conducted in three laboratories failed to reproduce the effect reported by PEAR.
+    src: [jahn2000]
+  - kind: statistical
+    stance: against
+    tr: Aynı meta-analizde küçük çalışmaların büyük etkiler, büyük çalışmaların sıfıra yakın etkiler göstermesi yayın yanlılığına işaret olarak yorumlandı.
+    en: In the same meta-analysis, small studies showing large effects and large studies showing near-zero effects was interpreted as a sign of publication bias.
+    src: [bosch2006, wilson2006]
+  - kind: critique
+    stance: for
+    tr: Meta-analizdeki etkinin yayın yanlılığıyla açıklanması için gereken yayımlanmamış çalışma sayısının gerçekçi olmadığı savunuldu.
+    en: It was argued that the number of unpublished studies required to explain the meta-analytic effect by publication bias is unrealistic.
+    src: [radin2006]
+sources:
+  jahn1997:
+    type: article
+    authors: Jahn, R. G.; Dunne, B. J.; Nelson, R. D.; Dobyns, Y. H.; Bradish, G. J.
+    title: 'Correlations of random binary sequences with pre-stated operator intention: a review of a 12-year program'
+    year: 1997
+    in: Journal of Scientific Exploration 11(3), 345–367
+  jahn2000:
+    type: article
+    authors: Jahn, R. et al.
+    title: 'Mind/Machine Interaction Consortium: PortREG replication experiments'
+    year: 2000
+    in: Journal of Scientific Exploration 14(4), 499–555
+  bosch2006:
+    type: article
+    authors: Bösch, H.; Steinkamp, F.; Boller, E.
+    title: 'Examining psychokinesis: the interaction of human intention with random number generators — a meta-analysis'
+    year: 2006
+    in: Psychological Bulletin 132(4), 497–523
+    doi: 10.1037/0033-2909.132.4.497
+  wilson2006:
+    type: article
+    authors: Wilson, D. B.; Shadish, W. R.
+    title: 'On blowing trumpets to the tulips: to prove or not to prove the null hypothesis — comment on Bösch, Steinkamp, and Boller (2006)'
+    year: 2006
+    in: Psychological Bulletin 132(4), 524–528
+    doi: 10.1037/0033-2909.132.4.524
+  radin2006:
+    type: article
+    authors: Radin, D.; Nelson, R.; Dobyns, Y.; Houtkooper, J.
+    title: 'Reexamining psychokinesis: comment on Bösch, Steinkamp, and Boller (2006)'
+    year: 2006
+    in: Psychological Bulletin 132(4), 529–532
+    doi: 10.1037/0033-2909.132.4.529
+related: [kuantum-mekanigi]

@@ -1,0 +1,85 @@
+id: yazi
+parent: ilk-bilgiler
+type: technology
+order: 5
+title:
+  tr: Yazının icadı
+  en: The invention of writing
+summary:
+  tr: >-
+    Yazı, bilginin kişiden bağımsız olarak saklanıp aktarılmasını sağladı ve "tarih" onunla başlar. Arkeolojiye göre
+    Mezopotamya, Mısır, Çin ve Mezoamerika'da birbirinden bağımsız olarak geliştirildi. İslam geleneğinde kalemle ilk
+    yazanın İdris peygamber olduğu rivayet edilir.
+  en: >-
+    Writing let knowledge be stored and passed on independently of any person, and "history" begins with it.
+    According to archaeology it was developed independently in Mesopotamia, Egypt, China and Mesoamerica. In Islamic
+    tradition the prophet Idris is reported to have been the first to write with a pen.
+technical:
+  tr: >-
+    Güney Mezopotamya'da Uruk IV katmanının proto-çivi yazılı tabletleri çoğunlukla idari muhasebe kayıtlarıdır.
+    Bunların kil sayma jetonlarından (token) ve silindir mühürlerden geliştiği görüşü Schmandt-Besserat ile özdeşleşmiştir.
+    Mısır'da Abydos U-j mezarındaki etiketler benzer bir döneme tarihlenir. Çin'de kehanet kemikleri (Şang, y. MÖ 1250)
+    ve Mezoamerika'da Olmek/Zapotek yazıtları bağımsız icat örnekleri olarak kabul edilir. Jeton hipotezi eleştirilmiş,
+    özellikle jetonlarla tablet işaretleri arasındaki eşleşmelerin seçici olduğu ileri sürülmüştür.
+  en: >-
+    The proto-cuneiform tablets of the Uruk IV level in southern Mesopotamia are mostly administrative accounts. The
+    view that they developed from clay counting tokens and cylinder seals is associated with Schmandt-Besserat. The
+    labels from tomb U-j at Abydos in Egypt date to a similar period. Chinese oracle bones (Shang, c. 1250 BCE) and
+    Olmec/Zapotec inscriptions in Mesoamerica are regarded as independent inventions. The token hypothesis has been
+    criticised, notably on the grounds that the matches between tokens and tablet signs are selective.
+datings:
+  - view:
+      tr: Arkeoloji (Mezopotamya, Uruk)
+      en: Archaeology (Mesopotamia, Uruk)
+    value:
+      tr: Yaklaşık MÖ 3400–3200
+      en: About 3400–3200 BCE
+    src: [woods2010]
+  - view:
+      tr: Arkeoloji (Mısır, Abydos U-j)
+      en: Archaeology (Egypt, Abydos U-j)
+    value:
+      tr: Yaklaşık MÖ 3250
+      en: About 3250 BCE
+    src: [woods2010]
+  - view:
+      tr: İslam geleneği (tefsir ve kısas-ı enbiya)
+      en: Islamic tradition (exegesis and stories of the prophets)
+    value:
+      tr: Kalemle ilk yazan İdris peygamberdir. Kur'an bir tarih vermez.
+      en: The prophet Idris was the first to write with a pen. The Qur'an gives no date.
+    src: [tdv-idris]
+claims:
+  - tr: Mezopotamya'da yazı, muhasebede kullanılan kil sayma jetonlarından gelişti.
+    en: In Mesopotamia, writing developed out of clay counting tokens used in accounting.
+    src: [schmandt1996]
+evidence:
+  - kind: archaeological
+    stance: for
+    tr: Ortadoğu'da binlerce yıl boyunca kullanılan geometrik kil jetonların bazı biçimleri, erken tabletlerdeki sayı ve mal işaretlerine benzer.
+    en: Some forms of the geometric clay tokens used for millennia in the Near East resemble the numeral and commodity signs on early tablets.
+    src: [schmandt1996]
+  - kind: critique
+    stance: against
+    tr: Eleştirmenler, jeton biçimleriyle yazı işaretleri arasındaki eşleşmelerin seçici yapıldığını ve pek çok işaretin jetonlarda karşılığı olmadığını belirtti.
+    en: Critics noted that the matches between token shapes and script signs were selective and that many signs have no counterpart among the tokens.
+    src: [woods2010]
+sources:
+  schmandt1996:
+    type: book
+    authors: Schmandt-Besserat, D.
+    title: How Writing Came About
+    year: 1996
+    in: University of Texas Press, Austin
+  woods2010:
+    type: book
+    authors: Woods, C. (ed.)
+    title: 'Visible Language: Inventions of Writing in the Ancient Middle East and Beyond'
+    year: 2010
+    in: Oriental Institute Museum Publications 32, University of Chicago
+  tdv-idris:
+    type: encyclopedia
+    title: İdrîs
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/idris
+related: [sayma]

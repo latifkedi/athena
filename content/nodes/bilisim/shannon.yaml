@@ -1,0 +1,46 @@
+id: shannon
+parent: bilisim
+type: event
+date: { year: 1948 }
+people: [Claude Shannon]
+title:
+  tr: Bilgi kuramı
+  en: Information theory
+summary:
+  tr: >-
+    Shannon 1948'de bilgiyi "bit" birimiyle ölçülebilir hâle getirdi. Gürültülü bir kanaldan hatasız iletilebilecek
+    en yüksek bilgi miktarını hesapladı. Bu çalışma internetten cep telefonlarına, veri sıkıştırmadan uzay iletişimine
+    kadar tüm dijital iletişimin temelidir.
+  en: >-
+    In 1948 Shannon made information measurable in units of "bits" and calculated the maximum amount of information that
+    can be sent without error over a noisy channel. The work underlies all digital communication, from the internet and
+    mobile phones to data compression and space communication.
+technical:
+  tr: >-
+    Entropi H = −Σ pᵢ log₂ pᵢ bir kaynağın ortalama bilgi içeriğini verir. Kaynak kodlama teoremi, kayıpsız sıkıştırmanın
+    alt sınırının entropi olduğunu söyler. Kanal kodlama teoremi, kapasitenin altındaki hızlarda hata olasılığının keyfî
+    ölçüde küçültülebileceğini gösterir. Gauss kanalı için kapasite C = B log₂(1 + S/N)'dir. Turbo ve LDPC kodları Shannon
+    sınırına çok yaklaşır.
+  en: >-
+    Entropy H = −Σ pᵢ log₂ pᵢ gives the average information content of a source. The source-coding theorem states that
+    entropy is the lower bound for lossless compression; the channel-coding theorem shows that below capacity the error
+    probability can be made arbitrarily small. For the Gaussian channel the capacity is C = B log₂(1 + S/N). Turbo and LDPC
+    codes come very close to the Shannon limit.
+claims:
+  - tr: Her iletişim kanalının bir kapasitesi vardır. Bu kapasitenin altında bilgi, istenen ölçüde küçük bir hata olasılığıyla iletilebilir.
+    en: Every communication channel has a capacity below which information can be sent with arbitrarily small error probability.
+    src: [shannon1948]
+evidence:
+  - kind: proof
+    stance: for
+    tr: Kanal kodlama teoremi rastgele kodlama argümanıyla ispatlandı.
+    en: The channel-coding theorem was proved with a random-coding argument.
+    src: [shannon1948]
+sources:
+  shannon1948:
+    type: article
+    authors: Shannon, C. E.
+    title: A mathematical theory of communication
+    year: 1948
+    in: Bell System Technical Journal 27(3), 379–423
+    doi: 10.1002/j.1538-7305.1948.tb01338.x

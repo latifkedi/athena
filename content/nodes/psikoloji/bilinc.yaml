@@ -1,0 +1,86 @@
+id: bilinc
+parent: psikoloji
+type: question
+people: [David Chalmers, Giulio Tononi, Stanislas Dehaene, Cogitate Consortium]
+title:
+  tr: Bilinç (açık soru)
+  en: Consciousness (open question)
+summary:
+  tr: >-
+    Beyindeki fiziksel süreçlerin nasıl olup da öznel bir deneyim ("bir şey olmanın nasıl bir şey olduğu") ortaya
+    çıkardığı sorusuna Chalmers "zor problem" adını verdi. Bilinç üzerine birçok bilimsel kuram vardır. 2025'te iki önde
+    gelen kuramın öngörüleri, taraflarca önceden kararlaştırılan bir deneyle sınandı. İki kuram da öngörülerinin
+    tamamını doğrulatamadı. Dinî ve felsefi gelenekler ise bilinci ruh ve nefs kavramlarıyla açıklar.
+  en: >-
+    Chalmers called the question of how physical processes in the brain give rise to subjective experience ("what it is
+    like to be something") the "hard problem". There are many scientific theories of consciousness. In 2025 the
+    predictions of two leading theories were tested in an experiment agreed in advance by their proponents; neither had
+    all its predictions confirmed. Religious and philosophical traditions explain consciousness through concepts of soul
+    (rūḥ) and self (nafs).
+technical:
+  tr: >-
+    Bütünleşik bilgi kuramı (IIT), bilinci bir sistemin bütünleşik bilgi miktarı (Φ) ile özdeşleştirir ve arka korteksi
+    öne çıkarır. Küresel sinirsel çalışma alanı kuramı (GNWT) ise bilgiyi prefrontal ağlara yayan "ateşlenme" olaylarını
+    öne çıkarır. Cogitate Konsorsiyumu'nun ön kayıtlı deneyinde 256 katılımcıda fMRI, MEG ve kafa içi EEG kullanıldı.
+    Her iki kuramın bazı temel öngörüleri doğrulanmadı. IIT için arka kortekste süregelen senkronizasyon, GNWT için ise
+    uyaran bitiminde prefrontal ateşlenme gözlenmedi.
+  en: >-
+    Integrated information theory (IIT) identifies consciousness with a system's integrated information (Φ) and
+    emphasises posterior cortex. Global neuronal workspace theory (GNWT) emphasises "ignition" events broadcasting
+    information across prefrontal networks. The Cogitate Consortium's preregistered experiment used fMRI, MEG and
+    intracranial EEG in 256 participants. Some core predictions of both theories were not confirmed: sustained posterior
+    synchronisation for IIT and prefrontal ignition at stimulus offset for GNWT were not observed.
+claims:
+  - tr: Bilincin fiziksel süreçlerle nasıl ilişkili olduğu, işlevsel açıklamalardan ayrı bir "zor problem"dir.
+    en: How consciousness relates to physical processes is a "hard problem" distinct from functional explanations.
+    src: [chalmers1995]
+evidence:
+  - kind: experiment
+    stance: against
+    tr: IIT ve GNWT'nin önceden kaydedilen öngörüleri çok merkezli bir deneyde test edildi ve her iki kuramın bazı temel öngörüleri tutmadı.
+    en: The preregistered predictions of IIT and GNWT were tested in a multi-centre experiment, and some core predictions of both failed.
+    src: [cogitate2025]
+positions:
+  - who:
+      tr: Fizikalist görüş
+      en: Physicalist view
+    tr: Bilinç tamamen beynin fiziksel süreçleriyle açıklanabilir. "Zor problem" kavramsal bir yanılsamadır.
+    en: Consciousness can be fully explained by physical brain processes; the "hard problem" is a conceptual illusion.
+    src: [dennett1991]
+  - who:
+      tr: Özellik düalizmi ve panpsişizm
+      en: Property dualism and panpsychism
+    tr: Öznel deneyim fiziksel özelliklere indirgenemez. Bilincin doğanın temel bir özelliği olması mümkündür.
+    en: Subjective experience is not reducible to physical properties; consciousness may be a fundamental feature of nature.
+    src: [chalmers1995]
+  - who:
+      tr: İslam düşüncesi
+      en: Islamic thought
+    tr: İnsan yalnızca bedenden ibaret değildir. Ruh (rûh) Allah'ın emrindendir ve insana ondan ancak az bir bilgi verilmiştir (İsrâ 17:85).
+    en: The human being is not body alone; the spirit (rūḥ) is of God's command, and humans have been given only a little knowledge of it (al-Isrāʾ 17:85).
+    src: [kuran-17-85]
+sources:
+  chalmers1995:
+    type: article
+    authors: Chalmers, D. J.
+    title: Facing up to the problem of consciousness
+    year: 1995
+    in: Journal of Consciousness Studies 2(3), 200–219
+  cogitate2025:
+    type: article
+    authors: Cogitate Consortium
+    title: Adversarial testing of global neuronal workspace and integrated information theories of consciousness
+    year: 2025
+    in: Nature 642, 133–142
+    doi: 10.1038/s41586-025-08888-1
+  dennett1991:
+    type: book
+    authors: Dennett, D. C.
+    title: Consciousness Explained
+    year: 1991
+    in: Little, Brown and Co., Boston
+  kuran-17-85:
+    type: scripture
+    title: Kur'an-ı Kerim, İsrâ 17:85
+    url: https://quran.com/17/85
+related: [godel, tasavvuf, felsefe]

@@ -1,0 +1,57 @@
+id: ibn-rusd
+parent: islam-felsefesi
+type: text
+date: { year: 1180, approx: true }
+people: [İbn Rüşd / Ibn Rushd (Averroes)]
+title:
+  tr: İbn Rüşd ve Tehâfütü't-Tehâfüt
+  en: Ibn Rushd and The Incoherence of the Incoherence
+summary:
+  tr: >-
+    İbn Rüşd, Gazzâlî'nin filozofları eleştirdiği Tehâfütü'l-Felâsife'ye Tehâfütü't-Tehâfüt ile cevap verdi. Nedenselliği
+    savundu ve ateşin pamuğu yakmasının ateşin doğasından kaynaklandığını ileri sürdü. Felsefi düşünmenin dinen gerekli
+    olduğunu savundu. Latin dünyasında "İbn Rüşdçülük" (Averroizm) adlı bir akım doğdu.
+  en: >-
+    Ibn Rushd answered al-Ghazālī's critique of the philosophers, The Incoherence of the Philosophers, with The
+    Incoherence of the Incoherence. He defended causality, holding that fire burns cotton because of the nature of fire,
+    and argued that philosophical reflection is religiously required. A movement called Averroism arose in the Latin world.
+technical:
+  tr: >-
+    Tartışmanın merkezinde nedensellik, âlemin ezelîliği ve bedenin dirilişi gibi konular vardır. İbn Rüşd'e göre
+    nedenselliği reddetmek, şeylerin tanımlarını ve dolayısıyla bilgiyi imkânsız kılar. Faslü'l-makâl'de, burhan ehli
+    (filozoflar) için naslar ile akıl arasında görünen çelişkilerin te'vil yoluyla giderilmesini önerir.
+  en: >-
+    At the centre of the debate are causality, the eternity of the world and bodily resurrection. For Ibn Rushd,
+    denying causality makes the definitions of things, and hence knowledge, impossible. In Faṣl al-maqāl he proposes that
+    apparent conflicts between scriptural texts and reason be resolved for demonstrative thinkers (philosophers) through
+    interpretation (taʾwīl).
+claims:
+  - tr: Nesnelerin kendilerine özgü doğaları ve nedensel güçleri vardır. Nedenselliği reddetmek bilgiyi yıkar.
+    en: Things have their own natures and causal powers; denying causality destroys knowledge.
+    src: [vandenbergh1954]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Eğer şeylerin belirli etkileri yoksa, onları tanımlamak ve birbirinden ayırt etmek mümkün olmaz.
+    en: If things had no definite effects, it would be impossible to define and distinguish them.
+    src: [vandenbergh1954]
+sources:
+  vandenbergh1954:
+    type: book
+    authors: İbn Rüşd / Ibn Rushd; van den Bergh, S. (trans.)
+    title: 'Averroes'' Tahafut al-Tahafut (The Incoherence of the Incoherence)'
+    year: 1954
+    in: E. J. W. Gibb Memorial Trust / Oxford University Press
+  tdv-tehafutu-tehafut:
+    type: encyclopedia
+    title: Tehâfütü Tehâfüti'l-felâsife
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/tehafutu-tehafutil-felasife
+positions:
+  - who:
+      tr: TDV İslâm Ansiklopedisi
+      en: TDV Encyclopaedia of Islam
+    tr: Eser, Gazzâlî'nin Tehâfüt'üne mesele mesele cevap veren bir reddiyedir.
+    en: The work is a point-by-point rebuttal of al-Ghazālī's Tahāfut.
+    src: [tdv-tehafutu-tehafut]
+related: [gazali-tehafut]

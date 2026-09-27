@@ -1,0 +1,150 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang, NodeData } from '../lib/data';
+import { centerNode, getNode, allNodes } from '../lib/data';
+import { ui, t, url, nodePath, typeLabels, formatDate } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+// depth-first order = the tree as a table
+const rows: { n: NodeData; top: NodeData | null }[] = [];
+const walk = (id: string, top: NodeData | null) => {
+  const n = getNode(id)!;
+  rows.push({ n, top });
+  for (const c of n.children) walk(c, n.depth === 0 ? getNode(c)! : top);
+};
+walk(centerNode.id, null);
+const tops = centerNode.children.map((id) => getNode(id)!);
+const types = [...new Set(allNodes.map((n) => n.type))];
+const norm = (s: string) =>
+  s
+    .toLocaleLowerCase(lang)
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/ı/g, 'i');
+---
+
+<Base lang={lang} title={t(ui.nav.list, lang)} route="list">
+  <main class="wrap list">
+    <h1>{t(ui.nav.list, lang)}</h1>
+    <p class="muted">{rows.length} {t(ui.nodes, lang)}</p>
+    <div class="filters">
+      <input type="search" id="f-q" placeholder={t(ui.filterPlaceholder, lang)} aria-label={t(ui.filterPlaceholder, lang)} />
+      <select id="f-top" aria-label={t(ui.branch, lang)}>
+        <option value="">{t(ui.branch, lang)}: {t(ui.filterAll, lang)}</option>
+        {tops.map((n) => <option value={n.id}>{t(n.title, lang)}</option>)}
+      </select>
+      <select id="f-type" aria-label={t(ui.type, lang)}>
+        <option value="">{t(ui.type, lang)}: {t(ui.filterAll, lang)}</option>
+        {types.map((ty) => <option value={ty}>{t(typeLabels[ty], lang)}</option>)}
+      </select>
+    </div>
+    <table class="nodes">
+      <thead>
+        <tr>
+          <th>{lang === 'tr' ? 'Başlık' : 'Title'}</th>
+          <th class="hide-sm">{t(ui.type, lang)}</th>
+          <th>{t(ui.date, lang)}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map(({ n, top }) => (
+            <tr
+              data-top={top?.id ?? ''}
+              data-type={n.type}
+              data-q={norm(t(n.title, lang) + ' ' + t(n.summary, lang) + ' ' + n.people.join(' '))}
+            >
+              <td style={`padding-left:${8 + Math.max(0, n.depth - 1) * 18}px`}>
+                <span class={`dot ${n.side}`} />{' '}
+                <a href={url(nodePath(n.id, lang))} class={n.depth <= 1 ? 'strong' : ''}>
+                  {t(n.title, lang)}
+                </a>
+              </td>
+              <td class="hide-sm muted small">{t(typeLabels[n.type], lang)}</td>
+              <td class="muted small nowrap">
+                {n.date ? formatDate(n.date, lang) : n.datings.length ? t(ui.datings, lang) : ''}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </main>
+</Base>
+
+<script is:inline define:vars={{ lang }}>
+  const q = document.getElementById('f-q');
+  const top = document.getElementById('f-top');
+  const type = document.getElementById('f-type');
+  const rows = [...document.querySelectorAll('table.nodes tbody tr')];
+  const norm = (s) =>
+    s
+      .toLocaleLowerCase(lang)
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .replace(/ı/g, 'i');
+  function apply() {
+    const qq = norm(q.value.trim());
+    for (const r of rows) {
+      const ok =
+        (!qq || r.dataset.q.includes(qq)) &&
+        (!top.value || r.dataset.top === top.value) &&
+        (!type.value || r.dataset.type === type.value);
+      r.hidden = !ok;
+    }
+  }
+  [q, top, type].forEach((e) => e.addEventListener('input', apply));
+</script>
+
+<style>
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+  }
+  .filters input {
+    flex: 1 1 240px;
+  }
+  table.nodes {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table.nodes th {
+    text-align: left;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-3);
+    padding: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  table.nodes td {
+    padding: 7px 8px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.nodes a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  table.nodes a:hover {
+    color: var(--accent-ink);
+    text-decoration: underline;
+  }
+  .strong {
+    font-weight: 650;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    .hide-sm {
+      display: none;
+    }
+  }
+</style>

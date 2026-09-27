@@ -1,0 +1,107 @@
+id: tas-aletler
+parent: ilk-bilgiler
+type: technology
+order: 1
+title:
+  tr: Taş aletler
+  en: Stone tools
+summary:
+  tr: >-
+    Taşı yontarak kesici alet yapmak, insan soyuna atfedilen en eski teknolojidir. Bilinen en eski örneklerin kaç yaşında
+    olduğu ve kimin yaptığı hâlâ tartışılmaktadır.
+  en: >-
+    Knapping stone into cutting tools is the oldest technology attributed to the human lineage. How old the earliest
+    known examples are, and who made them, is still debated.
+technical:
+  tr: >-
+    Lomekwi 3 (Kenya) buluntuları, stratigrafik bağlam ve 40Ar/39Ar ile tarihlenmiş tüf katmanlarına göre yaklaşık 3,3
+    milyon yıl öncesine yerleştirilir ve "Lomekwiyen" endüstrisi olarak adlandırılır. Daha önce en eski kabul edilen
+    Olduvai (Oldowan) tipi aletler Gona'da (Etiyopya) yaklaşık 2,6–2,5 milyon yıla tarihlenir. Tartışma, Lomekwi
+    buluntularının yerinde (in situ) olup olmadığı ve tarihlendirilen katmanla ilişkisi üzerinde yoğunlaşır. Dikika'da
+    3,39 milyon yıllık kemiklerdeki izlerin kasaplık izi mi yoksa çiğneme/ezilme izi mi olduğu da tartışmalıdır.
+  en: >-
+    The Lomekwi 3 (Kenya) finds are placed at about 3.3 million years ago on the basis of stratigraphic context and
+    40Ar/39Ar-dated tuffs, and are called the "Lomekwian" industry. Oldowan tools, previously considered the oldest,
+    date to about 2.6–2.5 million years at Gona (Ethiopia). The debate centres on whether the Lomekwi finds were in
+    situ and on their relation to the dated layer. Whether marks on 3.39-million-year-old bones at Dikika are
+    butchery marks or trampling damage is also disputed.
+datings:
+  - view:
+      tr: Arkeoloji (Lomekwi 3, Kenya)
+      en: Archaeology (Lomekwi 3, Kenya)
+    value:
+      tr: Yaklaşık 3,3 milyon yıl önce
+      en: About 3.3 million years ago
+    src: [harmand2015]
+  - view:
+      tr: Arkeoloji (Gona, Etiyopya; Olduvai tipi)
+      en: Archaeology (Gona, Ethiopia; Oldowan)
+    value:
+      tr: Yaklaşık 2,6–2,5 milyon yıl önce
+      en: About 2.6–2.5 million years ago
+    src: [semaw1997]
+claims:
+  - tr: Kasıtlı olarak yontulmuş taş aletler Homo cinsinin ortaya çıkışından önce yapılmıştır.
+    en: Deliberately knapped stone tools were made before the appearance of the genus Homo.
+    src: [harmand2015]
+  - tr: Taş aletlerle hayvan kesimi 3,39 milyon yıl önce yapılıyordu.
+    en: Animals were butchered with stone tools 3.39 million years ago.
+    src: [mcpherron2010]
+evidence:
+  - kind: archaeological
+    stance: for
+    tr: Lomekwi 3'te 149 taş eser bulundu; bir kısmı tarihlendirilen tüf katmanının içinde yer alıyordu.
+    en: 149 stone artefacts were recovered at Lomekwi 3, some embedded in the dated tuff layer.
+    src: [harmand2015]
+  - kind: archaeological
+    stance: for
+    tr: Dikika'da (Etiyopya) 3,39 milyon yıllık hayvan kemiklerinde kesme ve vurma izlerine benzeyen izler bulundu.
+    en: Marks resembling cut and percussion marks were found on 3.39-million-year-old animal bones at Dikika (Ethiopia).
+    src: [mcpherron2010]
+  - kind: critique
+    stance: against
+    tr: Lomekwi eserlerinin bir kısmının yüzeyden toplandığı ve katmanla ilişkisinin yeterince gösterilmediği ileri sürüldü; daha fazla kanıt istendi.
+    en: It was argued that some Lomekwi artefacts were surface finds and that their association with the dated layer was insufficiently shown; more evidence was requested.
+    src: [dominguez2016]
+  - kind: critique
+    stance: against
+    tr: Dikika kemiklerindeki izlerin, hayvanların çiğnemesi ve tortu içinde ezilmeyle oluşan izlerle karıştırılabileceği savunuldu.
+    en: It was argued that the Dikika marks can be confused with damage from trampling and sediment abrasion.
+    src: [dominguez2010]
+sources:
+  harmand2015:
+    type: article
+    authors: Harmand, S. et al.
+    title: 3.3-million-year-old stone tools from Lomekwi 3, West Turkana, Kenya
+    year: 2015
+    in: Nature 521, 310–315
+    doi: 10.1038/nature14464
+  semaw1997:
+    type: article
+    authors: Semaw, S. et al.
+    title: 2.5-million-year-old stone tools from Gona, Ethiopia
+    year: 1997
+    in: Nature 385, 333–336
+    doi: 10.1038/385333a0
+  mcpherron2010:
+    type: article
+    authors: McPherron, S. P. et al.
+    title: Evidence for stone-tool-assisted consumption of animal tissues before 3.39 million years ago at Dikika, Ethiopia
+    year: 2010
+    in: Nature 466, 857–860
+    doi: 10.1038/nature09248
+  dominguez2010:
+    type: article
+    authors: Domínguez-Rodrigo, M.; Pickering, T. R.; Bunn, H. T.
+    title: Configurational approach to identifying the earliest hominin butchers
+    year: 2010
+    in: PNAS 107, 20929–20934
+    doi: 10.1073/pnas.1013711107
+  dominguez2016:
+    type: article
+    authors: Domínguez-Rodrigo, M.; Alcalá, L.
+    title: 3.3-million-year-old stone tools and butchery traces? More evidence needed
+    year: 2016
+    in: PaleoAnthropology 2016, 46–53
+    url: https://paleoanthropology.org/ojs/index.php/paleo/article/view/742/703
+related: [ates]

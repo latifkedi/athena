@@ -1,0 +1,107 @@
+---
+import * as yaml from 'js-yaml';
+import Base from '../layouts/Base.astro';
+import Cite from '../components/Cite.astro';
+import SourceList from '../components/SourceList.astro';
+import type { Lang, L10n, Source } from '../lib/data';
+import { getNode } from '../lib/data';
+import { ui, t, url, nodePath } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+interface Item {
+  title: L10n;
+  value: L10n;
+  text: L10n;
+  src?: string[];
+  node?: string;
+}
+interface Dash {
+  updated: string;
+  intro: L10n;
+  sections: { title: L10n; items: Item[] }[];
+  sources: Record<string, Omit<Source, 'key'>>;
+}
+const raw = Object.values(
+  import.meta.glob('/content/dashboard.yaml', { query: '?raw', import: 'default', eager: true }) as Record<string, string>,
+)[0];
+const dash = yaml.load(raw) as Dash;
+const sources: Source[] = Object.entries(dash.sources).map(([key, s]) => ({ key, ...s }));
+const index: Record<string, number> = {};
+sources.forEach((s, i) => (index[s.key] = i + 1));
+---
+
+<Base lang={lang} title={t(ui.nav.dashboard, lang)} route="dashboard">
+  <main class="wrap dash">
+    <h1>{t(ui.nav.dashboard, lang)}</h1>
+    <p class="muted">{t(dash.intro, lang)}</p>
+    <p class="small muted">{t(ui.lastUpdate, lang)}: {dash.updated}</p>
+
+    {
+      dash.sections.map((s) => (
+        <section>
+          <h2>{t(s.title, lang)}</h2>
+          <div class="grid">
+            {s.items.map((it) => {
+              const n = it.node ? getNode(it.node) : undefined;
+              return (
+                <article class="card tile">
+                  <h3>{t(it.title, lang)}</h3>
+                  <p class="value">{t(it.value, lang)}</p>
+                  <p class="small text">
+                    {t(it.text, lang)}
+                    <Cite keys={it.src} index={index} />
+                  </p>
+                  {n && (
+                    <a class="small" href={url(nodePath(n.id, lang))}>
+                      {t(n.title, lang)} →
+                    </a>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+
+    <section>
+      <h2>{t(ui.sources, lang)}</h2>
+      <SourceList sources={sources} lang={lang} />
+    </section>
+  </main>
+</Base>
+
+<style>
+  .dash {
+    --maxw: 1080px;
+    max-width: 1080px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .tile h3 {
+    margin: 0;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-2);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .tile .value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 6px 0 4px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .tile .text {
+    color: var(--text-2);
+    margin: 0 0 8px;
+  }
+</style>

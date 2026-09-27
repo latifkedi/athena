@@ -1,0 +1,56 @@
+id: rhine
+parent: parapsikoloji
+type: event
+date: { year: 1934 }
+people: [J. B. Rhine, Louisa Rhine, Karl Zener]
+title:
+  tr: Rhine ve duyu dışı algı deneyleri
+  en: Rhine and the extrasensory perception experiments
+summary:
+  tr: >-
+    J. B. Rhine, Duke Üniversitesi'nde beş simgeli Zener kartlarıyla binlerce tahmin deneyi yaptı ve rastlantıdan
+    beklenenden daha fazla isabet bildirdi. "Duyu dışı algı" (ESP) terimini yaygınlaştırdı. Eleştirmenler, kartların
+    arkasından görülebilmesi, zayıf karıştırma ve istatistik hataları gibi sorunlara dikkat çekti.
+  en: >-
+    J. B. Rhine carried out thousands of guessing trials with five-symbol Zener cards at Duke University and reported
+    more hits than chance would predict. He popularised the term "extrasensory perception" (ESP). Critics pointed to
+    problems such as cards being visible from the back, poor shuffling and statistical errors.
+technical:
+  tr: >-
+    Rastlantıya göre isabet beklentisi %20'dir. Rhine'ın bazı deneklerinde uzun seriler boyunca %30'un üzerinde isabet
+    oranları bildirildi. Diğer laboratuvarlardaki tekrar girişimleri çoğunlukla rastlantı düzeyinde kaldı. Rhine,
+    denekleri ve deneycileri ayıran daha sıkı protokoller (ör. Pearce–Pratt serisi) geliştirdi. Hansel, bu protokollerde
+    bile hile yapılabileceğine işaret etti.
+  en: >-
+    Chance expectation is 20% hits. Hit rates above 30% over long series were reported for some of Rhine's subjects.
+    Replication attempts in other laboratories mostly stayed at chance level. Rhine developed stricter protocols separating
+    subjects and experimenters (e.g. the Pearce–Pratt series); Hansel pointed out that cheating was possible even under
+    these protocols.
+claims:
+  - tr: Bazı insanlar kartların simgelerini, bilinen duyusal yollar olmadan, rastlantıdan fazla isabetle tahmin edebilir.
+    en: Some people can guess card symbols with more hits than chance, without known sensory channels.
+    src: [rhine1934]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Uzun deney serilerinde bazı deneklerin isabet oranı rastlantıdan beklenen %20'nin anlamlı biçimde üzerinde bulundu.
+    en: In long experimental series some subjects' hit rates were significantly above the 20% expected by chance.
+    src: [rhine1934]
+  - kind: critique
+    stance: against
+    tr: Kartların arkadan görülebilmesi, karıştırma ve kayıt hataları ile denek hilesi olasılığı gibi yöntemsel açıklar gösterildi. Bağımsız tekrarlar çoğunlukla başarısız oldu.
+    en: Methodological loopholes were shown, such as cards being visible from the back, shuffling and recording errors and the possibility of subject cheating; independent replications mostly failed.
+    src: [hansel1980]
+sources:
+  rhine1934:
+    type: book
+    authors: Rhine, J. B.
+    title: Extra-Sensory Perception
+    year: 1934
+    in: Boston Society for Psychic Research, Boston
+  hansel1980:
+    type: book
+    authors: Hansel, C. E. M.
+    title: 'ESP and Parapsychology: A Critical Re-evaluation'
+    year: 1980
+    in: Prometheus Books, Buffalo NY

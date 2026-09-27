@@ -1,0 +1,65 @@
+id: psikanaliz
+parent: psikoloji
+type: idea
+date: { year: 1899, month: 11 }
+people: [Sigmund Freud]
+title:
+  tr: Psikanaliz
+  en: Psychoanalysis
+summary:
+  tr: >-
+    Freud, davranışlarımızın büyük kısmının bilinçdışı arzular ve çocukluk deneyimleri tarafından şekillendirildiğini
+    savundu. Rüyaları bilinçdışına giden bir yol olarak gördü. Psikanaliz kültür, sanat ve terapide çok etkili oldu.
+    Kuramın bilimsel olarak test edilebilirliği ise tartışmalıdır. Popper, psikanalizi yanlışlanamaz bir kuram örneği
+    olarak gösterdi.
+  en: >-
+    Freud argued that much of our behaviour is shaped by unconscious desires and childhood experiences, and saw dreams as
+    a road to the unconscious. Psychoanalysis became very influential in culture, art and therapy. Its scientific
+    testability is disputed; Popper cited it as an example of an unfalsifiable theory.
+technical:
+  tr: >-
+    Die Traumdeutung Kasım 1899'da basıldı, ancak 1900 tarihini taşır. Kuramın temel kavramları bastırma, aktarım ve
+    savunma mekanizmalarıdır. Kişilik yapısı id, ego ve süperego olarak tarif edilir. Psikodinamik terapilerin etkinliğine
+    dair meta-analizler, bu terapilerin bazı bozukluklarda diğer terapilerle karşılaştırılabilir etkiler gösterdiğini
+    bildirir. Bu sonuç Freud'un özgün kuramının doğruluğundan ayrı bir sorudur.
+  en: >-
+    Die Traumdeutung was printed in November 1899 but bears the date 1900. Its core concepts are repression, transference
+    and defence mechanisms; the structure of personality is described as id, ego and superego. Meta-analyses of
+    psychodynamic therapies report effects comparable to other therapies for some disorders, a separate question from
+    the truth of Freud's original theory.
+claims:
+  - tr: Bilinçdışı süreçler ve bastırılmış arzular davranışı ve rüyaları belirler.
+    en: Unconscious processes and repressed desires determine behaviour and dreams.
+    src: [freud1900]
+evidence:
+  - kind: clinical
+    stance: for
+    tr: Psikodinamik terapi çalışmalarının meta-analizi, terapi sonrasında da süren ve büyüyen etkiler bildirdi.
+    en: A meta-analysis of psychodynamic therapy studies reported effects that persist and grow after therapy ends.
+    src: [shedler2010]
+  - kind: critique
+    stance: against
+    tr: Psikanalizin her olası davranışı açıklayabildiği, bu nedenle hiçbir gözlemin onu yanlışlayamayacağı ve bilimsel bir kuram olmadığı savunuldu.
+    en: It was argued that psychoanalysis can explain every possible behaviour, so no observation could falsify it, and it is therefore not a scientific theory.
+    src: [popper1963]
+sources:
+  freud1900:
+    type: book
+    authors: Freud, S.
+    title: Die Traumdeutung
+    year: 1900
+    in: Franz Deuticke, Leipzig und Wien
+  shedler2010:
+    type: article
+    authors: Shedler, J.
+    title: The efficacy of psychodynamic psychotherapy
+    year: 2010
+    in: American Psychologist 65(2), 98–109
+    doi: 10.1037/a0018378
+  popper1963:
+    type: book
+    authors: Popper, K.
+    title: 'Conjectures and Refutations: The Growth of Scientific Knowledge'
+    year: 1963
+    in: Routledge & Kegan Paul, London
+related: [popper]

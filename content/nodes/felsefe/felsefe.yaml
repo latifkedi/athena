@@ -1,0 +1,42 @@
+id: felsefe
+parent: insanlik
+side: roots
+type: field
+order: 1
+title:
+  tr: Felsefe
+  en: Philosophy
+summary:
+  tr: >-
+    Varlık, bilgi, doğruluk, iyi ve güzel üzerine akıl yürütmeyle yapılan sorgulama. Bilimlerin çoğu felsefeden doğdu.
+    "Doğa felsefesi" fiziğin, "ahlak felsefesi" sosyal bilimlerin atasıdır. Bilginin nasıl edinildiğini ve neyin bilgi
+    sayılacağını soran bilgi kuramı (epistemoloji), bu ağaçtaki her dalın temelinde yer alır.
+  en: >-
+    Inquiry by reasoning into being, knowledge, truth, the good and the beautiful. Most of the sciences were born from
+    philosophy: "natural philosophy" is the ancestor of physics, "moral philosophy" of the social sciences. The theory of
+    knowledge (epistemology), which asks how knowledge is acquired and what counts as knowledge, lies at the base of every
+    branch in this tree.
+technical:
+  tr: >-
+    Felsefenin başlıca alt alanları metafizik, epistemoloji, mantık, etik, estetik, siyaset felsefesi ve bilim
+    felsefesidir. Bilgi kaynakları konusundaki temel ayrım akılcılık, deneycilik ve bunları birleştiren Kantçı
+    yaklaşımlar arasındadır. İslam düşüncesinde buna ek olarak nakil (vahiy ve rivayet) ile keşf (sezgisel ve manevi bilgi)
+    ayrı bilgi kaynakları olarak tartışılır.
+  en: >-
+    The main sub-fields of philosophy are metaphysics, epistemology, logic, ethics, aesthetics, political philosophy and
+    philosophy of science. The basic division over sources of knowledge is between rationalism, empiricism and Kantian
+    approaches that combine them. Islamic thought additionally discusses transmission (naql: revelation and reports) and
+    unveiling (kashf: intuitive, spiritual knowledge) as distinct sources of knowledge.
+claims:
+  - tr: Bilgiyi "gerekçelendirilmiş doğru inanç" olarak tanımlayan klasik tanım, Gettier örnekleriyle sorgulanmıştır.
+    en: The classical definition of knowledge as "justified true belief" has been challenged by Gettier cases.
+    src: [gettier1963]
+sources:
+  gettier1963:
+    type: article
+    authors: Gettier, E. L.
+    title: Is justified true belief knowledge?
+    year: 1963
+    in: Analysis 23(6), 121–123
+    doi: 10.1093/analys/23.6.121
+related: [matematik, bilinc]

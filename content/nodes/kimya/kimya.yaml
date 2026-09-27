@@ -1,0 +1,39 @@
+id: kimya
+parent: insanlik
+side: canopy
+type: field
+order: 4
+feed: ['arxiv:physics.chem-ph', 'chemrxiv']
+title:
+  tr: Kimya
+  en: Chemistry
+summary:
+  tr: >-
+    Maddelerin yapısını, özelliklerini ve birbirine nasıl dönüştüğünü inceleyen alan. Kökleri simya, metalurji ve
+    eczacılıktadır. Modern kimya 17. ve 18. yüzyıllarda nicel ölçüm, element kavramı ve atom kuramıyla şekillendi.
+  en: >-
+    The field that studies the structure and properties of substances and how they change into one another. Its roots
+    lie in alchemy, metallurgy and pharmacy. Modern chemistry took shape in the 17th and 18th centuries with quantitative
+    measurement, the concept of the element and atomic theory.
+technical:
+  tr: >-
+    Kimyasal bağ, 20. yüzyılda kuantum mekaniğiyle (Heitler–London 1927, Pauling) açıklandı. Bugün kimya; sentez,
+    kataliz, spektroskopi, hesaplamalı kimya ve malzeme tasarımı gibi alt alanlara ayrılır. Simya ile kimya arasındaki
+    geçişin keskin değil kademeli olduğu tarih yazımında giderek daha fazla kabul görmektedir.
+  en: >-
+    The chemical bond was explained by quantum mechanics in the 20th century (Heitler–London 1927, Pauling). Chemistry
+    today divides into synthesis, catalysis, spectroscopy, computational chemistry and materials design. Historiography
+    increasingly holds that the transition from alchemy to chemistry was gradual rather than sharp.
+claims:
+  - tr: 17. yüzyılda "chymistry" adı altında simya ile kimya henüz birbirinden ayrılmamıştı.
+    en: In the 17th century alchemy and chemistry were not yet distinct, both practised as "chymistry".
+    src: [newman-principe1998]
+sources:
+  newman-principe1998:
+    type: article
+    authors: Newman, W. R.; Principe, L. M.
+    title: 'Alchemy vs. chemistry: the etymological origins of a historiographic mistake'
+    year: 1998
+    in: Early Science and Medicine 3(1), 32–65
+    doi: 10.1163/157338298X00022
+related: [simya]

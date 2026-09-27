@@ -1,0 +1,68 @@
+id: esarilik
+parent: kelam
+type: tradition
+date: { year: 912, approx: true }
+people: [Ebü'l-Hasen el-Eş'arî, Bâkıllânî, Cüveynî, Gazzâlî, Fahreddin er-Râzî]
+title:
+  tr: Eş'arîlik ve vesilecilik
+  en: Ashʿarism and occasionalism
+summary:
+  tr: >-
+    Eş'arî, Mu'tezile'den ayrılarak nakil ile aklı uzlaştırmaya çalışan bir ekol kurdu. Eş'arîlere göre âlemde gerçek
+    fail yalnızca Allah'tır. Ateşin pamuğu yakması, Allah'ın her an yeniden yarattığı bir "âdet"tir. Ateşin kendi
+    doğasından kaynaklanan zorunlu bir sonuç değildir. Bu görüş Batı felsefesinde "vesilecilik" (okazyonalizm) olarak
+    bilinir. Günümüzde evrim ve bilimle ilişki tartışmalarında yeniden gündeme gelmiştir.
+  en: >-
+    Al-Ashʿarī broke with the Muʿtazila and founded a school that sought to reconcile transmitted texts and reason. For
+    the Ashʿarīs the only true agent in the world is God: fire burning cotton is a "custom" (ʿāda) that God creates anew
+    at every moment, not a necessary result of fire's own nature. This view is known in Western philosophy as
+    occasionalism, and has resurfaced in current debates about evolution and science.
+technical:
+  tr: >-
+    Eş'arî ontolojide âlem, her an yeniden yaratılan cevherler (atomlar) ve arazlardan oluşur. Nedensel düzenlilikler
+    mantıksal zorunluluk değil, ilahi âdettir. Bu nedenle mucizeler mantıksal olarak mümkündür. İnsanın fiilleri Allah
+    tarafından yaratılır, insan ise bunları "kesb" eder (kazanır). Hume'un nedensellik eleştirisiyle benzerlikler
+    tartışılmıştır.
+  en: >-
+    In Ashʿarī ontology the world consists of substances (atoms) and accidents recreated at every moment; causal
+    regularities are divine custom, not logical necessity, so miracles are logically possible. Human acts are created by
+    God and "acquired" (kasb) by humans. Parallels with Hume's critique of causality have been discussed.
+claims:
+  - tr: Doğadaki neden-sonuç ilişkileri zorunlu değildir. Allah'ın her an yeniden yarattığı bir âdettir.
+    en: Cause-and-effect relations in nature are not necessary; they are a custom that God creates anew at every moment.
+    src: [tdv-esariyye, sep-occasionalism]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Gözlem yalnızca iki olayın birlikte gerçekleştiğini gösterir, birinin diğerini zorunlu kıldığını göstermez.
+    en: Observation shows only that two events occur together, not that one necessitates the other.
+    src: [marmura2000]
+  - kind: argument
+    stance: against
+    tr: Nesnelerin kendi doğaları ve nedensel güçleri olmazsa, onları tanımlamak ve bilgi edinmek imkânsızlaşır.
+    en: If things had no natures and causal powers of their own, defining them and acquiring knowledge would become impossible.
+    src: [vandenbergh1954]
+sources:
+  tdv-esariyye:
+    type: encyclopedia
+    title: Eş'ariyye
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/esariyye
+  sep-occasionalism:
+    type: encyclopedia
+    title: Occasionalism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/occasionalism/
+  marmura2000:
+    type: book
+    authors: Gazzâlî / al-Ghazālī; Marmura, M. E. (trans.)
+    title: The Incoherence of the Philosophers
+    year: 2000
+    in: Brigham Young University Press, Provo (Discussion 17)
+  vandenbergh1954:
+    type: book
+    authors: İbn Rüşd / Ibn Rushd; van den Bergh, S. (trans.)
+    title: "Averroes' Tahafut al-Tahafut (The Incoherence of the Incoherence)"
+    year: 1954
+    in: E. J. W. Gibb Memorial Trust / Oxford University Press
+related: [gazali-tehafut, ibn-rusd, teistik-evrim, islam-ve-evrim]

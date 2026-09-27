@@ -1,0 +1,50 @@
+id: ote-gezegenler
+parent: astronomi
+type: event
+date: { year: 1995, month: 10 }
+people: [Michel Mayor, Didier Queloz]
+title:
+  tr: Öte gezegenler
+  en: Exoplanets
+summary:
+  tr: >-
+    Mayor ve Queloz 1995'te Güneş benzeri bir yıldızın (51 Pegasi) çevresinde dönen ilk gezegeni buldu. Eylül 2025'te
+    NASA'nın onaylanmış öte gezegen sayısı 6.000'i geçti. Bunlardan bazıları yıldızlarının yaşanabilir bölgesindedir.
+    Bu gezegenlerin atmosferlerinde yaşam izi aranmaktadır.
+  en: >-
+    In 1995 Mayor and Queloz found the first planet orbiting a Sun-like star (51 Pegasi). In September 2025 NASA's count
+    of confirmed exoplanets passed 6,000. Some lie in their star's habitable zone, and their atmospheres are being searched
+    for signs of life.
+technical:
+  tr: >-
+    51 Pegasi b, radyal hız yöntemiyle, yıldızın 4,23 günlük periyotla yalpalamasından bulundu. Kepler ve TESS uyduları
+    geçiş (transit) yöntemiyle binlerce gezegen keşfetti. JWST, geçiş tayfölçümüyle ılıman gezegen atmosferlerindeki
+    molekülleri inceleyebilmektedir.
+  en: >-
+    51 Pegasi b was found by the radial-velocity method from the star's wobble with a 4.23-day period. The Kepler and TESS
+    satellites discovered thousands of planets by the transit method. JWST can study molecules in the atmospheres of
+    temperate planets through transmission spectroscopy.
+claims:
+  - tr: Güneş dışındaki yıldızların çevresinde de gezegenler vardır ve bunlar yaygındır.
+    en: Planets exist around stars other than the Sun and are common.
+    src: [mayor1995, nasa6000]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: 51 Pegasi'nin radyal hızı, Jüpiter kütlesinin yaklaşık yarısı kadar bir cismin varlığıyla uyumlu periyodik değişim gösterdi.
+    en: The radial velocity of 51 Pegasi showed a periodic variation consistent with a companion of about half Jupiter's mass.
+    src: [mayor1995]
+sources:
+  mayor1995:
+    type: article
+    authors: Mayor, M.; Queloz, D.
+    title: A Jupiter-mass companion to a solar-type star
+    year: 1995
+    in: Nature 378, 355–359
+    doi: 10.1038/378355a0
+  nasa6000:
+    type: web
+    title: "NASA's tally of planets outside our solar system reaches 6,000"
+    year: 2025
+    in: NASA Jet Propulsion Laboratory
+    url: https://www.jpl.nasa.gov/news/nasas-tally-of-planets-outside-our-solar-system-reaches-6000/

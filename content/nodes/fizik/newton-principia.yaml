@@ -1,0 +1,66 @@
+id: newton-principia
+parent: fizik
+type: text
+date: { year: 1687 }
+people: [Isaac Newton]
+title:
+  tr: Newton'un Principia'sı
+  en: "Newton's Principia"
+summary:
+  tr: >-
+    Newton, üç hareket yasası ve evrensel kütleçekim yasasıyla elmanın düşmesini ve gezegenlerin yörüngelerini aynı
+    kurallarla açıkladı. Bu kuram iki yüzyıl boyunca fiziğin temeli oldu. Bugün de günlük hızlarda ve zayıf kütleçekiminde
+    çok iyi sonuç verir. Merkür'ün yörüngesi gibi bazı durumlarda ise genel görelilikten farklı tahminler verir.
+  en: >-
+    With three laws of motion and the law of universal gravitation, Newton explained a falling apple and the orbits of
+    the planets with the same rules. The theory was the foundation of physics for two centuries. It still works very well
+    at everyday speeds and in weak gravity, but in some cases, such as Mercury's orbit, its predictions differ from
+    general relativity.
+technical:
+  tr: >-
+    Philosophiæ Naturalis Principia Mathematica, F = dp/dt ve F = G m₁m₂/r² ile Kepler yasalarını türetir, gelgitleri ve
+    dönen Dünya'nın basıklığını açıklar. Newton kütleçekiminin "uzaktan etki" niteliğini açıklamadığını kabul etti
+    ("hypotheses non fingo"). Merkür'ün günberi kaymasında, bilinen gezegen etkileri çıkarıldıktan sonra yüzyılda
+    yaklaşık 43 yay saniyelik bir fark kaldı. Genel görelilik bu farkı açıklar.
+  en: >-
+    Philosophiæ Naturalis Principia Mathematica derives Kepler's laws from F = dp/dt and F = G m₁m₂/r², and accounts for
+    the tides and the oblateness of the rotating Earth. Newton acknowledged that he did not explain the "action at a
+    distance" character of gravity ("hypotheses non fingo"). After known planetary perturbations were subtracted, about
+    43 arcseconds per century of Mercury's perihelion shift remained unexplained. General relativity accounts for it.
+claims:
+  - tr: Aynı kütleçekim yasası hem yeryüzündeki düşmeyi hem de gök cisimlerinin hareketini yönetir.
+    en: The same law of gravitation governs falling bodies on Earth and the motions of the heavens.
+    src: [newton1687]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Uranüs'ün yörüngesindeki sapmalardan Newton mekaniğiyle yeni bir gezegenin yeri hesaplandı ve Neptün 1846'da hesaplanan yerin yakınında bulundu.
+    en: Deviations in Uranus' orbit were used with Newtonian mechanics to predict a new planet, and Neptune was found near the predicted position in 1846.
+    src: [smith1989]
+  - kind: observation
+    stance: against
+    tr: Merkür'ün günberi kayması Newton kuramıyla tam olarak açıklanamadı.
+    en: The perihelion shift of Mercury could not be fully explained by Newtonian theory.
+    src: [einstein1915]
+sources:
+  newton1687:
+    type: book
+    authors: Newton, I.
+    title: Philosophiæ Naturalis Principia Mathematica
+    year: 1687
+    in: Royal Society, London
+    url: https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00001/1
+  smith1989:
+    type: article
+    authors: Smith, R. W.
+    title: 'The Cambridge network in action: the discovery of Neptune'
+    year: 1989
+    in: Isis 80(3), 395–422
+    doi: 10.1086/355082
+  einstein1915:
+    type: article
+    authors: Einstein, A.
+    title: Erklärung der Perihelbewegung des Merkur aus der allgemeinen Relativitätstheorie
+    year: 1915
+    in: Sitzungsberichte der Preußischen Akademie der Wissenschaften, 831–839
+related: [kalkulus, genel-gorelilik, kepler]

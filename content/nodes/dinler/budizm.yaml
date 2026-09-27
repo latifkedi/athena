@@ -1,0 +1,55 @@
+id: budizm
+parent: dinler
+type: tradition
+people: [Siddhārtha Gautama (Buddha)]
+title:
+  tr: Budizm
+  en: Buddhism
+summary:
+  tr: >-
+    Budizm, Siddhārtha Gautama'nın (Buda) öğretisine dayanır. Temelinde "Dört Yüce Gerçek" vardır: hayat acı (dukkha)
+    içerir, acının nedeni arzudur, acı sona erebilir ve bunun yolu "Sekiz Dilimli Yol"dur. Budizm yaratıcı bir Tanrı
+    kavramını merkeze almaz. Her şeyin geçici ve birbirine bağımlı olduğunu vurgular.
+  en: >-
+    Buddhism rests on the teaching of Siddhārtha Gautama (the Buddha). At its core are the "Four Noble Truths": life
+    involves suffering (dukkha), the cause of suffering is craving, suffering can end, and the way to end it is the
+    "Noble Eightfold Path". Buddhism does not centre on a creator God and emphasises that everything is impermanent and
+    interdependent.
+technical:
+  tr: >-
+    Buda'nın ölüm tarihi geleneksel olarak MÖ 544 ya da 483 olarak verilir. Modern araştırmalar ise MÖ 400 civarını da
+    tartışır. Theravāda ve Mahāyāna başlıca kollardır. Anātman (kalıcı bir benliğin yokluğu) ve pratītyasamutpāda
+    (bağımlı ortaya çıkış) temel öğretilerdir. Budist meditasyon uygulamaları son on yıllarda psikoloji ve sinirbilimde
+    araştırma konusu olmuştur.
+  en: >-
+    The Buddha's death is traditionally dated to 544 or 483 BCE; modern research also discusses c. 400 BCE. Theravāda and
+    Mahāyāna are the main branches. Anātman (the absence of a permanent self) and pratītyasamutpāda (dependent
+    origination) are core teachings. Buddhist meditation practices have become research subjects in psychology and
+    neuroscience in recent decades.
+claims:
+  - tr: Acı, arzunun sona erdirilmesiyle sona erer. Kalıcı ve değişmez bir benlik yoktur.
+    en: Suffering ends with the cessation of craving; there is no permanent, unchanging self.
+    src: [harvey2013]
+datings:
+  - view:
+      tr: Theravāda geleneği
+      en: Theravāda tradition
+    value:
+      tr: Buda'nın ölümü (parinirvāṇa) MÖ 544
+      en: "The Buddha's death (parinirvāṇa) in 544 BCE"
+    src: [harvey2013]
+  - view:
+      tr: Modern tarihçilik
+      en: Modern historiography
+    value:
+      tr: MÖ 5. yüzyıl sonu ile 4. yüzyıl başı arası (yaklaşık MÖ 480–400)
+      en: Between the late 5th and early 4th century BCE (roughly 480–400 BCE)
+    src: [harvey2013]
+sources:
+  harvey2013:
+    type: book
+    authors: Harvey, P.
+    title: 'An Introduction to Buddhism: Teachings, History and Practices'
+    year: 2013
+    in: Cambridge University Press, 2nd edition
+related: [hint-felsefesi]

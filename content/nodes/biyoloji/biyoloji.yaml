@@ -1,0 +1,39 @@
+id: biyoloji
+parent: insanlik
+side: canopy
+type: field
+order: 5
+feed: ['biorxiv', 'arxiv:q-bio']
+title:
+  tr: Biyoloji
+  en: Biology
+summary:
+  tr: >-
+    Canlıları, yapılarını, işleyişlerini, kalıtımı ve çeşitliliklerini inceleyen alan. Hücre, gen ve DNA gibi temel
+    kavramlar 19. ve 20. yüzyılda ortaya çıktı. Canlıların kökeni ve çeşitliliği konusunda birbirinden farklı bilimsel
+    kuramlar ve dini görüşler vardır. Bunlar aşağıda ayrı dallar olarak gösterilir.
+  en: >-
+    The field that studies living things: their structure, functioning, heredity and diversity. Basic concepts such as
+    the cell, the gene and DNA emerged in the 19th and 20th centuries. There are differing scientific theories and
+    religious views on the origin and diversity of living things; they are shown below as separate branches.
+technical:
+  tr: >-
+    Moleküler biyoloji, bilginin DNA'dan RNA'ya ve proteine aktarımını ("merkezi dogma", Crick 1958) inceler. Bu
+    şemanın ters transkripsiyon, prionlar ve epigenetik kalıtım gibi istisnaları bulunmuştur. Genomik, sistem biyolojisi
+    ve yapısal biyoloji, yüksek verimli dizileme ve hesaplamalı yöntemlerle hızla büyümektedir.
+  en: >-
+    Molecular biology studies the transfer of information from DNA to RNA to protein (the "central dogma", Crick 1958).
+    Exceptions to this scheme have been found, such as reverse transcription, prions and epigenetic inheritance. Genomics,
+    systems biology and structural biology are growing rapidly with high-throughput sequencing and computational methods.
+claims:
+  - tr: Dizi bilgisi nükleik asitten proteine aktarılır, proteinden nükleik aside geri aktarılmaz.
+    en: Sequence information passes from nucleic acid to protein, not from protein back to nucleic acid.
+    src: [crick1970]
+sources:
+  crick1970:
+    type: article
+    authors: Crick, F.
+    title: Central dogma of molecular biology
+    year: 1970
+    in: Nature 227, 561–563
+    doi: 10.1038/227561a0

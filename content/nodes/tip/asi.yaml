@@ -1,0 +1,77 @@
+id: asi
+parent: tip
+type: event
+date: { year: 1798 }
+people: [Edward Jenner, Lady Mary Wortley Montagu, Louis Pasteur]
+title:
+  tr: Aşı
+  en: Vaccination
+summary:
+  tr: >-
+    Jenner 1796'da inek çiçeği ile aşılanan bir çocuğun çiçek hastalığına karşı korunduğunu gösterdi ve sonuçlarını
+    1798'de yayımladı. Osmanlı'da uygulanan "çiçek aşılama" (variolasyon) yöntemi daha önce Lady Montagu aracılığıyla
+    İngiltere'ye taşınmıştı. Çiçek hastalığı 1980'de Dünya Sağlık Örgütü tarafından yeryüzünden silinmiş ilan edildi.
+  en: >-
+    In 1796 Jenner showed that a boy inoculated with cowpox was protected against smallpox, and published his results in
+    1798. The Ottoman practice of variolation had earlier been brought to England by Lady Montagu. In 1980 the World
+    Health Organization declared smallpox eradicated.
+technical:
+  tr: >-
+    Variolasyon, gerçek çiçek hastalığı materyaliyle yapılan hafif bir enfeksiyondu ve yaklaşık %1–2 ölüm riski
+    taşıyordu. Jenner'in vaksinasyonu (vacca: inek) çapraz bağışıklığa dayanır. Pasteur (1880'ler) zayıflatılmış
+    patojenlerle kuduz ve şarbon aşıları geliştirdi. Aşıların güvenliği ve etkinliği randomize çalışmalar ve sürveyansla
+    izlenir. Wakefield'ın 1998'de aşılarla otizm arasında bağlantı öne süren makalesi geri çekildi. Bu bağlantı, çok
+    sayıda büyük çalışmada gözlenmedi.
+  en: >-
+    Variolation was a mild infection with actual smallpox material and carried a death risk of about 1–2%. Jenner's
+    vaccination (vacca: cow) relies on cross-immunity. Pasteur (1880s) developed attenuated vaccines for rabies and
+    anthrax. Vaccine safety and efficacy are monitored through randomised trials and surveillance. Wakefield's 1998 paper
+    proposing a link between vaccines and autism was retracted; many large studies did not observe such a link.
+claims:
+  - tr: Aşılama, bulaşıcı hastalıklara karşı bağışıklık kazandırır.
+    en: Vaccination confers immunity against infectious diseases.
+    src: [jenner1798, who1980]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Küresel aşılama kampanyasıyla çiçek hastalığının doğal bulaşı 1977'den sonra tamamen durdu.
+    en: With a global vaccination campaign, natural transmission of smallpox stopped entirely after 1977.
+    src: [who1980]
+  - kind: statistical
+    stance: for
+    tr: 650.000'den fazla çocuğu kapsayan bir Danimarka kohort çalışmasında KKK aşısı ile otizm arasında ilişki bulunmadı.
+    en: A Danish cohort study of more than 650,000 children found no association between the MMR vaccine and autism.
+    src: [hviid2019]
+  - kind: clinical
+    stance: against
+    tr: 1998'de yayımlanan 12 çocukluk bir vaka serisi KKK aşısı ile otizm arasında bağlantı öne sürdü. Makale 2010'da dergi tarafından geri çekildi.
+    en: A 1998 case series of 12 children proposed a link between the MMR vaccine and autism; the journal retracted the paper in 2010.
+    src: [wakefield1998]
+sources:
+  jenner1798:
+    type: book
+    authors: Jenner, E.
+    title: An Inquiry into the Causes and Effects of the Variolae Vaccinae
+    year: 1798
+    in: Sampson Low, London
+  who1980:
+    type: report
+    authors: World Health Organization
+    title: The Global Eradication of Smallpox. Final Report of the Global Commission for the Certification of Smallpox Eradication
+    year: 1980
+    in: WHO, Geneva
+  hviid2019:
+    type: article
+    authors: Hviid, A.; Hansen, J. V.; Frisch, M.; Melbye, M.
+    title: 'Measles, mumps, rubella vaccination and autism: a nationwide cohort study'
+    year: 2019
+    in: Annals of Internal Medicine 170(8), 513–520
+    doi: 10.7326/M18-2101
+  wakefield1998:
+    type: article
+    authors: Wakefield, A. J. et al.
+    title: Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children (RETRACTED 2010)
+    year: 1998
+    in: The Lancet 351, 637–641
+    doi: 10.1016/S0140-6736(97)11096-0
+related: [mikrop-kurami, mrna-asi]

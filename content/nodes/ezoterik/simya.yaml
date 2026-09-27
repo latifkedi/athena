@@ -1,0 +1,116 @@
+id: simya
+parent: ezoterik
+type: tradition
+people: [Zosimos, Câbir b. Hayyân, Ebû Bekir er-Râzî, Paracelsus, Isaac Newton]
+title:
+  tr: Simya
+  en: Alchemy
+summary:
+  tr: >-
+    Simya, hem maddeyi (örneğin değersiz metalleri altına) hem de insanı (ruhu arındırıp olgunlaştırarak) dönüştürmeyi
+    amaçlayan kadim bir gelenektir. Mısır, Yunan, Çin, Hint ve İslam dünyasında gelişti. Laboratuvar teknikleri (damıtma,
+    süblimleştirme, kristalleştirme) kimyaya aktarıldı. Simya bugün de hem maddi laboratuvar çalışmaları hem de manevi
+    ve psikolojik bir dönüşüm yolu olarak uygulanmaktadır. Metallerin dönüştürülmesi 20. yüzyılda çekirdek fiziğiyle
+    gerçekleştirildi, ancak simyacıların öngördüğü yöntemlerle değil.
+  en: >-
+    Alchemy is an ancient tradition aiming to transform both matter (e.g. base metals into gold) and the person (by
+    purifying and perfecting the soul). It developed in Egypt, Greece, China, India and the Islamic world; its laboratory
+    techniques (distillation, sublimation, crystallisation) passed into chemistry. Alchemy is still practised today both
+    as material laboratory work and as a spiritual and psychological path of transformation. The transmutation of metals
+    was achieved in the 20th century by nuclear physics, though not by the methods the alchemists envisaged.
+technical:
+  tr: >-
+    Câbir külliyatındaki cıva-kükürt kuramına göre metaller, farklı oranlarda cıva ve kükürtün birleşmesinden oluşur.
+    Oranlar düzeltilirse metal dönüşebilir. Bu kuram Latin simyasına geçti. Ebû Bekir er-Râzî, simyasal işlemleri ve
+    maddeleri sistematik olarak sınıflandırdı. İbn Sina ise Kitâbü'ş-Şifâ'da türlerin (metallerin) gerçekten
+    dönüştürülebileceğinden şüphe etti. Newman ve Principe'nin çalışmaları, 17. yüzyılda simya ile kimyanın ("chymistry")
+    ayrılmaz olduğunu gösterdi. Jung ise simyayı bireyleşme sürecinin sembolik bir anlatımı olarak yorumladı.
+  en: >-
+    According to the mercury–sulphur theory of the Jābirian corpus, metals form from mercury and sulphur in different
+    proportions; if the proportions are corrected, the metal can be transmuted. The theory passed into Latin alchemy.
+    Abū Bakr al-Rāzī classified alchemical operations and substances systematically; Ibn Sīnā, in the Kitāb al-Shifāʾ,
+    doubted that species (of metals) can truly be transmuted. The work of Newman and Principe showed that alchemy and
+    chemistry ("chymistry") were inseparable in the 17th century. Jung interpreted alchemy as a symbolic expression of the
+    process of individuation.
+claims:
+  - tr: Değersiz metaller, uygun işlemlerle ve "felsefe taşı" aracılığıyla altına dönüştürülebilir.
+    en: Base metals can be transmuted into gold through proper operations and the "philosophers' stone".
+    src: [principe2013, tdv-simya]
+  - tr: Simyasal süreç, insan ruhunun arınma ve olgunlaşma yolculuğunun da bir anlatımıdır.
+    en: The alchemical process is also an expression of the human soul's journey of purification and maturation.
+    src: [jung1944, ghazali-kimiya]
+  - tr: Simya günümüzde hem laboratuvar uygulaması hem de manevi bir yol olarak sürdürülmektedir.
+    en: Alchemy continues today both as laboratory practice and as a spiritual path.
+    src: [principe2013]
+evidence:
+  - kind: historical
+    stance: for
+    tr: Simyacıların geliştirdiği damıtma, süblimleştirme ve asit hazırlama teknikleri kimya laboratuvarına aktarıldı ve bugün de kullanılmaktadır.
+    en: Techniques developed by alchemists, such as distillation, sublimation and the preparation of acids, passed into the chemistry laboratory and are still used.
+    src: [principe2013, newman2002]
+  - kind: experiment
+    stance: for
+    tr: Bir elementin başka bir elemente, örneğin bizmut ve kurşunun altına dönüştürülmesi, çekirdek tepkimeleriyle laboratuvarda gerçekleştirilmiştir. Bunun için simyacıların öngördüğünden çok farklı, yüksek enerjili yöntemler kullanılmıştır.
+    en: Transmutation of one element into another, for example bismuth and lead into gold, has been achieved in the laboratory by nuclear reactions, using high-energy methods very different from those the alchemists envisaged.
+    src: [aleklett1981, alice2025]
+  - kind: argument
+    stance: against
+    tr: İbn Sina, sanatçıların metalleri yalnızca görünüşte benzetebileceğini, türlerin özünü dönüştüremeyeceğini savundu.
+    en: Ibn Sīnā argued that artisans can only make metals resemble one another in appearance and cannot transform the essence of species.
+    src: [tdv-simya]
+  - kind: experiment
+    stance: against
+    tr: Kimyasal tepkimelerle elementlerin dönüştürülemediği, Lavoisier'den bu yana yapılan deneylerle gösterildi. Dönüşüm, kimyasal değil, çekirdek düzeyinde bir süreçtir.
+    en: Experiments since Lavoisier have shown that elements cannot be transmuted by chemical reactions; transmutation is a nuclear, not a chemical, process.
+    src: [lavoisier1789]
+sources:
+  principe2013:
+    type: book
+    authors: Principe, L. M.
+    title: The Secrets of Alchemy
+    year: 2013
+    in: University of Chicago Press
+  newman2002:
+    type: book
+    authors: Newman, W. R.; Principe, L. M.
+    title: 'Alchemy Tried in the Fire: Starkey, Boyle, and the Fate of Helmontian Chymistry'
+    year: 2002
+    in: University of Chicago Press
+  tdv-simya:
+    type: encyclopedia
+    title: Simya
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/simya
+  jung1944:
+    type: book
+    authors: Jung, C. G.
+    title: Psychologie und Alchemie
+    year: 1944
+    in: Rascher, Zürich
+  ghazali-kimiya:
+    type: book
+    authors: Gazzâlî / al-Ghazālī; Field, C. (trans.)
+    title: The Alchemy of Happiness
+    year: 1910
+    in: John Murray, London
+  aleklett1981:
+    type: article
+    authors: Aleklett, K.; Morrissey, D. J.; Loveland, W.; McGaughey, P. L.; Seaborg, G. T.
+    title: Energy dependence of 209Bi fragmentation in relativistic nuclear collisions
+    year: 1981
+    in: Physical Review C 23, 1044–1046
+    doi: 10.1103/PhysRevC.23.1044
+  alice2025:
+    type: article
+    authors: ALICE Collaboration
+    title: Proton emission in ultraperipheral Pb–Pb collisions at √sNN = 5.02 TeV
+    year: 2025
+    in: Physical Review C 111, 054906
+    doi: 10.1103/PhysRevC.111.054906
+  lavoisier1789:
+    type: book
+    authors: Lavoisier, A.-L.
+    title: Traité élémentaire de chimie
+    year: 1789
+    in: Cuchet, Paris
+related: [kimya, nukleer-donusum, kimya-yi-saadet, boyle, hermetizm]

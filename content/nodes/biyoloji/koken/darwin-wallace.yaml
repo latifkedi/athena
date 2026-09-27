@@ -1,0 +1,97 @@
+id: darwin-wallace
+parent: canlilarin-kokeni
+type: idea
+date: { year: 1859, month: 11 }
+people: [Charles Darwin, Alfred Russel Wallace]
+title:
+  tr: Darwin ve Wallace, doğal seçilim
+  en: Darwin and Wallace, natural selection
+summary:
+  tr: >-
+    Darwin ve Wallace birbirinden bağımsız olarak şu fikre ulaştı: bir türün bireyleri arasında kalıtsal farklar
+    vardır, ortama daha uygun olanlar daha çok yavru bırakır ve türler böylece zamanla değişip ayrışır. Darwin 1859'da
+    "Türlerin Kökeni"ni yayımladı. Darwin'in kendisi, fosil kayıtlarındaki ara formların azlığını kuramının karşılaştığı
+    başlıca zorluklardan biri olarak kaydetti.
+  en: >-
+    Darwin and Wallace independently arrived at the idea that individuals of a species differ in heritable ways, that
+    those better suited to their surroundings leave more offspring, and that species therefore change and diverge over
+    time. Darwin published "On the Origin of Species" in 1859. Darwin himself recorded the scarcity of intermediate forms
+    in the fossil record as one of the main difficulties facing his theory.
+technical:
+  tr: >-
+    Kuramın öğeleri şunlardır: kalıtsal değişkenlik, üreme fazlalığı, varoluş mücadelesi, uyum farkına dayalı üreme
+    başarısı ve bunların birikimiyle yavaş ve kademeli değişim. Darwin'in kalıtım modeli (pangenesis) yanlış çıktı.
+    Fleeming Jenkin (1867), karışan kalıtımda yeni varyasyonların seyreleceğini öne sürerek önemli bir itiraz getirdi.
+    Bu sorun Mendel genetiğinin kabulüyle çözüldü. Doğal seçilimin doğada ölçüldüğü uzun süreli saha çalışmaları vardır.
+    Galapagos ispinozlarında gaga boyutlarının kuraklık yıllarına göre değişmesi bunlara örnektir.
+  en: >-
+    The elements of the theory are heritable variation, overproduction, the struggle for existence, differential
+    reproduction according to fit, and slow, gradual change through their accumulation. Darwin's model of inheritance
+    (pangenesis) proved wrong. Fleeming Jenkin (1867) raised an important objection that new variations would be diluted
+    under blending inheritance; the problem was resolved with the acceptance of Mendelian genetics. Long-term field
+    studies have measured natural selection in the wild, for example changes in the beak size of Galápagos finches
+    following drought years.
+claims:
+  - tr: Kalıtsal farklılıklar üzerinde işleyen doğal seçilim, türlerin değişmesine ve yeni türlerin ortaya çıkmasına yol açar.
+    en: Natural selection acting on heritable differences leads to the modification of species and the origin of new ones.
+    src: [darwin1859, darwinwallace1858]
+  - tr: Bütün canlılar ortak atalardan gelir.
+    en: All living things descend from common ancestors.
+    src: [darwin1859]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Galapagos'ta 30 yılı aşkın süre izlenen ispinoz popülasyonlarında, gaga boyutu ve biçimi çevresel koşullara bağlı olarak ölçülebilir biçimde değişti.
+    en: In Galápagos finch populations followed for over 30 years, beak size and shape changed measurably with environmental conditions.
+    src: [grant2002]
+  - kind: experiment
+    stance: for
+    tr: 30.000'den fazla kuşak boyunca izlenen E. coli popülasyonlarından birinde, oksijenli ortamda sitrat kullanma yeteneği ortaya çıktı.
+    en: In one of the E. coli populations followed for more than 30,000 generations, the ability to use citrate under oxygen arose.
+    src: [blount2008]
+  - kind: archaeological
+    stance: against
+    tr: Darwin, fosil kayıtlarında türler arasında beklenen sayıda ara formun bulunmamasını kuramına karşı ciddi bir itiraz olarak kabul etti. Bunu kayıtların eksikliğiyle açıklamaya çalıştı.
+    en: Darwin acknowledged the absence of the expected number of intermediate forms in the fossil record as a serious objection to his theory, attributing it to the imperfection of the record.
+    src: [darwin1859]
+  - kind: theoretical
+    stance: against
+    tr: Karışan kalıtım altında yararlı yeni varyasyonların birkaç kuşakta seyrelip kaybolacağı ileri sürüldü.
+    en: It was argued that under blending inheritance, useful new variations would be diluted away within a few generations.
+    src: [jenkin1867]
+sources:
+  darwin1859:
+    type: book
+    authors: Darwin, C.
+    title: On the Origin of Species by Means of Natural Selection
+    year: 1859
+    in: John Murray, London
+    url: https://darwin-online.org.uk/content/frameset?itemID=F373&viewtype=text&pageseq=1
+  darwinwallace1858:
+    type: article
+    authors: Darwin, C.; Wallace, A. R.
+    title: On the tendency of species to form varieties; and on the perpetuation of varieties and species by natural means of selection
+    year: 1858
+    in: Journal of the Proceedings of the Linnean Society of London, Zoology 3, 45–62
+    doi: 10.1111/j.1096-3642.1858.tb02500.x
+  grant2002:
+    type: article
+    authors: Grant, P. R.; Grant, B. R.
+    title: "Unpredictable evolution in a 30-year study of Darwin's finches"
+    year: 2002
+    in: Science 296, 707–711
+    doi: 10.1126/science.1070315
+  blount2008:
+    type: article
+    authors: Blount, Z. D.; Borland, C. Z.; Lenski, R. E.
+    title: Historical contingency and the evolution of a key innovation in an experimental population of Escherichia coli
+    year: 2008
+    in: PNAS 105(23), 7899–7906
+    doi: 10.1073/pnas.0803151105
+  jenkin1867:
+    type: article
+    authors: Jenkin, F.
+    title: 'Review of "The Origin of Species"'
+    year: 1867
+    in: The North British Review 46, 277–318
+related: [mendel]

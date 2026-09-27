@@ -1,0 +1,46 @@
+id: bb5
+parent: matematik
+type: event
+date: { year: 2024, month: 7 }
+people: [bbchallenge Collaboration]
+title:
+  tr: Beşinci Meşgul Kunduz sayısı BB(5)
+  en: The fifth Busy Beaver number BB(5)
+summary:
+  tr: >-
+    "Meşgul Kunduz" sorusu, belirli sayıda duruma sahip bir Turing makinesinin durmadan önce en fazla kaç adım
+    atabileceğini sorar. Beş durum için cevap 60 yıl boyunca bilinmiyordu. Çevrimiçi, gönüllü bir ekip 2024'te cevabın
+    47.176.870 olduğunu gösterdi ve ispatı bilgisayarla doğrulanmış biçimde yayımladı.
+  en: >-
+    The "Busy Beaver" question asks how many steps a Turing machine with a given number of states can take before
+    halting. For five states the answer was unknown for 60 years. In 2024 an online volunteer collaboration showed the
+    answer is 47,176,870 and published a computer-verified proof.
+technical:
+  tr: >-
+    Radó'nun (1962) tanımladığı S(n) fonksiyonu hesaplanabilir değildir ve her hesaplanabilir fonksiyondan hızlı büyür.
+    İspat, 181.385.789 adet beş durumlu makinenin her birinin ya durduğunu ya da hiç durmadığını gösteren "karar
+    verici" algoritmalar ile kurulur. Tüm zincir Coq/Rocq ispat asistanında biçimselleştirilmiştir (Coq-BB5). Değer,
+    Marxen ve Buntrock'un 1990'da bulduğu makineninkiyle aynıdır.
+  en: >-
+    The function S(n), defined by Radó (1962), is uncomputable and grows faster than any computable function. The proof
+    uses "decider" algorithms showing that each of 181,385,789 five-state machines either halts or never halts. The whole
+    chain is formalised in the Coq/Rocq proof assistant (Coq-BB5). The value matches the machine found by Marxen and
+    Buntrock in 1990.
+claims:
+  - tr: S(5) = 47.176.870'tir.
+    en: S(5) = 47,176,870.
+    src: [bb2025]
+evidence:
+  - kind: proof
+    stance: for
+    tr: İspat Coq ispat asistanında makine tarafından denetlenmiştir.
+    en: The proof has been machine-checked in the Coq proof assistant.
+    src: [bb2025]
+sources:
+  bb2025:
+    type: preprint
+    authors: The bbchallenge Collaboration
+    title: Determination of the fifth Busy Beaver value
+    year: 2025
+    arxiv: '2509.12337'
+related: [turing]

@@ -1,0 +1,36 @@
+id: maturidilik
+parent: kelam
+type: tradition
+date: { year: 900, approx: true }
+people: [Ebû Mansûr el-Mâtürîdî, Ebü'l-Muîn en-Nesefî]
+title:
+  tr: Mâtürîdîlik
+  en: Māturīdism
+summary:
+  tr: >-
+    Semerkant'ta yaşayan Mâtürîdî'nin görüşleri etrafında oluşan Mâtürîdîlik, nakil ile aklı dengelemeyi amaçlayan bir
+    Sünnî kelam ekolüdür. İnsan iradesine Eş'arîlikten daha geniş bir alan tanır. Allah'ın varlığının ve iyi ile
+    kötünün temel olarak akılla bilinebileceğini savunur. Türk dünyasında, Orta Asya'da ve Hanefîler arasında yaygındır.
+  en: >-
+    Māturīdism, formed around the views of al-Māturīdī of Samarkand, is a Sunni kalām school that aims to balance
+    transmitted texts and reason. It grants human will more room than Ashʿarism and holds that God's existence and basic
+    good and evil can be known by reason. It is widespread in the Turkic world, Central Asia and among Ḥanafīs.
+technical:
+  tr: >-
+    Mâtürîdî'nin Kitâbü't-Tevhîd'i, bilgi kaynaklarını duyular, haber (nakil) ve akıl olarak sayar. Tekvin sıfatını
+    ezelî bir sıfat olarak kabul eder. Eş'arîlerle arasındaki ihtilaflar genellikle on iki ile kırk mesele arasında
+    sayılır. Bu meselelerin önemli bir kısmı lafzî farklılıklar olarak değerlendirilmiştir.
+  en: >-
+    Al-Māturīdī's Kitāb al-Tawḥīd counts the senses, reports (transmission) and reason as sources of knowledge, and
+    accepts "takwīn" (bringing into being) as an eternal attribute. Its disagreements with the Ashʿarīs are usually
+    counted at between twelve and forty issues, many of which have been judged verbal.
+claims:
+  - tr: Allah'ın varlığı ve temel ahlaki değerler, vahiy gelmese bile akılla bilinebilir.
+    en: God's existence and basic moral values can be known by reason even without revelation.
+    src: [tdv-maturidiyye]
+sources:
+  tdv-maturidiyye:
+    type: encyclopedia
+    title: Mâtürîdiyye
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/maturidiyye

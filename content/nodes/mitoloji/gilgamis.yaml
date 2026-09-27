@@ -1,0 +1,58 @@
+id: gilgamis
+parent: mitoloji
+type: text
+date: { year: -1200, approx: true }
+people: [Sîn-lēqi-unninni]
+title:
+  tr: Gılgamış Destanı
+  en: The Epic of Gilgamesh
+summary:
+  tr: >-
+    Uruk kralı Gılgamış'ın dostu Enkidu'nun ölümünden sonra ölümsüzlüğü arayışını anlatan bu Mezopotamya destanı, bilinen
+    en eski edebi eserlerden biridir. XI. tablette, bir tanrının uyarısıyla bir gemi yapıp canlıları kurtaran Utnapiştim'in
+    tufan hikâyesi yer alır. Bu hikâye, Tekvin'deki ve Kur'an'daki Nuh anlatısıyla karşılaştırılmıştır.
+  en: >-
+    This Mesopotamian epic, telling of Gilgamesh, king of Uruk, seeking immortality after the death of his friend
+    Enkidu, is among the oldest known works of literature. Tablet XI contains the flood story of Utnapishtim, who, warned
+    by a god, builds a boat and saves living creatures. The story has been compared with the Noah narratives in Genesis
+    and the Qur'an.
+technical:
+  tr: >-
+    Destanın Sümerce öncül şiirleri MÖ 3. binyılın sonuna, Eski Babil sürümü MÖ 18. yüzyıla, on iki tabletlik "Standart
+    Babil" sürümü ise Sîn-lēqi-unninni'ye atfedilerek MÖ 1200 civarına tarihlenir. George Smith 1872'de tufan tabletini
+    tercüme ettiğinde büyük yankı uyandı. Tufan anlatılarının ortak bir tarihsel olaya mı, ortak bir edebi geleneğe mi
+    dayandığı tartışmalıdır.
+  en: >-
+    The Sumerian precursor poems date to the late 3rd millennium BCE, the Old Babylonian version to the 18th century BCE,
+    and the twelve-tablet "Standard Babylonian" version, attributed to Sîn-lēqi-unninni, to around 1200 BCE. George
+    Smith's translation of the flood tablet in 1872 caused a sensation. Whether the flood narratives rest on a common
+    historical event or a shared literary tradition is debated.
+claims:
+  - tr: Mezopotamya tufan anlatısı ile Tekvin'deki tufan anlatısı arasında yapısal benzerlikler vardır.
+    en: There are structural similarities between the Mesopotamian flood narrative and the flood narrative in Genesis.
+    src: [george2003]
+positions:
+  - who:
+      tr: İslam (Kur'an)
+      en: Islam (Qur'an)
+    tr: Nuh, kavmini uyaran bir peygamberdir. Tufan, onu yalanlayanlara bir ceza olarak gelmiştir.
+    en: Noah was a prophet who warned his people; the flood came as a punishment on those who denied him.
+    src: [kuran-11-25]
+  - who:
+      tr: Tarihsel-eleştirel akademik görüş
+      en: Historical-critical academic view
+    tr: Tekvin'deki tufan anlatısı, Mezopotamya geleneğinden etkilenmiş ve tek tanrılı bir çerçevede yeniden yorumlanmıştır.
+    en: The Genesis flood narrative was influenced by Mesopotamian tradition and reinterpreted in a monotheistic frame.
+    src: [george2003]
+sources:
+  george2003:
+    type: book
+    authors: George, A. R.
+    title: 'The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts'
+    year: 2003
+    in: Oxford University Press (2 vols.)
+  kuran-11-25:
+    type: scripture
+    title: Kur'an-ı Kerim, Hûd 11:25–49
+    url: https://quran.com/11/25-49
+related: [yaratilis-anlatilari, yazi]

@@ -1,0 +1,52 @@
+id: yggdrasil
+parent: mitoloji
+type: text
+date: { year: 1270, approx: true }
+people: [Snorri Sturluson]
+title:
+  tr: Yggdrasil, İskandinav dünya ağacı
+  en: Yggdrasil, the Norse world tree
+summary:
+  tr: >-
+    İskandinav mitolojisinde Yggdrasil dokuz dünyayı birbirine bağlayan dev bir dişbudak ağacıdır. Kökleri farklı
+    dünyalara uzanır. Köklerinden birinin dibinde, Odin'in bilgelik için gözünü verdiği Mímir'in pınarı bulunur. Bu sitenin
+    bilgiyi dallar ve kökler olarak gösteren tasarımı bu imgeden esinlenmiştir.
+  en: >-
+    In Norse mythology Yggdrasil is a giant ash tree connecting the nine worlds. Its roots reach into different worlds,
+    and at the foot of one of them lies Mímir's well, for whose wisdom Odin gave an eye. This site's design, showing
+    knowledge as branches and roots, is inspired by this image.
+technical:
+  tr: >-
+    Ağaç, 13. yüzyılda derlenen Şiirsel Edda'nın (Codex Regius, y. 1270) "Völuspá" ve "Grímnismál" şiirlerinde ve Snorri
+    Sturluson'un Düzyazı Edda'sında (y. 1220, Gylfaginning 15–16) anlatılır. Metinlerin Hristiyanlık sonrası dönemde
+    yazıya geçirilmiş olması, bu anlatının Hristiyanlık öncesi inançları ne ölçüde yansıttığı sorusunu gündeme getirir.
+    Dünya ağacı motifi Şamanist Türk ve Moğol geleneklerinde de ("Bayterek") görülür.
+  en: >-
+    The tree is described in the poems "Völuspá" and "Grímnismál" of the Poetic Edda, compiled in the 13th century (Codex
+    Regius, c. 1270), and in Snorri Sturluson's Prose Edda (c. 1220, Gylfaginning 15–16). That the texts were written down
+    in the Christian era raises the question of how far they reflect pre-Christian belief. The world-tree motif also
+    appears in shamanic Turkic and Mongolian traditions ("Bayterek").
+claims:
+  - tr: Dünyalar, kökleri ve dallarıyla onları birbirine bağlayan bir kozmik ağaç üzerinde düzenlenmiştir.
+    en: The worlds are arranged on a cosmic tree whose roots and branches connect them.
+    src: [larrington2014]
+sources:
+  larrington2014:
+    type: book
+    authors: Larrington, C. (trans.)
+    title: The Poetic Edda
+    year: 2014
+    in: Oxford World's Classics, Oxford University Press, revised edition
+  faulkes1987:
+    type: book
+    authors: Snorri Sturluson; Faulkes, A. (trans.)
+    title: Edda
+    year: 1987
+    in: Everyman, London
+positions:
+  - who:
+      tr: Snorri Sturluson (Düzyazı Edda)
+      en: Snorri Sturluson (Prose Edda)
+    tr: Ağacın üç kökü vardır. Bunlar Asgard'a, buz devlerinin diyarına ve Niflheim'a uzanır.
+    en: The tree has three roots, reaching to Asgard, to the land of the frost giants and to Niflheim.
+    src: [faulkes1987]

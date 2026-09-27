@@ -1,0 +1,57 @@
+id: akupunktur
+parent: tamamlayici-tip
+type: practice
+title:
+  tr: Akupunktur
+  en: Acupuncture
+summary:
+  tr: >-
+    Geleneksel Çin tıbbında vücuttaki belirli noktalara iğne batırılarak "qi" enerjisinin akışının düzenlendiği kabul
+    edilir. Kronik ağrıda gerçek akupunkturun hiç tedavi almamaya göre açıkça, sahte (yüzeysel ya da yanlış noktaya)
+    akupunktura göre ise küçük bir fark gösterdiği bildirilmiştir. Bu küçük farkın klinik anlamı tartışmalıdır.
+  en: >-
+    In traditional Chinese medicine, needles inserted at specific points on the body are held to regulate the flow of
+    "qi" energy. In chronic pain, real acupuncture has been reported to show a clear difference compared with no
+    treatment, and a small difference compared with sham (superficial or wrong-point) acupuncture. The clinical meaning of
+    this small difference is disputed.
+technical:
+  tr: >-
+    Vickers ve arkadaşlarının 39 çalışma ve yaklaşık 20.000 hastayı kapsayan bireysel hasta verisi meta-analizi, kronik
+    ağrıda gerçek akupunkturun sahte akupunkturdan ve kontrol grubundan daha etkili olduğunu bildirdi. Sahte akupunktura
+    göre fark yaklaşık 0,2 standart sapmaydı. Eleştirmenler, sahte ve gerçek akupunktur arasındaki küçük farkın körleme
+    eksikliği ve yanlılıkla açıklanabileceğini savunur. Onlara göre akupunkturun etkisi "teatral bir plasebo"dur.
+  en: >-
+    An individual-patient-data meta-analysis by Vickers and colleagues, covering 39 trials and about 20,000 patients,
+    reported that real acupuncture was more effective than sham and than no-acupuncture control in chronic pain; the
+    difference from sham was about 0.2 standard deviations. Critics argue that the small difference between sham and real
+    acupuncture can be explained by incomplete blinding and bias, and describe acupuncture as a "theatrical placebo".
+claims:
+  - tr: Akupunktur kronik ağrıda, plasebo etkisinin ötesinde bir etkiye sahiptir.
+    en: Acupuncture has an effect on chronic pain beyond placebo.
+    src: [vickers2018]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: Yaklaşık 20.000 hastalık bireysel veri meta-analizinde gerçek akupunktur, sahte akupunktura göre anlamlı ama küçük bir fark gösterdi. Etkinin bir yıl boyunca büyük ölçüde sürdüğü bildirildi.
+    en: In an individual-data meta-analysis of about 20,000 patients, real acupuncture showed a significant but small difference from sham, with the effect reported to persist largely for a year.
+    src: [vickers2018]
+  - kind: critique
+    stance: against
+    tr: Gerçek ve sahte akupunktur arasındaki farkın klinik olarak önemsiz ve yanlılıkla açıklanabilir olduğu, akupunkturun bir plasebo olduğu savunuldu.
+    en: It was argued that the difference between real and sham acupuncture is clinically trivial and explainable by bias, and that acupuncture is a placebo.
+    src: [colquhoun2013]
+sources:
+  vickers2018:
+    type: article
+    authors: Vickers, A. J. et al.
+    title: 'Acupuncture for chronic pain: update of an individual patient data meta-analysis'
+    year: 2018
+    in: The Journal of Pain 19(5), 455–474
+    doi: 10.1016/j.jpain.2017.11.005
+  colquhoun2013:
+    type: article
+    authors: Colquhoun, D.; Novella, S. P.
+    title: Acupuncture is theatrical placebo
+    year: 2013
+    in: Anesthesia & Analgesia 116(6), 1360–1363
+    doi: 10.1213/ANE.0b013e31828f2d5e

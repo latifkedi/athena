@@ -1,0 +1,51 @@
+id: muon-g2
+parent: standart-model
+type: event
+date: { year: 2025, month: 6 }
+people: [Muon g-2 Collaboration (Fermilab)]
+title:
+  tr: Müonun manyetik momenti (g−2), son ölçüm
+  en: The muon magnetic moment (g−2), final measurement
+summary:
+  tr: >-
+    Müonun manyetik özelliği, Standart Model'in çok hassas bir testidir. Yıllarca deneysel değer ile kuramsal tahmin
+    arasında bir fark görünüyordu ve bu, "yeni fizik" belirtisi olarak tartışıldı. Fermilab'ın Haziran 2025'teki son
+    sonucu milyarda 127 hassasiyete ulaştı. Aynı dönemde güncellenen kuramsal tahminle arasındaki fark büyük ölçüde
+    kapandı.
+  en: >-
+    The muon's magnetic property is a very sensitive test of the Standard Model. For years the experimental value and the
+    theoretical prediction seemed to disagree, which was discussed as a sign of "new physics". Fermilab's final result in
+    June 2025 reached a precision of 127 parts per billion. Its gap with the theoretical prediction, updated at the same
+    time, largely closed.
+technical:
+  tr: >-
+    Deney a_μ = 116 592 070 5(148) × 10⁻¹² (127 ppb) değerini buldu. Yeni dünya ortalaması 116 592 071 5(145) × 10⁻¹²'dir.
+    2020 Kuram Girişimi tahmini hadronik vakum polarizasyonunu e⁺e⁻ → hadron verilerinden hesaplıyordu ve yaklaşık 5σ
+    fark veriyordu. 2025 güncellemesi kafes QCD hesaplarına dayanır ve deneyle uyumludur. Veri tabanlı ve kafes tabanlı
+    hesaplar arasındaki gerilim ise açık bir sorudur.
+  en: >-
+    The experiment found a_μ = 116 592 070 5(148) × 10⁻¹² (127 ppb); the new world average is 116 592 071 5(145) × 10⁻¹².
+    The 2020 Theory Initiative prediction computed hadronic vacuum polarisation from e⁺e⁻ → hadrons data and gave a
+    discrepancy of about 5σ. The 2025 update relies on lattice QCD and agrees with experiment. The tension between
+    data-driven and lattice-based calculations is itself an open question.
+claims:
+  - tr: Müonun anormal manyetik momenti 127 ppb hassasiyetle ölçülmüştür.
+    en: The muon anomalous magnetic moment has been measured to 127 ppb.
+    src: [g2-2025]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: 2020–2023 verileri, daha önce yayımlanan 2021 ve 2023 sonuçlarıyla uyumlu çıktı ve birleştirildi.
+    en: The 2020–2023 data agreed with the previously published 2021 and 2023 results and were combined.
+    src: [g2-2025]
+open:
+  - tr: Hadronik katkının veri tabanlı ve kafes QCD hesapları neden farklı sonuç veriyor?
+    en: Why do data-driven and lattice-QCD calculations of the hadronic contribution disagree?
+sources:
+  g2-2025:
+    type: article
+    authors: Muon g-2 Collaboration
+    title: Measurement of the positive muon anomalous magnetic moment to 127 ppb
+    year: 2025
+    in: Physical Review Letters 135, 101802
+    arxiv: '2506.03069'

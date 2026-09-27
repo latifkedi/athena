@@ -1,0 +1,77 @@
+id: surekli-hareket
+parent: enerji
+type: idea
+people: [Bhāskara II, Johann Bessler, John Keely]
+title:
+  tr: Sürekli hareket makineleri ve "serbest enerji" iddiaları
+  en: Perpetual motion machines and "free energy" claims
+summary:
+  tr: >-
+    Dışarıdan enerji almadan sonsuza kadar çalışan ya da aldığından fazla enerji veren makineler yüzyıllardır tasarlanıp
+    duyurulmuştur. Hint matematikçi Bhāskara'nın 12. yüzyıldaki tekerleği ve Bessler'in 18. yüzyıldaki çarkı bunun
+    örnekleridir. Günümüzde de "serbest enerji" adıyla benzer iddialar dile getirilmektedir. Bu iddialar, termodinamik
+    yasalarıyla doğrudan çelişir.
+  en: >-
+    Machines that run forever without outside energy, or give out more energy than they take in, have been designed and
+    announced for centuries. Examples are the 12th-century wheel of the Indian mathematician Bhāskara and Bessler's
+    18th-century wheel. Similar claims continue today under the name "free energy". These claims directly contradict the
+    laws of thermodynamics.
+technical:
+  tr: >-
+    Birinci türden sürekli hareket makinesi enerjinin korunumunu, ikinci türden olanı ise tek bir ısı kaynağından sürekli
+    iş çekerek ikinci yasayı ihlal eder. Paris Bilimler Akademisi 1775'te bu tür önerileri incelemeyi reddetme kararı
+    aldı. ABD Patent Ofisi bu tür başvurular için çalışan bir model istemektedir. Önerilen düzeneklerin incelenmesinde
+    genellikle gözden kaçan bir enerji girdisi (sıcaklık farkı, gizli pil, sürtünmenin yanlış ölçümü) bulunmuştur.
+  en: >-
+    A perpetual motion machine of the first kind violates conservation of energy; one of the second kind violates the
+    second law by drawing continuous work from a single heat reservoir. In 1775 the Paris Academy of Sciences resolved
+    not to examine such proposals. The US Patent Office requires a working model for such applications. Examinations of
+    proposed devices have usually found an overlooked energy input (temperature differences, hidden batteries, mismeasured
+    friction).
+claims:
+  - tr: Dışarıdan enerji almadan sürekli iş üreten bir makine yapılabilir.
+    en: A machine can be built that produces work continuously without an external energy input.
+    src: [ordhume1977]
+evidence:
+  - kind: historical
+    stance: for
+    tr: Bessler'in çarkının 1717'de Hesse-Kassel Landgrafı'nın gözetiminde, mühürlü bir odada haftalarca döndüğü bildirildi. İç yapısı hiçbir zaman açıklanmadı.
+    en: "Bessler's wheel was reported to have turned for weeks in a sealed room under the supervision of the Landgrave of Hesse-Kassel in 1717; its interior was never disclosed."
+    src: [ordhume1977]
+  - kind: experiment
+    stance: against
+    tr: Joule ve sonraki deneyler, iş ve ısı arasında sabit bir dönüşüm oranı olduğunu ve enerjinin korunduğunu gösterdi.
+    en: Joule's and later experiments showed a fixed conversion ratio between work and heat and that energy is conserved.
+    src: [joule1850]
+  - kind: historical
+    stance: against
+    tr: Keely'nin "motor"unun ölümünden sonra yapılan incelemede, zeminin altında gizlenmiş basınçlı hava tüpleri bulunduğu bildirildi.
+    en: After Keely's death, examination of his "motor" was reported to have found compressed-air pipes hidden beneath the floor.
+    src: [ordhume1977]
+positions:
+  - who:
+      tr: ABD Patent ve Marka Ofisi
+      en: US Patent and Trademark Office
+    tr: Sürekli hareket iddiası içeren başvurularda, işlerliğin gösterilmesi için çalışan bir model talep edilebilir.
+    en: For applications claiming perpetual motion, a working model may be required to show operability.
+    src: [mpep608]
+sources:
+  ordhume1977:
+    type: book
+    authors: Ord-Hume, A. W. J. G.
+    title: 'Perpetual Motion: The History of an Obsession'
+    year: 1977
+    in: George Allen & Unwin, London
+  joule1850:
+    type: article
+    authors: Joule, J. P.
+    title: On the mechanical equivalent of heat
+    year: 1850
+    in: Philosophical Transactions of the Royal Society of London 140, 61–82
+    doi: 10.1098/rstl.1850.0004
+  mpep608:
+    type: report
+    authors: United States Patent and Trademark Office
+    title: Manual of Patent Examining Procedure, §608.03 Models, Exhibits, Specimens
+    url: https://www.uspto.gov/web/offices/pac/mpep/s608.html
+related: [termodinamik]

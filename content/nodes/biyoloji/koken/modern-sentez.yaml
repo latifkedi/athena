@@ -1,0 +1,64 @@
+id: modern-sentez
+parent: canlilarin-kokeni
+type: idea
+date: { year: 1942 }
+people: [Ronald Fisher, J. B. S. Haldane, Sewall Wright, Theodosius Dobzhansky, Ernst Mayr, Julian Huxley]
+title:
+  tr: Modern sentez (neo-Darwinizm)
+  en: The modern synthesis (neo-Darwinism)
+summary:
+  tr: >-
+    1930'lar ve 1940'larda Darwin'in doğal seçilimi ile Mendel genetiği matematiksel popülasyon genetiği aracılığıyla
+    birleştirildi. Bu çerçeveye göre evrim, popülasyonlardaki gen sıklıklarının mutasyon, seçilim, sürüklenme ve göçle
+    değişmesidir. Julian Huxley 1942'de bu birleşimi "modern sentez" olarak adlandırdı.
+  en: >-
+    In the 1930s and 1940s Darwin's natural selection and Mendelian genetics were united through mathematical population
+    genetics. In this framework evolution is the change of gene frequencies in populations through mutation, selection,
+    drift and migration. In 1942 Julian Huxley named this union the "modern synthesis".
+technical:
+  tr: >-
+    Fisher (1930), Haldane ve Wright seçilim, mutasyon ve sürüklenmenin gen frekansları üzerindeki etkilerini
+    matematiksel olarak modelledi. Dobzhansky (1937) laboratuvar ve doğal popülasyon genetiğini, Mayr (1942) biyolojik tür
+    kavramını ve coğrafi türleşmeyi, Simpson (1944) ise paleontolojiyi bu çerçeveye kattı. Sentez, makroevrimin
+    mikroevrimsel süreçlerin birikimiyle açıklanabileceğini varsayar. Bu varsayım sonraki eleştirilerin ana hedefi olmuştur.
+  en: >-
+    Fisher (1930), Haldane and Wright modelled mathematically the effects of selection, mutation and drift on gene
+    frequencies. Dobzhansky (1937) brought in laboratory and natural population genetics, Mayr (1942) the biological
+    species concept and geographic speciation, and Simpson (1944) palaeontology. The synthesis assumes that
+    macroevolution can be explained by the accumulation of microevolutionary processes, an assumption that became the
+    main target of later criticism.
+claims:
+  - tr: Evrim, popülasyonlardaki alel sıklıklarının değişimidir. Makroevrim, mikroevrimsel süreçlerin uzun süre boyunca birikmesiyle açıklanır.
+    en: Evolution is change in allele frequencies within populations; macroevolution is explained by the accumulation of microevolutionary processes over long periods.
+    src: [huxley1942, fisher1930]
+evidence:
+  - kind: theoretical
+    stance: for
+    tr: Popülasyon genetiği modelleri, küçük seçilim avantajlarının bile birçok kuşak boyunca bir alelin popülasyona yayılmasına yol açabileceğini gösterdi.
+    en: Population-genetic models showed that even small selective advantages can spread an allele through a population over many generations.
+    src: [fisher1930]
+  - kind: critique
+    stance: against
+    tr: Bazı biyologlar, sentezin gelişim, fenotipik esneklik, epigenetik kalıtım ve niş inşası gibi süreçlere yeterince yer vermediğini savundu.
+    en: Some biologists argued that the synthesis gives too little place to development, phenotypic plasticity, epigenetic inheritance and niche construction.
+    src: [pigliucci2010]
+sources:
+  huxley1942:
+    type: book
+    authors: Huxley, J.
+    title: 'Evolution: The Modern Synthesis'
+    year: 1942
+    in: George Allen & Unwin, London
+  fisher1930:
+    type: book
+    authors: Fisher, R. A.
+    title: The Genetical Theory of Natural Selection
+    year: 1930
+    in: Clarendon Press, Oxford
+  pigliucci2010:
+    type: book
+    authors: Pigliucci, M.; Müller, G. B. (eds.)
+    title: 'Evolution: The Extended Synthesis'
+    year: 2010
+    in: MIT Press, Cambridge MA
+related: [mendel]

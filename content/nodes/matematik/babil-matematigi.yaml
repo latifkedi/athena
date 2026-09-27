@@ -1,0 +1,60 @@
+id: babil-matematigi
+parent: matematik
+type: event
+date: { year: -1800, approx: true }
+title:
+  tr: Babil matematiği ve Plimpton 322
+  en: Babylonian mathematics and Plimpton 322
+summary:
+  tr: >-
+    Babilliler 60 tabanlı bir sayı sistemi kullandı. Saati 60 dakikaya, çemberi 360 dereceye bölmemiz bu sistemden
+    gelir. Plimpton 322 adlı kil tablette bugün "Pisagor üçlüleri" dediğimiz sayılar listelenir. Tabletin ne için
+    yazıldığı tartışmalıdır.
+  en: >-
+    The Babylonians used a base-60 number system. Our 60-minute hour and 360-degree circle come from it. The clay tablet
+    known as Plimpton 322 lists numbers we now call "Pythagorean triples". What the tablet was written for is debated.
+technical:
+  tr: >-
+    Plimpton 322 (Eski Babil dönemi, y. MÖ 1822–1762, Larsa) on beş satırda, bir dik üçgenin kenarlarına karşılık gelen
+    tam sayı çiftlerini ve bir oran sütununu içerir. Mansfield ve Wildberger tabloyu "tam altmışlık trigonometri", yani
+    açı yerine oranlara dayalı bir trigonometri tablosu olarak yorumlar. Robson ise tabletin karşılıklılar (reciprocal)
+    yöntemiyle üretilmiş ve öğretim amaçlı hazırlanmış bir problem listesi olduğunu savunur.
+  en: >-
+    Plimpton 322 (Old Babylonian, c. 1822–1762 BCE, Larsa) contains fifteen rows of integer pairs corresponding to
+    the sides of right triangles, plus a column of ratios. Mansfield and Wildberger read it as "exact sexagesimal
+    trigonometry", a table based on ratios instead of angles. Robson argues it is a teacher's list of problems generated
+    with the reciprocal-pair method.
+claims:
+  - tr: Plimpton 322 bir trigonometri tablosudur.
+    en: Plimpton 322 is a trigonometric table.
+    src: [mansfield2017]
+  - tr: Plimpton 322, karşılıklı sayı çiftlerinden üretilmiş bir öğretim aracıdır.
+    en: Plimpton 322 is a teaching aid generated from reciprocal pairs.
+    src: [robson2001]
+evidence:
+  - kind: historical
+    stance: for
+    tr: Tablonun satırları, kenar oranları düzenli olarak değişen dik üçgenler oluşturacak biçimde sıralanmıştır.
+    en: The rows are ordered so that they form right triangles whose side ratios change steadily.
+    src: [mansfield2017]
+  - kind: historical
+    stance: against
+    tr: Aynı dönemin okul tabletlerinde karşılıklı sayı çiftleri yöntemi yaygındır ve tablonun sayıları bu yöntemle kolayca üretilebilir. Açı kavramı Babil matematiğinde belgelenmemiştir.
+    en: The reciprocal-pair method is common on school tablets of the period and readily generates the table's numbers. The concept of angle is not attested in Babylonian mathematics.
+    src: [robson2001]
+sources:
+  robson2001:
+    type: article
+    authors: Robson, E.
+    title: 'Neither Sherlock Holmes nor Babylon: a reassessment of Plimpton 322'
+    year: 2001
+    in: Historia Mathematica 28(3), 167–206
+    doi: 10.1006/hmat.2001.2317
+  mansfield2017:
+    type: article
+    authors: Mansfield, D. F.; Wildberger, N. J.
+    title: Plimpton 322 is Babylonian exact sexagesimal trigonometry
+    year: 2017
+    in: Historia Mathematica 44(4), 395–419
+    doi: 10.1016/j.hm.2017.08.001
+related: [sayma, yazi]

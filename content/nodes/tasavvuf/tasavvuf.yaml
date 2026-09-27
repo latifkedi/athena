@@ -1,0 +1,79 @@
+id: tasavvuf
+parent: insanlik
+side: roots
+type: tradition
+order: 3
+title:
+  tr: Tasavvuf
+  en: Sufism (taṣawwuf)
+summary:
+  tr: >-
+    Tasavvuf, nefsi arındırarak Allah'a yakınlaşmayı ve onu "tanımayı" (marifet) amaçlayan İslami bir yoldur. Bilgi
+    kaynağı olarak akıl ve naklin yanında "keşf"i, yani manevi tecrübe ve sezgiyle elde edilen bilgiyi de kabul eder.
+    Gazzâlî, İbn Arabî ve Mevlânâ gibi isimler bu geleneğin önde gelen temsilcileridir. Bazı âlimler ise tasavvufun belirli
+    görüş ve uygulamalarını eleştirmiştir.
+  en: >-
+    Sufism is an Islamic path that aims at nearness to God and "knowledge" of God (maʿrifa) through purification of the
+    self. Besides reason and transmission it accepts "kashf", knowledge gained through spiritual experience and intuition,
+    as a source of knowledge. Figures such as al-Ghazālī, Ibn ʿArabī and Rūmī are among its leading representatives. Some
+    scholars have criticised certain Sufi views and practices.
+technical:
+  tr: >-
+    Tasavvufi bilgi kuramı zâhir-bâtın ayrımına ve makam-hâl kavramlarına dayanır. Kuşeyrî'nin Risâle'si ve Gazzâlî'nin
+    İhyâ'sı, tasavvufu Sünnî kelam ve fıkıhla uzlaştıran klasik metinlerdir. İbn Teymiyye, vahdet-i vücûd ile türbe
+    ziyareti ve tevessül gibi bazı uygulamaları eleştirdi. Selefî ve modernist çevrelerde de tasavvufa yönelik farklı
+    eleştiriler vardır. Tasavvuf araştırmaları, mistik tecrübenin bilgi değeri üzerine felsefi tartışmalarla da
+    bağlantılıdır.
+  en: >-
+    Sufi epistemology rests on the distinction between the outward (ẓāhir) and the inward (bāṭin) and on the concepts of
+    stations (maqām) and states (ḥāl). Al-Qushayrī's Risāla and al-Ghazālī's Iḥyāʾ are classical texts reconciling Sufism
+    with Sunni theology and law. Ibn Taymiyya criticised the unity of being and certain practices such as visiting shrines
+    and intercession (tawassul); Salafi and modernist circles also have various critiques. Sufi studies connect to
+    philosophical debates on the epistemic value of mystical experience.
+claims:
+  - tr: Nefis terbiyesi ve zikirle kalbin arınması, akıl ve duyuların ötesinde doğrudan bir manevi bilgiye (marifet, keşf) ulaştırır.
+    en: Purifying the heart through discipline of the self and remembrance of God leads to direct spiritual knowledge (maʿrifa, kashf) beyond reason and the senses.
+    src: [tdv-tasavvuf]
+evidence:
+  - kind: experience
+    stance: for
+    tr: Sufi gelenekte çok sayıda şahsın manevi tecrübelerini aktaran eserler vardır. Gazzâlî de kendi arayışını ve tecrübesini el-Munkız'da anlatır.
+    en: The Sufi tradition contains many works recording individuals' spiritual experiences; al-Ghazālī too describes his own search and experience in al-Munqidh.
+    src: [watt1953]
+  - kind: argument
+    stance: against
+    tr: Kişisel mistik tecrübenin başkaları tarafından doğrulanamayacağı ve bu nedenle genel geçer bir bilgi kaynağı sayılamayacağı savunulmuştur.
+    en: It has been argued that personal mystical experience cannot be verified by others and therefore cannot count as a generally valid source of knowledge.
+    src: [sep-mysticism]
+positions:
+  - who:
+      tr: İbn Teymiyye
+      en: Ibn Taymiyya
+    tr: Vahdet-i vücûd ve bazı tasavvufi uygulamalar Kur'an ve Sünnet'e aykırıdır. Keşf, nassa aykırıysa bilgi kaynağı olamaz.
+    en: The unity of being and some Sufi practices are contrary to the Qur'an and Sunna; unveiling cannot be a source of knowledge where it contradicts scripture.
+    src: [knysh2000]
+sources:
+  tdv-tasavvuf:
+    type: encyclopedia
+    title: Tasavvuf
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/Tasavvuf
+  watt1953:
+    type: book
+    authors: Gazzâlî / al-Ghazālī; Watt, W. M. (trans.)
+    title: 'The Faith and Practice of al-Ghazālī (translation of al-Munqidh min al-Ḍalāl)'
+    year: 1953
+    in: George Allen & Unwin, London
+  sep-mysticism:
+    type: encyclopedia
+    authors: Gellman, J.
+    title: Mysticism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/mysticism/
+  knysh2000:
+    type: book
+    authors: Knysh, A.
+    title: 'Islamic Mysticism: A Short History'
+    year: 2000
+    in: Brill, Leiden
+related: [bilinc, islam]

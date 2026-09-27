@@ -1,0 +1,53 @@
+id: popper
+parent: bilim-felsefesi
+type: idea
+date: { year: 1934 }
+people: [Karl Popper]
+title:
+  tr: Popper ve yanlışlanabilirlik
+  en: Popper and falsifiability
+summary:
+  tr: >-
+    Popper'a göre bilimsel bir kuram hiçbir zaman kesin olarak doğrulanamaz, ancak yanlışlanabilir. Bir kuramı bilimsel
+    yapan, hangi gözlemin onu çürüteceğini önceden söylemesidir. Einstein'ın göreliliğini bu ölçüte uyan, Freud'un
+    psikanalizini ve Marx'ın tarih kuramını ise uymayan örnekler olarak gösterdi.
+  en: >-
+    For Popper a scientific theory can never be conclusively verified, only falsified. What makes a theory scientific is
+    that it says in advance which observation would refute it. He cited Einstein's relativity as fitting this criterion,
+    and Freud's psychoanalysis and Marx's theory of history as not fitting it.
+technical:
+  tr: >-
+    Logik der Forschung (1934; İngilizce 1959), tümevarımcılığı reddedip deneme-yanılmaya dayalı bir "sanılar ve
+    çürütmeler" yöntemi önerir. Eleştirmenler, gerçek bilim tarihinde kuramların aykırı gözlemler karşısında hemen terk
+    edilmediğini gösterdi (Kuhn, Lakatos). Duhem–Quine sorunu nedeniyle tek bir gözlem bir kuramı mantıksal olarak
+    yanlışlamaya yetmeyebilir.
+  en: >-
+    Logik der Forschung (1934; English 1959) rejects inductivism and proposes a method of "conjectures and refutations"
+    by trial and error. Critics showed that in the actual history of science theories are not abandoned at once in the
+    face of anomalous observations (Kuhn, Lakatos). Because of the Duhem–Quine problem a single observation may not suffice
+    to falsify a theory logically.
+claims:
+  - tr: Bir kuram, onu yanlışlayabilecek gözlemleri belirttiği ölçüde bilimseldir.
+    en: A theory is scientific to the extent that it specifies observations that could falsify it.
+    src: [popper1959]
+positions:
+  - who:
+      tr: Imre Lakatos
+      en: Imre Lakatos
+    tr: Bilim tek tek kuramlarla değil, "araştırma programları" ile ilerler. Programın çekirdeği aykırılıklara karşı yardımcı hipotezlerle korunur.
+    en: Science advances through "research programmes", not single theories; a programme's hard core is protected from anomalies by auxiliary hypotheses.
+    src: [lakatos1970]
+sources:
+  popper1959:
+    type: book
+    authors: Popper, K.
+    title: The Logic of Scientific Discovery
+    year: 1959
+    in: Hutchinson, London (Logik der Forschung, 1934)
+  lakatos1970:
+    type: book
+    authors: Lakatos, I.
+    title: Falsification and the methodology of scientific research programmes
+    year: 1970
+    in: Lakatos, I.; Musgrave, A. (eds.), Criticism and the Growth of Knowledge, Cambridge University Press, 91–196
+related: [kuhn, psikanaliz]

@@ -1,0 +1,66 @@
+id: cabir
+parent: simya
+type: tradition
+date: { year: 800, approx: true }
+people: [Câbir b. Hayyân / Jābir ibn Ḥayyān]
+title:
+  tr: Câbir b. Hayyân ve Câbir külliyatı
+  en: Jābir ibn Ḥayyān and the Jābirian corpus
+summary:
+  tr: >-
+    İslam simyasının en ünlü ismi Câbir b. Hayyân'dır. Adına yazılmış yüzlerce eser, maddelerin sınıflandırılması,
+    damıtma ve cıva-kükürt kuramı gibi konuları işler. Latince çevirileri ("Geber") Avrupa simyasını derinden etkiledi.
+    Bu eserlerin tek bir kişiye mi ait olduğu, yoksa zamanla oluşmuş bir külliyat mı olduğu tartışmalıdır.
+  en: >-
+    The most famous name in Islamic alchemy is Jābir ibn Ḥayyān. Hundreds of works bearing his name deal with the
+    classification of substances, distillation and the mercury–sulphur theory; their Latin translations ("Geber") deeply
+    influenced European alchemy. Whether these works belong to a single person or form a corpus built up over time is
+    debated.
+technical:
+  tr: >-
+    Geleneksel olarak Câbir, 8. yüzyılda yaşamış ve İmam Ca'fer es-Sâdık'ın öğrencisi olmuş bir âlim olarak kabul edilir.
+    Paul Kraus (1942–1943), külliyatın dil ve içerik analizine dayanarak eserlerin büyük kısmının 9. ve 10. yüzyıllarda
+    İsmâilî çevrelerde yazıldığını savundu. Fuat Sezgin ise geleneksel atfı savundu. Latince "Pseudo-Geber" eserlerinin
+    (Summa perfectionis) 13. yüzyılda Avrupa'da yazıldığı bugün genel olarak kabul edilir.
+  en: >-
+    Traditionally Jābir is held to have lived in the 8th century and been a student of Imām Jaʿfar al-Ṣādiq. Paul Kraus
+    (1942–1943), on the basis of linguistic and content analysis of the corpus, argued that most of the works were written
+    in the 9th and 10th centuries in Ismaili circles. Fuat Sezgin defended the traditional attribution. It is now
+    generally accepted that the Latin "Pseudo-Geber" works (Summa perfectionis) were written in 13th-century Europe.
+datings:
+  - view:
+      tr: Geleneksel atıf
+      en: Traditional attribution
+    value:
+      tr: 8. yüzyıl (Ca'fer es-Sâdık'ın öğrencisi)
+      en: 8th century (student of Jaʿfar al-Ṣādiq)
+    src: [sezgin1971]
+  - view:
+      tr: Paul Kraus'un tezi
+      en: "Paul Kraus's thesis"
+    value:
+      tr: Külliyatın büyük kısmı 9. ve 10. yüzyıllarda yazılmıştır.
+      en: Most of the corpus was written in the 9th and 10th centuries.
+    src: [kraus1942]
+claims:
+  - tr: Metaller cıva ve kükürtün farklı oranlarda birleşmesinden oluşur ve oranların dengelenmesiyle dönüştürülebilir.
+    en: Metals are formed by mercury and sulphur combining in different proportions and can be transmuted by balancing the proportions.
+    src: [tdv-simya]
+sources:
+  kraus1942:
+    type: book
+    authors: Kraus, P.
+    title: "Jābir ibn Ḥayyān: Contribution à l'histoire des idées scientifiques dans l'Islam (2 vols.)"
+    year: 1942
+    in: Mémoires de l'Institut d'Égypte 44–45, Cairo
+  sezgin1971:
+    type: book
+    authors: Sezgin, F.
+    title: 'Geschichte des arabischen Schrifttums, Band IV: Alchimie, Chemie, Botanik, Agrikultur'
+    year: 1971
+    in: E. J. Brill, Leiden
+  tdv-simya:
+    type: encyclopedia
+    title: Simya
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/simya

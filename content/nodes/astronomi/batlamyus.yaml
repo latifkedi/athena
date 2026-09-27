@@ -1,0 +1,59 @@
+id: batlamyus
+parent: astronomi
+type: text
+date: { year: 150, approx: true }
+people: [Batlamyus / Claudius Ptolemaeus]
+title:
+  tr: Batlamyus'un Almagest'i ve yer merkezli model
+  en: "Ptolemy's Almagest and the geocentric model"
+summary:
+  tr: >-
+    Batlamyus'un Almagest'i, Dünya'yı merkeze alan ve gezegenlerin hareketini iç içe çemberlerle (episikl) açıklayan bir
+    modeldi. Model, gezegen konumlarını yaklaşık 1400 yıl boyunca kullanılabilir bir doğrulukla öngördü. Eser Arapçaya
+    çevrildi. İslam dünyasındaki gökbilimciler, özellikle Merağa ve Semerkant rasathanelerinde, modeli eleştirip
+    geliştirdi.
+  en: >-
+    Ptolemy's Almagest was a model placing the Earth at the centre and explaining planetary motion with nested circles
+    (epicycles). For about 1,400 years it predicted planetary positions with usable accuracy. The work was translated into
+    Arabic, and astronomers in the Islamic world, especially at the Maragha and Samarkand observatories, criticised and
+    improved it.
+technical:
+  tr: >-
+    Model, eksantrik daireler, episikller ve "ekuant" noktasını kullanır. Ekuant, düzgün dairesel hareket ilkesini
+    ihlal ettiği için Nasîrüddin Tûsî ve İbnü'ş-Şâtır gibi gökbilimcilerce eleştirildi. Tûsî çifti, iki dairesel
+    hareketten doğrusal salınım üreten bir geometrik düzenektir. Uluğ Bey'in Zîc'i (1437) yaklaşık 1000 yıldızın
+    konumlarını yeni gözlemlerle verdi.
+  en: >-
+    The model uses eccentric circles, epicycles and the "equant" point. Because the equant violated the principle of
+    uniform circular motion, it was criticised by astronomers such as Naṣīr al-Dīn al-Ṭūsī and Ibn al-Shāṭir. The Ṭūsī
+    couple is a geometric device producing linear oscillation from two circular motions. Ulugh Beg's Zīj (1437) gave new
+    observed positions for about 1,000 stars.
+claims:
+  - tr: Dünya evrenin merkezinde hareketsiz durur. Gezegenlerin görünür hareketleri iç içe daireler ile açıklanır.
+    en: The Earth rests motionless at the centre of the universe; the apparent motions of the planets are explained by nested circles.
+    src: [toomer1984]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Model, gezegen konumlarını çıplak göz gözlemlerinin hassasiyetine yakın biçimde öngörebiliyordu.
+    en: The model could predict planetary positions close to the precision of naked-eye observations.
+    src: [toomer1984]
+  - kind: theoretical
+    stance: against
+    tr: Merağa okulu gökbilimcileri ekuant noktasının fiziksel olarak tutarsız olduğunu savundu ve alternatif modeller önerdi.
+    en: Astronomers of the Maragha school argued that the equant was physically inconsistent and proposed alternative models.
+    src: [saliba2007]
+sources:
+  toomer1984:
+    type: book
+    authors: Toomer, G. J. (trans.)
+    title: "Ptolemy's Almagest"
+    year: 1984
+    in: Duckworth, London; Springer, New York
+  saliba2007:
+    type: book
+    authors: Saliba, G.
+    title: Islamic Science and the Making of the European Renaissance
+    year: 2007
+    in: MIT Press, Cambridge MA
+related: [kopernik]

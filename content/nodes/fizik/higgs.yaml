@@ -1,0 +1,53 @@
+id: higgs
+parent: standart-model
+type: event
+date: { year: 2012, month: 7 }
+people: [ATLAS Collaboration, CMS Collaboration, Peter Higgs, François Englert]
+title:
+  tr: Higgs bozonunun bulunması
+  en: Discovery of the Higgs boson
+summary:
+  tr: >-
+    1964'te öngörülen Higgs bozonu, 4 Temmuz 2012'de CERN'deki Büyük Hadron Çarpıştırıcısı'nda ATLAS ve CMS
+    deneylerince duyuruldu. Bu parçacık, temel parçacıklara kütle kazandırdığı düşünülen Higgs alanının işaretidir.
+  en: >-
+    The Higgs boson, predicted in 1964, was announced on 4 July 2012 by the ATLAS and CMS experiments at CERN's Large
+    Hadron Collider. The particle is the signature of the Higgs field, which is thought to give elementary particles
+    their mass.
+technical:
+  tr: >-
+    Her iki deney de yaklaşık 125 GeV kütlede, H → γγ ve H → ZZ* → 4ℓ kanallarında birleşik olarak yaklaşık 5σ
+    anlamlılıkta bir fazlalık gözledi. Sonraki ölçümler spin-sıfır ve pozitif parite ile, fermiyon ve bozonlarla
+    kütleyle orantılı bağlaşım gösterdi. Higgs öz-bağlaşımı henüz doğrudan ölçülmemiştir.
+  en: >-
+    Both experiments observed an excess at a mass of about 125 GeV in the H → γγ and H → ZZ* → 4ℓ channels, with a
+    combined significance of about 5σ. Later measurements showed spin zero and positive parity, and couplings to fermions
+    and bosons proportional to mass. The Higgs self-coupling has not yet been measured directly.
+claims:
+  - tr: Kütlesi yaklaşık 125 GeV olan ve Standart Model Higgs bozonuyla uyumlu yeni bir parçacık vardır.
+    en: There is a new particle of mass about 125 GeV consistent with the Standard Model Higgs boson.
+    src: [atlas2012, cms2012]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: İki bağımsız dedektör aynı kütlede, birbirinden bağımsız analizlerle anlamlı fazlalık buldu.
+    en: Two independent detectors found significant excesses at the same mass with independent analyses.
+    src: [atlas2012, cms2012]
+sources:
+  atlas2012:
+    type: article
+    authors: ATLAS Collaboration
+    title: Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC
+    year: 2012
+    in: Physics Letters B 716, 1–29
+    doi: 10.1016/j.physletb.2012.08.020
+  cms2012:
+    type: article
+    authors: CMS Collaboration
+    title: Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC
+    year: 2012
+    in: Physics Letters B 716, 30–61
+    doi: 10.1016/j.physletb.2012.08.021
+open:
+  - tr: Higgs potansiyelinin biçimi ve öz-bağlaşımı henüz ölçülemedi.
+    en: The shape of the Higgs potential and its self-coupling have not yet been measured.

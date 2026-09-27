@@ -1,0 +1,48 @@
+id: aristoteles
+parent: felsefe
+type: tradition
+date: { year: -350, approx: true }
+people: [Aristoteles / Aristotle]
+title:
+  tr: Aristoteles ve mantık
+  en: Aristotle and logic
+summary:
+  tr: >-
+    Aristoteles, geçerli akıl yürütmenin kurallarını sistemli olarak ilk inceleyen filozoftur. Kıyas (tasım) kuramı
+    yaklaşık iki bin yıl mantığın temeli oldu. Fizik, biyoloji, etik ve siyaset üzerine yazdıkları, İslam dünyasında
+    "Muallim-i Evvel" (ilk öğretmen) olarak anılmasını sağladı. Fiziğine dair bazı görüşleri, örneğin ağır cisimlerin daha
+    hızlı düştüğü görüşü, sonradan deneylerle sorgulandı.
+  en: >-
+    Aristotle was the first philosopher to study systematically the rules of valid reasoning; his theory of the
+    syllogism was the basis of logic for about two thousand years. His writings on physics, biology, ethics and politics
+    earned him the title "al-Muʿallim al-Awwal" (the First Teacher) in the Islamic world. Some of his views on physics,
+    such as heavier bodies falling faster, were later challenged by experiment.
+technical:
+  tr: >-
+    Organon'daki Birinci Analitikler, üç terimli kıyası ve geçerli kıyas biçimlerini (ör. Barbara) inceler. Aristotelesçi
+    mantık, Frege (1879) ve Russell'ın yüklem mantığıyla genişletildi. Kıyas mantığı, çoklu nicelemeli ilişkisel
+    önermeleri ifade edemez. Aristoteles'in dört neden kuramı (maddi, formel, fail, gai), İslam ve Latin skolastik
+    düşüncesini derinden etkiledi.
+  en: >-
+    The Prior Analytics in the Organon studies the three-term syllogism and its valid forms (e.g. Barbara). Aristotelian
+    logic was extended by the predicate logic of Frege (1879) and Russell; syllogistic cannot express relational
+    statements with multiple quantifiers. Aristotle's theory of four causes (material, formal, efficient, final) deeply
+    influenced Islamic and Latin scholastic thought.
+claims:
+  - tr: Geçerli bir kıyasta öncüller doğruysa sonuç da zorunlu olarak doğrudur.
+    en: In a valid syllogism, if the premises are true the conclusion is necessarily true.
+    src: [sep-aristotle-logic]
+positions:
+  - who:
+      tr: Modern mantıkçılar
+      en: Modern logicians
+    tr: Kıyas mantığı, matematiksel akıl yürütmenin tamamını ifade etmeye yetmez. Yüklem mantığı daha geneldir.
+    en: Syllogistic is not sufficient to express all mathematical reasoning; predicate logic is more general.
+    src: [sep-aristotle-logic]
+sources:
+  sep-aristotle-logic:
+    type: encyclopedia
+    authors: Smith, R.
+    title: "Aristotle's Logic"
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/aristotle-logic/

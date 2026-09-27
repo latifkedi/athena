@@ -1,0 +1,50 @@
+id: buhar-makinesi
+parent: enerji
+type: technology
+date: { year: 1769 }
+people: [Thomas Newcomen, James Watt]
+title:
+  tr: Buhar makinesi
+  en: The steam engine
+summary:
+  tr: >-
+    Kömürün ısısını harekete çeviren buhar makinesi, Sanayi Devrimi'nin motoru oldu. Newcomen'in 1712 makinesi madenlerden
+    su pompalıyordu. James Watt'ın 1769'da patentini aldığı ayrı yoğuşturucu, yakıt tüketimini büyük ölçüde azalttı.
+  en: >-
+    The steam engine, which turns the heat of coal into motion, became the engine of the Industrial Revolution.
+    Newcomen's 1712 engine pumped water out of mines. The separate condenser patented by James Watt in 1769 greatly
+    reduced fuel consumption.
+technical:
+  tr: >-
+    Newcomen makinesi silindiri her çevrimde soğuttuğu için ısı kayıpları çok yüksekti. Watt'ın ayrı yoğuşturucusu
+    silindiri sürekli sıcak tutarak verimi yaklaşık iki ila dört kat artırdı. Daha sonra eklenen çift etkili silindir,
+    güneş-gezegen dişlisi ve merkezkaç regülatörü, makineyi fabrikalarda döner güç kaynağı hâline getirdi. Isı
+    makinelerinin kuramsal sınırlarını inceleyen Carnot'nun çalışması (1824) doğrudan bu makinelerden esinlendi.
+  en: >-
+    The Newcomen engine cooled its cylinder on every cycle, so heat losses were very high. Watt's separate condenser kept
+    the cylinder hot and raised efficiency roughly two- to fourfold. The later double-acting cylinder, sun-and-planet
+    gear and centrifugal governor made the engine a source of rotary power in factories. Carnot's study (1824) of the
+    theoretical limits of heat engines was directly inspired by these machines.
+claims:
+  - tr: Watt'ın ayrı yoğuşturucusu buhar makinelerinin yakıt verimliliğini büyük ölçüde artırdı.
+    en: "Watt's separate condenser greatly increased the fuel efficiency of steam engines."
+    src: [watt1769, hills1989]
+evidence:
+  - kind: historical
+    stance: for
+    tr: Boulton & Watt, makinelerini kullanan maden sahiplerinden, eski Newcomen makinelerine göre sağlanan kömür tasarrufunun üçte biri oranında ücret alıyordu.
+    en: Boulton & Watt charged mine owners a premium of one third of the coal saved compared with the old Newcomen engines.
+    src: [hills1989]
+sources:
+  watt1769:
+    type: report
+    authors: Watt, J.
+    title: 'Patent No. 913: A new invented method of lessening the consumption of steam and fuel in fire engines'
+    year: 1769
+    in: Great Britain Patent Office
+  hills1989:
+    type: book
+    authors: Hills, R. L.
+    title: 'Power from Steam: A History of the Stationary Steam Engine'
+    year: 1989
+    in: Cambridge University Press

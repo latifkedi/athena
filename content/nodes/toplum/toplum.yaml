@@ -1,0 +1,38 @@
+id: toplum
+parent: insanlik
+side: canopy
+type: field
+order: 12
+feed: ['arxiv:econ', 'socarxiv']
+title:
+  tr: Toplum, tarih ve ekonomi
+  en: Society, history and economics
+summary:
+  tr: >-
+    İnsan topluluklarının nasıl örgütlendiğini, tarihin nasıl işlediğini, hukuku ve ekonomiyi inceleyen alanlar.
+    Hammurabi yasalarından İbn Haldun'un toplum kuramına ve Adam Smith'in piyasa ekonomisine uzanır. Bu alanlarda
+    deney yapmak çoğu zaman zor olduğundan, farklı kuramlar uzun süre yan yana var olur.
+  en: >-
+    The fields that study how human communities are organised, how history works, law and the economy. They run from
+    the laws of Hammurabi to Ibn Khaldūn's theory of society and Adam Smith's market economics. Because experiments are
+    often hard to carry out in these fields, different theories coexist for long periods.
+technical:
+  tr: >-
+    Sosyal bilimlerde nedensellik çoğunlukla gözlemsel veriden, doğal deneylerden ve son on yıllarda sayıları artan
+    randomize saha deneylerinden çıkarılır. 2019 Nobel Ekonomi Ödülü bu deneylere verilmiştir. Tekrarlanabilirlik
+    sorunları bu alanlarda da tartışılmaktadır.
+  en: >-
+    In the social sciences causation is mostly inferred from observational data, natural experiments and, increasingly
+    in recent decades, randomised field experiments (Nobel Prize in Economics 2019). Reproducibility problems are debated
+    in these fields too.
+claims:
+  - tr: Randomize saha deneyleri, yoksullukla mücadele politikalarının etkilerini ölçmek için kullanılabilir.
+    en: Randomised field experiments can be used to measure the effects of anti-poverty policies.
+    src: [nobel-econ2019]
+sources:
+  nobel-econ2019:
+    type: web
+    title: The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2019 (press release)
+    year: 2019
+    in: NobelPrize.org
+    url: https://www.nobelprize.org/prizes/economic-sciences/2019/press-release/

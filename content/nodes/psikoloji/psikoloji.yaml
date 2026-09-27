@@ -1,0 +1,40 @@
+id: psikoloji
+parent: insanlik
+side: canopy
+type: field
+order: 10
+feed: ['psyarxiv', 'arxiv:q-bio.NC']
+title:
+  tr: Psikoloji ve zihin
+  en: Psychology and mind
+summary:
+  tr: >-
+    Zihni, davranışı, algıyı, duyguyu ve bilinci inceleyen alan. 1879'da Leipzig'de ilk deneysel psikoloji laboratuvarının
+    kurulmasıyla felsefeden ayrı bir bilim olarak gelişmeye başladı. Bilincin ne olduğu hâlâ en büyük açık sorulardan
+    biridir. Son on yılda birçok ünlü psikoloji bulgusunun tekrarlanamaması, alanın yöntemlerinin yeniden
+    düşünülmesine yol açtı.
+  en: >-
+    The field that studies mind, behaviour, perception, emotion and consciousness. It began to develop as a science
+    separate from philosophy with the founding of the first experimental psychology laboratory in Leipzig in 1879. What
+    consciousness is remains one of the biggest open questions. In the last decade the failure of many well-known
+    findings to replicate has led to a rethinking of the field's methods.
+technical:
+  tr: >-
+    Psikoloji içinde psikanaliz, davranışçılık, bilişsel psikoloji ve sinirbilim gibi farklı paradigmalar birbirini
+    izlemiş ya da yan yana var olmuştur. Tekrarlama krizi sonrasında ön kayıt (preregistration), kayıtlı raporlar ve açık
+    veri uygulamaları yaygınlaşmıştır.
+  en: >-
+    Psychology has seen paradigms such as psychoanalysis, behaviourism, cognitive psychology and neuroscience succeed or
+    coexist with one another. After the replication crisis, preregistration, registered reports and open data became
+    widespread.
+claims:
+  - tr: Wundt 1879'da Leipzig Üniversitesi'nde deneysel psikoloji laboratuvarını kurdu.
+    en: Wundt founded the experimental psychology laboratory at the University of Leipzig in 1879.
+    src: [boring1950]
+sources:
+  boring1950:
+    type: book
+    authors: Boring, E. G.
+    title: A History of Experimental Psychology
+    year: 1950
+    in: Appleton-Century-Crofts, New York, 2nd edition

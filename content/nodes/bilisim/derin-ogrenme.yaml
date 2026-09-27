@@ -1,0 +1,67 @@
+id: derin-ogrenme
+parent: bilisim
+type: technology
+date: { year: 2012 }
+people: [Geoffrey Hinton, Yann LeCun, Yoshua Bengio, Alex Krizhevsky, Ilya Sutskever]
+title:
+  tr: Derin öğrenme
+  en: Deep learning
+summary:
+  tr: >-
+    Beyindeki sinir hücrelerinden esinlenen yapay sinir ağları, 1950'lerden beri araştırılıyordu. 2012'de çok katmanlı
+    ("derin") bir ağ, grafik işlemcilerde eğitilerek görüntü tanımada önceki yöntemleri büyük farkla geçti. Bu olay yapay
+    zekâdaki bugünkü dalganın başlangıcı sayılır. Hinton ve Hopfield, bu alandaki temel katkıları nedeniyle 2024 Nobel
+    Fizik Ödülü'nü aldı.
+  en: >-
+    Artificial neural networks, inspired by nerve cells in the brain, had been studied since the 1950s. In 2012 a
+    many-layered ("deep") network trained on graphics processors beat earlier methods in image recognition by a wide
+    margin, an event regarded as the start of today's wave of AI. Hinton and Hopfield received the 2024 Nobel Prize in
+    Physics for foundational contributions to the field.
+technical:
+  tr: >-
+    AlexNet, ImageNet 2012 yarışmasında ilk 5 hata oranını yaklaşık %26'dan %15,3'e düşürdü. Model, ReLU aktivasyonları,
+    dropout ve GPU'da eğitilen evrişimli katmanlardan oluşuyordu. Geri yayılım (Rumelhart, Hinton, Williams 1986) ve
+    evrişimli ağlar (LeCun 1989) daha önce geliştirilmişti. Derin ağların genelleme yeteneği, ezberleyebilecek kadar büyük
+    modellerde bile, kuramsal olarak tam açıklanamamıştır.
+  en: >-
+    AlexNet cut the top-5 error on ImageNet 2012 from about 26% to 15.3%, using convolutional layers trained on GPUs with
+    ReLU activations and dropout. Back-propagation (Rumelhart, Hinton, Williams 1986) and convolutional networks (LeCun
+    1989) had been developed earlier. The ability of deep networks to generalise, even when large enough to memorise, is
+    not fully explained theoretically.
+claims:
+  - tr: Çok katmanlı sinir ağları, büyük veri ve hesaplama gücüyle eğitildiğinde algılama görevlerinde elle tasarlanmış yöntemleri geçer.
+    en: Multi-layer neural networks trained with large data and compute outperform hand-engineered methods on perception tasks.
+    src: [krizhevsky2017, lecun2015]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: ImageNet 2012 yarışmasında derin evrişimli ağ, ikinci en iyi yöntemden yaklaşık 10 puan daha düşük hata oranına ulaştı.
+    en: In ImageNet 2012 the deep convolutional network achieved an error rate about 10 points lower than the next best method.
+    src: [krizhevsky2017]
+  - kind: experiment
+    stance: against
+    tr: Görüntüye insan gözünün fark edemeyeceği küçük değişiklikler eklenerek derin ağların yanlış sınıflandırma yapmasına yol açılabildiği gösterildi.
+    en: It was shown that tiny changes to an image, imperceptible to humans, can make deep networks misclassify it.
+    src: [szegedy2014]
+sources:
+  krizhevsky2017:
+    type: article
+    authors: Krizhevsky, A.; Sutskever, I.; Hinton, G. E.
+    title: ImageNet classification with deep convolutional neural networks
+    year: 2017
+    in: Communications of the ACM 60(6), 84–90 (originally NeurIPS 2012)
+    doi: 10.1145/3065386
+  lecun2015:
+    type: article
+    authors: LeCun, Y.; Bengio, Y.; Hinton, G.
+    title: Deep learning
+    year: 2015
+    in: Nature 521, 436–444
+    doi: 10.1038/nature14539
+  szegedy2014:
+    type: preprint
+    authors: Szegedy, C. et al.
+    title: Intriguing properties of neural networks
+    year: 2014
+    arxiv: '1312.6199'
+related: [transformer]

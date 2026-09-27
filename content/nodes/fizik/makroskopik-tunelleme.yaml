@@ -1,0 +1,55 @@
+id: makroskopik-tunelleme
+parent: kuantum-mekanigi
+type: event
+date: { year: 1985 }
+people: [John Clarke, Michel H. Devoret, John M. Martinis]
+title:
+  tr: Elektrik devresinde makroskopik kuantum tünellemesi (Nobel 2025)
+  en: Macroscopic quantum tunnelling in an electric circuit (Nobel 2025)
+summary:
+  tr: >-
+    Kuantum etkileri genellikle tek tek atomlarda görülür. Clarke, Devoret ve Martinis 1984–1985'te elle tutulabilecek
+    büyüklükteki süperiletken bir devrenin bir bütün olarak kuantum tünellemesi yaptığını ve enerjisinin kesikli
+    düzeylerde olduğunu gösterdi. Bu çalışma bugünkü süperiletken kuantum bilgisayarların temelidir. 2025 Nobel Fizik
+    Ödülü bu çalışmaya verildi.
+  en: >-
+    Quantum effects are usually seen in single atoms. In 1984–1985 Clarke, Devoret and Martinis showed that a
+    superconducting circuit large enough to hold in the hand tunnels quantum-mechanically as a whole and has discrete
+    energy levels. This work underlies today's superconducting quantum computers. It received the 2025 Nobel Prize in
+    Physics.
+technical:
+  tr: >-
+    Akımla beslenen bir Josephson ekleminin sıfır gerilim durumundan kaçış hızı, düşük sıcaklıkta sıcaklıktan bağımsız
+    hâle geldi ve kuantum tünellemesiyle açıklanabildi. Mikrodalga spektroskopisi, faz farkı serbestlik derecesinin
+    potansiyel kuyusunda nicemlenmiş enerji düzeyleri gösterdi. Burada kuantum davranışı gösteren serbestlik derecesi
+    milyarlarca Cooper çiftinin ortak değişkenidir.
+  en: >-
+    The escape rate of a current-biased Josephson junction from its zero-voltage state became temperature-independent at
+    low temperature and could be explained by quantum tunnelling. Microwave spectroscopy showed quantised energy levels
+    of the phase-difference degree of freedom in its potential well. The degree of freedom behaving quantum-mechanically
+    here is a collective variable of billions of Cooper pairs.
+claims:
+  - tr: Makroskopik bir elektrik devresinin kolektif bir değişkeni kuantum tünellemesi ve enerji nicemlenmesi gösterir.
+    en: A collective variable of a macroscopic electric circuit exhibits quantum tunnelling and energy quantisation.
+    src: [martinis1985]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Eklemin mikrodalga ışımasıyla uyarılması, öngörülen enerji düzeyleri arasındaki geçişlere karşılık gelen rezonanslar gösterdi.
+    en: Exciting the junction with microwaves produced resonances corresponding to transitions between the predicted energy levels.
+    src: [martinis1985, nobel2025]
+sources:
+  martinis1985:
+    type: article
+    authors: Martinis, J. M.; Devoret, M. H.; Clarke, J.
+    title: Energy-level quantization in the zero-voltage state of a current-biased Josephson junction
+    year: 1985
+    in: Physical Review Letters 55, 1543–1546
+    doi: 10.1103/PhysRevLett.55.1543
+  nobel2025:
+    type: web
+    title: The Nobel Prize in Physics 2025 (press release)
+    year: 2025
+    in: NobelPrize.org
+    url: https://www.nobelprize.org/prizes/physics/2025/press-release/
+related: [kuantum-bilgisayar]

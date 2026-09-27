@@ -1,0 +1,164 @@
+id: insanlik
+parent: null
+type: center
+title:
+  tr: İnsanlık
+  en: Humanity
+summary:
+  tr: >-
+    Ağacın merkezi. İnsanın nereden geldiği ve ne zaman ortaya çıktığı sorusuna dinler, güncel bilim ve farklı
+    gelenekler farklı cevaplar verir. Bu yüzden burada tek bir tarih verilmez; görüşler kaynaklarıyla yan yana
+    gösterilir. Yukarıdaki dallar dünyayı araştıran alanlardır, aşağıdaki kökler düşünce ve inanç gelenekleridir.
+  en: >-
+    The centre of the tree. Religions, current science and other traditions answer the question of where humans
+    came from and when they appeared in different ways, so no single date is given here; the views are shown side by
+    side with their sources. The branches above are fields that investigate the world; the roots below are traditions
+    of thought and belief.
+technical:
+  tr: >-
+    Paleoantropolojide Homo sapiens'in kökeni fosil kayıtları (Jebel Irhoud, Omo Kibish), arkeolojik bağlam ve
+    genom verisine dayalı popülasyon ayrışma tahminleriyle incelenir. Tek bölgeli (Doğu Afrika) modellerin yerini
+    büyük ölçüde "pan-Afrika" ya da yapılandırılmış popülasyon modelleri almıştır. İbrahimi geleneklerde insanın kökeni
+    Âdem ile Havva'nın doğrudan yaratılışıyla açıklanır. Kutsal metinlerin kendisi bir yıl belirtmez; tarihler sonraki
+    soy kütüğü hesaplarından türetilmiştir. Hint geleneğinde zaman döngüseldir (yuga, kalpa).
+  en: >-
+    In palaeoanthropology the origin of Homo sapiens is studied through the fossil record (Jebel Irhoud, Omo Kibish),
+    archaeological context and genome-based estimates of population divergence. Single-region (East African) models
+    have largely given way to "pan-African" or structured-population models. In the Abrahamic traditions human origins
+    are explained by the direct creation of Adam and Eve. The scriptures themselves give no year; dates are derived
+    from later genealogical calculations. In the Hindu tradition time is cyclical (yugas, kalpas).
+datings:
+  - view:
+      tr: Paleoantropoloji (fosil tarihlendirme)
+      en: Palaeoanthropology (fossil dating)
+    value:
+      tr: Homo sapiens'e atfedilen en eski fosiller Fas'taki Jebel Irhoud'da bulunmuş ve termolüminesans yöntemiyle yaklaşık 300.000 yıl öncesine tarihlendirilmiştir.
+      en: The oldest fossils attributed to Homo sapiens were found at Jebel Irhoud, Morocco, and dated by thermoluminescence to about 300,000 years ago.
+    src: [hublin2017, richter2017]
+  - view:
+      tr: Paleoantropoloji (Doğu Afrika)
+      en: Palaeoanthropology (East Africa)
+    value:
+      tr: Etiyopya'daki Omo I fosili, üzerindeki volkanik kül katmanına göre en az yaklaşık 233.000 yaşındadır.
+      en: The Omo I fossil from Ethiopia is at least about 233,000 years old, based on the volcanic ash layer above it.
+    src: [vidal2022]
+  - view:
+      tr: Popülasyon genetiği
+      en: Population genetics
+    value:
+      tr: Güney Afrika'dan antik genomlara dayanan tahminler, modern insan popülasyonlarının ayrışmasını 350.000–260.000 yıl öncesine yerleştirir.
+      en: Estimates based on ancient genomes from southern Africa place the divergence of modern human populations at 350,000–260,000 years ago.
+    src: [schlebusch2017]
+  - view:
+      tr: İslam (Kur'an)
+      en: Islam (Qur'an)
+    value:
+      tr: Kur'an, Âdem'in çamurdan yaratıldığını ve yeryüzüne halife kılındığını anlatır; bir tarih vermez.
+      en: The Qur'an recounts that Adam was created from clay and made a vicegerent on earth; it gives no date.
+    src: [kuran-2-30, kuran-15-26]
+  - view:
+      tr: Yahudilik ve Hristiyanlık (Tekvin)
+      en: Judaism and Christianity (Genesis)
+    value:
+      tr: Tekvin kitabı Âdem ile Havva'nın yaratılışını anlatır ve bir yıl vermez. Metindeki soy kütüklerinden yapılan hesaplar farklı sonuçlar verir. James Ussher (1650) MÖ 4004'ü, geleneksel İbrani takvimi ise başlangıç olarak MÖ 3761'i esas alır.
+      en: The Book of Genesis recounts the creation of Adam and Eve and gives no year. Calculations from its genealogies give different results. James Ussher (1650) arrived at 4004 BCE; the traditional Hebrew calendar counts from 3761 BCE.
+    src: [genesis-1-2, ussher1650, britannica-jewish-calendar]
+  - view:
+      tr: Hinduizm (Puranalar)
+      en: Hinduism (Puranas)
+    value:
+      tr: Zaman döngüseldir. Evren ve insanlık, her biri yüz binlerce ila milyonlarca yıl süren yuga çağlarından ve daha büyük kalpa döngülerinden geçer. Doğrusal bir "başlangıç tarihi" yoktur.
+      en: Time is cyclical. The universe and humanity pass through yuga ages, each lasting hundreds of thousands to millions of years, within larger kalpa cycles. There is no linear "starting date".
+    src: [britannica-yuga]
+positions:
+  - who:
+      tr: Güncel ana akım biyoloji ve paleoantropoloji
+      en: Current mainstream biology and palaeoanthropology
+    tr: Homo sapiens, Afrika'da daha önceki hominin popülasyonlarından evrimleşmiştir. Birden çok Afrika bölgesinin bu sürece katkıda bulunduğu düşünülmektedir.
+    en: Homo sapiens evolved from earlier hominin populations in Africa, with several African regions thought to have contributed to the process.
+    src: [stringer2016, hublin2017]
+  - who:
+      tr: İbrahimi dinlerin geleneksel yorumu
+      en: Traditional reading of the Abrahamic religions
+    tr: İnsan, Allah/Tanrı tarafından ilk insan Âdem'den başlayarak doğrudan yaratılmıştır.
+    en: Humans were created directly by God, beginning with the first human, Adam.
+    src: [kuran-2-30, genesis-1-2]
+  - who:
+      tr: Çağdaş İslam düşüncesinde farklı görüşler
+      en: Differing views in contemporary Islamic thought
+    tr: Yaratılışçılıktan, yalnızca Âdem ile Havva'yı istisna tutan görüşe ("Âdem istisnacılığı") ve teistik evrime kadar uzanan bir yelpaze vardır.
+    en: Positions range from creationism, through a view that exempts only Adam and Eve ("Adamic exceptionalism"), to theistic evolution.
+    src: [malik2021]
+related: [canlilarin-kokeni, yaratilis-anlatilari, dil]
+sources:
+  hublin2017:
+    type: article
+    authors: Hublin, J.-J. et al.
+    title: New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens
+    year: 2017
+    in: Nature 546, 289–292
+    doi: 10.1038/nature22336
+  richter2017:
+    type: article
+    authors: Richter, D. et al.
+    title: The age of the hominin fossils from Jebel Irhoud, Morocco, and the origins of the Middle Stone Age
+    year: 2017
+    in: Nature 546, 293–296
+    doi: 10.1038/nature22335
+  vidal2022:
+    type: article
+    authors: Vidal, C. M. et al.
+    title: Age of the oldest known Homo sapiens from eastern Africa
+    year: 2022
+    in: Nature 601, 579–583
+    doi: 10.1038/s41586-021-04275-8
+  schlebusch2017:
+    type: article
+    authors: Schlebusch, C. M. et al.
+    title: Southern African ancient genomes estimate modern human divergence to 350,000 to 260,000 years ago
+    year: 2017
+    in: Science 358, 652–655
+    doi: 10.1126/science.aao6266
+  stringer2016:
+    type: article
+    authors: Stringer, C.
+    title: The origin and evolution of Homo sapiens
+    year: 2016
+    in: Philosophical Transactions of the Royal Society B 371, 20150237
+    doi: 10.1098/rstb.2015.0237
+  kuran-2-30:
+    type: scripture
+    title: Kur'an-ı Kerim, Bakara 2:30–39
+    url: https://quran.com/2/30-39
+  kuran-15-26:
+    type: scripture
+    title: Kur'an-ı Kerim, Hicr 15:26–29
+    url: https://quran.com/15/26-29
+  genesis-1-2:
+    type: scripture
+    title: Tekvin / Genesis 1–2
+    url: https://www.sefaria.org/Genesis.1
+  ussher1650:
+    type: book
+    authors: Ussher, J.
+    title: Annales Veteris Testamenti, a prima mundi origine deducti
+    year: 1650
+    in: London
+  britannica-jewish-calendar:
+    type: encyclopedia
+    title: Jewish calendar
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Jewish-calendar
+  britannica-yuga:
+    type: encyclopedia
+    title: Yuga
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/yuga
+  malik2021:
+    type: book
+    authors: Malik, S. A.
+    title: 'Islam and Evolution: Al-Ghazālī and the Modern Evolutionary Paradigm'
+    year: 2021
+    in: Routledge, London
+    isbn: 978-0367364137
+    url: https://www.routledge.com/Islam-and-Evolution-Al-Ghazali-and-the-Modern-Evolutionary-Paradigm/Malik/p/book/9781032026572

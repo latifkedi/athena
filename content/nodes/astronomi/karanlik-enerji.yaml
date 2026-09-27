@@ -1,0 +1,72 @@
+id: karanlik-enerji
+parent: astronomi
+type: question
+date: { year: 1998 }
+people: [Saul Perlmutter, Brian Schmidt, Adam Riess, DESI Collaboration]
+title:
+  tr: Karanlık enerji ve hızlanan genişleme
+  en: Dark energy and accelerating expansion
+summary:
+  tr: >-
+    1998'de uzak süpernovaların beklenenden sönük görünmesi, evrenin genişlemesinin hızlandığı şeklinde yorumlandı. Bu
+    hızlanmaya neden olan bilinmeyen etkene "karanlık enerji" dendi. DESI'nin 2025'te yayımladığı veriler, karanlık
+    enerjinin sabit olmayıp zamanla değişiyor olabileceğine işaret etti. Bu sonuç henüz kesinleşmiş değildir.
+  en: >-
+    In 1998 distant supernovae appeared fainter than expected, which was interpreted as the expansion of the universe
+    accelerating. The unknown cause was named "dark energy". Data released by DESI in 2025 hinted that dark energy may not
+    be constant but may change over time; this result is not yet settled.
+technical:
+  tr: >-
+    Tip Ia süpernovalar "standart mum" olarak kullanıldı. Pozitif bir kozmolojik sabit (Λ) verilere en iyi uyumu sağladı.
+    DESI DR2, 14 milyondan fazla galaksi ve kuasardan elde ettiği baryon akustik salınım ölçümlerini CMB ve süpernova
+    verileriyle birleştirdi. Bu birleşik analizde w₀wₐ parametreleştirmesiyle zamanla değişen karanlık enerji, ΛCDM'ye
+    göre 2,8–4,2σ düzeyinde tercih edildi. Sonucun anlamlılığı, hangi süpernova kataloğunun kullanıldığına bağlıdır.
+    Bazı araştırmacılar, sistematik etkilerin sonucu açıklayabileceğini savunmaktadır.
+  en: >-
+    Type Ia supernovae were used as "standard candles"; a positive cosmological constant (Λ) gave the best fit. DESI DR2
+    combined baryon acoustic oscillation measurements from more than 14 million galaxies and quasars with CMB and supernova
+    data. In this combined analysis a time-varying dark energy (w₀wₐ parametrisation) was preferred over ΛCDM at 2.8–4.2σ.
+    The significance depends on which supernova catalogue is used, and some researchers argue that systematic effects
+    could account for the result.
+claims:
+  - tr: Evrenin genişlemesi hızlanmaktadır.
+    en: The expansion of the universe is accelerating.
+    src: [riess1998, perlmutter1999]
+  - tr: Karanlık enerji zamanla değişiyor olabilir.
+    en: Dark energy may be changing over time.
+    src: [desi2025]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Yüksek kırmızıya kaymalı Tip Ia süpernovalar, yavaşlayan ya da sabit hızla genişleyen bir evrende beklenenden daha sönük gözlendi.
+    en: High-redshift Type Ia supernovae were observed to be fainter than expected in a decelerating or coasting universe.
+    src: [riess1998, perlmutter1999]
+  - kind: measurement
+    stance: for
+    tr: DESI'nin üç yıllık verisi, CMB ve süpernova verileriyle birleştirildiğinde değişen karanlık enerjiyi sabit karanlık enerjiye tercih etti.
+    en: "DESI's three-year data, combined with CMB and supernova data, preferred evolving dark energy over constant dark energy."
+    src: [desi2025]
+sources:
+  riess1998:
+    type: article
+    authors: Riess, A. G. et al.
+    title: Observational evidence from supernovae for an accelerating universe and a cosmological constant
+    year: 1998
+    in: The Astronomical Journal 116, 1009–1038
+    doi: 10.1086/300499
+  perlmutter1999:
+    type: article
+    authors: Perlmutter, S. et al.
+    title: Measurements of Ω and Λ from 42 high-redshift supernovae
+    year: 1999
+    in: The Astrophysical Journal 517, 565–586
+    doi: 10.1086/307221
+  desi2025:
+    type: preprint
+    authors: DESI Collaboration
+    title: 'DESI DR2 Results II: Measurements of baryon acoustic oscillations and cosmological constraints'
+    year: 2025
+    arxiv: '2503.14738'
+open:
+  - tr: Karanlık enerji bir vakum enerjisi (kozmolojik sabit) mi, yoksa değişen bir alan mı?
+    en: Is dark energy a vacuum energy (cosmological constant) or an evolving field?

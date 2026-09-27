@@ -1,0 +1,80 @@
+id: gazali-tehafut
+parent: kelam
+type: text
+date: { year: 1095 }
+people: [Gazzâlî / al-Ghazālī]
+title:
+  tr: Gazzâlî'nin Tehâfütü'l-Felâsife'si
+  en: "Al-Ghazālī's Incoherence of the Philosophers"
+summary:
+  tr: >-
+    Gazzâlî bu eserde İbn Sina ve Fârâbî'nin temsil ettiği Meşşâî felsefeyi yirmi meselede eleştirdi. Filozofların
+    görüşlerinin kesin delile değil tahmine dayandığını savundu. Âlemin ezelî olması, Allah'ın tikelleri bilmemesi ve
+    bedensel dirilişin inkârı konularında filozofları sert bir dille eleştirdi. On yedinci meselede nedenselliğin zorunlu
+    olmadığını savundu.
+  en: >-
+    In this work al-Ghazālī criticised, on twenty issues, the Peripatetic philosophy represented by Ibn Sīnā and
+    al-Fārābī, arguing that the philosophers' views rest on conjecture rather than demonstration. He criticised the
+    philosophers sharply on the eternity of the world, God's not knowing particulars and the denial of bodily
+    resurrection. In the seventeenth discussion he argued that causality is not necessary.
+technical:
+  tr: >-
+    Gazzâlî, âlemin ezelîliğine karşı zamanın da yaratılmış olduğunu ve iradenin eşit iki seçenekten birini
+    belirleyebileceğini savundu. Nedensellik konusunda, ateş ile yanma arasındaki birlikteliğin gözlemlendiğini, ancak
+    zorunlu bağın gözlemlenmediğini söyledi. Eser felsefeyi bütünüyle reddetmez. Gazzâlî mantığı savundu ve kelamcıların
+    felsefi yöntemleri daha çok kullanmasına zemin hazırladı. Tehâfüt'ün İslam dünyasında bilimin gerilemesine yol açtığı
+    iddiası tarihçiler arasında tartışmalıdır.
+  en: >-
+    Against the eternity of the world, al-Ghazālī argued that time too is created and that a will can select one of two
+    equal alternatives. On causality he said that the conjunction of fire and burning is observed but a necessary
+    connection is not. The work does not reject philosophy wholesale: al-Ghazālī defended logic and paved the way for
+    theologians' greater use of philosophical methods. The claim that the Tahāfut caused the decline of science in the
+    Islamic world is disputed among historians.
+claims:
+  - tr: Filozofların metafizik görüşleri kesin delillerle ispatlanmamıştır. Nedensellik zorunlu bir bağ değildir.
+    en: The philosophers' metaphysical views are not demonstrated by conclusive proofs; causality is not a necessary connection.
+    src: [marmura2000, tdv-tehafut]
+positions:
+  - who:
+      tr: Gerileme tezi
+      en: The decline thesis
+    tr: Gazzâlî'nin felsefe eleştirisi İslam dünyasında akılcı bilimlerin zayıflamasına katkıda bulundu.
+    en: "Al-Ghazālī's critique of philosophy contributed to the weakening of the rational sciences in the Islamic world."
+    src: [hoodbhoy1991]
+  - who:
+      tr: Gerileme tezine karşı çıkanlar
+      en: Critics of the decline thesis
+    tr: Gazzâlî'den sonra da astronomi, matematik ve tıpta önemli çalışmalar sürdü. Gazzâlî mantığı medrese müfredatına yerleştirdi.
+    en: Important work in astronomy, mathematics and medicine continued after al-Ghazālī; he made logic part of the madrasa curriculum.
+    src: [griffel2009, saliba2007]
+sources:
+  marmura2000:
+    type: book
+    authors: Gazzâlî / al-Ghazālī; Marmura, M. E. (trans.)
+    title: The Incoherence of the Philosophers
+    year: 2000
+    in: Brigham Young University Press, Provo
+  tdv-tehafut:
+    type: encyclopedia
+    title: Tehâfütü'l-felâsife
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/tehafutul-felasife
+  hoodbhoy1991:
+    type: book
+    authors: Hoodbhoy, P.
+    title: 'Islam and Science: Religious Orthodoxy and the Battle for Rationality'
+    year: 1991
+    in: Zed Books, London
+  griffel2009:
+    type: book
+    authors: Griffel, F.
+    title: "Al-Ghazālī's Philosophical Theology"
+    year: 2009
+    in: Oxford University Press
+  saliba2007:
+    type: book
+    authors: Saliba, G.
+    title: Islamic Science and the Making of the European Renaissance
+    year: 2007
+    in: MIT Press, Cambridge MA
+related: [ibn-rusd, ibn-sina, esarilik]

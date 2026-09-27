@@ -1,0 +1,59 @@
+id: hristiyanlik
+parent: dinler
+type: tradition
+people: [Hz. İsa / Jesus of Nazareth]
+title:
+  tr: Hristiyanlık ve İncil
+  en: Christianity and the Bible
+summary:
+  tr: >-
+    Hristiyanlık, Nasıralı İsa'nın öğretisine ve onun ölümü ile dirilişine inanan dindir. Kutsal kitabı Eski Ahit ve Yeni
+    Ahit'ten oluşur. Hristiyanların büyük çoğunluğu Tanrı'nın Baba, Oğul ve Kutsal Ruh olarak üç kişilikte bir olduğuna
+    (Teslis) inanır. Dünyada yaklaşık 2,3 milyar Hristiyan vardır. Katolik, Ortodoks ve Protestan başlıca kollardır.
+  en: >-
+    Christianity is the religion that believes in the teaching of Jesus of Nazareth and in his death and resurrection.
+    Its scripture consists of the Old and New Testaments. Most Christians believe that God is one in three persons,
+    Father, Son and Holy Spirit (the Trinity). There are about 2.3 billion Christians worldwide; Catholic, Orthodox and
+    Protestant are the main branches.
+technical:
+  tr: >-
+    Yeni Ahit'in 27 kitabı 1. yüzyılın ikinci yarısı ile 2. yüzyılın başı arasında yazılmıştır. Kanon listeleri 4. yüzyılda
+    kesinleşmiştir. Teslis öğretisi İznik (325) ve İstanbul (381) konsillerinde formüle edildi. İslam, İsa'yı bir
+    peygamber olarak kabul eder, ancak tanrısallığını ve çarmıhta ölümünü kabul etmez (Nisâ 4:157, 171).
+  en: >-
+    The 27 books of the New Testament were written between the second half of the 1st century and the early 2nd century;
+    canon lists were settled in the 4th century. The doctrine of the Trinity was formulated at the councils of Nicaea
+    (325) and Constantinople (381). Islam accepts Jesus as a prophet but not his divinity or his death on the cross
+    (al-Nisāʾ 4:157, 171).
+claims:
+  - tr: İsa Mesih, Tanrı'nın Oğlu'dur. İnsanlığın kurtuluşu için çarmıhta ölmüş ve dirilmiştir.
+    en: Jesus Christ is the Son of God, who died on the cross and rose again for the salvation of humanity.
+    src: [cor-15]
+positions:
+  - who:
+      tr: İslam'ın görüşü
+      en: The Islamic view
+    tr: İsa, Allah'ın kulu ve peygamberidir. Tanrı değildir ve çarmıha gerilmemiştir.
+    en: Jesus is God's servant and prophet; he is not God and was not crucified.
+    src: [kuran-4-157]
+  - who:
+      tr: Yahudiliğin görüşü
+      en: The Jewish view
+    tr: İsa, beklenen Mesih değildir.
+    en: Jesus is not the awaited Messiah.
+    src: [britannica-messiah]
+sources:
+  cor-15:
+    type: scripture
+    title: 1. Korintliler / 1 Corinthians 15:3–8
+    url: https://www.biblegateway.com/passage/?search=1+Corinthians+15%3A3-8&version=NRSVUE
+  kuran-4-157:
+    type: scripture
+    title: Kur'an-ı Kerim, Nisâ 4:157–158, 171
+    url: https://quran.com/4/157-171
+  britannica-messiah:
+    type: encyclopedia
+    title: Messiah
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/messiah-religion
+related: [yaratilis-anlatilari]

@@ -1,0 +1,64 @@
+id: penisilin
+parent: tip
+type: event
+date: { year: 1929 }
+people: [Alexander Fleming, Howard Florey, Ernst Chain, Norman Heatley]
+title:
+  tr: Penisilin ve antibiyotikler
+  en: Penicillin and antibiotics
+summary:
+  tr: >-
+    Fleming 1928'de bir bakteri kültürünü bozan küfün bakterileri öldürdüğünü fark etti ve bunu 1929'da yayımladı.
+    Florey ve Chain'in ekibi 1940'larda penisilini ilaç olarak üretilebilir hâle getirdi. Antibiyotikler milyonlarca
+    hayat kurtardı. Bugün ise bakterilerin bu ilaçlara direnç kazanması büyük bir küresel sorun olarak görülüyor.
+  en: >-
+    In 1928 Fleming noticed that a mould contaminating a bacterial culture killed the bacteria, and published this in
+    1929. Florey and Chain's team made penicillin producible as a drug in the 1940s. Antibiotics have saved millions of
+    lives; today bacterial resistance to these drugs is seen as a major global problem.
+technical:
+  tr: >-
+    Penisilin, bakteri hücre duvarında peptidoglikan çapraz bağlanmasını sağlayan transpeptidazları (penisilin bağlayan
+    proteinler) inhibe eden bir β-laktamdır. Direnç, β-laktamaz üretimi, hedef değişikliği (ör. MRSA'da PBP2a) ve dışa
+    atım pompalarıyla gelişir. 2019'da antimikrobiyal dirence doğrudan bağlı ölümlerin yaklaşık 1,27 milyon olduğu tahmin
+    edildi.
+  en: >-
+    Penicillin is a β-lactam that inhibits the transpeptidases (penicillin-binding proteins) that cross-link
+    peptidoglycan in the bacterial cell wall. Resistance arises through β-lactamase production, target modification
+    (e.g. PBP2a in MRSA) and efflux pumps. Deaths directly attributable to antimicrobial resistance were estimated at
+    about 1.27 million in 2019.
+claims:
+  - tr: Penicillium küfünün salgıladığı bir madde, birçok bakteriyi insan hücrelerine zarar vermeden öldürür.
+    en: A substance secreted by the Penicillium mould kills many bacteria without harming human cells.
+    src: [fleming1929, chain1940]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Streptokokla enfekte edilen fareler penisilin verildiğinde hayatta kaldı. Tedavi edilmeyen fareler öldü.
+    en: Mice infected with streptococci survived when given penicillin; untreated mice died.
+    src: [chain1940]
+  - kind: statistical
+    stance: against
+    tr: Bakterilerin antibiyotiklere direnç kazanması, 2019'da doğrudan yaklaşık 1,27 milyon ölümle ilişkilendirildi.
+    en: Bacterial resistance to antibiotics was directly associated with about 1.27 million deaths in 2019.
+    src: [murray2022]
+sources:
+  fleming1929:
+    type: article
+    authors: Fleming, A.
+    title: On the antibacterial action of cultures of a penicillium, with special reference to their use in the isolation of B. influenzae
+    year: 1929
+    in: British Journal of Experimental Pathology 10(3), 226–236
+  chain1940:
+    type: article
+    authors: Chain, E. et al.
+    title: Penicillin as a chemotherapeutic agent
+    year: 1940
+    in: The Lancet 236, 226–228
+    doi: 10.1016/S0140-6736(01)08728-1
+  murray2022:
+    type: article
+    authors: Antimicrobial Resistance Collaborators (Murray, C. J. L. et al.)
+    title: 'Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis'
+    year: 2022
+    in: The Lancet 399, 629–655
+    doi: 10.1016/S0140-6736(21)02724-0

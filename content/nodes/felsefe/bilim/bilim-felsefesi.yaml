@@ -1,0 +1,39 @@
+id: bilim-felsefesi
+parent: felsefe
+type: field
+order: 2000
+title:
+  tr: Bilim felsefesi
+  en: Philosophy of science
+summary:
+  tr: >-
+    Bilimi diğer bilgi türlerinden ayıran nedir? Bir kuram ne zaman "doğrulanmış" sayılır? Bilim nasıl değişir? Bilim
+    felsefesi bu soruları sorar. Athena'nın "karar vermeme" ilkesi de bu tartışmalardan beslenir. Hiçbir bilimsel kuram
+    kesin olarak kanıtlanmış sayılmaz, yalnızca kanıtlarla desteklenir ya da sorgulanır.
+  en: >-
+    What distinguishes science from other kinds of knowledge? When is a theory "confirmed"? How does science change? The
+    philosophy of science asks these questions. Athena's principle of not delivering verdicts draws on these debates: no
+    scientific theory counts as conclusively proven; it is only supported or challenged by evidence.
+technical:
+  tr: >-
+    Tümevarım problemi (Hume), sınırlı sayıda gözlemden genel yasalara geçişin mantıksal olarak gerekçelendirilemeyeceğini
+    söyler. Mantıkçı pozitivizm doğrulanabilirliği, Popper yanlışlanabilirliği ölçüt olarak önerdi. Duhem–Quine tezi,
+    bir hipotezin tek başına değil, yardımcı varsayımlarla birlikte test edildiğini vurgular. Bayesçi doğrulama kuramı,
+    kanıtın bir hipoteze olan inancı nasıl değiştirdiğini olasılıklarla modeller.
+  en: >-
+    The problem of induction (Hume) says that the move from a finite number of observations to general laws cannot be
+    justified logically. Logical positivism proposed verifiability, and Popper falsifiability, as criteria. The
+    Duhem–Quine thesis stresses that a hypothesis is never tested alone but together with auxiliary assumptions. Bayesian
+    confirmation theory models with probabilities how evidence changes belief in a hypothesis.
+claims:
+  - tr: Sınırlı sayıda gözlemden genel bir yasaya geçiş mantıksal olarak kesin değildir (tümevarım problemi).
+    en: The move from a finite number of observations to a general law is not logically certain (the problem of induction).
+    src: [hume1748]
+sources:
+  hume1748:
+    type: book
+    authors: Hume, D.
+    title: An Enquiry Concerning Human Understanding
+    year: 1748
+    in: A. Millar, London (Section IV)
+    url: https://www.gutenberg.org/ebooks/9662

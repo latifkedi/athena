@@ -1,0 +1,58 @@
+id: ibn-sina-kanun
+parent: tip
+type: text
+date: { year: 1025, approx: true }
+people: [İbn Sina / Ibn Sīnā (Avicenna)]
+title:
+  tr: İbn Sina'nın el-Kânûn fi't-Tıb'bı
+  en: "Ibn Sīnā's Canon of Medicine"
+summary:
+  tr: >-
+    İbn Sina'nın beş ciltlik tıp ansiklopedisi Kânûn, Yunan, Hint ve İslam tıbbını sistemli bir bütün hâline getirdi.
+    Latinceye çevrildi ve Avrupa üniversitelerinde 17. yüzyıla kadar temel ders kitabı olarak okutuldu. Eser, bulaşıcı
+    hastalıkların yayılması ve yeni ilaçların denenmesi için kurallar da içerir.
+  en: >-
+    Ibn Sīnā's five-volume medical encyclopedia, the Canon, brought Greek, Indian and Islamic medicine into a systematic
+    whole. It was translated into Latin and read as a core textbook in European universities until the 17th century. It
+    also contains rules for the spread of contagious disease and for testing new drugs.
+technical:
+  tr: >-
+    Kânûn, Galen'in dört hılt (humoral) fizyolojisini ve Aristotelesçi nedensellik anlayışını temel alır. İkinci kitaptaki
+    yedi kural bir ilacın etkisini sınamak için şunları ister: saf madde kullanılmalı, basit (tek nedenli) bir hastalıkta
+    denenmeli, etki tekrarlanabilir olmalı ve insan üzerinde sınanmalıdır. Bazı tarih yazarları bu kuralları klinik
+    deneylerin bir öncüsü olarak görür. Eserin kullandığı hılt kuramı ise modern fizyolojiyle bağdaşmaz.
+  en: >-
+    The Canon rests on Galen's four-humour physiology and on Aristotelian causality. Seven rules in Book II for testing
+    the effect of a drug require that the substance be pure, that it be tried on a simple (single-cause) disease, that the
+    effect be reproducible and that it be tested on humans. Some historians regard these rules as a forerunner of
+    clinical trials; the humoral theory the work uses is not compatible with modern physiology.
+claims:
+  - tr: Bir ilacın etkisi, saf madde ile, tek nedenli hastalıkta, tekrarlanarak ve insan üzerinde sınanmalıdır.
+    en: A drug's effect should be tested with the pure substance, on a single-cause disease, repeatedly and on humans.
+    src: [kanun, tdv-kanun]
+positions:
+  - who:
+      tr: Tıp tarihçileri
+      en: Historians of medicine
+    tr: Kânûn, Latince çevirisi (Gerardus Cremonensis, 12. yüzyıl) aracılığıyla Avrupa tıp eğitiminde yüzyıllarca merkezi bir yer tuttu.
+    en: Through its Latin translation (Gerard of Cremona, 12th century), the Canon held a central place in European medical education for centuries.
+    src: [siraisi1987]
+sources:
+  kanun:
+    type: manuscript
+    authors: İbn Sina / Ibn Sīnā
+    title: el-Kânûn fi't-Tıb (The Canon of Medicine), Book II
+    year: 1025
+    in: Arabic text printed at Bulaq, Cairo, 1877 (3 vols.)
+  tdv-kanun:
+    type: encyclopedia
+    title: el-Kânûn fi't-tıb
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/el-kanun-fit-tib
+  siraisi1987:
+    type: book
+    authors: Siraisi, N. G.
+    title: 'Avicenna in Renaissance Italy: The Canon and Medical Teaching in Italian Universities after 1500'
+    year: 1987
+    in: Princeton University Press
+related: [ibn-sina]

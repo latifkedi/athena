@@ -1,0 +1,64 @@
+id: descartes
+parent: felsefe
+type: text
+date: { year: 1637 }
+people: [René Descartes]
+title:
+  tr: Descartes ve yöntem şüphesi
+  en: Descartes and methodical doubt
+summary:
+  tr: >-
+    Descartes, kesin bilgiye ulaşmak için şüphe edilebilecek her şeyden şüphe etmeyi önerdi. Şüphe eden bir düşünen
+    varlık olarak kendi varlığından şüphe edemeyeceğine vardı: "Düşünüyorum, öyleyse varım." Zihin ile bedenin iki ayrı
+    töz olduğunu savundu. Bu görüş, "zihin-beden problemi"ni modern felsefenin merkezine taşıdı.
+  en: >-
+    To reach certain knowledge Descartes proposed doubting everything that can be doubted, and concluded that as a
+    thinking being who doubts he cannot doubt his own existence: "I think, therefore I am." He argued that mind and body
+    are two distinct substances, placing the "mind–body problem" at the centre of modern philosophy.
+technical:
+  tr: >-
+    Yöntem Üzerine Konuşma (1637) ve Meditasyonlar (1641), kötü cin varsayımıyla radikal bir şüpheyi, cogito'yu ve
+    Tanrı'nın varlığına dair argümanları içerir. "Kartezyen daire" itirazına göre Descartes açık ve seçik algıların
+    güvenilirliğini Tanrı'ya, Tanrı'nın varlığını da açık ve seçik algılara dayandırır. Etkileşimci düalizm, maddi olmayan
+    zihnin bedeni nasıl etkilediği sorusuyla eleştirildi. Bu itiraz Bohemyalı Elisabeth'e aittir.
+  en: >-
+    The Discourse on the Method (1637) and the Meditations (1641) contain radical doubt via the evil-demon hypothesis,
+    the cogito and arguments for God's existence. The "Cartesian circle" objection holds that Descartes grounds the
+    reliability of clear and distinct perceptions on God and God's existence on clear and distinct perceptions.
+    Interactionist dualism was criticised with the question of how an immaterial mind can affect the body, an objection
+    due to Elisabeth of Bohemia.
+claims:
+  - tr: Düşünüyorum, öyleyse varım. Zihin ve beden birbirinden ayrı iki tözdür.
+    en: I think, therefore I am; mind and body are two distinct substances.
+    src: [descartes1637, descartes1641]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Kişi, bedeninin varlığından şüphe edebilir, ama şüphe eden bir düşünce olarak kendi varlığından şüphe edemez.
+    en: One can doubt the existence of one's body but cannot doubt one's own existence as a doubting thought.
+    src: [descartes1641]
+  - kind: argument
+    stance: against
+    tr: Maddi olmayan bir zihnin, uzamı olan bir bedeni nasıl harekete geçirebildiği açıklanamaz.
+    en: It cannot be explained how an immaterial mind moves an extended body.
+    src: [sep-descartes]
+sources:
+  descartes1637:
+    type: book
+    authors: Descartes, R.
+    title: Discours de la méthode
+    year: 1637
+    in: Ian Maire, Leiden
+  descartes1641:
+    type: book
+    authors: Descartes, R.
+    title: Meditationes de prima philosophia
+    year: 1641
+    in: Michel Soly, Paris
+  sep-descartes:
+    type: encyclopedia
+    authors: Hatfield, G.
+    title: René Descartes
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/descartes/
+related: [bilinc]

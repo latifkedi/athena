@@ -1,0 +1,69 @@
+id: ibn-haldun
+parent: toplum
+type: text
+date: { year: 1377 }
+people: [İbn Haldun / Ibn Khaldūn]
+title:
+  tr: İbn Haldun'un Mukaddime'si
+  en: "Ibn Khaldūn's Muqaddimah"
+summary:
+  tr: >-
+    İbn Haldun, tarihi yalnızca olayların sıralanması olarak değil, toplumların doğuşunu, yükselişini ve çöküşünü
+    açıklayan nedenlerle birlikte inceledi. Toplumu bir arada tutan dayanışma duygusuna "asabiyet" adını verdi. Devletlerin
+    yaklaşık üç kuşakta yükselip çöktüğünü savundu. Bazı yazarlar onu sosyolojinin ve iktisadın öncüsü sayar. Bazıları ise
+    bu değerlendirmenin onu modern kavramlarla yeniden okumak olduğunu düşünür.
+  en: >-
+    Ibn Khaldūn studied history not merely as a sequence of events but together with the causes that explain the rise,
+    ascendancy and decline of societies. He called the solidarity that holds a group together "ʿaṣabiyya" and argued that
+    dynasties rise and fall in about three generations. Some authors regard him as a forerunner of sociology and
+    economics; others think this reads him through modern concepts.
+technical:
+  tr: >-
+    Mukaddime, haber (tarihsel rivayet) eleştirisi için bir yöntem önerir. Bir haberin doğruluğu, anlatılan olayın
+    "umran"ın (toplumsal hayatın) doğasına uygun olup olmadığıyla sınanmalıdır. Eserde göçebe ve yerleşik toplumlar
+    karşılaştırılır. İşbölümü, emek değeri ve vergi oranlarının artmasının vergi gelirini azalttığı gözlemi gibi iktisadi
+    fikirler de tartışılır. Bu son gözlem sonradan "Laffer eğrisi" ile karşılaştırılmıştır.
+  en: >-
+    The Muqaddimah proposes a method for criticising historical reports: a report's truth should be tested against
+    whether the event fits the nature of "ʿumrān" (social life). It compares nomadic and sedentary societies and discusses
+    economic ideas such as the division of labour, the value of labour and the observation that rising tax rates reduce
+    tax revenue, later compared with the "Laffer curve".
+claims:
+  - tr: Tarihsel rivayetlerin doğruluğu, toplumsal hayatın doğasına ilişkin bilgiyle sınanmalıdır.
+    en: The truth of historical reports should be tested against knowledge of the nature of social life.
+    src: [rosenthal1958]
+  - tr: Hanedanlar asabiyet ile kurulur ve yaklaşık üç kuşak içinde zayıflayıp çöker.
+    en: Dynasties are founded on ʿaṣabiyya and weaken and fall within about three generations.
+    src: [rosenthal1958]
+positions:
+  - who:
+      tr: Öncü olarak görenler
+      en: Those who see him as a forerunner
+    tr: İbn Haldun, toplumsal olguları nedensel yasalarla açıklamaya çalışan ilk sistemli düşünürlerden biridir.
+    en: Ibn Khaldūn is one of the first systematic thinkers to try to explain social phenomena through causal laws.
+    src: [tdv-ibnhaldun]
+  - who:
+      tr: Bağlamsal okumayı savunanlar
+      en: Those favouring a contextual reading
+    tr: Onu "sosyolojinin kurucusu" saymak, eserini kendi döneminin İslam düşüncesi bağlamından koparır.
+    en: Calling him the "founder of sociology" detaches his work from the context of the Islamic thought of his time.
+    src: [irwin2018]
+sources:
+  rosenthal1958:
+    type: book
+    authors: İbn Haldun / Ibn Khaldūn; Rosenthal, F. (trans.)
+    title: 'The Muqaddimah: An Introduction to History'
+    year: 1958
+    in: Princeton University Press (Bollingen Series XLIII)
+  tdv-ibnhaldun:
+    type: encyclopedia
+    title: İbn Haldûn
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/ibn-haldun
+  irwin2018:
+    type: book
+    authors: Irwin, R.
+    title: 'Ibn Khaldun: An Intellectual Biography'
+    year: 2018
+    in: Princeton University Press
+related: [islam-ve-evrim, adam-smith]

@@ -1,0 +1,82 @@
+id: yaratiliscilik
+parent: canlilarin-kokeni
+type: idea
+date: { year: 1961 }
+people: [John C. Whitcomb, Henry M. Morris]
+title:
+  tr: Yaratılışçılık
+  en: Creationism
+summary:
+  tr: >-
+    Yaratılışçılık, canlı türlerinin (ya da temel "türlerin") Tanrı tarafından doğrudan ve ayrı ayrı yaratıldığını
+    savunur. Genç Dünya yaratılışçılığı, kutsal metinlerin lafzına dayanarak Dünya'nın birkaç bin yaşında olduğunu kabul
+    eder. Eski Dünya yaratılışçılığı ise jeolojik yaşları kabul edip türlerin ayrı yaratıldığını savunur. Türkiye'de de
+    yaratılışçılık, özellikle 1990'lardan sonra yaygın yayınlarla savunulmuştur.
+  en: >-
+    Creationism holds that living species (or basic "kinds") were created directly and separately by God. Young-earth
+    creationism, based on a literal reading of scripture, holds that the Earth is a few thousand years old; old-earth
+    creationism accepts geological ages but maintains that species were created separately. In Turkey, too, creationism
+    has been advocated in widely circulated publications, especially since the 1990s.
+technical:
+  tr: >-
+    Whitcomb ve Morris'in "The Genesis Flood" (1961) kitabı, fosil ve tortul katmanları küresel bir tufanla açıklayan
+    "tufan jeolojisi"ni modern yaratılışçılığın temeli yaptı. Yaratılışçılar "baramin" (yaratılmış tür) sınırları içinde
+    varyasyonu kabul eder, ancak bu sınırların ötesindeki ortak atalığı kabul etmez. Numbers'ın tarih çalışması, hareketin
+    ABD'den İslam dünyası dahil başka bölgelere nasıl yayıldığını belgeler.
+  en: >-
+    Whitcomb and Morris's "The Genesis Flood" (1961) made "flood geology", explaining fossils and sedimentary strata by a
+    global flood, the basis of modern creationism. Creationists accept variation within "baramin" (created kinds) but not
+    common ancestry across them. Numbers's history documents how the movement spread from the US to other regions,
+    including the Muslim world.
+claims:
+  - tr: Canlıların temel türleri Tanrı tarafından ayrı ayrı yaratılmıştır ve ortak bir atadan gelmez.
+    en: The basic kinds of living things were created separately by God and do not share a common ancestor.
+    src: [whitcomb1961, genesis-1]
+evidence:
+  - kind: scripture
+    stance: for
+    tr: Tekvin'in ilk bölümünde bitki ve hayvanların "türlerine göre" yaratıldığı anlatılır.
+    en: The first chapter of Genesis narrates that plants and animals were created "according to their kinds".
+    src: [genesis-1]
+  - kind: archaeological
+    stance: for
+    tr: Kambriyen dönemde pek çok hayvan grubunun fosil kayıtlarında görece kısa bir sürede ortaya çıkması, yaratılışçılar tarafından ani yaratılışın işareti olarak gösterilir.
+    en: The appearance of many animal groups in the fossil record within a relatively short time in the Cambrian is cited by creationists as a sign of sudden creation.
+    src: [whitcomb1961]
+  - kind: genetic
+    stance: against
+    tr: Farklı türlerin genomlarında aynı konumlarda bulunan ortak endojen retrovirüs kalıntıları ve psödogenler, ortak ata lehine kanıt olarak yorumlanmaktadır.
+    en: Shared endogenous retrovirus remnants and pseudogenes at the same locations in the genomes of different species are interpreted as evidence of common ancestry.
+    src: [chimp2005]
+sources:
+  whitcomb1961:
+    type: book
+    authors: Whitcomb, J. C.; Morris, H. M.
+    title: 'The Genesis Flood: The Biblical Record and its Scientific Implications'
+    year: 1961
+    in: Presbyterian and Reformed Publishing, Philadelphia
+  genesis-1:
+    type: scripture
+    title: Tekvin / Genesis 1:11–25
+    url: https://www.sefaria.org/Genesis.1.11-25
+  chimp2005:
+    type: article
+    authors: The Chimpanzee Sequencing and Analysis Consortium
+    title: Initial sequence of the chimpanzee genome and comparison with the human genome
+    year: 2005
+    in: Nature 437, 69–87
+    doi: 10.1038/nature04072
+  numbers2006:
+    type: book
+    authors: Numbers, R. L.
+    title: 'The Creationists: From Scientific Creationism to Intelligent Design'
+    year: 2006
+    in: Harvard University Press, expanded edition
+positions:
+  - who:
+      tr: Yaratılışçılığın tarihçisi Ronald Numbers
+      en: Ronald Numbers, historian of creationism
+    tr: Tufan jeolojisine dayanan yaratılışçılık 20. yüzyılda ortaya çıkmış bir harekettir ve 1980'lerden sonra dünyaya yayılmıştır.
+    en: Creationism based on flood geology is a 20th-century movement that spread worldwide after the 1980s.
+    src: [numbers2006]
+related: [akilli-tasarim, yaratilis-anlatilari, dunyanin-yasi]

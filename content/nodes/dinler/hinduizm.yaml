@@ -1,0 +1,51 @@
+id: hinduizm
+parent: dinler
+type: tradition
+title:
+  tr: Hinduizm ve Vedalar
+  en: Hinduism and the Vedas
+summary:
+  tr: >-
+    Hinduizm, Hindistan'da gelişmiş, tek bir kurucusu olmayan çok çeşitli inanç ve uygulamalar bütünüdür. En eski kutsal
+    metinleri Vedalar'dır. Temel kavramları arasında dharma (düzen, görev), karma (eylemlerin sonuçları), samsara
+    (yeniden doğuş döngüsü) ve mokşa (kurtuluş) yer alır. Zaman döngüsel olarak düşünülür. Dünyada yaklaşık 1,2 milyar
+    Hindu vardır.
+  en: >-
+    Hinduism is a very diverse body of beliefs and practices that developed in India, with no single founder. Its oldest
+    scriptures are the Vedas. Key concepts include dharma (order, duty), karma (the consequences of actions), saṃsāra (the
+    cycle of rebirth) and mokṣa (liberation). Time is conceived cyclically. There are about 1.2 billion Hindus in the
+    world.
+technical:
+  tr: >-
+    Ṛgveda'nın dilbilimsel ve tarihsel analizlere göre yaklaşık MÖ 1500–1200 arasında oluştuğu düşünülür. Geleneksel görüş
+    ise Vedaları ezelî ve insan eliyle yazılmamış (apauruṣeya) kabul eder. Ṛgveda'nın Nāsadīya ilahisi (10.129),
+    yaratılışın başlangıcını sorgulayan ve "belki O da bilmiyor" diyen şüpheci bir üslupla tanınır. Upanişadlar, Bhagavad
+    Gītā ve Purāṇalar sonraki önemli metinlerdir.
+  en: >-
+    Linguistic and historical analyses place the composition of the Ṛgveda at roughly 1500–1200 BCE; the traditional
+    view regards the Vedas as eternal and not of human authorship (apauruṣeya). The Nāsadīya hymn of the Ṛgveda (10.129)
+    is known for its sceptical tone questioning the beginning of creation, ending "perhaps He does not know". The
+    Upaniṣads, the Bhagavad Gītā and the Purāṇas are important later texts.
+claims:
+  - tr: Canlılar, eylemlerinin sonuçlarına (karma) göre yeniden doğum döngüsünde (samsara) dolaşır. Kurtuluş (mokşa) bu döngüden çıkıştır.
+    en: Living beings circulate in the cycle of rebirth (saṃsāra) according to the consequences of their actions (karma); liberation (mokṣa) is release from this cycle.
+    src: [flood1996]
+sources:
+  flood1996:
+    type: book
+    authors: Flood, G.
+    title: An Introduction to Hinduism
+    year: 1996
+    in: Cambridge University Press
+  rigveda-10-129:
+    type: scripture
+    title: Ṛgveda 10.129 (Nāsadīya Sūkta), trans. R. T. H. Griffith
+    url: https://en.wikisource.org/wiki/The_Rig_Veda/Mandala_10/Hymn_129
+positions:
+  - who:
+      tr: Ṛgveda'nın Nāsadīya ilahisi
+      en: The Nāsadīya hymn of the Ṛgveda
+    tr: Yaratılışın nereden geldiğini kim bilebilir? Onu gözeten, en yüksek gökte bulunan belki bilir, belki de bilmez.
+    en: Who knows whence creation came? He who oversees it in the highest heaven perhaps knows, or perhaps he does not.
+    src: [rigveda-10-129]
+related: [hint-felsefesi, yaratilis-anlatilari]

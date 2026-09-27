@@ -1,0 +1,47 @@
+id: kepler
+parent: astronomi
+type: text
+date: { year: 1609 }
+people: [Johannes Kepler, Tycho Brahe]
+title:
+  tr: Kepler yasaları
+  en: "Kepler's laws"
+summary:
+  tr: >-
+    Kepler, Tycho Brahe'nin hassas Mars gözlemlerini kullanarak gezegen yörüngelerinin daire değil elips olduğunu
+    buldu. Üç yasası, gezegenlerin hızının ve yörünge süresinin Güneş'e uzaklıkla nasıl değiştiğini tarif eder. Newton bu
+    yasaları sonradan kütleçekim yasasından türetti. Kepler, bu çalışmayı yürütürken aynı zamanda saray astroloğu olarak
+    da görev yapıyordu.
+  en: >-
+    Using Tycho Brahe's precise observations of Mars, Kepler found that planetary orbits are ellipses, not circles. His
+    three laws describe how a planet's speed and orbital period vary with its distance from the Sun. Newton later derived
+    them from the law of gravitation. While doing this work Kepler also served as a court astrologer.
+technical:
+  tr: >-
+    Birinci ve ikinci yasa (elips yörünge, eşit zamanda eşit alan) Astronomia Nova'da (1609), üçüncü yasa (T² ∝ a³)
+    Harmonices Mundi'de (1619) yer alır. Kepler Mars yörüngesi için 8 yay dakikalık bir farkı dairesel modellerle
+    kapatamadı ve bu fark onu elipse götürdü. Kepler, Güneş'ten yayılan manyetik benzeri bir kuvveti hareketin nedeni
+    olarak düşünüyordu.
+  en: >-
+    The first and second laws (elliptical orbits, equal areas in equal times) appear in Astronomia Nova (1609), the third
+    (T² ∝ a³) in Harmonices Mundi (1619). Kepler could not close an 8-arcminute discrepancy in Mars's orbit with circular
+    models, which led him to the ellipse. He thought of a magnetic-like force emanating from the Sun as the cause of the
+    motion.
+claims:
+  - tr: Gezegenler, bir odağında Güneş bulunan elips yörüngelerde döner.
+    en: Planets move in elliptical orbits with the Sun at one focus.
+    src: [kepler1609]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Tycho Brahe'nin yaklaşık 2 yay dakikası hassasiyetindeki Mars gözlemleri dairesel yörüngeyle uyuşmazken elipsle uyuştu.
+    en: Tycho Brahe's Mars observations, precise to about 2 arcminutes, disagreed with a circular orbit but fit an ellipse.
+    src: [kepler1609]
+sources:
+  kepler1609:
+    type: book
+    authors: Kepler, J.
+    title: Astronomia Nova
+    year: 1609
+    in: Gotthard Vögelin, Heidelberg
+related: [newton-principia, astroloji]

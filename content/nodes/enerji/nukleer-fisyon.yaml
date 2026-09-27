@@ -1,0 +1,65 @@
+id: nukleer-fisyon
+parent: enerji
+type: event
+date: { year: 1939 }
+people: [Otto Hahn, Fritz Strassmann, Lise Meitner, Otto Robert Frisch]
+title:
+  tr: Çekirdek bölünmesi (fisyon)
+  en: Nuclear fission
+summary:
+  tr: >-
+    Hahn ve Strassmann 1938 sonunda uranyumu nötronlarla bombardıman ettiklerinde baryum oluştuğunu buldu. Meitner ve
+    Frisch bunun, uranyum çekirdeğinin ikiye bölünmesi ve büyük miktarda enerji açığa çıkması olduğunu açıkladı. Bu keşif
+    hem nükleer santrallerin hem de atom bombasının temeli oldu. Meitner'in katkısı Nobel ödülünde tanınmadı.
+  en: >-
+    At the end of 1938 Hahn and Strassmann found barium when they bombarded uranium with neutrons. Meitner and Frisch
+    explained this as the uranium nucleus splitting in two and releasing a large amount of energy. The discovery became
+    the basis of both nuclear power plants and the atomic bomb. Meitner's contribution was not recognised by the Nobel
+    Prize.
+technical:
+  tr: >-
+    Meitner ve Frisch, sıvı damla modeliyle bölünmenin yaklaşık 200 MeV açığa çıkardığını hesapladılar. Bu enerji ürünlerin
+    kütle farkından (E = mc²) gelir. Her bölünmede ortalama 2–3 nötron salınması zincirleme tepkimeyi mümkün kılar. İlk
+    kontrollü zincirleme tepkime 2 Aralık 1942'de Chicago Pile-1'de gerçekleştirildi.
+  en: >-
+    Using the liquid-drop model, Meitner and Frisch estimated that fission releases about 200 MeV, coming from the mass
+    difference of the products (E = mc²). The release of 2–3 neutrons per fission on average makes a chain reaction
+    possible. The first controlled chain reaction was achieved on 2 December 1942 in Chicago Pile-1.
+claims:
+  - tr: Uranyum çekirdeği nötron soğurunca iki orta kütleli çekirdeğe bölünür ve yaklaşık 200 MeV enerji açığa çıkar.
+    en: A uranium nucleus that absorbs a neutron splits into two medium-mass nuclei, releasing about 200 MeV.
+    src: [hahn1939, meitner1939]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Uranyum ışınlaması ürünleri arasında kimyasal yollarla baryum izotopları tanımlandı.
+    en: Barium isotopes were identified chemically among the products of irradiated uranium.
+    src: [hahn1939]
+  - kind: experiment
+    stance: for
+    tr: Frisch, bölünme parçalarının iyonlaşma odasında oluşturduğu büyük darbeleri doğrudan ölçtü.
+    en: Frisch directly measured the large pulses produced by fission fragments in an ionisation chamber.
+    src: [frisch1939]
+sources:
+  hahn1939:
+    type: article
+    authors: Hahn, O.; Strassmann, F.
+    title: Über den Nachweis und das Verhalten der bei der Bestrahlung des Urans mittels Neutronen entstehenden Erdalkalimetalle
+    year: 1939
+    in: Naturwissenschaften 27, 11–15
+    doi: 10.1007/BF01488241
+  meitner1939:
+    type: article
+    authors: Meitner, L.; Frisch, O. R.
+    title: 'Disintegration of uranium by neutrons: a new type of nuclear reaction'
+    year: 1939
+    in: Nature 143, 239–240
+    doi: 10.1038/143239a0
+  frisch1939:
+    type: article
+    authors: Frisch, O. R.
+    title: Physical evidence for the division of heavy nuclei under neutron bombardment
+    year: 1939
+    in: Nature 143, 276
+    doi: 10.1038/143276a0
+related: [ozel-gorelilik, nukleer-donusum]

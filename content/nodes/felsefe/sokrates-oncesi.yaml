@@ -1,0 +1,60 @@
+id: sokrates-oncesi
+parent: felsefe
+type: tradition
+date: { year: -585, approx: true }
+people: [Thales, Anaksimandros, Herakleitos, Parmenides, Demokritos]
+title:
+  tr: Sokrates öncesi filozoflar ve antik atomculuk
+  en: The Presocratics and ancient atomism
+summary:
+  tr: >-
+    Milet'ten Thales ve ardılları, doğayı mitolojik anlatılar yerine her şeyin kaynağı olan bir ilke (arkhe) üzerinden
+    açıklamaya çalıştı. Thales'e göre bu ilke su, Anaksimandros'a göre sınırsız olandı. Demokritos ve Leukippos, her şeyin
+    boşlukta hareket eden bölünmez "atomlardan" oluştuğunu öne sürdü. Bu fikir, deneye dayanmayan bir akıl yürütmeydi.
+    Modern atom kuramının ise deneysel kökenleri vardır.
+  en: >-
+    Thales of Miletus and his successors tried to explain nature through a principle (archē) that is the source of all
+    things rather than through myth: water for Thales, the boundless for Anaximander. Democritus and Leucippus proposed
+    that everything consists of indivisible "atoms" moving in the void. This was reasoning not based on experiment; modern
+    atomic theory has experimental origins.
+technical:
+  tr: >-
+    Sokrates öncesi filozofların eserleri yalnızca sonraki yazarların aktardığı parçalar (fragmanlar) ve tanıklıklar
+    aracılığıyla bilinir (Diels–Kranz derlemesi). Parmenides'in değişimin imkânsızlığına dair argümanı, atomcuların
+    "var olmayan"ı (boşluk) kabul etmesine yol açtı. Thales'in MÖ 585 Güneş tutulmasını önceden bildirdiği rivayeti
+    Herodot'a dayanır. Rivayetin doğruluğu tartışmalıdır.
+  en: >-
+    The works of the Presocratics are known only through fragments and testimonies quoted by later authors (the
+    Diels–Kranz collection). Parmenides' argument that change is impossible led the atomists to accept "what is not" (the
+    void). The report that Thales predicted the solar eclipse of 585 BCE rests on Herodotus; its accuracy is debated.
+claims:
+  - tr: Madde, boşlukta hareket eden, sonsuz sayıda bölünmez parçacıktan oluşur (Demokritos).
+    en: Matter consists of infinitely many indivisible particles moving in the void (Democritus).
+    src: [krs1983]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Sonsuza kadar bölünebilen bir maddenin sonunda büyüklüğü olmayan parçalara ayrılacağı ve bunların toplamının yeniden büyüklük oluşturamayacağı savunuldu.
+    en: It was argued that matter divisible without end would reduce to parts without magnitude, which could not add up to magnitude again.
+    src: [krs1983]
+sources:
+  krs1983:
+    type: book
+    authors: Kirk, G. S.; Raven, J. E.; Schofield, M.
+    title: The Presocratic Philosophers
+    year: 1983
+    in: Cambridge University Press, 2nd edition
+  sep-atomism:
+    type: encyclopedia
+    authors: Berryman, S.
+    title: Ancient Atomism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/atomism-ancient/
+positions:
+  - who:
+      tr: Aristoteles
+      en: Aristotle
+    tr: Boşluk olamaz ve madde sürekli olarak bölünebilir. Atomculuk reddedilmelidir.
+    en: There can be no void and matter is continuously divisible; atomism should be rejected.
+    src: [sep-atomism]
+related: [dalton, kelam-atomculugu]

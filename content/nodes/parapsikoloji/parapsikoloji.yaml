@@ -1,0 +1,65 @@
+id: parapsikoloji
+parent: insanlik
+side: canopy
+type: field
+order: 11
+title:
+  tr: Parapsikoloji
+  en: Parapsychology
+summary:
+  tr: >-
+    Duyu dışı algı (telepati, önsezi, uzaktan görme) ve zihnin maddeyi etkilemesi (psikokinezi, telekinezi) gibi
+    iddiaları deneysel yöntemlerle inceleyen alan. Kendi hakemli dergileri (ör. Journal of Parapsychology) ve dernekleri
+    vardır. Onlarca yıllık deneylerin sonuçları ve bu sonuçların nasıl yorumlanacağı, alanın savunucuları ile
+    eleştirmenleri arasında tartışmalıdır.
+  en: >-
+    The field that investigates claims such as extrasensory perception (telepathy, precognition, remote viewing) and the
+    influence of mind on matter (psychokinesis, telekinesis) with experimental methods. It has its own peer-reviewed
+    journals (e.g. the Journal of Parapsychology) and associations. The results of decades of experiments, and how to
+    interpret them, are disputed between the field's proponents and its critics.
+technical:
+  tr: >-
+    Alanın temel yöntemleri zorunlu seçimli tahmin testleri, ganzfeld (duyusal yalıtım) telepati deneyleri, rastgele sayı
+    üreteçleriyle (RNG) yapılan psikokinezi deneyleri ve bunların meta-analizleridir. Tartışmanın merkezinde küçük etki
+    büyüklükleri, yayın yanlılığı, tekrarlanabilirlik ve bilinen fizik yasalarıyla uyum sorunu vardır. Parapsikoloji,
+    ön kayıt ve düşmanca işbirliği (adversarial collaboration) gibi uygulamaları ana akım psikolojiden önce benimseyen
+    alanlardan biridir.
+  en: >-
+    The field's main methods are forced-choice guessing tests, ganzfeld (sensory-isolation) telepathy experiments,
+    psychokinesis experiments with random number generators (RNGs), and meta-analyses of these. The debate centres on
+    small effect sizes, publication bias, replicability and compatibility with known physical laws. Parapsychology was
+    among the fields that adopted practices such as preregistration and adversarial collaboration before mainstream
+    psychology.
+claims:
+  - tr: Parapsikoloji deneylerinin birikimli sonuçları, bilinen duyusal kanallarla açıklanamayan bir bilgi edinme ya da etkileme yeteneğine işaret eder.
+    en: The cumulative results of parapsychology experiments point to an ability to acquire information or exert influence not explained by known sensory channels.
+    src: [cardena2018]
+positions:
+  - who:
+      tr: Parapsikoloji araştırmacıları
+      en: Parapsychology researchers
+    tr: Meta-analizler, rastlantıyla açıklanamayacak küçük ama tutarlı etkiler göstermektedir.
+    en: Meta-analyses show small but consistent effects that chance cannot explain.
+    src: [cardena2018]
+  - who:
+      tr: Eleştirmenler
+      en: Critics
+    tr: Etkiler yöntemsel kusurlar, yayın yanlılığı ve analiz esnekliğiyle açıklanabilir. Olağanüstü iddialar, daha güçlü ve tekrarlanabilir kanıt gerektirir.
+    en: The effects can be explained by methodological flaws, publication bias and analytic flexibility; extraordinary claims require stronger, replicable evidence.
+    src: [reber2020]
+sources:
+  cardena2018:
+    type: article
+    authors: Cardeña, E.
+    title: 'The experimental evidence for parapsychological phenomena: a review'
+    year: 2018
+    in: American Psychologist 73(5), 663–677
+    doi: 10.1037/amp0000236
+  reber2020:
+    type: article
+    authors: Reber, A. S.; Alcock, J. E.
+    title: "Searching for the impossible: parapsychology's elusive quest"
+    year: 2020
+    in: American Psychologist 75(3), 391–399
+    doi: 10.1037/amp0000486
+related: [psikoloji]

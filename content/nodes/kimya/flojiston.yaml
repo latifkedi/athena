@@ -1,0 +1,73 @@
+id: flojiston
+parent: kimya
+type: idea
+date: { year: 1703 }
+people: [Johann Joachim Becher, Georg Ernst Stahl, Joseph Priestley]
+title:
+  tr: Flojiston kuramı
+  en: Phlogiston theory
+summary:
+  tr: >-
+    18. yüzyılda yanma, maddeden "flojiston" adlı bir ilkenin çıkması olarak açıklanıyordu. Lavoisier, yanmanın havadaki
+    oksijenle birleşme olduğunu savunan kuramıyla bu açıklamanın yerini aldı. Bazı bilim tarihçileri ise flojiston
+    kuramının kendi döneminde açıklama gücü olduğunu ve çok hızlı terk edildiğini savunur.
+  en: >-
+    In the 18th century combustion was explained as the release of a principle called "phlogiston" from a substance.
+    Lavoisier's theory that combustion is combination with oxygen from the air replaced this explanation. Some historians
+    of science argue that phlogiston theory had real explanatory power in its day and was abandoned too quickly.
+technical:
+  tr: >-
+    Stahl'a göre metallerin kireçlenmesi (kalsinasyon) flojiston kaybıdır ve metal kireci (oksit) kömürle ısıtılınca
+    flojiston geri alınıp metal oluşur. Temel sorun, metallerin kireçlenince ağırlaşmasıdır. Bazı savunucular bunu
+    flojistonun "negatif ağırlığı" ile açıklamaya çalıştı. Priestley ölümüne kadar flojistonu savundu. Hasok Chang,
+    flojiston kavramının elektrokimyasal olayları ve kimyasal potansiyel enerjiyi oksijen kimyasının kaçırdığı biçimde
+    yakaladığını ileri sürer.
+  en: >-
+    For Stahl, the calcination of metals is a loss of phlogiston, and heating a metal calx (oxide) with charcoal restores
+    the phlogiston and yields the metal. The key difficulty is that metals gain weight when calcined; some defenders tried
+    to explain this with phlogiston's "negative weight". Priestley defended phlogiston until his death. Hasok Chang argues
+    that the phlogiston concept captured electrochemical phenomena and chemical potential energy in ways oxygen chemistry
+    missed.
+claims:
+  - tr: Yanabilen maddeler flojiston içerir ve yanma sırasında bu flojiston havaya salınır.
+    en: Combustible substances contain phlogiston, which is released into the air during combustion.
+    src: [stahl1703]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Metal kireçlerinin (oksitlerin) kömürle ısıtılınca metale dönmesi, kömürden metale bir şey aktarıldığı biçiminde açıklanabiliyordu.
+    en: The reduction of metal calxes (oxides) to metals by heating with charcoal could be explained as something passing from the charcoal to the metal.
+    src: [chang2012]
+  - kind: measurement
+    stance: against
+    tr: Kapalı kaplarda yapılan tartımlar, metallerin kireçlenirken ağırlaştığını ve havanın bir kısmının tüketildiğini gösterdi.
+    en: Weighings in closed vessels showed that metals gain weight on calcination and that part of the air is consumed.
+    src: [lavoisier1789]
+positions:
+  - who:
+      tr: Hasok Chang (bilim felsefecisi)
+      en: Hasok Chang (philosopher of science)
+    tr: Flojistonun terk edilmesi erken ve kısmen haksızdı. Kuram, oksijen kuramının açıklayamadığı bazı olayları açıklıyordu.
+    en: Phlogiston was abandoned prematurely and partly unjustly; the theory explained some phenomena the oxygen theory did not.
+    src: [chang2012]
+sources:
+  stahl1703:
+    type: book
+    authors: Becher, J. J.; Stahl, G. E. (ed.)
+    title: Physica subterranea (with Specimen Beccherianum)
+    year: 1703
+    in: Leipzig
+  chang2012:
+    type: book
+    authors: Chang, H.
+    title: 'Is Water H2O? Evidence, Realism and Pluralism'
+    year: 2012
+    in: Springer, Boston Studies in the Philosophy of Science 293
+    doi: 10.1007/978-94-007-3932-1
+  lavoisier1789:
+    type: book
+    authors: Lavoisier, A.-L.
+    title: Traité élémentaire de chimie
+    year: 1789
+    in: Cuchet, Paris
+related: [lavoisier]

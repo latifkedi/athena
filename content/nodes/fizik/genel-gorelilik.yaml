@@ -1,0 +1,78 @@
+id: genel-gorelilik
+parent: fizik
+type: idea
+date: { year: 1915, month: 11 }
+people: [Albert Einstein]
+title:
+  tr: Genel görelilik
+  en: General relativity
+summary:
+  tr: >-
+    Einstein'a göre kütleçekimi bir kuvvet değil, kütle ve enerjinin uzay-zamanı eğmesidir. Cisimler bu eğri uzay-zamanda
+    en doğal yolu izler. Kuram ışığın kütleli cisimlerin yanından geçerken bükülmesini, kara delikleri, kütleçekim
+    dalgalarını ve GPS uydularında hesaba katılması gereken saat farklarını öngörür.
+  en: >-
+    According to Einstein, gravity is not a force but the curving of spacetime by mass and energy. Bodies follow the
+    most natural paths in this curved spacetime. The theory predicts the bending of light near massive bodies, black
+    holes, gravitational waves and the clock differences that GPS satellites must correct for.
+technical:
+  tr: >-
+    Alan denklemleri G_μν + Λg_μν = (8πG/c⁴) T_μν, metrik tensörü enerji-momentum tensörüne bağlar. Klasik testler şunlardır:
+    Merkür'ün günberi kayması (43″/yüzyıl), ışığın Güneş yakınında 1,75″ sapması ve kütleçekimsel kırmızıya kayma
+    (Pound–Rebka 1959). 1919 tutulma gözlemlerinin kesinliği sonradan tartışılmış, ancak radyo interferometrisi sapmayı
+    10⁻⁴ düzeyinde doğrulamıştır. Kuram kuantum mekaniğiyle birleştirilememiştir ve tekillikler içerir.
+  en: >-
+    The field equations G_μν + Λg_μν = (8πG/c⁴) T_μν relate the metric tensor to the energy–momentum tensor. The classic
+    tests are Mercury's perihelion shift (43″/century), the 1.75″ deflection of light near the Sun and gravitational
+    redshift (Pound–Rebka 1959). The precision of the 1919 eclipse observations was later questioned, but radio
+    interferometry has confirmed the deflection at the 10⁻⁴ level. The theory has not been unified with quantum mechanics
+    and contains singularities.
+claims:
+  - tr: Işık, Güneş'in yakınından geçerken 1,75 yay saniyesi bükülür.
+    en: Light passing near the Sun is deflected by 1.75 arcseconds.
+    src: [einstein1916]
+evidence:
+  - kind: observation
+    stance: for
+    tr: 1919 Güneş tutulmasında Sobral ve Príncipe'de yapılan ölçümler öngörülen sapmayla uyumlu bulundu.
+    en: Measurements at Sobral and Príncipe during the 1919 solar eclipse were found consistent with the predicted deflection.
+    src: [dyson1920]
+  - kind: critique
+    stance: against
+    tr: 1919 verilerinin hata payları büyüktü ve bazı plakaların dışarıda bırakılması tartışma yarattı. Tek başına bu verinin kuramı ayırt etmeye yetmediği savunuldu.
+    en: The error bars of the 1919 data were large and the exclusion of some plates was controversial; it was argued that these data alone could not decide between theories.
+    src: [earman1980]
+  - kind: measurement
+    stance: for
+    tr: Çok uzun taban çizgili radyo interferometrisi ile kuasar ışığının Güneş yakınındaki sapması öngörüyle 10⁻⁴ hassasiyetinde uyumlu ölçüldü.
+    en: Very-long-baseline radio interferometry measured the deflection of quasar light near the Sun in agreement with prediction to 10⁻⁴ precision.
+    src: [lambert2011]
+sources:
+  einstein1916:
+    type: article
+    authors: Einstein, A.
+    title: Die Grundlage der allgemeinen Relativitätstheorie
+    year: 1916
+    in: Annalen der Physik 354(7), 769–822
+    doi: 10.1002/andp.19163540702
+  dyson1920:
+    type: article
+    authors: Dyson, F. W.; Eddington, A. S.; Davidson, C.
+    title: A determination of the deflection of light by the Sun's gravitational field, from observations made at the total eclipse of May 29, 1919
+    year: 1920
+    in: Philosophical Transactions of the Royal Society A 220, 291–333
+    doi: 10.1098/rsta.1920.0009
+  earman1980:
+    type: article
+    authors: Earman, J.; Glymour, C.
+    title: 'Relativity and eclipses: the British eclipse expeditions of 1919 and their predecessors'
+    year: 1980
+    in: Historical Studies in the Physical Sciences 11(1), 49–85
+  lambert2011:
+    type: article
+    authors: Lambert, S. B.; Le Poncin-Lafitte, C.
+    title: Improved determination of γ by VLBI
+    year: 2011
+    in: Astronomy & Astrophysics 529, A70
+    doi: 10.1051/0004-6361/201016370
+related: [newton-principia, kara-delik, buyuk-patlama]

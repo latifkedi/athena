@@ -1,0 +1,45 @@
+id: induksiyon
+parent: enerji
+type: event
+date: { year: 1831, month: 8 }
+people: [Michael Faraday]
+title:
+  tr: Elektromanyetik indüksiyon ve elektrik üretimi
+  en: Electromagnetic induction and electricity generation
+summary:
+  tr: >-
+    Faraday 1831'de, değişen bir manyetik alanın bir telde elektrik akımı oluşturduğunu keşfetti. Bugün santrallerin
+    neredeyse tamamı, türbinleri döndürerek bu ilkeyle elektrik üretir. Transformatörler ve elektrik motorları da aynı
+    ilkeye dayanır.
+  en: >-
+    In 1831 Faraday discovered that a changing magnetic field produces an electric current in a wire. Almost every power
+    station today generates electricity on this principle by turning turbines. Transformers and electric motors rest on
+    the same principle.
+technical:
+  tr: >-
+    Faraday demir bir halkaya sarılmış iki bobinle çalıştı. Birincil devre açılıp kapanırken ikincil devrede anlık akım
+    gözledi. Faraday yasası, ε = −dΦ_B/dt biçiminde yazılır. Lenz yasası indüklenen akımın yönünü belirler. Maxwell bu
+    yasayı alan denklemlerine kattı.
+  en: >-
+    Faraday worked with two coils wound on an iron ring and observed a momentary current in the secondary circuit when
+    the primary was switched on or off. Faraday's law is written ε = −dΦ_B/dt; Lenz's law gives the direction of the
+    induced current. Maxwell incorporated the law into his field equations.
+claims:
+  - tr: Bir devreden geçen manyetik akının değişimi o devrede elektromotor kuvvet oluşturur.
+    en: A change in the magnetic flux through a circuit produces an electromotive force in it.
+    src: [faraday1832]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Faraday, bir mıknatısı bobinin içine sokup çıkardığında galvanometrenin saptığını ve mıknatıs dururken akım olmadığını gözledi.
+    en: Faraday observed the galvanometer deflect when a magnet was moved in and out of a coil, and no current when the magnet was at rest.
+    src: [faraday1832]
+sources:
+  faraday1832:
+    type: article
+    authors: Faraday, M.
+    title: Experimental researches in electricity
+    year: 1832
+    in: Philosophical Transactions of the Royal Society of London 122, 125–162
+    doi: 10.1098/rstl.1832.0006
+related: [maxwell]

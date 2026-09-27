@@ -1,0 +1,107 @@
+id: dil
+parent: ilk-bilgiler
+type: question
+order: 3
+title:
+  tr: Dilin ortaya çıkışı
+  en: The origin of language
+summary:
+  tr: >-
+    Konuşma dili fosilleşmediği için ne zaman ve nasıl ortaya çıktığı doğrudan gözlenemez. Bilim insanları dolaylı
+    izlere bakar, dinler ise dili insana verilen bir bilgi olarak anlatır. Tarih tahminleri milyonlarca yıldan birkaç yüz
+    bin yıla kadar değişir.
+  en: >-
+    Spoken language leaves no fossils, so when and how it arose cannot be observed directly. Scientists look at
+    indirect traces, while religions describe language as knowledge given to humans. Date estimates range from millions
+    of years to a few hundred thousand years.
+technical:
+  tr: >-
+    Tartışma iki eksende yürür. Birincisi, dil yetisinin tek ve ani bir yenilikle mi (ör. özyinelemeli "birleştirme"
+    işlemi) yoksa kademeli olarak mı ortaya çıktığıdır. İkincisi, Neandertaller ve Denisovalılarla ortak ata döneminde
+    mi yoksa yalnızca Homo sapiens'te mi var olduğudur. Kullanılan veriler arasında FOXP2 gibi genlerdeki varyantlar,
+    dil kemiği (hyoid) morfolojisi, kulak kemikçiklerinin işitme aralığı, sembolik davranış kanıtları ve karşılaştırmalı
+    dilbilim bulunur.
+  en: >-
+    The debate runs along two axes. The first is whether the language faculty arose through a single abrupt innovation
+    (e.g. a recursive "Merge" operation) or gradually. The second is whether it existed in the common ancestor shared
+    with Neanderthals and Denisovans or only in Homo sapiens. The data include variants of genes such as FOXP2, hyoid
+    morphology, the hearing range implied by middle-ear ossicles, evidence of symbolic behaviour and comparative
+    linguistics.
+datings:
+  - view:
+      tr: Kademeli ve erken ortaya çıkış görüşü
+      en: Gradual, early emergence view
+    value:
+      tr: Dil yeteneği en az 500.000 yıl önce, Neandertallerle ortak atada vardı.
+      en: Language capacity was present at least 500,000 years ago, in the common ancestor with Neanderthals.
+    src: [dediu2013]
+  - view:
+      tr: Geç ve ani ortaya çıkış görüşü
+      en: Late, abrupt emergence view
+    value:
+      tr: Dil yetisi yalnızca Homo sapiens'e özgüdür ve yaklaşık 200.000–60.000 yıl önce ortaya çıkmıştır.
+      en: The language faculty is unique to Homo sapiens and arose roughly 200,000–60,000 years ago.
+    src: [berwick2016]
+  - view:
+      tr: İslam (Kur'an)
+      en: Islam (Qur'an)
+    value:
+      tr: Allah Âdem'e "isimlerin hepsini" öğretti. Dil, ilk insanla birlikte verilmiş bir bilgidir.
+      en: God taught Adam "the names, all of them". Language is knowledge given with the first human.
+    src: [kuran-2-31]
+  - view:
+      tr: Yahudilik ve Hristiyanlık (Tekvin)
+      en: Judaism and Christianity (Genesis)
+    value:
+      tr: Âdem hayvanlara ad verdi. Dillerin çeşitlenmesi Babil Kulesi anlatısıyla açıklanır.
+      en: Adam named the animals. The diversification of languages is explained by the Tower of Babel narrative.
+    src: [genesis-2, genesis-11]
+claims:
+  - tr: İnsan dilinin çekirdeğinde sınırsız sayıda yapı üreten özyinelemeli bir işlem vardır ve bu yeti hayvan iletişim sistemlerinde bulunmaz.
+    en: At the core of human language is a recursive operation generating unlimited structures, and this faculty is absent from animal communication systems.
+    src: [hauser2002]
+evidence:
+  - kind: genetic
+    stance: for
+    tr: Neandertal genomunda modern insanlarla aynı FOXP2 varyantının bulunması, dil ile ilgili bazı genetik altyapının ortak atada var olabileceğini düşündürür.
+    en: The same FOXP2 variant as in modern humans occurs in the Neanderthal genome, suggesting some language-related genetic background may have existed in the common ancestor.
+    src: [dediu2013]
+  - kind: theoretical
+    stance: against
+    tr: Dil yetisinin tek bir küçük nörolojik değişiklikle ortaya çıktığı ve Neandertallerde bulunduğuna dair doğrudan kanıt olmadığı savunulur.
+    en: It is argued that the language faculty arose through a single small neural change and that there is no direct evidence it existed in Neanderthals.
+    src: [berwick2016]
+sources:
+  hauser2002:
+    type: article
+    authors: Hauser, M. D.; Chomsky, N.; Fitch, W. T.
+    title: 'The faculty of language: what is it, who has it, and how did it evolve?'
+    year: 2002
+    in: Science 298, 1569–1579
+    doi: 10.1126/science.298.5598.1569
+  dediu2013:
+    type: article
+    authors: Dediu, D.; Levinson, S. C.
+    title: 'On the antiquity of language: the reinterpretation of Neandertal linguistic capacities and its consequences'
+    year: 2013
+    in: Frontiers in Psychology 4, 397
+    doi: 10.3389/fpsyg.2013.00397
+  berwick2016:
+    type: book
+    authors: Berwick, R. C.; Chomsky, N.
+    title: 'Why Only Us: Language and Evolution'
+    year: 2016
+    in: MIT Press, Cambridge MA
+  kuran-2-31:
+    type: scripture
+    title: Kur'an-ı Kerim, Bakara 2:31–33
+    url: https://quran.com/2/31-33
+  genesis-2:
+    type: scripture
+    title: Tekvin / Genesis 2:19–20
+    url: https://www.sefaria.org/Genesis.2.19-20
+  genesis-11:
+    type: scripture
+    title: Tekvin / Genesis 11:1–9
+    url: https://www.sefaria.org/Genesis.11.1-9
+related: [insanlik]

@@ -1,0 +1,51 @@
+id: langlands
+parent: matematik
+type: event
+date: { year: 2024, month: 5 }
+people: [Dennis Gaitsgory, Sam Raskin, Dima Arinkin, Dario Beraldo, Lin Chen, Joakim Faergeman, Kevin Lin, Nick Rozenblyum]
+title:
+  tr: Geometrik Langlands sanısının ispatı
+  en: Proof of the geometric Langlands conjecture
+summary:
+  tr: >-
+    Langlands programı, sayılar kuramı ile geometri ve simetri arasında derin bir "sözlük" kurmayı amaçlar ve
+    matematiğin "birleşik kuramı" olarak anılır. 2024'te dokuz matematikçi, programın geometrik biçimini yaklaşık
+    1000 sayfalık beş makalelik bir seriyle ispatladıklarını duyurdu.
+  en: >-
+    The Langlands programme aims to build a deep "dictionary" between number theory, geometry and symmetry, and is often
+    called a "grand unified theory" of mathematics. In 2024 nine mathematicians announced a proof of its geometric form
+    in a series of five papers of nearly 1,000 pages.
+technical:
+  tr: >-
+    Sanı (karakteristik sıfır, de Rham biçimi), bir düzgün projektif eğri X üzerindeki G-demetlerinin modül yığını
+    Bun_G üzerindeki D-modüllerin kategorisi ile Langlands dual grubun yerel sistemleri LocSys_Ǧ üzerindeki ind-koherent
+    demetlerin (nilpotent tekil destek koşuluyla) kategorisi arasında bir eşdeğerlik olduğunu öne sürer. Seri, önce
+    otomorfik taraftan spektral tarafa funktoru kurar, ardından bunun bir eşdeğerlik olduğunu gösterir.
+  en: >-
+    The conjecture (characteristic zero, de Rham form) asserts an equivalence between the category of D-modules on the
+    moduli stack Bun_G of G-bundles on a smooth projective curve X and the category of ind-coherent sheaves (with
+    nilpotent singular support) on LocSys_Ǧ, the stack of local systems for the Langlands dual group. The series first
+    constructs the functor from the automorphic to the spectral side and then shows that it is an equivalence.
+claims:
+  - tr: Geometrik Langlands sanısı (karakteristik sıfırda, de Rham ve Betti biçimleriyle) doğrudur.
+    en: The geometric Langlands conjecture (in characteristic zero, de Rham and Betti forms) holds.
+    src: [gr2024, glc5]
+evidence:
+  - kind: proof
+    stance: for
+    tr: İspat arXiv'de beş makale olarak yayımlandı. Uzmanlar tarafından inceleme süreci, uzunluğu nedeniyle yıllar alabilir.
+    en: The proof was posted to arXiv as five papers. Review by experts may take years because of its length.
+    src: [gr2024, glc5]
+sources:
+  gr2024:
+    type: preprint
+    authors: Gaitsgory, D.; Raskin, S. et al.
+    title: 'Proof of the geometric Langlands conjecture I: construction of the functor'
+    year: 2024
+    arxiv: '2405.03599'
+  glc5:
+    type: preprint
+    authors: Gaitsgory, D.; Raskin, S. et al.
+    title: 'Proof of the geometric Langlands conjecture V: the multiplicity one theorem'
+    year: 2024
+    arxiv: '2409.09856'

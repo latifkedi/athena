@@ -1,0 +1,73 @@
+id: kesintili-denge
+parent: canlilarin-kokeni
+type: idea
+date: { year: 1972 }
+people: [Niles Eldredge, Stephen Jay Gould]
+title:
+  tr: Kesintili denge
+  en: Punctuated equilibrium
+summary:
+  tr: >-
+    Eldredge ve Gould, fosil kayıtlarında türlerin uzun süre neredeyse hiç değişmeden kaldığını, değişimin ise
+    jeolojik ölçekte kısa dönemlerde ve yeni tür oluşumuyla birlikte gerçekleştiğini savundu. Onlara göre ara formların
+    azlığı, kayıtların eksikliğinden çok evrimin gerçek temposunu yansıtır. Bu görüş, Darwin'in yavaş ve kademeli değişim
+    fikrine yönelik bir itiraz olarak tartışıldı.
+  en: >-
+    Eldredge and Gould argued that in the fossil record species remain almost unchanged for long periods (stasis), and
+    that change happens in geologically short bursts associated with speciation. In their view the scarcity of
+    intermediate forms reflects the real tempo of evolution rather than gaps in the record. The idea was debated as a
+    challenge to Darwin's notion of slow, gradual change.
+technical:
+  tr: >-
+    Model, Mayr'ın çevresel (peripatrik) türleşme görüşünü paleontolojiye uygular. Küçük ve yalıtılmış popülasyonlarda
+    hızlı türleşme olur, ata tür ise duraklama içinde kalır. Gould, "türlerin seçilimi" ve hiyerarşik bir evrim kuramı
+    için de bu modeli kullandı. Dawkins ve Dennett gibi eleştirmenler, modelin neo-Darwinizmle uyumlu ve görece önemsiz
+    bir tempo farkı olduğunu savundu. Cheetham'ın Neojen briyozoan çalışması, modelin öngördüğü örüntüyü destekleyen bir
+    örnek olarak gösterildi.
+  en: >-
+    The model applies Mayr's peripatric speciation to palaeontology: rapid speciation in small isolated populations,
+    with the ancestral species remaining in stasis. Gould also used it for "species selection" and a hierarchical theory
+    of evolution. Critics such as Dawkins and Dennett argued it is compatible with neo-Darwinism and a relatively minor
+    difference of tempo. Cheetham's study of Neogene bryozoans was cited as an example supporting the pattern the model
+    predicts.
+claims:
+  - tr: Türlerin çoğu, varlıkları boyunca biçimsel olarak durağandır. Değişim, türleşme olaylarında yoğunlaşır.
+    en: Most species are morphologically static during their existence; change is concentrated in speciation events.
+    src: [eldredge1972, gould1977]
+evidence:
+  - kind: archaeological
+    stance: for
+    tr: Neojen dönemine ait bir briyozoan soyunda, türler milyonlarca yıl durağan kalırken yeni türler kısa aralıklarla ortaya çıktı.
+    en: In a Neogene bryozoan lineage, species remained static for millions of years while new species appeared over short intervals.
+    src: [cheetham1986]
+  - kind: theoretical
+    stance: against
+    tr: Gözlenen örüntünün standart neo-Darwinci süreçlerle açıklanabileceği ve kuramın yeni bir mekanizma getirmediği savunuldu.
+    en: It was argued that the observed pattern can be explained by standard neo-Darwinian processes and that the theory introduces no new mechanism.
+    src: [dawkins1986]
+sources:
+  eldredge1972:
+    type: book
+    authors: Eldredge, N.; Gould, S. J.
+    title: 'Punctuated equilibria: an alternative to phyletic gradualism'
+    year: 1972
+    in: Schopf, T. J. M. (ed.), Models in Paleobiology, Freeman, Cooper & Co., San Francisco, 82–115
+  gould1977:
+    type: article
+    authors: Gould, S. J.; Eldredge, N.
+    title: 'Punctuated equilibria: the tempo and mode of evolution reconsidered'
+    year: 1977
+    in: Paleobiology 3(2), 115–151
+    doi: 10.1017/S0094837300005224
+  cheetham1986:
+    type: article
+    authors: Cheetham, A. H.
+    title: Tempo of evolution in a Neogene bryozoan
+    year: 1986
+    in: Paleobiology 12(2), 190–202
+  dawkins1986:
+    type: book
+    authors: Dawkins, R.
+    title: The Blind Watchmaker
+    year: 1986
+    in: Longman, London (chapter 9)

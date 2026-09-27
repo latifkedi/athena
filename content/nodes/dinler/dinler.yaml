@@ -1,0 +1,37 @@
+id: dinler
+parent: insanlik
+side: roots
+type: field
+order: 4
+title:
+  tr: Dinler ve kutsal metinler
+  en: Religions and scriptures
+summary:
+  tr: >-
+    Dinler, insanlığın varoluş, yaratılış, ahlak ve ölüm sonrası hakkındaki en eski ve en yaygın cevap sistemleridir.
+    2020 itibarıyla dünya nüfusunun yaklaşık %29'u Hristiyan, %26'sı Müslüman ve %24'ü herhangi bir dine bağlı değildir.
+    Athena dinleri puanlamaz. Her dinin kendi iddialarını ve kaynaklarını olduğu gibi aktarır.
+  en: >-
+    Religions are humanity's oldest and most widespread systems of answers about existence, creation, ethics and the
+    afterlife. As of 2020 about 29% of the world's population is Christian, 26% Muslim and 24% unaffiliated with any
+    religion. Athena does not score religions; it reports each religion's own claims and sources as they are.
+technical:
+  tr: >-
+    Din araştırmaları (dinler tarihi, din sosyolojisi, din felsefesi) dinleri karşılaştırmalı ve betimleyici bir yöntemle
+    inceler. Kutsal metinlerin tarihsel eleştirisi (ör. metinlerin oluşum tarihi ve el yazması gelenekleri) ile dini
+    geleneklerin kendi yorum usulleri (tefsir, midraş, teoloji) ayrı düzlemlerde yürür.
+  en: >-
+    Religious studies (history of religions, sociology and philosophy of religion) examine religions comparatively and
+    descriptively. The historical criticism of scriptures (e.g. dating of texts and manuscript traditions) and the
+    traditions' own interpretive methods (tafsīr, midrash, theology) operate on separate planes.
+claims:
+  - tr: 2020'de dünya nüfusunun yaklaşık %28,8'i Hristiyan, %25,6'sı Müslüman ve %24,2'si dinsizdi.
+    en: In 2020 about 28.8% of the world's population were Christian, 25.6% Muslim and 24.2% religiously unaffiliated.
+    src: [pew2025]
+sources:
+  pew2025:
+    type: report
+    authors: Pew Research Center
+    title: How the Global Religious Landscape Changed From 2010 to 2020
+    year: 2025
+    url: https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/

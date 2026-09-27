@@ -1,0 +1,61 @@
+id: adam-smith
+parent: toplum
+type: text
+date: { year: 1776 }
+people: [Adam Smith]
+title:
+  tr: Adam Smith ve Milletlerin Zenginliği
+  en: Adam Smith and The Wealth of Nations
+summary:
+  tr: >-
+    Adam Smith, işbölümünün verimliliği büyük ölçüde artırdığını ve kişisel çıkar peşindeki bireylerin rekabetçi bir
+    piyasada, farkında olmadan toplumun genel yararına hizmet ettiğini savundu ("görünmez el"). Eser modern iktisadın
+    başlangıcı sayılır. Smith'in fikirlerinin kendi ahlak felsefesinden ayrı okunup okunamayacağı tartışılır.
+  en: >-
+    Adam Smith argued that the division of labour greatly increases productivity and that individuals pursuing their own
+    interest in a competitive market unwittingly serve the general good of society (the "invisible hand"). The work is
+    regarded as the beginning of modern economics. Whether his ideas can be read apart from his moral philosophy is
+    debated.
+technical:
+  tr: >-
+    Toplu iğne fabrikası örneğinde, işi 18 adıma bölen on işçinin günde 48.000 iğne ürettiği anlatılır. "Görünmez el"
+    ifadesi eserde yalnızca bir kez geçer. Smith, tekellere, tüccarların fiyat anlaşmalarına ve işbölümünün işçiyi
+    körelten etkilerine karşı da uyarılarda bulunur. Ahlaki Duygular Kuramı'nda (1759) sempati ve ahlaki yargı üzerine
+    yazdıklarının Milletlerin Zenginliği ile nasıl bağdaştığı "Adam Smith problemi" olarak tartışılmıştır.
+  en: >-
+    In the pin-factory example, ten workers dividing the work into 18 steps produce 48,000 pins a day. The phrase
+    "invisible hand" appears only once in the work. Smith also warns against monopolies, collusion among merchants and
+    the stultifying effects of the division of labour on workers. How his writing on sympathy and moral judgement in The
+    Theory of Moral Sentiments (1759) fits with The Wealth of Nations has been debated as "das Adam Smith Problem".
+claims:
+  - tr: Serbest ve rekabetçi piyasalarda bireylerin kişisel çıkar arayışı, toplumun genel refahını artırır.
+    en: In free, competitive markets individuals' pursuit of self-interest increases the general welfare of society.
+    src: [smith1776]
+positions:
+  - who:
+      tr: Piyasa liberalizmi geleneği
+      en: Market-liberal tradition
+    tr: Smith, piyasaların kendiliğinden düzen oluşturma gücünün ve devlet müdahalesinin sınırlı tutulmasının savunucusudur.
+    en: Smith is the advocate of markets' power to form spontaneous order and of limited state intervention.
+    src: [smith1776]
+  - who:
+      tr: Bağlamsal okuma
+      en: Contextual reading
+    tr: Smith'in iktisadı, ahlak felsefesinden ve tekellere karşı eleştirisinden ayrı okunmamalıdır.
+    en: Smith's economics should not be read apart from his moral philosophy and his critique of monopolies.
+    src: [rothschild2001]
+sources:
+  smith1776:
+    type: book
+    authors: Smith, A.
+    title: An Inquiry into the Nature and Causes of the Wealth of Nations
+    year: 1776
+    in: W. Strahan and T. Cadell, London
+    url: https://www.gutenberg.org/ebooks/3300
+  rothschild2001:
+    type: book
+    authors: Rothschild, E.
+    title: 'Economic Sentiments: Adam Smith, Condorcet, and the Enlightenment'
+    year: 2001
+    in: Harvard University Press
+related: [ibn-haldun]
