@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 11
-feed: ['openalex:search:parapsychology OR parapsychological OR "psi phenomena" OR "extrasensory perception" OR telepathy OR precognition OR psychokinesis']
+feed: ['openalex:search:parapsychology OR parapsychological OR "psi phenomena" OR "extrasensory perception" OR psychokinesis OR "anomalous cognition" OR "near-death experience" OR "near-death experiences" OR ganzfeld']
 title:
   tr: Parapsikoloji
   en: Parapsychology
