@@ -1,0 +1,65 @@
+id: fikih
+parent: hukuk
+type: tradition
+date: { year: 820, approx: true }
+people: [İmam Şâfiî, Ebû Hanîfe, İmam Mâlik, Ahmed b. Hanbel]
+title:
+  tr: Fıkıh ve usûl-i fıkıh (İslam hukuku)
+  en: Fiqh and uṣūl al-fiqh (Islamic law)
+summary:
+  tr: >-
+    Fıkıh, ibadetten ticarete, aile hukukundan cezalara kadar dinin pratik hükümlerini inceleyen İslam ilmidir. Usûl-i
+    fıkıh ise bu hükümlerin Kur'an, Sünnet, icmâ ve kıyas gibi kaynaklardan hangi yöntemlerle çıkarılacağını inceler.
+    Günümüze ulaşan ilk usûl eseri İmam Şâfiî'nin er-Risâle'sidir. Hanefî, Mâlikî, Şâfiî ve Hanbelî mezhepleri başlıca
+    Sünnî hukuk ekolleridir.
+  en: >-
+    Fiqh is the Islamic discipline studying the practical rulings of religion, from worship and trade to family law and
+    penalties. Uṣūl al-fiqh studies the methods by which rulings are derived from sources such as the Qur'an, the Sunna,
+    consensus (ijmāʿ) and analogy (qiyās). The earliest surviving work of uṣūl is al-Shāfiʿī's al-Risāla. The Ḥanafī,
+    Mālikī, Shāfiʿī and Ḥanbalī schools are the main Sunni legal schools.
+technical:
+  tr: >-
+    Usûl-i fıkıh; delillerin hiyerarşisini, lafızların yorumunu (âmm-hâs, mutlak-mukayyed), nesh, istihsan, istıslâh
+    (maslahat) ve örf gibi yöntemleri tartışır. İctihad kapısının kapanıp kapanmadığı modern dönemde tartışılmıştır. Hallaq,
+    ictihadın klasik dönemde de sürdüğünü savundu. Makâsıdü'ş-şerîa (Şâtıbî), hükümlerin amaçlarını (din, can, akıl, nesil,
+    mal) öne çıkaran bir yaklaşımdır.
+  en: >-
+    Uṣūl al-fiqh discusses the hierarchy of proofs, the interpretation of terms (general–specific, absolute–qualified),
+    abrogation, juristic preference (istiḥsān), public interest (istiṣlāḥ) and custom. Whether the "gate of ijtihād" closed
+    has been debated in modern times; Hallaq argued that ijtihād continued in the classical period. Maqāṣid al-sharīʿa
+    (al-Shāṭibī) is an approach emphasising the purposes of the law (religion, life, intellect, lineage, property).
+claims:
+  - tr: Şer'î hükümler Kur'an, Sünnet, icmâ ve kıyas gibi belirli kaynaklardan belirli yöntemlerle çıkarılır.
+    en: Legal rulings are derived from specific sources such as the Qur'an, Sunna, consensus and analogy by specific methods.
+    src: [tdv-fikih, tdv-usul, tdv-risale]
+positions:
+  - who:
+      tr: Wael Hallaq
+      en: Wael Hallaq
+    tr: '"İctihad kapısının kapandığı" tezi tarihsel olarak doğru değildir. Hukukçular ictihadı yüzyıllar boyunca sürdürdü.'
+    en: The thesis that the "gate of ijtihād closed" is historically inaccurate; jurists continued ijtihād for centuries.
+    src: [hallaq1984]
+sources:
+  tdv-fikih:
+    type: encyclopedia
+    title: Fıkıh
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/fikih
+  tdv-usul:
+    type: encyclopedia
+    title: Usûl-i fıkıh
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/usul-i-fikih
+  tdv-risale:
+    type: encyclopedia
+    title: er-Risâle (Şâfiî)
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/er-risale--safii
+  hallaq1984:
+    type: article
+    authors: Hallaq, W. B.
+    title: Was the gate of ijtihad closed?
+    year: 1984
+    in: International Journal of Middle East Studies 16(1), 3–41
+    doi: 10.1017/S0020743800027598
+related: [islam, kelam, mecelle]

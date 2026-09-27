@@ -34,7 +34,7 @@ interface Placed {
   parent: Placed | null;
 }
 
-const R1 = 340; // radius of the main branches
+const R1 = 400; // radius of the main branches
 const STEP = 170; // minimum distance between rings
 const MIN_ARC = 15; // minimum arc length per node on a ring (px)
 const PAD = 0.08; // radians kept free next to the ground line

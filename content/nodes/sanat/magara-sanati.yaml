@@ -1,0 +1,79 @@
+id: magara-sanati
+parent: sanat
+type: question
+title:
+  tr: Mağara sanatı ve ilk semboller
+  en: Cave art and the first symbols
+summary:
+  tr: >-
+    Endonezya'nın Sulawesi adasında bir yaban domuzu ve insan benzeri figürlerden oluşan bir sahne, 2024'te yaklaşık
+    51.200 yıl öncesine tarihlendirildi. Bu sahne, hikâye anlatan en eski resim olarak yayımlandı. İspanya'daki bazı
+    mağara işaretlerinin 64.000 yıldan eski olduğu ve bu nedenle Neandertallere ait olabileceği öne sürüldü. Bu iddia
+    tartışmalıdır.
+  en: >-
+    In 2024 a scene of a wild pig and human-like figures on the Indonesian island of Sulawesi was dated to about 51,200
+    years ago and published as the oldest narrative painting. It was proposed that some cave markings in Spain are older
+    than 64,000 years and could therefore be Neanderthal work; this claim is debated.
+technical:
+  tr: >-
+    Tarihlendirmede resimlerin üzerini örten kalsit kabuklarının uranyum serisi yöntemi kullanılır. Bu yöntem resim için
+    en düşük yaşı verir. Sulawesi'de lazer ablasyonlu U-seri analizi uygulandı. İspanya'daki (La Pasiega, Maltravieso,
+    Ardales) örneklerin tarihlendirmesi, kalsitin açık sistem davranışı (uranyumun yıkanması) nedeniyle yaşların
+    şişirilmiş olabileceği gerekçesiyle eleştirildi.
+  en: >-
+    Dating uses uranium-series measurement of calcite crusts over the paintings, which gives a minimum age. Laser-
+    ablation U-series was applied in Sulawesi. The dating of the Spanish examples (La Pasiega, Maltravieso, Ardales) was
+    criticised on the grounds that open-system behaviour of the calcite (uranium leaching) may have inflated the ages.
+datings:
+  - view:
+      tr: Arkeoloji (Sulawesi, Endonezya)
+      en: Archaeology (Sulawesi, Indonesia)
+    value:
+      tr: En az yaklaşık 51.200 yıl önce (hikâye anlatan sahne)
+      en: At least about 51,200 years ago (narrative scene)
+    src: [oktaviana2024]
+  - view:
+      tr: Arkeoloji (İspanya; Neandertal iddiası)
+      en: Archaeology (Spain; Neanderthal claim)
+    value:
+      tr: En az 64.000 yıl önce. Bu iddia tartışmalıdır.
+      en: At least 64,000 years ago; the claim is disputed.
+    src: [hoffmann2018, white2020]
+claims:
+  - tr: Neandertaller de sembolik mağara sanatı yapmıştır.
+    en: Neanderthals also made symbolic cave art.
+    src: [hoffmann2018]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Üç İspanyol mağarasındaki kırmızı işaretlerin üzerindeki kalsit, uranyum-toryum yöntemiyle 64.000 yıldan eski bulundu. Bu tarih, bölgede modern insanların varlığından öncedir.
+    en: Calcite over red markings in three Spanish caves was dated by uranium–thorium to more than 64,000 years, before modern humans were present in the region.
+    src: [hoffmann2018]
+  - kind: critique
+    stance: against
+    tr: Eleştirmenler, örneklenen kabukların resimle ilişkisinin belirsiz olduğunu ve U-Th yaşlarının yöntemsel nedenlerle olduğundan eski çıkmış olabileceğini savundu.
+    en: Critics argued that the relationship of the sampled crusts to the paint is unclear and that the U–Th ages may be too old for methodological reasons.
+    src: [white2020]
+sources:
+  oktaviana2024:
+    type: article
+    authors: Oktaviana, A. A. et al.
+    title: Narrative cave art in Indonesia by 51,200 years ago
+    year: 2024
+    in: Nature 631, 814–818
+    doi: 10.1038/s41586-024-07541-7
+  hoffmann2018:
+    type: article
+    authors: Hoffmann, D. L. et al.
+    title: U-Th dating of carbonate crusts reveals Neandertal origin of Iberian cave art
+    year: 2018
+    in: Science 359, 912–915
+    doi: 10.1126/science.aap7778
+  white2020:
+    type: article
+    authors: White, R. et al.
+    title: Still no archaeological evidence that Neanderthals created Iberian cave art
+    year: 2020
+    in: Journal of Human Evolution 144, 102640
+    doi: 10.1016/j.jhevol.2019.102640
+related: [ilk-bilgiler, dil]

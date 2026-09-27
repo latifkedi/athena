@@ -1,0 +1,52 @@
+id: makam
+parent: sanat
+type: tradition
+people: [Fârâbî, Safiyyüddîn el-Urmevî, Kantemiroğlu, Hüseyin Sadettin Arel]
+title:
+  tr: Makam müziği
+  en: Makam music
+summary:
+  tr: >-
+    Makam, Türk ve Arap müziğinde belirli aralıklardan oluşan dizileri ve bu dizilerde ezginin nasıl ilerleyeceğini
+    belirleyen bir sistemdir. Batı müziğindeki eşit tamperamanın dışında kalan, oktavı daha küçük parçalara bölen aralıklar
+    kullanır. Fârâbî ve Safiyyüddîn el-Urmevî gibi kuramcılar bu aralıkları matematiksel oranlarla tanımladı.
+  en: >-
+    Makam is a system in Turkish and Arab music that defines scales made of particular intervals and how a melody moves
+    within them. It uses intervals outside Western equal temperament, dividing the octave into smaller parts. Theorists
+    such as al-Fārābī and Ṣafī al-Dīn al-Urmawī defined these intervals by mathematical ratios.
+technical:
+  tr: >-
+    Arel–Ezgi–Uzdilek sistemi, tam sesi dokuz komaya bölerek 24 perdelik bir düzen tanımlar. Uygulamadaki perdelerin bu
+    kuramsal sistemle tam uyuşmadığı bilinmektedir. Makam, dizi yanında "seyir" (ezginin başlangıç, güçlü ve durak
+    perdeleri arasındaki hareketi) ile tanımlanır. Safiyyüddîn'in Kitâbü'l-Edvâr'ı, 17 perdelik Pisagorcu bir sistem
+    önerdi.
+  en: >-
+    The Arel–Ezgi–Uzdilek system divides the whole tone into nine commas and defines a 24-pitch scheme; practical pitches
+    are known not to match this theoretical system exactly. A makam is defined by its scale and its "seyir" (the melodic
+    path between its starting, dominant and final pitches). Ṣafī al-Dīn's Kitāb al-Adwār proposed a 17-pitch Pythagorean
+    system.
+claims:
+  - tr: Makam, dizinin yanında ezginin seyir kurallarıyla tanımlanan bir müzik sistemidir.
+    en: A makam is a musical system defined not only by its scale but by the rules of its melodic path (seyir).
+    src: [tdv-makam, signell1977]
+positions:
+  - who:
+      tr: Uygulama odaklı araştırmacılar
+      en: Practice-oriented researchers
+    tr: Arel–Ezgi sistemi icracıların fiilen kullandığı perdeleri tam olarak yansıtmaz. Kuram ile icra arasında farklar vardır.
+    en: The Arel–Ezgi system does not accurately reflect the pitches performers actually use; theory and practice differ.
+    src: [signell1977]
+sources:
+  tdv-makam:
+    type: encyclopedia
+    authors: Özkan, İ. H.
+    title: Makam (mûsiki)
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/makam--musiki
+  signell1977:
+    type: book
+    authors: Signell, K.
+    title: 'Makam: Modal Practice in Turkish Art Music'
+    year: 1977
+    in: Asian Music Publications, Seattle
+related: [pisagor-muzik, mevlana]

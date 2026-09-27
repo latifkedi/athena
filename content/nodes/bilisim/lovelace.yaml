@@ -1,0 +1,68 @@
+id: lovelace
+parent: bilisim
+type: text
+date: { year: 1843 }
+people: [Ada Lovelace, Charles Babbage]
+title:
+  tr: Babbage, Lovelace ve Analitik Makine
+  en: Babbage, Lovelace and the Analytical Engine
+summary:
+  tr: >-
+    Charles Babbage, delikli kartlarla programlanabilen ve bugünkü bilgisayarların yapısına benzeyen bir "Analitik Makine"
+    tasarladı, ancak makine hiç tamamlanmadı. Ada Lovelace 1843'te makine üzerine yazdığı notlarda Bernoulli sayılarını
+    hesaplayan bir yöntem verdi. Bu yöntem çoğu zaman "ilk bilgisayar programı" olarak anılır. Lovelace'ın katkısının
+    boyutu tarihçiler arasında tartışmalıdır.
+  en: >-
+    Charles Babbage designed an "Analytical Engine" programmable with punched cards and structurally similar to today's
+    computers, but it was never completed. In her 1843 notes on the machine Ada Lovelace gave a method for computing
+    Bernoulli numbers, often called the "first computer program". How large her contribution was is debated among
+    historians.
+technical:
+  tr: >-
+    Tasarım, "değirmen" (işlemci) ve "depo" (bellek) ayrımı, koşullu dallanma ve döngüler içeriyordu. Lovelace'ın
+    Menabrea makalesinin çevirisine eklediği G notu, adım adım işlem tablosu içerir. Lovelace, makinenin sayılar dışındaki
+    sembolleri (ör. müzik notalarını) da işleyebileceğini öngördü. Bazı yazarlar tablonun büyük ölçüde Babbage'ın önceki
+    çalışmalarına dayandığını savunur. Diğerleri Lovelace'ın kavramsal katkısının özgün olduğunu vurgular.
+  en: >-
+    The design included a separation of "mill" (processor) and "store" (memory), conditional branching and loops.
+    Lovelace's Note G, appended to her translation of Menabrea's paper, contains a step-by-step table of operations. She
+    foresaw that the machine could manipulate symbols other than numbers, such as musical notes. Some authors argue the
+    table largely rests on Babbage's earlier work; others stress the originality of her conceptual contribution.
+claims:
+  - tr: Genel amaçlı, programlanabilir bir hesap makinesi yalnızca sayıları değil, her türlü sembolü işleyebilir.
+    en: A general-purpose programmable calculating machine can manipulate not only numbers but any kind of symbol.
+    src: [lovelace1843]
+positions:
+  - who:
+      tr: Lovelace'ın katkısını sınırlı görenler
+      en: Those who see her contribution as limited
+    tr: Notlardaki programların çoğu Babbage tarafından daha önce hazırlanmıştı. Lovelace'ın rolü daha çok açıklayıcıydı.
+    en: Most programs in the notes had been prepared earlier by Babbage; Lovelace's role was mainly expository.
+    src: [fuegi2003]
+  - who:
+      tr: Lovelace'ın özgünlüğünü vurgulayanlar
+      en: Those stressing her originality
+    tr: Makinenin sayısal hesaplamanın ötesinde genel bir sembol işleyici olabileceği fikri Lovelace'a özgüdür.
+    en: The idea that the machine could be a general symbol processor beyond numerical calculation is Lovelace's own.
+    src: [hollings2018]
+sources:
+  lovelace1843:
+    type: article
+    authors: Menabrea, L. F.; Lovelace, A. A. (trans. and notes)
+    title: Sketch of the Analytical Engine invented by Charles Babbage
+    year: 1843
+    in: Scientific Memoirs 3, 666–731
+  fuegi2003:
+    type: article
+    authors: Fuegi, J.; Francis, J.
+    title: "Lovelace & Babbage and the creation of the 1843 'notes'"
+    year: 2003
+    in: IEEE Annals of the History of Computing 25(4), 16–26
+    doi: 10.1109/MAHC.2003.1253887
+  hollings2018:
+    type: book
+    authors: Hollings, C.; Martin, U.; Rice, A.
+    title: 'Ada Lovelace: The Making of a Computer Scientist'
+    year: 2018
+    in: Bodleian Library, Oxford
+related: [turing, harezmi]

@@ -1,0 +1,39 @@
+id: hukuk
+parent: insanlik
+side: canopy
+type: field
+order: 12.5
+title:
+  tr: Hukuk ve siyaset
+  en: Law and politics
+summary:
+  tr: >-
+    İnsan toplulukları, bir arada yaşamayı düzenleyen kurallar koymuş ve yöneticiyle yönetilen arasındaki ilişkiyi
+    tartışmıştır. Hammurabi yasalarından İslam hukukuna (fıkıh), Magna Carta'dan İnsan Hakları Evrensel Beyannamesi'ne
+    kadar farklı gelenekler vardır. Adaletin kaynağının Tanrı mı, doğa mı, akıl mı, yoksa toplumsal uzlaşı mı olduğu temel
+    tartışmalardan biridir.
+  en: >-
+    Human communities have set rules for living together and debated the relationship between rulers and ruled. There
+    are different traditions, from the laws of Hammurabi to Islamic law (fiqh), from Magna Carta to the Universal
+    Declaration of Human Rights. Whether the source of justice is God, nature, reason or social agreement is a basic debate.
+technical:
+  tr: >-
+    Hukuk felsefesinde doğal hukuk kuramları (Aristoteles, Aquinas, klasik İslam hukukçularının bir kısmı) ile hukuki
+    pozitivizm (Austin, Kelsen, Hart) arasında temel bir ayrım vardır. Siyaset felsefesi meşruiyet, egemenlik, özgürlük ve
+    adalet kavramlarını tartışır. Karşılaştırmalı hukuk; kıta Avrupası (medeni hukuk), Anglo-Amerikan (common law),
+    İslam hukuku ve örf hukuku gibi sistemleri inceler.
+  en: >-
+    Legal philosophy distinguishes natural-law theories (Aristotle, Aquinas, some classical Islamic jurists) from legal
+    positivism (Austin, Kelsen, Hart). Political philosophy discusses legitimacy, sovereignty, liberty and justice.
+    Comparative law studies systems such as civil law, common law, Islamic law and customary law.
+claims:
+  - tr: Hukukun geçerliliği, ahlaki içeriğinden bağımsız olarak toplumsal kaynaklarına bağlıdır (hukuki pozitivizm). Doğal hukuk kuramları ise bu görüşe karşı çıkar.
+    en: The validity of law depends on its social sources independently of its moral content (legal positivism); natural-law theories reject this.
+    src: [sep-positivism]
+sources:
+  sep-positivism:
+    type: encyclopedia
+    title: Legal Positivism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/legal-positivism/
+related: [toplum]

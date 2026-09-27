@@ -1,0 +1,41 @@
+id: dilbilim
+parent: insanlik
+side: canopy
+type: field
+order: 13
+feed: ['arxiv:cs.CL']
+title:
+  tr: Dilbilim
+  en: Linguistics
+summary:
+  tr: >-
+    İnsan dilinin yapısını, tarihini, çeşitliliğini ve zihinde nasıl işlediğini inceleyen alan. Dünyada bugün 7.000'den
+    fazla dil konuşulmaktadır ve bunların neredeyse yarısı tehlike altındadır. Dillerin akrabalıkları ve ilk nerede
+    konuşuldukları, bu alanın en çok tartışılan sorularıdır.
+  en: >-
+    The field that studies the structure, history and diversity of human language and how it works in the mind. More
+    than 7,000 languages are spoken today, almost half of them endangered. How languages are related and where they were
+    first spoken are among the field's most debated questions.
+technical:
+  tr: >-
+    Dilbilimin başlıca alt alanları sesbilim, biçimbilim, sözdizim, anlambilim, edimbilim, tarihsel ve karşılaştırmalı
+    dilbilim, toplumdilbilim ve psikodilbilimdir. Tarihsel dilbilimdeki karşılaştırmalı yöntem, düzenli ses denkliklerine
+    dayanarak ata dilleri yeniden kurar. Son yıllarda filogenetik istatistik yöntemleri de bu alanda kullanılmaktadır.
+  en: >-
+    Its main sub-fields are phonology, morphology, syntax, semantics, pragmatics, historical and comparative
+    linguistics, sociolinguistics and psycholinguistics. The comparative method of historical linguistics reconstructs
+    ancestral languages from regular sound correspondences; in recent years phylogenetic statistical methods have also
+    been used.
+claims:
+  - tr: Ethnologue'un 2025 baskısına göre dünyada 7.159 yaşayan dil vardır. Bunların 3.193'ü tehlike altındadır.
+    en: According to the 2025 edition of Ethnologue there are 7,159 living languages, 3,193 of which are endangered.
+    src: [ethnologue2025]
+sources:
+  ethnologue2025:
+    type: dataset
+    authors: Eberhard, D. M.; Simons, G. F.; Fennig, C. D. (eds.)
+    title: 'Ethnologue: Languages of the World, 28th edition'
+    year: 2025
+    in: SIL International, Dallas
+    url: https://www.ethnologue.com/insights/how-many-languages-endangered/
+related: [dil, yazi]

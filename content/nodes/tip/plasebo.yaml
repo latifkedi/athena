@@ -1,0 +1,69 @@
+id: plasebo
+parent: tip
+type: question
+date: { year: 1955 }
+people: [Henry Beecher, Asbjørn Hróbjartsson, Ted Kaptchuk]
+title:
+  tr: Plasebo etkisi
+  en: The placebo effect
+summary:
+  tr: >-
+    Etken madde içermeyen bir hap ya da sahte bir tedavi, bazı hastalarda belirtilerin azalmasıyla ilişkili olabilir. Buna
+    plasebo etkisi denir. Bu etki, yeni tedavilerin plaseboyla karşılaştırılarak sınanmasının temel nedenidir. Plasebonun
+    ne kadar güçlü olduğu tartışmalıdır. Bir kısmı hastalığın kendiliğinden geçmesi ve ölçüm yanlılıklarıyla
+    açıklanabilir.
+  en: >-
+    A pill without active ingredient or a sham treatment can be associated with reduced symptoms in some patients; this
+    is called the placebo effect. It is the main reason new treatments are tested against placebo. How strong the placebo
+    effect is remains disputed; part of it can be explained by natural recovery and measurement biases.
+technical:
+  tr: >-
+    Beecher (1955), çeşitli çalışmalarda hastaların yaklaşık %35'inin plaseboya yanıt verdiğini bildirdi. Bu analiz,
+    kendiliğinden iyileşme ve ortalamaya dönüşü ayırt etmediği için eleştirildi. Hróbjartsson ve Gøtzsche (2001), plasebo
+    ile hiç tedavi almamayı karşılaştıran çalışmaları inceledi. Nesnel sonuçlarda anlamlı bir etki bulmadılar. Ağrı gibi
+    öznel sonuçlarda ise küçük bir etki buldular. Kaptchuk ve arkadaşları (2010), hastalara plasebo verildiğinin açıkça
+    söylendiği durumda bile irritabl bağırsak sendromunda belirtilerin iyileştiğini bildirdi.
+  en: >-
+    Beecher (1955) reported that about 35% of patients across several studies responded to placebo; the analysis was
+    criticised for not separating natural recovery and regression to the mean. Hróbjartsson and Gøtzsche (2001) examined
+    trials comparing placebo with no treatment and found no significant effect on objective outcomes and a small effect on
+    subjective outcomes such as pain. Kaptchuk et al. (2010) reported symptom improvement in irritable bowel syndrome even
+    when patients were told openly that they were receiving placebo.
+claims:
+  - tr: Etkisiz bir tedavi, hastanın beklentisi aracılığıyla gerçek ve ölçülebilir iyileşmeye yol açabilir.
+    en: An inert treatment can produce real, measurable improvement through the patient's expectation.
+    src: [beecher1955]
+evidence:
+  - kind: clinical
+    stance: for
+    tr: Plasebo aldığını bilen irritabl bağırsak sendromlu hastalarda, tedavi almayan gruba göre belirtiler anlamlı biçimde azaldı.
+    en: Irritable bowel syndrome patients who knew they were taking placebo had significantly fewer symptoms than an untreated group.
+    src: [kaptchuk2010]
+  - kind: statistical
+    stance: against
+    tr: Plaseboyu hiç tedavi almamakla karşılaştıran 114 çalışmanın analizinde, nesnel ve ikili sonuçlarda plasebonun anlamlı bir etkisi bulunmadı.
+    en: An analysis of 114 trials comparing placebo with no treatment found no significant effect of placebo on objective and binary outcomes.
+    src: [hrobjartsson2001]
+sources:
+  beecher1955:
+    type: article
+    authors: Beecher, H. K.
+    title: The powerful placebo
+    year: 1955
+    in: JAMA 159(17), 1602–1606
+    doi: 10.1001/jama.1955.02960340022006
+  hrobjartsson2001:
+    type: article
+    authors: Hróbjartsson, A.; Gøtzsche, P. C.
+    title: Is the placebo powerless? An analysis of clinical trials comparing placebo with no treatment
+    year: 2001
+    in: New England Journal of Medicine 344, 1594–1602
+    doi: 10.1056/NEJM200105243442106
+  kaptchuk2010:
+    type: article
+    authors: Kaptchuk, T. J. et al.
+    title: 'Placebos without deception: a randomized controlled trial in irritable bowel syndrome'
+    year: 2010
+    in: PLoS ONE 5(12), e15591
+    doi: 10.1371/journal.pone.0015591
+related: [homeopati, akupunktur]

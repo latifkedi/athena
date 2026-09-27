@@ -1,0 +1,67 @@
+id: marx
+parent: toplum
+type: text
+date: { year: 1867 }
+people: [Karl Marx, Friedrich Engels]
+title:
+  tr: Marx ve Kapital
+  en: Marx and Capital
+summary:
+  tr: >-
+    Marx, kapitalist ekonominin işçilerin emeğinden elde edilen "artı değer" üzerine kurulu olduğunu savundu. Tarihin
+    sınıflar arasındaki çatışmalarla ilerlediğini ileri sürdü. Kapitalizmin kendi çelişkileri nedeniyle yerini sınıfsız
+    bir topluma bırakacağını öngördü. Fikirleri 20. yüzyılda dünyanın büyük bölümünü etkileyen siyasi hareketlere ilham
+    verdi. Öngörülerinin gerçekleşip gerçekleşmediği ise hâlâ tartışılmaktadır.
+  en: >-
+    Marx argued that the capitalist economy rests on "surplus value" extracted from workers' labour, that history
+    advances through conflicts between classes, and predicted that capitalism would give way to a classless society
+    because of its own contradictions. His ideas inspired political movements that shaped much of the world in the 20th
+    century; whether his predictions came true is still debated.
+technical:
+  tr: >-
+    Kapital'in birinci cildi (1867), emek değer kuramını, meta fetişizmini ve sermaye birikimini inceler. "Dönüşüm
+    problemi", değerlerin fiyatlara nasıl dönüştüğü sorusudur ve Böhm-Bawerk (1896) başta olmak üzere eleştirilere konu
+    oldu. Kâr oranının düşme eğilimi yasası ampirik olarak tartışmalıdır. Tarihsel materyalizm, Weber gibi düşünürlerce
+    fikirlerin ve dinin ekonomik yapıya etkisini küçümsediği gerekçesiyle eleştirildi.
+  en: >-
+    Volume I of Capital (1867) examines the labour theory of value, commodity fetishism and capital accumulation. The
+    "transformation problem", how values become prices, was the subject of criticism beginning with Böhm-Bawerk (1896).
+    The law of the tendency of the rate of profit to fall is empirically disputed. Historical materialism was criticised by
+    thinkers such as Weber for understating the influence of ideas and religion on economic structure.
+claims:
+  - tr: Kapitalist kâr, işçilerin ürettiği ancak kendilerine ödenmeyen artı değerden kaynaklanır.
+    en: Capitalist profit arises from surplus value produced by workers but not paid to them.
+    src: [marx1867]
+positions:
+  - who:
+      tr: Eugen von Böhm-Bawerk
+      en: Eugen von Böhm-Bawerk
+    tr: Emek değer kuramı, fiyatların nasıl oluştuğunu tutarlı biçimde açıklayamaz. Kapital'in üçüncü cildi birinci cildiyle çelişir.
+    en: The labour theory of value cannot consistently explain how prices form; the third volume of Capital contradicts the first.
+    src: [bohmbawerk1896]
+  - who:
+      tr: Max Weber
+      en: Max Weber
+    tr: Dini fikirler de (ör. Protestan ahlakı) ekonomik düzenin şekillenmesinde belirleyici olmuştur. Tarih yalnızca maddi koşullarla açıklanamaz.
+    en: Religious ideas (e.g. the Protestant ethic) also shaped the economic order; history cannot be explained by material conditions alone.
+    src: [weber1905]
+sources:
+  marx1867:
+    type: book
+    authors: Marx, K.
+    title: 'Das Kapital. Kritik der politischen Oekonomie, Band I'
+    year: 1867
+    in: Otto Meissner, Hamburg
+  bohmbawerk1896:
+    type: book
+    authors: Böhm-Bawerk, E. von
+    title: Zum Abschluss des Marxschen Systems
+    year: 1896
+    in: Haering, Berlin
+  weber1905:
+    type: article
+    authors: Weber, M.
+    title: Die protestantische Ethik und der Geist des Kapitalismus
+    year: 1905
+    in: Archiv für Sozialwissenschaft und Sozialpolitik 20–21
+related: [adam-smith, ibn-haldun]

@@ -1,0 +1,41 @@
+id: uzay-kesfi
+parent: insanlik
+side: canopy
+type: field
+order: 7.5
+feed: ['arxiv:astro-ph.EP', 'arxiv:astro-ph.IM']
+title:
+  tr: Uzay keşfi
+  en: Space exploration
+summary:
+  tr: >-
+    İnsanlık 1957'de ilk yapay uydu Sputnik'i yörüngeye oturttu. 1961'de ilk insan uzaya çıktı, 1969'da ilk insanlar Ay'a
+    ayak bastı. Voyager araçları Güneş Sistemi'nin sınırını geçti. James Webb Teleskobu evrenin ilk dönemlerini görüntüledi.
+    Nisan 2026'da Artemis II mürettebatı Ay'ın çevresinden dolaşarak insanların Dünya'dan en uzağa gittiği yeni rekoru
+    kırdı.
+  en: >-
+    Humanity placed the first artificial satellite, Sputnik, in orbit in 1957; the first human went to space in 1961 and
+    the first people walked on the Moon in 1969. The Voyager probes crossed the edge of the solar system, and the James
+    Webb Telescope imaged the early universe. In April 2026 the Artemis II crew flew around the Moon and set a new record
+    for the farthest humans have travelled from Earth.
+technical:
+  tr: >-
+    Roket hareketinin temel denklemi Tsiolkovsky'ye (1903) aittir. Δv = vₑ ln(m₀/m_f) bağıntısı, yörüngeye ve öteye
+    ulaşmanın yakıt maliyetini belirler. Yeniden kullanılabilir roketler (2015'ten itibaren Falcon 9 birinci kademesi),
+    yörüngeye kilogram başına taşıma maliyetini önemli ölçüde düşürdü.
+  en: >-
+    The basic equation of rocket motion is due to Tsiolkovsky (1903); Δv = vₑ ln(m₀/m_f) sets the fuel cost of reaching
+    orbit and beyond. Reusable rockets (the Falcon 9 first stage from 2015) significantly lowered the cost per kilogram to
+    orbit.
+claims:
+  - tr: Uzay yarışı Soğuk Savaş'ın bir parçası olarak ABD ile Sovyetler Birliği arasında yürüdü.
+    en: The space race was waged between the US and the Soviet Union as part of the Cold War.
+    src: [siddiqi2000]
+sources:
+  siddiqi2000:
+    type: book
+    authors: Siddiqi, A. A.
+    title: 'Challenge to Apollo: The Soviet Union and the Space Race, 1945–1974'
+    year: 2000
+    in: NASA History Division, SP-2000-4408, Washington DC
+related: [astronomi]

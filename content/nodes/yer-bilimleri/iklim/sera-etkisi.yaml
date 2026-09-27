@@ -1,0 +1,67 @@
+id: sera-etkisi
+parent: iklim
+type: idea
+date: { year: 1896 }
+people: [Eunice Foote, John Tyndall, Svante Arrhenius]
+title:
+  tr: Sera etkisi
+  en: The greenhouse effect
+summary:
+  tr: >-
+    Eunice Foote 1856'da, karbondioksitle dolu bir kabın güneşte havayla dolu bir kaptan daha çok ısındığını gösterdi.
+    Tyndall 1861'de su buharı ve karbondioksidin kızılötesi ısıyı soğurduğunu ölçtü. Arrhenius 1896'da atmosferdeki CO₂
+    iki katına çıkarsa Dünya'nın birkaç derece ısınacağını hesapladı. Sera etkisi olmasaydı Dünya'nın ortalama sıcaklığı
+    donma noktasının çok altında olurdu.
+  en: >-
+    In 1856 Eunice Foote showed that a vessel filled with carbon dioxide warms more in the sun than one filled with air.
+    In 1861 Tyndall measured the absorption of infrared heat by water vapour and carbon dioxide. In 1896 Arrhenius
+    calculated that doubling atmospheric CO₂ would warm the Earth by several degrees. Without the greenhouse effect the
+    Earth's average temperature would be far below freezing.
+technical:
+  tr: >-
+    Sera gazları, Dünya yüzeyinin yaydığı kızılötesi ışınımı belirli dalga boylarında (CO₂ için yaklaşık 15 µm bandı)
+    soğurup yeniden yayar. Bu, uzaya kaçan ışınımın daha yüksek ve daha soğuk katmanlardan çıkmasına yol açar. Işınımsal
+    zorlama CO₂ derişiminin logaritmasıyla artar (yaklaşık ΔF ≈ 5,35 ln(C/C₀) W/m²). Uydu ölçümleri, giden kızılötesi
+    tayfta sera gazlarının soğurma bantlarındaki değişimi doğrudan göstermiştir.
+  en: >-
+    Greenhouse gases absorb and re-emit infrared radiation emitted by the Earth's surface at particular wavelengths
+    (the ~15 µm band for CO₂), causing the radiation escaping to space to come from higher, colder layers. Radiative
+    forcing rises with the logarithm of CO₂ concentration (approximately ΔF ≈ 5.35 ln(C/C₀) W/m²). Satellite measurements
+    have directly shown changes in the greenhouse-gas absorption bands of the outgoing infrared spectrum.
+claims:
+  - tr: Karbondioksit ve su buharı kızılötesi ışınımı soğurur. Atmosferdeki CO₂ artışı yüzeyi ısıtır.
+    en: Carbon dioxide and water vapour absorb infrared radiation; an increase in atmospheric CO₂ warms the surface.
+    src: [tyndall1861, arrhenius1896]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Laboratuvar ölçümleri, CO₂ ve su buharının kızılötesi ısıyı güçlü biçimde soğurduğunu, azot ve oksijenin ise neredeyse hiç soğurmadığını gösterdi.
+    en: Laboratory measurements showed that CO₂ and water vapour strongly absorb infrared heat, while nitrogen and oxygen hardly do.
+    src: [tyndall1861]
+  - kind: experiment
+    stance: for
+    tr: Güneş altında CO₂ dolu kap, nemli ve kuru havayla dolu kaplardan daha fazla ısındı.
+    en: In sunlight, a vessel of CO₂ warmed more than vessels of moist or dry air.
+    src: [foote1856]
+sources:
+  foote1856:
+    type: article
+    authors: Foote, E.
+    title: "Circumstances affecting the heat of the sun's rays"
+    year: 1856
+    in: American Journal of Science and Arts 22, 382–383
+  tyndall1861:
+    type: article
+    authors: Tyndall, J.
+    title: On the absorption and radiation of heat by gases and vapours, and on the physical connexion of radiation, absorption, and conduction
+    year: 1861
+    in: Philosophical Transactions of the Royal Society of London 151, 1–36
+    doi: 10.1098/rstl.1861.0001
+  arrhenius1896:
+    type: article
+    authors: Arrhenius, S.
+    title: On the influence of carbonic acid in the air upon the temperature of the ground
+    year: 1896
+    in: Philosophical Magazine 41, 237–276
+    doi: 10.1080/14786449608620846
+related: [termodinamik]

@@ -1,0 +1,59 @@
+id: haber-bosch
+parent: kimya
+type: technology
+date: { year: 1913 }
+people: [Fritz Haber, Carl Bosch]
+title:
+  tr: Haber-Bosch yöntemi ve yapay gübre
+  en: The Haber–Bosch process and synthetic fertiliser
+summary:
+  tr: >-
+    Haber 1909'da havadaki azottan amonyak üretmeyi başardı. Bosch bu yöntemi 1913'te sanayi ölçeğine taşıdı. Bu yöntemle
+    üretilen gübreler bugün dünya nüfusunun yaklaşık yarısını besleyen tarımı mümkün kılıyor. Aynı kimyacı Haber, Birinci
+    Dünya Savaşı'nda zehirli gaz silahlarının geliştirilmesine de öncülük etti.
+  en: >-
+    In 1909 Haber succeeded in producing ammonia from atmospheric nitrogen, and in 1913 Bosch scaled the process up to
+    industry. Fertilisers made this way now make possible the farming that feeds roughly half the world's population. The
+    same chemist, Haber, also led the development of poison-gas weapons in the First World War.
+technical:
+  tr: >-
+    Tepkime N₂ + 3H₂ ⇌ 2NH₃ şeklindedir. Demir katalizör üzerinde yaklaşık 400–500 °C sıcaklık ve 150–300 bar basınçta
+    gerçekleştirilir. Yöntem, küresel enerji tüketiminin yaklaşık %1–2'sini kullanır. Hidrojen çoğunlukla doğal gazdan
+    elde edildiği için önemli bir CO₂ kaynağıdır. Erisman ve arkadaşları, bu yöntem olmasaydı 20. yüzyıldaki nüfus
+    artışının mümkün olamayacağını hesapladı.
+  en: >-
+    The reaction N₂ + 3H₂ ⇌ 2NH₃ is run over an iron catalyst at about 400–500 °C and 150–300 bar. The process uses about
+    1–2% of global energy consumption and, since the hydrogen mostly comes from natural gas, is a significant CO₂ source.
+    Erisman and colleagues estimated that 20th-century population growth would not have been possible without it.
+claims:
+  - tr: Haber-Bosch yöntemiyle üretilen azotlu gübreler, dünya nüfusunun yaklaşık yarısının beslenmesini sağlar.
+    en: Nitrogen fertilisers from the Haber–Bosch process sustain the food supply of roughly half the world's population.
+    src: [erisman2008]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: Küresel azot bütçesi hesapları, 2008'de insanların yaklaşık %48'inin yapay azotlu gübreyle üretilen besinle beslendiğini tahmin etti.
+    en: Global nitrogen-budget calculations estimated that in 2008 about 48% of people were fed by food produced with synthetic nitrogen fertiliser.
+    src: [erisman2008]
+sources:
+  erisman2008:
+    type: article
+    authors: Erisman, J. W.; Sutton, M. A.; Galloway, J.; Klimont, Z.; Winiwarter, W.
+    title: How a century of ammonia synthesis changed the world
+    year: 2008
+    in: Nature Geoscience 1, 636–639
+    doi: 10.1038/ngeo325
+  smil2001:
+    type: book
+    authors: Smil, V.
+    title: 'Enriching the Earth: Fritz Haber, Carl Bosch, and the Transformation of World Food Production'
+    year: 2001
+    in: MIT Press, Cambridge MA
+positions:
+  - who:
+      tr: Vaclav Smil
+      en: Vaclav Smil
+    tr: Amonyak sentezi 20. yüzyılın en önemli teknik buluşudur, çünkü dünya nüfusunun artışını doğrudan mümkün kılmıştır.
+    en: Ammonia synthesis is the most important technical invention of the 20th century because it directly enabled world population growth.
+    src: [smil2001]
+related: [tarim, enerji]

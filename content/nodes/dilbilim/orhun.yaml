@@ -1,0 +1,57 @@
+id: orhun
+parent: dilbilim
+type: text
+date: { year: 732 }
+people: [Bilge Kağan, Kül Tigin, Tonyukuk, Vilhelm Thomsen]
+title:
+  tr: Orhun Yazıtları
+  en: The Orkhon inscriptions
+summary:
+  tr: >-
+    Moğolistan'daki Orhun Vadisi'nde 8. yüzyılda dikilen Kül Tigin (732) ve Bilge Kağan (735) anıt taşları, Türk dilinin
+    tarihlendirilebilen en eski uzun metinleri arasındadır. Göktürk yazısıyla yazılmıştır. Bilge Kağan'ın ağzından devlet,
+    halk ve yönetim üzerine öğütler içerir. Yazı 1893'te Danimarkalı dilbilimci Vilhelm Thomsen tarafından çözüldü.
+  en: >-
+    The Kül Tigin (732) and Bilge Khagan (735) memorial stones erected in the Orkhon Valley in Mongolia are among the
+    oldest datable long texts in the Turkic language. Written in the Old Turkic script, they contain counsel on state,
+    people and rule in Bilge Khagan's voice. The script was deciphered in 1893 by the Danish linguist Vilhelm Thomsen.
+technical:
+  tr: >-
+    Göktürk (Eski Türk runik) yazısı sağdan sola yazılır ve ünsüzlerin çoğu için art ve ön ünlülerle uyumlu ayrı işaretler
+    kullanır. Bu, ünlü uyumunu yazıya yansıtır. Tonyukuk yazıtı (y. 720) biraz daha eskidir. Yazının kökeni tartışmalıdır.
+    Soğd ve Aramice kökenli olduğunu öne süren görüşler vardır. Damgalardan türediğini savunan görüşler de vardır.
+  en: >-
+    The Old Turkic runic script is written right to left and uses separate signs for most consonants depending on back
+    or front vowels, reflecting vowel harmony in writing. The Tonyukuk inscription (c. 720) is slightly older. The origin of
+    the script is debated: views include derivation from Sogdian/Aramaic and from tamgas (clan marks).
+claims:
+  - tr: Orhun yazıtları, dili bugünkü Türkçeyle aynı dil ailesinin tarihlendirilebilen en eski uzun metinlerindendir.
+    en: The Orkhon inscriptions are among the oldest datable long texts in the language family to which modern Turkish belongs.
+    src: [tekin1968]
+evidence:
+  - kind: historical
+    stance: for
+    tr: Kül Tigin yazıtının Çince yüzü, anıtın 732 yılında dikildiğini belirtir.
+    en: The Chinese face of the Kül Tigin inscription states that the monument was erected in 732.
+    src: [tekin1968]
+sources:
+  tekin1968:
+    type: book
+    authors: Tekin, T.
+    title: A Grammar of Orkhon Turkic
+    year: 1968
+    in: Indiana University Publications, Uralic and Altaic Series 69, Bloomington
+  thomsen1893:
+    type: article
+    authors: Thomsen, V.
+    title: "Déchiffrement des inscriptions de l'Orkhon et de l'Iénisséi. Notice préliminaire"
+    year: 1893
+    in: Bulletin de l'Académie Royale des Sciences et des Lettres de Danemark, 285–299
+positions:
+  - who:
+      tr: Vilhelm Thomsen
+      en: Vilhelm Thomsen
+    tr: Yazının çözümü "Tengri", "Türk" ve "Kül Tigin" sözcüklerinin tanınmasıyla başladı.
+    en: The decipherment began with the recognition of the words "Tengri", "Türk" and "Kül Tigin".
+    src: [thomsen1893]
+related: [yazi, altay, turk-mitolojisi]

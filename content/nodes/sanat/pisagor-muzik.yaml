@@ -1,0 +1,55 @@
+id: pisagor-muzik
+parent: sanat
+type: idea
+people: [Pisagor / Pythagoras, Nikomakhos, Boethius]
+title:
+  tr: Pisagor ve müziğin matematiği
+  en: Pythagoras and the mathematics of music
+summary:
+  tr: >-
+    Pisagorcular, uyumlu müzik aralıklarının basit sayı oranlarına karşılık geldiğini fark etti. Oktav 2:1, beşli 3:2 ve
+    dörtlü 4:3 oranlarına karşılık gelir. Bir teli yarıya bölmek sesi bir oktav yükseltir. Pisagor'un bunu bir demircinin
+    çekiçlerini dinlerken keşfettiği hikâyesi ise fiziksel olarak doğru değildir ve sonradan ortaya çıkmış bir efsane
+    olarak kabul edilir.
+  en: >-
+    The Pythagoreans noticed that consonant musical intervals correspond to simple number ratios: the octave 2:1, the
+    fifth 3:2, the fourth 4:3. Halving a string raises its pitch by an octave. The story that Pythagoras discovered this
+    while listening to a blacksmith's hammers is physically incorrect and is regarded as a later legend.
+technical:
+  tr: >-
+    Tel boyu oranları için geçerli olan ilişki, çekiç ağırlıkları için geçerli değildir. Çekicin çıkardığı ses, ağırlıkla
+    basit bir oran ilişkisi göstermez. Pisagor akortu saf beşlilerle kurulur. On iki beşli, yedi oktavı yaklaşık 23,5 sent
+    aşar (Pisagor koması). Eşit tamperamanlı akort bu farkı oktava eşit olarak dağıtır.
+  en: >-
+    The relation valid for string-length ratios does not hold for hammer weights; the sound of a hammer does not stand in
+    a simple ratio to its weight. Pythagorean tuning is built from pure fifths; twelve fifths exceed seven octaves by about
+    23.5 cents (the Pythagorean comma). Equal temperament distributes this difference evenly across the octave.
+claims:
+  - tr: Uyumlu müzik aralıkları, küçük tam sayıların oranlarına karşılık gelir.
+    en: Consonant musical intervals correspond to ratios of small whole numbers.
+    src: [barker1989]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Monokord üzerinde telin uzunluğu 2:1, 3:2 ve 4:3 oranlarında bölündüğünde oktav, beşli ve dörtlü aralıkları elde edilir.
+    en: Dividing a monochord string at ratios 2:1, 3:2 and 4:3 produces the octave, fifth and fourth.
+    src: [barker1989]
+  - kind: critique
+    stance: against
+    tr: Demirci çekiçleri hikâyesinin fiziksel olarak geçersiz olduğu ve Pisagor'a atfedilen keşiflerin çoğunun sonraki Pisagorculardan geldiği gösterildi.
+    en: It was shown that the blacksmith's-hammers story is physically invalid and that most discoveries attributed to Pythagoras come from later Pythagoreans.
+    src: [burkert1972]
+sources:
+  barker1989:
+    type: book
+    authors: Barker, A.
+    title: 'Greek Musical Writings, Vol. II: Harmonic and Acoustic Theory'
+    year: 1989
+    in: Cambridge University Press
+  burkert1972:
+    type: book
+    authors: Burkert, W.
+    title: Lore and Science in Ancient Pythagoreanism
+    year: 1972
+    in: Harvard University Press
+related: [makam]

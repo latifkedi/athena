@@ -1,0 +1,74 @@
+id: muzik-beyin
+parent: sanat
+type: question
+people: [Samuel Mehr, Frances Rauscher]
+title:
+  tr: Müzik, beyin ve evrensellik
+  en: Music, the brain and universality
+summary:
+  tr: >-
+    Bilinen her insan toplumunda müzik vardır. 315 toplumu kapsayan bir çalışma, ninni ve dans şarkıları gibi türlerin
+    kültürler arasında tanınabilir ortak özellikler taşıdığını gösterdi. Mozart dinlemenin zekâyı artırdığı yönündeki
+    "Mozart etkisi" ise 1993'te geniş yankı uyandırdı. Sonraki meta-analizler bu etkiyi doğrulamadı.
+  en: >-
+    Every known human society has music. A study of 315 societies showed that song types such as lullabies and dance
+    songs carry recognisable features shared across cultures. The "Mozart effect", the claim that listening to Mozart
+    raises intelligence, attracted wide attention in 1993; later meta-analyses did not confirm it.
+technical:
+  tr: >-
+    Mehr ve arkadaşları (2019), etnografik metinler ve saha kayıtlarından oluşan bir derlemede şarkıların davranışsal
+    bağlamının akustik özelliklerden tahmin edilebildiğini gösterdi. Rauscher ve arkadaşları (1993), 36 üniversite
+    öğrencisinde Mozart'ın bir sonatını dinledikten sonra uzamsal görevlerde kısa süreli bir artış bildirdi. Pietschnig ve
+    arkadaşlarının (2010) 39 çalışmayı kapsayan meta-analizi, etkinin küçük olduğunu ve yayın yanlılığıyla açıklanabileceğini
+    buldu.
+  en: >-
+    Mehr et al. (2019), using a corpus of ethnographic texts and field recordings, showed that the behavioural context of
+    songs can be predicted from their acoustic features. Rauscher et al. (1993) reported a short-lived improvement on
+    spatial tasks in 36 college students after listening to a Mozart sonata. A meta-analysis of 39 studies by Pietschnig et
+    al. (2010) found the effect small and explainable by publication bias.
+claims:
+  - tr: Müzik insanın evrensel bir davranışıdır ve şarkı türleri kültürler arası ortak özellikler taşır.
+    en: Music is a human universal, and song types share features across cultures.
+    src: [mehr2019]
+  - tr: Mozart dinlemek uzamsal zekâyı geçici olarak artırır.
+    en: Listening to Mozart temporarily enhances spatial intelligence.
+    src: [rauscher1993]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: 315 toplumdan elde edilen etnografik kayıtların tamamında müzik bulundu.
+    en: Music was found in the ethnographic records of all 315 societies studied.
+    src: [mehr2019]
+  - kind: experiment
+    stance: for
+    tr: Mozart sonatını dinleyen öğrenciler, sessizlik ve rahatlama kayıtlarına kıyasla uzamsal akıl yürütme testinde daha yüksek puan aldı.
+    en: Students who listened to a Mozart sonata scored higher on a spatial reasoning test than after silence or relaxation instructions.
+    src: [rauscher1993]
+  - kind: statistical
+    stance: against
+    tr: Meta-analiz, Mozart etkisinin küçük olduğunu ve yayın yanlılığı düzeltildiğinde güvenilir biçimde ortaya çıkmadığını gösterdi.
+    en: A meta-analysis showed the Mozart effect to be small and not reliably present after correction for publication bias.
+    src: [pietschnig2010]
+sources:
+  mehr2019:
+    type: article
+    authors: Mehr, S. A. et al.
+    title: Universality and diversity in human song
+    year: 2019
+    in: Science 366, eaax0868
+    doi: 10.1126/science.aax0868
+  rauscher1993:
+    type: article
+    authors: Rauscher, F. H.; Shaw, G. L.; Ky, K. N.
+    title: Music and spatial task performance
+    year: 1993
+    in: Nature 365, 611
+    doi: 10.1038/365611a0
+  pietschnig2010:
+    type: article
+    authors: Pietschnig, J.; Voracek, M.; Formann, A. K.
+    title: 'Mozart effect–Shmozart effect: a meta-analysis'
+    year: 2010
+    in: Intelligence 38(3), 314–323
+    doi: 10.1016/j.intell.2010.03.001
+related: [psikoloji, tekrarlama-krizi]

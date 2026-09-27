@@ -1,0 +1,47 @@
+id: turk-mitolojisi
+parent: mitoloji
+type: tradition
+people: [Bahaeddin Ögel]
+title:
+  tr: Türk mitolojisi ve Gök Tanrı inancı
+  en: Turkic mythology and the Tengri belief
+summary:
+  tr: >-
+    İslam'dan önce Türk toplulukları gökyüzü tanrısı Tengri'ye (Gök Tanrı) inanıyor ve yeryüzü, su ve atalar ruhlarına
+    saygı gösteriyordu. Orhun Yazıtları'nda kağanın yetkisi Tengri'den gelir. Türeyiş destanlarında bozkurt ve dişi kurt
+    ata olarak anlatılır. Göğü yere bağlayan "hayat ağacı" (Bayterek, kayın ağacı) motifi, İskandinav Yggdrasil'ine
+    benzer bir dünya ağacı imgesidir.
+  en: >-
+    Before Islam, Turkic communities believed in the sky god Tengri and honoured spirits of earth, water and ancestors.
+    In the Orkhon inscriptions the khagan's authority comes from Tengri. In origin legends the grey wolf and she-wolf appear
+    as ancestors. The motif of a "tree of life" (Bayterek, birch) linking sky and earth is a world-tree image resembling
+    the Norse Yggdrasil.
+technical:
+  tr: >-
+    Kaynaklar Çin yıllıkları (Göktürklerin kurt atadan türeyişi), Orhun ve Yenisey yazıtları, Kaşgarlı Mahmud'un Dîvânu
+    Lügâti't-Türk'ü (1072–1074) ve 19.–20. yüzyılda derlenen Sibirya ve Altay anlatılarıdır. "Tengricilik" teriminin
+    sistemli bir din anlamında kullanılmasının geriye dönük bir kurgu olup olmadığı tartışılmaktadır. Şamanizmin Türk
+    inançlarıyla ilişkisi de farklı biçimlerde yorumlanmıştır.
+  en: >-
+    Sources include Chinese annals (the Türks' descent from a wolf ancestor), the Orkhon and Yenisei inscriptions,
+    Maḥmūd al-Kāshgharī's Dīwān Lughāt al-Turk (1072–1074) and Siberian and Altaic narratives collected in the 19th–20th
+    centuries. Whether using "Tengrism" for a systematic religion is a retrospective construction is debated; the relation
+    of shamanism to Turkic beliefs has also been interpreted in various ways.
+claims:
+  - tr: Eski Türk inancında egemenlik Tengri'den gelir ve evren gök, yer ve yeraltı katmanlarından oluşur.
+    en: In old Turkic belief sovereignty comes from Tengri, and the cosmos consists of sky, earth and underworld layers.
+    src: [ogel1971, tekin1968]
+sources:
+  ogel1971:
+    type: book
+    authors: Ögel, B.
+    title: 'Türk Mitolojisi (Kaynakları ve Açıklamaları ile Destanlar), Cilt I'
+    year: 1971
+    in: Türk Tarih Kurumu, Ankara
+  tekin1968:
+    type: book
+    authors: Tekin, T.
+    title: A Grammar of Orkhon Turkic
+    year: 1968
+    in: Indiana University Publications, Uralic and Altaic Series 69, Bloomington
+related: [yggdrasil, orhun]

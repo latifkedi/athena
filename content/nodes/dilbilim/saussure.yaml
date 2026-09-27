@@ -1,0 +1,53 @@
+id: saussure
+parent: dilbilim
+type: text
+date: { year: 1916 }
+people: [Ferdinand de Saussure]
+title:
+  tr: Saussure ve yapısalcı dilbilim
+  en: Saussure and structural linguistics
+summary:
+  tr: >-
+    Saussure dili, birbiriyle ilişkileri içinde anlam kazanan göstergelerden oluşan bir sistem olarak tanımladı. Ona göre
+    bir sözcüğün sesi ile anlamı arasındaki bağ doğal değil, uzlaşımsaldır (nedensizdir). Öğrencilerinin ders notlarından
+    derlenen kitabı, 20. yüzyılda dilbilim, antropoloji ve edebiyat kuramındaki yapısalcılığı başlattı.
+  en: >-
+    Saussure defined language as a system of signs that gain meaning through their relations with one another. For him
+    the link between a word's sound and its meaning is not natural but conventional (arbitrary). His book, compiled from
+    his students' lecture notes, launched 20th-century structuralism in linguistics, anthropology and literary theory.
+technical:
+  tr: >-
+    Cours de linguistique générale gösteren ile gösterilen, dil (langue) ile söz (parole), eşzamanlı ve artzamanlı inceleme
+    ayrımlarını getirdi. Dilsel değer, bir öğenin sistem içindeki diğer öğelerden farkıyla belirlenir. Kitap Saussure'ün
+    ölümünden sonra Bally ve Sechehaye tarafından derlendi. 1996'da bulunan el yazmaları, bazı görüşlerin derleyicilerce
+    biçimlendirildiğini gösterdi.
+  en: >-
+    The Cours de linguistique générale introduced the distinctions between signifier and signified, language system
+    (langue) and speech (parole), and synchronic and diachronic study. Linguistic value is determined by an element's
+    difference from other elements in the system. The book was compiled after Saussure's death by Bally and Sechehaye;
+    manuscripts found in 1996 showed that some views had been shaped by the editors.
+claims:
+  - tr: Dilsel gösterge nedensizdir. Gösteren ile gösterilen arasındaki bağ uzlaşıma dayanır.
+    en: The linguistic sign is arbitrary; the link between signifier and signified rests on convention.
+    src: [saussure1916]
+positions:
+  - who:
+      tr: Ses sembolizmi araştırmaları
+      en: Sound-symbolism research
+    tr: Bazı ses-anlam bağları, farklı dillerde rastlantıdan fazla tekrar eder. Bu, nedensizliğin mutlak olmadığını gösterir.
+    en: Some sound–meaning links recur across languages more than chance would predict, showing that arbitrariness is not absolute.
+    src: [blasi2016]
+sources:
+  saussure1916:
+    type: book
+    authors: de Saussure, F.; Bally, C.; Sechehaye, A. (eds.)
+    title: Cours de linguistique générale
+    year: 1916
+    in: Payot, Lausanne–Paris
+  blasi2016:
+    type: article
+    authors: Blasi, D. E. et al.
+    title: Sound–meaning association biases evidenced across thousands of languages
+    year: 2016
+    in: PNAS 113(39), 10818–10823
+    doi: 10.1073/pnas.1605782113

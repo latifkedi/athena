@@ -1,0 +1,60 @@
+id: cantor
+parent: matematik
+type: idea
+date: { year: 1874 }
+people: [Georg Cantor, Leopold Kronecker, David Hilbert]
+title:
+  tr: Cantor ve sonsuzluğun büyüklükleri
+  en: Cantor and the sizes of infinity
+summary:
+  tr: >-
+    Cantor, sonsuzlukların da birbirinden büyük olabileceğini gösterdi. Doğal sayılar ile gerçel sayılar sonsuz
+    çokluktadır, ama gerçel sayılar "daha fazla"dır. Kronecker gibi bazı matematikçiler bu fikre sert biçimde karşı çıktı.
+    Hilbert ise Cantor'un yarattığı "cennetten kimsenin bizi kovamayacağını" söyledi. Cantor, sonsuzluk üzerine
+    düşüncelerini teolojik sorularla da ilişkilendirdi.
+  en: >-
+    Cantor showed that infinities can be larger than one another: the natural numbers and the real numbers are both
+    infinite, but the reals are "more". Some mathematicians such as Kronecker opposed the idea fiercely; Hilbert said that
+    "no one shall expel us from the paradise that Cantor has created". Cantor also related his thinking on infinity to
+    theological questions.
+technical:
+  tr: >-
+    Cantor 1874'te gerçel sayıların sayılamaz olduğunu ispatladı. 1891'deki köşegen argümanı bu sonucun daha genel bir
+    ispatıdır. Her kümenin kuvvet kümesi kendisinden kesin olarak büyüktür (Cantor teoremi). Süreklilik hipotezi, doğal
+    sayılarla gerçel sayılar arasında ara büyüklükte bir sonsuzluk olmadığını söyler. Gödel (1940) ve Cohen (1963),
+    bu hipotezin ZFC'den bağımsız olduğunu, yani bu aksiyomlarla ne kendisinin ne de değillemesinin ispatlanabileceğini gösterdi.
+  en: >-
+    In 1874 Cantor proved the real numbers uncountable; the 1891 diagonal argument is a more general proof. Every set's
+    power set is strictly larger than the set (Cantor's theorem). The continuum hypothesis says there is no infinity of
+    intermediate size between the naturals and the reals; Gödel (1940) and Cohen (1963) showed it independent of ZFC,
+    neither provable nor refutable from those axioms.
+claims:
+  - tr: Gerçel sayılar kümesi, doğal sayılar kümesinden kesin olarak daha büyük bir sonsuzluktur.
+    en: The set of real numbers is a strictly larger infinity than the set of natural numbers.
+    src: [cantor1874]
+evidence:
+  - kind: proof
+    stance: for
+    tr: Köşegen argümanı, gerçel sayıların herhangi bir listesinde yer almayan bir gerçel sayının her zaman kurulabileceğini gösterir.
+    en: The diagonal argument shows that a real number missing from any list of reals can always be constructed.
+    src: [cantor1874]
+  - kind: argument
+    stance: against
+    tr: Yapılandırmacı ve sonlucu matematikçiler, tamamlanmış (aktüel) sonsuz kümelerin meşru matematiksel nesneler olmadığını savundu.
+    en: Constructivist and finitist mathematicians argued that completed (actual) infinite sets are not legitimate mathematical objects.
+    src: [dauben1979]
+sources:
+  cantor1874:
+    type: article
+    authors: Cantor, G.
+    title: Ueber eine Eigenschaft des Inbegriffes aller reellen algebraischen Zahlen
+    year: 1874
+    in: Journal für die reine und angewandte Mathematik 77, 258–262
+    doi: 10.1515/crll.1874.77.258
+  dauben1979:
+    type: book
+    authors: Dauben, J. W.
+    title: 'Georg Cantor: His Mathematics and Philosophy of the Infinite'
+    year: 1979
+    in: Harvard University Press
+related: [hudus-delili, godel]

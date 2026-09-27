@@ -1,0 +1,48 @@
+id: artemis-2
+parent: uzay-kesfi
+type: event
+date: { year: 2026, month: 4, day: 1 }
+people: [Reid Wiseman, Victor Glover, Christina Koch, Jeremy Hansen]
+title:
+  tr: Artemis II, 50 yıl sonra Ay'ın çevresinde insanlar
+  en: Artemis II, humans around the Moon after 50 years
+summary:
+  tr: >-
+    1 Nisan 2026'da fırlatılan Artemis II, 1972'den bu yana Ay'a giden ilk insanlı görev oldu. Dört astronot Orion
+    kapsülüyle Ay'ın arka yüzünün çevresinden dolaştı ve insanların Dünya'dan en uzağa gittiği rekoru Apollo 13'ten aldı.
+    Mürettebat 10 Nisan'da Pasifik Okyanusu'na indi. Artemis programı, sonraki görevlerde Ay'ın güney kutbuna iniş
+    yapmayı hedefliyor.
+  en: >-
+    Launched on 1 April 2026, Artemis II was the first crewed mission to the Moon since 1972. Four astronauts in the
+    Orion capsule flew around the far side of the Moon and took from Apollo 13 the record for the farthest humans have
+    travelled from Earth. The crew splashed down in the Pacific on 10 April. The Artemis programme aims to land near the
+    Moon's south pole on later missions.
+technical:
+  tr: >-
+    Görev, SLS roketinin ilk insanlı uçuşuydu. Orion'un yaşam destek sistemleri ve ısı kalkanı insanlı koşullarda
+    sınandı. Isı kalkanı, Artemis I'de (2022) beklenmedik aşınma göstermişti. Bu nedenle Artemis II için yeniden giriş
+    profili değiştirildi. Araç Ay yüzeyinin yaklaşık 6.545 km yakınından geçti. Christina Koch Ay'a giden ilk kadın,
+    Victor Glover ilk siyahi astronot, Jeremy Hansen ise ilk Kanadalı oldu.
+  en: >-
+    The mission was the SLS rocket's first crewed flight and tested Orion's life-support systems and heat shield under
+    crewed conditions; because the heat shield had shown unexpected erosion on Artemis I (2022), the re-entry profile was
+    changed for Artemis II. The spacecraft passed about 6,545 km from the lunar surface. Christina Koch became the first
+    woman, Victor Glover the first Black astronaut and Jeremy Hansen the first Canadian to travel to the Moon.
+claims:
+  - tr: Artemis II mürettebatı Ay'ın çevresinden dolaşarak sağ salim Dünya'ya döndü ve insanların Dünya'dan en uzağa gittiği mesafe rekorunu kırdı.
+    en: The Artemis II crew flew around the Moon, returned safely to Earth and set the record for the greatest distance humans have travelled from Earth.
+    src: [nasa-artemis2, nasa-artemis2-return]
+sources:
+  nasa-artemis2:
+    type: web
+    title: "Artemis II: NASA's first crewed lunar flyby in 50 years"
+    year: 2026
+    in: NASA
+    url: https://www.nasa.gov/mission/artemis-ii/
+  nasa-artemis2-return:
+    type: web
+    title: NASA welcomes record-setting Artemis II moonfarers back to Earth
+    year: 2026
+    in: NASA
+    url: https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/
+related: [apollo-11]

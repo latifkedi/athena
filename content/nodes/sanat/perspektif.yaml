@@ -1,0 +1,54 @@
+id: perspektif
+parent: sanat
+type: event
+date: { year: 1435 }
+people: [Filippo Brunelleschi, Leon Battista Alberti, İbnü'l-Heysem / Ibn al-Haytham]
+title:
+  tr: Doğrusal perspektif
+  en: Linear perspective
+summary:
+  tr: >-
+    Rönesans'ta Brunelleschi ve Alberti, üç boyutlu dünyayı iki boyutlu bir yüzeyde geometrik kurallarla gerçekçi
+    biçimde gösteren doğrusal perspektifi geliştirdi. Alberti 1435'te bu kuralları yazıya döktü. Sanat tarihçisi Hans
+    Belting, İbnü'l-Heysem'in görme ve ışık üzerine eserlerinin Latince çevirilerinin bu gelişmede rol oynadığını savundu.
+  en: >-
+    In the Renaissance Brunelleschi and Alberti developed linear perspective, depicting the three-dimensional world
+    realistically on a two-dimensional surface by geometric rules; Alberti wrote the rules down in 1435. The art historian
+    Hans Belting argued that Latin translations of Ibn al-Haytham's works on vision and light played a role in this
+    development.
+technical:
+  tr: >-
+    Tek kaçış noktalı perspektifte paralel doğrular ufuk üzerindeki bir noktada birleşir. Alberti'nin "pencere" metaforu
+    ve karelenmiş zemin (pavimento) yöntemi De pictura'da anlatılır. İbnü'l-Heysem'in Kitâbü'l-Menâzır'ı (Latince De
+    aspectibus) görmenin ışınların gözden değil nesneden göze gelmesiyle olduğunu savundu. Eser, Batı'daki perspectiva
+    geleneğinin temelini oluşturdu. Bu optik geleneğin resim pratiğine doğrudan etkisi tartışmalıdır.
+  en: >-
+    In one-point perspective parallel lines converge at a point on the horizon. Alberti's "window" metaphor and the
+    squared-floor (pavimento) method are described in De pictura. Ibn al-Haytham's Kitāb al-Manāẓir (Latin De aspectibus)
+    argued that vision occurs by rays coming from the object to the eye, not from the eye, and underlay the Western
+    perspectiva tradition; the direct influence of that optical tradition on painting practice is debated.
+claims:
+  - tr: Üç boyutlu uzay, tek bir bakış noktasından geometrik izdüşümle düz bir yüzeye aktarılabilir.
+    en: Three-dimensional space can be transferred to a flat surface by geometric projection from a single viewpoint.
+    src: [alberti1435]
+positions:
+  - who:
+      tr: Hans Belting
+      en: Hans Belting
+    tr: Rönesans perspektifi, İbnü'l-Heysem'in optik kuramının Latin dünyasında sanatsal bir uygulamaya dönüşmesidir.
+    en: Renaissance perspective is the artistic application in the Latin world of Ibn al-Haytham's optical theory.
+    src: [belting2011]
+sources:
+  alberti1435:
+    type: manuscript
+    authors: Alberti, L. B.
+    title: De pictura
+    year: 1435
+    in: Latin manuscript; Italian version Della pittura, 1436
+  belting2011:
+    type: book
+    authors: Belting, H.
+    title: 'Florence and Baghdad: Renaissance Art and Arab Science'
+    year: 2011
+    in: Harvard University Press
+related: [ibn-heysem, oklid]

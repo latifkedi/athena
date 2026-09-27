@@ -1,0 +1,54 @@
+id: yunus-emre
+parent: tasavvuf
+type: tradition
+people: [Yunus Emre, Tapduk Emre]
+title:
+  tr: Yunus Emre
+  en: Yunus Emre
+summary:
+  tr: >-
+    13. yüzyılın sonu ile 14. yüzyılın başında Anadolu'da yaşayan Yunus Emre, tasavvufi düşünceyi halkın konuştuğu
+    Türkçeyle, sade ve içten şiirlerle anlattı. Allah sevgisini, insan sevgisini ve nefsin terbiyesini işledi. Hayatına
+    dair bilgilerin çoğu menkıbelere dayanır. Kabrinin yeri bile tartışmalıdır ve Anadolu'da birçok yer bu kabre sahip
+    olduğunu iddia eder.
+  en: >-
+    Yunus Emre, who lived in Anatolia in the late 13th and early 14th centuries, expressed Sufi thought in simple,
+    heartfelt poems in the Turkish spoken by the people. He wrote of love of God, love of humanity and discipline of the
+    self. Most information about his life rests on hagiographic legend; even the location of his grave is disputed, with
+    several places in Anatolia claiming it.
+technical:
+  tr: >-
+    Risâletü'n-Nushiyye (1307–1308) tarihli tek eseridir. Divan'ındaki şiirlerin hangilerinin ona ait olduğu, aynı
+    mahlası kullanan başka şairler nedeniyle tartışmalıdır. Hece ölçüsünü ve aruzu birlikte kullandı. Şiirleri, vahdet-i
+    vücûd düşüncesinin Anadolu Türkçesindeki erken ifadelerinden sayılır. TDV kaynakları, onu Tapduk Emre'nin müridi
+    olarak anar.
+  en: >-
+    The Risālat al-Nuṣḥiyya (1307–1308) is his only dated work. Which poems in his Dīwān are his is debated because other
+    poets used the same pen-name. He used both syllabic metre and ʿarūḍ. His poems are counted among the early
+    expressions of the unity of being in Anatolian Turkish. TDV sources name him as a disciple of Tapduk Emre.
+claims:
+  - tr: Tasavvufi bilgi ve ilahi sevgi, sade halk diliyle ifade edilebilir ve herkese ulaşabilir.
+    en: Sufi knowledge and divine love can be expressed in the plain language of the people and reach everyone.
+    src: [tdv-yunus]
+datings:
+  - view:
+      tr: Risâletü'n-Nushiyye'nin kendi tarihi
+      en: Date given in the Risālat al-Nuṣḥiyya itself
+    value:
+      tr: Eser 707 (1307–1308) yılında yazılmıştır.
+      en: The work was written in 707 AH (1307–1308).
+    src: [tdv-yunus]
+  - view:
+      tr: Ölüm tarihi için geleneksel kayıtlar
+      en: Traditional records of his death
+    value:
+      tr: Kaynaklar 1320–1321 civarını verir. Kesin tarih ve kabir yeri tartışmalıdır.
+      en: Sources give around 1320–1321; the exact date and burial place are disputed.
+    src: [tdv-yunus]
+sources:
+  tdv-yunus:
+    type: encyclopedia
+    title: Yûnus Emre
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/yunus-emre
+related: [mevlana, ibn-arabi]

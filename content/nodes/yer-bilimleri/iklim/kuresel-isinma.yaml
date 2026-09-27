@@ -1,0 +1,132 @@
+id: kuresel-isinma
+parent: iklim
+type: question
+date: { year: 2021, month: 8 }
+people: [IPCC, WMO]
+title:
+  tr: Günümüzdeki küresel ısınma ve nedenleri
+  en: Present-day global warming and its causes
+summary:
+  tr: >-
+    Dünya Meteoroloji Örgütü'ne göre 2025, sanayi öncesi döneme göre yaklaşık 1,43 °C daha sıcaktı. 2015–2025 arasındaki
+    11 yıl, kayıtların en sıcak yıllarıdır. BM'nin iklim paneli IPCC, 2021'de bu ısınmanın insan faaliyetlerinden
+    kaynaklandığının "kesin" olduğunu bildirdi. Bazı bilim insanları ise Güneş ve kozmik ışınlar gibi doğal etkenlerin
+    rolünün küçümsendiğini ya da iklimin CO₂'ye duyarlılığının abartıldığını savunmaktadır.
+  en: >-
+    According to the World Meteorological Organization, 2025 was about 1.43 °C warmer than pre-industrial times, and the
+    11 years 2015–2025 are the warmest on record. The UN's climate panel, the IPCC, stated in 2021 that it is
+    "unequivocal" that this warming is caused by human activities. Some scientists argue that the role of natural factors
+    such as the Sun and cosmic rays is underestimated, or that the climate's sensitivity to CO₂ is exaggerated.
+technical:
+  tr: >-
+    IPCC AR6, 2010–2019 dönemi için gözlenen yaklaşık 1,07 °C'lik insan kaynaklı ısınmanın en iyi tahmininin gözlenen
+    ısınmanın tamamına denk geldiğini bildirdi. Güneş ışınımı ölçümleri 1980'lerden bu yana artış göstermez. Kozmik ışınların
+    bulut oluşumu üzerinden iklimi etkilediği hipotezi (Svensmark), CERN'deki CLOUD deneyinde çekirdeklenme üzerinde bir
+    etki gösterse de, bu etkinin iklim açısından küçük olduğu değerlendirildi. Lindzen ve Choi, uydu verilerinden düşük
+    (yaklaşık 0,7 °C) iklim duyarlılığı çıkardı. Bu analiz başka araştırmacılarca yöntemsel olarak eleştirildi.
+  en: >-
+    IPCC AR6 reported that the best estimate of human-caused warming for 2010–2019, about 1.07 °C, matches the whole of
+    the observed warming. Solar irradiance measurements show no increase since the 1980s. The hypothesis that cosmic rays
+    affect climate through cloud formation (Svensmark) showed an effect on nucleation in CERN's CLOUD experiment, but the
+    effect was judged small for climate. Lindzen and Choi derived a low climate sensitivity (about 0.7 °C) from satellite
+    data; the analysis was criticised methodologically by other researchers.
+claims:
+  - tr: 1950'lerden bu yana gözlenen küresel ısınmanın başlıca nedeni insan kaynaklı sera gazı salımlarıdır.
+    en: The main cause of the global warming observed since the 1950s is human greenhouse-gas emissions.
+    src: [ipcc2021]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: 2025 yılı sanayi öncesine göre yaklaşık 1,43 °C daha sıcaktı. Son 11 yıl kayıtların en sıcak 11 yılıdır. Sera gazı derişimleri ve okyanus ısı içeriği rekor düzeydedir.
+    en: 2025 was about 1.43 °C warmer than pre-industrial; the last 11 years are the 11 warmest on record; greenhouse-gas concentrations and ocean heat content are at record levels.
+    src: [wmo2025]
+  - kind: statistical
+    stance: for
+    tr: İklim konusunda görüş bildiren 4.000'den fazla hakemli makale özetinin yaklaşık %97'si insan kaynaklı ısınma görüşünü destekledi.
+    en: About 97% of more than 4,000 peer-reviewed paper abstracts expressing a position endorsed human-caused warming.
+    src: [cook2013]
+  - kind: critique
+    stance: against
+    tr: Yüzde 97 uzlaşı çalışmasının sınıflandırma yöntemine ve örneklemine yönelik eleştiriler yayımlandı. Yazarlar bu eleştirilere yanıt verdi.
+    en: Criticisms of the classification method and sample of the 97% consensus study were published; the authors responded.
+    src: [tol2016, cook2016]
+  - kind: theoretical
+    stance: against
+    tr: Kozmik ışınların bulut oluşumunu etkileyerek iklim üzerinde Güneş etkinliğine bağlı önemli bir rol oynadığı öne sürüldü.
+    en: It was proposed that cosmic rays play a significant, solar-activity-linked role in climate by affecting cloud formation.
+    src: [svensmark1997]
+  - kind: experiment
+    stance: for
+    tr: CERN'deki CLOUD deneyi, iyonlaşmanın parçacık çekirdeklenmesini artırdığını ancak bunun bulut yoğunlaşma çekirdekleri üzerindeki etkisinin küçük olduğunu gösterdi.
+    en: The CLOUD experiment at CERN showed that ionisation enhances particle nucleation but that its effect on cloud condensation nuclei is small.
+    src: [kirkby2011, pierce2009]
+  - kind: measurement
+    stance: against
+    tr: Uydu ışınım verilerinin analizine dayanarak iklim duyarlılığının ana akım tahminlerden çok daha düşük olduğu savunuldu.
+    en: Based on analysis of satellite radiation data, it was argued that climate sensitivity is much lower than mainstream estimates.
+    src: [lindzen2011]
+sources:
+  ipcc2021:
+    type: report
+    authors: IPCC
+    title: 'Climate Change 2021: The Physical Science Basis. Contribution of Working Group I to the Sixth Assessment Report'
+    year: 2021
+    in: Cambridge University Press
+    url: https://www.ipcc.ch/report/ar6/wg1/
+  wmo2025:
+    type: report
+    authors: World Meteorological Organization
+    title: State of the Global Climate 2025
+    year: 2026
+    in: WMO-No. 1391, Geneva
+    url: https://wmo.int/publication-series/state-of-global-climate/state-of-global-climate-2025
+  cook2013:
+    type: article
+    authors: Cook, J. et al.
+    title: Quantifying the consensus on anthropogenic global warming in the scientific literature
+    year: 2013
+    in: Environmental Research Letters 8, 024024
+    doi: 10.1088/1748-9326/8/2/024024
+  tol2016:
+    type: article
+    authors: Tol, R. S. J.
+    title: 'Comment on "Quantifying the consensus on anthropogenic global warming in the scientific literature"'
+    year: 2016
+    in: Environmental Research Letters 11, 048001
+    doi: 10.1088/1748-9326/11/4/048001
+  cook2016:
+    type: article
+    authors: Cook, J. et al.
+    title: 'Consensus on consensus: a synthesis of consensus estimates on human-caused global warming'
+    year: 2016
+    in: Environmental Research Letters 11, 048002
+    doi: 10.1088/1748-9326/11/4/048002
+  svensmark1997:
+    type: article
+    authors: Svensmark, H.; Friis-Christensen, E.
+    title: 'Variation of cosmic ray flux and global cloud coverage — a missing link in solar-climate relationships'
+    year: 1997
+    in: Journal of Atmospheric and Solar-Terrestrial Physics 59(11), 1225–1232
+    doi: 10.1016/S1364-6826(97)00001-1
+  kirkby2011:
+    type: article
+    authors: Kirkby, J. et al.
+    title: Role of sulphuric acid, ammonia and galactic cosmic rays in atmospheric aerosol nucleation
+    year: 2011
+    in: Nature 476, 429–433
+    doi: 10.1038/nature10343
+  pierce2009:
+    type: article
+    authors: Pierce, J. R.; Adams, P. J.
+    title: Can cosmic rays affect cloud condensation nuclei by altering new particle formation rates?
+    year: 2009
+    in: Geophysical Research Letters 36, L09820
+    doi: 10.1029/2009GL037946
+  lindzen2011:
+    type: article
+    authors: Lindzen, R. S.; Choi, Y.-S.
+    title: On the observational determination of climate sensitivity and its implications
+    year: 2011
+    in: Asia-Pacific Journal of Atmospheric Sciences 47, 377–390
+    doi: 10.1007/s13143-011-0023-x
+related: [sera-etkisi, keeling, enerji]

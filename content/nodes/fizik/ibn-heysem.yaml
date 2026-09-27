@@ -1,0 +1,53 @@
+id: ibn-heysem
+parent: fizik
+type: text
+date: { year: 1021, approx: true }
+people: [İbnü'l-Heysem / Ibn al-Haytham (Alhazen)]
+title:
+  tr: İbnü'l-Heysem ve Kitâbü'l-Menâzır
+  en: Ibn al-Haytham and the Book of Optics
+summary:
+  tr: >-
+    Basra doğumlu İbnü'l-Heysem, Kitâbü'l-Menâzır (Optik Kitabı) adlı eserinde görmenin gözden çıkan ışınlarla değil,
+    nesnelerden göze gelen ışıkla gerçekleştiğini savundu. Işığın doğrusal yayılmasını, yansımayı, kırılmayı ve karanlık
+    odayı (camera obscura) deneylerle inceledi. Bu nedenle bazı tarihçiler onu deneysel yöntemin öncülerinden sayar.
+    Eser Latinceye çevrilerek Kepler'e kadar Avrupa optiğini etkiledi.
+  en: >-
+    Born in Basra, Ibn al-Haytham argued in his Kitāb al-Manāẓir (Book of Optics) that vision occurs not by rays leaving
+    the eye but by light coming from objects to the eye. He studied the rectilinear propagation of light, reflection,
+    refraction and the camera obscura by experiment, which is why some historians count him among the pioneers of the
+    experimental method. Translated into Latin, the work influenced European optics up to Kepler.
+technical:
+  tr: >-
+    Eser, görme kuramını matematiksel optik, deney (i'tibâr) ve fizyoloji ile birleştirir. "Alhazen problemi", küresel bir
+    aynada verilen iki nokta için yansıma noktasını bulmayı ister ve dördüncü dereceden bir denkleme yol açar. İbnü'l-Heysem
+    bunu geometrik olarak çözdü. "İlk bilim insanı" nitelendirmesi popüler yayınlarda yaygındır. Tarihçiler ise onun
+    deneysel yaklaşımını Batlamyus'un optik geleneği içinde değerlendirir.
+  en: >-
+    The work combines the theory of vision with mathematical optics, experiment (iʿtibār) and physiology. "Alhazen's
+    problem" asks for the point of reflection on a spherical mirror for two given points, leading to a quartic equation,
+    which he solved geometrically. The label "first scientist" is common in popular works; historians place his
+    experimental approach within Ptolemy's optical tradition.
+claims:
+  - tr: Görme, nesnelerden gelen ışığın göze ulaşmasıyla gerçekleşir. Işık doğrusal yayılır ve bu, deneyle gösterilebilir.
+    en: Vision occurs when light from objects reaches the eye; light travels in straight lines, which can be shown by experiment.
+    src: [sabra1989, tdv-ibnulheysem]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Karanlık bir odaya küçük bir delikten giren farklı ışık kaynaklarının görüntüleri karşı duvarda ayrı ayrı ve ters olarak oluştu. Bu, ışığın doğrusal yayıldığını gösterir.
+    en: Images of different light sources entering a dark room through a small hole formed separately and inverted on the opposite wall, showing that light travels in straight lines.
+    src: [sabra1989]
+sources:
+  sabra1989:
+    type: book
+    authors: İbnü'l-Heysem / Ibn al-Haytham; Sabra, A. I. (trans.)
+    title: 'The Optics of Ibn al-Haytham, Books I–III: On Direct Vision'
+    year: 1989
+    in: The Warburg Institute, London (2 vols.)
+  tdv-ibnulheysem:
+    type: encyclopedia
+    title: İbnü'l-Heysem
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/ibnul-heysem
+related: [perspektif, kepler]

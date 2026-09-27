@@ -1,0 +1,59 @@
+id: genom
+parent: biyoloji
+type: event
+date: { year: 2022, month: 3 }
+people: [Telomere-to-Telomere (T2T) Consortium, Human Genome Project]
+title:
+  tr: İnsan genomunun tamamı
+  en: The complete human genome
+summary:
+  tr: >-
+    İnsan Genom Projesi 2003'te "tamamlandı" ilan edilmişti, ama genomun yaklaşık %8'i teknik nedenlerle okunamamıştı.
+    Telomerden Telomere (T2T) Konsorsiyumu 2022'de, uzun okuma dizileme yöntemleriyle ilk boşluksuz insan genomunu
+    yayımladı. 2023'te farklı kökenlerden 47 kişinin genomlarını içeren bir "pangenom" taslağı da yayımlandı.
+  en: >-
+    The Human Genome Project was declared "complete" in 2003, but about 8% of the genome could not be read for technical
+    reasons. In 2022 the Telomere-to-Telomere (T2T) Consortium published the first gapless human genome using long-read
+    sequencing. In 2023 a draft "pangenome" including genomes of 47 people of diverse ancestry was also published.
+technical:
+  tr: >-
+    T2T-CHM13 dizisi 3,055 milyar baz çiftinden oluşur. Önceki referansa yaklaşık 200 milyon baz çifti eklendi. Bunlar
+    arasında sentromerler, ribozomal DNA dizileri ve segmental çoğalmalar vardır. Tek bir hidatiform mol hücre hattından
+    elde edildiği için haploittir ve Y kromozomunu içermiyordu. Y kromozomu 2023'te ayrıca tamamlandı. Tek bir referansın
+    insan çeşitliliğini temsil edemeyeceği eleştirisi, pangenom çalışmalarının gerekçesi oldu.
+  en: >-
+    The T2T-CHM13 sequence comprises 3.055 billion base pairs, adding about 200 million base pairs to the previous
+    reference, including centromeres, ribosomal DNA arrays and segmental duplications. Being derived from a single
+    hydatidiform mole cell line it is haploid and lacked a Y chromosome, which was completed separately in 2023. The
+    criticism that a single reference cannot represent human diversity motivated the pangenome work.
+claims:
+  - tr: İnsan genomu ilk kez boşluksuz olarak baştan sona dizilenmiştir.
+    en: The human genome has been sequenced end to end without gaps for the first time.
+    src: [nurk2022]
+evidence:
+  - kind: genetic
+    stance: for
+    tr: Uzun okuma yöntemleriyle önceki referanstaki tüm boşluklar kapatıldı ve yaklaşık 2.000 yeni gen adayı tanımlandı.
+    en: With long-read methods all gaps in the previous reference were closed and about 2,000 new candidate genes were identified.
+    src: [nurk2022]
+  - kind: critique
+    stance: against
+    tr: Tek bir kişiden elde edilen referans, insan popülasyonlarının çeşitliliğini yansıtmaz. Bu nedenle çok sayıda bireyi içeren pangenom yaklaşımı geliştirildi.
+    en: A reference from a single individual does not reflect the diversity of human populations, so a pangenome approach including many individuals was developed.
+    src: [liao2023]
+sources:
+  nurk2022:
+    type: article
+    authors: Nurk, S. et al.
+    title: The complete sequence of a human genome
+    year: 2022
+    in: Science 376, 44–53
+    doi: 10.1126/science.abj6987
+  liao2023:
+    type: article
+    authors: Liao, W.-W. et al.
+    title: A draft human pangenome reference
+    year: 2023
+    in: Nature 617, 312–324
+    doi: 10.1038/s41586-023-05896-x
+related: [dna]

@@ -1,0 +1,39 @@
+id: iklim
+parent: yer-bilimleri
+type: field
+order: 3000
+title:
+  tr: İklim ve iklim değişikliği
+  en: Climate and climate change
+summary:
+  tr: >-
+    Dünya'nın iklimi geçmişte buzul çağları ve sıcak dönemler arasında defalarca değişti. Bazı gazların ısıyı tuttuğu
+    (sera etkisi) 19. yüzyılda deneylerle gösterildi. Atmosferdeki karbondioksit 1958'den beri düzenli olarak ölçülüyor.
+    Son on yılların ısınmasının nedenleri ve gelecekteki boyutu, iklim biliminin ana konularıdır. Bu konuda ana akım
+    değerlendirmeler ve onlara itiraz eden görüşler vardır.
+  en: >-
+    Earth's climate has changed many times between ice ages and warm periods. That some gases trap heat (the greenhouse
+    effect) was shown by experiment in the 19th century, and atmospheric carbon dioxide has been measured continuously
+    since 1958. The causes of recent decades' warming and its future extent are central topics of climate science, with
+    mainstream assessments and views that dispute them.
+technical:
+  tr: >-
+    İklim sistemi atmosfer, okyanus, buz, kara ve biyosferin etkileşiminden oluşur. Işınımsal zorlama (W/m²), iklim
+    duyarlılığı (CO₂ iki katına çıktığında dengedeki ısınma) ve geri beslemeler (su buharı, bulutlar, buz albedosu) temel
+    kavramlardır. Paleoiklim verileri buz karotları, deniz tortuları ve ağaç halkalarından elde edilir.
+  en: >-
+    The climate system consists of interactions of atmosphere, ocean, ice, land and biosphere. Radiative forcing (W/m²),
+    climate sensitivity (equilibrium warming for doubled CO₂) and feedbacks (water vapour, clouds, ice albedo) are basic
+    concepts. Palaeoclimate data come from ice cores, ocean sediments and tree rings.
+claims:
+  - tr: CO₂ miktarının iki katına çıkması durumunda dengede beklenen ısınma, birden fazla kanıt türüne dayanarak büyük olasılıkla 2,6–3,9 °C aralığındadır.
+    en: Equilibrium warming for doubled CO₂ is likely in the range 2.6–3.9 °C, based on multiple lines of evidence.
+    src: [sherwood2020]
+sources:
+  sherwood2020:
+    type: article
+    authors: Sherwood, S. C. et al.
+    title: "An assessment of Earth's climate sensitivity using multiple lines of evidence"
+    year: 2020
+    in: Reviews of Geophysics 58, e2019RG000678
+    doi: 10.1029/2019RG000678

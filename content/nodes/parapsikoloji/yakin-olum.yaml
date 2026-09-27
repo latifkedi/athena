@@ -1,0 +1,81 @@
+id: yakin-olum
+parent: parapsikoloji
+type: question
+date: { year: 2001, month: 12 }
+people: [Pim van Lommel, Sam Parnia, Olaf Blanke]
+title:
+  tr: Yakın ölüm deneyimleri
+  en: Near-death experiences
+summary:
+  tr: >-
+    Kalbi duran ve sonra hayata döndürülen hastaların bir kısmı, tünel, parlak ışık, bedeninin dışından kendini izleme ve
+    ölmüş yakınlarla karşılaşma gibi deneyimler anlatır. Bazı araştırmacılar bunların bilincin beyinden bağımsız
+    olabileceğine işaret ettiğini düşünür. Diğerleri ise bu deneyimleri oksijen yetersizliği ve beynin belirli
+    bölgelerindeki etkinlikle açıklar. Çoğu dinde ölüm sonrası hayata dair anlatılarla da karşılaştırılır.
+  en: >-
+    Some patients whose hearts stopped and who were then resuscitated report experiences such as a tunnel, bright light,
+    watching themselves from outside the body and meeting deceased relatives. Some researchers think these point to
+    consciousness possibly being independent of the brain; others explain them by lack of oxygen and activity in
+    particular brain regions. They are also compared with accounts of the afterlife in most religions.
+technical:
+  tr: >-
+    Van Lommel ve arkadaşlarının 344 kalp durması hastası üzerindeki ileriye dönük çalışmasında hastaların yaklaşık %18'i
+    yakın ölüm deneyimi bildirdi. Deneyimin ortaya çıkması, anoksi süresi veya ilaçlar gibi tıbbi etkenlerle açıklanamadı.
+    AWARE çalışmasında (Parnia 2014), kalp durması sırasında yalnızca yukarıdan görülebilecek hedef görsellerle bedenden
+    ayrılma iddiaları test edildi. Doğrulanabilir bir tanıma gerçekleşmedi, bir hastanın işitsel anlatımı ise zamanlamayla
+    uyumlu bulundu. Blanke ve arkadaşları, temporoparyetal bileşkenin elektrikle uyarılmasının bedenden çıkma algısı
+    oluşturabildiğini gösterdi.
+  en: >-
+    In van Lommel and colleagues' prospective study of 344 cardiac-arrest patients, about 18% reported a near-death
+    experience; its occurrence was not explained by medical factors such as duration of anoxia or drugs. The AWARE study
+    (Parnia 2014) tested out-of-body claims during cardiac arrest with target images visible only from above; no
+    verifiable recognition occurred, though one patient's auditory account was found consistent with the timing. Blanke and
+    colleagues showed that electrical stimulation of the temporoparietal junction can produce out-of-body perceptions.
+claims:
+  - tr: Yakın ölüm deneyimleri, bilincin beyin işlevleri durduğunda da sürebileceğine işaret eder.
+    en: Near-death experiences indicate that consciousness may continue when brain function has ceased.
+    src: [vanlommel2001]
+evidence:
+  - kind: clinical
+    stance: for
+    tr: İleriye dönük bir çalışmada, kalp durması yaşayan hastaların yaklaşık %18'i yakın ölüm deneyimi bildirdi. Deneyimin ortaya çıkması tıbbi değişkenlerle ilişkili bulunmadı.
+    en: In a prospective study about 18% of cardiac-arrest patients reported a near-death experience, and its occurrence was not associated with medical variables.
+    src: [vanlommel2001]
+  - kind: clinical
+    stance: for
+    tr: Bir hastanın kalp durması sırasında olan bitene dair işitsel anlatımının, kayıtlı olayların zamanlamasıyla uyumlu olduğu bildirildi.
+    en: One patient's auditory account of events during cardiac arrest was reported to be consistent with the timing of recorded events.
+    src: [parnia2014]
+  - kind: experiment
+    stance: against
+    tr: Beynin temporoparyetal bileşkesinin elektrikle uyarılması, uyanık bir hastada bedenden çıkma algısını tekrar tekrar oluşturdu.
+    en: Electrical stimulation of the brain's temporoparietal junction repeatedly produced an out-of-body perception in an awake patient.
+    src: [blanke2002]
+  - kind: clinical
+    stance: against
+    tr: AWARE çalışmasında, yalnızca tavandan görülebilecek şekilde yerleştirilen hedef görselleri tanıyan hiçbir hasta olmadı.
+    en: In the AWARE study no patient recognised the target images placed so as to be visible only from the ceiling.
+    src: [parnia2014]
+sources:
+  vanlommel2001:
+    type: article
+    authors: van Lommel, P.; van Wees, R.; Meyers, V.; Elfferich, I.
+    title: 'Near-death experience in survivors of cardiac arrest: a prospective study in the Netherlands'
+    year: 2001
+    in: The Lancet 358, 2039–2045
+    doi: 10.1016/S0140-6736(01)07100-8
+  parnia2014:
+    type: article
+    authors: Parnia, S. et al.
+    title: 'AWARE — AWAreness during REsuscitation — a prospective study'
+    year: 2014
+    in: Resuscitation 85(12), 1799–1805
+    doi: 10.1016/j.resuscitation.2014.09.004
+  blanke2002:
+    type: article
+    authors: Blanke, O.; Ortigue, S.; Landis, T.; Seeck, M.
+    title: Stimulating illusory own-body perceptions
+    year: 2002
+    in: Nature 419, 269–270
+    doi: 10.1038/419269a
+related: [bilinc, tasavvuf, dinler]

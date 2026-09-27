@@ -1,5 +1,5 @@
 id: hammurabi
-parent: toplum
+parent: hukuk
 type: text
 date: { year: -1754, approx: true }
 people: [Hammurabi]

@@ -1,0 +1,44 @@
+id: turk-astronot
+parent: uzay-kesfi
+type: event
+date: { year: 2024, month: 1, day: 18 }
+people: [Alper Gezeravcı]
+title:
+  tr: İlk Türk astronot
+  en: The first Turkish astronaut
+summary:
+  tr: >-
+    Alper Gezeravcı, 18 Ocak 2024'te Axiom-3 göreviyle Uluslararası Uzay İstasyonu'na giden ilk Türk astronot oldu.
+    İstasyonda yaklaşık iki hafta kaldı ve TÜBİTAK başta olmak üzere Türk kurumlarının hazırladığı 13 bilimsel deneyi
+    yürüttü. Görev, Türkiye Uzay Ajansı'nın insanlı uzay programının ilk adımıdır.
+  en: >-
+    On 18 January 2024 Alper Gezeravcı became the first Turkish astronaut, travelling to the International Space Station
+    on the Axiom-3 mission. He spent about two weeks on the station and carried out 13 scientific experiments prepared by
+    Turkish institutions led by TÜBİTAK. The mission is the first step in the Turkish Space Agency's human spaceflight
+    programme.
+technical:
+  tr: >-
+    Axiom Mission 3, SpaceX Falcon 9 roketiyle Kennedy Uzay Merkezi'nden fırlatıldı. Mürettebatta Michael López-Alegría,
+    Walter Villadei, Alper Gezeravcı ve Marcus Wandt vardı. Görev yaklaşık 21 gün sürdü ve 9 Şubat 2024'te Atlantik'e
+    iniş ile sona erdi. Deneyler arasında mikro yerçekiminde metabolizma, bitki büyümesi ve malzeme davranışı çalışmaları
+    yer aldı.
+  en: >-
+    Axiom Mission 3 launched on a SpaceX Falcon 9 from Kennedy Space Center with Michael López-Alegría, Walter Villadei,
+    Alper Gezeravcı and Marcus Wandt. The mission lasted about 21 days, ending with splashdown in the Atlantic on 9
+    February 2024. Experiments included studies of metabolism, plant growth and material behaviour in microgravity.
+claims:
+  - tr: Alper Gezeravcı, Uluslararası Uzay İstasyonu'na giden ilk Türk vatandaşıdır.
+    en: Alper Gezeravcı is the first Turkish citizen to travel to the International Space Station.
+    src: [axiom-gezeravci, tubitak2024]
+sources:
+  axiom-gezeravci:
+    type: web
+    title: Alper Gezeravcı, Axiom Space astronaut
+    in: Axiom Space
+    url: https://www.axiomspace.com/astronaut/alper-gezeravci
+  tubitak2024:
+    type: web
+    title: "Türkiye's first astronaut reaches the International Space Station"
+    year: 2024
+    in: TÜBİTAK
+    url: https://tubitak.gov.tr/en/node/14637

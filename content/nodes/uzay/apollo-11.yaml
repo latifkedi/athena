@@ -1,0 +1,79 @@
+id: apollo-11
+parent: uzay-kesfi
+type: event
+date: { year: 1969, month: 7, day: 20 }
+people: [Neil Armstrong, Buzz Aldrin, Michael Collins]
+title:
+  tr: Apollo 11 ve Ay'a iniş
+  en: Apollo 11 and the Moon landing
+summary:
+  tr: >-
+    20 Temmuz 1969'da Neil Armstrong ve Buzz Aldrin Ay'a ayak basan ilk insanlar oldu. 1969–1972 arasında altı Apollo
+    görevinde toplam 12 astronot Ay'da yürüdü ve 382 kg Ay kayası getirdi. Bir grup insan, inişlerin sahnelendiğini iddia
+    etmektedir. Ay yüzeyine bırakılan aynalar, getirilen örnekler ve yörüngeden çekilen fotoğraflar ise inişin kanıtı
+    olarak gösterilmektedir.
+  en: >-
+    On 20 July 1969 Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon. In six Apollo missions
+    from 1969 to 1972, 12 astronauts walked on the Moon and brought back 382 kg of lunar rock. Some people claim that the
+    landings were staged; retroreflectors left on the surface, the returned samples and photographs taken from orbit are
+    cited as evidence of the landings.
+technical:
+  tr: >-
+    Apollo 11, 14 ve 15 görevleri Ay yüzeyine köşe küp yansıtıcılar bıraktı. Lazer Ay mesafe ölçümleri, bu yansıtıcılarla
+    Dünya-Ay uzaklığını milimetre düzeyinde ölçmektedir. Getirilen örneklerin izotop oranları, mikrometeorit krater
+    izleri ve sudan tamamen yoksun mineraloji Dünya kayalarından farklıdır. Lunar Reconnaissance Orbiter, iniş
+    alanlarındaki araç parçalarını ve yürüyüş izlerini görüntüledi.
+  en: >-
+    Apollo 11, 14 and 15 left corner-cube retroreflectors on the surface; lunar laser ranging uses them to measure the
+    Earth–Moon distance at the millimetre level. The returned samples' isotope ratios, micrometeorite craters and
+    completely water-free mineralogy differ from Earth rocks. The Lunar Reconnaissance Orbiter imaged hardware and
+    footpaths at the landing sites.
+claims:
+  - tr: 1969–1972 arasında insanlar Ay'a inmiş ve Dünya'ya geri dönmüştür.
+    en: Humans landed on the Moon and returned to Earth between 1969 and 1972.
+    src: [nasa-apollo11]
+  - tr: Ay inişleri sahnelenmiştir.
+    en: The Moon landings were staged.
+    src: [kaysing1976]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Apollo görevlerinin bıraktığı yansıtıcılara gönderilen lazer atımları, 50 yılı aşkın süredir düzenli olarak geri dönmektedir.
+    en: Laser pulses sent to the retroreflectors left by Apollo missions have returned regularly for more than 50 years.
+    src: [murphy2013]
+  - kind: observation
+    stance: for
+    tr: Getirilen Ay örnekleri, dünyadaki kayalardan farklı kimyasal ve fiziksel özellikler gösterir ve dünya genelinde laboratuvarlarda incelenmiştir.
+    en: The returned lunar samples show chemical and physical properties unlike Earth rocks and have been studied in laboratories worldwide.
+    src: [heiken1991]
+  - kind: argument
+    stance: against
+    tr: İddiacılar fotoğraflarda yıldız görünmemesini, bayrağın dalgalanır görünmesini ve Van Allen kuşaklarının radyasyonunu kanıt olarak öne sürdü.
+    en: Proponents cited the absence of stars in photographs, the apparently waving flag and the radiation of the Van Allen belts as evidence.
+    src: [kaysing1976]
+sources:
+  nasa-apollo11:
+    type: web
+    title: Apollo 11
+    in: NASA
+    url: https://www.nasa.gov/mission/apollo-11/
+  kaysing1976:
+    type: book
+    authors: Kaysing, B.; Reid, R.
+    title: "We Never Went to the Moon: America's Thirty Billion Dollar Swindle"
+    year: 1976
+    in: First edition, 1976 (self-published)
+  murphy2013:
+    type: article
+    authors: Murphy, T. W.
+    title: 'Lunar laser ranging: the millimeter challenge'
+    year: 2013
+    in: Reports on Progress in Physics 76, 076901
+    doi: 10.1088/0034-4885/76/7/076901
+  heiken1991:
+    type: book
+    authors: Heiken, G. H.; Vaniman, D. T.; French, B. M. (eds.)
+    title: "Lunar Sourcebook: A User's Guide to the Moon"
+    year: 1991
+    in: Cambridge University Press
+related: [artemis-2]

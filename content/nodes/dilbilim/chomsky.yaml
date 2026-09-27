@@ -1,0 +1,93 @@
+id: chomsky
+parent: dilbilim
+type: idea
+date: { year: 1957 }
+people: [Noam Chomsky, Daniel Everett, Michael Tomasello]
+title:
+  tr: Chomsky ve evrensel dilbilgisi
+  en: Chomsky and universal grammar
+summary:
+  tr: >-
+    Chomsky, çocukların dili kısa sürede ve sınırlı örnekle öğrenebilmesini, insanlarda doğuştan gelen bir "evrensel
+    dilbilgisi" bulunmasıyla açıkladı. Bu görüş dilbilimi ve bilişsel bilimi derinden etkiledi. Eleştirmenler ise dilin,
+    genel öğrenme yetenekleri ve kullanım yoluyla öğrenildiğini savunur. Amazon'daki Pirahã dilinin temel bir evrensel
+    özellik olan özyinelemeyi içermediği iddiası, bu tartışmanın merkezine yerleşti.
+  en: >-
+    Chomsky explained children's ability to learn language quickly from limited examples by an innate "universal
+    grammar" in humans. The view profoundly influenced linguistics and cognitive science. Critics argue that language is
+    learned through general learning abilities and use. The claim that the Amazonian language Pirahã lacks recursion, a
+    supposed core universal, became central to the debate.
+technical:
+  tr: >-
+    Syntactic Structures (1957), dönüşümsel-üretici dilbilgisini ve dillerin biçimsel dil hiyerarşisindeki yerini ele
+    aldı. "Uyaran yoksulluğu" argümanı, çocukların duymadıkları yapıları doğru biçimde reddettiğini ileri sürer.
+    Minimalist programda dil yetisinin çekirdeği "birleştirme" (Merge) işlemine indirgenir. Everett (2005), Pirahã'da
+    gömülü yan cümle bulunmadığını öne sürdü. Nevins, Pesetsky ve Rodrigues (2009) bu veriyi farklı yorumladı. Evans ve
+    Levinson (2009) dil evrensellerinin varlığını genel olarak sorguladı.
+  en: >-
+    Syntactic Structures (1957) introduced transformational-generative grammar and the place of languages in the formal
+    language hierarchy. The "poverty of the stimulus" argument holds that children correctly reject structures they
+    have never heard. In the Minimalist Program the core of the language faculty is reduced to the operation Merge.
+    Everett (2005) claimed that Pirahã has no embedded clauses; Nevins, Pesetsky and Rodrigues (2009) interpreted the data
+    differently; Evans and Levinson (2009) questioned the existence of language universals more broadly.
+claims:
+  - tr: İnsanlar, tüm dillerin ortak yapısını belirleyen doğuştan bir dil yetisiyle doğar.
+    en: Humans are born with an innate language faculty that determines the shared structure of all languages.
+    src: [chomsky1957, hauser2002]
+evidence:
+  - kind: argument
+    stance: for
+    tr: Çocuklar, girdide hiç duymadıkları dilbilgisi hatalarından kaçınır. Bu, yapının kısmen doğuştan geldiğine işaret olarak yorumlanır.
+    en: Children avoid grammatical errors they have never encountered in their input, interpreted as a sign that structure is partly innate.
+    src: [chomsky1957]
+  - kind: observation
+    stance: against
+    tr: Pirahã dilinde gömülü yan cümle ve sayı sözcüklerinin bulunmadığı bildirildi. Bu, özyinelemenin tüm dillerde bulunmadığı yönünde bir kanıt olarak sunuldu.
+    en: Pirahã was reported to lack embedded clauses and number words, offered as evidence that recursion is not present in all languages.
+    src: [everett2005]
+  - kind: critique
+    stance: for
+    tr: Pirahã verilerinin yeniden analizi, özyinelemeli yapıların bulunduğunu ya da iddianın veriden çıkmadığını savundu.
+    en: A reanalysis of the Pirahã data argued that recursive structures are present or that the claim does not follow from the data.
+    src: [nevins2009]
+  - kind: critique
+    stance: against
+    tr: Dünya dillerinin çeşitliliği incelendiğinde, önerilen evrensellerin neredeyse tamamına aykırı örnekler bulunduğu savunuldu.
+    en: It was argued that a survey of the world's linguistic diversity finds counterexamples to almost every proposed universal.
+    src: [evans2009]
+sources:
+  chomsky1957:
+    type: book
+    authors: Chomsky, N.
+    title: Syntactic Structures
+    year: 1957
+    in: Mouton, The Hague
+  hauser2002:
+    type: article
+    authors: Hauser, M. D.; Chomsky, N.; Fitch, W. T.
+    title: 'The faculty of language: what is it, who has it, and how did it evolve?'
+    year: 2002
+    in: Science 298, 1569–1579
+    doi: 10.1126/science.298.5598.1569
+  everett2005:
+    type: article
+    authors: Everett, D. L.
+    title: 'Cultural constraints on grammar and cognition in Pirahã: another look at the design features of human language'
+    year: 2005
+    in: Current Anthropology 46(4), 621–646
+    doi: 10.1086/431525
+  nevins2009:
+    type: article
+    authors: Nevins, A.; Pesetsky, D.; Rodrigues, C.
+    title: 'Pirahã exceptionality: a reassessment'
+    year: 2009
+    in: Language 85(2), 355–404
+    doi: 10.1353/lan.0.0107
+  evans2009:
+    type: article
+    authors: Evans, N.; Levinson, S. C.
+    title: 'The myth of language universals: language diversity and its importance for cognitive science'
+    year: 2009
+    in: Behavioral and Brain Sciences 32(5), 429–448
+    doi: 10.1017/S0140525X0999094X
+related: [dil, panini, transformer]

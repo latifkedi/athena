@@ -1,0 +1,39 @@
+id: mecelle
+parent: hukuk
+type: text
+date: { year: 1869, end: 1876 }
+people: [Ahmed Cevdet Paşa]
+title:
+  tr: Mecelle
+  en: The Mecelle (Ottoman civil code)
+summary:
+  tr: >-
+    Mecelle-i Ahkâm-ı Adliyye, Osmanlı Devleti'nde 1868–1876 yılları arasında Ahmed Cevdet Paşa başkanlığında bir heyet
+    tarafından hazırlandı. Hanefî fıkhına dayanan borçlar, eşya ve usul hukukunu maddeler hâlinde düzenleyen bir
+    kanundur. İslam hukukunu modern kanun biçiminde yazıya geçiren ilk büyük girişim sayılır. Türkiye'de 1926'da yerini
+    İsviçre'den alınan Medeni Kanun'a bıraktı.
+  en: >-
+    The Mecelle-i Ahkâm-ı Adliyye was prepared in the Ottoman Empire between 1868 and 1876 by a commission headed by
+    Ahmed Cevdet Pasha. It is a code setting out, in numbered articles, the law of obligations, property and procedure
+    based on Ḥanafī fiqh, and is regarded as the first major attempt to write Islamic law in the form of a modern code. In
+    Turkey it was replaced in 1926 by a Civil Code adopted from Switzerland.
+technical:
+  tr: >-
+    Mecelle 16 kitap ve 1851 maddeden oluşur. İlk 99 madde, "Zarar izâle olunur" gibi genel fıkıh kaidelerini içerir.
+    Fransız Medeni Kanunu'nun alınması önerisine karşı İslam hukukuna dayanan bir kodifikasyon tercih edildi. Aile
+    hukukunu kapsamadı. Mecelle, bazı Arap ülkelerinde 20. yüzyılın ortalarına kadar yürürlükte kaldı.
+  en: >-
+    The Mecelle comprises 16 books and 1,851 articles; the first 99 articles state general legal maxims such as "Harm is
+    to be removed". A codification based on Islamic law was chosen over a proposal to adopt the French Civil Code. It did
+    not cover family law. The Mecelle remained in force in some Arab countries until the mid-20th century.
+claims:
+  - tr: İslam hukukunun borçlar ve eşya hükümleri, modern kanun biçiminde maddeler hâlinde kodlanabilir.
+    en: The Islamic law of obligations and property can be codified in numbered articles in the form of a modern code.
+    src: [tdv-mecelle]
+sources:
+  tdv-mecelle:
+    type: encyclopedia
+    title: Mecelle-i Ahkâm-ı Adliyye
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/mecelle-i-ahkam-i-adliyye
+related: [fikih]

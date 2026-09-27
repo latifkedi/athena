@@ -1,0 +1,37 @@
+id: sanat
+parent: insanlik
+side: canopy
+type: field
+order: 14
+title:
+  tr: Sanat, müzik ve estetik
+  en: Art, music and aesthetics
+summary:
+  tr: >-
+    İnsanlar on binlerce yıldır resim yapıyor, müzik üretiyor ve güzelliği düşünüyor. Mağara resimleri, bilinen en eski
+    sembolik ifadeler arasındadır. Müziğin matematikle ilişkisi Pisagor'dan beri araştırılır. Sanat ve müziğin beyin
+    üzerindeki etkileri ise bugün bilimsel olarak inceleniyor.
+  en: >-
+    Humans have painted, made music and reflected on beauty for tens of thousands of years. Cave paintings are among the
+    oldest known symbolic expressions; the relation of music to mathematics has been explored since Pythagoras; and the
+    effects of art and music on the brain are now studied scientifically.
+technical:
+  tr: >-
+    Estetik, felsefenin güzellik ve sanat üzerine düşünen dalıdır. Terimi Baumgarten (1750) kullanıma soktu. Sanat
+    tarihi, müzikoloji, etnomüzikoloji ve nöroestetik, sanatın tarihsel, kültürel ve bilişsel boyutlarını inceler.
+    Güzellik yargılarının evrensel mi yoksa kültüre göre mi değiştiği temel bir tartışmadır.
+  en: >-
+    Aesthetics is the branch of philosophy reflecting on beauty and art; the term was introduced by Baumgarten (1750).
+    Art history, musicology, ethnomusicology and neuroaesthetics study the historical, cultural and cognitive dimensions of
+    art. Whether judgements of beauty are universal or culture-dependent is a basic debate.
+claims:
+  - tr: Güzellik yargıları hem ortak insan eğilimlerini hem de kültürel farklılıkları yansıtır.
+    en: Judgements of beauty reflect both shared human tendencies and cultural differences.
+    src: [sep-aesthetics]
+sources:
+  sep-aesthetics:
+    type: encyclopedia
+    title: The Concept of the Aesthetic
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/aesthetic-concept/
+related: [felsefe]

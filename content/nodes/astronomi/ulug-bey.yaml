@@ -1,0 +1,59 @@
+id: ulug-bey
+parent: astronomi
+type: event
+date: { year: 1437, approx: true }
+people: [Uluğ Bey, Kadızâde-i Rûmî, Gıyâseddin Cemşîd el-Kâşî, Ali Kuşçu]
+title:
+  tr: Uluğ Bey ve Semerkant Rasathanesi
+  en: Ulugh Beg and the Samarkand Observatory
+summary:
+  tr: >-
+    Timurlu hükümdar ve astronom Uluğ Bey, Semerkant'ta dönemin en büyük rasathanelerinden birini kurdu. Burada yapılan
+    gözlemlerle hazırlanan Zîc-i Uluğ Bey, yaklaşık 1.000 yıldızın konumunu yeni ölçümlerle veriyordu. Bu tablolar
+    teleskobun icadına kadar İslam dünyasında ve Avrupa'da kullanıldı. Rasathanede çalışan Ali Kuşçu daha sonra
+    İstanbul'a gelerek Osmanlı'da astronomi ve matematik öğretimini etkiledi.
+  en: >-
+    The Timurid ruler and astronomer Ulugh Beg founded one of the largest observatories of the age in Samarkand. The Zīj
+    of Ulugh Beg, prepared from its observations, gave newly measured positions for about 1,000 stars; the tables were
+    used in the Islamic world and Europe until the invention of the telescope. Ali Qushji, who worked at the observatory,
+    later came to Istanbul and influenced the teaching of astronomy and mathematics in the Ottoman Empire.
+technical:
+  tr: >-
+    Rasathanenin ana aleti, yaklaşık 40 m yarıçaplı dev bir meridyen yayıydı (Fahri sekstantı). Zîc'te yıldız yılının
+    uzunluğu 365 gün 6 saat 10 dakika 8 saniye olarak verildi. Bu değer bugünkü değerden yaklaşık 58 saniye uzundur.
+    Kâşî, π'yi 16 ondalık basamağa kadar hesapladı. Uluğ Bey 1449'da oğlunun kışkırttığı bir suikastle öldürüldü ve
+    rasathane kısa süre sonra işlevini yitirdi.
+  en: >-
+    The observatory's main instrument was a giant meridian arc (the Fakhri sextant) with a radius of about 40 m. The Zīj
+    gave the sidereal year as 365 days 6 hours 10 minutes 8 seconds, about 58 seconds longer than today's value.
+    al-Kāshī computed π to 16 decimal places. Ulugh Beg was assassinated in 1449 at his son's instigation, and the
+    observatory soon ceased to function.
+claims:
+  - tr: Semerkant'ta yapılan gözlemlerle hazırlanan yıldız katalogu ve tablolar, teleskop öncesi dönemin en hassas ölçümleri arasındaydı.
+    en: The star catalogue and tables prepared from observations in Samarkand were among the most precise measurements of the pre-telescope era.
+    src: [tdv-ulugbey, tdv-zic]
+sources:
+  tdv-ulugbey:
+    type: encyclopedia
+    title: Uluğ Bey
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/ulug-bey
+  tdv-zic:
+    type: encyclopedia
+    title: Zîc-i Uluğ Bey
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/zic-i-ulug-bey
+  sayili1960:
+    type: book
+    authors: Sayılı, A.
+    title: The Observatory in Islam and its Place in the General History of the Observatory
+    year: 1960
+    in: Türk Tarih Kurumu, Ankara
+positions:
+  - who:
+      tr: Bilim tarihçisi Aydın Sayılı
+      en: Historian of science Aydın Sayılı
+    tr: Rasathane, İslam dünyasında bilimsel bir kurum olarak gelişmiş ve modern gözlemevlerinin öncüsü olmuştur.
+    en: The observatory developed as a scientific institution in the Islamic world and was a forerunner of modern observatories.
+    src: [sayili1960]
+related: [batlamyus, kopernik]

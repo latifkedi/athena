@@ -1,0 +1,66 @@
+id: insan-haklari
+parent: hukuk
+type: text
+date: { year: 1948, month: 12, day: 10 }
+people: [Eleanor Roosevelt, René Cassin, Charles Malik, P. C. Chang]
+title:
+  tr: İnsan Hakları Evrensel Beyannamesi
+  en: The Universal Declaration of Human Rights
+summary:
+  tr: >-
+    Birleşmiş Milletler Genel Kurulu, 10 Aralık 1948'de tüm insanların doğuştan özgür ve eşit haklara sahip olduğunu ilan
+    eden 30 maddelik beyannameyi kabul etti. Bu hakların evrensel olup olmadığı tartışılmıştır. 1990'da İslam İşbirliği
+    Teşkilatı, hakları İslam hukuku çerçevesinde tanımlayan Kahire İnsan Hakları Bildirgesi'ni kabul etti.
+  en: >-
+    On 10 December 1948 the UN General Assembly adopted the 30-article declaration proclaiming that all human beings are
+    born free and equal in rights. Whether these rights are universal has been debated. In 1990 the Organisation of Islamic
+    Cooperation adopted the Cairo Declaration on Human Rights in Islam, which defines rights within the framework of
+    Islamic law.
+technical:
+  tr: >-
+    Beyanname 48 lehte oyla, 8 çekimserle ve hiç ret oyu olmadan kabul edildi. Hukuken bağlayıcı değildir. Bağlayıcı
+    sözleşmeler 1966'da (ICCPR, ICESCR) imzalandı. Amerikan Antropoloji Derneği 1947'de, tek bir kültürün değerlerinin
+    evrensel ilan edilmesine karşı uyardı. Kahire Bildirgesi, hakların "İslam şeriatına tabi" olduğunu belirtir.
+  en: >-
+    The declaration was adopted with 48 votes in favour, 8 abstentions and none against; it is not legally binding, the
+    binding covenants (ICCPR, ICESCR) having been adopted in 1966. The American Anthropological Association warned in 1947
+    against declaring the values of one culture universal. The Cairo Declaration states that the rights are "subject to the
+    Islamic Shariah".
+claims:
+  - tr: Bütün insanlar özgür, onur ve haklar bakımından eşit doğar. Bu haklar evrenseldir.
+    en: All human beings are born free and equal in dignity and rights; these rights are universal.
+    src: [udhr1948]
+positions:
+  - who:
+      tr: Amerikan Antropoloji Derneği (1947)
+      en: American Anthropological Association (1947)
+    tr: Standartlar ve değerler, içinde doğdukları kültüre görelidir. Tek bir kültürün değerleri insanlığın tamamına uygulanamaz.
+    en: Standards and values are relative to the culture from which they derive; the values of one culture cannot be applied to all humanity.
+    src: [aaa1947]
+  - who:
+      tr: İslam İşbirliği Teşkilatı (Kahire Bildirgesi, 1990)
+      en: Organisation of Islamic Cooperation (Cairo Declaration, 1990)
+    tr: Bildirgede sayılan bütün hak ve özgürlükler İslam şeriatına tabidir.
+    en: All the rights and freedoms stipulated in the declaration are subject to the Islamic Shariah.
+    src: [cairo1990]
+sources:
+  udhr1948:
+    type: report
+    authors: United Nations General Assembly
+    title: Universal Declaration of Human Rights, Resolution 217 A (III)
+    year: 1948
+    url: https://www.un.org/en/about-us/universal-declaration-of-human-rights
+  aaa1947:
+    type: article
+    authors: Executive Board, American Anthropological Association
+    title: Statement on human rights
+    year: 1947
+    in: American Anthropologist 49(4), 539–543
+    doi: 10.1525/aa.1947.49.4.02a00020
+  cairo1990:
+    type: report
+    authors: Organisation of the Islamic Conference
+    title: Cairo Declaration on Human Rights in Islam (5 August 1990)
+    year: 1990
+    in: UN Doc. A/CONF.157/PC/62/Add.18 (1993)
+related: [toplum-sozlesmesi, fikih]

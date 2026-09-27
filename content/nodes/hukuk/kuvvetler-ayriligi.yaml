@@ -1,0 +1,40 @@
+id: kuvvetler-ayriligi
+parent: hukuk
+type: text
+date: { year: 1748 }
+people: [Montesquieu]
+title:
+  tr: Montesquieu ve kuvvetler ayrılığı
+  en: Montesquieu and the separation of powers
+summary:
+  tr: >-
+    Montesquieu, özgürlüğün korunması için yasama, yürütme ve yargı yetkilerinin farklı ellerde olması gerektiğini
+    savundu. Ona göre bu güçler aynı kişi ya da kurumda toplanırsa baskı kaçınılmazdır. Bu fikir ABD Anayasası'nı ve
+    modern anayasaların çoğunu etkiledi.
+  en: >-
+    Montesquieu argued that to preserve liberty the legislative, executive and judicial powers must be in different
+    hands; if they are concentrated in one person or body, oppression is inevitable. The idea influenced the US
+    Constitution and most modern constitutions.
+technical:
+  tr: >-
+    Kanunların Ruhu (1748), yönetim biçimlerini cumhuriyet, monarşi ve despotizm olarak sınıflandırır ve bunların
+    ilkelerini (erdem, onur, korku) tartışır. Montesquieu, İngiliz anayasasını bir özgürlük modeli olarak betimledi.
+    Tarihçiler bu betimlemenin İngiltere'nin fiilî siyasi düzenini tam olarak yansıtmadığını not eder. Kitap ayrıca iklimin
+    yasalar ve toplumlar üzerindeki etkisine dair bugün sorgulanan görüşler içerir.
+  en: >-
+    The Spirit of the Laws (1748) classifies governments as republics, monarchies and despotisms and discusses their
+    principles (virtue, honour, fear). Montesquieu described the English constitution as a model of liberty; historians
+    note that this did not accurately reflect England's actual political order. The book also contains views on the
+    influence of climate on laws and societies that are questioned today.
+claims:
+  - tr: Özgürlük, yasama, yürütme ve yargı güçlerinin birbirinden ayrılması ve birbirini denetlemesiyle korunur.
+    en: Liberty is preserved by separating the legislative, executive and judicial powers so that they check one another.
+    src: [montesquieu1748]
+sources:
+  montesquieu1748:
+    type: book
+    authors: Montesquieu
+    title: De l'esprit des lois
+    year: 1748
+    in: Barrillot et Fils, Geneva (Book XI, chapter 6)
+related: [toplum-sozlesmesi]

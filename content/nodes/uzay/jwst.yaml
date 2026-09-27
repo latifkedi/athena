@@ -1,0 +1,61 @@
+id: jwst
+parent: uzay-kesfi
+type: event
+date: { year: 2021, month: 12, day: 25 }
+people: [NASA, ESA, CSA, Rohan Naidu]
+title:
+  tr: James Webb Uzay Teleskobu
+  en: The James Webb Space Telescope
+summary:
+  tr: >-
+    25 Aralık 2021'de fırlatılan James Webb Uzay Teleskobu, kızılötesi ışıkta gözlem yaparak evrenin ilk galaksilerini
+    görebilmektedir. Mayıs 2025'te, Büyük Patlama'dan yalnızca yaklaşık 280 milyon yıl sonrasına ait MoM-z14 galaksisi
+    bulundu. Bu, bilinen en uzak galaksidir. Teleskop aynı zamanda öte gezegen atmosferlerini de incelemektedir.
+  en: >-
+    Launched on 25 December 2021, the James Webb Space Telescope observes in infrared light and can see the universe's
+    first galaxies. In May 2025 the galaxy MoM-z14 was found, seen only about 280 million years after the Big Bang, the
+    most distant galaxy known. The telescope also studies exoplanet atmospheres.
+technical:
+  tr: >-
+    Teleskop 6,5 m çaplı, 18 altıgen parçadan oluşan altın kaplı berilyum bir aynaya sahiptir. Güneş-Dünya L2 noktasında
+    konumludur. Beş katmanlı güneş kalkanı sayesinde yaklaşık 40 K'de çalışır. MoM-z14'ün kırmızıya kayması, NIRSpec
+    tayfında keskin Lyman-α kırılmasıyla z = 14,44 olarak ölçüldü. Bu kadar erken dönemde beklenenden parlak galaksilerin
+    bulunması, galaksi oluşum modellerini sınamaktadır.
+  en: >-
+    The telescope has a 6.5 m gold-coated beryllium mirror of 18 hexagonal segments, is located at the Sun–Earth L2 point
+    and operates at about 40 K thanks to a five-layer sunshield. MoM-z14's redshift was measured at z = 14.44 from a
+    sharp Lyman-α break in its NIRSpec spectrum. Finding galaxies brighter than expected so early challenges models of
+    galaxy formation.
+claims:
+  - tr: Büyük Patlama'dan yaklaşık 280 milyon yıl sonra parlak galaksiler vardı.
+    en: Luminous galaxies existed about 280 million years after the Big Bang.
+    src: [naidu2025]
+evidence:
+  - kind: observation
+    stance: for
+    tr: MoM-z14'ün tayfında Lyman-α kırılması ve beş morötesi salma çizgisi saptandı.
+    en: A Lyman-α break and five rest-frame ultraviolet emission lines were detected in MoM-z14's spectrum.
+    src: [naidu2025]
+sources:
+  gardner2023:
+    type: article
+    authors: Gardner, J. P. et al.
+    title: The James Webb Space Telescope mission
+    year: 2023
+    in: Publications of the Astronomical Society of the Pacific 135, 068001
+    doi: 10.1088/1538-3873/acd1b5
+  naidu2025:
+    type: article
+    authors: Naidu, R. P. et al.
+    title: 'A cosmic miracle: a remarkably luminous galaxy at z_spec = 14.44 confirmed with JWST'
+    year: 2025
+    in: The Open Journal of Astrophysics
+    arxiv: '2505.11263'
+positions:
+  - who:
+      tr: JWST ekibi
+      en: The JWST team
+    tr: Teleskop, evrenin ilk galaksilerini, yıldız ve gezegen oluşumunu ve öte gezegen atmosferlerini incelemek için tasarlandı.
+    en: The telescope was designed to study the first galaxies, star and planet formation and exoplanet atmospheres.
+    src: [gardner2023]
+related: [buyuk-patlama, k2-18b]

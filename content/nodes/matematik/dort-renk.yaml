@@ -1,0 +1,67 @@
+id: dort-renk
+parent: matematik
+type: event
+date: { year: 1976 }
+people: [Kenneth Appel, Wolfgang Haken, Georges Gonthier]
+title:
+  tr: Dört renk teoremi ve bilgisayar destekli ispat
+  en: The four colour theorem and computer-assisted proof
+summary:
+  tr: >-
+    Her haritanın, komşu ülkeler aynı renkte olmayacak biçimde en fazla dört renkle boyanabileceği 1852'de öne sürüldü.
+    Appel ve Haken 1976'da bunu ispatladı, ancak ispatın bir kısmı bir insanın elle kontrol edemeyeceği kadar uzun bilgisayar
+    hesaplarına dayanıyordu. Bu durum "bilgisayarla yapılan hesap bir ispat sayılır mı?" tartışmasını başlattı. 2005'te
+    ispat, Coq ispat asistanıyla baştan sona biçimsel olarak doğrulandı.
+  en: >-
+    In 1852 it was conjectured that every map can be coloured with at most four colours so that neighbouring countries
+    differ. Appel and Haken proved it in 1976, but part of the proof relied on computer calculations too long for a human
+    to check by hand. This started the debate over whether a computer calculation counts as a proof. In 2005 the proof was
+    formally verified end to end with the Coq proof assistant.
+technical:
+  tr: >-
+    İspat, 1.936 (sonra 1.476) "indirgenebilir yapılandırma"dan oluşan kaçınılmaz bir kümenin varlığını gösterir. Her
+    yapılandırmanın indirgenebilirliği bilgisayarla denetlendi. Robertson, Sanders, Seymour ve Thomas (1997) 633
+    yapılandırmayla daha sade bir ispat verdi. Tymoczko, bu ispatın matematiğe deneysel bir öğe kattığını ve "ispat"
+    kavramını değiştirdiğini savundu.
+  en: >-
+    The proof shows the existence of an unavoidable set of 1,936 (later 1,476) "reducible configurations", each checked
+    for reducibility by computer. Robertson, Sanders, Seymour and Thomas (1997) gave a simpler proof with 633
+    configurations. Tymoczko argued that the proof introduced an empirical element into mathematics and changed the
+    concept of "proof".
+claims:
+  - tr: Her düzlemsel harita dört renkle, komşu bölgeler farklı renkte olacak biçimde boyanabilir.
+    en: Every planar map can be coloured with four colours so that adjacent regions differ.
+    src: [appel1977, gonthier2008]
+evidence:
+  - kind: computation
+    stance: for
+    tr: İspatın tamamı Coq ispat asistanında makine tarafından denetlendi.
+    en: The entire proof was machine-checked in the Coq proof assistant.
+    src: [gonthier2008]
+  - kind: critique
+    stance: against
+    tr: İnsanın gözden geçiremeyeceği bilgisayar hesaplarına dayanan bir ispatın, geleneksel anlamda bir ispat olup olmadığı sorgulandı.
+    en: It was questioned whether a proof relying on computer calculations no human can survey is a proof in the traditional sense.
+    src: [tymoczko1979]
+sources:
+  appel1977:
+    type: article
+    authors: Appel, K.; Haken, W.
+    title: 'Every planar map is four colorable. Part I: Discharging'
+    year: 1977
+    in: Illinois Journal of Mathematics 21(3), 429–490
+    doi: 10.1215/ijm/1256049011
+  gonthier2008:
+    type: article
+    authors: Gonthier, G.
+    title: Formal proof — the four-color theorem
+    year: 2008
+    in: Notices of the American Mathematical Society 55(11), 1382–1393
+  tymoczko1979:
+    type: article
+    authors: Tymoczko, T.
+    title: The four-color problem and its philosophical significance
+    year: 1979
+    in: The Journal of Philosophy 76(2), 57–83
+    doi: 10.2307/2025976
+related: [bb5]

@@ -1,0 +1,69 @@
+id: mars-yasam
+parent: uzay-kesfi
+type: event
+date: { year: 2025, month: 9, day: 10 }
+people: [Joel Hurowitz, Perseverance team]
+title:
+  tr: Mars'ta olası yaşam izi (Cheyava Falls)
+  en: A potential biosignature on Mars (Cheyava Falls)
+summary:
+  tr: >-
+    NASA'nın Perseverance aracı 2024'te Jezero Krateri'ndeki eski bir nehir vadisinde, üzerinde "leopar benekleri" olan
+    bir kaya buldu. Eylül 2025'te Nature'da yayımlanan makale, organik karbonla birlikte bulunan demir fosfat ve sülfür
+    minerallerinin Dünya'da genellikle mikrobik faaliyetle ilişkili olduğunu bildirdi. Yazarlar bunu "olası bir yaşam izi"
+    olarak nitelendirdi. Aynı izlerin canlı olmayan kimyasal süreçlerle de oluşabileceğini belirttiler. Kesin sonuç için
+    örneğin Dünya'ya getirilmesi gerekiyor.
+  en: >-
+    In 2024 NASA's Perseverance rover found a rock with "leopard spots" in an ancient river valley in Jezero Crater. A
+    paper published in Nature in September 2025 reported that iron phosphate and sulphide minerals found with organic
+    carbon are commonly associated with microbial activity on Earth. The authors called this a "potential biosignature"
+    and noted that the same features could also form by non-living chemical processes. A definitive answer requires
+    returning the sample to Earth.
+technical:
+  tr: >-
+    Bright Angel formasyonundaki organik karbon içeren çamurtaşlarında, muhtemelen vivianit (Fe₃(PO₄)₂·8H₂O) ve greigit
+    (Fe₃S₄) olan mineraller, organik maddenin çökelme sonrası redoks tepkimelerine katıldığı izlenimini veren halkalı
+    yapılarda bulundu. Makale, bu yapıların biyolojik olmayan yollarla düşük sıcaklıkta oluşturulmasının zor olduğunu,
+    ancak dışlanamadığını tartışır. "Sapphire Canyon" örneği Mars Örnek Geri Getirme programı için saklanmıştır. Bu
+    programın geleceği bütçe nedeniyle belirsizdir.
+  en: >-
+    In organic-carbon-bearing mudstones of the Bright Angel formation, minerals probably vivianite (Fe₃(PO₄)₂·8H₂O) and
+    greigite (Fe₃S₄) were found in ring structures suggesting that organic matter took part in post-depositional redox
+    reactions. The paper argues that forming these features abiotically at low temperature is difficult but cannot be
+    ruled out. The "Sapphire Canyon" sample is cached for Mars Sample Return, whose future is uncertain for budget reasons.
+claims:
+  - tr: Jezero Krateri'ndeki bu kayada, eski mikrobik yaşamla ilişkili olabilecek mineral ve organik madde örüntüleri vardır.
+    en: This rock in Jezero Crater contains mineral and organic patterns that may be associated with ancient microbial life.
+    src: [hurowitz2025]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Organik karbon, demir fosfat ve demir sülfürün birlikte oluşturduğu redoks cepheleri, Dünya'da mikrobik metabolizmanın bıraktığı izlere benzer.
+    en: Redox fronts formed jointly by organic carbon, iron phosphate and iron sulphide resemble traces left by microbial metabolism on Earth.
+    src: [hurowitz2025, jpl2025]
+  - kind: critique
+    stance: against
+    tr: Aynı mineral birliktelikleri, yüksek sıcaklık veya özel kimyasal koşullarda canlılık olmadan da oluşabilir. Yazarlar bu olasılığı tamamen dışlayamadı.
+    en: The same mineral assemblages can form without life under high temperature or particular chemical conditions; the authors could not exclude this possibility entirely.
+    src: [hurowitz2025, nature-news2025]
+sources:
+  hurowitz2025:
+    type: article
+    authors: Hurowitz, J. A. et al.
+    title: Redox-driven mineral and organic associations in Jezero Crater, Mars
+    year: 2025
+    in: Nature 645, 332–340
+    doi: 10.1038/s41586-025-09413-0
+  jpl2025:
+    type: web
+    title: NASA says Mars rover discovered potential biosignature last year
+    year: 2025
+    in: NASA Jet Propulsion Laboratory
+    url: https://www.jpl.nasa.gov/news/nasa-says-mars-rover-discovered-potential-biosignature-last-year/
+  nature-news2025:
+    type: news
+    title: Mystery Martian minerals hint at the planet's complex geochemical past
+    year: 2025
+    in: Nature News & Views
+    url: https://www.nature.com/articles/d41586-025-02597-5
+related: [abiyogenez, k2-18b]

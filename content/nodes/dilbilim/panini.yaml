@@ -1,0 +1,40 @@
+id: panini
+parent: dilbilim
+type: text
+date: { year: -350, approx: true }
+people: [Pāṇini]
+title:
+  tr: Pāṇini'nin Sanskrit dilbilgisi
+  en: "Pāṇini's grammar of Sanskrit"
+summary:
+  tr: >-
+    Hintli dilbilimci Pāṇini, Aṣṭādhyāyī adlı eserinde Sanskritçenin bütün dilbilgisini yaklaşık 4.000 kısa kuralla
+    tanımladı. Bu kurallar birbirine göndermeler yapan, neredeyse bir bilgisayar programı gibi işleyen bir sistem
+    oluşturur. Modern dilbilim ve biçimsel dil kuramı üzerinde doğrudan etkisi olmuştur.
+  en: >-
+    The Indian grammarian Pāṇini described the entire grammar of Sanskrit in about 4,000 short rules in his
+    Aṣṭādhyāyī. The rules form a system of cross-references that works almost like a computer program. It has had a direct
+    influence on modern linguistics and formal language theory.
+technical:
+  tr: >-
+    Aṣṭādhyāyī sūtra biçiminde yazılmıştır ve meta-kurallar, kural sıralaması ve çatışma çözme ilkeleri (ör. daha özel
+    kuralın önceliği) içerir. Kökler (dhātupāṭha) ve sesbirimler (Śivasūtralar) için ayrı listeler kullanılır. Backus–Naur
+    biçimiyle benzerliği nedeniyle "Pāṇini–Backus biçimi" adı önerilmiştir. Eserin tarihi kesin değildir. Çoğu araştırmacı
+    onu MÖ 5. ile 4. yüzyıla yerleştirir.
+  en: >-
+    The Aṣṭādhyāyī is written in sūtra form and includes meta-rules, rule ordering and conflict-resolution principles
+    (e.g. precedence of the more specific rule). Separate lists are used for roots (dhātupāṭha) and phonemes
+    (Śivasūtras). Because of its similarity to Backus–Naur form, the name "Pāṇini–Backus form" has been proposed. The date
+    is uncertain; most scholars place it between the 5th and 4th centuries BCE.
+claims:
+  - tr: Bir dilin dilbilgisi, sonlu sayıda biçimsel ve sıralı kuralla eksiksiz tanımlanabilir.
+    en: A language's grammar can be described completely by a finite set of formal, ordered rules.
+    src: [cardona1997]
+sources:
+  cardona1997:
+    type: book
+    authors: Cardona, G.
+    title: 'Pāṇini: A Survey of Research'
+    year: 1997
+    in: Motilal Banarsidass, Delhi
+related: [hint-felsefesi, chomsky]

@@ -1,0 +1,37 @@
+id: sputnik
+parent: uzay-kesfi
+type: event
+date: { year: 1957, month: 10, day: 4 }
+people: [Sergei Korolev]
+title:
+  tr: Sputnik 1 ve Gagarin
+  en: Sputnik 1 and Gagarin
+summary:
+  tr: >-
+    Sovyetler Birliği 4 Ekim 1957'de ilk yapay uydu Sputnik 1'i fırlattı. 12 Nisan 1961'de Yuri Gagarin, Vostok 1 ile
+    Dünya'nın çevresinde bir tur atarak uzaya çıkan ilk insan oldu. Bu başarılar, ABD'de NASA'nın kurulmasını ve Ay'a
+    gitme hedefini hızlandırdı.
+  en: >-
+    On 4 October 1957 the Soviet Union launched the first artificial satellite, Sputnik 1. On 12 April 1961 Yuri Gagarin
+    orbited the Earth once in Vostok 1, becoming the first human in space. These achievements accelerated the founding of
+    NASA and the goal of reaching the Moon in the US.
+technical:
+  tr: >-
+    Sputnik 1, 83,6 kg kütleli, dört antenli bir küreydi ve 20 ile 40 MHz'de sinyal yayınladı. R-7 kıtalararası füzesiyle
+    fırlatıldı. Vostok 1 uçuşu yaklaşık 108 dakika sürdü. Gagarin, iniş sırasında kapsülden fırlatılarak paraşütle yere
+    indi. Bu ayrıntı, o dönemin uçuş rekoru kurallarıyla ilgili nedenlerle yıllarca açıklanmadı.
+  en: >-
+    Sputnik 1 was an 83.6 kg sphere with four antennas broadcasting at 20 and 40 MHz, launched on an R-7 intercontinental
+    missile. The Vostok 1 flight lasted about 108 minutes; Gagarin ejected from the capsule during descent and landed by
+    parachute, a detail not disclosed for years for reasons related to the flight-record rules of the time.
+claims:
+  - tr: İnsan yapımı bir cisim Dünya yörüngesine oturtulabilir ve insan uzay uçuşundan sağ dönebilir.
+    en: A human-made object can be placed in Earth orbit, and a human can survive spaceflight.
+    src: [siddiqi2000]
+sources:
+  siddiqi2000:
+    type: book
+    authors: Siddiqi, A. A.
+    title: 'Challenge to Apollo: The Soviet Union and the Space Race, 1945–1974'
+    year: 2000
+    in: NASA History Division, SP-2000-4408, Washington DC

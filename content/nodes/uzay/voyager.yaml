@@ -1,0 +1,57 @@
+id: voyager
+parent: uzay-kesfi
+type: event
+date: { year: 2012, month: 8, day: 25 }
+people: [Edward Stone]
+title:
+  tr: Voyager ve yıldızlararası uzay
+  en: Voyager and interstellar space
+summary:
+  tr: >-
+    1977'de fırlatılan Voyager 1 ve 2, Jüpiter, Satürn, Uranüs ve Neptün'ü yakından görüntüledi. Voyager 1, 25 Ağustos
+    2012'de Güneş rüzgârının etki alanını (heliopoz) geçerek yıldızlararası uzaya giren ilk insan yapımı cisim oldu. Her
+    iki araç da bugün hâlâ Dünya'ya veri göndermektedir.
+  en: >-
+    Launched in 1977, Voyager 1 and 2 imaged Jupiter, Saturn, Uranus and Neptune up close. On 25 August 2012 Voyager 1
+    crossed the edge of the Sun's wind (the heliopause) and became the first human-made object in interstellar space.
+    Both spacecraft are still sending data to Earth today.
+technical:
+  tr: >-
+    Geçiş, Güneş kaynaklı düşük enerjili parçacıkların ani düşüşü ve galaktik kozmik ışınların artışıyla belirlendi.
+    Plazma dalgası ölçümleri, çevredeki elektron yoğunluğunun yıldızlararası ortama özgü değerlere yükseldiğini gösterdi.
+    Manyetik alan yönünün beklendiği gibi değişmemesi, geçişin yorumlanmasında bir süre tartışmaya yol açtı.
+  en: >-
+    The crossing was identified by a sudden drop in low-energy solar particles and a rise in galactic cosmic rays; plasma
+    wave measurements showed the surrounding electron density rising to values typical of the interstellar medium. The
+    fact that the magnetic field direction did not change as expected led to debate for a time over how to interpret the
+    crossing.
+claims:
+  - tr: Voyager 1, 2012'de heliopozu geçerek yıldızlararası ortama girmiştir.
+    en: Voyager 1 crossed the heliopause into the interstellar medium in 2012.
+    src: [stone2013, gurnett2013]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Plazma dalgası salınımları, elektron yoğunluğunun Güneş rüzgârındakinin yaklaşık 40 katına çıktığını gösterdi.
+    en: Plasma wave oscillations showed the electron density rising to about 40 times that of the solar wind.
+    src: [gurnett2013]
+  - kind: measurement
+    stance: against
+    tr: Manyetik alanın yönü heliopoz geçişinde beklenen değişimi göstermedi. Bu nedenle ilk yorumlarda aracın hâlâ helyokılıf içinde olabileceği tartışıldı.
+    en: The magnetic field direction did not show the change expected at the heliopause, so early interpretations debated whether the craft might still be inside the heliosheath.
+    src: [stone2013]
+sources:
+  stone2013:
+    type: article
+    authors: Stone, E. C. et al.
+    title: Voyager 1 observes low-energy galactic cosmic rays in a region depleted of heliospheric ions
+    year: 2013
+    in: Science 341, 150–153
+    doi: 10.1126/science.1236408
+  gurnett2013:
+    type: article
+    authors: Gurnett, D. A.; Kurth, W. S.; Burlaga, L. F.; Ness, N. F.
+    title: In situ observations of interstellar plasma with Voyager 1
+    year: 2013
+    in: Science 341, 1489–1492
+    doi: 10.1126/science.1241681

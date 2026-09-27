@@ -37,7 +37,7 @@ sections:
           en: The WEST tokamak in France sustained a plasma for about 22 minutes in February 2025.
         src: [west2025]
         node: fuzyon
-  - title: { tr: Evren, en: The universe }
+  - title: { tr: Evren ve uzay, en: Universe and space }
     items:
       - title: { tr: Evrenin yaşı (ΛCDM), en: Age of the universe (ΛCDM) }
         value: { tr: '13,787 milyar yıl', en: '13.787 billion years' }
@@ -60,6 +60,43 @@ sections:
           en: In the ΛCDM model about 68% of the universe's energy content is dark energy and 27% dark matter; the nature of both is unknown.
         src: [planck2018]
         node: karanlik-madde
+      - title: { tr: Bilinen en uzak galaksi, en: Most distant known galaxy }
+        value: { tr: 'z = 14,44', en: 'z = 14.44' }
+        text:
+          tr: JWST'nin 2025'te doğruladığı MoM-z14. Büyük Patlama'dan yaklaşık 280 milyon yıl sonrasından görülüyor.
+          en: MoM-z14, confirmed by JWST in 2025, seen about 280 million years after the Big Bang.
+        src: [naidu2025]
+        node: jwst
+      - title: { tr: Ay'a son insanlı yolculuk, en: Latest crewed trip to the Moon }
+        value: { tr: 'Nisan 2026', en: 'April 2026' }
+        text:
+          tr: Artemis II mürettebatı Ay'ın çevresinden dolaştı ve insanların Dünya'dan en uzağa gittiği rekoru kırdı.
+          en: The Artemis II crew flew around the Moon and set the record for the farthest humans have travelled from Earth.
+        src: [nasa-artemis2]
+        node: artemis-2
+      - title: { tr: Mars'ta olası yaşam izi, en: Potential biosignature on Mars }
+        value: { tr: 'Olası (2025)', en: 'Potential (2025)' }
+        text:
+          tr: Perseverance'ın bulduğu kayadaki mineral ve organik örüntüler. Canlılık dışı açıklamalar dışlanamadı.
+          en: Mineral and organic patterns in a rock found by Perseverance; non-biological explanations could not be ruled out.
+        src: [hurowitz2025]
+        node: mars-yasam
+  - title: { tr: İklim, en: Climate }
+    items:
+      - title: { tr: Küresel sıcaklık artışı (2025), en: Global warming (2025) }
+        value: { tr: '≈ 1,43 °C', en: '≈ 1.43 °C' }
+        text:
+          tr: Sanayi öncesine (1850–1900) göre. 2015–2025 kayıtların en sıcak 11 yılıdır.
+          en: Relative to pre-industrial (1850–1900); 2015–2025 are the 11 warmest years on record.
+        src: [wmo2025]
+        node: kuresel-isinma
+      - title: { tr: Atmosferdeki CO₂, en: Atmospheric CO₂ }
+        value: { tr: '> 420 ppm', en: '> 420 ppm' }
+        text:
+          tr: 1958'de yaklaşık 315 ppm idi. Son 800.000 yılda 180–300 ppm arasında kalmıştı.
+          en: About 315 ppm in 1958; between 180 and 300 ppm over the past 800,000 years.
+        src: [noaa-trends]
+        node: keeling
   - title: { tr: Yaşam ve sağlık, en: Life and health }
     items:
       - title: { tr: Dünya nüfusu, en: World population }
@@ -89,6 +126,13 @@ sections:
           en: A base-editing therapy designed in six months for one baby's mutation.
         src: [musunuru2025]
         node: kisiye-ozel-crispr
+      - title: { tr: Yaşayan diller, en: Living languages }
+        value: { tr: '7.159', en: '7,159' }
+        text:
+          tr: Bunların 3.193'ü (%45) tehlike altında. Ethnologue 2025.
+          en: 3,193 of them (45%) are endangered. Ethnologue 2025.
+        src: [ethnologue2025]
+        node: dilbilim
   - title: { tr: Hesaplama ve matematik, en: Computing and mathematics }
     items:
       - title: { tr: Kuantum hata düzeltme, en: Quantum error correction }
@@ -231,6 +275,45 @@ sources:
     year: 2006
     in: The Quarterly Review of Biology 81(2), 105–125
     doi: 10.1086/506024
+  naidu2025:
+    type: article
+    authors: Naidu, R. P. et al.
+    title: 'A cosmic miracle: a remarkably luminous galaxy at z_spec = 14.44 confirmed with JWST'
+    year: 2025
+    in: The Open Journal of Astrophysics
+    arxiv: '2505.11263'
+  nasa-artemis2:
+    type: web
+    title: NASA welcomes record-setting Artemis II moonfarers back to Earth
+    year: 2026
+    in: NASA
+    url: https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/
+  hurowitz2025:
+    type: article
+    authors: Hurowitz, J. A. et al.
+    title: Redox-driven mineral and organic associations in Jezero Crater, Mars
+    year: 2025
+    in: Nature 645, 332–340
+    doi: 10.1038/s41586-025-09413-0
+  wmo2025:
+    type: report
+    authors: World Meteorological Organization
+    title: State of the Global Climate 2025
+    year: 2026
+    in: WMO-No. 1391, Geneva
+    url: https://wmo.int/publication-series/state-of-global-climate/state-of-global-climate-2025
+  noaa-trends:
+    type: dataset
+    authors: NOAA Global Monitoring Laboratory
+    title: Trends in Atmospheric Carbon Dioxide (Mauna Loa)
+    url: https://gml.noaa.gov/ccgg/trends/
+  ethnologue2025:
+    type: dataset
+    authors: Eberhard, D. M.; Simons, G. F.; Fennig, C. D. (eds.)
+    title: 'Ethnologue: Languages of the World, 28th edition'
+    year: 2025
+    in: SIL International, Dallas
+    url: https://www.ethnologue.com/insights/how-many-languages-endangered/
   smolin2006:
     type: book
     authors: Smolin, L.

@@ -1,0 +1,73 @@
+id: milgram
+parent: psikoloji
+type: event
+date: { year: 1963 }
+people: [Stanley Milgram, Jerry Burger, Gina Perry]
+title:
+  tr: Milgram'ın itaat deneyleri
+  en: "Milgram's obedience experiments"
+summary:
+  tr: >-
+    Milgram'ın deneylerinde katılımcılara, bir "öğrenci"ye yanlış cevap verdiğinde giderek artan elektrik şokları
+    vermeleri söylendi. Şoklar gerçek değildi, ancak katılımcılar bunu bilmiyordu. İlk deneyde katılımcıların %65'i en
+    yüksek düzey olan 450 volta kadar devam etti. Sonuçlar, sıradan insanların otoriteye itaatle ne kadar ileri
+    gidebileceğine dair bir kanıt olarak yorumlandı. Arşiv çalışmaları ise deneylerin yürütülüşüne dair ciddi soru
+    işaretleri ortaya koydu.
+  en: >-
+    In Milgram's experiments participants were told to give increasingly strong electric shocks to a "learner" for wrong
+    answers. The shocks were not real, but the participants did not know that. In the first experiment 65% of
+    participants continued to the maximum 450 volts. The results were read as evidence of how far ordinary people will go
+    in obeying authority. Archival research raised serious questions about how the experiments were conducted.
+technical:
+  tr: >-
+    Milgram 18'den fazla varyasyon yürüttü. İtaat oranı, deneyci ile kurbanın yakınlığına ve otoritenin meşruiyetine
+    göre büyük ölçüde değişti. Burger (2009), etik gerekçelerle 150 volt ile sınırlandırılmış bir tekrarında Milgram'ın
+    oranlarına benzer sonuçlar buldu. Perry (2013), Yale arşivlerinde deneycilerin standart protokolden saptığını ve
+    katılımcıların önemli bir kısmının şokların gerçek olduğuna inanmadığını gösteren kayıtlara dikkat çekti.
+  en: >-
+    Milgram ran more than 18 variations; obedience varied greatly with the proximity of experimenter and victim and the
+    legitimacy of authority. Burger (2009), in a replication capped at 150 volts for ethical reasons, found rates similar to
+    Milgram's. Perry (2013) pointed to records in the Yale archives showing that experimenters departed from the standard
+    protocol and that a substantial share of participants did not believe the shocks were real.
+claims:
+  - tr: Sıradan insanların çoğu, meşru görülen bir otoritenin talimatıyla başkasına ciddi zarar verebilecek eylemlere devam eder.
+    en: Most ordinary people will continue actions that could seriously harm another person on the instructions of a perceived legitimate authority.
+    src: [milgram1963]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: İlk deneyde 40 katılımcının 26'sı en yüksek şok düzeyine kadar devam etti.
+    en: In the first experiment 26 of 40 participants continued to the highest shock level.
+    src: [milgram1963]
+  - kind: replication
+    stance: for
+    tr: 2009'daki kısmi tekrar, 150 volt noktasında devam etme oranının Milgram'ın bulgularından istatistiksel olarak farklı olmadığını gösterdi.
+    en: A 2009 partial replication found continuation rates at the 150-volt point not statistically different from Milgram's.
+    src: [burger2009]
+  - kind: critique
+    stance: against
+    tr: Arşiv kayıtları, deneycilerin talimatların dışına çıktığını ve katılımcıların önemli bir kısmının şokların gerçekliğinden şüphe ettiğini gösterdi.
+    en: Archival records showed experimenters going beyond the script and a substantial share of participants doubting that the shocks were real.
+    src: [perry2013]
+sources:
+  milgram1963:
+    type: article
+    authors: Milgram, S.
+    title: Behavioral study of obedience
+    year: 1963
+    in: Journal of Abnormal and Social Psychology 67(4), 371–378
+    doi: 10.1037/h0040525
+  burger2009:
+    type: article
+    authors: Burger, J. M.
+    title: 'Replicating Milgram: would people still obey today?'
+    year: 2009
+    in: American Psychologist 64(1), 1–11
+    doi: 10.1037/a0010932
+  perry2013:
+    type: book
+    authors: Perry, G.
+    title: 'Behind the Shock Machine: The Untold Story of the Notorious Milgram Psychology Experiments'
+    year: 2013
+    in: The New Press, New York
+related: [tekrarlama-krizi]

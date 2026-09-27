@@ -90,6 +90,11 @@ const navKeys: RouteKey[] = ['home', 'list', 'timeline', 'dashboard', 'latest', 
               <a href={suggestUrl(lang, nodeId, nodeTitle)}>{t(ui.suggest, lang)}</a> ·{' '}
               <a href={url(routes.method[lang])}>{t(ui.nav.method, lang)}</a> · <a href={REPO}>GitHub</a>
             </p>
+            <p class="small">
+              {lang === 'tr' ? 'İçerik' : 'Content'}:{' '}
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.tr" rel="license">CC BY-SA 4.0</a> ·{' '}
+              {lang === 'tr' ? 'Kod' : 'Code'}: <a href={`${REPO}/blob/HEAD/LICENSE`}>MIT</a>
+            </p>
           </div>
         </footer>
       )

@@ -1,0 +1,67 @@
+id: buzul-caglari
+parent: iklim
+type: idea
+date: { year: 1976 }
+people: [Milutin Milanković, James Hays, John Imbrie, Nicholas Shackleton]
+title:
+  tr: Buzul çağları ve Milanković döngüleri
+  en: Ice ages and Milankovitch cycles
+summary:
+  tr: >-
+    Sırp matematikçi Milanković, Dünya'nın yörüngesindeki ve eksen eğikliğindeki yavaş değişimlerin buzul çağlarını
+    tetiklediğini öne sürdü. Bu değişimler on binlerce yıllık döngüler hâlinde gerçekleşir. 1976'da deniz tortularından
+    elde edilen iklim kayıtlarında 100.000, 41.000 ve 23.000 yıllık döngüler bulundu. Son 800.000 yıldaki 100.000 yıllık
+    baskın döngünün nedeni ise hâlâ tam açıklanamadı.
+  en: >-
+    The Serbian mathematician Milanković proposed that slow changes in the Earth's orbit and axial tilt, occurring in
+    cycles of tens of thousands of years, trigger ice ages. In 1976 cycles of 100,000, 41,000 and 23,000 years were found
+    in climate records from ocean sediments. Why the 100,000-year cycle dominates over the last 800,000 years is still not
+    fully explained.
+technical:
+  tr: >-
+    Yörünge dışmerkezliği (yaklaşık 100 bin ve 400 bin yıl), eksen eğikliği (yaklaşık 41 bin yıl) ve yalpalama
+    (presesyon, yaklaşık 19–23 bin yıl), yüksek enlemlerdeki yaz güneşlenmesini değiştirir. Dışmerkezlikten gelen ışınım
+    değişimi zayıftır. Bu nedenle 100 bin yıllık döngünün buz tabakası dinamikleri ve CO₂ geri beslemeleri ile
+    güçlendirildiği düşünülür ("100 bin yıl problemi"). Orta Pleistosen geçişi (yaklaşık 1,2–0,8 milyon yıl önce), 41 bin
+    yıllık döngülerden 100 bin yıllık döngülere geçişi ifade eder.
+  en: >-
+    Orbital eccentricity (~100 kyr and 400 kyr), obliquity (~41 kyr) and precession (~19–23 kyr) change high-latitude
+    summer insolation. The radiative change from eccentricity is weak, so the 100-kyr cycle is thought to be amplified by
+    ice-sheet dynamics and CO₂ feedbacks (the "100-kyr problem"). The Mid-Pleistocene Transition (~1.2–0.8 million years
+    ago) marks the shift from 41-kyr to 100-kyr cycles.
+claims:
+  - tr: Dünya'nın yörünge parametrelerindeki değişimler buzul çağlarının zamanlamasını belirler.
+    en: Changes in the Earth's orbital parameters set the timing of ice ages.
+    src: [milankovitch1941, hays1976]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Güney Hint Okyanusu tortu karotlarındaki izotop kayıtlarında yörünge kuramının öngördüğü periyotlar bulundu.
+    en: The periods predicted by orbital theory were found in isotope records from southern Indian Ocean sediment cores.
+    src: [hays1976]
+  - kind: theoretical
+    stance: against
+    tr: Dışmerkezlik değişiminin güneşlenme üzerindeki etkisi çok küçüktür. Bu nedenle son 800.000 yıldaki 100.000 yıllık döngünün yalnızca yörüngeyle açıklanması zordur.
+    en: The effect of eccentricity changes on insolation is very small, so explaining the 100,000-year cycle of the last 800,000 years by orbit alone is difficult.
+    src: [imbrie1993]
+sources:
+  milankovitch1941:
+    type: book
+    authors: Milanković, M.
+    title: Kanon der Erdbestrahlung und seine Anwendung auf das Eiszeitenproblem
+    year: 1941
+    in: Royal Serbian Academy, Belgrade
+  hays1976:
+    type: article
+    authors: Hays, J. D.; Imbrie, J.; Shackleton, N. J.
+    title: "Variations in the Earth's orbit: pacemaker of the ice ages"
+    year: 1976
+    in: Science 194, 1121–1132
+    doi: 10.1126/science.194.4270.1121
+  imbrie1993:
+    type: article
+    authors: Imbrie, J. et al.
+    title: 'On the structure and origin of major glaciation cycles 2. The 100,000-year cycle'
+    year: 1993
+    in: Paleoceanography 8(6), 699–735
+    doi: 10.1029/93PA02751

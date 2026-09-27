@@ -3,8 +3,9 @@
 **Athena**, insanlığın bilgisini ilk taş aletlerden 2026'nın en yeni keşiflerine kadar bir **dünya ağacı** olarak gösteren
 iki dilli (Türkçe/İngilizce) bir sitedir.
 
-- **Dallar** (yukarı): dünyayı araştıran alanlar. Matematik, fizik, enerji, kimya, biyoloji, tıp, astronomi, yer
-  bilimleri, bilişim, psikoloji, parapsikoloji, toplum.
+- **Dallar** (yukarı): dünyayı araştıran alanlar. İlk bilgiler, matematik, fizik, enerji, kimya, biyoloji, tıp,
+  astronomi, uzay keşfi, yer bilimleri ve iklim, bilişim, psikoloji, parapsikoloji, toplum, hukuk ve siyaset, dilbilim,
+  sanat ve müzik.
 - **Kökler** (aşağı): düşünce ve inanç gelenekleri. Felsefe, kelam, tasavvuf, dinler, mitoloji, ezoterik gelenekler
   (simya, hermetizm, astroloji).
 
@@ -72,6 +73,10 @@ sources:
 ```
 
 Birden fazla düğümde kullanılan kaynaklar `content/shared-sources.yaml` dosyasına eklenip `@anahtar` ile anılabilir.
+
+## Lisans
+
+İçerik (`content/`) [CC BY-SA 4.0](content/LICENSE.md), kod [MIT](LICENSE) lisanslıdır.
 
 ## Komutlar
 

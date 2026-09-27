@@ -1,0 +1,69 @@
+id: toplum-sozlesmesi
+parent: hukuk
+type: idea
+date: { year: 1651 }
+people: [Thomas Hobbes, John Locke, Jean-Jacques Rousseau]
+title:
+  tr: Toplum sözleşmesi kuramları
+  en: Social contract theories
+summary:
+  tr: >-
+    Toplum sözleşmesi kuramlarına göre devlet, insanların kendi aralarında yaptıkları bir anlaşmayla meşruiyet kazanır.
+    Hobbes'a göre devlet yokken hayat "yalnız, yoksul, iğrenç, vahşi ve kısa"dır. Bu nedenle insanlar güçlü bir egemene
+    boyun eğer. Locke, yaşam, özgürlük ve mülkiyet haklarını korumayan yönetime karşı çıkma hakkını savundu. Rousseau ise
+    egemenliğin halkın "genel iradesi"nde olduğunu ileri sürdü.
+  en: >-
+    According to social contract theories the state gains legitimacy from an agreement people make among themselves. For
+    Hobbes life without the state is "solitary, poor, nasty, brutish, and short", so people submit to a strong sovereign.
+    Locke defended a right to resist government that fails to protect life, liberty and property. Rousseau held that
+    sovereignty lies in the people's "general will".
+technical:
+  tr: >-
+    Leviathan (1651), Hükümet Üzerine İki İnceleme (1689) ve Toplum Sözleşmesi (1762) klasik metinlerdir. Rawls'un Adalet
+    Kuramı (1971), "cehalet peçesi" ardındaki bir başlangıç durumuyla sözleşme geleneğini yeniledi. Eleştirmenler (Hume,
+    feminist ve sömürge sonrası kuramcılar), sözleşmenin tarihsel olarak hiç yapılmadığını ve bazı grupları dışarıda
+    bıraktığını vurguladı.
+  en: >-
+    Leviathan (1651), the Two Treatises of Government (1689) and The Social Contract (1762) are the classic texts. Rawls's
+    A Theory of Justice (1971) renewed the contract tradition with an original position behind a "veil of ignorance".
+    Critics (Hume, feminist and postcolonial theorists) stressed that the contract was never historically made and that it
+    excluded some groups.
+claims:
+  - tr: Siyasi otoritenin meşruiyeti, yönetilenlerin (gerçek ya da varsayımsal) rızasına dayanır.
+    en: The legitimacy of political authority rests on the (actual or hypothetical) consent of the governed.
+    src: [hobbes1651, locke1689, rousseau1762]
+positions:
+  - who:
+      tr: David Hume
+      en: David Hume
+    tr: Hükümetlerin çoğu zor ya da gasp yoluyla kurulmuştur. "Özgün sözleşme" tarihsel bir kurgudur.
+    en: Most governments were founded by force or usurpation; the "original contract" is a historical fiction.
+    src: [hume1748b]
+sources:
+  hobbes1651:
+    type: book
+    authors: Hobbes, T.
+    title: Leviathan
+    year: 1651
+    in: Andrew Crooke, London
+    url: https://www.gutenberg.org/ebooks/3207
+  locke1689:
+    type: book
+    authors: Locke, J.
+    title: Two Treatises of Government
+    year: 1689
+    in: Awnsham Churchill, London
+    url: https://www.gutenberg.org/ebooks/7370
+  rousseau1762:
+    type: book
+    authors: Rousseau, J.-J.
+    title: Du contrat social
+    year: 1762
+    in: Marc-Michel Rey, Amsterdam
+  hume1748b:
+    type: book
+    authors: Hume, D.
+    title: Of the Original Contract
+    year: 1748
+    in: Essays, Moral and Political (3rd edition), A. Millar, London
+related: [kuvvetler-ayriligi]

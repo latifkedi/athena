@@ -1,0 +1,116 @@
+id: hint-avrupa
+parent: dilbilim
+type: question
+people: [William Jones, Marija Gimbutas, Colin Renfrew, David Anthony]
+title:
+  tr: Hint-Avrupa dillerinin anayurdu
+  en: The homeland of the Indo-European languages
+summary:
+  tr: >-
+    Türkçe dışında Avrupa'nın dillerinin çoğu, Farsça ve Hindistan'ın kuzey dilleri ortak bir atadan, Ana Hint-Avrupa
+    dilinden gelir. Bu dilin nerede ve ne zaman konuşulduğu iki yüzyıldır tartışılıyor. İki başlıca görüş vardır. Birine
+    göre dil, Karadeniz'in kuzeyindeki bozkırlardan atlı çobanlarla yayıldı. Diğerine göre tarımla birlikte Anadolu'dan
+    yayıldı. Antik DNA çalışmaları tartışmaya yeni veriler ekledi, ancak tartışmayı sona erdirmedi.
+  en: >-
+    Most languages of Europe other than Turkish, as well as Persian and the languages of northern India, descend from a
+    common ancestor, Proto-Indo-European. Where and when it was spoken has been debated for two centuries. There are two
+    main views. One holds that it spread from the steppes north of the Black Sea with horse-riding herders. The other holds
+    that it spread from Anatolia with farming. Ancient-DNA studies have added new data but have not ended the debate.
+technical:
+  tr: >-
+    William Jones (1786), Sanskrit, Yunanca ve Latincenin ortak bir kaynaktan geldiğini öne sürdü. Bozkır (Kurgan)
+    hipotezi, tekerlek ve at sözcüklerinin ortak kökenli olmasına ve Yamnaya kültürünün MÖ 3000 civarındaki genişlemesine
+    dayanır. Haak ve arkadaşlarının (2015) antik genom verileri, bozkırdan Orta Avrupa'ya büyük bir göçü gösterdi. Anadolu
+    hipotezi (Renfrew 1987), Bouckaert ve arkadaşlarının (2012) Bayesçi filocoğrafya analiziyle desteklendi. Bu analiz
+    yaklaşık 8.000–9.500 yıl öncesini verdi. Lazaridis ve arkadaşları (2022), Anadolu dillerini de kapsayan daha eski
+    atanın Kafkasya'nın güneyinde, Batı Asya'da olabileceğini öne sürdü.
+  en: >-
+    William Jones (1786) proposed that Sanskrit, Greek and Latin come from a common source. The steppe (Kurgan)
+    hypothesis rests on shared words for wheel and horse and on the expansion of the Yamnaya culture around 3000 BCE; the
+    ancient-genome data of Haak et al. (2015) showed a massive migration from the steppe into Central Europe. The Anatolian
+    hypothesis (Renfrew 1987) was supported by the Bayesian phylogeography of Bouckaert et al. (2012), giving about
+    8,000–9,500 years ago. Lazaridis et al. (2022) suggested that an older ancestor including the Anatolian languages may
+    have been in West Asia south of the Caucasus.
+datings:
+  - view:
+      tr: Bozkır (Kurgan) hipotezi
+      en: Steppe (Kurgan) hypothesis
+    value:
+      tr: Yaklaşık 6.000–5.000 yıl önce, Pontus-Hazar bozkırları
+      en: About 6,000–5,000 years ago, Pontic–Caspian steppe
+    src: [anthony2007, haak2015]
+  - view:
+      tr: Anadolu hipotezi
+      en: Anatolian hypothesis
+    value:
+      tr: Yaklaşık 9.500–8.000 yıl önce, Anadolu (tarımın yayılmasıyla)
+      en: About 9,500–8,000 years ago, Anatolia (with the spread of farming)
+    src: [renfrew1987, bouckaert2012]
+  - view:
+      tr: Güney Kafkasya / Batı Asya görüşü
+      en: South Caucasus / West Asia view
+    value:
+      tr: Anadolu dillerini de içeren en eski ata için Kafkasya'nın güneyi
+      en: South of the Caucasus for the oldest ancestor including the Anatolian languages
+    src: [lazaridis2022]
+claims:
+  - tr: Hint-Avrupa dilleri tek bir ata dilden türemiştir.
+    en: The Indo-European languages descend from a single ancestral language.
+    src: [jones1788]
+evidence:
+  - kind: genetic
+    stance: for
+    tr: Antik genomlar, MÖ 3. binyılda bozkır kökenli bir nüfusun Orta Avrupa'ya büyük ölçüde yayıldığını gösterdi. Bu, dil yayılımıyla ilişkilendirildi.
+    en: Ancient genomes showed a large expansion of steppe-derived ancestry into Central Europe in the 3rd millennium BCE, linked to the spread of the languages.
+    src: [haak2015]
+  - kind: statistical
+    stance: for
+    tr: Dil ağaçlarının Bayesçi filocoğrafya analizi Anadolu kökenini bozkır kökenine tercih etti.
+    en: Bayesian phylogeographic analysis of language trees favoured an Anatolian origin over a steppe origin.
+    src: [bouckaert2012]
+  - kind: critique
+    stance: against
+    tr: Anadolu hipotezinin, tekerlekli araçlara dair ortak sözcükleri açıklayamadığı savunuldu. Tekerlek MÖ 4. binyıldan önce bilinmiyordu.
+    en: It was argued that the Anatolian hypothesis cannot explain shared vocabulary for wheeled vehicles, which were unknown before the 4th millennium BCE.
+    src: [anthony2007]
+sources:
+  jones1788:
+    type: article
+    authors: Jones, W.
+    title: The third anniversary discourse, delivered 2 February 1786
+    year: 1788
+    in: Asiatick Researches 1, 415–431
+  renfrew1987:
+    type: book
+    authors: Renfrew, C.
+    title: 'Archaeology and Language: The Puzzle of Indo-European Origins'
+    year: 1987
+    in: Jonathan Cape, London
+  anthony2007:
+    type: book
+    authors: Anthony, D. W.
+    title: 'The Horse, the Wheel, and Language: How Bronze-Age Riders from the Eurasian Steppes Shaped the Modern World'
+    year: 2007
+    in: Princeton University Press
+  haak2015:
+    type: article
+    authors: Haak, W. et al.
+    title: Massive migration from the steppe was a source for Indo-European languages in Europe
+    year: 2015
+    in: Nature 522, 207–211
+    doi: 10.1038/nature14317
+  bouckaert2012:
+    type: article
+    authors: Bouckaert, R. et al.
+    title: Mapping the origins and expansion of the Indo-European language family
+    year: 2012
+    in: Science 337, 957–960
+    doi: 10.1126/science.1219669
+  lazaridis2022:
+    type: article
+    authors: Lazaridis, I. et al.
+    title: 'The genetic history of the Southern Arc: a bridge between West Asia and Europe'
+    year: 2022
+    in: Science 377, eabm4247
+    doi: 10.1126/science.abm4247
+related: [tarim]

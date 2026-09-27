@@ -1,0 +1,51 @@
+id: keeling
+parent: iklim
+type: event
+date: { year: 1958 }
+people: [Charles David Keeling]
+title:
+  tr: Keeling eğrisi
+  en: The Keeling curve
+summary:
+  tr: >-
+    Charles Keeling 1958'de Hawaii'deki Mauna Loa Gözlemevi'nde atmosferdeki karbondioksiti düzenli olarak ölçmeye
+    başladı. Ölçümler, her yıl bitkilerin büyüme mevsimine bağlı bir iniş-çıkış ile birlikte sürekli bir artış gösteriyor.
+    CO₂ derişimi 1958'de yaklaşık 315 ppm iken 2024'te 420 ppm'in üzerine çıktı.
+  en: >-
+    In 1958 Charles Keeling began continuous measurements of atmospheric carbon dioxide at the Mauna Loa Observatory in
+    Hawaii. The measurements show a steady rise together with a yearly up-and-down linked to the plant growing season. CO₂
+    concentration was about 315 ppm in 1958 and exceeded 420 ppm in 2024.
+technical:
+  tr: >-
+    Artan CO₂'nin fosil kaynaklı olduğu izotop imzalarıyla desteklenir. Fosil yakıtlar ¹⁴C içermez ve ¹³C bakımından
+    fakirdir. Bu nedenle atmosferdeki ¹³C/¹²C oranı düşmektedir (Suess etkisi). Atmosferdeki O₂ miktarı da fosil yakıt
+    yanmasıyla uyumlu oranda azalmaktadır. Buz karotları, son 800.000 yılda CO₂'nin yaklaşık 180–300 ppm arasında
+    kaldığını göstermektedir.
+  en: >-
+    That the added CO₂ is of fossil origin is supported by isotopic signatures: fossil fuels contain no ¹⁴C and are
+    depleted in ¹³C, so the atmospheric ¹³C/¹²C ratio is falling (the Suess effect). Atmospheric O₂ is also declining at a
+    rate consistent with fossil-fuel combustion. Ice cores show CO₂ staying between about 180 and 300 ppm over the past
+    800,000 years.
+claims:
+  - tr: Atmosferdeki karbondioksit derişimi 1958'den beri sürekli artmaktadır.
+    en: Atmospheric carbon dioxide concentration has risen continuously since 1958.
+    src: [keeling1960, noaa-trends]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: Mauna Loa'daki kesintisiz ölçümler ve dünya genelindeki diğer istasyonlar aynı artış eğilimini göstermektedir.
+    en: Continuous measurements at Mauna Loa and other stations worldwide show the same rising trend.
+    src: [noaa-trends]
+sources:
+  keeling1960:
+    type: article
+    authors: Keeling, C. D.
+    title: The concentration and isotopic abundances of carbon dioxide in the atmosphere
+    year: 1960
+    in: Tellus 12(2), 200–203
+    doi: 10.3402/tellusa.v12i2.9366
+  noaa-trends:
+    type: dataset
+    authors: NOAA Global Monitoring Laboratory
+    title: Trends in Atmospheric Carbon Dioxide (Mauna Loa)
+    url: https://gml.noaa.gov/ccgg/trends/

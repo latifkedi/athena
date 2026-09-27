@@ -1,0 +1,73 @@
+id: altay
+parent: dilbilim
+type: question
+people: [Martine Robbeets, Alexander Vovin, Gustaf John Ramstedt]
+title:
+  tr: Altay (Transavrasya) dil ailesi tartışması
+  en: The Altaic (Transeurasian) language family debate
+summary:
+  tr: >-
+    Türk, Moğol ve Mançu-Tunguz dilleri (bazı görüşlere göre Kore ve Japon dilleri de) arasında pek çok benzerlik vardır.
+    Bu dillerin ortak bir atadan gelip gelmediği ya da benzerliklerin yüzyıllar süren komşuluk ve ödünçlemeden mi
+    kaynaklandığı tartışmalıdır. 2021'de Nature'da yayımlanan bir çalışma ortak atanın yaklaşık 9.000 yıl önce Kuzeydoğu
+    Çin'de darı çiftçileri olduğunu öne sürdü. Başka bir ekip bu sonuca itiraz etti.
+  en: >-
+    Turkic, Mongolic and Tungusic languages (and, in some views, Korean and Japanese) share many similarities. Whether
+    they descend from a common ancestor or the similarities result from centuries of contact and borrowing is debated. A
+    2021 study in Nature proposed that the common ancestor were millet farmers in Northeast China about 9,000 years ago;
+    another team disputed this conclusion.
+technical:
+  tr: >-
+    Ünlü uyumu, eklemeli yapı ve fiil sonda (SOV) sözdizimi gibi tipolojik benzerlikler ortak kökene kanıt sayılmaz,
+    çünkü bu özellikler komşu diller arasında da yayılabilir. Tartışma, temel sözcük dağarcığında düzenli ses
+    denklikleri olup olmadığı üzerinde yoğunlaşır. Robbeets ve arkadaşları dilbilimsel, arkeolojik ve genetik verileri
+    "üçgenleme" ile birleştirdi. Tian ve arkadaşları ise dilbilimsel verinin tarihsel dilbilimin asgari ölçütlerini
+    karşılamadığını ve genetik verinin tarımsal yayılımı desteklemediğini savundu.
+  en: >-
+    Typological similarities such as vowel harmony, agglutination and verb-final (SOV) syntax are not taken as evidence
+    of common descent because such features can spread among neighbouring languages. The debate centres on whether
+    regular sound correspondences exist in basic vocabulary. Robbeets et al. combined linguistic, archaeological and
+    genetic data by "triangulation"; Tian et al. argued that the linguistic data do not meet the minimum standards of
+    historical linguistics and that the genetic data do not support farming-driven spread.
+claims:
+  - tr: Türk, Moğol, Tunguz, Kore ve Japon dilleri ortak bir Transavrasya ata dilinden türemiştir.
+    en: Turkic, Mongolic, Tungusic, Korean and Japonic descend from a common Transeurasian ancestral language.
+    src: [robbeets2021]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: Bayesçi dil filogenisi, arkeobotanik veriler ve antik genomlar, ortak atanın darı tarımıyla birlikte yayıldığı senaryosuyla uyumlu bulundu.
+    en: Bayesian language phylogeny, archaeobotanical data and ancient genomes were found consistent with a scenario of the common ancestor spreading with millet farming.
+    src: [robbeets2021]
+  - kind: critique
+    stance: against
+    tr: Kullanılan ortak sözcük listelerinin düzenli ses denkliği ölçütlerini karşılamadığı ve genetik verinin yeniden analizinde tarımsal yayılım senaryosunun desteklenmediği savunuldu.
+    en: It was argued that the cognate lists used do not meet regular sound-correspondence criteria and that a reanalysis of the genetic data does not support the farming-dispersal scenario.
+    src: [tian2022]
+  - kind: critique
+    stance: against
+    tr: Ortak sanılan sözcüklerin büyük kısmının komşu diller arasındaki ödünçlemelerle açıklanabileceği savunuldu.
+    en: It was argued that most putative cognates can be explained as loans between neighbouring languages.
+    src: [vovin2005]
+sources:
+  robbeets2021:
+    type: article
+    authors: Robbeets, M. et al.
+    title: Triangulation supports agricultural spread of the Transeurasian languages
+    year: 2021
+    in: Nature 599, 616–621
+    doi: 10.1038/s41586-021-04108-8
+  tian2022:
+    type: preprint
+    authors: Tian, Z. et al.
+    title: Triangulation fails when neither linguistic, genetic, nor archaeological data support the Transeurasian narrative
+    year: 2022
+    in: bioRxiv
+    doi: 10.1101/2022.06.09.495471
+  vovin2005:
+    type: article
+    authors: Vovin, A.
+    title: The end of the Altaic controversy
+    year: 2005
+    in: Central Asiatic Journal 49(1), 71–132
+related: [orhun, hint-avrupa]

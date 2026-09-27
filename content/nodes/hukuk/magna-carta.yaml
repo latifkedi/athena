@@ -1,0 +1,52 @@
+id: magna-carta
+parent: hukuk
+type: text
+date: { year: 1215, month: 6 }
+people: [King John of England]
+title:
+  tr: Magna Carta
+  en: Magna Carta
+summary:
+  tr: >-
+    İngiltere Kralı John, 1215'te isyancı baronlarla yaptığı anlaşmada kralın yetkilerini sınırlayan bir belgeyi kabul
+    etti. Belgenin en ünlü maddesi, hiçbir özgür kişinin yargılanmadan cezalandırılamayacağını söyler. Belge birkaç ay
+    içinde Papa tarafından geçersiz ilan edildi, ancak sonraki yıllarda yeniden yayımlandı. Hukukun üstünlüğünün sembolü
+    hâline geldi.
+  en: >-
+    In 1215 King John of England accepted a document limiting royal power in an agreement with rebel barons. Its most
+    famous clause says that no free man may be punished except by lawful judgement. The Pope annulled it within months,
+    but it was reissued in later years and became a symbol of the rule of law.
+technical:
+  tr: >-
+    1215 metninin 63 maddesinin çoğu feodal haklarla ilgilidir. 39. madde (1225 sürümünde 29. madde) yargılama güvencesini
+    içerir. Bu madde 17. yüzyılda Coke gibi hukukçular tarafından common law hakları ve temsil ilkesi lehine yeniden
+    yorumlandı. Tarihçiler, belgenin kendi dönemindeki anlamı ile sonradan kazandığı sembolik anlam arasındaki farka
+    dikkat çeker.
+  en: >-
+    Most of the 63 clauses of the 1215 text concern feudal rights; clause 39 (clause 29 in the 1225 version) contains the
+    guarantee of lawful judgement. In the 17th century jurists such as Coke reinterpreted it in favour of common-law rights
+    and representation. Historians stress the difference between the document's meaning in its own time and the symbolic
+    meaning it later acquired.
+claims:
+  - tr: Kral da hukuka tabidir ve özgür kişiler yasal yargılama olmadan cezalandırılamaz.
+    en: The king too is subject to law, and free men cannot be punished without lawful judgement.
+    src: [bl-magna, holt1992]
+sources:
+  bl-magna:
+    type: web
+    title: Magna Carta
+    in: The British Library
+    url: https://www.bl.uk/magna-carta
+  holt1992:
+    type: book
+    authors: Holt, J. C.
+    title: Magna Carta
+    year: 1992
+    in: Cambridge University Press, 2nd edition
+positions:
+  - who:
+      tr: Tarihçi J. C. Holt
+      en: Historian J. C. Holt
+    tr: Belge kendi döneminde bir barış anlaşmasıydı. Evrensel özgürlükler bildirgesi olarak görülmesi sonraki yüzyılların yorumudur.
+    en: In its time the document was a peace settlement; seeing it as a charter of universal liberties is a reading of later centuries.
+    src: [holt1992]
