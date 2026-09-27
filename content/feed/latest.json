@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T22:09:31.961Z",
+  "generated": "2026-09-27T22:39:55.025Z",
   "branches": {
     "astronomi": [
       {
@@ -709,6 +709,74 @@
         "category": "physics.plasm-ph"
       }
     ],
+    "ezoterik": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Hermetic stretchable seals enabled by a viscoplastic surface effect",
+        "authors": "Rui Xia, Chun Li, Yan Shao et al.",
+        "date": "2025-10-17",
+        "url": "https://doi.org/10.1038/s41563-025-02386-5",
+        "source": "Nature Materials",
+        "category": "",
+        "cited": 17
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Thermomechanical and Interfacial Properties of Lead‐Free Bi 2 O 3 −ZnO−B 2 O 3 Glasses for Hermetic Sealing Applications",
+        "authors": "Zeyu Qin, Shuang Liu, Botao Guan et al.",
+        "date": "2026-02-12",
+        "url": "https://doi.org/10.1111/ijag.70026",
+        "source": "International Journal of Applied Glass Science",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Comparative assessment of conventional and hermetic storage facilities on wheat grain quality, pest infestation, and bread development",
+        "authors": "Hafiz Muhammad Bilal Yousuf, Muhammad Sheraz Yasin, Nazih Yacer Rebouh et al.",
+        "date": "2025-10-06",
+        "url": "https://doi.org/10.1038/s41598-025-18340-z",
+        "source": "Scientific Reports",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Design of a Hermetic Centrifugal Pump Impeller Using RSM and Evolutionary Algorithms with Application of SLS Technology",
+        "authors": "Viorel Bostan, Andrei Petco, Dmitrii Croitor et al.",
+        "date": "2026-01-01",
+        "url": "https://doi.org/10.3390/pr14010152",
+        "source": "Processes",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Stretchable hermetic sealing for long-term soft-electronics protection",
+        "authors": "Zhiming Zhang, Sihong Wang",
+        "date": "2025-12-22",
+        "url": "https://doi.org/10.1093/nsr/nwaf576",
+        "source": "National Science Review",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "A Streamlined Polynomial Regression-Based Modeling of Speed-Driven Hermetic-Reciprocating Compressors",
+        "authors": "Ji Wang, Wei Lü",
+        "date": "2025-11-12",
+        "url": "https://doi.org/10.3390/app152212016",
+        "source": "Applied Sciences",
+        "category": "",
+        "cited": 2
+      }
+    ],
     "felsefe": [
       {
         "kind": "journal",
@@ -1101,6 +1169,74 @@
         "cited": 1
       }
     ],
+    "kelam": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Assimilation and Reaction: The Influence of Greek Philosophy on the Formation of Early Islamic Theology",
+        "authors": "Aditia Saputra, Faiz Albar Nasution",
+        "date": "2026-02-14",
+        "url": "https://doi.org/10.46222/pharosjot.107.222",
+        "source": "Pharos Journal of Theology",
+        "category": "",
+        "cited": 4
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Maturidi school’s scientific and polemical methodology against religious sects",
+        "authors": "Shamshadin Kerim, Yershat Onggar, Serik Tajibayev et al.",
+        "date": "2026-04-21",
+        "url": "https://doi.org/10.1080/23311983.2026.2646779",
+        "source": "Cogent Arts and Humanities",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Engineered Messiah: Islamic Theology as Source Code in the Post-Cybernetic Universe of Dune",
+        "authors": "Nimetullah Aldemir, Emrullah ATASEVEN",
+        "date": "2026-03-17",
+        "url": "https://doi.org/10.3390/rel17030372",
+        "source": "Religions",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Faith, freedom and the market: Orthodox Christian and Islamic theological logics of entrepreneurship",
+        "authors": "Alexandre Anatolievich Bachkirov",
+        "date": "2025-11-28",
+        "url": "https://doi.org/10.1108/jec-05-2025-0156",
+        "source": "Journal of Enterprising Communities People and Places in the Global Economy",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Injustice in Contemporary Islamic Theology: Explanation, Punishment and the Hereafter",
+        "authors": "Abdessamad Belhaj",
+        "date": "2025-10-14",
+        "url": "https://doi.org/10.3390/rel16101304",
+        "source": "Religions",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "The Determination of Halal Food Perceptions Among University Students Receiving Islamic Theology Education: The Case of Istanbul, Berlin, and Kuala Lumpur",
+        "authors": "Tolga Çetinkaya",
+        "date": "2025-10-02",
+        "url": "https://doi.org/10.3390/rel16101265",
+        "source": "Religions",
+        "category": "",
+        "cited": 1
+      }
+    ],
     "kimya": [
       {
         "kind": "journal",
@@ -1357,6 +1493,142 @@
         "category": "math"
       }
     ],
+    "mitoloji": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "From Turkish Mythology to Alevi–Bektashi Sacred Narratives: A Phenomenological Analysis of Animal Imagery",
+        "authors": "Haktan Kaplan",
+        "date": "2026-01-29",
+        "url": "https://doi.org/10.3390/rel17020155",
+        "source": "Religions",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "How Digital Mythological Narratives in Video Games Enhance Audiences’ Destination Perceptions and Travel Intentions: Evidence from YouTube Comments on Black Myth: Wukong",
+        "authors": "Yanping Xiao, Ruomei Tang, Zixi Guo et al.",
+        "date": "2025-12-23",
+        "url": "https://doi.org/10.3390/su18010160",
+        "source": "Sustainability",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Sacred stories in virtual spaces: a triangulated qualitative study of digital Darshan and mythological immersion at the Maha Kumbh",
+        "authors": "Uttam Chakraborty, Santosh Kumar Biswal",
+        "date": "2025-11-12",
+        "url": "https://doi.org/10.1080/02508281.2025.2577472",
+        "source": "Tourism Recreation Research",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "THE MYTHOLOGY OF HISTORY AS A TOOL OF HOSTILE PROPAGANDA IN THE CONDITIONS OF THE RUSSIAN-UKRAINIAN WAR",
+        "authors": "Ivan Kovalchuk",
+        "date": "2026-05-29",
+        "url": "https://doi.org/10.35433/history.112113",
+        "source": "Intermarum history policy culture",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Just a meme? The role of context in mythologies of memetic misogyny",
+        "authors": "Suay Melisa Özkula, Patricia Prieto Blanco",
+        "date": "2026-04-01",
+        "url": "https://doi.org/10.1177/14614448251396942",
+        "source": "New Media & Society",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Harbingers of good fortune and eternel vitality: religious and secular representations and traditions in deer mythology in Tibet and the Himalayas",
+        "authors": "Amy Heller",
+        "date": "2026-03-13",
+        "url": "https://doi.org/10.5252/anthropozoologica2026v61a3",
+        "source": "Anthropozoologica",
+        "category": "",
+        "cited": 1
+      }
+    ],
+    "parapsikoloji": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Rethinking communication and consciousness: Lessons from the telepathy tapes podcast",
+        "authors": "Marina Weiler, Marjorie Hines Woollacott",
+        "date": "2025-10-18",
+        "url": "https://doi.org/10.1016/j.explore.2025.103271",
+        "source": "EXPLORE",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Stock market telepathy: Graph neural networks predicting the secret conversations between MINT and G7 countries",
+        "authors": "Nurbanu Bursa",
+        "date": "2026-05-22",
+        "url": "https://doi.org/10.1080/23737484.2026.2668446",
+        "source": "Communications in Statistics Case Studies Data Analysis and Applications",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "HyperPRET: Few-shot class incremental learning with precognition and retrospection for hyperspectral imagery",
+        "authors": "Yun Zhang, Bobo Xi, Tie Zheng et al.",
+        "date": "2026-04-20",
+        "url": "https://doi.org/10.1016/j.patcog.2026.113786",
+        "source": "Pattern Recognition",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Quantitative comparison of quantum pseudo-telepathy games and Bell inequalities",
+        "authors": "Gábor Homa, András Bodor, József Zsolt Bernád",
+        "date": "2026-01-27",
+        "url": "https://doi.org/10.1088/1751-8121/ae3e45",
+        "source": "Journal of Physics A Mathematical and Theoretical",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Interrogating The Telepathy Tapes: Ethical Obligations at the Intersection of Disability, Lived Experience, and Entertainment",
+        "authors": "Amy S. F. Lutz",
+        "date": "2026-09-24",
+        "url": "https://doi.org/10.1007/s11673-026-10617-w",
+        "source": "Journal of Bioethical Inquiry",
+        "category": "",
+        "cited": 0
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Grand Manuel de Parapsychologie Scientifique [Grand Manual of Scientific Parapsychology]",
+        "authors": "Charles Emmons",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.63499/pv5awr96",
+        "source": "Journal of the Society for Psychical Research",
+        "category": "",
+        "cited": 0
+      }
+    ],
     "psikoloji": [
       {
         "kind": "journal",
@@ -1549,6 +1821,74 @@
         "date": "2026-09-01",
         "url": "https://doi.org/10.64488/kwmij.v2i2.40",
         "source": "Knowledge Web Multidisciplinary International Journal",
+        "category": "",
+        "cited": 1
+      }
+    ],
+    "tasavvuf": [
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Sufism of Ahl al-Sunnah wa al-Jama‘ah (ASWAJA) Scholars of the Nusantara: A Comparative Study of the Thought of Shaykh Arsyad al-Banjari, Shaykh Nawawi al-Bantani, and Kiai Haji Hasyim Asy‘ari",
+        "authors": "Muhammad Noor Alamsyah, Khalilurrahman, M. Anshari",
+        "date": "2026-01-18",
+        "url": "https://doi.org/10.69900/ag.v6i1.554",
+        "source": "Al Ghazali.",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Researching a new religious phenomenon of the Central Asia: Digital Sufism",
+        "authors": "Bekzhan A Azhimov, Nurlan Kairbekov, Jolaman Bulan et al.",
+        "date": "2026-01-01",
+        "url": "https://doi.org/10.55221/2693-2229.2710",
+        "source": "Occasional Papers on Religion in Eastern Europe",
+        "category": "",
+        "cited": 3
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Wearing Tradition: The Khirqa and Sufi Memory in Nacer Khemir’s Bab’Aziz",
+        "authors": "Oğuz Çetin, Öncel DEMİRDAŞ",
+        "date": "2026-05-01",
+        "url": "https://doi.org/10.3390/rel17050547",
+        "source": "Religions",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Nilai-Nilai Pendidikan Islam dalam Estetika dan Spiritualitas Tarian Sufi",
+        "authors": "Aulia Nurhalizah, Maulida Hasanah, Mohamad Hafizh et al.",
+        "date": "2025-11-19",
+        "url": "https://doi.org/10.62383/dilan.v2i4.2506",
+        "source": "Dinamika Pembelajaran",
+        "category": "",
+        "cited": 2
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Reconstructing Islamic Education Management through Prophetic Leadership and Sufism in Educational Institutions",
+        "authors": "Fadhilah Hanjani Putri, Ahmad Barizi, Nur Ismiyahyi et al.",
+        "date": "2026-08-05",
+        "url": "https://doi.org/10.69900/ag.v6i6.673",
+        "source": "Al Ghazali.",
+        "category": "",
+        "cited": 1
+      },
+      {
+        "kind": "journal",
+        "via": "OpenAlex",
+        "title": "Experimental and Molecular Insights for Separating Phenol and Pyridine from Coal Tar Using ChCl-SUF Deep Eutectic Solvent",
+        "authors": "Zhen Xu, H W Wang, Jijun Ge et al.",
+        "date": "2026-06-11",
+        "url": "https://doi.org/10.1021/acs.jced.6c00254",
+        "source": "Journal of Chemical & Engineering Data",
         "category": "",
         "cited": 1
       }

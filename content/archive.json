@@ -33,6 +33,10 @@
       "snapshot": "https://web.archive.org/web/20260906033840/https://arxiv.org/abs/2409.09856",
       "checked": "2026-09-27T21:46:30.608Z"
     },
+    "https://arxiv.org/abs/2502.17655": {
+      "snapshot": "https://web.archive.org/web/20260912011252/https://arxiv.org/abs/2502.17655",
+      "checked": "2026-09-27T22:43:50.339Z"
+    },
     "https://arxiv.org/abs/2503.14738": {
       "snapshot": "https://web.archive.org/web/20260927175056/https://arxiv.org/abs/2503.14738",
       "checked": "2026-09-27T17:55:10.941Z"
@@ -285,6 +289,10 @@
       "snapshot": "https://web.archive.org/web/20260909203732/https://www.nature.com/articles/514161a",
       "checked": "2026-09-27T22:10:14.872Z"
     },
+    "https://doi.org/10.1038/83784": {
+      "snapshot": "https://web.archive.org/web/20251230160604/https://www.nature.com/articles/ng0101_68",
+      "checked": "2026-09-27T22:45:57.910Z"
+    },
     "https://doi.org/10.1038/nature04072": {
       "snapshot": "https://web.archive.org/web/20260910005444/https://www.nature.com/articles/nature04072",
       "checked": "2026-09-27T21:40:22.940Z"
@@ -445,6 +453,10 @@
       "snapshot": "https://web.archive.org/web/20250710072115/https://www.pnas.org/doi/full/10.1073/pnas.44.7.671",
       "checked": "2026-09-27T21:19:07.208Z"
     },
+    "https://doi.org/10.1080/00033793600200111": {
+      "snapshot": "https://web.archive.org/web/20241230022245/https://www.tandfonline.com/doi/abs/10.1080/00033793600200111",
+      "checked": "2026-09-27T22:40:49.371Z"
+    },
     "https://doi.org/10.1086/148307": {
       "snapshot": "https://web.archive.org/web/20191021121314/http://adsabs.harvard.edu/doi/10.1086/148307",
       "checked": "2026-09-27T21:15:43.003Z"
@@ -536,6 +548,10 @@
     "https://doi.org/10.1098/rspb.2015.1019": {
       "snapshot": "https://web.archive.org/web/20250804172356/https://royalsocietypublishing.org/doi/10.1098/rspb.2015.1019",
       "checked": "2026-09-27T21:21:11.499Z"
+    },
+    "https://doi.org/10.1098/rsta.1920.0009": {
+      "snapshot": "https://web.archive.org/web/20260917223546/https://royalsocietypublishing.org/rsta/article/220/571-581/291/40498/IX-A-determination-of-the-deflection-of-light-by",
+      "checked": "2026-09-27T22:42:12.497Z"
     },
     "https://doi.org/10.1098/rstl.1832.0006": {
       "snapshot": "https://web.archive.org/web/20260918045022/https://royalsocietypublishing.org/rstl/article/doi/10.1098/rstl.1832.0006/117881/V-Experimental-researches-in-electricity",
@@ -869,9 +885,21 @@
       "snapshot": "https://web.archive.org/web/20260927051344/https://plato.stanford.edu/",
       "checked": "2026-09-27T21:56:11.121Z"
     },
+    "https://plato.stanford.edu/entries/aesthetic-concept/": {
+      "snapshot": "https://web.archive.org/web/20260927225155/https://plato.stanford.edu/entries/aesthetic-concept/",
+      "checked": "2026-09-27T22:52:10.668Z"
+    },
+    "https://plato.stanford.edu/entries/al-farabi/": {
+      "snapshot": "https://web.archive.org/web/20260927224629/https://plato.stanford.edu/entries/al-farabi/",
+      "checked": "2026-09-27T22:46:45.211Z"
+    },
     "https://plato.stanford.edu/entries/aristotle-logic/": {
       "snapshot": "https://web.archive.org/web/20260927180344/https://plato.stanford.edu/entries/aristotle-logic/",
       "checked": "2026-09-27T18:04:11.855Z"
+    },
+    "https://plato.stanford.edu/entries/atomism-ancient/": {
+      "snapshot": "https://web.archive.org/web/20260927224730/https://plato.stanford.edu/entries/atomism-ancient/",
+      "checked": "2026-09-27T22:47:45.756Z"
     },
     "https://plato.stanford.edu/entries/church-turing/": {
       "snapshot": "https://web.archive.org/web/20260927215639/https://plato.stanford.edu/entries/church-turing/",
@@ -889,6 +917,10 @@
       "snapshot": "https://web.archive.org/web/20260927173424/https://plato.stanford.edu/entries/epistemology-india/",
       "checked": "2026-09-27T18:06:28.151Z"
     },
+    "https://plato.stanford.edu/entries/geometry-19th/": {
+      "snapshot": "https://web.archive.org/web/20260927225128/https://plato.stanford.edu/entries/geometry-19th/",
+      "checked": "2026-09-27T22:51:40.394Z"
+    },
     "https://plato.stanford.edu/entries/ibn-rushd/": {
       "snapshot": "https://web.archive.org/web/20260927221942/https://plato.stanford.edu/entries/ibn-rushd/",
       "checked": "2026-09-27T22:19:58.023Z"
@@ -897,13 +929,37 @@
       "snapshot": "https://web.archive.org/web/20260927173457/https://plato.stanford.edu/entries/ibn-sina/",
       "checked": "2026-09-27T18:06:51.978Z"
     },
+    "https://plato.stanford.edu/entries/kant/": {
+      "snapshot": "https://web.archive.org/web/20260927224700/https://plato.stanford.edu/entries/kant/",
+      "checked": "2026-09-27T22:47:15.489Z"
+    },
     "https://plato.stanford.edu/entries/laozi/": {
       "snapshot": "https://web.archive.org/web/20260927221912/https://plato.stanford.edu/entries/laozi/",
       "checked": "2026-09-27T22:19:27.765Z"
     },
+    "https://plato.stanford.edu/entries/legal-positivism/": {
+      "snapshot": "https://web.archive.org/web/20260927224831/https://plato.stanford.edu/entries/legal-positivism/",
+      "checked": "2026-09-27T22:48:47.298Z"
+    },
+    "https://plato.stanford.edu/entries/mysticism/": {
+      "snapshot": "https://web.archive.org/web/20260927225225/https://plato.stanford.edu/entries/mysticism/",
+      "checked": "2026-09-27T22:52:40.935Z"
+    },
+    "https://plato.stanford.edu/entries/philosophy-mathematics/": {
+      "snapshot": "https://web.archive.org/web/20260927225054/https://plato.stanford.edu/entries/philosophy-mathematics/",
+      "checked": "2026-09-27T22:51:10.107Z"
+    },
+    "https://plato.stanford.edu/entries/qm-copenhagen/": {
+      "snapshot": "https://web.archive.org/web/20260927224800/https://plato.stanford.edu/entries/qm-copenhagen/",
+      "checked": "2026-09-27T22:48:16.030Z"
+    },
     "https://plato.stanford.edu/entries/thomas-kuhn/": {
       "snapshot": "https://web.archive.org/web/20260927173241/https://plato.stanford.edu/entries/thomas-kuhn/",
       "checked": "2026-09-27T18:05:09.505Z"
+    },
+    "https://population.un.org/wpp/": {
+      "snapshot": "https://web.archive.org/web/20260926221344/https://population.un.org/wpp/",
+      "checked": "2026-09-27T22:46:06.150Z"
     },
     "https://quran.com/11/25-49": {
       "snapshot": "https://web.archive.org/web/20251231072549/https://quran.com/11/25-49",
@@ -1092,6 +1148,10 @@
     "https://www.nobelprize.org/prizes/chemistry/2025/press-release/": {
       "snapshot": "https://web.archive.org/web/20260911135937/https://www.nobelprize.org/prizes/chemistry/2025/press-release/",
       "checked": "2026-09-27T21:34:16.328Z"
+    },
+    "https://www.nobelprize.org/prizes/economic-sciences/2019/press-release/": {
+      "snapshot": "https://web.archive.org/web/20260617015151/https://www.nobelprize.org/prizes/economic-sciences/2019/press-release/",
+      "checked": "2026-09-27T22:45:59.802Z"
     },
     "https://www.nobelprize.org/prizes/medicine/2025/press-release/": {
       "snapshot": "https://web.archive.org/web/20260919234020/https://www.nobelprize.org/prizes/medicine/2025/press-release/",
