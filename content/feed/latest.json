@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T17:53:14.829Z",
+  "generated": "2026-09-27T21:15:27.283Z",
   "branches": {
     "astronomi": [
       {
@@ -151,70 +151,6 @@
     ],
     "biyoloji": [
       {
-        "title": "Consistent determination of stability regimes in natural ecological communities from abundance time series",
-        "authors": "Alberto Megías, Vicente J. Ontiveros, David Alonso et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30154v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
-        "title": "Parameter identifiability of a neuroendocrine-inflammatory model across experimental designs",
-        "authors": "Aubrey Ayres, Mitchel J. Colebank",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30031v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
-        "title": "EMMA: an R/Bioconductor package to automate tracking of metadata in functional enrichment analyses",
-        "authors": "Najla Abassi, Annekathrin Silvia Nedwed, Federico Marini",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30013v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
-        "title": "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics",
-        "authors": "R. Lahoz-Beltra",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29984v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
-        "title": "Mathematical Modelling of Within-Host HIV Dynamics with Cytotoxic Immune Response and Antiretroviral Therapy",
-        "authors": "Maxim Polyakov, Yulia Chernikova",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29972v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
-        "title": "PRAXIS-VirtualCell: A Programmable and Trustworthy Framework for Agentic Virtual Cell Experiments",
-        "authors": "Zhenyu Ma, Xukai Jiang",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29221v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
-        "title": "ProteoEM: probabilistic protein abundance estimation from iterative affinity traces",
-        "authors": "Narayanan Raghupathy",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29155v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
-        "title": "Predator self limitation controls pattern formation in a predator prey system with additional food: a Turing Hopf analysis",
-        "authors": "Anushree Hazra, Aniket Banerjee, Debaldev Janaa",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29052v1",
-        "source": "arXiv",
-        "category": "q-bio"
-      },
-      {
         "title": "miRstring: An RNA language model enables mature miRNA decoding and artificial small RNA design across species",
         "authors": "Peng, R., Li, X., Fang, Y. et al.",
         "date": "2026-09-23",
@@ -229,6 +165,54 @@
         "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753385v1",
         "source": "bioRxiv",
         "category": "bioengineering"
+      },
+      {
+        "title": "A Computational Pipeline for Retinal Capillary Blood Flow Measurement using Adaptive Optics Line Confocal Ophthalmoscopy",
+        "authors": "Shah, S. M. H., Tong, L., Liu, R. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753337v1",
+        "source": "bioRxiv",
+        "category": "bioengineering"
+      },
+      {
+        "title": "ErrorRoute: Budgeted Utility-Aware Resolution Routingfor 3D Medical Image Segmentation",
+        "authors": "Chen, J., Chen, W.",
+        "date": "2026-09-23",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753373v1",
+        "source": "bioRxiv",
+        "category": "biochemistry"
+      },
+      {
+        "title": "ChromBPNet: bias factorized, base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax, transcription factor footprints and regulatory variants",
+        "authors": "Pampari, A., Shcherbina, A., Kvon, E. Z. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.biorxiv.org/content/10.1101/2024.12.25.630221v4",
+        "source": "bioRxiv",
+        "category": "genetics"
+      },
+      {
+        "title": "Living with the invader: two native deer, two outcomes along a gradient of axis deer invasion",
+        "authors": "Cravino Mol, A., Mirazo, S., Brazeiro, A. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753347v1",
+        "source": "bioRxiv",
+        "category": "ecology"
+      },
+      {
+        "title": "Broad scale environmental conditions, not urbanisation, explain geographic variation in great tit feather microstructure",
+        "authors": "Lopez-Idiaquez, D., Watson, H., Perez-Tris, J. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753101v1",
+        "source": "bioRxiv",
+        "category": "ecology"
+      },
+      {
+        "title": "An NR2F1-dependent retinoic acid network controls retinal specialization in mice and reveals foveal hypoplasia in patients with BBSOAS",
+        "authors": "Piovani, P., Belliardo, C., Makam, R. et al.",
+        "date": "2026-09-23",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.09.22.753406v1",
+        "source": "bioRxiv",
+        "category": "developmental biology"
       }
     ],
     "dilbilim": [
@@ -611,84 +595,68 @@
     ],
     "psikoloji": [
       {
-        "title": "No evidence that positive outcomes elicit a stronger sense of agency once correcting for publication bias: a commentary on, and re-analysis of, Mariano et al. (2025)",
-        "authors": "Robrecht van der Wel, Shaheed Azaad, Pernille Hemmer et al.",
-        "date": "2026-09-26",
-        "url": "https://osf.io/preprints/psyarxiv/wkcgf_v3/",
+        "title": "Rethinking Group Differences in Psychopathology Networks: A Slow–Fast Perspective on Context and Symptom Activation",
+        "authors": "Kyuri Park, Denny Borsboom, Michael Lees et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/u8wf5_v2/",
         "source": "PsyArXiv",
         "category": ""
       },
       {
-        "title": "“Who Will Marry a Mad Doctor?”: A Qualitative Study of Associative Stigma Among Mental Health Professionals in India",
-        "authors": "Deepti Dilip Moar, Rajat Kanti Mitra, Sunil Mittal",
-        "date": "2026-09-26",
-        "url": "https://osf.io/preprints/psyarxiv/5edyb_v1/",
+        "title": "Displayed judgment certainty reorganizes source selection in self-formed networks",
+        "authors": "Gaël Carniel, Frédéric Moisan, Alain Barrat et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/fja3d_v3/",
         "source": "PsyArXiv",
         "category": ""
       },
       {
-        "title": "When the Same Leader Helps and Harms: Inconsistent Leadership Behavior in Team Meetings",
-        "authors": "Amelie Verena Güntner, Kai N. Klasmeier, Catrin Millhoff et al.",
-        "date": "2026-09-26",
-        "url": "https://osf.io/preprints/psyarxiv/9pgk7_v1/",
+        "title": "Resting-State Functional Connectivity in Antipsychotic-Naïve First-Episode Psychosis: A Systematic Review of Network Alterations and Preprocessing Heterogeneity",
+        "authors": "Ayla Ihsan, Ather, Joaquim Radua",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/n6kc7_v1/",
         "source": "PsyArXiv",
         "category": ""
       },
       {
-        "title": "Perceptions of Profit Motive: For-Profit Companies are Judged Less Favourably Than Non-Profits Even When the Societal Benefits of Profit-Seeking are Made Salient",
-        "authors": "Zuleykha Gasimova, Martin Harry Turpin, Alexander C. Walker et al.",
-        "date": "2026-09-26",
-        "url": "https://osf.io/preprints/psyarxiv/2aczp_v1/",
+        "title": "Advancing Global Social Science through Cross-Societal Online Behavioral Economic Games (CoBEx): Lessons Learned and A Practical Guide",
+        "authors": "Shuxian Jin, Vanessa Clemens, Laura C. Hoenig et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/89c7p_v1/",
         "source": "PsyArXiv",
         "category": ""
       },
       {
-        "title": "Relationships Between Auditory Statistical Learning and Reading Skills in Children with Reading Difficulties",
-        "authors": "Anqi Hu, Brynn Siles, Monique Montoute et al.",
-        "date": "2026-09-25",
-        "url": "https://osf.io/preprints/psyarxiv/qyxvm_v1/",
+        "title": "Who can re-enter the loop? A scoping review on cognitive abilities and task re-engagement in human-AI interaction",
+        "authors": "Han Zhang, Bianca Done, Stefanie Schneider et al.",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/mhvts_v2/",
         "source": "PsyArXiv",
         "category": ""
       },
       {
-        "title": "Questionable prospective effects between shame, loneliness, and non-suicidal self-injury among Chinese adolescents: A reassessment of Chen et al. (2026)",
-        "authors": "Kimmo Sorjonen, Bo Melin, Marika Melin",
-        "date": "2026-09-25",
-        "url": "https://osf.io/preprints/psyarxiv/9rxy6_v1/",
+        "title": "Prediction-error tolerance: Error attribution as the hinge between inquiry and the self",
+        "authors": "Tomoko Sakai, Kazuhiro Hayashi, Norihiro Sadato",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/j6rct_v1/",
         "source": "PsyArXiv",
         "category": ""
       },
       {
-        "title": "Neuroscience-Informed Psychoeducation for Dementia",
-        "authors": "William Goette",
-        "date": "2026-09-25",
-        "url": "https://osf.io/preprints/psyarxiv/kzcv2_v1/",
+        "title": "Predicting Memberships from Memory.",
+        "authors": "Luigi Grisoni",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/qkdpw_v3/",
         "source": "PsyArXiv",
         "category": ""
       },
       {
-        "title": "Children’s Behavior to Response-Independent Stimuli: A Replica of Wagner and Morris’ (1987) Superstition Experiment",
-        "authors": "Karen Henao, Erika Garcia, Alvaro Arturo Clavijo-Alvarez et al.",
-        "date": "2026-09-25",
-        "url": "https://osf.io/preprints/psyarxiv/fh89q_v2/",
+        "title": "Beyond an Ethos or Inflexible Checklist of Research Practices: Grounding Open Science in a Biomedical Research Ethics Framework",
+        "authors": "P. Priscilla Lui",
+        "date": "2026-09-27",
+        "url": "https://osf.io/preprints/psyarxiv/ctwzb_v1/",
         "source": "PsyArXiv",
         "category": ""
-      },
-      {
-        "title": "A Spiking Neural Network Model of Elementary Self-Consciousness via Endogenous Default Mode Network Dynamics",
-        "authors": "R. Lahoz-Beltra",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.29984v1",
-        "source": "arXiv",
-        "category": "q-bio.NC"
-      },
-      {
-        "title": "AI-Driven Neural Surrogates for In Silico Design of Cognitive-Affective Neuromodulation Targets",
-        "authors": "Marco Rothermel, Madleen Stenger, Soroush Daftarian et al.",
-        "date": "2026-09-23",
-        "url": "https://arxiv.org/abs/2609.27729v1",
-        "source": "arXiv",
-        "category": "q-bio.NC"
       }
     ],
     "tip": [
@@ -821,22 +789,6 @@
         "url": "https://osf.io/preprints/socarxiv/r8hcx_v1/",
         "source": "SocArXiv",
         "category": ""
-      },
-      {
-        "title": "Can Labor Markets Function in the Age of AI? The Evaluation Bottleneck in Hiring",
-        "authors": "Itai Ashlagi, Ramesh Johari, Jon Kleinberg et al.",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30058v1",
-        "source": "arXiv",
-        "category": "econ"
-      },
-      {
-        "title": "A Polynomial-Time Test for Peak-Oriented Rationalizability",
-        "authors": "Taotao He, Runfa Hu",
-        "date": "2026-09-24",
-        "url": "https://arxiv.org/abs/2609.30042v1",
-        "source": "arXiv",
-        "category": "econ"
       }
     ],
     "uzay-kesfi": [
