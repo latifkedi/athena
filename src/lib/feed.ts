@@ -11,6 +11,8 @@ export interface Paper {
   kind?: 'journal' | 'preprint';
   via?: string;
   cited?: number;
+  /** 'tr': written in Turkish (DergiPark and other Turkish journals, via OpenAlex) */
+  lang?: string;
   summary?: string;
 }
 export interface Feed {
@@ -31,3 +33,13 @@ export function latestFor(branchId: string): Paper[] {
 }
 
 export const isJournal = (p: Paper): boolean => p.kind === 'journal';
+export const isTurkish = (p: Paper): boolean => p.lang === 'tr';
+
+/** The three lists shown for a branch: peer-reviewed journals, Turkish-language papers, preprints. */
+export function splitPapers(papers: Paper[]): { journals: Paper[]; turkish: Paper[]; preprints: Paper[] } {
+  return {
+    journals: papers.filter((p) => isJournal(p) && !isTurkish(p)),
+    turkish: papers.filter(isTurkish),
+    preprints: papers.filter((p) => !isJournal(p) && !isTurkish(p)),
+  };
+}

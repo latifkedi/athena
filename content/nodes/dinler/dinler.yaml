@@ -3,7 +3,7 @@ parent: insanlik
 side: roots
 type: field
 order: 4
-feed: ['openalex:subfield/1212']
+feed: ['openalex:subfield/1212', 'openalex-tr:subfield/1212']
 title:
   tr: Dinler ve kutsal metinler
   en: Religions and scriptures

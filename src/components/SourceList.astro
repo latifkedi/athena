@@ -1,6 +1,6 @@
 ---
 import type { Lang, Source } from '../lib/data';
-import { sourceLinks, archiveLink } from '../lib/data';
+import { sourceLinks, archiveLink, isLinkDown } from '../lib/data';
 import { t, ui, sourceTypes } from '../lib/i18n';
 
 interface Props {
@@ -36,6 +36,7 @@ const { sources, lang } = Astro.props;
                   {t(ui.archive, lang)}
                 </a>
               )}
+              {isLinkDown(s.url) && <span class="down">⚠ {t(ui.linkDown, lang)}</span>}
             </span>
           )}
         </li>
@@ -115,5 +116,9 @@ const { sources, lang } = Astro.props;
   }
   .arch {
     color: var(--text-3);
+  }
+  .down {
+    font-size: 0.78rem;
+    color: var(--against);
   }
 </style>

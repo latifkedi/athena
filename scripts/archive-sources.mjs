@@ -21,7 +21,14 @@ const arg = (name, fallback) => {
   const i = process.argv.indexOf(name);
   return i > -1 ? Number(process.argv[i + 1]) || fallback : fallback;
 };
-const MAX_SAVES = arg('--max', 60);
+// With a free archive.org account (IA_ACCESS_KEY / IA_SECRET_KEY from https://archive.org/account/s3.php)
+// captures go through the authenticated Save Page Now API, which allows many more per run.
+const IA_AUTH =
+  process.env.IA_ACCESS_KEY && process.env.IA_SECRET_KEY
+    ? `LOW ${process.env.IA_ACCESS_KEY}:${process.env.IA_SECRET_KEY}`
+    : null;
+const MAX_SAVES = arg('--max', IA_AUTH ? 250 : 60);
+const SAVE_PAUSE = IA_AUTH ? 4000 : 12000; // anonymous Save Page Now allows only a few captures per minute
 const DEADLINE = Date.now() + arg('--minutes', 20) * 60000;
 const MAX_STREAK = 5;
 const RECHECK_DAYS = 365;
@@ -109,7 +116,30 @@ async function resolveDoi(doi) {
   return j?.values?.find((v) => v.type === 'URL')?.data?.value ?? null;
 }
 
+async function saveWithAccount(u) {
+  const headers = { 'User-Agent': UA, Accept: 'application/json', Authorization: IA_AUTH };
+  const res = await request('https://web.archive.org/save', {
+    method: 'POST',
+    headers: { ...headers, 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ url: u, if_not_archived_within: '30d' }),
+  });
+  if (!res.ok) return null;
+  const job = await res.json();
+  if (job.timestamp) return `https://web.archive.org/web/${job.timestamp}/${u}`;
+  if (!job.job_id) return null;
+  for (let i = 0; i < 20; i++) {
+    await sleep(6000);
+    const st = await request(`https://web.archive.org/save/status/${job.job_id}`, { headers });
+    if (!st.ok) continue;
+    const s = await st.json();
+    if (s.status === 'success') return `https://web.archive.org/web/${s.timestamp}/${s.original_url ?? u}`;
+    if (s.status === 'error') return null;
+  }
+  return null;
+}
+
 async function save(u) {
+  if (IA_AUTH) return saveWithAccount(u);
   const res = await request(`https://web.archive.org/save/${u}`, { redirect: 'manual' });
   const loc = res.headers.get('location') || res.headers.get('content-location');
   if (loc) return loc.startsWith('http') ? loc : `https://web.archive.org${loc}`;
@@ -192,7 +222,7 @@ if (!stopped) {
       }
       await sleep(e.wait * 1000);
     }
-    await sleep(12000); // anonymous Save Page Now allows only a few captures per minute
+    await sleep(SAVE_PAUSE);
   }
 }
 

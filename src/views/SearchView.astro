@@ -1,0 +1,108 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../lib/data';
+import { ui, t, url, routes } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const strings =
+  lang === 'tr'
+    ? {
+        placeholder: 'Ne arıyorsunuz?',
+        clear_search: 'Temizle',
+        load_more: 'Daha fazla sonuç',
+        search_label: 'Sitede ara',
+        filters_label: 'Süz',
+        zero_results: '[SEARCH_TERM] için sonuç bulunamadı',
+        many_results: '[SEARCH_TERM] için [COUNT] sonuç',
+        one_result: '[SEARCH_TERM] için [COUNT] sonuç',
+        alt_search: '[SEARCH_TERM] için sonuç yok. Bunun yerine [DIFFERENT_TERM] sonuçları gösteriliyor',
+        search_suggestion: '[SEARCH_TERM] için sonuç yok. Şunları deneyin:',
+        searching: '[SEARCH_TERM] aranıyor…',
+      }
+    : { placeholder: 'What are you looking for?' };
+---
+
+<Base lang={lang} title={t(ui.searchTitle, lang)} route="search">
+  <main class="wrap search-page">
+    <h1>{t(ui.searchTitle, lang)}</h1>
+    <p>{t(ui.searchIntro, lang)}</p>
+    <div id="search" data-strings={JSON.stringify(strings)}></div>
+    <noscript>
+      <p class="muted">
+        {t(ui.searchNoJs, lang)} <a href={url(routes.list[lang])}>{t(ui.nav.list, lang)}</a>
+      </p>
+    </noscript>
+  </main>
+  <link rel="stylesheet" href={url('/pagefind/pagefind-ui.css')} />
+  <script is:inline src={url('/pagefind/pagefind-ui.js')}></script>
+  <script is:inline>
+    (function () {
+      var el = document.getElementById('search');
+      if (!el || !window.PagefindUI) return;
+      var q = new URLSearchParams(location.search).get('q');
+      var ui = new window.PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        showImages: false,
+        resetStyles: false,
+        translations: JSON.parse(el.dataset.strings || '{}'),
+      });
+      if (q) ui.triggerSearch(q);
+    })();
+  </script>
+</Base>
+
+<style is:global>
+  .search-page {
+    --pagefind-ui-primary: var(--text);
+    --pagefind-ui-text: var(--text);
+    --pagefind-ui-background: var(--card);
+    --pagefind-ui-border: var(--border);
+    --pagefind-ui-tag: var(--surface-2);
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 12px;
+    --pagefind-ui-font: var(--font);
+    --pagefind-ui-scale: 0.9;
+  }
+  .search-page .pagefind-ui__search-input {
+    font-weight: 450;
+    box-shadow: var(--shadow);
+  }
+  .search-page .pagefind-ui__result-link {
+    color: var(--text);
+    font-family: var(--serif);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .search-page .pagefind-ui__result-link:hover {
+    color: var(--accent-ink);
+  }
+  .search-page .pagefind-ui__result-excerpt {
+    color: var(--text-2);
+  }
+  .search-page mark {
+    background: color-mix(in srgb, var(--bloom) 38%, transparent);
+    color: inherit;
+    border-radius: 3px;
+    padding: 0 2px;
+  }
+  .search-page .pagefind-ui__search-clear {
+    background: transparent;
+    border: 0;
+    color: var(--text-3);
+    font-size: 0.85rem;
+    padding: 0 16px;
+    height: 100%;
+    cursor: pointer;
+  }
+  .search-page .pagefind-ui__search-clear:hover {
+    color: var(--text);
+  }
+  .search-page .pagefind-ui__filter-name,
+  .search-page .pagefind-ui__filter-label {
+    color: var(--text-2);
+  }
+</style>

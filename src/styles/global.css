@@ -313,6 +313,12 @@ main.wrap > h1:first-child + p {
   background: var(--surface-2);
   border-color: var(--border-strong);
 }
+.btn.icon {
+  padding: 6px 9px;
+}
+.btn[aria-current='page'] {
+  border-color: var(--canopy);
+}
 .btn:active {
   transform: translateY(1px);
 }

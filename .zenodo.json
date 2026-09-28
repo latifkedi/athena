@@ -1,0 +1,11 @@
+{
+  "title": "Athena: İnsanlığın bilgi ağacı / The tree of human knowledge",
+  "description": "A bilingual (Turkish/English) map of human knowledge drawn as a world tree: fields of inquiry as branches, traditions of thought and belief as roots. Every node presents claims, supporting and challenging evidence, positions and dating views with archived sources, without delivering verdicts. Content is licensed CC BY-SA 4.0, code MIT.",
+  "upload_type": "dataset",
+  "creators": [{ "name": "Athena contributors" }],
+  "license": "cc-by-sa-4.0",
+  "keywords": ["history of science", "philosophy", "religious studies", "knowledge graph", "open data", "Turkish"],
+  "related_identifiers": [
+    { "identifier": "https://latifkedi.github.io/athena/", "relation": "isDocumentedBy", "resource_type": "other" }
+  ]
+}

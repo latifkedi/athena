@@ -64,6 +64,8 @@ export interface NodeData {
   feed?: string[];
   children: string[];
   depth: number;
+  /** repository-relative path of the node's YAML file */
+  file: string;
 }
 
 const nodeFiles = import.meta.glob('/content/nodes/**/*.yaml', {
@@ -91,6 +93,16 @@ export const sharedSources: Record<string, Omit<Source, 'key'>> = sharedText.tri
 
 export const archiveMap: Record<string, { snapshot: string; checked: string }> =
   JSON.parse(Object.values(archiveRaw)[0] ?? '{}').urls ?? {};
+
+const linkRaw = import.meta.glob('/content/linkcheck.json', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+/** Source links that stopped answering in the monthly check (see scripts/check-links.mjs). */
+const linkDown: Record<string, { show?: boolean; since?: string }> =
+  JSON.parse(Object.values(linkRaw)[0] ?? '{}').urls ?? {};
+export const isLinkDown = (u?: string): boolean => !!u && !!linkDown[u]?.show;
 
 const treeRaw = import.meta.glob('/content/tree.yaml', {
   query: '?raw',
@@ -124,6 +136,7 @@ function load(): Map<string, NodeData> {
       children: [],
       depth: 0,
       side: d.side ?? 'canopy',
+      file: file.replace(/^\//, ''),
     };
     map.set(node.id, node);
   }

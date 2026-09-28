@@ -3,7 +3,7 @@ parent: insanlik
 side: roots
 type: tradition
 order: 3
-feed: ['openalex:search:Sufism OR Sufi OR "Islamic mysticism"']
+feed: ['openalex:search:Sufism OR Sufi OR "Islamic mysticism"', 'openalex-tr:search:tasavvuf OR sûfî OR sufi OR tarikat']
 title:
   tr: Tasavvuf
   en: Sufism (taṣawwuf)

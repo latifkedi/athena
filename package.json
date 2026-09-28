@@ -6,20 +6,30 @@
   "description": "Athena — insanlığın bilgi ağacı / the tree of human knowledge",
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/check-content.mjs && astro build",
+    "build": "node scripts/check-content.mjs && astro build && pagefind --site dist",
     "preview": "astro preview",
     "check": "node scripts/check-content.mjs",
     "feed": "node scripts/fetch-latest.mjs",
-    "archive": "node scripts/archive-sources.mjs"
+    "archive": "node scripts/archive-sources.mjs",
+    "links": "node scripts/check-links.mjs",
+    "review": "node scripts/review-queue.mjs",
+    "verify": "node scripts/verify-sources.mjs"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/fraunces": "^5.3.0",
     "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@resvg/resvg-js": "^2.6.2",
     "astro": "^7.3.5",
     "d3": "^7.9.0",
-    "js-yaml": "^5.4.2"
+    "js-yaml": "^5.4.2",
+    "satori": "^0.33.5"
   },
   "devDependencies": {
-    "@types/d3": "^7.4.3"
+    "@types/d3": "^7.4.3",
+    "pagefind": "^1.5.2"
   }
 }

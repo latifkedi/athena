@@ -16,14 +16,22 @@ interface Props {
   bleed?: boolean;
   nodeId?: string;
   nodeTitle?: string;
+  /** path (without base) of the page's social preview image */
+  ogImage?: string;
 }
 
-const { lang, title, description, route, altPath, bleed = false, nodeId, nodeTitle } = Astro.props;
+const { lang, title, description, route, altPath, bleed = false, nodeId, nodeTitle, ogImage } = Astro.props;
 const other = otherLang(lang);
 const alt = altPath ?? (route ? routes[route][other] : routes.home[other]);
 const fullTitle = title ? `${title} · Athena` : `Athena — ${t(ui.siteTagline, lang)}`;
 const desc = description ?? t(ui.siteTagline, lang);
 const navKeys: RouteKey[] = ['home', 'list', 'timeline', 'dashboard', 'latest', 'method'];
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const canonical = site + Astro.url.pathname;
+const image = site + url(ogImage ?? `/og/${lang}/athena.png`);
+const rssPrefix = lang === 'tr' ? '' : '/en';
+// optional, cookie-free visitor count: set the repository variable GOATCOUNTER to your GoatCounter code
+const goatcounter = import.meta.env.PUBLIC_GOATCOUNTER;
 ---
 
 <!doctype html>
@@ -33,10 +41,42 @@ const navKeys: RouteKey[] = ['home', 'list', 'timeline', 'dashboard', 'latest', 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content={nodeId ? 'article' : 'website'} />
+    <meta property="og:site_name" content="Athena" />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={desc} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={lang === 'tr' ? 'tr_TR' : 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="sitemap" href={url('/sitemap-index.xml')} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={t(ui.rssUpdates, lang)}
+      href={url(`${rssPrefix}/rss.xml`)}
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={t(ui.rssPapers, lang)}
+      href={url(lang === 'tr' ? '/makaleler.xml' : '/en/papers.xml')}
+    />
     <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
     <link rel="alternate" hreflang={other} href={url(alt)} />
+    {
+      goatcounter && (
+        <script
+          is:inline
+          data-goatcounter={`https://${goatcounter}.goatcounter.com/count`}
+          async
+          src="https://gc.zgo.at/count.js"
+        />
+      )
+    }
     <script is:inline>
       try {
         const th = localStorage.getItem('athena-theme');
@@ -75,6 +115,17 @@ const navKeys: RouteKey[] = ['home', 'list', 'timeline', 'dashboard', 'latest', 
           }
         </nav>
         <div class="tools">
+          <a
+            class="btn icon"
+            href={url(routes.search[lang])}
+            aria-label={t(ui.searchTitle, lang)}
+            title={t(ui.searchTitle, lang)}
+            aria-current={route === 'search' ? 'page' : undefined}
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"
+              ><circle cx="7" cy="7" r="5"></circle><path d="m11 11 3.5 3.5" stroke-linecap="round"></path></svg
+            >
+          </a>
           <a class="btn" href={url(alt)} hreflang={other} lang={other} title={other === 'en' ? 'English' : 'Türkçe'}>
             {other.toUpperCase()}
           </a>
@@ -115,6 +166,7 @@ const navKeys: RouteKey[] = ['home', 'list', 'timeline', 'dashboard', 'latest', 
             <p class="foot-links">
               <a href={suggestUrl(lang, nodeId, nodeTitle)}>{t(ui.suggest, lang)}</a>
               <a href={url(routes.method[lang])}>{t(ui.nav.method, lang)}</a>
+              <a href={url(`${rssPrefix}/rss.xml`)}>RSS</a>
               <a href={REPO}>GitHub</a>
             </p>
             <p class="small foot-license">

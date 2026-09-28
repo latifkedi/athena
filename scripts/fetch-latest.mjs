@@ -12,6 +12,7 @@
 // Supported feed tags:
 //   openalex:field/<id>      OpenAlex field, e.g. openalex:field/31 (Physics and Astronomy)
 //   openalex:subfield/<id>   OpenAlex subfield, e.g. openalex:subfield/3103 (Astronomy and Astrophysics)
+//   openalex-tr:<same forms>  the same, limited to works written in Turkish (DergiPark and other Turkish journals)
 //   openalex:search:<words>  most-cited journal articles of the last year with these words in the title
 //                            (OR and "phrases" allowed, no commas)
 //   arxiv:<category>         e.g. arxiv:math, arxiv:cs.AI, arxiv:astro-ph
@@ -209,8 +210,11 @@ function openalexPaper(w) {
   };
 }
 
-async function openalex(spec) {
+// tr: only works written in Turkish (most DergiPark and TR Dizin journals are indexed by OpenAlex);
+// Turkish output per field is smaller, so it looks back a year instead of two months
+async function openalex(spec, { tr = false } = {}) {
   const key = process.env.OPENALEX_API_KEY ? `&api_key=${encodeURIComponent(process.env.OPENALEX_API_KEY)}` : '';
+  const lang = tr ? ',language:tr' : '';
   const select = 'select=id,doi,display_name,publication_date,authorships,primary_location,cited_by_count';
   const until = `to_publication_date:${day(new Date())}`;
   let variants;
@@ -222,17 +226,17 @@ async function openalex(spec) {
     const since = `from_publication_date:${daysAgo(365)},${until}`;
     const journal = `type:article|review,primary_location.source.type:journal,${trusted}`;
     variants = [
-      `filter=title.search:${q},${since},${journal}&sort=cited_by_count:desc`,
-      `filter=title_and_abstract.search:${q},${since},${journal}&sort=cited_by_count:desc`,
+      `filter=title.search:${q},${since},${journal}${lang}&sort=cited_by_count:desc`,
+      `filter=title_and_abstract.search:${q},${since},${journal}${lang}&sort=cited_by_count:desc`,
     ];
   } else {
     const [level, id] = spec.split('/'); // field | subfield
-    const since = `from_publication_date:${daysAgo(60)},${until}`;
+    const since = `from_publication_date:${daysAgo(tr ? 365 : 60)},${until}`;
     // the id form and some filters have changed over time; try the strict query first
     variants = [
-      `filter=primary_topic.${level}.id:${id},${since},type:article|review,primary_location.source.type:journal,${trusted}&sort=cited_by_count:desc`,
-      `filter=primary_topic.${level}.id:${level}s/${id},${since},type:article|review,is_retracted:false&sort=cited_by_count:desc`,
-      `filter=topics.${level}.id:${id},${since}&sort=cited_by_count:desc`,
+      `filter=primary_topic.${level}.id:${id},${since},type:article|review,primary_location.source.type:journal,${trusted}${lang}&sort=cited_by_count:desc`,
+      `filter=primary_topic.${level}.id:${level}s/${id},${since},type:article|review,is_retracted:false${lang}&sort=cited_by_count:desc`,
+      `filter=topics.${level}.id:${id},${since}${lang}&sort=cited_by_count:desc`,
     ];
   }
   await sleep(300); // OpenAlex allows about ten requests a second
@@ -240,7 +244,7 @@ async function openalex(spec) {
   for (const v of variants) {
     try {
       const json = await get(`https://api.openalex.org/works?${v}&per_page=${PER_FEED}&${select}${key}`, 'json');
-      const items = (json.results ?? []).map(openalexPaper);
+      const items = (json.results ?? []).map(openalexPaper).map((p) => (tr ? { ...p, lang: 'tr' } : p));
       if (items.length) return items;
     } catch (e) {
       lastError = e;
@@ -251,6 +255,7 @@ async function openalex(spec) {
 }
 
 async function fetchTag(tag) {
+  if (tag.startsWith('openalex-tr:')) return openalex(tag.slice(12), { tr: true });
   if (tag.startsWith('openalex:')) return openalex(tag.slice(9));
   if (tag.startsWith('arxiv:')) return arxiv(tag.slice(6));
   if (tag === 'biorxiv' || tag === 'medrxiv') return rxiv(tag);
@@ -277,15 +282,20 @@ for (const file of walk(join(ROOT, 'content/nodes'))) {
   }
   const seen = new Set();
   const unique = papers.filter((p) => p.title && p.url && !seen.has(p.url) && seen.add(p.url));
+  const byCitations = (a, b) => b.cited - a.cited || b.date.localeCompare(a.date);
   const journals = unique
-    .filter((p) => p.kind === 'journal')
-    .sort((a, b) => b.cited - a.cited || b.date.localeCompare(a.date))
+    .filter((p) => p.kind === 'journal' && p.lang !== 'tr')
+    .sort(byCitations)
+    .slice(0, PER_KIND);
+  const turkish = unique
+    .filter((p) => p.lang === 'tr')
+    .sort(byCitations)
     .slice(0, PER_KIND);
   const preprints = unique
-    .filter((p) => p.kind !== 'journal')
+    .filter((p) => p.kind !== 'journal' && p.lang !== 'tr')
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, PER_KIND);
-  branches[n.id] = [...journals, ...preprints];
+  branches[n.id] = [...journals, ...turkish, ...preprints];
 }
 
 const outFile = join(ROOT, 'content/feed/latest.json');

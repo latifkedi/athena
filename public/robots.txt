@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://latifkedi.github.io/athena/sitemap-index.xml

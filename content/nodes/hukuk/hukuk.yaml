@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 12.5
-feed: ['openalex:subfield/3308', 'openalex:subfield/3320', 'socarxiv']
+feed: ['openalex:subfield/3308', 'openalex:subfield/3320', 'socarxiv', 'openalex-tr:subfield/3308']
 title:
   tr: Hukuk ve siyaset
   en: Law and politics

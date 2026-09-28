@@ -1,0 +1,58 @@
+name: Yeni düğüm öner / Suggest a new node
+description: Ağaca eklenmesini istediğiniz bir konu, fikir, olay, gelenek ya da açık soru. / A topic, idea, event, tradition or open question to add to the tree.
+title: "[yeni düğüm] "
+labels: ["yeni düğüm"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Athena hüküm vermez: iddialar, destekleyen ve karşı çıkan kanıtlar ve görüşler kaynaklarıyla yan yana sunulur.
+        Lütfen **en az bir kaynak** ekleyin. Rehber: [CONTRIBUTING.md](https://github.com/latifkedi/athena/blob/HEAD/CONTRIBUTING.md)
+        Athena delivers no verdicts. Please include **at least one source**.
+  - type: input
+    id: baslik
+    attributes:
+      label: Başlık / Title
+      placeholder: "ör. Stoacılık / e.g. Stoicism"
+    validations:
+      required: true
+  - type: input
+    id: ust
+    attributes:
+      label: Üst dal / Parent branch
+      description: Hangi dalın altına eklenmeli? (ör. felsefe, fizik, kelam) / Which branch should it grow from?
+    validations:
+      required: true
+  - type: dropdown
+    id: tur
+    attributes:
+      label: Tür / Type
+      options:
+        - Fikir / kuram / iddia — Idea / theory / claim
+        - Olay / yayın / deney — Event / publication / experiment
+        - Gelenek / ekol — Tradition / school
+        - Açık soru (görüşler ayrılıyor) — Open question (views diverge)
+        - Teknoloji / buluş — Technology / invention
+        - Metin / eser — Text / work
+        - Uygulama — Practice
+    validations:
+      required: true
+  - type: textarea
+    id: ozet
+    attributes:
+      label: Kısa açıklama / Short description
+      description: Herkesin anlayacağı dilde birkaç cümle. / A few plain sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: iddialar
+    attributes:
+      label: İddialar, kanıtlar ve görüşler / Claims, evidence and positions
+      description: Destekleyen ve karşı çıkan kanıtları ayrı ayrı yazın. / List supporting and challenging evidence separately.
+  - type: textarea
+    id: kaynak
+    attributes:
+      label: Kaynak(lar) / Source(s)
+      description: DOI, arXiv, ISBN veya bağlantı. / DOI, arXiv id, ISBN or link.
+    validations:
+      required: true

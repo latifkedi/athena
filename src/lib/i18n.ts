@@ -16,6 +16,7 @@ export const routes = {
   dashboard: { tr: '/pano/', en: '/en/dashboard/' },
   latest: { tr: '/yeni/', en: '/en/latest/' },
   method: { tr: '/yontem/', en: '/en/method/' },
+  search: { tr: '/ara/', en: '/en/search/' },
 } as const;
 
 export type RouteKey = keyof typeof routes;
@@ -77,6 +78,24 @@ export const ui = {
     tr: 'Etkileşimli ağaç için JavaScript gerekir. Tüm düğümler Liste sayfasında.',
     en: 'The interactive tree needs JavaScript. All nodes are on the List page.',
   },
+  searchTitle: { tr: 'Ara', en: 'Search' },
+  searchIntro: {
+    tr: 'Bütün düğümlerde, iddialarda, kanıtlarda, görüşlerde ve kaynaklarda arayın. Sonuçlar dala göre süzülebilir.',
+    en: 'Search every node, claim, piece of evidence, position and source. Results can be filtered by branch.',
+  },
+  searchNoJs: {
+    tr: 'Arama JavaScript gerektirir. Bütün düğümler Liste sayfasında.',
+    en: 'Search needs JavaScript. All nodes are on the List page.',
+  },
+  cite: { tr: 'Bu sayfayı kaynak göster', en: 'Cite this page' },
+  copy: { tr: 'Kopyala', en: 'Copy' },
+  copied: { tr: 'Kopyalandı', en: 'Copied' },
+  lastChanged: { tr: 'Son değişiklik', en: 'Last changed' },
+  added: { tr: 'Eklendi', en: 'Added' },
+  history: { tr: 'Sayfa geçmişi', en: 'Page history' },
+  linkDown: { tr: 'bağlantı yanıt vermiyor; arşiv kopyasına bakın', en: 'link not responding; see the archived copy' },
+  rssUpdates: { tr: 'Güncellemeler (RSS)', en: 'Updates (RSS)' },
+  rssPapers: { tr: 'Yeni makaleler (RSS)', en: 'New papers (RSS)' },
   forEveryone: { tr: 'Herkes için', en: 'For everyone' },
   forExperts: { tr: 'Uzmanlar için', en: 'For specialists' },
   claims: { tr: 'İddialar', en: 'Claims' },
@@ -99,6 +118,7 @@ export const ui = {
   latestInBranch: { tr: 'Bu dalda yeni araştırmalar', en: 'New research in this branch' },
   journalPapers: { tr: 'Hakemli dergilerde öne çıkanlar', en: 'Notable in peer-reviewed journals' },
   preprintPapers: { tr: 'Ön baskılar (henüz hakemden geçmemiş olabilir)', en: 'Preprints (may not be peer-reviewed yet)' },
+  turkishPapers: { tr: 'Türkçe yayınlar (DergiPark ve diğer Türkçe dergiler)', en: 'Turkish-language papers' },
   literature: { tr: 'Literatürde ara', en: 'Search the literature' },
   literatureNote: {
     tr: 'Bu konudaki akademik yayınları başka dizinlerde de arayabilirsiniz:',

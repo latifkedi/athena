@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Athena'yı kullanırsanız lütfen şöyle kaynak gösterin. / If you use Athena, please cite it as below."
+title: "Athena: İnsanlığın bilgi ağacı / The tree of human knowledge"
+abstract: >-
+  A bilingual (Turkish/English) map of human knowledge drawn as a world tree: fields of inquiry as branches,
+  traditions of thought and belief as roots. Every node presents claims, supporting and challenging evidence,
+  positions and dating views with archived sources, without delivering verdicts.
+type: dataset
+authors:
+  - name: "Athena contributors"
+repository-code: "https://github.com/latifkedi/athena"
+url: "https://latifkedi.github.io/athena/"
+license: CC-BY-SA-4.0
+keywords:
+  - history of science
+  - philosophy
+  - religious studies
+  - knowledge graph
+  - open data
+  - Turkish

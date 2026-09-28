@@ -4,9 +4,22 @@ import Cite from '../components/Cite.astro';
 import SourceList from '../components/SourceList.astro';
 import type { Lang, NodeData } from '../lib/data';
 import { ancestors, getNode, relatedTo, nodeSources, descendantCount } from '../lib/data';
-import { latestFor, isJournal } from '../lib/feed';
+import { latestFor, splitPapers } from '../lib/feed';
 import { literatureLinks } from '../lib/scholar';
-import { ui, t, url, nodePath, routes, typeLabels, evidenceKinds, formatDate, suggestUrl, otherLang } from '../lib/i18n';
+import { datesOf } from '../lib/history';
+import {
+  ui,
+  t,
+  url,
+  nodePath,
+  routes,
+  typeLabels,
+  evidenceKinds,
+  formatDate,
+  suggestUrl,
+  otherLang,
+  REPO,
+} from '../lib/i18n';
 
 interface Props {
   node: NodeData;
@@ -24,14 +37,44 @@ const related = [...relIds].map((id) => getNode(id)).filter(Boolean) as NodeData
 const evFor = node.evidence.filter((e) => e.stance === 'for');
 const evAgainst = node.evidence.filter((e) => e.stance === 'against');
 const papers = node.depth === 1 ? latestFor(node.id) : [];
-const journalPapers = papers.filter(isJournal).slice(0, 4);
-const preprints = papers.filter((p) => !isJournal(p)).slice(0, 4);
+const split = splitPapers(papers);
+const journalPapers = split.journals.slice(0, 4);
+const turkishPapers = split.turkish.slice(0, 4);
+const preprints = split.preprints.slice(0, 4);
 const lit = literatureLinks(node, lang);
 const isFork = node.type === 'question' && (node.children.length > 0 || node.positions.length >= 2);
 const title = t(node.title, lang);
 const sideLabel = node.side === 'roots' ? t(ui.roots, lang) : node.side === 'canopy' ? t(ui.canopy, lang) : '';
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
+
+// page history and a ready-made citation
+const dates = datesOf(node.file);
+const branch = chain.find((a) => a.depth === 1) ?? (node.depth === 1 ? node : undefined);
+const pageUrl = (Astro.site?.toString().replace(/\/$/, '') ?? '') + url(nodePath(node.id, lang));
+const year = (dates?.changed ?? new Date().toISOString()).slice(0, 4);
+const today = new Date().toISOString().slice(0, 10);
+const months = {
+  tr: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
+  en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+};
+const human = (d?: string) => {
+  if (!d) return '';
+  const [y, m, dd] = d.split('-').map(Number);
+  return lang === 'tr' ? `${dd} ${months.tr[m - 1]} ${y}` : `${months.en[m - 1]} ${dd}, ${y}`;
+};
+const siteName = lang === 'tr' ? 'Athena: İnsanlığın bilgi ağacı' : 'Athena: The tree of human knowledge';
+const apa =
+  lang === 'tr'
+    ? `Athena katkıcıları. (${year}). ${title}. ${siteName}. Erişim: ${human(today)}, ${pageUrl}`
+    : `Athena contributors. (${year}). ${title}. ${siteName}. Retrieved ${human(today)}, from ${pageUrl}`;
+const bibtex = `@misc{athena_${node.id.replace(/-/g, '_')},
+  title        = {${title}},
+  author       = {{Athena ${lang === 'tr' ? 'katkıcıları' : 'contributors'}}},
+  year         = {${year}},
+  howpublished = {\\url{${pageUrl}}},
+  note         = {${siteName}. ${lang === 'tr' ? 'Erişim' : 'Accessed'}: ${today}}
+}`;
 ---
 
 <Base
@@ -41,9 +84,11 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
   altPath={nodePath(node.id, other)}
   nodeId={node.id}
   nodeTitle={title}
+  ogImage={`/og/${lang}/${node.id}.png`}
 >
-  <main class="wrap node">
-    <nav class="crumbs small" aria-label="breadcrumb">
+  <main class="wrap node" data-pagefind-body>
+    {branch && <span hidden data-pagefind-filter={lang === 'tr' ? 'Dal' : 'Branch'}>{t(branch.title, lang)}</span>}
+    <nav class="crumbs small" aria-label="breadcrumb" data-pagefind-ignore>
       {
         chain.map((a) => (
           <>
@@ -55,7 +100,7 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
       <span>{title}</span>
     </nav>
 
-    <div class="meta">
+    <div class="meta" data-pagefind-ignore>
       <span class="chip"><span class={`dot ${node.side}`}></span>{t(typeLabels[node.type], lang)}</span>
       {sideLabel && <span class="chip">{sideLabel}</span>}
       {node.date && <span class="chip">{formatDate(node.date, lang)}</span>}
@@ -63,11 +108,11 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
       {node.children.length > 0 && <span class="chip">{descendantCount(node.id)} {t(ui.nodes, lang)}</span>}
     </div>
 
-    <h1>{title}</h1>
+    <h1 data-pagefind-meta="title">{title}</h1>
     {node.people.length > 0 && <p class="people muted">{node.people.join(' · ')}</p>}
     {
       !['center', 'field'].includes(node.type) && (
-        <p class="note small">
+        <p class="note small" data-pagefind-ignore>
           <span aria-hidden="true">ⓘ</span> {t(ui.nodeNote, lang)}{' '}
           <a href={url(routes.method[lang])}>{t(ui.nav.method, lang)}</a>
         </p>
@@ -204,7 +249,7 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
       )
     }
 
-    <section>
+    <section data-pagefind-ignore>
       <h2>{t(ui.connections, lang)}</h2>
       <div class="conn">
         {
@@ -256,10 +301,11 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
 
     {
       papers.length > 0 && (
-        <section>
+        <section data-pagefind-ignore>
           <h2>{t(ui.latestInBranch, lang)}</h2>
           {[
             [ui.journalPapers, journalPapers],
+            [ui.turkishPapers, turkishPapers],
             [ui.preprintPapers, preprints],
           ].map(
             ([label, list]) =>
@@ -296,7 +342,7 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
 
     {
       lit.length > 0 && (
-        <section class="lit">
+        <section class="lit" data-pagefind-ignore>
           <h2>{t(ui.literature, lang)}</h2>
           <p class="muted small">{t(ui.literatureNote, lang)}</p>
           <div class="chips">
@@ -310,13 +356,102 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
       )
     }
 
-    <p class="suggest">
+    <section class="cite" data-pagefind-ignore>
+      <h2>{t(ui.cite, lang)}</h2>
+      <div class="cite-box">
+        <div class="cite-row">
+          <span class="cite-label">APA</span>
+          <p class="cite-text" id="cite-apa">{apa}</p>
+          <button class="btn copy" type="button" data-copy="cite-apa" data-done={t(ui.copied, lang)}>{t(ui.copy, lang)}</button>
+        </div>
+        <div class="cite-row">
+          <span class="cite-label">BibTeX</span>
+          <pre class="cite-text" id="cite-bib">{bibtex}</pre>
+          <button class="btn copy" type="button" data-copy="cite-bib" data-done={t(ui.copied, lang)}>{t(ui.copy, lang)}</button>
+        </div>
+      </div>
+      {
+        dates && (
+          <p class="small muted page-dates">
+            {t(ui.added, lang)}: {human(dates.created)} · {t(ui.lastChanged, lang)}: {human(dates.changed)} ·{' '}
+            <a href={`${REPO}/commits/HEAD/${node.file}`}>{t(ui.history, lang)}</a>
+          </p>
+        )
+      }
+    </section>
+
+    <p class="suggest" data-pagefind-ignore>
       <a class="btn" href={suggestUrl(lang, node.id, title)}>✎ {t(ui.suggest, lang)}</a>
     </p>
   </main>
 </Base>
 
+<script>
+  for (const b of document.querySelectorAll<HTMLButtonElement>('button.copy')) {
+    b.addEventListener('click', async () => {
+      const el = document.getElementById(b.dataset.copy!);
+      if (!el) return;
+      try {
+        await navigator.clipboard.writeText(el.textContent ?? '');
+        const old = b.textContent;
+        b.textContent = b.dataset.done ?? '✓';
+        setTimeout(() => (b.textContent = old), 1600);
+      } catch {
+        getSelection()?.selectAllChildren(el);
+      }
+    });
+  }
+</script>
+
 <style>
+  .cite-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+  .cite-row {
+    display: grid;
+    grid-template-columns: 72px 1fr auto;
+    gap: 12px;
+    align-items: start;
+    padding: 14px 16px;
+  }
+  .cite-row + .cite-row {
+    border-top: 1px solid var(--border);
+  }
+  .cite-label {
+    font-size: 0.7rem;
+    font-weight: 650;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    padding-top: 3px;
+  }
+  .cite-text {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--text-2);
+    line-height: 1.55;
+    word-break: break-word;
+  }
+  pre.cite-text {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+  }
+  .page-dates {
+    margin-top: 12px;
+  }
+  @media (max-width: 560px) {
+    .cite-row {
+      grid-template-columns: 1fr auto;
+    }
+    .cite-label {
+      grid-column: 1 / -1;
+    }
+  }
   .node {
     padding-top: 28px;
   }

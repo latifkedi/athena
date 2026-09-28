@@ -12,7 +12,7 @@ const srcCount = allNodes.reduce((s, n) => s + Object.keys(n.sources).length, 0)
 ---
 
 <Base lang={lang} title={t(ui.nav.method, lang)} route="method">
-  <main class="wrap prose">
+  <main class="wrap prose" data-pagefind-body>
     <h1>{t(ui.nav.method, lang)}</h1>
     <p class="principle-box">{t(ui.principle, lang)}</p>
     <p class="muted small">

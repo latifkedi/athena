@@ -1,0 +1,36 @@
+# Checks every DOI and arXiv id against Crossref / DataCite / arXiv and reports the ones whose
+# registered title or year does not match what the node cites. Runs on the 15th of every month
+# and on demand; problems are opened as an issue for a person to review.
+name: Verify sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 5 15 * *'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run verify
+      - name: Open an issue if something needs a look
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s verify-report.md ]; then
+            title="$(head -n 1 verify-report.md | sed 's/^# //')"
+            gh issue create --title "$title" --body-file verify-report.md --label "kaynak" || gh issue create --title "$title" --body-file verify-report.md
+          else
+            echo "All identifiers match"
+          fi

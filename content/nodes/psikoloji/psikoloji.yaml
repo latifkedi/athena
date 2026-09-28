@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 10
-feed: ['openalex:field/32', 'openalex:subfield/2805', 'psyarxiv', 'arxiv:q-bio.NC']
+feed: ['openalex:field/32', 'openalex:subfield/2805', 'psyarxiv', 'arxiv:q-bio.NC', 'openalex-tr:field/32']
 title:
   tr: Psikoloji ve zihin
   en: Psychology and mind

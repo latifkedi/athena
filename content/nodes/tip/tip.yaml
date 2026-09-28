@@ -3,7 +3,7 @@ parent: insanlik
 side: canopy
 type: field
 order: 6
-feed: ['openalex:field/27', 'medrxiv']
+feed: ['openalex:field/27', 'medrxiv', 'openalex-tr:field/27']
 title:
   tr: Tıp
   en: Medicine

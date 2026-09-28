@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import type { Lang } from '../lib/data';
 import { getNode, treeGroups } from '../lib/data';
-import { feed, isJournal } from '../lib/feed';
+import { feed, splitPapers } from '../lib/feed';
 import { ui, t, url, nodePath, REPO } from '../lib/i18n';
 
 interface Props {
@@ -26,6 +26,8 @@ const branches = Object.entries(feed.branches)
           <a href="https://openalex.org">OpenAlex</a>'ten alınır: Crossref, PubMed, DOAJ, arXiv, üniversite arşivleri ve
           yayıncı verilerini birleştiren açık akademik dizin (Google Scholar'ın bir programlama arayüzü olmadığı için onun
           açık karşılığı kullanılır). Her alan için son iki ayda yayımlanıp en çok atıf alan makaleler listelenir.{' '}
+          <strong>Türkçe yayınlar</strong> yine OpenAlex'ten, Türkçe yazılmış dergi makalelerinden (DergiPark'taki
+          dergilerin çoğu dahil) son bir yılın en çok atıf alanlarıdır.{' '}
           <strong>Ön baskılar</strong> arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv ve SocArXiv'den alınır; henüz hakem
           değerlendirmesinden geçmemiş olabilirler. Öne çıkan çalışmalar incelendikten sonra ağaca düğüm olarak eklenir.
         </p>
@@ -35,6 +37,8 @@ const branches = Object.entries(feed.branches)
           come from <a href="https://openalex.org">OpenAlex</a>, the open scholarly index that combines Crossref, PubMed,
           DOAJ, arXiv, university repositories and publisher data (used as the open counterpart to Google Scholar, which
           has no API). For every field it lists the most-cited articles of the last two months.{' '}
+          <strong>Turkish-language papers</strong> also come from OpenAlex: the most-cited journal articles written in
+          Turkish (including most DergiPark journals) over the past year.{' '}
           <strong>Preprints</strong> come from arXiv, bioRxiv, medRxiv, ChemRxiv, PsyArXiv and SocArXiv and may not be
           peer-reviewed yet. Notable work is added to the tree as a node after review.
         </p>
@@ -67,14 +71,16 @@ const branches = Object.entries(feed.branches)
     {
       branches.map(([id, papers]) => {
         const n = getNode(id)!;
+        const { journals, turkish, preprints } = splitPapers(papers);
         return (
           <section>
             <h2>
               <span class={`dot ${n.side}`} /> <a href={url(nodePath(id, lang))}>{t(n.title, lang)}</a>
             </h2>
             {[
-              [ui.journalPapers, papers.filter(isJournal)],
-              [ui.preprintPapers, papers.filter((p) => !isJournal(p))],
+              [ui.journalPapers, journals],
+              [ui.turkishPapers, turkish],
+              [ui.preprintPapers, preprints],
             ].map(
               ([label, list]) =>
                 (list as typeof papers).length > 0 && (
