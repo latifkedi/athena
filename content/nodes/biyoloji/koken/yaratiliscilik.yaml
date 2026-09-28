@@ -80,3 +80,5 @@ positions:
     en: Creationism based on flood geology is a 20th-century movement that spread worldwide after the 1980s.
     src: [numbers2006]
 related: [akilli-tasarim, yaratilis-anlatilari, dunyanin-yasi]
+links:
+  - { to: darwin-wallace, rel: opposes }

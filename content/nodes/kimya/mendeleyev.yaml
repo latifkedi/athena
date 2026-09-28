@@ -54,3 +54,5 @@ sources:
     title: 'The Periodic Table: Its Story and Its Significance'
     year: 2007
     in: Oxford University Press
+links:
+  - { to: dalton, rel: builds-on }

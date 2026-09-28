@@ -1,0 +1,75 @@
+id: lityum-iyon
+parent: teknoloji
+type: technology
+date: { year: 1991 }
+people: [M. Stanley Whittingham, John B. Goodenough, Akira Yoshino, Koichi Mizushima]
+title:
+  tr: Lityum iyon pil
+  en: The lithium-ion battery
+summary:
+  tr: >-
+    Lityum iyon piller, lityum iyonlarının şarj ve deşarj sırasında iki elektrot arasında gidip gelmesiyle çalışır. Hafif
+    ve çok kez şarj edilebilir oldukları için telefonları, bilgisayarları ve elektrikli araçları mümkün kıldılar. İlk
+    ticari lityum iyon pil 1991'de satışa sunuldu. Whittingham, Goodenough ve Yoshino bu çalışmalarla 2019 Nobel Kimya
+    Ödülü'nü paylaştı. Kobalt ve lityum madenciliğinin çevresel ve toplumsal etkileri ile geri dönüşüm önemli
+    tartışma konularıdır.
+  en: >-
+    Lithium-ion batteries work by lithium ions moving back and forth between two electrodes during charging and
+    discharging. Because they are light and can be recharged many times, they made phones, laptops and electric vehicles
+    possible. The first commercial lithium-ion battery went on sale in 1991. Whittingham, Goodenough and Yoshino shared
+    the 2019 Nobel Prize in Chemistry for this work. The environmental and social effects of cobalt and lithium mining
+    and recycling are important topics of debate.
+technical:
+  tr: >-
+    Whittingham 1970'lerde titanyum disülfür katot ile lityum metal anottan oluşan bir pil geliştirdi, ancak lityum metal
+    güvenlik sorunlarına yol açıyordu. Goodenough ve ekibi 1980'de lityum kobalt oksidin (LiCoO₂) yaklaşık 4 voltluk
+    yüksek bir gerilim sağladığını gösterdi. Yoshino 1985'te lityum metal yerine karbon esaslı bir anot kullanarak daha
+    güvenli bir tasarım yaptı. Sony bu tasarıma dayanan pili 1991'de piyasaya sürdü.
+  en: >-
+    In the 1970s Whittingham developed a battery with a titanium disulfide cathode and a lithium metal anode, but lithium
+    metal caused safety problems. In 1980 Goodenough's group showed that lithium cobalt oxide (LiCoO₂) gives a high voltage
+    of about 4 volts. In 1985 Yoshino made a safer design by using a carbon-based anode instead of lithium metal. Sony
+    brought a battery based on this design to market in 1991.
+claims:
+  - tr: Lityum iyonları, katmanlı bir katot malzemesinin yapısına zarar vermeden defalarca girip çıkabilir ve bu, yüksek enerji yoğunluklu şarj edilebilir bir pil sağlar.
+    en: Lithium ions can move into and out of a layered cathode material many times without damaging its structure, giving a rechargeable battery of high energy density.
+    src: [whittingham1976, mizushima1980]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: LixCoO₂ ile yapılan ölçümlerde açık devre geriliminin lityum metale göre yaklaşık 4 volt olduğu ve kuramsal enerji yoğunluğunun yüksek olduğu bulundu.
+    en: Measurements with LixCoO₂ found an open-circuit voltage of about 4 volts against lithium metal and a high theoretical energy density.
+    src: [mizushima1980]
+sources:
+  whittingham1976:
+    type: article
+    authors: Whittingham, M. S.
+    title: Electrical energy storage and intercalation chemistry
+    year: 1976
+    in: Science 192(4244), 1126–1127
+    doi: 10.1126/science.192.4244.1126
+  mizushima1980:
+    type: article
+    authors: Mizushima, K.; Jones, P. C.; Wiseman, P. J.; Goodenough, J. B.
+    title: 'LixCoO2 (0<x<1): a new cathode material for batteries of high energy density'
+    year: 1980
+    in: Materials Research Bulletin 15(6), 783–789
+    doi: 10.1016/0025-5408(80)90012-4
+  nobel2019:
+    type: web
+    authors: Nobel Prize Outreach
+    title: The Nobel Prize in Chemistry 2019
+    year: 2019
+    url: https://www.nobelprize.org/prizes/chemistry/2019/summary/
+datings:
+  - view:
+      tr: Temel buluşlar
+      en: Key discoveries
+    value:
+      tr: 1976 (Whittingham), 1980 (Goodenough ve ekibi), 1985 (Yoshino)
+      en: 1976 (Whittingham), 1980 (Goodenough's group), 1985 (Yoshino)
+    src: [whittingham1976, mizushima1980, nobel2019]
+open:
+  - tr: Kobalt ve nikel gibi kıt malzemelere daha az bağımlı, güvenli ve kolay geri dönüştürülebilir piller geliştirilebilecek mi?
+    en: Can safe, easily recyclable batteries less dependent on scarce materials such as cobalt and nickel be developed?
+related: [gunes-pili, induksiyon]

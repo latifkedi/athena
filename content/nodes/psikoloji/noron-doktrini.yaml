@@ -1,0 +1,82 @@
+id: noron-doktrini
+parent: psikoloji
+type: idea
+date: { year: 1888 }
+people: [Santiago Ramón y Cajal, Camillo Golgi]
+title:
+  tr: Nöron doktrini
+  en: The neuron doctrine
+summary:
+  tr: >-
+    Santiago Ramón y Cajal, 1888'den itibaren yaptığı mikroskop çalışmalarıyla sinir sisteminin birbirinden ayrı
+    hücrelerden, yani nöronlardan oluştuğunu savundu. Camillo Golgi ise sinir sisteminin kesintisiz bir ağ olduğunu
+    düşünüyordu. İkisi 1906 Nobel Tıp Ödülü'nü paylaştı ve törende karşıt görüşlerini savundu. Elektron mikroskobu 1950'lerde
+    nöronlar arasındaki sinaps aralığını gösterdi, ancak bazı hücrelerin doğrudan elektriksel bağlantılarla birleştiği de
+    bulundu.
+  en: >-
+    From 1888 on, Santiago Ramón y Cajal argued from microscope studies that the nervous system is made of separate cells,
+    neurons. Camillo Golgi, by contrast, thought the nervous system was a continuous network. The two shared the 1906
+    Nobel Prize in Physiology or Medicine and defended opposing views at the ceremony. In the 1950s the electron
+    microscope showed the synaptic gap between neurons, but it was also found that some cells are joined by direct
+    electrical connections.
+technical:
+  tr: >-
+    Cajal, Golgi'nin geliştirdiği gümüş kromat boyama yöntemini kullanarak tek tek nöronları bütün uzantılarıyla
+    görünür kıldı. Nöronların dendritlerden hücre gövdesine, oradan aksona doğru tek yönlü ilettiğini öne süren
+    "dinamik kutuplaşma" ilkesini önerdi. Sherrington 1897'de hücreler arası bağlantıya "sinaps" adını verdi. Elektriksel
+    sinapslarda (oluklu bağlantılar) iki hücrenin sitoplazması protein kanallarıyla doğrudan bağlıdır.
+  en: >-
+    Using the silver chromate staining method developed by Golgi, Cajal made individual neurons visible with all their
+    branches. He proposed the principle of "dynamic polarisation", that neurons conduct in one direction from dendrites to
+    cell body to axon. In 1897 Sherrington named the junction between cells the "synapse". At electrical synapses (gap
+    junctions) the cytoplasm of two cells is directly linked by protein channels.
+claims:
+  - tr: Sinir sistemi, birbirine temas eden ama kesintisiz bir bütün oluşturmayan bağımsız hücrelerden (nöronlardan) oluşur.
+    en: The nervous system is made of independent cells (neurons) that contact one another without forming a continuous whole.
+    src: [shepherd1991, nobel1906]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Elektron mikroskobu görüntüleri, sinir hücrelerinin uçları arasında yaklaşık 20 nanometrelik bir aralık (sinaptik yarık) bulunduğunu gösterdi.
+    en: Electron microscope images showed a gap of about 20 nanometres (the synaptic cleft) between the endings of nerve cells.
+    src: [palay1955]
+  - kind: experiment
+    stance: against
+    tr: Kerevit sinir sisteminde bazı nöronların elektriksel olarak doğrudan bağlı olduğu ve akımın hücreden hücreye geçtiği gösterildi. Bu, katı bir "tamamen ayrı hücreler" görüşünü sınırlar.
+    en: In the crayfish nervous system some neurons were shown to be directly coupled electrically, with current passing from cell to cell, which qualifies a strict "wholly separate cells" view.
+    src: [furshpan1959]
+positions:
+  - who:
+      tr: Golgi (retiküler kuram)
+      en: Golgi (reticular theory)
+    tr: Sinir lifleri birbirine kaynaşarak kesintisiz bir ağ oluşturur. Sinir sistemi tek tek hücrelerden değil, bu ağdan oluşur.
+    en: Nerve fibres fuse into a continuous network; the nervous system consists of this network rather than of individual cells.
+    src: [nobel1906]
+sources:
+  shepherd1991:
+    type: book
+    authors: Shepherd, G. M.
+    title: Foundations of the Neuron Doctrine
+    year: 1991
+    in: Oxford University Press
+  nobel1906:
+    type: web
+    authors: Nobel Prize Outreach
+    title: The Nobel Prize in Physiology or Medicine 1906
+    year: 1906
+    url: https://www.nobelprize.org/prizes/medicine/1906/summary/
+  palay1955:
+    type: article
+    authors: Palay, S. L.; Palade, G. E.
+    title: The fine structure of neurons
+    year: 1955
+    in: Journal of Biophysical and Biochemical Cytology 1(1), 69–88
+    doi: 10.1083/jcb.1.1.69
+  furshpan1959:
+    type: article
+    authors: Furshpan, E. J.; Potter, D. D.
+    title: Transmission at the giant motor synapses of the crayfish
+    year: 1959
+    in: The Journal of Physiology 145(2), 289–325
+    doi: 10.1113/jphysiol.1959.sp006143
+related: [hucre-teorisi, bilinc]

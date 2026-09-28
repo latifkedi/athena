@@ -1,0 +1,69 @@
+id: frege
+parent: felsefe
+type: text
+date: { year: 1879 }
+people: [Gottlob Frege, Bertrand Russell]
+title:
+  tr: Frege ve modern mantığın doğuşu
+  en: Frege and the birth of modern logic
+summary:
+  tr: >-
+    Frege 1879'da yayımladığı Begriffsschrift ("Kavram yazısı") ile Aristoteles'ten beri büyük ölçüde değişmeden kalan
+    mantığı yeniden kurdu. "Her", "bazı" gibi niceleyicileri ilk kez tam bir sistem içinde ele aldı. Amacı aritmetiğin
+    saf mantıktan türetilebileceğini göstermekti. Russell 1902'de bu sistemde bir çelişki buldu ve program bu biçimiyle
+    sürdürülemedi, ama geliştirdiği mantık bugünkü matematiğin ve bilgisayar biliminin temel araçlarından biri oldu.
+  en: >-
+    With the Begriffsschrift ("concept script") of 1879 Frege rebuilt a logic that had changed little since Aristotle.
+    He treated quantifiers such as "every" and "some" within a complete system for the first time. His aim was to show
+    that arithmetic can be derived from pure logic. In 1902 Russell found a contradiction in the system and the programme
+    could not continue in that form, but the logic he developed became a basic tool of today's mathematics and computer
+    science.
+technical:
+  tr: >-
+    Begriffsschrift, iki boyutlu bir gösterimle yüklem mantığını, nicelemeyi ve çıkarım kurallarını tanımlar. Frege
+    Grundgesetze der Arithmetik'te (1893, 1903) sayıları kavramların uzantıları olarak tanımladı. Sınırsız kavrama
+    ilkesine dayanan V. Temel Yasa, "kendisini içermeyen kümelerin kümesi" gibi bir nesneye izin verdiği için Russell
+    paradoksuna yol açar. Anlam (Sinn) ile gönderim (Bedeutung) ayrımı dil felsefesinin temel kavramlarından biridir.
+  en: >-
+    The Begriffsschrift defines predicate logic, quantification and rules of inference in a two-dimensional notation. In
+    the Grundgesetze der Arithmetik (1893, 1903) Frege defined numbers as extensions of concepts. Basic Law V, which rests
+    on unrestricted comprehension, allows an object such as "the set of all sets that do not contain themselves" and so
+    gives rise to Russell's paradox. The distinction between sense (Sinn) and reference (Bedeutung) is a foundational
+    concept of the philosophy of language.
+claims:
+  - tr: Aritmetiğin kavramları ve yasaları yalnızca mantıksal kavramlar ve mantık yasalarıyla tanımlanıp kanıtlanabilir (mantıkçılık).
+    en: The concepts and laws of arithmetic can be defined and proved using only logical concepts and laws (logicism).
+    src: [frege1879, sep-frege]
+evidence:
+  - kind: proof
+    stance: against
+    tr: Russell 1902'de Frege'ye yazdığı mektupta, Frege'nin sisteminden kendisini içermeyen kümelerin kümesiyle ilgili bir çelişki türetilebildiğini gösterdi.
+    en: In a letter to Frege in 1902, Russell showed that a contradiction about the set of all sets that do not contain themselves can be derived in Frege's system.
+    src: [heijenoort1967]
+positions:
+  - who:
+      tr: Yeni mantıkçılar (neo-Fregecilik)
+      en: Neo-logicists (neo-Fregeanism)
+    tr: V. Temel Yasa yerine Hume ilkesi alınırsa aritmetiğin tutarlı biçimde türetilebildiği gösterilebilir. Bu yüzden Frege'nin programının bir biçimi hâlâ savunulabilir.
+    en: If Hume's principle replaces Basic Law V, arithmetic can be derived consistently, so a version of Frege's programme is still defensible.
+    src: [sep-frege]
+sources:
+  frege1879:
+    type: book
+    authors: Frege, G.
+    title: 'Begriffsschrift, eine der arithmetischen nachgebildete Formelsprache des reinen Denkens'
+    year: 1879
+    in: Louis Nebert, Halle
+  heijenoort1967:
+    type: book
+    authors: van Heijenoort, J. (ed.)
+    title: 'From Frege to Gödel: A Source Book in Mathematical Logic, 1879–1931'
+    year: 1967
+    in: Harvard University Press
+  sep-frege:
+    type: encyclopedia
+    authors: Zalta, E. N.
+    title: Gottlob Frege
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/frege/
+related: [aristoteles, godel, cantor]

@@ -1,0 +1,74 @@
+id: yesevi
+parent: tasavvuf
+type: tradition
+people: [Ahmed Yesevî / Aḥmad Yasawī, Mehmed Fuad Köprülü]
+title:
+  tr: Ahmed Yesevî ve Dîvân-ı Hikmet
+  en: Aḥmad Yasawī and the Dīwān-i Ḥikmat
+summary:
+  tr: >-
+    Ahmed Yesevî, Türkistan'daki Yesi (bugün Kazakistan'da Türkistan şehri) merkezli Yeseviyye tarikatına adını veren
+    sufidir. Tasavvufi düşünceyi Türkçe "hikmet" adı verilen şiirlerle yaydığı kabul edilir ve Türk tasavvufunun kurucu
+    isimlerinden sayılır. Hayatına dair bilgiler çoğunlukla sonraki menkıbelere dayanır. Dîvân-ı Hikmet'teki şiirlerin
+    ne kadarının ona ait olduğu tartışmalıdır. Kabri üzerine Timur'un yaptırdığı külliye UNESCO Dünya Mirası listesindedir.
+  en: >-
+    Aḥmad Yasawī is the Sufi who gave his name to the Yasawiyya order centred on Yasi (today the city of Turkistan in
+    Kazakhstan). He is held to have spread Sufi thought through Turkish poems called "ḥikmat" and is counted among the
+    founding figures of Turkish Sufism. Information about his life rests mostly on later hagiography, and how much of the
+    Dīwān-i Ḥikmat is his is debated. The complex built over his tomb by Timur is on the UNESCO World Heritage list.
+technical:
+  tr: >-
+    Köprülü'nün 1918'deki çalışması Yesevî'yi Türk edebiyatındaki ilk mutasavvıflar arasına yerleştirdi ve Dîvân-ı
+    Hikmet'in bugünkü nüshalarının geç döneme ait olduğunu, pek çok şiirin sonraki Yesevî dervişlerince eklendiğini
+    belirtti. Yeseviyye'nin Anadolu'daki etkisi, Hacı Bektaş Vilâyetnâmesi gibi metinlerde Hacı Bektaş'ın Yesevî'ye
+    bağlanmasıyla kurulan manevi bir soy üzerinden anlatılır.
+  en: >-
+    Köprülü's study of 1918 placed Yasawī among the first mystics of Turkish literature and noted that the surviving
+    manuscripts of the Dīwān-i Ḥikmat are late and that many poems were added by later Yasawī dervishes. The Yasawiyya's
+    influence in Anatolia is told through a spiritual lineage, as in texts such as the Vilâyetnâme of Hacı Bektaş, which
+    connect Hacı Bektaş to Yasawī.
+claims:
+  - tr: Tasavvufi öğüt ve ilahi sevgi, halkın anladığı Türkçeyle ve hece ölçüsüyle şiir yoluyla aktarılabilir.
+    en: Sufi counsel and divine love can be passed on through poetry in the Turkish the people understand, in syllabic metre.
+    src: [tdv-yesevi, koprulu2006]
+datings:
+  - view:
+      tr: Geleneksel kabul
+      en: Traditional view
+    value:
+      tr: Ölümü 562 (1166–67)
+      en: Died 562 AH (1166–67)
+    src: [tdv-yesevi]
+  - view:
+      tr: Araştırmacıların çekincesi
+      en: Scholars' caution
+    value:
+      tr: Bu tarih sonraki kaynaklara dayanır. Çağdaş bir belge bulunmadığından kesin değildir.
+      en: This date rests on later sources; in the absence of contemporary documents it is not certain.
+    src: [tdv-yesevi, koprulu2006]
+positions:
+  - who:
+      tr: Yesevî geleneği
+      en: The Yasawī tradition
+    tr: Dîvân-ı Hikmet'teki hikmetler Ahmed Yesevî'nin kendi sözleridir.
+    en: The ḥikmats in the Dīwān-i Ḥikmat are Aḥmad Yasawī's own words.
+    src: [tdv-yesevi]
+  - who:
+      tr: Köprülü ve sonraki filologlar
+      en: Köprülü and later philologists
+    tr: Eldeki nüshalar çok geç tarihlidir ve dilleri 12. yüzyıl Türkçesine uymaz. Şiirlerin önemli bir kısmı sonraki Yesevî dervişlerinin eseridir.
+    en: The surviving manuscripts are very late and their language does not match 12th-century Turkish; a large share of the poems are the work of later Yasawī dervishes.
+    src: [koprulu2006]
+sources:
+  tdv-yesevi:
+    type: encyclopedia
+    title: Ahmed Yesevî
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/ahmed-yesevi
+  koprulu2006:
+    type: book
+    authors: Köprülü, M. F.; Leiser, G.; Dankoff, R. (trans.)
+    title: Early Mystics in Turkish Literature
+    year: 2006
+    in: Routledge, London (Turkish original, Türk Edebiyatında İlk Mutasavvıflar, 1918)
+related: [haci-bektas, yunus-emre, turk-mitolojisi]

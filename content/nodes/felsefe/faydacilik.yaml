@@ -1,0 +1,80 @@
+id: faydacilik
+parent: felsefe
+type: idea
+date: { year: 1789 }
+people: [Jeremy Bentham, John Stuart Mill, Peter Singer]
+title:
+  tr: Faydacılık ve sonuççu etik
+  en: Utilitarianism and consequentialist ethics
+summary:
+  tr: >-
+    Faydacılığa göre bir eylemin doğru olup olmadığı, sonuçlarının herkes için toplam mutluluğu ne kadar artırdığına
+    bağlıdır. Bentham bunu "en çok sayıda insan için en büyük mutluluk" ilkesiyle ifade etti. Mill hazlar arasında nitelik
+    farkı olduğunu savundu. Görüş, hayvan hakları ve küresel yoksulluk tartışmalarını etkiledi. Eleştirmenler ise bireysel
+    hakların toplam fayda uğruna çiğnenebileceğini öne sürer.
+  en: >-
+    According to utilitarianism, whether an action is right depends on how much its consequences increase the total
+    happiness of everyone. Bentham expressed this as "the greatest happiness of the greatest number". Mill argued that
+    pleasures differ in quality. The view has shaped debates on animal rights and global poverty. Critics argue that
+    individual rights could be sacrificed for the sake of total welfare.
+technical:
+  tr: >-
+    Klasik faydacılık üç unsuru birleştirir: sonuççuluk (doğruluğu yalnızca sonuçlar belirler), refahçılık (değerli olan
+    iyi oluştur) ve eşit toplama. Eylem faydacılığı her eylemi tek tek değerlendirir. Kural faydacılığı ise genel olarak
+    uyulduğunda en iyi sonucu veren kurallara bakar. Fayda, haz ile acı dengesi (hedonizm) ya da tercihlerin tatmini
+    olarak tanımlanabilir. Kişiler arası fayda karşılaştırmasının nasıl yapılacağı açık bir sorundur.
+  en: >-
+    Classical utilitarianism combines three elements: consequentialism (only consequences determine rightness), welfarism
+    (well-being is what matters) and equal summation. Act utilitarianism assesses each act on its own; rule
+    utilitarianism looks to the rules whose general observance gives the best outcome. Utility can be defined as the
+    balance of pleasure over pain (hedonism) or as preference satisfaction. How to compare utility across persons is an
+    open problem.
+claims:
+  - tr: Ahlaken doğru eylem, etkilenen herkesin iyiliğini eşit sayarak toplam iyiliği en çok artıran eylemdir.
+    en: The morally right action is the one that most increases total well-being, counting the well-being of everyone affected equally.
+    src: [bentham1789, mill1863]
+positions:
+  - who:
+      tr: Kant'çı (ödev) etik
+      en: Kantian (deontological) ethics
+    tr: Bazı eylemler sonuçları ne olursa olsun yanlıştır. İnsanlar hiçbir zaman yalnızca bir araç olarak kullanılmamalıdır.
+    en: Some actions are wrong whatever their consequences; people must never be used merely as a means.
+    src: [sep-util-history]
+  - who:
+      tr: Rawls
+      en: Rawls
+    tr: Faydacılık, faydaları kişiler arasında toplarken kişiler arasındaki ayrımı ciddiye almaz. Adalet, en kötü durumdakilerin konumunu gözetmelidir.
+    en: In adding up benefits across people, utilitarianism does not take seriously the distinction between persons; justice must attend to the position of the worst off.
+    src: [rawls1971]
+  - who:
+      tr: Singer
+      en: Singer
+    tr: Acı çekebilen her canlının çıkarı eşit ağırlıkta sayılmalıdır. Bu, hayvanlara yönelik muameleyi ve yardım yükümlülüklerini değiştirir.
+    en: The interests of every being that can suffer should count equally, which changes how animals are treated and what we owe in aid.
+    src: [sep-util-history]
+sources:
+  bentham1789:
+    type: book
+    authors: Bentham, J.
+    title: An Introduction to the Principles of Morals and Legislation
+    year: 1789
+    in: T. Payne and Son, London
+  mill1863:
+    type: book
+    authors: Mill, J. S.
+    title: Utilitarianism
+    year: 1863
+    in: Parker, Son, and Bourn, London
+  rawls1971:
+    type: book
+    authors: Rawls, J.
+    title: A Theory of Justice
+    year: 1971
+    in: Harvard University Press
+  sep-util-history:
+    type: encyclopedia
+    authors: Driver, J.
+    title: The History of Utilitarianism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/utilitarianism-history/
+related: [kant, toplum-sozlesmesi, adam-smith]

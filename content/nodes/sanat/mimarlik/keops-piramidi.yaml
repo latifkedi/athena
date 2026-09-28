@@ -1,0 +1,98 @@
+id: keops-piramidi
+parent: mimarlik
+type: event
+date: { year: -2560, approx: true }
+people: [Keops / Khufu, Merer, Pierre Tallet, Mark Lehner, Jean-Pierre Houdin]
+title:
+  tr: Büyük Piramit (Keops Piramidi)
+  en: The Great Pyramid (Pyramid of Khufu)
+summary:
+  tr: >-
+    Gize'deki Büyük Piramit, Mısır'ın 4. hanedanından Firavun Keops (Khufu) için MÖ 26. yüzyılda yapıldı. Yaklaşık 146
+    metre yüksekliğiyle yaklaşık 3.800 yıl boyunca bilinen en yüksek insan yapısı olarak kaldı. Kızıldeniz kıyısında
+    bulunan ve Merer adlı bir görevlinin tuttuğu günlük, kireç taşlarının tekneyle Gize'ye taşındığını anlatır. Taşların
+    piramidin üstüne nasıl çıkarıldığı ise kesin olarak bilinmez ve farklı rampa modelleri önerilmiştir.
+  en: >-
+    The Great Pyramid at Giza was built in the 26th century BCE for the pharaoh Khufu of Egypt's 4th Dynasty. At about 146
+    metres it remained the tallest known human structure for some 3,800 years. A logbook kept by an official named Merer,
+    found on the Red Sea coast, tells how limestone blocks were shipped by boat to Giza. How the blocks were raised onto
+    the pyramid is not known for certain, and different ramp models have been proposed.
+technical:
+  tr: >-
+    Piramit yaklaşık 2,3 milyon taş bloktan oluşur ve kenarları ana yönlere birkaç açı dakikası içinde hizalanmıştır.
+    Wadi el-Jarf'ta bulunan papirüsler, bilinen en eski yazılı papirüslerdir ve Keops'un saltanatının son yıllarına aittir.
+    Gize'de işçi köyü ve işçi mezarlıklarının bulunması, yapının ücretli ve örgütlü ekiplerce inşa edildiği görüşünü
+    destekler. Kozmik ışın müonlarıyla yapılan ölçümler, Büyük Galeri'nin üzerinde en az 30 metre uzunluğunda büyük bir
+    boşluk olduğunu gösterdi. Bu boşluğun işlevi bilinmiyor.
+  en: >-
+    The pyramid consists of about 2.3 million stone blocks, and its sides are aligned to the cardinal directions within a
+    few arcminutes. The papyri found at Wadi al-Jarf are the oldest known inscribed papyri and date to the last years of
+    Khufu's reign. The discovery at Giza of a workers' town and workers' cemeteries supports the view that the building
+    was built by paid, organised crews. Measurements with cosmic-ray muons showed a large void, at least 30 metres long,
+    above the Grand Gallery; its function is unknown.
+claims:
+  - tr: Piramit, devletin örgütlediği ve beslediği büyük işçi ekipleri tarafından, uzak taş ocaklarından su yoluyla taşınan malzemeyle inşa edildi.
+    en: The pyramid was built by large crews organised and fed by the state, with material shipped by water from distant quarries.
+    src: [tallet2017, lehner1997]
+evidence:
+  - kind: archaeological
+    stance: for
+    tr: Merer'in günlüğü, bir ekibin Tura taş ocaklarından Gize'ye Nil ve kanallar üzerinden kireç taşı taşıdığını gün gün kaydeder.
+    en: Merer's logbook records, day by day, a crew shipping limestone from the Tura quarries to Giza via the Nile and canals.
+    src: [tallet2017]
+  - kind: observation
+    stance: for
+    tr: Kozmik ışın müonlarıyla üç farklı teknikle yapılan ölçümler, piramidin içinde daha önce bilinmeyen büyük bir boşluk saptadı.
+    en: Measurements with cosmic-ray muons using three different techniques detected a previously unknown large void inside the pyramid.
+    src: [morishima2017]
+datings:
+  - view:
+      tr: Mısırbilimdeki yaygın kronoloji
+      en: Common Egyptological chronology
+    value:
+      tr: Keops'un saltanatı yaklaşık MÖ 2589–2566. Piramidin yapımı bu döneme tarihlenir.
+      en: Khufu's reign about 2589–2566 BCE; the pyramid's construction is dated to this period.
+    src: [lehner1997]
+positions:
+  - who:
+      tr: Düz ya da zikzak dış rampa modelleri
+      en: Straight or zigzag external ramp models
+    tr: Taşlar, yapı yükseldikçe uzatılan dış rampalarla yukarı çekildi.
+    en: The blocks were hauled up on external ramps extended as the structure rose.
+    src: [lehner1997]
+  - who:
+      tr: İç rampa modeli (Houdin)
+      en: Internal ramp model (Houdin)
+    tr: Alt bölümler dış rampayla, üst bölümler ise piramidin içinde sarmal biçimde yükselen bir rampayla inşa edildi.
+    en: The lower part was built with an external ramp and the upper part with a ramp spiralling up inside the pyramid.
+    src: [houdin2006]
+sources:
+  lehner1997:
+    type: book
+    authors: Lehner, M.
+    title: The Complete Pyramids
+    year: 1997
+    in: Thames & Hudson, London
+  tallet2017:
+    type: book
+    authors: Tallet, P.
+    title: 'Les papyrus de la mer Rouge I: le « journal de Merer » (Papyrus Jarf A et B)'
+    year: 2017
+    in: Institut français d'archéologie orientale, Le Caire
+  houdin2006:
+    type: book
+    authors: Houdin, J.-P.
+    title: 'Khufu: The Secrets Behind the Building of the Great Pyramid'
+    year: 2006
+    in: Farid Atiya Press, Cairo
+  morishima2017:
+    type: article
+    authors: Morishima, K. et al.
+    title: "Discovery of a big void in Khufu's Pyramid by observation of cosmic-ray muons"
+    year: 2017
+    in: Nature 552, 386–390
+    doi: 10.1038/nature24647
+open:
+  - tr: Taşlar tam olarak hangi yöntemle yukarı taşındı ve piramidin içindeki büyük boşluk neye hizmet ediyordu?
+    en: By exactly what method were the blocks raised, and what purpose did the large void inside the pyramid serve?
+related: [babil-matematigi, yazi]

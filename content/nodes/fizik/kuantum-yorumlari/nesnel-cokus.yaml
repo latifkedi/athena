@@ -1,0 +1,61 @@
+id: nesnel-cokus
+parent: kuantum-yorumlari
+type: idea
+date: { year: 1986 }
+people: [Giancarlo Ghirardi, Alberto Rimini, Tullio Weber, Lajos Diósi, Roger Penrose]
+title:
+  tr: Nesnel çöküş kuramları (GRW, Diósi–Penrose)
+  en: Objective-collapse theories (GRW, Diósi–Penrose)
+summary:
+  tr: >-
+    Bu kuramlara göre dalga fonksiyonu, gözlemciden bağımsız, fiziksel bir süreçle kendiliğinden çöker. Tek bir parçacık
+    için bu çöküş çok nadirdir, ama çok sayıda parçacıktan oluşan büyük nesnelerde neredeyse anında gerçekleşir. Böylece
+    gündelik nesnelerin neden hep tek bir yerde bulunduğu açıklanır. Diğer yorumlardan farklı olarak standart kuantum
+    mekaniğinden küçük sapmalar öngördükleri için deneyle sınanabilirler.
+  en: >-
+    According to these theories the wave function collapses spontaneously through a physical process independent of any
+    observer. For a single particle such collapse is very rare, but in large objects made of many particles it happens
+    almost instantly, which explains why everyday objects are always found in one place. Unlike other interpretations they
+    predict small deviations from standard quantum mechanics, so they can be tested by experiment.
+technical:
+  tr: >-
+    GRW modeli (1986) her parçacığa yaklaşık 10¹⁶ saniyede bir, yaklaşık 10⁻⁷ metre genişliğinde bir konum çöküşü atar.
+    Diósi ve Penrose, çöküşü kütleçekimine bağlayan modeller önerdi. Çöküş süreci, yüklü parçacıklarda kendiliğinden
+    zayıf bir ışımaya yol açmalıdır. Gran Sasso yeraltı laboratuvarında yapılan bir deney bu ışımayı bulamadı ve
+    Diósi–Penrose modelinin en basit, parametresiz sürümünü dışladı.
+  en: >-
+    The GRW model (1986) assigns each particle a position collapse about once every 10¹⁶ seconds with a width of about
+    10⁻⁷ metres. Diósi and Penrose proposed models tying collapse to gravity. The collapse process should cause charged
+    particles to emit weak spontaneous radiation. An experiment in the Gran Sasso underground laboratory did not find this
+    radiation and ruled out the simplest, parameter-free version of the Diósi–Penrose model.
+claims:
+  - tr: Dalga fonksiyonunun çöküşü, Schrödinger denklemine eklenen rastgele ve doğrusal olmayan bir terimle tarif edilen gerçek bir fiziksel süreçtir.
+    en: The collapse of the wave function is a real physical process described by a random, non-linear term added to the Schrödinger equation.
+    src: [grw1986, sep-qm-collapse]
+evidence:
+  - kind: experiment
+    stance: against
+    tr: Germanyum dedektörle yeraltında yapılan ölçümde, kütleçekime bağlı çöküşün öngördüğü kendiliğinden ışıma görülmedi. Bu, modelin en basit sürümünü dışladı.
+    en: A measurement with a germanium detector underground did not see the spontaneous radiation predicted by gravity-related collapse, ruling out the simplest version of the model.
+    src: [donadi2021]
+sources:
+  grw1986:
+    type: article
+    authors: Ghirardi, G. C.; Rimini, A.; Weber, T.
+    title: Unified dynamics for microscopic and macroscopic systems
+    year: 1986
+    in: Physical Review D 34, 470–491
+    doi: 10.1103/PhysRevD.34.470
+  donadi2021:
+    type: article
+    authors: Donadi, S. et al.
+    title: Underground test of gravity-related wave function collapse
+    year: 2021
+    in: Nature Physics 17, 74–78
+    doi: 10.1038/s41567-020-1008-4
+  sep-qm-collapse:
+    type: encyclopedia
+    authors: Ghirardi, G.; Bassi, A.
+    title: Collapse Theories
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/qm-collapse/

@@ -1,0 +1,82 @@
+id: yerli-inanclar
+parent: dinler
+type: tradition
+people: [Edward Burnett Tylor, Nurit Bird-David, Graham Harvey]
+title:
+  tr: Yerli halkların inançları ve animizm
+  en: Indigenous religions and animism
+summary:
+  tr: >-
+    Dünyanın dört bir yanındaki yerli halkların inanç ve uygulamaları çok çeşitlidir ve çoğu yazılı bir kutsal metne
+    dayanmaz. Pek çoğunda hayvanlar, bitkiler, dağlar ve nehirler kişilik ve ruh sahibi varlıklar olarak görülür. 19.
+    yüzyılda Tylor bu inançları "animizm" adıyla dinin en eski aşaması olarak tanımladı. Günümüzde bu evrimci yaklaşım
+    büyük ölçüde terk edilmiş, animizm insanla çevresi arasındaki ilişkiyi kavrayan bir bilgi biçimi olarak da
+    incelenmeye başlanmıştır.
+  en: >-
+    The beliefs and practices of Indigenous peoples around the world are very diverse, and most do not rest on a written
+    scripture. In many of them animals, plants, mountains and rivers are regarded as persons with spirit. In the 19th
+    century Tylor defined such beliefs as "animism", the earliest stage of religion. Today this evolutionary approach has
+    largely been abandoned, and animism is also studied as a way of knowing the relationship between humans and their
+    surroundings.
+technical:
+  tr: >-
+    "Yerli dinler" başlığı, Kuzey ve Güney Amerika, Afrika, Sibirya, Avustralya ve Okyanusya'daki birbirinden çok farklı
+    gelenekleri kapsar ve tek bir din anlamına gelmez. Şamanlık, ata kültü ve toprağa bağlı kutsal yerler sık görülen
+    unsurlardır. Tylor animizmi "ruhsal varlıklara inanç" olarak tanımlamıştı. Bird-David'in Hindistan'daki Nayaka
+    avcı-toplayıcıları üzerine çalışması, kişiliğin bir özden değil ilişkilerden doğduğu bir anlayışı betimler.
+  en: >-
+    The heading "Indigenous religions" covers very different traditions in North and South America, Africa, Siberia,
+    Australia and Oceania, and does not denote a single religion. Shamanism, ancestor veneration and sacred places tied
+    to land are common elements. Tylor defined animism as "belief in spiritual beings". Bird-David's work on the Nayaka
+    hunter-gatherers of India describes an understanding in which personhood arises from relationships rather than from
+    an essence.
+claims:
+  - tr: Dünya yalnızca insanlardan değil, insan olmayan kişilerden de oluşur ve bu kişilerle karşılıklı ilişkiler içinde yaşanır.
+    en: The world is made up not only of humans but also of other-than-human persons, and life is lived in reciprocal relations with them.
+    src: [harvey2005, bird-david1999]
+positions:
+  - who:
+      tr: Tylor (19. yüzyıl evrimci antropoloji)
+      en: Tylor (19th-century evolutionist anthropology)
+    tr: Animizm, rüya ve ölüm deneyimlerinden ruh fikrini çıkaran "ilkel" insanın dinidir ve dinin evriminde ilk basamaktır.
+    en: Animism is the religion of "primitive" humans who derived the idea of the soul from dreams and death, and it is the first stage in the evolution of religion.
+    src: [tylor1871]
+  - who:
+      tr: Yeni animizm yaklaşımı
+      en: The new animism approach
+    tr: Animizm yanlış bir inanç değil, kişiliği ilişkiler içinde tanımlayan bir bilgi biçimidir (ilişkisel epistemoloji).
+    en: Animism is not a mistaken belief but a way of knowing that defines personhood through relationships (relational epistemology).
+    src: [bird-david1999, harvey2005]
+  - who:
+      tr: Birleşmiş Milletler
+      en: United Nations
+    tr: Yerli halkların manevi ve dinî geleneklerini sürdürme, kutsal yerlerini koruma ve onlara erişme hakkı vardır (2007 Bildirgesi, 12. madde).
+    en: Indigenous peoples have the right to maintain their spiritual and religious traditions and to protect and access their sacred sites (2007 Declaration, Article 12).
+    src: [undrip2007]
+sources:
+  tylor1871:
+    type: book
+    authors: Tylor, E. B.
+    title: Primitive Culture
+    year: 1871
+    in: John Murray, London
+  bird-david1999:
+    type: article
+    authors: Bird-David, N.
+    title: '"Animism" revisited: personhood, environment, and relational epistemology'
+    year: 1999
+    in: Current Anthropology 40(S1), S67–S91
+    doi: 10.1086/200061
+  harvey2005:
+    type: book
+    authors: Harvey, G.
+    title: 'Animism: Respecting the Living World'
+    year: 2005
+    in: Hurst, London
+  undrip2007:
+    type: report
+    authors: United Nations General Assembly
+    title: United Nations Declaration on the Rights of Indigenous Peoples (A/RES/61/295)
+    year: 2007
+    url: https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html
+related: [turk-mitolojisi, yaratilis-anlatilari]

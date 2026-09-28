@@ -1,0 +1,55 @@
+id: yuksek-duzey-kuramlar
+parent: bilinc
+type: idea
+date: { year: 2005 }
+people: [David Rosenthal, Hakwan Lau, Joseph LeDoux, Richard Brown]
+title:
+  tr: Yüksek düzey bilinç kuramları
+  en: Higher-order theories of consciousness
+summary:
+  tr: >-
+    Yüksek düzey kuramlara göre bir zihinsel durumun bilinçli olması için, zihnin o durumu kendisi hakkında temsil etmesi
+    gerekir. Örneğin kırmızı bir elmayı görmek, ancak "kırmızı gördüğümü" kaydeden daha üst düzey bir temsil eşlik
+    ettiğinde bilinçli olur. Bu görüş felsefede David Rosenthal tarafından geliştirildi. Sinirbilimde ise ön beyin
+    bölgelerinin bu üst düzey temsilde rol oynadığı ileri sürülür.
+  en: >-
+    According to higher-order theories, a mental state is conscious only when the mind represents that state to itself.
+    Seeing a red apple, for example, becomes conscious only when accompanied by a higher-order representation registering
+    "I am seeing red". The view was developed in philosophy by David Rosenthal; in neuroscience it is proposed that
+    prefrontal regions play a role in this higher-order representation.
+technical:
+  tr: >-
+    Yüksek düzey düşünce kuramı (HOT) üst düzey temsili bir düşünce olarak görür. Yüksek düzey algı kuramları ise bir tür
+    iç algı olarak ele alır. Sinirbilimsel sürümler, bilinçli ve bilinçsiz algıda duyusal bölgelerdeki etkinliğin benzer,
+    ama ön beyin etkinliğinin ve güven raporlarının farklı olduğu bulgularına dayanır. Kör görüş (blindsight) gibi
+    olgular, bilinçsiz ama işlevsel görmenin örnekleri olarak sıkça tartışılır.
+  en: >-
+    The higher-order thought theory (HOT) takes the higher-order representation to be a thought, while higher-order
+    perception theories treat it as a kind of inner perception. Neuroscientific versions rest on findings that sensory
+    activity can be similar in conscious and unconscious perception while prefrontal activity and confidence reports
+    differ. Phenomena such as blindsight are often discussed as examples of unconscious yet functional vision.
+claims:
+  - tr: Bir zihinsel durum, ancak kişinin o durumda olduğuna dair uygun bir üst düzey temsil ona eşlik ettiğinde bilinçlidir.
+    en: A mental state is conscious only when accompanied by a suitable higher-order representation that one is in that state.
+    src: [rosenthal2005, brown2019]
+positions:
+  - who:
+      tr: Birinci düzey kuramlar
+      en: First-order theories
+    tr: Bilinçli deneyim için duyusal bölgelerdeki uygun biçimde işlenmiş temsiller yeterlidir. Üst düzey temsil, deneyimin kendisi değil onun hakkında rapor vermeyi sağlar.
+    en: Suitably processed representations in sensory areas are enough for conscious experience; higher-order representation enables reporting about experience, not experience itself.
+    src: [brown2019]
+sources:
+  rosenthal2005:
+    type: book
+    authors: Rosenthal, D. M.
+    title: Consciousness and Mind
+    year: 2005
+    in: Oxford University Press
+  brown2019:
+    type: article
+    authors: Brown, R.; Lau, H.; LeDoux, J. E.
+    title: Understanding the higher-order approach to consciousness
+    year: 2019
+    in: Trends in Cognitive Sciences 23(9), 754–768
+    doi: 10.1016/j.tics.2019.06.009

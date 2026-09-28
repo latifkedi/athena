@@ -47,3 +47,9 @@ sources:
     year: 1789
     in: Cuchet, Paris
 related: [flojiston, dalton]
+links:
+  - to: flojiston
+    rel: replaces
+    note:
+      tr: 'Yanmanın oksijenle birleşme olarak açıklanması flojiston kavramının yerini aldı.'
+      en: 'Explaining combustion as combination with oxygen took the place of the phlogiston concept.'

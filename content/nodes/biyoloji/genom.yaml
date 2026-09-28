@@ -57,3 +57,5 @@ sources:
     in: Nature 617, 312–324
     doi: 10.1038/s41586-023-05896-x
 related: [dna]
+links:
+  - { to: dna, rel: builds-on }

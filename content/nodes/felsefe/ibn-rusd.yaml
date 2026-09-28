@@ -56,4 +56,9 @@ positions:
     src: [tdv-tehafutu-tehafut]
 related: [gazali-tehafut]
 links:
+  - to: aristoteles
+    rel: builds-on
+    note:
+      tr: 'Aristoteles eserlerine yazdığı şerhler'
+      en: 'His commentaries on the works of Aristotle'
   - { to: gazali-tehafut, rel: opposes }

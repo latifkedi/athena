@@ -15,7 +15,7 @@ canopy:
     fields: [tip, biyoloji, yer-bilimleri]
   - id: madde
     title: { tr: Madde ve enerji, en: Matter and energy }
-    fields: [kimya, enerji, fizik]
+    fields: [kimya, enerji, teknoloji, fizik]
   - id: evren
     title: { tr: Evren, en: Cosmos }
     fields: [astronomi, uzay-kesfi]

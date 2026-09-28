@@ -1,0 +1,79 @@
+id: zerdustluk
+parent: dinler
+type: tradition
+people: [Zerdüşt / Zarathustra (Zoroaster)]
+title:
+  tr: Zerdüştlük ve Avesta
+  en: Zoroastrianism and the Avesta
+summary:
+  tr: >-
+    Zerdüştlük, İran'da Zerdüşt (Zarathustra) peygambere dayandırılan bir dindir. Ahura Mazda'yı yüce ve bilge Tanrı
+    olarak kabul eder. Evrendeki iyilik ile kötülük arasındaki mücadelede insanın iyi düşünce, iyi söz ve iyi eylemle
+    tarafını seçtiğini öğretir. Kutsal metni Avesta'dır. Zerdüşt'ün hangi yüzyılda yaşadığı konusunda araştırmacılar
+    arasında birkaç yüz yıllık farklar vardır. Bugün başlıca İran'daki Zerdüştîler ve Hindistan'daki Parsîler tarafından
+    yaşatılır.
+  en: >-
+    Zoroastrianism is a religion traced to the prophet Zarathustra in Iran. It recognises Ahura Mazda as the supreme, wise
+    God. It teaches that in the struggle between good and evil in the world humans choose their side through good
+    thoughts, good words and good deeds. Its scripture is the Avesta. Scholars differ by several centuries on when
+    Zarathustra lived. Today it is kept alive mainly by Zoroastrians in Iran and Parsis in India.
+technical:
+  tr: >-
+    Avesta'nın en eski katmanı, Zerdüşt'e atfedilen Gâthâ ilahileridir. Gâthâ dilinin (Eski Avestaca) Rigveda
+    Sanskritçesine çok yakın olması, erken bir tarihlendirmenin başlıca dayanağıdır. Metinler yüzyıllarca sözlü olarak
+    aktarıldı. Bugünkü yazılı Avesta Sâsânîler döneminde (MS 3.–7. yüzyıl) oluşturulan bir alfabeyle kaydedildi.
+    Zerdüştlük ile Yahudilik, Hristiyanlık ve İslam'daki ahiret, yargı ve melek kavramları arasındaki etkileşimin boyutu
+    tartışmalıdır.
+  en: >-
+    The oldest layer of the Avesta is the Gāthās, hymns attributed to Zarathustra. The closeness of the Gathic language
+    (Old Avestan) to Rigvedic Sanskrit is the main basis for an early dating. The texts were passed on orally for
+    centuries; today's written Avesta was recorded in an alphabet created in the Sasanian period (3rd–7th centuries CE).
+    How far Zoroastrianism and the ideas of afterlife, judgement and angels in Judaism, Christianity and Islam
+    influenced one another is debated.
+claims:
+  - tr: Ahura Mazda yüce Tanrı'dır. Dünya, iyi (aşa, doğruluk) ile kötü (druj, yalan) arasındaki bir mücadele alanıdır ve insan özgür seçimiyle bu mücadelede yer alır.
+    en: Ahura Mazda is the supreme God; the world is the field of a struggle between good (asha, truth) and evil (druj, the lie), in which humans take part by free choice.
+    src: [boyce1979, iranica-zoroastrianism]
+datings:
+  - view:
+      tr: Dilbilimsel karşılaştırmaya dayanan erken tarihleme
+      en: Early dating based on linguistic comparison
+    value:
+      tr: Yaklaşık MÖ 1500–1000. Gâthâ dili Rigveda'nın diline çok yakındır.
+      en: Roughly 1500–1000 BCE; the language of the Gāthās is very close to that of the Rigveda.
+    src: [boyce1979, iranica-zoroaster]
+  - view:
+      tr: Geleneksel Zerdüştî kronoloji ("İskender'den 258 yıl önce")
+      en: Traditional Zoroastrian chronology ("258 years before Alexander")
+    value:
+      tr: MÖ 6. yüzyıl
+      en: 6th century BCE
+    src: [iranica-zoroaster]
+  - view:
+      tr: Araştırmacılar arasında önerilen aralık
+      en: Range proposed by scholars
+    value:
+      tr: MÖ 1750 dolayından MÖ 6. yüzyıla kadar. Pek çok araştırmacı MÖ 1000 civarını, bir yüzyıl kadar sapmayla öne çıkarır.
+      en: From about 1750 BCE to the 6th century BCE; many scholars favour about 1000 BCE, give or take a century.
+    src: [iranica-zoroaster]
+sources:
+  boyce1979:
+    type: book
+    authors: Boyce, M.
+    title: 'Zoroastrians: Their Religious Beliefs and Practices'
+    year: 1979
+    in: Routledge & Kegan Paul, London
+  iranica-zoroaster:
+    type: encyclopedia
+    title: 'Zoroaster ii. General survey'
+    in: Encyclopaedia Iranica
+    url: https://www.iranicaonline.org/articles/zoroaster-ii-general-survey/
+  iranica-zoroastrianism:
+    type: encyclopedia
+    title: 'Zoroastrianism i. Historical review up to the Arab conquest'
+    in: Encyclopaedia Iranica
+    url: https://www.iranicaonline.org/articles/zoroastrianism-i-historical-review/
+open:
+  - tr: Zerdüşt tam olarak ne zaman ve nerede yaşadı?
+    en: When and where exactly did Zarathustra live?
+related: [yahudilik, hinduizm, yaratilis-anlatilari]

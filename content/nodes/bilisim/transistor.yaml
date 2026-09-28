@@ -55,3 +55,5 @@ sources:
     title: Cramming more components onto integrated circuits
     year: 1965
     in: Electronics 38(8), 114–117
+links:
+  - { to: kuantum-mekanigi, rel: builds-on }

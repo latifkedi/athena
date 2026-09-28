@@ -1,0 +1,67 @@
+id: imam-rabbani
+parent: tasavvuf
+type: tradition
+date: { year: 1624 }
+people: [İmâm-ı Rabbânî / Aḥmad Sirhindī, Şah Veliyyullah Dehlevî / Shāh Walī Allāh]
+title:
+  tr: İmâm-ı Rabbânî ve vahdet-i şühûd
+  en: Aḥmad Sirhindī and the unity of witnessing
+summary:
+  tr: >-
+    Hindistan'da yaşayan Ahmed Sirhindî (1564–1624), "İmâm-ı Rabbânî" ve "müceddid-i elf-i sânî" (ikinci bin yılın
+    yenileyicisi) unvanlarıyla anılır. Nakşibendîliğin Müceddidiyye kolunu kurdu. İbn Arabî'ye nispet edilen vahdet-i
+    vücûd (varlığın birliği) anlayışına karşı vahdet-i şühûd (görünüşün birliği) görüşünü geliştirdi. Mektûbât adlı
+    mektupları Osmanlı dünyasında da geniş bir etki yarattı.
+  en: >-
+    Aḥmad Sirhindī (1564–1624), who lived in India, is known by the titles "Imām-i Rabbānī" and "renewer of the second
+    millennium". He founded the Mujaddidī branch of the Naqshbandiyya. Against the unity of being (waḥdat al-wujūd)
+    attributed to Ibn ʿArabī he developed the view of the unity of witnessing (waḥdat al-shuhūd). His letters, the
+    Maktūbāt, had wide influence in the Ottoman world as well.
+technical:
+  tr: >-
+    İmâm-ı Rabbânî'ye göre sufinin yaşadığı birlik tecrübesi, varlığın gerçekten tek olduğunu değil, salikin
+    gözünde Allah'tan başkasının görünmez olduğunu gösterir. Varlık düzeyinde Yaratıcı ile yaratılmış arasındaki ayrım
+    sürer. Bu nedenle vahdet-i vücûd daha ileri bir makamda aşılması gereken bir aşamadır. Şeriata bağlılığı ve Babür
+    sarayındaki dinî politikalara yönelik eleştirileri de öğretisinin parçasıydı.
+  en: >-
+    For Sirhindī, the Sufi's experience of oneness shows not that being is really one but that nothing but God is seen in
+    the wayfarer's eyes; at the level of being the distinction between Creator and created remains. The unity of being is
+    therefore a stage to be surpassed at a higher station. Adherence to the sharia and criticism of the religious
+    policies of the Mughal court were also part of his teaching.
+claims:
+  - tr: Sufinin yaşadığı birlik bir görüş (şühûd) birliğidir. Varlıkta Yaratıcı ile yaratılmışlar arasındaki ayrım ortadan kalkmaz.
+    en: The unity the Sufi experiences is a unity of witnessing; in being, the distinction between the Creator and creatures does not disappear.
+    src: [tdv-imam-rabbani, friedmann1971]
+positions:
+  - who:
+      tr: Vahdet-i vücûd savunucuları
+      en: Proponents of the unity of being
+    tr: Gerçek varlık yalnızca Allah'a aittir. Âlem O'nun isim ve sıfatlarının tecellisidir ve birlik tecrübesi bu gerçeği yansıtır.
+    en: True being belongs to God alone; the world is the manifestation of His names and attributes, and the experience of unity reflects this reality.
+    src: [tdv-imam-rabbani]
+  - who:
+      tr: Şah Veliyyullah Dehlevî
+      en: Shāh Walī Allāh of Delhi
+    tr: Vahdet-i vücûd ile vahdet-i şühûd arasındaki fark büyük ölçüde ifade farkıdır. İki görüş uzlaştırılabilir.
+    en: The difference between the unity of being and the unity of witnessing is largely one of expression; the two views can be reconciled.
+    src: [friedmann1971]
+sources:
+  tdv-imam-rabbani:
+    type: encyclopedia
+    title: İmâm-ı Rabbânî
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/imam-i-rabbani
+  friedmann1971:
+    type: book
+    authors: Friedmann, Y.
+    title: 'Shaykh Aḥmad Sirhindī: An Outline of His Thought and a Study of His Image in the Eyes of Posterity'
+    year: 1971
+    in: McGill-Queen's University Press, Montreal
+links:
+  - to: ibn-arabi
+    rel: opposes
+    note:
+      tr: Vahdet-i vücûd anlayışına vahdet-i şühûd görüşüyle yöneltilen eleştiri
+      en: Criticism of the unity of being through the view of the unity of witnessing
+    src: [tdv-imam-rabbani]
+related: [ibn-arabi]

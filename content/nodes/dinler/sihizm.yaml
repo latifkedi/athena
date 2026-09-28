@@ -1,0 +1,66 @@
+id: sihizm
+parent: dinler
+type: tradition
+date: { year: 1604 }
+people: [Guru Nanak, Guru Arjan, Guru Gobind Singh]
+title:
+  tr: Sihizm ve Guru Granth Sahib
+  en: Sikhism and the Guru Granth Sahib
+summary:
+  tr: >-
+    Sihizm, 15. yüzyılın sonunda Pencap'ta Guru Nanak'ın (1469–1539) öğretisiyle ortaya çıktı. Tek ve biçimsiz bir
+    Tanrı'ya inanır. Tanrı'yı anmayı, dürüst emeği ve paylaşmayı temel alır, kast ayrımını reddeder. Kutsal metni Guru
+    Granth Sahib'in ilk derlemesi (Âdi Granth) 1604'te Guru Arjan tarafından yapıldı. Onuncu guru Gobind Singh'ten sonra
+    bu metin cemaatin kalıcı gurusu kabul edildi.
+  en: >-
+    Sikhism emerged in the Punjab in the late 15th century with the teaching of Guru Nanak (1469–1539). It believes in
+    one formless God. It rests on remembering God, honest work and sharing, and rejects caste distinctions. The first
+    compilation of its scripture, the Guru Granth Sahib (Adi Granth), was made by Guru Arjan in 1604. After the tenth
+    guru, Gobind Singh, the text came to be regarded as the community's eternal guru.
+technical:
+  tr: >-
+    Âdi Granth, Sih gurularının yanı sıra Kabir ve Ravidas gibi farklı kökenlerden bhakti şairlerinin ve Şeyh Ferid gibi
+    bir sufinin şiirlerini de içerir. Metin Gurmukhi yazısıyla kaydedilmiştir ve müzikal ragalara göre düzenlenmiştir.
+    Guru Gobind Singh 1699'da Khalsa topluluğunu kurdu ve 1708'de ölümünden önce guruluğun metne ve topluluğa
+    geçtiğini bildirdi. Sih kimliğinin sınırları 19. yüzyılın sonundaki Singh Sabha hareketiyle yeniden tanımlandı.
+  en: >-
+    The Adi Granth contains, besides the Sikh gurus, the verses of bhakti poets of various backgrounds such as Kabir and
+    Ravidas and of a Sufi, Shaikh Farid. The text is written in the Gurmukhi script and arranged by musical ragas. Guru
+    Gobind Singh founded the Khalsa in 1699 and, before his death in 1708, declared that guruship passed to the text and
+    the community. The boundaries of Sikh identity were redefined by the Singh Sabha movement of the late 19th century.
+claims:
+  - tr: Tanrı tektir, biçimsizdir ve her şeyde mevcuttur. Kurtuluş, Tanrı'nın adını anarak ve toplumsal eşitlik içinde yaşayarak aranır.
+    en: God is one, formless and present in everything; liberation is sought by remembering God's name and living in social equality.
+    src: [mandair2013, britannica-sikhism]
+positions:
+  - who:
+      tr: Sih geleneği
+      en: Sikh tradition
+    tr: Sihizm, Guru Nanak'a gelen özgün bir vahye dayanan bağımsız bir dindir.
+    en: Sikhism is an independent religion founded on an original revelation to Guru Nanak.
+    src: [mandair2013]
+  - who:
+      tr: Eski bir akademik yorum
+      en: An older academic interpretation
+    tr: Sihizm, Hindu bhakti hareketi ile tasavvufun bir sentezidir. Güncel araştırmacıların çoğu bu yorumu, geleneğin kendine özgülüğünü görmezden geldiği için eleştirir.
+    en: Sikhism is a synthesis of the Hindu bhakti movement and Sufism; most current scholars criticise this reading for ignoring the tradition's distinctiveness.
+    src: [mandair2013, grewal1990]
+sources:
+  mandair2013:
+    type: book
+    authors: Mandair, A.-P. S.
+    title: 'Sikhism: A Guide for the Perplexed'
+    year: 2013
+    in: Bloomsbury, London
+  grewal1990:
+    type: book
+    authors: Grewal, J. S.
+    title: The Sikhs of the Punjab
+    year: 1990
+    in: Cambridge University Press (The New Cambridge History of India II.3)
+  britannica-sikhism:
+    type: encyclopedia
+    title: Sikhism
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Sikhism
+related: [hinduizm, islam]

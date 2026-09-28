@@ -57,3 +57,5 @@ sources:
     in: London (Part IX)
     url: https://www.gutenberg.org/ebooks/4583
 related: [ibn-sina-kanun, gazali-tehafut]
+links:
+  - { to: aristoteles, rel: influenced-by }

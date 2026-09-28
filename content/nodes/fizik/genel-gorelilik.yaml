@@ -76,3 +76,5 @@ sources:
     in: Astronomy & Astrophysics 529, A70
     doi: 10.1051/0004-6361/201016370
 related: [newton-principia, kara-delik, buyuk-patlama]
+links:
+  - { to: ozel-gorelilik, rel: builds-on }

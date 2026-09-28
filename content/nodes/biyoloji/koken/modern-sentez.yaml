@@ -63,4 +63,5 @@ sources:
     in: MIT Press, Cambridge MA
 related: [mendel]
 links:
+  - { to: mendel, rel: builds-on }
   - { to: darwin-wallace, rel: builds-on }

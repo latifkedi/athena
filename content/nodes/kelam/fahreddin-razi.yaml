@@ -1,0 +1,72 @@
+id: fahreddin-razi
+parent: kelam
+type: tradition
+date: { year: 1210 }
+people: [Fahreddin er-Râzî / Fakhr al-Dīn al-Rāzī, Nasîrüddin et-Tûsî / Naṣīr al-Dīn al-Ṭūsī]
+title:
+  tr: Fahreddin er-Râzî ve kelamın felsefeyle buluşması
+  en: Fakhr al-Dīn al-Rāzī and the meeting of kalām and philosophy
+summary:
+  tr: >-
+    Fahreddin er-Râzî (1149–1210), Eş'arî kelamını İbn Sina felsefesinin kavramları ve yöntemleriyle yeniden ele alan
+    bir düşünürdür. Kelam, felsefe, tefsir, fıkıh usulü, tıp ve astronomi alanlarında eser verdi. Büyük tefsiri
+    Mefâtîhu'l-gayb, ayetleri geniş kelami ve felsefi tartışmalarla açıklar. İbn Sina'nın İşârât'ına yazdığı eleştirel
+    şerh, Tûsî'nin savunmasıyla birlikte yüzyıllarca okunan bir tartışma başlattı.
+  en: >-
+    Fakhr al-Dīn al-Rāzī (1149–1210) re-examined Ashʿarī kalām with the concepts and methods of Avicenna's philosophy. He
+    wrote on kalām, philosophy, Qur'an commentary, legal theory, medicine and astronomy. His great commentary,
+    Mafātīḥ al-ghayb, explains the verses through extensive theological and philosophical discussion. His critical
+    commentary on Avicenna's Ishārāt, together with Ṭūsī's defence, started a debate that was read for centuries.
+technical:
+  tr: >-
+    Râzî, klasik sonrası dönemde kelam ile felsefenin iç içe geçtiği yeni bir yazım biçiminin öncüsü sayılır. Meşşâî
+    görüşleri çoğu zaman önce güçlü biçimde kurup sonra itirazlarını sıralar. Bu yöntem, eleştirmenlerince "şüpheleri
+    güçlü, cevapları zayıf" diye nitelendi. Ahlakta fiillerin iyiliğini sonuçlarına göre değerlendiren bir yaklaşım
+    geliştirdiği ileri sürülmüştür. Sonraki medrese geleneği onun eserleri üzerinden şekillendi.
+  en: >-
+    Rāzī is seen as a pioneer of a new, post-classical style of writing in which kalām and philosophy are interwoven. He
+    often first builds the Peripatetic positions forcefully and then lists his objections, a method his critics described
+    as "strong in doubts, weak in answers". It has been argued that in ethics he developed an approach assessing the
+    goodness of acts by their consequences. The later madrasa tradition was shaped through his works.
+claims:
+  - tr: Felsefenin kavram ve yöntemleri kelamda kullanılabilir, ama filozofların Allah'ın ilmi ve âlemin ezelîliği gibi konulardaki sonuçları kesin delile dayanmaz.
+    en: The concepts and methods of philosophy can be used in kalām, but the philosophers' conclusions on matters such as God's knowledge and the eternity of the world rest on no conclusive proof.
+    src: [tdv-razi, griffel2021]
+positions:
+  - who:
+      tr: Nasîrüddin et-Tûsî
+      en: Naṣīr al-Dīn al-Ṭūsī
+    tr: Râzî'nin İşârât şerhi bir şerh değil, bir "cerh"tir (yaralama). İbn Sina'nın görüşleri doğru anlaşıldığında Râzî'nin itirazları geçerli değildir.
+    en: Rāzī's commentary on the Ishārāt is not a commentary (sharḥ) but a "wounding" (jarḥ); correctly understood, Avicenna's views withstand Rāzī's objections.
+    src: [tdv-razi]
+  - who:
+      tr: Modern araştırmacılar (Shihadeh, Griffel)
+      en: Modern scholars (Shihadeh, Griffel)
+    tr: Râzî, kelam ile felsefeyi birleştirerek İslam düşüncesinde "klasik sonrası felsefe" dönemini başlatan kilit isimdir.
+    en: By combining kalām and philosophy, Rāzī is the key figure who opened the period of "post-classical philosophy" in Islamic thought.
+    src: [shihadeh2006, griffel2021]
+sources:
+  tdv-razi:
+    type: encyclopedia
+    title: Fahreddin er-Râzî
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/fahreddin-er-razi
+  shihadeh2006:
+    type: book
+    authors: Shihadeh, A.
+    title: The Teleological Ethics of Fakhr al-Dīn al-Rāzī
+    year: 2006
+    in: Brill, Leiden
+  griffel2021:
+    type: book
+    authors: Griffel, F.
+    title: The Formation of Post-Classical Philosophy in Islam
+    year: 2021
+    in: Oxford University Press
+related: [esarilik, ibn-sina, gazali-tehafut]
+links:
+  - to: ibn-sina
+    rel: opposes
+    note:
+      tr: 'İşârât şerhindeki eleştiriler'
+      en: 'The criticisms in his commentary on the Ishārāt'

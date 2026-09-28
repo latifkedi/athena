@@ -69,3 +69,5 @@ sources:
     in: Proceedings of FAccT 2021, 610–623
     doi: 10.1145/3442188.3445922
 related: [yapay-zeka-imo]
+links:
+  - { to: derin-ogrenme, rel: builds-on }

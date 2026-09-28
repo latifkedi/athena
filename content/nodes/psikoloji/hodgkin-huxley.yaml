@@ -1,0 +1,64 @@
+id: hodgkin-huxley
+parent: psikoloji
+type: event
+date: { year: 1952 }
+people: [Alan Hodgkin, Andrew Huxley, Erwin Neher, Bert Sakmann]
+title:
+  tr: Sinir sinyalinin elektriksel modeli (Hodgkin–Huxley)
+  en: The electrical model of the nerve impulse (Hodgkin–Huxley)
+summary:
+  tr: >-
+    Hodgkin ve Huxley, kalamarın dev aksonunda yaptıkları ölçümlerle sinir sinyalinin (aksiyon potansiyeli) sodyum ve
+    potasyum iyonlarının zar boyunca hareketiyle oluştuğunu gösterdi. 1952'de yayımladıkları matematiksel model sinyalin
+    biçimini ve hızını doğru biçimde öngördü. Model, bugün de sinirbilimin temel araçlarından biridir. 1963 Nobel Tıp
+    Ödülü'nü aldılar. Öngördükleri iyon kanalları 1976'da tek tek ölçüldü.
+  en: >-
+    Measuring on the giant axon of the squid, Hodgkin and Huxley showed that the nerve impulse (action potential) arises
+    from the movement of sodium and potassium ions across the membrane. The mathematical model they published in 1952
+    correctly predicted the shape and speed of the signal and remains one of the basic tools of neuroscience. They
+    received the 1963 Nobel Prize in Physiology or Medicine. The ion channels they inferred were measured one by one in
+    1976.
+technical:
+  tr: >-
+    Model, zarı bir kondansatör, iyon iletkenliklerini ise gerilime ve zamana bağlı değişkenler (m, h, n kapıları) olarak
+    tanımlayan dört diferansiyel denklemden oluşur. Gerilim kenetleme (voltage clamp) tekniğiyle ölçülen akımlar bu
+    denklemlere uyduruldu. Neher ve Sakmann'ın yama kenetleme (patch clamp) yöntemi, tek bir iyon kanalından geçen
+    pikoamper düzeyindeki akımları kaydetmeyi sağladı ve 1991 Nobel Ödülü'nü aldı.
+  en: >-
+    The model consists of four differential equations describing the membrane as a capacitor and the ionic conductances as
+    voltage- and time-dependent variables (the m, h and n gates). Currents measured with the voltage-clamp technique were
+    fitted to these equations. Neher and Sakmann's patch-clamp method made it possible to record picoampere currents
+    through a single ion channel and received the 1991 Nobel Prize.
+claims:
+  - tr: Aksiyon potansiyeli, zarın sodyum ve potasyum geçirgenliğindeki gerilime bağlı ve zamanla değişen artışlardan doğar.
+    en: The action potential arises from voltage-dependent, time-varying increases in the membrane's permeability to sodium and potassium.
+    src: [hh1952]
+evidence:
+  - kind: computation
+    stance: for
+    tr: Denklemlerin sayısal çözümü, ölçülen aksiyon potansiyelinin biçimini ve iletim hızını yakın bir doğrulukla verdi.
+    en: The numerical solution of the equations reproduced the shape and conduction speed of the measured action potential closely.
+    src: [hh1952]
+  - kind: measurement
+    stance: for
+    tr: Yama kenetleme yöntemiyle kas zarındaki tek tek iyon kanallarından geçen akımlar ölçüldü. Bu, modelin varsaydığı kanalların fiziksel olarak var olduğunu gösterdi.
+    en: The patch-clamp method measured currents through individual ion channels in muscle membrane, showing that the channels assumed by the model physically exist.
+    src: [neher1976]
+sources:
+  hh1952:
+    type: article
+    authors: Hodgkin, A. L.; Huxley, A. F.
+    title: A quantitative description of membrane current and its application to conduction and excitation in nerve
+    year: 1952
+    in: The Journal of Physiology 117(4), 500–544
+    doi: 10.1113/jphysiol.1952.sp004764
+  neher1976:
+    type: article
+    authors: Neher, E.; Sakmann, B.
+    title: Single-channel currents recorded from membrane of denervated frog muscle fibres
+    year: 1976
+    in: Nature 260, 799–802
+    doi: 10.1038/260799a0
+links:
+  - { to: noron-doktrini, rel: builds-on }
+related: [induksiyon]

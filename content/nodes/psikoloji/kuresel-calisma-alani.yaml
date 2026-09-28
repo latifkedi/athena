@@ -1,0 +1,66 @@
+id: kuresel-calisma-alani
+parent: bilinc
+type: idea
+date: { year: 1988 }
+people: [Bernard Baars, Stanislas Dehaene, Lionel Naccache, Jean-Pierre Changeux]
+title:
+  tr: Küresel (nöronal) çalışma alanı kuramı
+  en: Global (neuronal) workspace theory
+summary:
+  tr: >-
+    Bu kurama göre beyinde birçok uzmanlaşmış süreç aynı anda ve bilinç dışında çalışır. Bir bilgi, beynin geniş
+    bölgelerine birden yayınlandığında, yani ortak bir "çalışma alanına" girdiğinde bilinçli hâle gelir. Baars kuramı
+    1988'de bir tiyatro benzetmesiyle önerdi. Dehaene ve çalışma arkadaşları bunu, özellikle ön beyin ile paryetal
+    bölgeleri birbirine bağlayan uzun menzilli nöronlara dayanan bir modele dönüştürdü.
+  en: >-
+    According to this theory many specialised processes run in the brain at the same time and outside awareness.
+    Information becomes conscious when it is broadcast to wide areas of the brain at once, that is, when it enters a
+    shared "workspace". Baars proposed the theory in 1988 using a theatre metaphor. Dehaene and colleagues turned it into
+    a model based on long-range neurons linking frontal and parietal regions in particular.
+technical:
+  tr: >-
+    Küresel nöronal çalışma alanı modeli, bilinçli algıyı ani ve doğrusal olmayan bir "ateşlenme" (ignition) olayıyla
+    ilişkilendirir. Eşik altı uyaranlar yalnızca duyusal bölgelerde yerel etkinlik yaratır. Eşik üstü uyaranlar ise P3b
+    dalgası ve ön-paryetal etkinlikle birlikte geniş bir ağı harekete geçirir. Kurama göre bilinç, bilginin raporlama,
+    hafıza ve karar gibi pek çok süreç için erişilebilir olmasıdır.
+  en: >-
+    The global neuronal workspace model links conscious perception to a sudden, non-linear "ignition" event. Subliminal
+    stimuli create only local activity in sensory areas, while supraliminal stimuli activate a wide network together with
+    the P3b wave and fronto-parietal activity. On this theory, consciousness is information being available to many
+    processes such as report, memory and decision.
+claims:
+  - tr: Bir bilgi, geniş bir beyin ağına yayınlanıp pek çok süreç tarafından kullanılabilir hâle geldiğinde bilinçli olur.
+    en: Information becomes conscious when it is broadcast to a wide brain network and becomes usable by many processes.
+    src: [baars1988, dehaene2001]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Görünür ve maskelenmiş (bilinç dışı kalan) sözcüklerle yapılan deneylerde, yalnızca görülen uyaranların ön-paryetal bölgelerde yaygın ve ani bir etkinlik artışı yarattığı bulundu.
+    en: In experiments with visible and masked (unconscious) words, only the seen stimuli produced a widespread, sudden rise in activity in fronto-parietal regions.
+    src: [dehaene2001]
+  - kind: experiment
+    stance: against
+    tr: Önceden kaydedilmiş bir karşılaştırmalı deneyde, kuramın öngördüğü uyaran sonunda ön beyinde tekrar ateşlenme gözlenmedi ve ön beyinde bilinçli içeriğin bazı boyutları sınırlı biçimde temsil edildi.
+    en: In a preregistered adversarial experiment, the frontal re-ignition at stimulus offset predicted by the theory was not observed, and some dimensions of conscious content were only weakly represented in frontal cortex.
+    src: [cogitate2025]
+sources:
+  baars1988:
+    type: book
+    authors: Baars, B. J.
+    title: A Cognitive Theory of Consciousness
+    year: 1988
+    in: Cambridge University Press
+  dehaene2001:
+    type: article
+    authors: Dehaene, S.; Naccache, L.
+    title: 'Towards a cognitive neuroscience of consciousness: basic evidence and a workspace framework'
+    year: 2001
+    in: Cognition 79(1–2), 1–37
+    doi: 10.1016/S0010-0277(00)00123-2
+  cogitate2025:
+    type: article
+    authors: Cogitate Consortium et al.
+    title: Adversarial testing of global neuronal workspace and integrated information theories of consciousness
+    year: 2025
+    in: Nature 642, 133–142
+    doi: 10.1038/s41586-025-08888-1

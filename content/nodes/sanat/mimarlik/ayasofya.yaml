@@ -1,0 +1,67 @@
+id: ayasofya
+parent: mimarlik
+type: event
+date: { year: 537, month: 12 }
+people: [Trallesli Anthemios / Anthemius of Tralles, Miletoslu İsidoros / Isidore of Miletus, I. Iustinianus / Justinian I]
+title:
+  tr: Ayasofya
+  en: Hagia Sophia
+summary:
+  tr: >-
+    Ayasofya, Bizans İmparatoru I. Iustinianus'un emriyle Trallesli Anthemios ve Miletoslu İsidoros tarafından tasarlandı
+    ve 537'de açıldı. Yaklaşık 31 metre çapındaki kubbesi, dört pandantif üzerine oturtulup yarım kubbelerle
+    desteklenerek geniş bir iç mekânın üzerine yerleştirildi. İlk kubbe 558'deki depremden sonra çöktü ve 562'de daha
+    yüksek biçimde yeniden yapıldı. Yapı 1453'te camiye, 1934'te müzeye, 2020'de yeniden camiye dönüştürüldü.
+  en: >-
+    Hagia Sophia was designed by Anthemius of Tralles and Isidore of Miletus on the orders of the Byzantine emperor
+    Justinian I and opened in 537. Its dome, about 31 metres across, was set on four pendentives and buttressed by
+    semi-domes over a vast interior. The first dome collapsed after an earthquake in 558 and was rebuilt higher in 562.
+    The building became a mosque in 1453, a museum in 1934 and a mosque again in 2020.
+technical:
+  tr: >-
+    Anthemios ve İsidoros matematik ve mekanik alanında eser vermiş bilginlerdi ve yapı, dönemin geometri bilgisini
+    kullanır. Kubbenin kasnağındaki 40 pencere, kubbeyi ışık üzerinde yüzüyormuş gibi gösterir. Prokopios bu etkiyi
+    kubbenin "gökten asılmış altın bir zincirle" asılı durduğu izlenimi olarak anlatır. Yapı, Osmanlı döneminde Mimar
+    Sinan'ın eklediği payandalar dahil birçok onarım ve güçlendirme geçirdi. Deprem dayanımı günümüzde de araştırılmaktadır.
+  en: >-
+    Anthemius and Isidore were scholars who wrote on mathematics and mechanics, and the building uses the geometry of its
+    time. The 40 windows in the drum make the dome seem to float on light; Procopius described the impression that it hung
+    "from heaven by a golden chain". The building underwent many repairs and reinforcements, including buttresses added
+    by Mimar Sinan in the Ottoman period. Its earthquake resistance is still studied today.
+claims:
+  - tr: Büyük bir kubbe, kare bir plan üzerine pandantiflerle oturtulup yarım kubbelerle desteklenerek geniş, kesintisiz bir iç mekân örtülebilir.
+    en: A large dome can be set over a square plan with pendentives and buttressed by semi-domes to cover a vast, uninterrupted interior.
+    src: [mainstone1988]
+evidence:
+  - kind: historical
+    stance: for
+    tr: Çağdaşı Prokopios, yapının 537'de tamamlandığını ve iç mekânın ışıkla dolduğunu ayrıntılı biçimde anlatır.
+    en: The contemporary Procopius describes in detail the building's completion in 537 and its light-filled interior.
+    src: [procopius-buildings]
+sources:
+  mainstone1988:
+    type: book
+    authors: Mainstone, R. J.
+    title: "Hagia Sophia: Architecture, Structure and Liturgy of Justinian's Great Church"
+    year: 1988
+    in: Thames & Hudson, London
+  procopius-buildings:
+    type: book
+    authors: Prokopios / Procopius; Dewing, H. B. (trans.)
+    title: Buildings
+    year: 1940
+    in: Loeb Classical Library, Harvard University Press
+  unesco-istanbul:
+    type: web
+    authors: UNESCO World Heritage Centre
+    title: Historic Areas of Istanbul
+    url: https://whc.unesco.org/en/list/356
+datings:
+  - view:
+      tr: Yapının dönüşümleri
+      en: Changes in the building's use
+    value:
+      tr: 537 kilise, 1453 cami, 1934 Bakanlar Kurulu kararıyla müze (1935'te açıldı), 2020 cami
+      en: 537 church, 1453 mosque, 1934 museum by cabinet decree (opened 1935), 2020 mosque
+    src: [unesco-istanbul, mainstone1988]
+related: [hristiyanlik, islam]

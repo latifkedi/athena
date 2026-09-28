@@ -75,3 +75,5 @@ sources:
     year: 2007
     in: MIT Press, Cambridge MA
 related: [batlamyus, kepler]
+links:
+  - { to: batlamyus, rel: opposes }

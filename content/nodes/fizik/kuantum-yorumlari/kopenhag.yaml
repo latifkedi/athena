@@ -1,0 +1,62 @@
+id: kopenhag
+parent: kuantum-yorumlari
+type: idea
+date: { year: 1927 }
+people: [Niels Bohr, Werner Heisenberg, Max Born]
+title:
+  tr: Kopenhag yorumu
+  en: The Copenhagen interpretation
+summary:
+  tr: >-
+    Bohr ve Heisenberg'in 1920'lerdeki görüşlerine dayanan Kopenhag yorumu, en yaygın öğretilen yorumdur. Kuantum
+    kuramı, gözlenenin ne olduğundan çok ölçüm sonuçlarının olasılıklarını verir. Bir ölçüm, klasik olarak tarif edilen
+    bir aygıtla yapılır ve tek bir sonuç verir. Tamamlayıcılık ilkesine göre dalga ve parçacık tarifleri birbirini
+    dışlayan ama birlikte gerekli bakış açılarıdır. Yorumun tek ve kesin bir biçimi yoktur.
+  en: >-
+    Based on the views of Bohr and Heisenberg in the 1920s, the Copenhagen interpretation is the most widely taught.
+    Quantum theory gives the probabilities of measurement results rather than what is observed "in itself". A
+    measurement is made with an apparatus described classically and yields a single result. According to the principle
+    of complementarity, wave and particle descriptions are mutually exclusive yet jointly necessary perspectives. The
+    interpretation has no single, definitive form.
+technical:
+  tr: >-
+    Heisenberg'in 1927 belirsizlik ilişkisi ve Bohr'un aynı yıl Como'da sunduğu tamamlayıcılık düşüncesi yorumun
+    çekirdeğidir. Born kuralı ölçüm olasılıklarını |ψ|² ile verir. Kuantum ile klasik dünya arasındaki sınırın nerede
+    çizileceği yorumda açıkça tanımlanmaz. Bu, eleştirmenlerce ölçüm probleminin çözülmeden bırakılması olarak görülür.
+  en: >-
+    Heisenberg's uncertainty relation of 1927 and the idea of complementarity Bohr presented at Como the same year are the
+    core of the interpretation. The Born rule gives measurement probabilities as |ψ|². Where the line between the quantum
+    and the classical world is drawn is not clearly defined, which critics see as leaving the measurement problem
+    unsolved.
+claims:
+  - tr: Kuantum kuramı ölçüm sonuçlarının olasılıklarını verir. Ölçümden bağımsız, gözlenen niceliklerin belirli değerlerinden söz etmek anlamlı değildir.
+    en: Quantum theory gives the probabilities of measurement outcomes; it is not meaningful to speak of definite values of observed quantities independent of measurement.
+    src: [heisenberg1927, bohr1928]
+positions:
+  - who:
+      tr: Eleştirmenler (Einstein, Bell ve diğerleri)
+      en: Critics (Einstein, Bell and others)
+    tr: Ölçümün ve gözlemcinin ne olduğu tanımlanmadıkça kuram, fiziksel dünyanın tam bir tarifini vermez.
+    en: Unless what a measurement and an observer are is defined, the theory does not give a complete description of the physical world.
+    src: [sep-qm-copenhagen]
+sources:
+  heisenberg1927:
+    type: article
+    authors: Heisenberg, W.
+    title: Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik
+    year: 1927
+    in: Zeitschrift für Physik 43, 172–198
+    doi: 10.1007/BF01397280
+  bohr1928:
+    type: article
+    authors: Bohr, N.
+    title: The quantum postulate and the recent development of atomic theory
+    year: 1928
+    in: Nature 121, 580–590
+    doi: 10.1038/121580a0
+  sep-qm-copenhagen:
+    type: encyclopedia
+    authors: Faye, J.
+    title: Copenhagen Interpretation of Quantum Mechanics
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/qm-copenhagen/

@@ -58,3 +58,5 @@ sources:
     in: Stanford Encyclopedia of Philosophy
     url: https://plato.stanford.edu/entries/church-turing/
 related: [godel, bb5]
+links:
+  - { to: godel, rel: influenced-by }

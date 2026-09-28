@@ -1,0 +1,83 @@
+id: butunlesik-bilgi
+parent: bilinc
+type: idea
+date: { year: 2004 }
+people: [Giulio Tononi, Christof Koch]
+title:
+  tr: Bütünleşik bilgi kuramı (IIT)
+  en: Integrated information theory (IIT)
+summary:
+  tr: >-
+    Giulio Tononi'nin 2004'te önerdiği bu kurama göre bilinç, bir sistemin parçalarının toplamından fazla, bütünleşik
+    bilgi üretme kapasitesidir. Bu kapasite Φ (fi) adlı bir niceliğle ölçülür. Kurama göre bilinç beynin arka
+    bölgelerindeki sıkı bağlantılı yapılarla ilgilidir ve yalnızca beyinlere özgü değildir. Kuram, bazı
+    araştırmacılarca bilincin sağlam bir kuramsal temeli olarak görülürken, başkalarınca temel iddialarının test
+    edilemediği gerekçesiyle eleştirilir.
+  en: >-
+    According to this theory, proposed by Giulio Tononi in 2004, consciousness is a system's capacity to generate
+    integrated information over and above its parts. This capacity is measured by a quantity called Φ (phi). On the
+    theory, consciousness is tied to tightly connected structures in posterior regions of the brain and is not unique to
+    brains. Some researchers regard it as a principled theoretical basis for consciousness, while others criticise it on
+    the grounds that its core claims cannot be tested.
+technical:
+  tr: >-
+    IIT deneyimin temel özelliklerinden (içkin varoluş, bileşim, bilgi, bütünleşme, dışlama) yola çıkarak fiziksel bir
+    sistemin sağlaması gereken koşulları türetir. Φ'nin tam hesaplanması büyük sistemlerde pratikte mümkün değildir.
+    Kuram, bazı basit ama bütünleşik ağların da bir miktar bilince sahip olacağı gibi sezgiye aykırı sonuçlara yol açar.
+    Klinikte bundan esinlenen "zap-ve-sıkıştır" ölçümü (PCI), bilinç düzeyini tahmin etmek için kullanılmaktadır.
+  en: >-
+    IIT starts from the basic properties of experience (intrinsic existence, composition, information, integration,
+    exclusion) and derives the conditions a physical system must meet. Computing Φ exactly is practically impossible for
+    large systems. The theory leads to counter-intuitive consequences, such as some simple but integrated networks having
+    a degree of consciousness. In the clinic, the related "zap-and-zip" perturbational complexity index (PCI) is used to
+    estimate levels of consciousness.
+claims:
+  - tr: Bilinç, bir sistemin parçalarına indirgenemeyen bütünleşik bilgi miktarıyla (Φ) özdeştir.
+    en: Consciousness is identical to the amount of integrated information (Φ) a system has that cannot be reduced to its parts.
+    src: [tononi2004]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Önceden kaydedilmiş karşılaştırmalı deneyde, bilinçli içeriğe ilişkin bilginin beynin arka bölgelerinde bulunması kuramın bazı öngörüleriyle uyumlu çıktı.
+    en: In the preregistered adversarial experiment, the presence of information about conscious content in posterior regions of the brain agreed with some of the theory's predictions.
+    src: [cogitate2025]
+  - kind: experiment
+    stance: against
+    tr: Aynı deneyde, kuramın öngördüğü arka bölgelerdeki sürekli senkronizasyon, bilinçli algı süresince gözlenmedi.
+    en: In the same experiment, the sustained synchronisation in posterior regions predicted by the theory was not observed for the duration of conscious perception.
+    src: [cogitate2025]
+positions:
+  - who:
+      tr: Eleştirel mektubu imzalayan araştırmacılar (2023, yayın 2025)
+      en: Researchers who signed a critical letter (2023, published 2025)
+    tr: IIT'nin temel iddiaları ilke olarak test edilemez. Bu nedenle kuram bilimsel bir kuram olarak değerlendirilmemelidir.
+    en: IIT's core claims are untestable even in principle, so it should not be treated as a scientific theory.
+    src: [iit-concerned2025]
+  - who:
+      tr: Kuramın savunucuları
+      en: Proponents of the theory
+    tr: IIT'nin sınanabilir öngörüleri vardır ve bunlar önceden kaydedilen deneylerle test edilmiştir. Aykırı sonuçları, bilincin doğası üzerine ciddiye alınması gereken sonuçlardır.
+    en: IIT has testable predictions that have been tested in preregistered experiments; its counter-intuitive consequences deserve to be taken seriously as claims about the nature of consciousness.
+    src: [cogitate2025]
+sources:
+  tononi2004:
+    type: article
+    authors: Tononi, G.
+    title: An information integration theory of consciousness
+    year: 2004
+    in: BMC Neuroscience 5, 42
+    doi: 10.1186/1471-2202-5-42
+  cogitate2025:
+    type: article
+    authors: Cogitate Consortium et al.
+    title: Adversarial testing of global neuronal workspace and integrated information theories of consciousness
+    year: 2025
+    in: Nature 642, 133–142
+    doi: 10.1038/s41586-025-08888-1
+  iit-concerned2025:
+    type: article
+    authors: IIT-Concerned; Klincewicz, M.; Cheng, T.; Schmitz, M.; Sebastián, M. Á.; Snyder, J. S.
+    title: What makes a theory of consciousness unscientific?
+    year: 2025
+    in: Nature Neuroscience 28, 689–693
+    doi: 10.1038/s41593-025-01881-x

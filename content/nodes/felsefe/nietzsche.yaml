@@ -1,0 +1,76 @@
+id: nietzsche
+parent: felsefe
+type: text
+date: { year: 1882 }
+people: [Friedrich Nietzsche]
+title:
+  tr: Nietzsche ve değerlerin yeniden değerlendirilmesi
+  en: Nietzsche and the revaluation of values
+summary:
+  tr: >-
+    Nietzsche, Şen Bilim'de (1882) "Tanrı öldü" sözüyle Avrupa'da Hristiyan inancının ahlakı ve anlamı artık
+    taşıyamadığını ileri sürdü. Bunun bir anlam boşluğuna, yani nihilizme yol açabileceğini düşündü. İnsanın kendi
+    değerlerini yaratması gerektiğini savundu. Eserleri, ölümünden sonra kız kardeşinin düzenlemeleriyle ve siyasi
+    amaçlarla farklı biçimlerde okundu.
+  en: >-
+    In The Gay Science (1882) Nietzsche used the phrase "God is dead" to argue that Christian belief in Europe could no
+    longer carry morality and meaning. He thought this could lead to a void of meaning, nihilism. He held that humans
+    must create their own values. After his death his works were read in very different ways, shaped by his sister's
+    editing and by political aims.
+technical:
+  tr: >-
+    Ahlakın Soykütüğü Üzerine (1887) "efendi" ve "köle" ahlakı ayrımıyla ahlaki değerlerin tarihsel ve psikolojik
+    kökenini inceler. Güç istenci, bengi dönüş ve Übermensch kavramlarının nasıl yorumlanacağı tartışmalıdır. Nietzsche
+    sistematik bir felsefe kurmaktan kaçındı ve bakış açıcılık (perspektivizm) olarak anılan bir bilgi anlayışı
+    geliştirdi: "Olgular yoktur, yalnızca yorumlar vardır."
+  en: >-
+    On the Genealogy of Morality (1887) examines the historical and psychological origins of moral values through the
+    distinction between "master" and "slave" morality. How the concepts of will to power, eternal recurrence and the
+    Übermensch should be read is disputed. Nietzsche avoided building a system and developed a view of knowledge known as
+    perspectivism: "There are no facts, only interpretations."
+claims:
+  - tr: Geleneksel ahlaki değerlerin tarihsel ve psikolojik bir kökeni vardır. Bu değerler sorgulanabilir ve yeniden değerlendirilebilir.
+    en: Traditional moral values have historical and psychological origins; they can be questioned and revalued.
+    src: [nietzsche1882, nietzsche1887, sep-nietzsche]
+positions:
+  - who:
+      tr: Nasyonal sosyalist okuma
+      en: National Socialist reading
+    tr: Nietzsche'nin kız kardeşi Elisabeth Förster-Nietzsche'nin derlediği Güç İstenci ve Nazi dönemi yayınları, eserleri ırkçı bir siyasete dayanak olarak sundu.
+    en: The Will to Power compiled by his sister Elisabeth Förster-Nietzsche and Nazi-era publications presented his works as a basis for racist politics.
+    src: [kaufmann1950]
+  - who:
+      tr: Kaufmann ve sonraki akademik okumalar
+      en: Kaufmann and later academic readings
+    tr: Nietzsche antisemitizmi ve Alman milliyetçiliğini açıkça eleştirmişti. Nazi okuması metinlerin seçici ve çarpıtılmış bir kullanımına dayanır.
+    en: Nietzsche openly criticised antisemitism and German nationalism; the Nazi reading rests on a selective and distorted use of the texts.
+    src: [kaufmann1950, sep-nietzsche]
+sources:
+  nietzsche1882:
+    type: book
+    authors: Nietzsche, F.
+    title: Die fröhliche Wissenschaft
+    year: 1882
+    in: Ernst Schmeitzner, Chemnitz
+  nietzsche1887:
+    type: book
+    authors: Nietzsche, F.
+    title: 'Zur Genealogie der Moral: Eine Streitschrift'
+    year: 1887
+    in: C. G. Naumann, Leipzig
+  kaufmann1950:
+    type: book
+    authors: Kaufmann, W.
+    title: 'Nietzsche: Philosopher, Psychologist, Antichrist'
+    year: 1950
+    in: Princeton University Press
+  sep-nietzsche:
+    type: encyclopedia
+    authors: Anderson, R. L.
+    title: Friedrich Nietzsche
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/nietzsche/
+open:
+  - tr: Güç istenci ve bengi dönüş metafizik iddialar mı, yoksa bir yaşam tavrını anlatan düşünce deneyleri mi?
+    en: Are the will to power and eternal recurrence metaphysical claims, or thought experiments describing an attitude to life?
+related: [varolusculuk]

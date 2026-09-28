@@ -271,3 +271,46 @@
       text:
         tr: İslam düşüncesinde de tek bir görüş yoktur; türlerin ayrı yaratılışından evrimin yaratılışın bir yolu olduğuna kadar farklı yaklaşımlar vardır.
         en: Islamic thought has no single view either; approaches range from the separate creation of species to evolution as a way of creation.
+
+- id: zihin
+  title: { tr: Beyinden zihne, en: From brain to mind }
+  intro:
+    tr: Sinir hücrelerinin keşfinden bilincin ne olduğu sorusuna uzanan bir yol. Beynin nasıl çalıştığına dair bilgi arttıkça, zihnin ne olduğu sorusu yeni biçimler aldı; bu soruların çoğu hâlâ açık.
+    en: A road from the discovery of nerve cells to the question of what consciousness is. As knowledge of how the brain works grew, the question of what the mind is took new forms; most of these questions are still open.
+  steps:
+    - node: noron-doktrini
+      text:
+        tr: Cajal, sinir sisteminin ayrı hücrelerden oluştuğunu savundu; Golgi ise kesintisiz bir ağ görüyordu. İkisi aynı yıl Nobel aldı.
+        en: Cajal argued that the nervous system is made of separate cells, while Golgi saw a continuous network. The two received the Nobel Prize in the same year.
+    - node: hodgkin-huxley
+      text:
+        tr: Hodgkin ve Huxley, sinir sinyalinin iyonların zar boyunca hareketiyle nasıl oluştuğunu denklemlerle tarif etti.
+        en: Hodgkin and Huxley described with equations how the nerve signal arises from the movement of ions across the membrane.
+    - node: psikanaliz
+      text:
+        tr: Freud, zihnin büyük bir kısmının bilinç dışında işlediğini öne sürdü; kuramının sınanabilirliği o zamandan beri tartışılır.
+        en: Freud proposed that much of the mind works outside awareness; how far his theory can be tested has been debated ever since.
+    - node: fmri
+      text:
+        tr: fMRI, çalışan insan beynini ameliyatsız izlemeyi sağladı; yöntemin istatistiksel sınırları da zamanla ortaya çıktı.
+        en: fMRI made it possible to watch the working human brain without surgery; the method's statistical limits also emerged over time.
+    - node: yetiskin-norogenez
+      text:
+        tr: Yetişkin beyninde yeni nöron oluşup oluşmadığı sorusu, aynı yıllarda yayımlanan çalışmaların zıt sonuçlarıyla açık kaldı.
+        en: Whether new neurons form in the adult brain remained open, with studies published in the same years reaching opposite results.
+    - node: bilinc
+      text:
+        tr: Beyin süreçlerinin nasıl olup da öznel bir deneyime dönüştüğü, bilim ve felsefenin en zor sorularından biri olarak duruyor.
+        en: How brain processes become subjective experience stands as one of the hardest questions in science and philosophy.
+    - node: kuresel-calisma-alani
+      text:
+        tr: Bir kurama göre bilinç, bilginin beynin geniş bir ağına yayınlanmasıdır.
+        en: On one theory, consciousness is information being broadcast to a wide network in the brain.
+    - node: butunlesik-bilgi
+      text:
+        tr: Başka bir kurama göre bilinç, bir sistemin bütünleşik bilgi miktarıdır. İki kuram 2025'te ortak bir deneyde karşı karşıya geldi ve hiçbiri tüm öngörülerini doğrulayamadı.
+        en: On another theory, consciousness is the amount of integrated information in a system. The two theories were pitted against each other in a joint experiment in 2025, and neither confirmed all its predictions.
+    - node: ozgur-irade
+      text:
+        tr: Kararların beyinde bilinçten önce hazırlandığını gösteren deneyler, özgür irade tartışmasına yeni bir boyut kattı; deneylerin ne anlama geldiği de tartışmalı.
+        en: Experiments showing that decisions are prepared in the brain before awareness added a new dimension to the free-will debate; what the experiments mean is itself disputed.

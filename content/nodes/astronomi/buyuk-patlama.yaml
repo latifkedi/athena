@@ -170,3 +170,5 @@ sources:
     in: Encyclopaedia Britannica
     url: https://www.britannica.com/topic/kalpa
 related: [genel-gorelilik, yaratilis-anlatilari, karanlik-enerji]
+links:
+  - { to: genel-gorelilik, rel: builds-on }

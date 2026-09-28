@@ -1,0 +1,69 @@
+id: fenomenoloji
+parent: felsefe
+type: tradition
+date: { year: 1900 }
+people: [Edmund Husserl, Martin Heidegger, Maurice Merleau-Ponty, Edith Stein]
+title:
+  tr: Fenomenoloji
+  en: Phenomenology
+summary:
+  tr: >-
+    Fenomenoloji, deneyimi birinci tekil şahıs bakış açısından, bize nasıl göründüğü hâliyle betimlemeye çalışan bir
+    felsefe yöntemidir. Husserl'in 1900–1901'de yayımlanan Mantıksal Araştırmalar'ı ile başladığı kabul edilir. Bilincin
+    her zaman bir şeyin bilinci olduğu, yani bir şeye yöneldiği fikri merkezîdir. Heidegger ve Merleau-Ponty yöntemi
+    varlık, beden ve algı sorularına taşıdı.
+  en: >-
+    Phenomenology is a philosophical method that tries to describe experience from the first-person point of view, as it
+    appears to us. It is taken to begin with Husserl's Logical Investigations, published in 1900–1901. Central to it is
+    the idea that consciousness is always consciousness of something, that it is directed at something. Heidegger and
+    Merleau-Ponty carried the method to questions of being, the body and perception.
+technical:
+  tr: >-
+    Husserl, dış dünyanın varlığına dair yargıyı askıya alan "epokhe" ve fenomenolojik indirgeme yöntemini önerdi.
+    Yönelimsellik (intentionality) Brentano'dan devralındı. Heidegger Varlık ve Zaman'da (1927) bilinç yerine dünyada
+    olan varlığı (Dasein) temel aldı. Merleau-Ponty Algının Fenomenolojisi'nde (1945) bedeni algının öznesi olarak
+    ele aldı. Varela'nın nörofenomenoloji önerisi, birinci şahıs raporlarını beyin ölçümleriyle birlikte kullanmayı
+    amaçlar.
+  en: >-
+    Husserl proposed the epoché, suspending judgement about the existence of the external world, and the phenomenological
+    reduction. Intentionality was taken over from Brentano. In Being and Time (1927) Heidegger took being-in-the-world
+    (Dasein) rather than consciousness as basic. In Phenomenology of Perception (1945) Merleau-Ponty treated the body as
+    the subject of perception. Varela's neurophenomenology aims to use first-person reports together with brain
+    measurements.
+claims:
+  - tr: Bilinç her zaman bir nesneye yönelir. Deneyimin yapısı, ön kabuller askıya alınarak dikkatli bir betimlemeyle incelenebilir.
+    en: Consciousness is always directed at an object; the structure of experience can be studied by careful description with presuppositions suspended.
+    src: [husserl1900, sep-phenomenology]
+positions:
+  - who:
+      tr: Heidegger
+      en: Heidegger
+    tr: Felsefenin temel sorusu bilincin yapısı değil, varlığın anlamıdır ve insan önce dünyada pratik olarak var olur.
+    en: The basic question of philosophy is not the structure of consciousness but the meaning of being, and humans exist first practically in the world.
+    src: [sep-phenomenology]
+  - who:
+      tr: Nörofenomenoloji (Varela)
+      en: Neurophenomenology (Varela)
+    tr: Deneyimin birinci şahıs betimlemeleri, bilinç araştırmasında beyin verileriyle eşit ağırlıkta veri olarak kullanılmalıdır.
+    en: First-person descriptions of experience should be used as data on a par with brain data in consciousness research.
+    src: [varela1996]
+sources:
+  husserl1900:
+    type: book
+    authors: Husserl, E.
+    title: Logische Untersuchungen
+    year: 1900
+    in: Max Niemeyer, Halle (2 vols., 1900–1901)
+  sep-phenomenology:
+    type: encyclopedia
+    authors: Smith, D. W.
+    title: Phenomenology
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/phenomenology/
+  varela1996:
+    type: article
+    authors: Varela, F. J.
+    title: 'Neurophenomenology: a methodological remedy for the hard problem'
+    year: 1996
+    in: Journal of Consciousness Studies 3(4), 330–349
+related: [bilinc, descartes, varolusculuk]

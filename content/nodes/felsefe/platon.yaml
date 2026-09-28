@@ -1,0 +1,85 @@
+id: platon
+parent: felsefe
+type: text
+date: { year: -375, approx: true }
+people: [Platon / Plato, Sokrates / Socrates]
+title:
+  tr: Platon, Devlet ve idealar kuramı
+  en: Plato, the Republic and the theory of Forms
+summary:
+  tr: >-
+    Platon, duyularla algıladığımız değişken dünyanın ardında değişmeyen "idealar" (formlar) bulunduğunu savundu.
+    Gerçek bilginin bu idealara, örneğin iyinin ve adaletin kendisine yönelik olduğunu düşündü. Devlet adlı eserinde
+    mağara benzetmesiyle insanların gölgeleri gerçek sandığını anlattı ve adil bir toplumun nasıl kurulacağını tartıştı.
+  en: >-
+    Plato argued that behind the changing world we perceive with the senses there are unchanging "Forms". He held that
+    true knowledge is directed at these Forms, such as the Good and Justice themselves. In the Republic he used the
+    allegory of the cave to describe people who take shadows for reality, and discussed how a just society could be built.
+technical:
+  tr: >-
+    Orta dönem diyaloglarında (Phaidon, Devlet, Symposion) formlar, duyulur şeylerin "pay aldığı" (methexis), kendi
+    başına var olan, bölünmez ve zamansız varlıklar olarak sunulur. Bilgi (episteme) ile kanı (doxa) ayrımı, çizgi
+    benzetmesi ve anamnesis (hatırlama) öğretisi bu metafiziğe bağlıdır. Parmenides diyaloğu formlar kuramına yöneltilen
+    itirazları, sonradan "üçüncü insan" adıyla bilinen argüman da dahil, Platon'un kendisinin dile getirdiğini gösterir.
+  en: >-
+    In the middle dialogues (Phaedo, Republic, Symposium) Forms are presented as self-subsistent, indivisible and
+    timeless beings in which sensible things "participate" (methexis). The distinction between knowledge (episteme) and
+    opinion (doxa), the divided line and the doctrine of recollection (anamnesis) depend on this metaphysics. The
+    Parmenides shows Plato himself raising objections to the theory of Forms, including the argument later called the
+    "third man".
+claims:
+  - tr: Duyulur dünyadaki şeyler, değişmeyen ve yalnızca akılla kavranabilen formların kusurlu yansımalarıdır.
+    en: Things in the sensible world are imperfect reflections of unchanging Forms that can be grasped only by reason.
+    src: [republic, sep-plato-metaphysics]
+  - tr: Adil bir toplumda her sınıf kendi işini yapar ve yönetim, iyinin bilgisine sahip olanlara aittir.
+    en: In a just society each class does its own work, and rule belongs to those who know the Good.
+    src: [republic]
+positions:
+  - who:
+      tr: Aristoteles
+      en: Aristotle
+    tr: Formlar şeylerden ayrı var olamaz. Ayrı formlar kabul edilirse benzerliği açıklamak için sonsuz bir form dizisi gerekir (üçüncü insan argümanı).
+    en: Forms cannot exist apart from things; if separate Forms are posited, an infinite series of Forms is needed to explain likeness (the third man argument).
+    src: [sep-plato-metaphysics]
+  - who:
+      tr: Fârâbî
+      en: al-Fārābī
+    tr: Erdemli şehir, bilgelik ile peygamberliği birleştiren bir önderce yönetilmelidir. Fârâbî bu siyaset felsefesinde Platon'un Devlet'inden yararlandı.
+    en: The virtuous city should be ruled by a leader uniting wisdom and prophecy; al-Fārābī drew on Plato's Republic for this political philosophy.
+    src: [sep-farabi]
+sources:
+  republic:
+    type: book
+    authors: Platon / Plato; Reeve, C. D. C. (trans.)
+    title: Republic
+    year: 2004
+    in: Hackett, Indianapolis
+  sep-plato:
+    type: encyclopedia
+    authors: Kraut, R.
+    title: Plato
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/plato/
+  sep-plato-metaphysics:
+    type: encyclopedia
+    authors: Silverman, A.
+    title: Plato's Middle Period Metaphysics and Epistemology
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/plato-metaphysics/
+  sep-farabi:
+    type: encyclopedia
+    authors: Druart, T.-A.
+    title: al-Farabi
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/al-farabi/
+datings:
+  - view:
+      tr: Devlet'in yazılış tarihi
+      en: Date of composition of the Republic
+    value:
+      tr: Kesin tarih bilinmez. Genellikle MÖ 380–370 arasına, Platon'un orta dönemine yerleştirilir.
+      en: The exact date is unknown; it is usually placed between 380 and 370 BCE, in Plato's middle period.
+    src: [sep-plato]
+related: [aristoteles, sokrates-oncesi, islam-felsefesi]
+links:
+  - { to: sokrates-oncesi, rel: influenced-by }

@@ -1,0 +1,112 @@
+id: matbaa
+parent: teknoloji
+type: technology
+date: { year: 1455, approx: true }
+people: [Johannes Gutenberg, Bi Sheng, İbrahim Müteferrika, Elizabeth Eisenstein]
+title:
+  tr: Hareketli harfli matbaa
+  en: Movable-type printing
+summary:
+  tr: >-
+    Johannes Gutenberg 1450'lerde Mainz'da metal hareketli harfler, yağ bazlı mürekkep ve bir baskı presini bir araya
+    getirdi. 1455 dolayında basılan Gutenberg İncili bu yöntemin ilk büyük eseridir. Çin'de Bi Sheng 1040'larda pişmiş
+    topraktan hareketli harfler kullanmış, Kore'de 1377'de metal harflerle kitap basılmıştı. Matbaanın bilimsel devrimi
+    ve Reform'u ne kadar belirlediği tartışmalıdır. Osmanlı'da ilk Türkçe matbaa 1727'de İbrahim Müteferrika tarafından
+    kuruldu.
+  en: >-
+    In Mainz in the 1450s Johannes Gutenberg combined metal movable type, oil-based ink and a printing press. The
+    Gutenberg Bible, printed around 1455, is the first major work of this method. In China Bi Sheng had used fired-clay
+    movable type in the 1040s, and in Korea a book was printed with metal type in 1377. How far printing shaped the
+    Scientific Revolution and the Reformation is debated. The first Ottoman Turkish press was set up in 1727 by İbrahim
+    Müteferrika.
+technical:
+  tr: >-
+    Gutenberg'in yeniliği yalnızca hareketli harf değil, aynı boyda çok sayıda harf dökmeyi sağlayan el kalıbı, kalay-kurşun
+    alaşımı ve bu sistemin bir bütün olarak işlemesidir. Doğu Asya'da binlerce karakterden oluşan yazı sistemleri
+    nedeniyle ağaç baskı uzun süre baskın kaldı. 1500'e kadar Avrupa'da basılan kitaplara "inkunabula" denir. Müteferrika
+    matbaası 1729–1742 arasında 17 eser bastı. Osmanlı'da matbaanın geç yaygınlaşmasının nedenleri (hattatların
+    direnci, dinî kaygılar, ekonomik talep) üzerine farklı açıklamalar vardır.
+  en: >-
+    Gutenberg's innovation was not movable type alone but the hand mould for casting many letters of equal size, a
+    tin-lead alloy and the working of the system as a whole. In East Asia woodblock printing long remained dominant
+    because of writing systems with thousands of characters. Books printed in Europe before 1500 are called
+    "incunabula". The Müteferrika press printed 17 works between 1729 and 1742. There are different explanations for the
+    late spread of printing in the Ottoman Empire (resistance of scribes, religious concerns, economic demand).
+claims:
+  - tr: Matbaa, metinlerin aynı biçimde çoğaltılmasını sağlayarak bilginin korunmasını, karşılaştırılmasını ve yayılmasını köklü biçimde değiştirdi.
+    en: By reproducing texts identically, printing fundamentally changed how knowledge was preserved, compared and spread.
+    src: [eisenstein1979]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: 1450–1600 arasında matbaa kuran Avrupa şehirlerinin, benzer şehirlere göre belirgin biçimde daha hızlı büyüdüğü bulundu.
+    en: European cities that adopted printing between 1450 and 1600 were found to have grown markedly faster than similar cities.
+    src: [dittmar2011]
+positions:
+  - who:
+      tr: Eisenstein ("matbaa devrimi")
+      en: Eisenstein ("the printing revolution")
+    tr: Matbaanın getirdiği sabitlik ve standartlaşma, Rönesans, Reform ve bilimsel devrimin ortaya çıkışında belirleyici bir etkendir.
+    en: The fixity and standardisation brought by print were a decisive factor in the Renaissance, the Reformation and the Scientific Revolution.
+    src: [eisenstein1979]
+  - who:
+      tr: Johns ve eleştirel kitap tarihi
+      en: Johns and critical book history
+    tr: Basılı metinlerin güvenilirliği kendiliğinden gelmedi. Korsan baskılar ve hatalar yaygındı. Güven, yayıncılar, loncalar ve okurların uzun süreli çabasıyla kuruldu.
+    en: The reliability of printed texts did not come automatically; pirated editions and errors were common, and trust was built through long efforts by printers, guilds and readers.
+    src: [johns1998]
+sources:
+  eisenstein1979:
+    type: book
+    authors: Eisenstein, E. L.
+    title: 'The Printing Press as an Agent of Change: Communications and Cultural Transformations in Early-Modern Europe'
+    year: 1979
+    in: Cambridge University Press
+  johns1998:
+    type: book
+    authors: Johns, A.
+    title: 'The Nature of the Book: Print and Knowledge in the Making'
+    year: 1998
+    in: University of Chicago Press
+  dittmar2011:
+    type: article
+    authors: Dittmar, J. E.
+    title: 'Information technology and economic change: the impact of the printing press'
+    year: 2011
+    in: The Quarterly Journal of Economics 126(3), 1133–1172
+    doi: 10.1093/qje/qjr035
+  tsien1985:
+    type: book
+    authors: Tsien, T.-H.
+    title: 'Paper and Printing (Science and Civilisation in China, Vol. 5, Part 1)'
+    year: 1985
+    in: Cambridge University Press
+  sabev2006:
+    type: book
+    authors: Sabev, O.
+    title: İbrahim Müteferrika ya da İlk Osmanlı Matbaa Serüveni (1726–1746)
+    year: 2006
+    in: Yeditepe Yayınevi, İstanbul
+datings:
+  - view:
+      tr: Çin'de hareketli harf
+      en: Movable type in China
+    value:
+      tr: 1040'lar, Bi Sheng'in pişmiş toprak harfleri (Shen Kuo'nun aktarımıyla)
+      en: 1040s, Bi Sheng's fired-clay type (as reported by Shen Kuo)
+    src: [tsien1985]
+  - view:
+      tr: Avrupa'da metal harfli baskı
+      en: Printing with metal type in Europe
+    value:
+      tr: 1450'ler, Mainz. Gutenberg İncili yaklaşık 1455.
+      en: 1450s, Mainz; the Gutenberg Bible about 1455.
+    src: [eisenstein1979]
+  - view:
+      tr: Osmanlı'da ilk Türkçe matbaa
+      en: First Ottoman Turkish press
+    value:
+      tr: 1727 (izin), ilk kitap 1729
+      en: 1727 (permission), first book 1729
+    src: [sabev2006]
+related: [yazi, perspektif]

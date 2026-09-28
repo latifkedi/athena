@@ -1,0 +1,68 @@
+id: hallac
+parent: tasavvuf
+type: event
+date: { year: 922, month: 3 }
+people: [Hallâc-ı Mansûr / al-Ḥallāj, Louis Massignon]
+title:
+  tr: Hallâc-ı Mansûr ve "Ene'l-Hak"
+  en: al-Ḥallāj and "Anā al-Ḥaqq"
+summary:
+  tr: >-
+    Hallâc-ı Mansûr, "Ene'l-Hak" ("Ben Hakk'ım", Hak Allah'ın isimlerinden biridir) sözüyle tanınan bir sufidir. Uzun
+    süren bir yargılamanın ardından 922'de Bağdat'ta idam edildi. Sözlerinin ne anlama geldiği ve cezanın nedenleri
+    yüzyıllardır tartışılır. Bazıları onu dinden sapmış biri olarak gördü, pek çok sufi ise sözünü kulun Allah'ın
+    varlığında yok olmasının (fenâ) bir ifadesi olarak yorumladı. Tarihçiler yargılamanın siyasi yönünü de vurgular.
+  en: >-
+    Al-Ḥallāj is a Sufi known for the words "Anā al-Ḥaqq" ("I am the Truth", al-Ḥaqq being one of the names of God). After
+    a long trial he was executed in Baghdad in 922. What his words meant and why he was punished have been debated for
+    centuries. Some saw him as having strayed from the religion, while many Sufis read his words as an expression of the
+    servant passing away in God's being (fanāʾ). Historians also stress the political side of the trial.
+technical:
+  tr: >-
+    Hallâc'ın Kitâbü't-Tavâsîn adlı eseri ve şiirleri, ilahi aşk ve birlik tecrübesini yoğun bir dille anlatır.
+    Yargılaması Abbâsî sarayındaki vezirlik çekişmeleri döneminde yapıldı. İddianame, hac ibadetinin yerine başka bir
+    ibadetin konabileceğine dair sözlerini de içeriyordu. Louis Massignon'un 1922'deki kapsamlı çalışması, Hallâc'ı
+    modern akademide ve Batı'da tanınır kıldı. Attâr, Mevlânâ ve Anadolu'da Nesîmî gibi şairler onu aşkı uğruna can
+    veren bir örnek olarak andı.
+  en: >-
+    Al-Ḥallāj's Kitāb al-Ṭawāsīn and his poems describe the experience of divine love and union in intense language. His
+    trial took place during rivalries over the vizierate at the Abbasid court; the charges also included sayings that
+    another rite could replace the pilgrimage. Louis Massignon's comprehensive study of 1922 made him known in modern
+    scholarship and in the West. Poets such as ʿAṭṭār, Rūmī and, in Anatolia, Nesīmī recalled him as one who gave his life
+    for love.
+claims:
+  - tr: Kul, ilahi sevgide kendi varlığından tümüyle geçebilir. "Ene'l-Hak" sözü bu hâlin ifadesidir.
+    en: The servant can pass away entirely from their own existence in divine love; "Anā al-Ḥaqq" expresses this state.
+    src: [tdv-hallac, massignon1982]
+positions:
+  - who:
+      tr: Mahkûm eden fakihler ve eleştirmenler
+      en: The jurists who condemned him and his critics
+    tr: Sözleri ve bazı görüşleri, Allah ile kul arasındaki farkı ortadan kaldıran ve ibadetleri tehlikeye atan ifadelerdir.
+    en: His words and some of his views erase the distinction between God and the servant and endanger religious observance.
+    src: [tdv-hallac]
+  - who:
+      tr: Sonraki sufiler (Attâr, Mevlânâ ve diğerleri)
+      en: Later Sufis (ʿAṭṭār, Rūmī and others)
+    tr: Konuşan Hallâc değil, onda tecelli eden Hak'tır. Söz, fenâ hâlinin ve ilahi aşkın bir ifadesidir.
+    en: It was not al-Ḥallāj speaking but the Truth manifest in him; the words express the state of fanāʾ and divine love.
+    src: [tdv-hallac]
+  - who:
+      tr: Tarihçiler
+      en: Historians
+    tr: Hallâc'ın yargılanması ve idamı, dinî gerekçelerin yanı sıra Abbâsî sarayındaki siyasi çekişmeler ve halk üzerindeki etkisiyle de bağlantılıdır.
+    en: His trial and execution were tied not only to religious grounds but also to political rivalries at the Abbasid court and his influence on the public.
+    src: [massignon1982, tdv-hallac]
+sources:
+  tdv-hallac:
+    type: encyclopedia
+    title: Hallâc-ı Mansûr
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/hallac-i-mansur
+  massignon1982:
+    type: book
+    authors: Massignon, L.; Mason, H. (trans.)
+    title: 'The Passion of al-Hallāj: Mystic and Martyr of Islam'
+    year: 1982
+    in: Princeton University Press (4 vols.; French original 1922)
+related: [cuneyd, ibn-arabi, mevlana]

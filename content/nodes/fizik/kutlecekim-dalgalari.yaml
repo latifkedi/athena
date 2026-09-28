@@ -57,3 +57,5 @@ sources:
     year: 2017
     in: Journal of Cosmology and Astroparticle Physics 2017(08), 013
     doi: 10.1088/1475-7516/2017/08/013
+links:
+  - { to: genel-gorelilik, rel: builds-on }

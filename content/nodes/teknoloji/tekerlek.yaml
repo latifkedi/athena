@@ -1,0 +1,67 @@
+id: tekerlek
+parent: teknoloji
+type: technology
+people: [David W. Anthony]
+title:
+  tr: Tekerlek ve tekerlekli araçlar
+  en: The wheel and wheeled vehicles
+summary:
+  tr: >-
+    Tekerlekli arabaların bilinen en eski kanıtları MÖ 3500 civarına tarihlenir. Mezopotamya'dan Orta Avrupa'ya kadar
+    geniş bir bölgede birkaç yüzyıl içinde ortaya çıkarlar. Tekerleğin tek bir yerde icat edilip hızla mı yayıldığı,
+    yoksa birden fazla yerde mi geliştirildiği tartışmalıdır. Tekerlek, taşımacılığı, tarımı ve savaşı değiştirdi.
+  en: >-
+    The earliest known evidence of wheeled vehicles dates to around 3500 BCE. It appears within a few centuries over a
+    wide area from Mesopotamia to Central Europe. Whether the wheel was invented in one place and spread quickly, or
+    developed in more than one place, is debated. The wheel changed transport, farming and warfare.
+technical:
+  tr: >-
+    Polonya'daki Bronocice çömleği üzerindeki dört tekerlekli araba resmi, Huni Ağızlı Çanak (TRB) kültürüne ait ve MÖ
+    3500 civarına tarihlenir. Geç Uruk dönemi Mezopotamya'sında tekerlekli araç piktogramları görülür. Slovenya'daki
+    Ljubljana bataklıklarında bulunan ahşap tekerlek ve dingil MÖ 4. binyılın sonlarına tarihlenir. Katı tekerlekten
+    tekerlek parmaklıklı hafif savaş arabalarına geçiş MÖ 2000 civarında Avrasya bozkırlarında izlenir.
+  en: >-
+    A drawing of a four-wheeled wagon on the Bronocice pot in Poland belongs to the Funnel Beaker (TRB) culture and dates
+    to around 3500 BCE. Pictograms of wheeled vehicles appear in Late Uruk Mesopotamia. A wooden wheel and axle found in
+    the Ljubljana Marshes in Slovenia date to the late 4th millennium BCE. The shift from solid wheels to light, spoked
+    chariots is traced to the Eurasian steppes around 2000 BCE.
+claims:
+  - tr: Tekerlekli araçlar Avrupa'da ve Yakın Doğu'da yaklaşık aynı dönemde, MÖ 4. binyılın ikinci yarısında ortaya çıkar.
+    en: Wheeled vehicles appear in Europe and the Near East at about the same time, in the second half of the 4th millennium BCE.
+    src: [bakker1999]
+datings:
+  - view:
+      tr: Radyokarbon tarihlemeleri ve resimli buluntular
+      en: Radiocarbon dates and depictions
+    value:
+      tr: Yaklaşık MÖ 3500–3300. Avrupa'daki ve Yakın Doğu'daki en eski kanıtlar birbirine çok yakın tarihlidir.
+      en: About 3500–3300 BCE; the earliest evidence in Europe and in the Near East is very close in date.
+    src: [bakker1999, anthony2007]
+positions:
+  - who:
+      tr: Tek merkezli yayılma görüşü
+      en: Single-origin view
+    tr: Tekerlek ve dingil karmaşık bir buluştur. Bir kez icat edilmiş ve birkaç yüzyıl içinde geniş bir alana yayılmıştır.
+    en: The wheel and axle are a complex invention; it was invented once and spread over a wide area within a few centuries.
+    src: [anthony2007]
+  - who:
+      tr: Çok merkezli gelişme görüşü
+      en: Multiple-origin view
+    tr: Kanıtların aynı dönemde birbirinden uzak bölgelerde görülmesi, tekerleğin birden fazla yerde bağımsız ya da yarı bağımsız olarak geliştirilmiş olabileceğini düşündürür.
+    en: Evidence appearing at the same time in distant regions suggests the wheel may have been developed independently or semi-independently in more than one place.
+    src: [bakker1999]
+sources:
+  bakker1999:
+    type: article
+    authors: Bakker, J. A.; Kruk, J.; Lanting, A. E.; Milisauskas, S.
+    title: The earliest evidence of wheeled vehicles in Europe and the Near East
+    year: 1999
+    in: Antiquity 73(282), 778–790
+    url: https://www.cambridge.org/core/journals/antiquity/article/abs/earliest-evidence-of-wheeled-vehicles-in-europe-and-the-near-east/4835B594180234DC116F6F0105771573
+  anthony2007:
+    type: book
+    authors: Anthony, D. W.
+    title: 'The Horse, the Wheel, and Language: How Bronze-Age Riders from the Eurasian Steppes Shaped the Modern World'
+    year: 2007
+    in: Princeton University Press
+related: [tarim, hint-avrupa]

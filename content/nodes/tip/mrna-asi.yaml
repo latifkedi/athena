@@ -66,3 +66,5 @@ sources:
     in: New England Journal of Medicine 385, 2140–2149
     doi: 10.1056/NEJMoa2109730
 related: [asi]
+links:
+  - { to: asi, rel: builds-on }

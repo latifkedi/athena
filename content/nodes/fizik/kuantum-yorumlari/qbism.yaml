@@ -1,0 +1,58 @@
+id: qbism
+parent: kuantum-yorumlari
+type: idea
+date: { year: 2014 }
+people: [Christopher Fuchs, N. David Mermin, Rüdiger Schack]
+title:
+  tr: QBism (kuantum Bayesçilik)
+  en: QBism (Quantum Bayesianism)
+summary:
+  tr: >-
+    QBism'e göre dalga fonksiyonu dünyanın kendisini değil, bir ajanın kendi gelecekteki deneyimleri hakkındaki kişisel
+    inançlarını ifade eder. Ölçüm, ajanın dünyaya yaptığı bir eylem ve karşılığında edindiği yeni bir deneyimdir.
+    "Çöküş" ise inancın yeni bilgiyle güncellenmesinden ibarettir. Bu yorum, kuantum olasılıklarını Bayesçi olasılık
+    kuramı çerçevesinde okur ve dalga fonksiyonunu bilgi olarak gören epistemik yaklaşımların bir örneğidir.
+  en: >-
+    According to QBism the wave function expresses not the world itself but an agent's personal beliefs about their own
+    future experiences. A measurement is an action the agent takes on the world and the new experience received in
+    return; "collapse" is just the updating of belief with new information. The interpretation reads quantum
+    probabilities within Bayesian probability theory and is one example of epistemic approaches that treat the wave
+    function as information.
+technical:
+  tr: >-
+    QBism, kuantum durumlarını de Finetti'nin öznel olasılık yorumuyla ele alır. Born kuralı, ajanın olasılık atamaları
+    arasındaki tutarlılık için bir "normatif" kural olarak yeniden yazılır. Bu yorumda yerel olmama sorunu, ölçüm
+    sonuçlarının her ajan için yalnızca kendi deneyimi olarak var olduğu kabul edilerek farklı biçimde ele alınır.
+    Wigner'in arkadaşı türünden düşünce deneylerinde farklı gözlemcilerin farklı durum atamaları çelişki sayılmaz.
+  en: >-
+    QBism treats quantum states through de Finetti's subjective interpretation of probability. The Born rule is rewritten
+    as a "normative" rule for coherence among an agent's probability assignments. In this interpretation the problem of
+    non-locality is handled differently, by taking measurement outcomes to exist for each agent only as their own
+    experience. In Wigner's-friend-type thought experiments, different state assignments by different observers do not
+    count as a contradiction.
+claims:
+  - tr: Kuantum durumu, bir ajanın ölçüm sonuçlarına ilişkin kişisel (Bayesçi) olasılık atamalarını temsil eder. Fiziksel bir nesne değildir.
+    en: A quantum state represents an agent's personal (Bayesian) probability assignments for measurement outcomes; it is not a physical object.
+    src: [fuchs2014]
+positions:
+  - who:
+      tr: Eleştirmenler
+      en: Critics
+    tr: Kuramı kişisel inançlara dayandırmak, bilimin gözlemciden bağımsız bir dünyayı tarif etme amacından vazgeçmek anlamına gelir.
+    en: Grounding the theory in personal beliefs amounts to giving up science's aim of describing a world independent of observers.
+    src: [nature2025-survey]
+sources:
+  fuchs2014:
+    type: article
+    authors: Fuchs, C. A.; Mermin, N. D.; Schack, R.
+    title: An introduction to QBism with an application to the locality of quantum mechanics
+    year: 2014
+    in: American Journal of Physics 82(8), 749–754
+    doi: 10.1119/1.4874855
+  nature2025-survey:
+    type: article
+    authors: Gibney, E.
+    title: Physicists disagree wildly on what quantum mechanics says about reality, Nature survey shows
+    year: 2025
+    in: Nature 643, 1175–1179
+    doi: 10.1038/d41586-025-02342-y

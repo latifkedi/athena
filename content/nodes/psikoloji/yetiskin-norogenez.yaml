@@ -1,0 +1,104 @@
+id: yetiskin-norogenez
+parent: psikoloji
+type: question
+date: { year: 2018 }
+people: [Peter Eriksson, Fred Gage, Arturo Alvarez-Buylla, Maura Boldrini, María Llorens-Martín, Jonas Frisén]
+title:
+  tr: Yetişkin insan beyninde yeni nöron oluşur mu?
+  en: Are new neurons born in the adult human brain?
+summary:
+  tr: >-
+    Uzun süre yetişkin beyninde yeni nöron oluşmadığı düşünüldü. Hayvan deneyleri ve 1998'deki bir insan çalışması,
+    hafıza için önemli olan hipokampüste yetişkinlikte de yeni nöronlar doğduğunu gösterdi. 2018'de yayımlanan bir çalışma
+    ise yetişkin insan hipokampüsünde yeni nöronlara neredeyse hiç rastlamadı. Aynı yıl ve sonrasında yapılan başka
+    çalışmalar yaşlılığa kadar süren bir nöron üretimi bildirdi. Sonuçların farklılığı büyük ölçüde doku hazırlama ve
+    işaretleme yöntemlerine bağlanıyor.
+  en: >-
+    For a long time it was thought that no new neurons form in the adult brain. Animal studies and a human study in 1998
+    showed that new neurons are born in adulthood in the hippocampus, a region important for memory. A study published in
+    2018, however, found almost no new neurons in the adult human hippocampus. Other studies the same year and later
+    reported neuron production continuing into old age. The difference in results is largely attributed to tissue
+    preparation and labelling methods.
+technical:
+  tr: >-
+    Eriksson ve ekibi, kanser tanısı için BrdU verilmiş hastaların beyinlerinde bu işaretin hipokampüsteki nöronlarda
+    bulunduğunu gösterdi. Spalding ve ekibi, 1950–60'lardaki nükleer denemelerin atmosfere yaydığı karbon-14 düzeyinden
+    yararlanarak hipokampüste günde yaklaşık 700 yeni nöron eklendiğini tahmin etti. Sorrells ve ekibi DCX ve PSA-NCAM
+    gibi olgunlaşmamış nöron işaretçilerinin çocukluktan sonra hızla kaybolduğunu buldu. Moreno-Jiménez ve ekibi ise
+    kısa fiksasyon süresiyle hazırlanan dokuda bu işaretçilerin 90 yaşına kadar görüldüğünü bildirdi.
+  en: >-
+    Eriksson and colleagues showed that in the brains of patients given BrdU for cancer diagnosis, the label was found in
+    hippocampal neurons. Spalding and colleagues used the carbon-14 released into the atmosphere by nuclear tests in the
+    1950s and 60s to estimate that about 700 new neurons are added to the hippocampus each day. Sorrells and colleagues
+    found that markers of immature neurons such as DCX and PSA-NCAM decline sharply after childhood. Moreno-Jiménez and
+    colleagues reported that in tissue prepared with short fixation times these markers are seen up to the age of 90.
+claims:
+  - tr: Yetişkin insan hipokampüsünde yaşam boyu yeni nöronlar üretilir.
+    en: New neurons are produced in the adult human hippocampus throughout life.
+    src: [eriksson1998, spalding2013]
+evidence:
+  - kind: clinical
+    stance: for
+    tr: Yaşamının son yıllarında BrdU işaretleyicisi verilmiş kanser hastalarının beyinlerinde, işaretin hipokampüsteki yeni nöronlarda bulunduğu gösterildi.
+    en: In the brains of cancer patients given the BrdU label late in life, the label was found in new neurons of the hippocampus.
+    src: [eriksson1998]
+  - kind: measurement
+    stance: for
+    tr: Nükleer denemelerden kalan karbon-14 ile yapılan yaş tayini, hipokampüste yetişkinlikte önemli sayıda nöronun yenilendiğini gösterdi.
+    en: Dating with carbon-14 left over from nuclear tests showed that a substantial number of hippocampal neurons are renewed in adulthood.
+    src: [spalding2013]
+  - kind: observation
+    stance: against
+    tr: 59 insan beyni örneğinde yeni nöron işaretçileri çocukluktan sonra hızla azaldı ve yetişkin örneklerde neredeyse hiç görülmedi.
+    en: In 59 human brain samples, markers of new neurons declined sharply after childhood and were almost absent in adult samples.
+    src: [sorrells2018]
+  - kind: observation
+    stance: for
+    tr: Ölüm sonrası hızla alınan 28 kişinin hipokampüs örneğinde, 14 ile 79 yaş arasında yeni nöronlara ve öncül hücrelere rastlandı.
+    en: In hippocampal samples from 28 people collected quickly after death, new neurons and progenitor cells were found between the ages of 14 and 79.
+    src: [boldrini2018]
+  - kind: observation
+    stance: for
+    tr: Doku hazırlama koşulları sıkı biçimde denetlendiğinde, olgunlaşmamış nöronların 90 yaşına kadar bulunduğu ve Alzheimer hastalarında azaldığı bildirildi.
+    en: When tissue preparation was tightly controlled, immature neurons were reported up to age 90, and found to decline in people with Alzheimer's disease.
+    src: [moreno-jimenez2019]
+sources:
+  eriksson1998:
+    type: article
+    authors: Eriksson, P. S. et al.
+    title: Neurogenesis in the adult human hippocampus
+    year: 1998
+    in: Nature Medicine 4(11), 1313–1317
+    doi: 10.1038/3305
+  spalding2013:
+    type: article
+    authors: Spalding, K. L. et al.
+    title: Dynamics of hippocampal neurogenesis in adult humans
+    year: 2013
+    in: Cell 153(6), 1219–1227
+    doi: 10.1016/j.cell.2013.05.002
+  sorrells2018:
+    type: article
+    authors: Sorrells, S. F. et al.
+    title: Human hippocampal neurogenesis drops sharply in children to undetectable levels in adults
+    year: 2018
+    in: Nature 555, 377–381
+    doi: 10.1038/nature25975
+  boldrini2018:
+    type: article
+    authors: Boldrini, M. et al.
+    title: Human hippocampal neurogenesis persists throughout aging
+    year: 2018
+    in: Cell Stem Cell 22(4), 589–599
+    doi: 10.1016/j.stem.2018.03.015
+  moreno-jimenez2019:
+    type: article
+    authors: Moreno-Jiménez, E. P. et al.
+    title: Adult hippocampal neurogenesis is abundant in neurologically healthy subjects and drops sharply in patients with Alzheimer's disease
+    year: 2019
+    in: Nature Medicine 25, 554–560
+    doi: 10.1038/s41591-019-0375-9
+open:
+  - tr: Yetişkinlikte oluşan nöronlar, varsa, hafıza ve duygu düzenlemesinde ne kadar rol oynar?
+    en: If neurons form in adulthood, how much do they contribute to memory and emotional regulation?
+related: [noron-doktrini]

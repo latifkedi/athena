@@ -1,0 +1,81 @@
+id: taoizm
+parent: dinler
+type: tradition
+people: [Laozi, Zhuangzi, Zhang Daoling]
+title:
+  tr: Taoizm ve Daodejing
+  en: Daoism and the Daodejing
+summary:
+  tr: >-
+    Taoizm (Daoizm), Çin'de hem bir felsefe hem de bir din olarak gelişen gelenektir. Merkezinde, her şeyin kaynağı olan
+    ve adlandırılamayan "Dao" (Yol) vardır. Daodejing ve Zhuangzi, doğallığı, sadeliği ve zorlamadan eylemi (wu wei)
+    öğütler. Daodejing'in yazarı olarak geleneksel olarak Laozi gösterilir, ancak metnin ne zaman ve nasıl oluştuğu
+    tartışmalıdır. MS 2. yüzyıldan itibaren tapınakları, ritüelleri ve rahipleriyle örgütlü bir Taoist din gelişti.
+  en: >-
+    Daoism is a tradition that developed in China both as a philosophy and as a religion. At its centre is the
+    unnameable "Dao" (the Way), the source of all things. The Daodejing and the Zhuangzi counsel naturalness, simplicity
+    and effortless action (wu wei). Laozi is traditionally named as the author of the Daodejing, but when and how the text
+    came together is debated. From the 2nd century CE an organised Daoist religion developed with temples, rituals and
+    priests.
+technical:
+  tr: >-
+    Bugün bilinen Daodejing yaklaşık 5.000 karakterlik, 81 bölümden oluşan bir metindir. 1973'te Mawangdui'de bulunan
+    ipek yazmalar (MÖ 2. yüzyıl başı) ve 1993'te bulunan Guodian bambu yazmaları metnin erken biçimlerini gösterir.
+    Örgütlü Taoizm, MS 142'de Zhang Daoling'e dayandırılan Göksel Üstatlar (Tianshi) hareketiyle başladı. İç simya,
+    meditasyon ve ölümsüzlük arayışı sonraki Taoist uygulamaların parçası oldu.
+  en: >-
+    The Daodejing as known today is a text of about 5,000 characters in 81 chapters. Silk manuscripts found at Mawangdui
+    in 1973 (early 2nd century BCE) and bamboo slips found at Guodian in 1993 show early forms of the text. Organised
+    Daoism began with the Celestial Masters (Tianshi) movement traced to Zhang Daoling in 142 CE. Inner alchemy,
+    meditation and the pursuit of immortality became part of later Daoist practice.
+claims:
+  - tr: Dao her şeyin adlandırılamayan kaynağıdır. İnsan, doğaya karşı zorlamadan, onunla uyum içinde eylediğinde (wu wei) iyi yaşar.
+    en: The Dao is the unnameable source of all things; humans live well when they act in harmony with nature, without forcing (wu wei).
+    src: [sep-laozi]
+datings:
+  - view:
+      tr: Geleneksel anlatı (Sima Qian)
+      en: Traditional account (Sima Qian)
+    value:
+      tr: Laozi, Konfüçyüs'ün çağdaşı olarak MÖ 6. yüzyılda yaşadı ve Daodejing'i yazdı.
+      en: Laozi lived in the 6th century BCE as a contemporary of Confucius and wrote the Daodejing.
+    src: [sep-laozi]
+  - view:
+      tr: Metin tarihçiliği ve Guodian buluntuları
+      en: Textual history and the Guodian finds
+    value:
+      tr: Metin tek bir yazarın değil, uzun bir süreçte derlenmiştir. MÖ 300 dolaylarına tarihlenen Guodian mezarındaki bambu yazmalar, metnin bir kısmının o tarihte dolaşımda olduğunu gösterir.
+      en: The text was compiled over a long period rather than written by one author; bamboo slips from the Guodian tomb, dated to about 300 BCE, show that part of it was in circulation by then.
+    src: [henricks2000, sep-laozi]
+positions:
+  - who:
+      tr: Felsefi ve dinî Taoizm ayrımını savunanlar
+      en: Those who separate philosophical and religious Daoism
+    tr: Daodejing ve Zhuangzi'nin felsefesi (daojia) ile sonraki örgütlü din (daojiao) ayrı geleneklerdir.
+    en: The philosophy of the Daodejing and Zhuangzi (daojia) and the later organised religion (daojiao) are separate traditions.
+    src: [britannica-daoism]
+  - who:
+      tr: Bu ayrımı eleştiren araştırmacılar
+      en: Scholars critical of this distinction
+    tr: Taoist din, klasik metinleri kutsal metin olarak benimsedi. İki alan arasında keskin bir sınır çizmek Batılı bir sınıflandırmanın ürünüdür.
+    en: Daoist religion adopted the classical texts as scripture; drawing a sharp line between the two is a product of Western classification.
+    src: [britannica-daoism]
+sources:
+  sep-laozi:
+    type: encyclopedia
+    authors: Chan, A.
+    title: Laozi
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/laozi/
+  henricks2000:
+    type: book
+    authors: Henricks, R. G.
+    title: "Lao Tzu's Tao Te Ching: A Translation of the Startling New Documents Found at Guodian"
+    year: 2000
+    in: Columbia University Press
+  britannica-daoism:
+    type: encyclopedia
+    title: Daoism
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Daoism
+related: [cin-felsefesi, budizm]

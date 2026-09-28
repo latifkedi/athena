@@ -37,3 +37,5 @@ sources:
     in: TDV İslâm Ansiklopedisi
     url: https://islamansiklopedisi.org.tr/mecelle-i-ahkam-i-adliyye
 related: [fikih]
+links:
+  - { to: fikih, rel: builds-on }

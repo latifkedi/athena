@@ -1,0 +1,59 @@
+id: cuneyd
+parent: tasavvuf
+type: tradition
+date: { year: 910 }
+people: [Cüneyd-i Bağdâdî / al-Junayd al-Baghdādī, Bâyezîd-i Bistâmî / Abū Yazīd al-Bisṭāmī]
+title:
+  tr: Cüneyd-i Bağdâdî ve "ayık" tasavvuf
+  en: al-Junayd al-Baghdādī and "sober" Sufism
+summary:
+  tr: >-
+    Bağdatlı Cüneyd (öl. 910), erken tasavvufun en etkili isimlerinden biridir. Tasavvufu Kur'an ve sünnete bağlı, şeriatla
+    uyumlu bir yol olarak tanımladı. Kendinden geçme (sekr) hâlinde söylenen sözler yerine ayıklığı (sahv) öne çıkardı.
+    Sonraki tarikatların birçoğu silsilelerini ona bağlar ve bu nedenle "seyyidü't-tâife" (sufilerin efendisi) diye anılır.
+  en: >-
+    Al-Junayd of Baghdad (d. 910) is one of the most influential figures of early Sufism. He defined Sufism as a path
+    bound to the Qur'an and the Sunna and in harmony with the sharia. Instead of sayings uttered in ecstasy (sukr) he
+    emphasised sobriety (ṣaḥw). Many later orders trace their chains of transmission to him, and he is called "master of
+    the group" (sayyid al-ṭāʾifa).
+technical:
+  tr: >-
+    Cüneyd'e göre tevhid, "kadîm olanı sonradan olandan ayırmak"tır. Fenâ (kulun kendi varlığından geçmesi) ile bekâ
+    (Allah'la var olmaya dönmesi) kavramlarını, ayık bir bilinçle yeniden topluma dönmeyi vurgulayacak biçimde işledi.
+    Görüşleri, öğrencilerine yazdığı mektuplar (Resâil) ve sonraki kaynaklardaki aktarımlarla bilinir. Hallâc'ın hocası
+    olduğu, ama onun bazı tavırlarını onaylamadığı rivayet edilir.
+  en: >-
+    For al-Junayd, tawḥīd is "separating the eternal from the originated". He treated fanāʾ (the servant passing away
+    from their own existence) and baqāʾ (returning to subsist through God) so as to stress returning to society with a
+    sober awareness. His views are known from letters to his students (Rasāʾil) and from reports in later sources. He is
+    said to have been a teacher of al-Ḥallāj who disapproved of some of his conduct.
+claims:
+  - tr: Tasavvuf yolu Kur'an ve sünnete bağlı kalmalıdır. Sufinin hedefi, kendinden geçtikten sonra ayık bir bilinçle yeniden dünyaya dönmektir.
+    en: The Sufi path must remain bound to the Qur'an and the Sunna; the Sufi's goal, after passing away from self, is to return to the world with sober awareness.
+    src: [tdv-cuneyd, abdel-kader1962]
+positions:
+  - who:
+      tr: Sahv (ayıklık) yolu, Cüneyd
+      en: The way of sobriety (ṣaḥw), al-Junayd
+    tr: Kendinden geçme hâlinde söylenen sözler yanıltıcı olabilir. Olgun sufi, ilahi huzurda da aklını ve şeriata bağlılığını korur.
+    en: Words spoken in ecstasy can mislead; the mature Sufi keeps reason and adherence to the sharia even in the divine presence.
+    src: [tdv-cuneyd]
+  - who:
+      tr: Sekr (vecd) yolu, Bâyezîd-i Bistâmî'ye nispet edilen
+      en: The way of intoxication (sukr), attributed to Abū Yazīd al-Bisṭāmī
+    tr: İlahi aşkın yoğunluğunda kulun benliği kaybolur. Bu hâlde söylenen ve dışarıdan aşırı görünen sözler (şathiyyat) o hâlin ifadesidir.
+    en: In the intensity of divine love the servant's self disappears; the words spoken in that state, which seem excessive from outside (shaṭaḥāt), express it.
+    src: [tdv-cuneyd]
+sources:
+  tdv-cuneyd:
+    type: encyclopedia
+    title: Cüneyd-i Bağdâdî
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/cuneyd-i-bagdadi
+  abdel-kader1962:
+    type: book
+    authors: Abdel-Kader, A. H.
+    title: 'The Life, Personality and Writings of al-Junayd'
+    year: 1962
+    in: E. J. W. Gibb Memorial Series, Luzac, London
+related: [rabia, hallac, gazali-munkiz]

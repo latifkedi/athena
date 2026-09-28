@@ -1,0 +1,66 @@
+id: ucak
+parent: teknoloji
+type: event
+date: { year: 1903, month: 12, day: 17 }
+people: [Orville Wright, Wilbur Wright, Alberto Santos-Dumont, Otto Lilienthal]
+title:
+  tr: Motorlu uçuş ve uçak
+  en: Powered flight and the aeroplane
+summary:
+  tr: >-
+    17 Aralık 1903'te Wright kardeşler, Kuzey Carolina'daki Kitty Hawk yakınlarında motorlu ve kumanda edilebilen bir
+    uçakla havalandı. İlk uçuş 12 saniye sürdü. Brezilya'da ise 1906'da Paris'te halkın ve resmî gözlemcilerin önünde
+    kendi gücüyle kalkan 14-bis uçağıyla Alberto Santos-Dumont ilk uçuşu gerçekleştiren kişi olarak kabul edilir. Görüş
+    ayrılığı, "ilk uçuş" için hangi ölçütlerin arandığına bağlıdır.
+  en: >-
+    On 17 December 1903 the Wright brothers took off near Kitty Hawk, North Carolina, in a powered, controllable
+    aeroplane; the first flight lasted 12 seconds. In Brazil, however, Alberto Santos-Dumont is regarded as the first to
+    fly, with his 14-bis, which took off under its own power in Paris in 1906 in front of the public and official
+    observers. The disagreement depends on which criteria are required for a "first flight".
+technical:
+  tr: >-
+    Wright kardeşlerin başarısı büyük ölçüde üç eksende kumanda sorununu (özellikle kanat bükmeyle yatış denetimini)
+    çözmelerine ve kendi rüzgâr tünellerinde ölçtükleri kaldırma verilerine dayanır. 1903 uçuşları bir rüzgâra karşı ve
+    düz bir raydan yapıldı. 1908'de Fransa'da yaptıkları gösteriler Avrupalı havacıları etkiledi. Santos-Dumont'un 1906
+    uçuşu, tekerlek üzerinden katapult ya da ray olmadan kalkış yapılması ve Aéro-Club de France tarafından
+    belgelenmesi nedeniyle öne çıkarılır.
+  en: >-
+    The Wrights' success rested largely on solving three-axis control (especially roll control by wing warping) and on
+    lift data they measured in their own wind tunnel. The 1903 flights were made into a headwind from a level rail. Their
+    demonstrations in France in 1908 impressed European aviators. Santos-Dumont's 1906 flight is highlighted because it
+    took off on wheels without a catapult or rail and was documented by the Aéro-Club de France.
+claims:
+  - tr: Havadan ağır, motorlu ve pilot tarafından kumanda edilen ilk sürekli uçuş 1903'te Wright kardeşler tarafından yapıldı.
+    en: The first sustained, powered, pilot-controlled flight of a heavier-than-air craft was made by the Wright brothers in 1903.
+    src: [nasm-flyer, crouch1989]
+positions:
+  - who:
+      tr: Wright kardeşler ve ABD'deki yaygın kabul
+      en: The Wright brothers and the common view in the US
+    tr: 1903 uçuşları fotoğraf ve tanıklarla belgelenmiştir. Kumandalı ve sürekli uçuşu ilk gerçekleştirenler Wright kardeşlerdir.
+    en: The 1903 flights are documented by photographs and witnesses; the Wrights were the first to achieve controlled, sustained flight.
+    src: [nasm-flyer]
+  - who:
+      tr: Brezilya'daki yaygın kabul
+      en: The common view in Brazil
+    tr: Wright uçağı ray ve rüzgâr yardımıyla kalkıyordu ve 1903 uçuşları halka açık değildi. Kendi gücüyle kalkıp resmî olarak belgelenen ilk uçuş Santos-Dumont'unkidir.
+    en: The Wright aircraft took off with the help of a rail and wind, and the 1903 flights were not public; the first flight to take off under its own power and be officially documented is Santos-Dumont's.
+    src: [britannica-santos]
+sources:
+  nasm-flyer:
+    type: web
+    authors: Smithsonian National Air and Space Museum
+    title: 1903 Wright Flyer
+    url: https://airandspace.si.edu/collection-objects/1903-wright-flyer/nasm_A19610048000
+  crouch1989:
+    type: book
+    authors: Crouch, T. D.
+    title: 'The Bishop''s Boys: A Life of Wilbur and Orville Wright'
+    year: 1989
+    in: W. W. Norton, New York
+  britannica-santos:
+    type: encyclopedia
+    title: Alberto Santos-Dumont
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/biography/Alberto-Santos-Dumont
+related: [sputnik]

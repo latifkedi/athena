@@ -1,0 +1,145 @@
+id: ozgur-irade
+parent: felsefe
+type: question
+people: [Benjamin Libet, Aaron Schurger, Derk Pereboom]
+title:
+  tr: Özgür irade
+  en: Free will
+summary:
+  tr: >-
+    İnsan eylemlerini gerçekten kendisi mi seçer, yoksa bu seçimler önceki nedenlerle, beyin süreçleriyle ya da ilahi
+    takdirle önceden mi belirlenmiştir? Filozoflar, kelamcılar ve sinirbilimciler bu soruya farklı cevaplar verir. 2020
+    yılında yapılan geniş bir ankette filozofların çoğunluğu özgür iradenin belirlenimcilikle bağdaştığını savunan görüşü
+    seçti. Kelamda ise Mu'tezile, Eş'arîlik ve Mâtürîdîlik insan fiilleri konusunda farklı yaklaşımlar geliştirdi.
+  en: >-
+    Do humans really choose their own actions, or are these choices fixed in advance by prior causes, brain processes or
+    divine decree? Philosophers, theologians and neuroscientists give different answers. In a large survey in 2020 most
+    philosophers chose the view that free will is compatible with determinism. In kalām, the Muʿtazila, Ashʿarism and
+    Māturīdism developed different approaches to human acts.
+technical:
+  tr: >-
+    Özgürlükçü (libertaryen) görüş, özgür iradenin belirlenimcilikle bağdaşmadığını ve evrenin belirlenimci olmadığını
+    savunur. Bağdaşırcılık (compatibilism) özgürlüğü dış zorlamanın yokluğu ya da kişinin nedenlere duyarlı olması gibi
+    ölçütlerle tanımlar. Sert bağdaşmazcılık, ne belirlenimciliğin ne de rastlantının ahlaki sorumluluğa yer bıraktığını
+    ileri sürer. Libet'in 1983 deneyinde, katılımcıların hareket etme kararını fark ettiklerini bildirdikleri andan yüz
+    milisaniyeler önce beyinde bir "hazırlık potansiyeli" ölçüldü. Bu bulgunun ne anlama geldiği tartışmalıdır.
+  en: >-
+    Libertarianism holds that free will is incompatible with determinism and that the universe is not deterministic.
+    Compatibilism defines freedom by criteria such as the absence of external compulsion or responsiveness to reasons.
+    Hard incompatibilism argues that neither determinism nor chance leaves room for moral responsibility. In Libet's 1983
+    experiment a "readiness potential" was measured in the brain hundreds of milliseconds before participants reported
+    becoming aware of deciding to move. What this finding means is debated.
+claims:
+  - tr: Hareket etme kararı bilinçli olarak fark edilmeden önce beyinde onu hazırlayan etkinlik başlar. Bu, kararın bilinç dışında başladığını gösterir.
+    en: Brain activity preparing a movement begins before the decision to move is consciously noticed, showing that the decision starts outside awareness.
+    src: [libet1983, soon2008]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Libet'in deneyinde hazırlık potansiyeli, katılımcıların karar anı olarak bildirdiği andan ortalama yaklaşık 350 milisaniye önce başladı.
+    en: In Libet's experiment the readiness potential began on average about 350 milliseconds before the moment participants reported as their decision.
+    src: [libet1983]
+  - kind: experiment
+    stance: for
+    tr: fMRI ile yapılan bir çalışmada, basit bir sağ-sol seçiminin sonucu bilinçli karardan birkaç saniye önce beyin etkinliğinden şans düzeyinin üzerinde tahmin edilebildi.
+    en: In an fMRI study, the outcome of a simple left–right choice could be predicted above chance from brain activity several seconds before the conscious decision.
+    src: [soon2008]
+  - kind: theoretical
+    stance: against
+    tr: Hazırlık potansiyelinin bir karar sinyali değil, rastgele sinirsel dalgalanmaların birikmesinin ortalamada ortaya çıkan bir izi olabileceği bir modelle gösterildi.
+    en: A model showed that the readiness potential may be not a decision signal but a trace, visible in the average, of the accumulation of random neural fluctuations.
+    src: [schurger2012]
+positions:
+  - who:
+      tr: Bağdaşırcılık
+      en: Compatibilism
+    tr: Özgürlük, belirlenimcilikle bağdaşır. Kişi kendi isteğine ve nedenlerine göre, dış zorlama olmadan davranıyorsa özgürdür. 2020 PhilPapers anketinde filozofların yaklaşık yüzde 59'u bu görüşü seçti.
+    en: Freedom is compatible with determinism; a person is free when acting on their own wishes and reasons without external compulsion. In the 2020 PhilPapers survey about 59 percent of philosophers chose this view.
+    src: [sep-compatibilism, philpapers2020]
+  - who:
+      tr: Özgürlükçülük (libertaryenizm)
+      en: Libertarianism
+    tr: Gerçek özgürlük, aynı koşullarda başka türlü davranabilmeyi gerektirir ve bu belirlenimcilikle bağdaşmaz. Ankette filozofların yaklaşık yüzde 19'u bu görüşü seçti.
+    en: Real freedom requires being able to act otherwise under the same conditions, which is incompatible with determinism. About 19 percent of philosophers in the survey chose this view.
+    src: [sep-freewill, philpapers2020]
+  - who:
+      tr: Özgür irade şüpheciliği
+      en: Free-will scepticism
+    tr: Ahlaki sorumluluğun gerektirdiği türden bir özgür irade yoktur. Ankette filozofların yaklaşık yüzde 11'i bu görüşü seçti.
+    en: There is no free will of the kind moral responsibility requires. About 11 percent of philosophers in the survey chose this view.
+    src: [sep-freewill, philpapers2020]
+  - who:
+      tr: Mu'tezile
+      en: The Muʿtazila
+    tr: İnsan kendi fiillerinin yaratıcısıdır. İlahi adalet, insanın yaptıklarından sorumlu tutulabilmesi için özgür olmasını gerektirir.
+    en: Humans are the creators of their own acts; divine justice requires that they be free so that they can be held responsible.
+    src: [watt1948]
+  - who:
+      tr: Eş'arîlik (kesb)
+      en: Ashʿarism (kasb)
+    tr: Fiilleri yaratan yalnızca Allah'tır. İnsan, yaratılan fiili "kazanır" (kesb) ve bu kazanım nedeniyle sorumludur.
+    en: God alone creates acts; the human "acquires" (kasb) the created act and is responsible through this acquisition.
+    src: [watt1948]
+  - who:
+      tr: Mâtürîdîlik
+      en: Māturīdism
+    tr: Fiilleri Allah yaratır, ama insana gerçek bir seçme gücü (cüz'î irade) verilmiştir. İnsan bu seçimi nedeniyle sorumludur.
+    en: God creates acts, but humans are given a real power of choice (partial will) and are responsible because of this choice.
+    src: [rudolph2015]
+sources:
+  libet1983:
+    type: article
+    authors: Libet, B.; Gleason, C. A.; Wright, E. W.; Pearl, D. K.
+    title: 'Time of conscious intention to act in relation to onset of cerebral activity (readiness-potential)'
+    year: 1983
+    in: Brain 106(3), 623–642
+    doi: 10.1093/brain/106.3.623
+  soon2008:
+    type: article
+    authors: Soon, C. S.; Brass, M.; Heinze, H.-J.; Haynes, J.-D.
+    title: Unconscious determinants of free decisions in the human brain
+    year: 2008
+    in: Nature Neuroscience 11, 543–545
+    doi: 10.1038/nn.2112
+  schurger2012:
+    type: article
+    authors: Schurger, A.; Sitt, J. D.; Dehaene, S.
+    title: An accumulator model for spontaneous neural activity prior to self-initiated movement
+    year: 2012
+    in: Proceedings of the National Academy of Sciences 109(42), E2904–E2913
+    doi: 10.1073/pnas.1210467109
+  philpapers2020:
+    type: article
+    authors: Bourget, D.; Chalmers, D. J.
+    title: 'Philosophers on Philosophy: The 2020 PhilPapers Survey'
+    year: 2023
+    in: Philosophers' Imprint 23(11)
+    doi: 10.3998/phimp.2109
+  sep-freewill:
+    type: encyclopedia
+    authors: O'Connor, T.; Franklin, C.
+    title: Free Will
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/freewill/
+  sep-compatibilism:
+    type: encyclopedia
+    authors: McKenna, M.; Coates, D. J.
+    title: Compatibilism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/compatibilism/
+  watt1948:
+    type: book
+    authors: Watt, W. M.
+    title: Free Will and Predestination in Early Islam
+    year: 1948
+    in: Luzac, London
+  rudolph2015:
+    type: book
+    authors: Rudolph, U.
+    title: Al-Māturīdī and the Development of Sunnī Theology in Samarqand
+    year: 2015
+    in: Brill, Leiden
+open:
+  - tr: Bilinçli bir kararın beyin etkinliğiyle zamanlaması, sorumluluk ve özgürlük tartışmasında ne kadar belirleyicidir?
+    en: How much does the timing of a conscious decision relative to brain activity matter for the debate on responsibility and freedom?
+related: [mutezile, esarilik, maturidilik, bilinc, stoacilik]

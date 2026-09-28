@@ -56,3 +56,5 @@ sources:
     year: 1998
     in: Princeton University Press
 related: [simya]
+links:
+  - { to: simya, rel: influenced-by }

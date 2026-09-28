@@ -52,3 +52,5 @@ sources:
     in: New England Journal of Medicine
     doi: 10.1056/NEJMoa2504747
 related: [crispr]
+links:
+  - { to: crispr, rel: builds-on }

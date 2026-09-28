@@ -65,3 +65,9 @@ sources:
     year: 1905
     in: Archiv für Sozialwissenschaft und Sozialpolitik 20–21
 related: [adam-smith, ibn-haldun]
+links:
+  - to: adam-smith
+    rel: opposes
+    note:
+      tr: 'Kapital''in alt başlığı: Ekonomi Politiğin Eleştirisi'
+      en: 'The subtitle of Capital: A Critique of Political Economy'

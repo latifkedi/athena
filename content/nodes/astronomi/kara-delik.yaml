@@ -57,3 +57,5 @@ sources:
     in: The Astrophysical Journal 933, 36
     doi: 10.3847/1538-4357/ac6ddb
 related: [genel-gorelilik]
+links:
+  - { to: genel-gorelilik, rel: builds-on }

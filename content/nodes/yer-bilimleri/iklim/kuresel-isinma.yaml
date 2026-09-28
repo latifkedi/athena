@@ -130,3 +130,5 @@ sources:
     in: Asia-Pacific Journal of Atmospheric Sciences 47, 377–390
     doi: 10.1007/s13143-011-0023-x
 related: [sera-etkisi, keeling, enerji]
+links:
+  - { to: sera-etkisi, rel: builds-on }

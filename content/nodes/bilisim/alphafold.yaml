@@ -58,3 +58,5 @@ sources:
     in: Nature Methods 21, 110–116
     doi: 10.1038/s41592-023-02087-4
 related: [biyoloji, derin-ogrenme]
+links:
+  - { to: derin-ogrenme, rel: builds-on }

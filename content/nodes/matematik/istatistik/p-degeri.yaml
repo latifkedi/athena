@@ -1,0 +1,107 @@
+id: p-degeri
+parent: matematik
+type: question
+date: { year: 1925 }
+people: [Ronald Fisher, Jerzy Neyman, Egon Pearson, Ronald Wasserstein, Daniel Benjamin, Valentin Amrhein, Daniël Lakens]
+title:
+  tr: P-değeri ve istatistiksel anlamlılık tartışması
+  en: The p-value and the statistical significance debate
+summary:
+  tr: >-
+    Bilimsel çalışmalarda bir sonucun "istatistiksel olarak anlamlı" sayılması için çoğunlukla p < 0,05 eşiği kullanılır.
+    Bu gelenek büyük ölçüde Ronald Fisher'ın 1925 tarihli kitabına dayanır. Tekrarlama krizinin ardından, p-değerlerinin
+    yanlış yorumlandığı ve tek bir eşiğe bağlanmanın yanıltıcı sonuçlara yol açtığı yaygın biçimde tartışılmaya başlandı.
+    Amerikan İstatistik Derneği 2016'da bu konuda bir bildiri yayımladı. Araştırmacılar önerilen çözümler konusunda
+    ayrışır.
+  en: >-
+    In scientific studies the threshold p < 0.05 is usually used to count a result as "statistically significant". The
+    tradition rests largely on Ronald Fisher's book of 1925. After the replication crisis it became widely debated that
+    p-values are misinterpreted and that tying conclusions to a single threshold leads to misleading results. The
+    American Statistical Association issued a statement on the matter in 2016. Researchers disagree on the proposed
+    remedies.
+technical:
+  tr: >-
+    P-değeri, sıfır hipotezi ve modelin tüm varsayımları doğruysa, en az gözlenen kadar uç bir sonuç elde etme
+    olasılığıdır. Sıfır hipotezinin doğru olma olasılığı değildir. Fisher p-değerini kanıtın gücünün sürekli bir ölçüsü
+    olarak görüyordu. Neyman ve Pearson ise önceden belirlenmiş hata oranlarıyla karar vermeyi öneriyordu. Bugünkü
+    uygulama bu iki yaklaşımın bir karışımıdır. Düşük istatistiksel güç, esnek analiz seçimleri ve yalnızca anlamlı
+    sonuçların yayımlanması, yanlış pozitif oranını artırır.
+  en: >-
+    The p-value is the probability of obtaining a result at least as extreme as the one observed if the null hypothesis
+    and all the model's assumptions are true; it is not the probability that the null hypothesis is true. Fisher saw the
+    p-value as a continuous measure of the strength of evidence, while Neyman and Pearson proposed making decisions with
+    pre-set error rates. Today's practice is a hybrid of the two. Low statistical power, flexible analysis choices and the
+    publication of significant results only raise the false positive rate.
+claims:
+  - tr: P-değerleri tek başına bir hipotezin doğru olma olasılığını ya da bir etkinin büyüklüğünü göstermez. Bilimsel sonuçlar yalnızca bir anlamlılık eşiğinin aşılmasına dayanmamalıdır.
+    en: P-values alone show neither the probability that a hypothesis is true nor the size of an effect; scientific conclusions should not rest only on passing a significance threshold.
+    src: [asa2016]
+positions:
+  - who:
+      tr: Eşiği düşürmeyi önerenler (Benjamin ve 71 ortak yazar)
+      en: Those proposing a lower threshold (Benjamin and 71 co-authors)
+    tr: Yeni keşifler için varsayılan anlamlılık eşiği 0,05'ten 0,005'e düşürülmelidir.
+    en: The default significance threshold for new discoveries should be lowered from 0.05 to 0.005.
+    src: [benjamin2018]
+  - who:
+      tr: Anlamlılık kavramını bırakmayı önerenler (Amrhein ve 800'den fazla imzacı)
+      en: Those proposing to retire significance (Amrhein and more than 800 signatories)
+    tr: “İstatistiksel anlamlılık” kavramı tümüyle bırakılmalı, p-değerleri güven aralıklarıyla birlikte sürekli değerler olarak raporlanmalıdır.
+    en: The concept of "statistical significance" should be retired altogether, and p-values reported as continuous values together with confidence intervals.
+    src: [amrhein2019]
+  - who:
+      tr: Eşiğin gerekçelendirilmesini önerenler (Lakens ve ortak yazarlar)
+      en: Those proposing to justify the threshold (Lakens and co-authors)
+    tr: Tek bir evrensel eşik yerine her araştırmacı, çalışmasının koşullarına göre seçtiği eşiği önceden gerekçelendirmelidir.
+    en: Instead of one universal threshold, each researcher should justify in advance the threshold chosen for the conditions of their study.
+    src: [lakens2018]
+  - who:
+      tr: Bayesçi yöntemleri önerenler
+      en: Those proposing Bayesian methods
+    tr: Hipotezlerin göreli desteği Bayes faktörleri ve sonsal dağılımlarla doğrudan ölçülmelidir.
+    en: The relative support for hypotheses should be measured directly with Bayes factors and posterior distributions.
+    src: [benjamin2018]
+sources:
+  fisher1925:
+    type: book
+    authors: Fisher, R. A.
+    title: Statistical Methods for Research Workers
+    year: 1925
+    in: Oliver and Boyd, Edinburgh
+  asa2016:
+    type: article
+    authors: Wasserstein, R. L.; Lazar, N. A.
+    title: "The ASA's statement on p-values: context, process, and purpose"
+    year: 2016
+    in: The American Statistician 70(2), 129–133
+    doi: 10.1080/00031305.2016.1154108
+  benjamin2018:
+    type: article
+    authors: Benjamin, D. J. et al.
+    title: Redefine statistical significance
+    year: 2018
+    in: Nature Human Behaviour 2, 6–10
+    doi: 10.1038/s41562-017-0189-z
+  amrhein2019:
+    type: article
+    authors: Amrhein, V.; Greenland, S.; McShane, B.
+    title: Scientists rise up against statistical significance
+    year: 2019
+    in: Nature 567, 305–307
+    doi: 10.1038/d41586-019-00857-9
+  lakens2018:
+    type: article
+    authors: Lakens, D. et al.
+    title: Justify your alpha
+    year: 2018
+    in: Nature Human Behaviour 2, 168–171
+    doi: 10.1038/s41562-018-0311-x
+datings:
+  - view:
+      tr: 0,05 eşiğinin kaynağı
+      en: Origin of the 0.05 threshold
+    value:
+      tr: Fisher'ın 1925 tarihli kitabı. Fisher bu değeri kesin bir kural olarak değil, uygun bir başvuru noktası olarak önermişti.
+      en: Fisher's book of 1925; Fisher proposed the value as a convenient reference point, not as a strict rule.
+    src: [fisher1925]
+related: [tekrarlama-krizi, bayes]

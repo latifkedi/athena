@@ -1,0 +1,57 @@
+id: ekosistem
+parent: biyoloji
+type: idea
+date: { year: 1935 }
+people: [Arthur Tansley, Eugene Odum, Howard Odum, Raymond Lindeman]
+title:
+  tr: Ekosistem kavramı ve ekoloji
+  en: The ecosystem concept and ecology
+summary:
+  tr: >-
+    İngiliz botanikçi Arthur Tansley 1935'te canlıları ve onları çevreleyen fiziksel ortamı tek bir sistem olarak ele
+    almak için "ekosistem" terimini önerdi. Bu yaklaşım, ormanları, gölleri ve denizleri enerji akışı ve madde döngüleri
+    üzerinden incelemeyi sağladı. Ekoloji, 20. yüzyılın ikinci yarısında hem bir bilim dalı hem de çevre politikalarının
+    dayandığı bir bilgi alanı hâline geldi.
+  en: >-
+    In 1935 the British botanist Arthur Tansley proposed the term "ecosystem" to treat living things and their physical
+    surroundings as a single system. This approach made it possible to study forests, lakes and seas through energy flow
+    and nutrient cycles. In the second half of the 20th century ecology became both a scientific discipline and a body of
+    knowledge on which environmental policy rests.
+technical:
+  tr: >-
+    Tansley, bitki topluluklarını bir "süperorganizma" olarak gören Clements'in görüşüne karşı çıkarak ekosistemi fiziksel
+    bir sistem olarak tanımladı. Lindeman 1942'de besin zincirindeki basamaklar arasında enerjinin büyük kısmının
+    kaybolduğunu gösterdi. Odum kardeşlerin 1953 tarihli ders kitabı ekosistem ekolojisini yaygınlaştırdı. Ekosistemlerin
+    ne kadar düzenli ve dengeli olduğu, yoksa sürekli bozulma ve değişim içinde mi bulunduğu ekolojide süregelen bir
+    tartışmadır.
+  en: >-
+    Tansley defined the ecosystem as a physical system, opposing Clements's view of plant communities as a
+    "superorganism". In 1942 Lindeman showed that most energy is lost between the levels of a food chain. The Odum
+    brothers' 1953 textbook popularised ecosystem ecology. Whether ecosystems are ordered and in balance, or in constant
+    disturbance and change, is an ongoing debate in ecology.
+claims:
+  - tr: Canlılar ve fiziksel çevreleri, enerji ve madde alışverişiyle birbirine bağlı tek bir sistem olarak incelenebilir.
+    en: Living things and their physical environment can be studied as a single system linked by exchanges of energy and matter.
+    src: [tansley1935, odum1953]
+positions:
+  - who:
+      tr: Clements (süperorganizma görüşü)
+      en: Clements (superorganism view)
+    tr: Bitki toplulukları bir organizma gibi gelişir ve belirli bir "doruk" (klimaks) evresine ulaşır.
+    en: Plant communities develop like an organism and reach a definite "climax" stage.
+    src: [tansley1935]
+sources:
+  tansley1935:
+    type: article
+    authors: Tansley, A. G.
+    title: The use and abuse of vegetational concepts and terms
+    year: 1935
+    in: Ecology 16(3), 284–307
+    doi: 10.2307/1930070
+  odum1953:
+    type: book
+    authors: Odum, E. P.
+    title: Fundamentals of Ecology
+    year: 1953
+    in: W. B. Saunders, Philadelphia
+related: [iklim]

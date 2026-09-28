@@ -1,0 +1,54 @@
+id: kuantum-yorumlari
+parent: kuantum-mekanigi
+type: question
+people: [Niels Bohr, Hugh Everett, David Bohm, John Bell]
+title:
+  tr: Kuantum mekaniğinin yorumları
+  en: Interpretations of quantum mechanics
+summary:
+  tr: >-
+    Kuantum mekaniği deney sonuçlarını olağanüstü bir doğrulukla öngörür, ama bu sonuçların gerçeklik hakkında ne
+    söylediği konusunda fizikçiler anlaşamaz. Ölçüm yapıldığında ne olur? Dalga fonksiyonu gerçek bir şey mi, yoksa
+    bilgimizin bir ifadesi mi? Farklı yorumlar bu sorulara farklı cevaplar verir ve çoğu aynı deneysel öngörülerde
+    buluşur. Nature dergisinin 2025'te 1.100'den fazla fizikçiyle yaptığı ankette hiçbir yorum çoğunluğa ulaşmadı.
+  en: >-
+    Quantum mechanics predicts experimental results with extraordinary accuracy, but physicists do not agree on what
+    these results say about reality. What happens when a measurement is made? Is the wave function something real, or an
+    expression of our knowledge? Different interpretations give different answers to these questions, and most agree on
+    the same experimental predictions. In a 2025 Nature survey of more than 1,100 physicists, no interpretation won a
+    majority.
+technical:
+  tr: >-
+    Ölçüm problemi, Schrödinger denkleminin doğrusal ve belirlenimci evrimi ile ölçümde tek ve olasılıklı bir sonuç
+    gözlenmesi arasındaki gerilimdir. Yorumlar ya denkleme ek bir çöküş süreci ekler (nesnel çöküş), ya ek değişkenler
+    ekler (pilot dalga), ya dalga fonksiyonunun hiç çökmediğini kabul eder (çok dünyalar) ya da dalga fonksiyonunu
+    gözlemcinin bilgisi ya da inancı olarak yorumlar (Kopenhag'ın bazı biçimleri, QBism). Nesnel çöküş modelleri
+    standart kuramdan farklı öngörüler verdiği için deneyle sınanabilir.
+  en: >-
+    The measurement problem is the tension between the linear, deterministic evolution of the Schrödinger equation and
+    the single, probabilistic outcome observed in a measurement. Interpretations either add a collapse process to the
+    equation (objective collapse), add extra variables (pilot wave), accept that the wave function never collapses (many
+    worlds), or read the wave function as the observer's knowledge or belief (some forms of Copenhagen, QBism).
+    Objective-collapse models make predictions that differ from standard theory and can therefore be tested.
+evidence:
+  - kind: statistical
+    stance: for
+    tr: Nature'ın 2025 anketinde katılımcıların yüzde 36'sı Kopenhag yorumunu, yüzde 17'si dalga fonksiyonunu bilgi olarak gören epistemik yaklaşımları, yüzde 15'i çok dünyalı yorumu seçti. Yalnızca yüzde 24'ü seçtiği yorumun doğru olduğundan emin olduğunu belirtti.
+    en: In Nature's 2025 survey, 36 percent of respondents chose the Copenhagen interpretation, 17 percent epistemic approaches treating the wave function as information, and 15 percent many worlds; only 24 percent said they were confident their chosen interpretation was correct.
+    src: [nature2025-survey]
+claims:
+  - tr: Kuantum mekaniğinin matematiksel çerçevesi üzerinde uzlaşı vardır, ancak bu çerçevenin fiziksel gerçeklik hakkında ne söylediği konusunda uzlaşı yoktur.
+    en: There is agreement on the mathematical framework of quantum mechanics but no agreement on what that framework says about physical reality.
+    src: [nature2025-survey]
+sources:
+  nature2025-survey:
+    type: article
+    authors: Gibney, E.
+    title: Physicists disagree wildly on what quantum mechanics says about reality, Nature survey shows
+    year: 2025
+    in: Nature 643, 1175–1179
+    doi: 10.1038/d41586-025-02342-y
+open:
+  - tr: Ölçüm sırasında gerçekten ne olur? Yorumlar arasında deneyle karar vermek mümkün mü?
+    en: What really happens during a measurement? Can experiment decide between the interpretations?
+related: [kuantum-kutlecekim]

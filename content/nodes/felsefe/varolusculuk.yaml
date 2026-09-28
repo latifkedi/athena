@@ -1,0 +1,76 @@
+id: varolusculuk
+parent: felsefe
+type: tradition
+date: { year: 1943 }
+people: [Søren Kierkegaard, Jean-Paul Sartre, Simone de Beauvoir, Albert Camus, Martin Heidegger]
+title:
+  tr: Varoluşçuluk
+  en: Existentialism
+summary:
+  tr: >-
+    Varoluşçuluk, insanın önceden belirlenmiş bir özü olmadığını, kim olacağını kendi seçimleriyle belirlediğini öne
+    süren bir düşünce akımıdır. Sartre bunu "varoluş özden önce gelir" diye özetledi. Özgürlük, sorumluluk, kaygı ve
+    anlam arayışı temel konularıdır. Kierkegaard'ın dinî, Sartre'ın ise ateist bir varoluşçuluğu vardı.
+  en: >-
+    Existentialism is a current of thought holding that humans have no predetermined essence and define who they become
+    through their own choices. Sartre summed this up as "existence precedes essence". Freedom, responsibility, anxiety
+    and the search for meaning are its main themes. Kierkegaard's existentialism was religious, Sartre's atheist.
+technical:
+  tr: >-
+    Varoluşçuluk tek bir öğreti değil, ortak temaları olan bir düşünce ailesidir. Kierkegaard'ın bireyin varoluş
+    aşamaları (estetik, etik, dinî) üzerine yazıları, Heidegger'in Dasein çözümlemesi ve Sartre'ın Varlık ve Hiçlik'i
+    (1943) başlıca kaynaklarıdır. Sartre'a göre kötü niyet (mauvaise foi), kişinin kendi özgürlüğünü inkâr ederek
+    kendini bir nesne gibi görmesidir. De Beauvoir İkinci Cins'te (1949) bu çerçeveyi kadınların toplumsal konumuna
+    uyguladı: "Kadın doğulmaz, kadın olunur."
+  en: >-
+    Existentialism is not a single doctrine but a family of views with shared themes. Kierkegaard's writings on the
+    stages of existence (aesthetic, ethical, religious), Heidegger's analysis of Dasein and Sartre's Being and Nothingness
+    (1943) are its main sources. For Sartre, bad faith (mauvaise foi) is denying one's own freedom by seeing oneself as an
+    object. In The Second Sex (1949) de Beauvoir applied this framework to the social position of women: "One is not
+    born, but rather becomes, a woman."
+claims:
+  - tr: İnsan önce var olur, sonra eylemleriyle kendini tanımlar. Bu nedenle yaptığı seçimlerden tümüyle sorumludur.
+    en: A human being first exists and then defines themselves through their actions, and is therefore wholly responsible for their choices.
+    src: [sartre1946, sep-existentialism]
+positions:
+  - who:
+      tr: Dinî varoluşçuluk (Kierkegaard)
+      en: Religious existentialism (Kierkegaard)
+    tr: Birey, akılla tam olarak gerekçelendirilemeyen bir "inanç sıçrayışıyla" Tanrı karşısında kendi olur.
+    en: The individual becomes a self before God through a "leap of faith" that reason cannot fully justify.
+    src: [sep-kierkegaard]
+  - who:
+      tr: Ateist varoluşçuluk (Sartre)
+      en: Atheist existentialism (Sartre)
+    tr: Tanrı yoksa insan doğasını belirleyen bir tasarım da yoktur. İnsan "özgür olmaya mahkûmdur".
+    en: If there is no God there is no design fixing human nature; humans are "condemned to be free".
+    src: [sartre1946]
+  - who:
+      tr: Camus
+      en: Camus
+    tr: Varoluşçu etiketini reddetti. İnsanın anlam arayışıyla dünyanın sessizliği arasındaki uyumsuzluğu (absürd) kabul edip yaşamaya devam etmeyi önerdi.
+    en: He rejected the existentialist label and proposed accepting the absurd, the mismatch between the human search for meaning and the silence of the world, and living on.
+    src: [sep-existentialism]
+sources:
+  sartre1946:
+    type: book
+    authors: Sartre, J.-P.
+    title: L'existentialisme est un humanisme
+    year: 1946
+    in: Nagel, Paris
+  sep-existentialism:
+    type: encyclopedia
+    authors: Crowell, S.
+    title: Existentialism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/existentialism/
+  sep-kierkegaard:
+    type: encyclopedia
+    authors: McDonald, W.
+    title: Søren Kierkegaard
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/kierkegaard/
+related: [nietzsche, fenomenoloji, ozgur-irade]
+links:
+  - { to: nietzsche, rel: influenced-by }
+  - { to: fenomenoloji, rel: influenced-by }

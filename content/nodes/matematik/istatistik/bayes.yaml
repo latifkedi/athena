@@ -1,0 +1,64 @@
+id: bayes
+parent: matematik
+type: text
+date: { year: 1763 }
+people: [Thomas Bayes, Richard Price, Pierre-Simon Laplace]
+title:
+  tr: Bayes teoremi ve olasılıkla akıl yürütme
+  en: Bayes' theorem and reasoning with probability
+summary:
+  tr: >-
+    Thomas Bayes'in ölümünden sonra, 1763'te Richard Price tarafından yayımlanan makalesi, yeni kanıt geldiğinde bir
+    hipoteze duyulan güvenin nasıl güncelleneceğini gösteren bir yöntem sundu. Laplace bu fikri bağımsız olarak geliştirip
+    genelleştirdi. Bayes teoremi bugün tıbbi tanıdan yapay zekâya, bilimsel yöntem tartışmalarından mahkemelerdeki kanıt
+    değerlendirmesine kadar geniş bir alanda kullanılır. Olasılığın ne anlama geldiği ise tartışmalıdır.
+  en: >-
+    Thomas Bayes's essay, published after his death in 1763 by Richard Price, offered a method showing how confidence in a
+    hypothesis should be updated when new evidence arrives. Laplace developed and generalised the idea independently.
+    Today Bayes' theorem is used widely, from medical diagnosis and artificial intelligence to debates on scientific
+    method and the weighing of evidence in courts. What probability means, however, is debated.
+technical:
+  tr: >-
+    Teorem P(H|E) = P(E|H)·P(H) / P(E) biçimindedir. Önsel olasılık P(H), kanıtın olabilirliği P(E|H) ile çarpılarak sonsal
+    olasılığa dönüştürülür. Bayesçi yaklaşımda olasılık bir inanç derecesidir ve önsel olasılıkların seçimi öznellik
+    eleştirisine konu olur. Sıklıkçı yaklaşımda ise olasılık, tekrarlanan denemelerdeki uzun dönem oranıdır ve
+    hipotezlere olasılık atanmaz. Markov zinciri Monte Carlo yöntemlerinin 1990'larda yaygınlaşması, Bayesçi hesapları
+    karmaşık modellerde uygulanabilir kıldı.
+  en: >-
+    The theorem reads P(H|E) = P(E|H)·P(H) / P(E): the prior probability P(H) is multiplied by the likelihood of the
+    evidence P(E|H) to give the posterior. In the Bayesian approach probability is a degree of belief, and the choice of
+    priors draws the criticism of subjectivity. In the frequentist approach probability is the long-run frequency in
+    repeated trials, and no probability is assigned to hypotheses. The spread of Markov chain Monte Carlo methods in the
+    1990s made Bayesian computation feasible for complex models.
+claims:
+  - tr: Bir hipoteze duyulan güven, yeni kanıtın o hipotez altında ne kadar beklendiğine göre, belirli bir kurala uyarak güncellenmelidir.
+    en: Confidence in a hypothesis should be updated by a definite rule, according to how expected the new evidence is under that hypothesis.
+    src: [bayes1763, sep-bayes-epistemology]
+positions:
+  - who:
+      tr: Bayesçiler
+      en: Bayesians
+    tr: Olasılık bir inanç derecesidir. Önsel bilgiyi açıkça hesaba katmak, bilimsel çıkarımı daha tutarlı ve şeffaf kılar.
+    en: Probability is a degree of belief; taking prior knowledge explicitly into account makes scientific inference more coherent and transparent.
+    src: [sep-bayes-epistemology]
+  - who:
+      tr: Sıklıkçılar
+      en: Frequentists
+    tr: Olasılık yalnızca tekrarlanabilir olayların uzun dönem sıklığıdır. Öznel önsel olasılıklar bilimsel sonuçlara keyfîlik katar.
+    en: Probability is only the long-run frequency of repeatable events; subjective priors bring arbitrariness into scientific conclusions.
+    src: [sep-bayes-epistemology]
+sources:
+  bayes1763:
+    type: article
+    authors: Bayes, T.; Price, R.
+    title: An essay towards solving a problem in the doctrine of chances
+    year: 1763
+    in: Philosophical Transactions of the Royal Society of London 53, 370–418
+    doi: 10.1098/rstl.1763.0053
+  sep-bayes-epistemology:
+    type: encyclopedia
+    authors: Lin, H.
+    title: Bayesian Epistemology
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/epistemology-bayesian/
+related: [p-degeri, bilim-felsefesi]

@@ -1,0 +1,76 @@
+id: fmri
+parent: psikoloji
+type: technology
+date: { year: 1990 }
+people: [Seiji Ogawa, Anders Eklund, Thomas Nichols]
+title:
+  tr: İşlevsel manyetik rezonans görüntüleme (fMRI)
+  en: Functional magnetic resonance imaging (fMRI)
+summary:
+  tr: >-
+    fMRI, beyindeki kan oksijenlenmesindeki değişimleri ölçerek hangi bölgelerin bir görev sırasında daha etkin olduğunu
+    dolaylı olarak gösterir. Yöntemin dayandığı BOLD sinyali 1990'da Seiji Ogawa ve ekibi tarafından tanımlandı. fMRI,
+    insan beynini ameliyatsız incelemeyi sağlayarak bilişsel sinirbilimi dönüştürdü. Öte yandan istatistiksel yöntemlerin
+    yanlış pozitif sonuç verebildiği ve aynı kişide tekrarlanan ölçümlerin güvenilirliğinin düşük olabildiği gösterildi.
+  en: >-
+    fMRI indirectly shows which brain regions are more active during a task by measuring changes in blood oxygenation.
+    The BOLD signal it relies on was described in 1990 by Seiji Ogawa and colleagues. By allowing the human brain to be
+    studied without surgery, fMRI transformed cognitive neuroscience. It has also been shown, however, that some
+    statistical methods can give false positives and that repeated measurements in the same person can have low
+    reliability.
+technical:
+  tr: >-
+    Oksijensiz hemoglobin paramanyetiktir ve manyetik alanı bozar. Etkin bölgeye giden kan akımı oksijen tüketiminden daha
+    çok arttığı için oksijensiz hemoglobin oranı düşer ve sinyal yükselir (BOLD). Sinyal sinirsel etkinliği birkaç
+    saniyelik gecikmeyle ve dolaylı olarak izler. Tek bir taramada yüz binlerce voksel test edildiğinden çoklu
+    karşılaştırma düzeltmesi zorunludur. Kümeleme temelli yaygın bir yöntemin, beklenen yüzde 5 yerine yüzde 70'e varan
+    yanlış pozitif oranı verebildiği bildirildi.
+  en: >-
+    Deoxygenated haemoglobin is paramagnetic and distorts the magnetic field. Because blood flow to an active region rises
+    more than oxygen consumption, the proportion of deoxygenated haemoglobin falls and the signal rises (BOLD). The signal
+    tracks neural activity indirectly, with a delay of a few seconds. Since hundreds of thousands of voxels are tested in
+    one scan, correction for multiple comparisons is essential. A common cluster-based method was reported to give false
+    positive rates of up to 70 percent instead of the nominal 5 percent.
+claims:
+  - tr: Kan oksijenlenmesine bağlı sinyal (BOLD), beyin bölgelerindeki sinirsel etkinliğin dolaylı ama kullanılabilir bir ölçüsüdür.
+    en: The blood-oxygenation-level-dependent (BOLD) signal is an indirect but usable measure of neural activity in brain regions.
+    src: [ogawa1990]
+evidence:
+  - kind: experiment
+    stance: for
+    tr: Sıçan beyninde kan oksijen düzeyi değiştirildiğinde, MR görüntüsündeki damar kontrastının buna bağlı olarak değiştiği gösterildi.
+    en: When blood oxygen levels were changed in the rat brain, the vessel contrast in MR images changed accordingly.
+    src: [ogawa1990]
+  - kind: statistical
+    stance: against
+    tr: Gerçek dinlenme verileriyle yapılan kontrollerde yaygın bir istatistik yönteminin çok yüksek yanlış pozitif oranı verdiği gösterildi. Bu, önceki bazı bulguların yeniden değerlendirilmesini gerektirir.
+    en: Checks with real resting-state data showed that a common statistical method gives very high false positive rates, calling for some earlier findings to be re-evaluated.
+    src: [eklund2016]
+  - kind: statistical
+    stance: against
+    tr: Görev temelli fMRI ölçümlerinin aynı kişilerde tekrarlandığında düşük güvenilirlik gösterdiği bir meta-analizle bulundu. Bu, bireysel farkları ölçmede kullanımı sınırlar.
+    en: A meta-analysis found that task-based fMRI measures show poor reliability when repeated in the same people, limiting their use for measuring individual differences.
+    src: [elliott2020]
+sources:
+  ogawa1990:
+    type: article
+    authors: Ogawa, S.; Lee, T. M.; Kay, A. R.; Tank, D. W.
+    title: Brain magnetic resonance imaging with contrast dependent on blood oxygenation
+    year: 1990
+    in: Proceedings of the National Academy of Sciences 87(24), 9868–9872
+    doi: 10.1073/pnas.87.24.9868
+  eklund2016:
+    type: article
+    authors: Eklund, A.; Nichols, T. E.; Knutsson, H.
+    title: 'Cluster failure: why fMRI inferences for spatial extent have inflated false-positive rates'
+    year: 2016
+    in: Proceedings of the National Academy of Sciences 113(28), 7900–7905
+    doi: 10.1073/pnas.1602413113
+  elliott2020:
+    type: article
+    authors: Elliott, M. L. et al.
+    title: 'What is the test-retest reliability of common task-functional MRI measures? New empirical evidence and a meta-analysis'
+    year: 2020
+    in: Psychological Science 31(7), 792–806
+    doi: 10.1177/0956797620916786
+related: [tekrarlama-krizi, bilinc]

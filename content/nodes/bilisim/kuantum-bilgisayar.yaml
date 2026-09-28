@@ -68,3 +68,5 @@ sources:
     year: 2019
     arxiv: '1910.09534'
 related: [makroskopik-tunelleme, kuantum-mekanigi]
+links:
+  - { to: kuantum-mekanigi, rel: builds-on }

@@ -66,3 +66,5 @@ sources:
     year: 1954
     in: E. J. W. Gibb Memorial Trust / Oxford University Press
 related: [gazali-tehafut, ibn-rusd, teistik-evrim, islam-ve-evrim]
+links:
+  - { to: mutezile, rel: opposes }

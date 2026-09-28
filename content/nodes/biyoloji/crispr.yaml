@@ -57,3 +57,5 @@ sources:
     in: Nature Biotechnology 36, 765–771
     doi: 10.1038/nbt.4192
 related: [kisiye-ozel-crispr, dna]
+links:
+  - { to: dna, rel: builds-on }

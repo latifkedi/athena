@@ -1,0 +1,38 @@
+id: mimarlik
+parent: sanat
+type: field
+title:
+  tr: Mimarlık
+  en: Architecture
+summary:
+  tr: >-
+    Mimarlık, yapıların tasarlanması ve inşasıdır. Hem bir mühendislik bilgisi hem de bir sanattır. Büyük yapılar,
+    döneminin malzeme bilgisini, matematiğini, toplumsal örgütlenmesini ve inançlarını birlikte yansıtır. Bu dal,
+    yapım yöntemleri hâlâ tartışılan eski yapılardan yüzyıllardır ayakta kalan kubbelere kadar insanlığın yapı bilgisini
+    izler.
+  en: >-
+    Architecture is the design and construction of buildings. It is both engineering knowledge and an art. Great buildings
+    reflect together the knowledge of materials, mathematics, social organisation and beliefs of their time. This branch
+    traces humanity's building knowledge, from ancient structures whose construction methods are still debated to domes
+    that have stood for centuries.
+technical:
+  tr: >-
+    Taşıyıcı sistemler (duvar, kemer, tonoz, kubbe, iskelet) ve malzemeler (taş, tuğla, harç, beton, çelik) mimarlık
+    tarihinin ana eksenlerini oluşturur. Kubbe yüklerinin pandantifler ve yarım kubbelerle taşınması, Bizans'tan Osmanlı'ya
+    süren bir yapı geleneğinin temelidir.
+  en: >-
+    Structural systems (wall, arch, vault, dome, frame) and materials (stone, brick, mortar, concrete, steel) form the main
+    axes of architectural history. Carrying dome loads with pendentives and semi-domes underlies a building tradition that
+    runs from Byzantium to the Ottomans.
+claims:
+  - tr: Büyük yapıların inşası, malzeme bilgisi ve geometrinin yanı sıra büyük bir iş gücünün örgütlenmesini gerektirir.
+    en: Building great structures requires organising a large workforce as well as knowledge of materials and geometry.
+    src: [lehner1997]
+sources:
+  lehner1997:
+    type: book
+    authors: Lehner, M.
+    title: The Complete Pyramids
+    year: 1997
+    in: Thames & Hudson, London
+related: [perspektif]

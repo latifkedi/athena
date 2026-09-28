@@ -46,6 +46,16 @@ evidence:
     tr: DESI'nin üç yıllık verisi, CMB ve süpernova verileriyle birleştirildiğinde değişen karanlık enerjiyi sabit karanlık enerjiye tercih etti.
     en: "DESI's three-year data, combined with CMB and supernova data, preferred evolving dark energy over constant dark energy."
     src: [desi2025]
+  - kind: statistical
+    stance: against
+    tr: 740 süpernovalık JLA kataloğunun farklı bir istatistiksel yöntemle yeniden analizi, hızlanan genişlemenin kanıtının 3 sigmanın altında, yani "sınırda" kaldığını ileri sürdü.
+    en: A re-analysis of the 740-supernova JLA catalogue with a different statistical method argued that the evidence for accelerating expansion is below 3 sigma, that is, "marginal".
+    src: [nielsen2016]
+  - kind: statistical
+    stance: for
+    tr: Aynı veriler, süpernova özelliklerinin kırmızıya kaymayla değişimi hesaba katılarak incelendiğinde hızlanmanın lehine güçlü bir sonuç bulundu. Diğer kozmolojik verilerle birleştirildiğinde de hızlanma yüksek güvenle destekleniyor.
+    en: When the same data were examined taking into account how supernova properties change with redshift, a strong result in favour of acceleration was found; combined with other cosmological data, acceleration is also supported with high confidence.
+    src: [rubin2016]
 sources:
   riess1998:
     type: article
@@ -67,6 +77,20 @@ sources:
     title: 'DESI DR2 Results II: Measurements of baryon acoustic oscillations and cosmological constraints'
     year: 2025
     arxiv: '2503.14738'
+  nielsen2016:
+    type: article
+    authors: Nielsen, J. T.; Guffanti, A.; Sarkar, S.
+    title: Marginal evidence for cosmic acceleration from Type Ia supernovae
+    year: 2016
+    in: Scientific Reports 6, 35596
+    doi: 10.1038/srep35596
+  rubin2016:
+    type: article
+    authors: Rubin, D.; Hayden, B.
+    title: 'Is the expansion of the universe accelerating? All signs point to yes'
+    year: 2016
+    in: The Astrophysical Journal Letters 833, L30
+    doi: 10.3847/2041-8213/833/2/L30
 open:
   - tr: Karanlık enerji bir vakum enerjisi (kozmolojik sabit) mi, yoksa değişen bir alan mı?
     en: Is dark energy a vacuum energy (cosmological constant) or an evolving field?

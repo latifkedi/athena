@@ -66,3 +66,5 @@ sources:
     in: Physical Review Letters 89, 050601
     doi: 10.1103/PhysRevLett.89.050601
 related: [buhar-makinesi, surekli-hareket]
+links:
+  - { to: buhar-makinesi, rel: influenced-by }

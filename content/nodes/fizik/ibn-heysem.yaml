@@ -51,3 +51,9 @@ sources:
     in: TDV İslâm Ansiklopedisi
     url: https://islamansiklopedisi.org.tr/ibnul-heysem
 related: [perspektif, kepler]
+links:
+  - to: batlamyus
+    rel: opposes
+    note:
+      tr: 'eş-Şükûk alâ Batlamyûs (Batlamyus üzerine şüpheler) adlı eleştirisi'
+      en: 'His critique, al-Shukūk ʿalā Baṭlamyūs (Doubts concerning Ptolemy)'

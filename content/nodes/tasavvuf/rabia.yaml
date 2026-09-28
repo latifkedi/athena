@@ -1,0 +1,74 @@
+id: rabia
+parent: tasavvuf
+type: tradition
+people: [Râbia el-Adeviyye / Rābiʿa al-ʿAdawiyya]
+title:
+  tr: Râbia el-Adeviyye ve ilahi aşk
+  en: Rābiʿa al-ʿAdawiyya and divine love
+summary:
+  tr: >-
+    Basralı Râbia el-Adeviyye, tasavvufta Allah'ı cennet umudu ya da cehennem korkusu için değil, yalnızca kendisi için
+    sevme anlayışının sembolü olmuş bir kadın sufidir. Bir elinde ateş, bir elinde suyla cenneti yakıp cehennemi
+    söndürmek istediğini anlatan menkıbe bu anlayışı özetler. Kendisinden sonra gelen birçok sufiyi etkilediği kabul
+    edilir. Hayatına dair bilgilerin çoğu, ölümünden yüzyıllar sonra yazılmış anlatılara dayanır.
+  en: >-
+    Rābiʿa al-ʿAdawiyya of Basra is a woman Sufi who became the symbol, in Sufism, of loving God for His own sake rather
+    than in hope of paradise or fear of hell. The legend of her carrying fire in one hand and water in the other, to burn
+    paradise and put out hell, sums up this idea. She is held to have influenced many later Sufis. Most information about
+    her life rests on narratives written centuries after her death.
+technical:
+  tr: >-
+    Râbia'ya atfedilen sözler ve şiirler en çok Sülemî, Kuşeyrî ve özellikle Ferîdüddin Attâr'ın Tezkiretü'l-evliyâ'sı
+    gibi sonraki kaynaklarda yer alır. Cornell, Râbia imgesinin farklı dönemlerde zühd örneği, aşk mistiği ve bilge kadın
+    olarak yeniden biçimlendiğini gösterir. Mahabbet (ilahi sevgi) kavramının tasavvufun merkezine yerleşmesinde Râbia
+    adıyla anılan anlatıların rolü büyüktür.
+  en: >-
+    The sayings and verses attributed to Rābiʿa appear mostly in later sources such as Sulamī, Qushayrī and above all
+    Farīd al-Dīn ʿAṭṭār's Tadhkirat al-awliyāʾ. Cornell shows how the image of Rābiʿa was reshaped in different periods as
+    a model of asceticism, a love mystic and a wise woman. The narratives under her name played a large part in placing
+    maḥabba (divine love) at the centre of Sufism.
+claims:
+  - tr: Allah'a ibadet cennet umuduyla ya da cehennem korkusuyla değil, yalnızca O'na duyulan sevgiyle yapılmalıdır.
+    en: God should be worshipped not in hope of paradise or fear of hell but solely out of love for Him.
+    src: [tdv-rabia, cornell2019]
+datings:
+  - view:
+      tr: Yaygın kabul gören tarih
+      en: Commonly accepted date
+    value:
+      tr: Ölümü 185 (801)
+      en: Died 185 AH (801 CE)
+    src: [tdv-rabia]
+  - view:
+      tr: Bazı kaynaklarda geçen erken tarih
+      en: Earlier date in some sources
+    value:
+      tr: Ölümü 135 (752)
+      en: Died 135 AH (752 CE)
+    src: [tdv-rabia]
+positions:
+  - who:
+      tr: Tasavvuf geleneği
+      en: Sufi tradition
+    tr: Râbia, ilahi aşkı tasavvufa kazandıran, velî bir kadındır. Menkıbeler onun manevi hâlini yansıtır.
+    en: Rābiʿa is a saintly woman who brought divine love into Sufism; the legends reflect her spiritual state.
+    src: [tdv-rabia]
+  - who:
+      tr: Tarihsel eleştirel yaklaşım (Cornell)
+      en: Historical-critical approach (Cornell)
+    tr: Tarihsel Râbia hakkında çok az şey kesin olarak bilinir. Bugünkü Râbia imgesi, sonraki yazarların kendi dönemlerinin ideallerini yansıtan anlatılarından oluşmuştur.
+    en: Very little is known for certain about the historical Rābiʿa; today's image of her was formed by later authors' narratives reflecting the ideals of their own times.
+    src: [cornell2019]
+sources:
+  tdv-rabia:
+    type: encyclopedia
+    title: Râbia el-Adeviyye
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/rabia-el-adeviyye
+  cornell2019:
+    type: book
+    authors: Cornell, R. E.
+    title: "Rabi'a from Narrative to Myth: The Many Faces of Islam's Most Famous Woman Saint, Rabi'a al-'Adawiyya"
+    year: 2019
+    in: Oneworld Academic, London
+related: [cuneyd, hallac]

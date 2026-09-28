@@ -1,0 +1,58 @@
+id: pilot-dalga
+parent: kuantum-yorumlari
+type: idea
+date: { year: 1952 }
+people: [Louis de Broglie, David Bohm, John Bell]
+title:
+  tr: Pilot dalga kuramı (de Broglie–Bohm)
+  en: Pilot-wave theory (de Broglie–Bohm)
+summary:
+  tr: >-
+    De Broglie'nin 1927'de ortaya attığı ve Bohm'un 1952'de geliştirdiği bu kurama göre parçacıkların her zaman belirli
+    konumları vardır. Parçacıklar, Schrödinger denklemine uyan bir dalga tarafından yönlendirilir. Kuram belirlenimcidir
+    ve olasılıklar yalnızca başlangıç konumları hakkındaki bilgisizliğimizden gelir. Standart kuantum mekaniğiyle aynı
+    öngörüleri verir, ancak açıkça yerel olmayan bir kuramdır: uzaktaki bir parçacığın hareketi başka bir yerde olanlara
+    anında bağlıdır.
+  en: >-
+    According to this theory, put forward by de Broglie in 1927 and developed by Bohm in 1952, particles always have
+    definite positions and are guided by a wave obeying the Schrödinger equation. The theory is deterministic;
+    probabilities come only from our ignorance of initial positions. It gives the same predictions as standard quantum
+    mechanics but is explicitly non-local: the motion of a distant particle depends instantly on what happens elsewhere.
+technical:
+  tr: >-
+    Parçacık hızları, dalga fonksiyonunun fazının gradyanını veren "kılavuz denklem" ile belirlenir. Kuantum denge
+    varsayımı altında konum dağılımı |ψ|² olur ve Born kuralı yeniden elde edilir. Bell, eşitsizliğini kısmen bu kuramın
+    yerel olmayışının kaçınılmaz olup olmadığını sorarak geliştirdi. Kuramın göreli kuantum alan kuramına
+    genişletilmesi zordur. Akışkan damlacıklarla yapılan deneyler benzer bir yönlendirme davranışının klasik bir
+    benzerini gösterir.
+  en: >-
+    Particle velocities are fixed by the "guiding equation", given by the gradient of the phase of the wave function.
+    Under the quantum equilibrium hypothesis the position distribution is |ψ|² and the Born rule is recovered. Bell
+    developed his inequality partly by asking whether this theory's non-locality is unavoidable. Extending the theory to
+    relativistic quantum field theory is difficult. Experiments with fluid droplets show a classical analogue of a
+    similar guiding behaviour.
+claims:
+  - tr: Parçacıkların her an belirli konumları vardır ve hareketleri, dalga fonksiyonunun yerel olmayan etkisiyle belirlenir.
+    en: Particles have definite positions at every moment, and their motion is determined by the non-local influence of the wave function.
+    src: [bohm1952, sep-qm-bohm]
+positions:
+  - who:
+      tr: Eleştirmenler
+      en: Critics
+    tr: Kuram, gözlenemeyen yörüngeler ekleyerek standart kuramla aynı öngörüleri verir. Görelilikle uyumlu bir sürümü henüz yoktur.
+    en: The theory adds unobservable trajectories while making the same predictions as the standard theory, and has no version yet that fits well with relativity.
+    src: [sep-qm-bohm]
+sources:
+  bohm1952:
+    type: article
+    authors: Bohm, D.
+    title: A suggested interpretation of the quantum theory in terms of "hidden" variables. I
+    year: 1952
+    in: Physical Review 85, 166–179
+    doi: 10.1103/PhysRev.85.166
+  sep-qm-bohm:
+    type: encyclopedia
+    authors: Goldstein, S.
+    title: Bohmian Mechanics
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/qm-bohm/

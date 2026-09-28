@@ -1,0 +1,42 @@
+id: teknoloji
+parent: insanlik
+side: canopy
+type: field
+order: 3.2
+feed: ['openalex:field/22', 'arxiv:eess.SY', 'openalex-tr:field/22']
+title:
+  tr: Teknoloji ve mühendislik
+  en: Technology and engineering
+summary:
+  tr: >-
+    Teknoloji, bilginin araçlara, makinelere ve sistemlere dönüştürülmesidir. Tekerlekten matbaaya, uçaktan internete
+    kadar pek çok buluş insanların yaşama, çalışma ve iletişim biçimini değiştirdi. Bir buluşun kime ait olduğu ve
+    toplumu ne kadar değiştirdiği çoğu zaman tartışmalıdır. Çoğu büyük buluş birçok kişinin katkısıyla, farklı yerlerde
+    ve kademeli olarak ortaya çıkmıştır.
+  en: >-
+    Technology is the turning of knowledge into tools, machines and systems. Many inventions, from the wheel to the
+    printing press and from the aeroplane to the internet, changed how people live, work and communicate. Who an
+    invention belongs to and how much it changed society are often disputed. Most major inventions arose gradually, in
+    different places and with contributions from many people.
+technical:
+  tr: >-
+    Teknoloji tarihinde "tek mucit" anlatıları yerini giderek eş zamanlı buluşları, ağları ve altyapıları vurgulayan
+    yaklaşımlara bırakmıştır. Bir buluşun yayılması; malzemeye, maliyete, kurumlara ve yasal düzenlemelere bağlıdır. Bu
+    dalda ele alınan teknolojiler, enerji ve bilişim dallarındaki buluşlarla (buhar makinesi, transistör) yakından
+    ilişkilidir.
+  en: >-
+    In the history of technology, "lone inventor" stories have increasingly given way to approaches that stress
+    simultaneous invention, networks and infrastructure. The spread of an invention depends on materials, cost,
+    institutions and regulation. The technologies in this branch are closely tied to inventions in the energy and
+    computing branches (the steam engine, the transistor).
+sources:
+  britannica-tech:
+    type: encyclopedia
+    title: History of technology
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/technology/history-of-technology
+claims:
+  - tr: Büyük teknolojik değişimler çoğunlukla tek bir kişinin değil, birçok kişinin ve kurumun uzun süreli katkılarının ürünüdür.
+    en: Major technological changes are mostly the product of long-term contributions by many people and institutions rather than a single person.
+    src: [britannica-tech]
+related: [enerji, bilisim]

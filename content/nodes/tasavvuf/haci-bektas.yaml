@@ -1,0 +1,70 @@
+id: haci-bektas
+parent: tasavvuf
+type: tradition
+date: { year: 1270, approx: true }
+people: [Hacı Bektâş-ı Velî, Balım Sultan, Elvan Çelebi]
+title:
+  tr: Hacı Bektâş-ı Velî
+  en: Hacı Bektaş Veli
+summary:
+  tr: >-
+    Hacı Bektâş-ı Velî, 13. yüzyılda Horasan'dan Anadolu'ya gelen ve Kırşehir yakınlarındaki Sulucakarahöyük'e (bugünkü
+    Hacıbektaş) yerleşen bir sufidir. Alevî ve Bektaşî gelenekleri onu "pir" olarak kabul eder. Hayatı hakkında bilinenlerin
+    çoğu, ölümünden iki yüzyıl kadar sonra yazılan Vilâyetnâme'ye dayanır. Adını taşıyan Bektaşî tarikatının onun
+    tarafından değil, daha sonra kurumsallaştığı kabul edilir.
+  en: >-
+    Hacı Bektaş Veli is a 13th-century Sufi who came from Khorasan to Anatolia and settled at Sulucakarahöyük (today
+    Hacıbektaş) near Kırşehir. The Alevi and Bektashi traditions regard him as their "pir". Most of what is known about
+    his life rests on the Vilâyetnâme, written about two centuries after his death. The Bektashi order that bears his
+    name is held to have been institutionalised later, not founded by him.
+technical:
+  tr: >-
+    Onu anan en erken kaynaklardan biri, Elvan Çelebi'nin 1358'de yazdığı Menâkıbu'l-kudsiyye'dir. Aşıkpaşazâde de
+    tarihinde ondan söz eder. TDV'ye göre Vilâyetnâme onu Haydarî geleneğini ve Yesevî etkisini taşıyan bir şeyh olarak
+    gösterir. Tarikatın âdâb ve erkânı 16. yüzyıl başında Balım Sultan döneminde düzenlenmiştir. Makâlât adlı eser ona
+    atfedilir. Türbesinin bulunduğu külliye bugün müze olarak da hizmet verir.
+  en: >-
+    One of the earliest sources mentioning him is Elvan Çelebi's Menâkıbu'l-kudsiyye, written in 1358; Aşıkpaşazade also
+    mentions him in his history. According to TDV, the Vilâyetnâme presents him as a shaykh carrying the Ḥaydarī tradition
+    and Yasawī influence. The order's rules and rites were set in the early 16th century under Balım Sultan. The Makâlât
+    is attributed to him. The complex containing his tomb today also serves as a museum.
+claims:
+  - tr: Allah'a giden yol, dört kapı ve kırk makam olarak tarif edilen ahlaki ve manevi bir olgunlaşma sürecidir.
+    en: The way to God is a process of moral and spiritual maturation described as four gates and forty stations.
+    src: [tdv-haci-bektas]
+datings:
+  - view:
+      tr: Kaynaklarda geçen ölüm tarihi
+      en: Date of death in the sources
+    value:
+      tr: 669 (1270–71) civarı. Farklı kaynaklar birkaç yıl farklı tarihler verir.
+      en: Around 669 AH (1270–71); different sources give dates a few years apart.
+    src: [tdv-haci-bektas]
+positions:
+  - who:
+      tr: Alevî ve Bektaşî gelenekleri
+      en: Alevi and Bektashi traditions
+    tr: Hacı Bektâş-ı Velî yolun piridir. Öğretisi ve menkıbeleri kuşaktan kuşağa aktarılan manevi mirasın kaynağıdır.
+    en: Hacı Bektaş Veli is the pir of the path; his teaching and legends are the source of a spiritual heritage passed down the generations.
+    src: [tdv-haci-bektas]
+  - who:
+      tr: Tarihçiler (Karamustafa ve diğerleri)
+      en: Historians (Karamustafa and others)
+    tr: Tarihsel Hacı Bektaş ile Bektaşî tarikatı arasında bir zaman aralığı vardır. Tarikat onun adı etrafında, farklı derviş gruplarının zamanla birleşmesiyle şekillenmiştir.
+    en: There is a gap in time between the historical Hacı Bektaş and the Bektashi order; the order took shape around his name as different dervish groups merged over time.
+    src: [karamustafa1994, tdv-haci-bektas]
+sources:
+  tdv-haci-bektas:
+    type: encyclopedia
+    title: Hacı Bektâş-ı Velî
+    in: TDV İslâm Ansiklopedisi
+    url: https://islamansiklopedisi.org.tr/haci-bektas-i-veli
+  karamustafa1994:
+    type: book
+    authors: Karamustafa, A. T.
+    title: "God's Unruly Friends: Dervish Groups in the Islamic Later Middle Period, 1200–1550"
+    year: 1994
+    in: University of Utah Press, Salt Lake City
+related: [yesevi, yunus-emre, mevlana]
+links:
+  - { to: yesevi, rel: influenced-by }

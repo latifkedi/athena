@@ -1,0 +1,85 @@
+id: biyocesitlilik
+parent: biyoloji
+type: question
+date: { year: 2019 }
+people: [Gerardo Ceballos, Fangliang He, Stephen Hubbell, Mark Vellend]
+title:
+  tr: Biyoçeşitlilik kaybı ve "altıncı kitlesel yok oluş" tartışması
+  en: Biodiversity loss and the "sixth mass extinction" debate
+summary:
+  tr: >-
+    Birleşmiş Milletler'e bağlı IPBES'in 2019 küresel değerlendirmesi, yaklaşık bir milyon hayvan ve bitki türünün yok
+    olma tehdidiyle karşı karşıya olduğunu tahmin etti. Bazı araştırmacılar günümüzdeki yok oluş hızının doğal hızın çok
+    üzerinde olduğunu ve Dünya'nın altıncı kitlesel yok oluşa girdiğini savunur. Başkaları ise yok oluş hızı tahminlerinin
+    kullanılan yöntemlere çok bağlı olduğunu ve yerel ölçekte tür sayısının her yerde azalmadığını gösterir. Tartışma
+    kaybın varlığından çok, hızı ve ölçeği üzerinedir.
+  en: >-
+    The 2019 global assessment of IPBES, a UN-linked body, estimated that around one million animal and plant species face
+    extinction. Some researchers argue that today's extinction rate is far above the natural rate and that Earth has
+    entered a sixth mass extinction. Others show that estimates of extinction rates depend heavily on the methods used
+    and that species numbers are not declining everywhere at local scale. The debate is less about whether loss is
+    happening than about its rate and scale.
+technical:
+  tr: >-
+    Geçmişteki beş kitlesel yok oluşta türlerin yaklaşık dörtte üçü kısa jeolojik sürelerde kaybolmuştur. Günümüz için
+    belgelenmiş yok oluşlar bu orana henüz yaklaşmaz, ama yok oluş hızının arka plan hızına oranı çok yüksek tahmin
+    edilir. Tür-alan ilişkisine dayanan tahminlerin habitat kaybından doğan yok oluşları abarttığı gösterilmiştir.
+    Yerel ölçekte tür sayısı sabit kalırken, türlerin bileşimi değişebilir ve dünya genelinde tür çeşitliliği azalabilir.
+  en: >-
+    In the five past mass extinctions roughly three-quarters of species disappeared within short geological spans.
+    Documented extinctions today do not yet approach this proportion, but the ratio of the current extinction rate to
+    the background rate is estimated to be very high. Estimates based on the species–area relationship have been shown
+    to overstate extinctions caused by habitat loss. At local scale species numbers can stay constant while composition
+    changes and global diversity declines.
+claims:
+  - tr: Türlerin yok oluş hızı insan etkisi nedeniyle doğal arka plan hızının çok üzerindedir ve Dünya bir kitlesel yok oluş sürecine girmiştir.
+    en: Because of human impact the extinction rate of species is far above the natural background rate, and Earth has entered a mass extinction.
+    src: [ceballos2015, ipbes2019]
+evidence:
+  - kind: statistical
+    stance: for
+    tr: Temkinli varsayımlarla bile, 1900'den bu yana omurgalı türlerinin yok oluş hızının arka plan hızının onlarca katı olduğu hesaplandı.
+    en: Even under conservative assumptions, the extinction rate of vertebrate species since 1900 was calculated to be tens of times the background rate.
+    src: [ceballos2015]
+  - kind: theoretical
+    stance: against
+    tr: Habitat kaybından yok oluşu tahmin etmek için yaygın kullanılan tür-alan yönteminin yok oluş oranlarını sistematik olarak olduğundan yüksek gösterdiği matematiksel ve ampirik olarak gösterildi.
+    en: It was shown mathematically and empirically that the widely used species–area method for estimating extinction from habitat loss systematically overstates extinction rates.
+    src: [he2011]
+  - kind: statistical
+    stance: against
+    tr: 168 çalışmadaki 16.000'den fazla bitki ölçüm alanının meta-analizi, yerel ölçekte tür sayısında ortalamada net bir azalma bulmadı.
+    en: A meta-analysis of more than 16,000 vegetation plots from 168 studies found no net decrease in species numbers at local scale on average.
+    src: [vellend2013]
+sources:
+  ipbes2019:
+    type: report
+    authors: IPBES
+    title: Global Assessment Report on Biodiversity and Ecosystem Services
+    year: 2019
+    doi: 10.5281/zenodo.3831673
+  ceballos2015:
+    type: article
+    authors: Ceballos, G.; Ehrlich, P. R.; Barnosky, A. D.; García, A.; Pringle, R. M.; Palmer, T. M.
+    title: 'Accelerated modern human–induced species losses: entering the sixth mass extinction'
+    year: 2015
+    in: Science Advances 1(5), e1400253
+    doi: 10.1126/sciadv.1400253
+  he2011:
+    type: article
+    authors: He, F.; Hubbell, S. P.
+    title: Species–area relationships always overestimate extinction rates from habitat loss
+    year: 2011
+    in: Nature 473, 368–371
+    doi: 10.1038/nature09985
+  vellend2013:
+    type: article
+    authors: Vellend, M. et al.
+    title: Global meta-analysis reveals no net change in local-scale plant biodiversity over time
+    year: 2013
+    in: Proceedings of the National Academy of Sciences 110(48), 19456–19459
+    doi: 10.1073/pnas.1312779110
+open:
+  - tr: Günümüzdeki yok oluşların gerçek hızı nedir ve ne kadarı henüz fark edilmemiştir?
+    en: What is the true rate of today's extinctions, and how many have not yet been noticed?
+related: [ekosistem, kuresel-isinma]

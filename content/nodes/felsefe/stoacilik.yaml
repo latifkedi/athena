@@ -1,0 +1,82 @@
+id: stoacilik
+parent: felsefe
+type: tradition
+date: { year: -300, approx: true }
+people: [Kıtionlu Zenon / Zeno of Citium, Khrysippos / Chrysippus, Seneca, Epiktetos / Epictetus, Marcus Aurelius]
+title:
+  tr: Stoacılık
+  en: Stoicism
+summary:
+  tr: >-
+    Stoacılık, MÖ 300 dolaylarında Atina'da Kıtionlu Zenon'un kurduğu bir felsefe okuludur. Stoacılara göre tek gerçek
+    iyi erdemdir ve mutluluk, doğaya ve akla uygun yaşamaktır. İnsan elinde olanla olmayanı ayırmalı, olmayan şeyler
+    için kaygılanmamalıdır. Seneca, Epiktetos ve Marcus Aurelius'un yazıları bugün de geniş bir okur kitlesine ulaşır.
+  en: >-
+    Stoicism is a school of philosophy founded in Athens around 300 BCE by Zeno of Citium. For the Stoics virtue is the
+    only true good, and happiness is living in agreement with nature and reason. One should distinguish what is up to
+    us from what is not, and not be troubled by the latter. The writings of Seneca, Epictetus and Marcus Aurelius still
+    reach a wide readership.
+technical:
+  tr: >-
+    Stoa felsefeyi mantık, fizik ve etik olarak üçe ayırdı. Khrysippos önermeler mantığının ilk sistemli biçimlerinden
+    birini geliştirdi. Stoa fiziğinde evren, etkin bir akıl ilkesiyle (logos) düzenlenen maddi bir bütündür ve her şey
+    bir nedenler zinciriyle belirlenir. Stoacılar yine de insan onayının (synkatathesis) bizim elimizde olduğunu, yani
+    belirlenimcilikle sorumluluğun bağdaştığını savundu. Tutkular (pathe) yanlış yargılardan doğar.
+  en: >-
+    The Stoa divided philosophy into logic, physics and ethics. Chrysippus developed one of the first systematic forms
+    of propositional logic. In Stoic physics the cosmos is a material whole ordered by an active rational principle
+    (logos), and everything is determined by a chain of causes. The Stoics nevertheless held that human assent
+    (synkatathesis) is up to us, so that determinism and responsibility are compatible. Passions (pathe) arise from false
+    judgements.
+claims:
+  - tr: Erdem mutluluk için hem gerekli hem yeterlidir. Sağlık, servet ve ün gibi şeyler ne iyi ne kötüdür, "kayıtsız" şeylerdir.
+    en: Virtue is both necessary and sufficient for happiness; health, wealth and fame are neither good nor bad but "indifferents".
+    src: [long-sedley, sep-stoicism]
+  - tr: Duygusal acılar olayların kendisinden değil, olaylar hakkındaki yargılarımızdan doğar.
+    en: Emotional suffering arises not from events themselves but from our judgements about them.
+    src: [meditations, long-sedley]
+positions:
+  - who:
+      tr: Epikürcüler
+      en: Epicureans
+    tr: En yüksek iyi hazdır, ama bu haz acının ve kaygının yokluğu olarak anlaşılmalıdır. Evren atomların tesadüfi hareketinden oluşur.
+    en: The highest good is pleasure, understood as the absence of pain and anxiety; the cosmos arises from the chance motion of atoms.
+    src: [long-sedley]
+  - who:
+      tr: Bilişsel davranışçı terapinin kurucuları
+      en: Founders of cognitive behavioural therapy
+    tr: Albert Ellis ve Aaron Beck, düşüncelerin duyguları biçimlendirdiği fikrini geliştirirken Epiktetos'u öncül olarak andılar.
+    en: Albert Ellis and Aaron Beck cited Epictetus as a forerunner when developing the idea that thoughts shape emotions.
+    src: [robertson2010]
+sources:
+  sep-stoicism:
+    type: encyclopedia
+    authors: Baltzly, D.
+    title: Stoicism
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/stoicism/
+  long-sedley:
+    type: book
+    authors: Long, A. A.; Sedley, D. N.
+    title: 'The Hellenistic Philosophers, Vol. 1: Translations of the Principal Sources with Philosophical Commentary'
+    year: 1987
+    in: Cambridge University Press
+  meditations:
+    type: book
+    authors: Marcus Aurelius; Hard, R. (trans.)
+    title: Meditations
+    year: 2011
+    in: Oxford World's Classics, Oxford University Press
+  robertson2010:
+    type: book
+    authors: Robertson, D.
+    title: 'The Philosophy of Cognitive-Behavioural Therapy (CBT): Stoic Philosophy as Rational and Cognitive Psychotherapy'
+    year: 2010
+    in: Karnac, London
+related: [sokrates-oncesi, platon]
+links:
+  - to: sokrates-oncesi
+    rel: influenced-by
+    note:
+      tr: 'Herakleitos''un logos düşüncesi'
+      en: 'Heraclitus''s idea of the logos'

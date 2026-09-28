@@ -79,3 +79,9 @@ sources:
     year: 2019
     in: Evolution 73(1)
     doi: 10.1111/evo.13650
+links:
+  - to: modern-sentez
+    rel: opposes
+    note:
+      tr: 'Moleküler düzeydeki değişimlerin çoğunun seçilimle açıklandığı görüşüne karşı'
+      en: 'Against the view that most change at the molecular level is due to selection'

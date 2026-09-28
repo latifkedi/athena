@@ -1,0 +1,83 @@
+id: soguk-karanlik-madde
+parent: karanlik-madde
+type: idea
+date: { year: 1984 }
+people: [George Blumenthal, Sandra Faber, Joel Primack, Martin Rees, Douglas Clowe]
+title:
+  tr: Soğuk karanlık madde (ΛCDM modeli)
+  en: Cold dark matter (the ΛCDM model)
+summary:
+  tr: >-
+    Bu görüşe göre evrendeki maddenin yaklaşık beşte dördü, ışıkla etkileşmeyen ve yavaş hareket eden ("soğuk")
+    parçacıklardan oluşur. Karanlık enerjiyle (Λ) birlikte kozmolojinin standart modelini (ΛCDM) oluşturur. Model
+    kozmik mikrodalga arka plan ışımasını, galaksilerin büyük ölçekli dağılımını ve Mermi Kümesi gibi gözlemleri başarıyla
+    açıklar. Ancak onlarca yıllık aramaya rağmen karanlık madde parçacıkları laboratuvarda doğrudan saptanamadı.
+  en: >-
+    On this view about four-fifths of the matter in the universe consists of slow-moving ("cold") particles that do not
+    interact with light. Together with dark energy (Λ) it forms the standard model of cosmology (ΛCDM). The model
+    successfully explains the cosmic microwave background, the large-scale distribution of galaxies and observations
+    such as the Bullet Cluster. Despite decades of searching, however, dark matter particles have not been detected
+    directly in the laboratory.
+technical:
+  tr: >-
+    Blumenthal ve arkadaşları 1984'te soğuk karanlık maddenin galaksi ve küme oluşumunu gözlemlerle uyumlu biçimde
+    açıklayabildiğini gösterdi. Planck uydusunun 2018 verileri, karanlık madde yoğunluğunu Ωch² ≈ 0,120 olarak verir.
+    Galaksi ölçeğinde "çekirdek-sivri uç" sorunu ve beklenenden az uydu galaksi gibi gerilimler vardır. Bunların
+    baryonik geri besleme süreçleriyle açıklanıp açıklanamayacağı tartışılır. WIMP'ler, aksiyonlar ve steril nötrinolar
+    başlıca parçacık adaylarıdır.
+  en: >-
+    In 1984 Blumenthal and colleagues showed that cold dark matter can explain the formation of galaxies and clusters in
+    agreement with observations. The Planck satellite's 2018 data give the dark matter density as Ωch² ≈ 0.120. At galaxy
+    scale there are tensions such as the "cusp–core" problem and fewer satellite galaxies than expected; whether these can
+    be explained by baryonic feedback is debated. WIMPs, axions and sterile neutrinos are the main particle candidates.
+claims:
+  - tr: Maddenin çoğu, yalnızca kütleçekimiyle etkileşen, soğuk ve görünmeyen parçacıklardan oluşur.
+    en: Most matter consists of cold, invisible particles that interact only through gravity.
+    src: [blumenthal1984, planck2018]
+evidence:
+  - kind: observation
+    stance: for
+    tr: Mermi Kümesi'nde kütleçekimsel mercekleme ile belirlenen kütle merkezleri, X-ışını yayan sıcak gazdan belirgin biçimde ayrıktır. Bu, kütlenin çoğunun görünen gazda olmadığını gösterir.
+    en: In the Bullet Cluster the mass centres found by gravitational lensing are clearly offset from the X-ray-emitting hot gas, showing that most of the mass is not in the visible gas.
+    src: [clowe2006]
+  - kind: measurement
+    stance: for
+    tr: Kozmik mikrodalga arka plan ışımasının güç tayfındaki tepe yükseklikleri, baryonlardan ayrı bir karanlık madde bileşeniyle yüksek doğrulukta uyumludur.
+    en: The heights of the peaks in the power spectrum of the cosmic microwave background agree with high precision with a dark matter component separate from baryons.
+    src: [planck2018]
+  - kind: experiment
+    stance: against
+    tr: Dünyanın en duyarlı doğrudan algılama deneylerinden LZ, WIMP türü karanlık madde parçacıklarına ait bir sinyal bulamadı ve olası etkileşimlere sıkı üst sınırlar koydu.
+    en: LZ, one of the world's most sensitive direct-detection experiments, found no signal from WIMP-type dark matter particles and set strict upper limits on possible interactions.
+    src: [lz2023]
+sources:
+  blumenthal1984:
+    type: article
+    authors: Blumenthal, G. R.; Faber, S. M.; Primack, J. R.; Rees, M. J.
+    title: Formation of galaxies and large-scale structure with cold dark matter
+    year: 1984
+    in: Nature 311, 517–525
+    doi: 10.1038/311517a0
+  planck2018:
+    type: article
+    authors: Planck Collaboration
+    title: 'Planck 2018 results. VI. Cosmological parameters'
+    year: 2020
+    in: Astronomy & Astrophysics 641, A6
+    doi: 10.1051/0004-6361/201833910
+  clowe2006:
+    type: article
+    authors: Clowe, D. et al.
+    title: A direct empirical proof of the existence of dark matter
+    year: 2006
+    in: The Astrophysical Journal 648, L109–L113
+    doi: 10.1086/508162
+  lz2023:
+    type: article
+    authors: LZ Collaboration
+    title: First dark matter search results from the LUX-ZEPLIN (LZ) experiment
+    year: 2023
+    in: Physical Review Letters 131, 041002
+    doi: 10.1103/PhysRevLett.131.041002
+links:
+  - { to: genel-gorelilik, rel: builds-on }

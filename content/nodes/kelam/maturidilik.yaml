@@ -34,3 +34,5 @@ sources:
     title: Mâtürîdiyye
     in: TDV İslâm Ansiklopedisi
     url: https://islamansiklopedisi.org.tr/maturidiyye
+links:
+  - { to: mutezile, rel: opposes }

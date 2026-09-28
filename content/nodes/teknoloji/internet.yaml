@@ -1,0 +1,75 @@
+id: internet
+parent: teknoloji
+type: technology
+date: { year: 1969, month: 10, day: 29 }
+people: [Vint Cerf, Robert Kahn, Paul Baran, Donald Davies, Tim Berners-Lee]
+title:
+  tr: İnternet ve Web
+  en: The internet and the Web
+summary:
+  tr: >-
+    İnternetin öncüsü ARPANET'te ilk mesaj 29 Ekim 1969'da UCLA'dan Stanford'a gönderildi. Veriyi küçük paketlere bölen
+    paket anahtarlama fikri ABD'de Paul Baran ve İngiltere'de Donald Davies tarafından birbirinden bağımsız geliştirildi.
+    Cerf ve Kahn'ın 1974'te tanımladığı TCP/IP, farklı ağların birbirine bağlanmasını sağladı. Tim Berners-Lee
+    1989'da CERN'de World Wide Web'i önerdi ve Web internetin en yaygın kullanım biçimi oldu.
+  en: >-
+    On the ARPANET, the forerunner of the internet, the first message was sent from UCLA to Stanford on 29 October 1969.
+    The idea of packet switching, splitting data into small packets, was developed independently by Paul Baran in the US
+    and Donald Davies in the UK. TCP/IP, described by Cerf and Kahn in 1974, made it possible to connect different
+    networks. Tim Berners-Lee proposed the World Wide Web at CERN in 1989, and the Web became the most common way of
+    using the internet.
+technical:
+  tr: >-
+    İnternet, merkezi bir denetim noktası olmadan, uçtan uca ilkesine göre çalışan ağların ağıdır. ARPANET 1 Ocak 1983'te
+    TCP/IP'ye geçti. Alan adı sistemi (DNS) 1983'te tanımlandı. Web, HTTP, HTML ve URL'den oluşan bir hipermetin sistemidir
+    ve 1993'te CERN tarafından telifsiz olarak kamuya açıldı.
+  en: >-
+    The internet is a network of networks that works on the end-to-end principle without a central point of control.
+    ARPANET switched to TCP/IP on 1 January 1983; the Domain Name System (DNS) was defined in 1983. The Web is a hypertext
+    system consisting of HTTP, HTML and URLs, and was put into the public domain royalty-free by CERN in 1993.
+claims:
+  - tr: Farklı yapıdaki ağlar, ortak bir paket biçimi ve ağ geçitleri aracılığıyla tek bir ağlar ağı olarak birbirine bağlanabilir.
+    en: Networks of different kinds can be joined into a single network of networks through a common packet format and gateways.
+    src: [cerf-kahn1974]
+positions:
+  - who:
+      tr: Yaygın anlatı
+      en: Popular account
+    tr: ARPANET, bir nükleer saldırıdan sonra da çalışmaya devam edecek bir iletişim ağı olarak kuruldu.
+    en: ARPANET was built as a communications network that would keep working after a nuclear attack.
+    src: [leiner2009]
+  - who:
+      tr: İnterneti kuranların kendi aktarımı
+      en: The builders' own account
+    tr: Baran'ın paket anahtarlama çalışması nükleer saldırıya dayanıklılık için yapılmıştı. ARPANET'in amacı ise araştırmacıların pahalı bilgisayarları paylaşmasıydı. İki çizgi sonradan birleşti.
+    en: Baran's packet-switching work was motivated by survivability under nuclear attack, but ARPANET's aim was to let researchers share expensive computers; the two lines merged later.
+    src: [leiner2009]
+sources:
+  cerf-kahn1974:
+    type: article
+    authors: Cerf, V. G.; Kahn, R. E.
+    title: A protocol for packet network intercommunication
+    year: 1974
+    in: IEEE Transactions on Communications 22(5), 637–648
+    doi: 10.1109/TCOM.1974.1092259
+  leiner2009:
+    type: article
+    authors: Leiner, B. M.; Cerf, V. G.; Clark, D. D.; Kahn, R. E.; Kleinrock, L.; Lynch, D. C.; Postel, J.; Roberts, L. G.; Wolff, S.
+    title: A brief history of the internet
+    year: 2009
+    in: ACM SIGCOMM Computer Communication Review 39(5), 22–31
+    doi: 10.1145/1629607.1629613
+  berners-lee1989:
+    type: report
+    authors: Berners-Lee, T.
+    title: 'Information Management: A Proposal'
+    year: 1989
+    in: CERN
+    url: https://www.w3.org/History/1989/proposal.html
+evidence:
+  - kind: historical
+    stance: for
+    tr: Berners-Lee'nin 1989 önerisi, CERN'deki belgeleri birbirine bağlayan dağıtık bir hipermetin sistemini tarif eder. Bu öneri Web'in temeli oldu.
+    en: Berners-Lee's 1989 proposal describes a distributed hypertext system linking documents at CERN, which became the basis of the Web.
+    src: [berners-lee1989]
+related: [shannon, transistor, turing]

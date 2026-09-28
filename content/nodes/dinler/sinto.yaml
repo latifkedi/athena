@@ -1,0 +1,75 @@
+id: sinto
+parent: dinler
+type: tradition
+date: { year: 712 }
+people: [Ō no Yasumaro, Motoori Norinaga, Kuroda Toshio]
+title:
+  tr: Şinto ve Kojiki
+  en: Shinto and the Kojiki
+summary:
+  tr: >-
+    Şinto, Japonya'da doğada, atalarda ve yerlerde bulunan kutsal varlıklara (kami) saygıya dayanan bir gelenektir.
+    Tapınaklar (jinja), arınma ritüelleri ve mevsim festivalleri merkezîdir. 712'de derlenen Kojiki, Japon adalarının
+    ve imparatorluk soyunun tanrılardan gelişini anlatır. Şinto'nun ne zamandan beri ayrı bir din olarak var olduğu
+    tartışmalıdır. Yüzyıllar boyunca Budizmle iç içe yaşanmış, 1868'den sonra devlet eliyle ondan ayrılmıştır.
+  en: >-
+    Shinto is a Japanese tradition based on reverence for sacred beings (kami) present in nature, ancestors and places.
+    Shrines (jinja), purification rituals and seasonal festivals are central. The Kojiki, compiled in 712, tells how
+    the Japanese islands and the imperial line descend from the gods. How long Shinto has existed as a separate
+    religion is debated: for centuries it was practised intertwined with Buddhism, and it was separated from it by the
+    state after 1868.
+technical:
+  tr: >-
+    Kojiki (712) ve Nihon Shoki (720), saray tarafından derlenen ve kami anlatılarını imparatorluk soyuna bağlayan
+    metinlerdir. Orta çağda honji suijaku anlayışına göre kamiler Budaların ve bodhisattvaların yerel görünümleri
+    sayıldı. 18. yüzyılda Motoori Norinaga'nın Kojiki yorumu "Budizm öncesi saf bir Japon yolu" arayışını besledi. 1868
+    sonrasında Meiji hükümeti Budizm ile Şinto'yu ayırdı ve tapınak Şinto'sunu devlet ideolojisine bağladı. 1945'ten
+    sonra devlet Şinto'su kaldırıldı.
+  en: >-
+    The Kojiki (712) and the Nihon Shoki (720) are court compilations that tie the kami narratives to the imperial line.
+    In the Middle Ages, under the honji suijaku view, kami were regarded as local manifestations of buddhas and
+    bodhisattvas. In the 18th century Motoori Norinaga's reading of the Kojiki fed the search for a "pure Japanese way"
+    before Buddhism. After 1868 the Meiji government separated Buddhism and Shinto and tied shrine Shinto to state
+    ideology; State Shinto was abolished after 1945.
+claims:
+  - tr: Kami doğada, yerlerde ve atalarda bulunur. Arınma ve ritüel, insanlarla kami arasındaki ilişkiyi düzenler.
+    en: Kami are present in nature, places and ancestors; purification and ritual regulate the relationship between humans and kami.
+    src: [britannica-shinto, heldt2014]
+positions:
+  - who:
+      tr: Kuroda Toshio ve izleyenler
+      en: Kuroda Toshio and those following him
+    tr: Bağımsız bir din olarak Şinto modern dönemde biçimlendi. Orta çağda kami inancı Budist bir çerçeve içinde yaşanıyordu.
+    en: Shinto as an independent religion took shape in the modern period; in the Middle Ages kami worship was lived within a Buddhist framework.
+    src: [kuroda1981]
+  - who:
+      tr: Süreklilik vurgusu yapan araştırmacılar ve Şinto kurumları
+      en: Scholars stressing continuity and Shinto institutions
+    tr: Kami ritüellerinin ve tapınak geleneğinin antik çağdan bugüne süren bir devamlılığı vardır.
+    en: There is a continuity of kami rituals and the shrine tradition from antiquity to the present.
+    src: [breen-teeuwen2010]
+sources:
+  heldt2014:
+    type: book
+    authors: Heldt, G. (trans.)
+    title: 'The Kojiki: An Account of Ancient Matters'
+    year: 2014
+    in: Columbia University Press
+  kuroda1981:
+    type: article
+    authors: Kuroda, T.; Dobbins, J. C.; Gay, S. (trans.)
+    title: Shinto in the History of Japanese Religion
+    year: 1981
+    in: Journal of Japanese Studies 7(1), 1–21
+  breen-teeuwen2010:
+    type: book
+    authors: Breen, J.; Teeuwen, M.
+    title: A New History of Shinto
+    year: 2010
+    in: Wiley-Blackwell, Chichester
+  britannica-shinto:
+    type: encyclopedia
+    title: Shinto
+    in: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Shinto
+related: [budizm, yaratilis-anlatilari]

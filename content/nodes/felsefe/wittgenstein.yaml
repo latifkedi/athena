@@ -1,0 +1,71 @@
+id: wittgenstein
+parent: felsefe
+type: text
+date: { year: 1921 }
+people: [Ludwig Wittgenstein, Bertrand Russell]
+title:
+  tr: Wittgenstein, dil ve anlam
+  en: Wittgenstein, language and meaning
+summary:
+  tr: >-
+    Wittgenstein felsefenin pek çok sorununun dilin yanlış anlaşılmasından doğduğunu savundu. İlk kitabı Tractatus'ta
+    (1921) anlamlı bir önermenin dünyadaki bir durumun resmi olduğunu ileri sürdü. Ölümünden sonra yayımlanan Felsefi
+    Soruşturmalar'da (1953) ise bu görüşü kendisi eleştirdi: bir sözcüğün anlamı, dildeki kullanımıdır. Aynı düşünürün
+    iki dönemi, dil felsefesinde iki ayrı yol olarak okunur.
+  en: >-
+    Wittgenstein argued that many problems of philosophy arise from misunderstanding language. In his first book, the
+    Tractatus (1921), he held that a meaningful proposition is a picture of a state of affairs in the world. In the
+    Philosophical Investigations, published after his death (1953), he criticised this view himself: the meaning of a
+    word is its use in the language. The two periods of the same thinker are read as two distinct paths in the
+    philosophy of language.
+technical:
+  tr: >-
+    Tractatus'a göre dünya olguların toplamıdır ve anlamlı önermeler, temel önermelerin doğruluk fonksiyonlarıdır.
+    Mantık ve matematik önermeleri totolojidir, dünya hakkında bir şey söylemez. Felsefi Soruşturmalar'da kural izleme
+    tartışması, bir kuralın doğru uygulanmasının yalnızca bireyin zihnindeki bir durumla değil, ortak bir pratikle
+    belirlendiğini savunur. Bu tartışmadan doğan "özel dil argümanı" zihin felsefesini derinden etkiledi.
+  en: >-
+    According to the Tractatus the world is the totality of facts, and meaningful propositions are truth functions of
+    elementary propositions. The propositions of logic and mathematics are tautologies that say nothing about the world.
+    In the Philosophical Investigations the rule-following discussion argues that the correct application of a rule is
+    fixed not by a state of an individual mind but by a shared practice. The "private language argument" that grew out
+    of this discussion deeply influenced the philosophy of mind.
+claims:
+  - tr: Bir sözcüğün anlamı, onun dildeki kullanımıdır ve kullanımlar "dil oyunları" içinde, bir yaşam biçimine bağlı olarak belirlenir.
+    en: The meaning of a word is its use in the language, and uses are fixed within "language games" tied to a form of life.
+    src: [pi1953, sep-wittgenstein]
+positions:
+  - who:
+      tr: Erken Wittgenstein (Tractatus)
+      en: Early Wittgenstein (Tractatus)
+    tr: Dil dünyanın mantıksal bir resmidir. Etik, estetik ve metafizik hakkında söylenenler anlamlı önermeler değildir. "Üzerine konuşulamayan konusunda susmak gerekir."
+    en: Language is a logical picture of the world; what is said about ethics, aesthetics and metaphysics is not meaningful propositions. "Whereof one cannot speak, thereof one must be silent."
+    src: [tractatus1922]
+  - who:
+      tr: Geç Wittgenstein (Felsefi Soruşturmalar)
+      en: Late Wittgenstein (Philosophical Investigations)
+    tr: Dilin tek bir özü yoktur. Sözcükler aile benzerliğiyle birbirine bağlanan farklı kullanımlara sahiptir ve özel bir dil mümkün değildir.
+    en: Language has no single essence; words have different uses linked by family resemblance, and a private language is not possible.
+    src: [pi1953]
+sources:
+  tractatus1922:
+    type: book
+    authors: Wittgenstein, L.; Ogden, C. K. (trans.)
+    title: Tractatus Logico-Philosophicus
+    year: 1922
+    in: Kegan Paul, Trench, Trubner & Co., London
+  pi1953:
+    type: book
+    authors: Wittgenstein, L.; Anscombe, G. E. M. (trans.)
+    title: Philosophische Untersuchungen / Philosophical Investigations
+    year: 1953
+    in: Blackwell, Oxford
+  sep-wittgenstein:
+    type: encyclopedia
+    authors: Biletzki, A.; Matar, A.
+    title: Ludwig Wittgenstein
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/wittgenstein/
+related: [frege, bilim-felsefesi]
+links:
+  - { to: frege, rel: builds-on }

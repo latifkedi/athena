@@ -1,0 +1,69 @@
+id: sessiz-bahar
+parent: biyoloji
+type: text
+date: { year: 1962 }
+people: [Rachel Carson]
+title:
+  tr: Sessiz Bahar ve pestisitler
+  en: Silent Spring and pesticides
+summary:
+  tr: >-
+    Rachel Carson'ın 1962'de yayımlanan Sessiz Bahar kitabı, DDT gibi tarım ilaçlarının kuşlar, balıklar ve besin zinciri
+    üzerindeki etkilerini anlattı. Kitap geniş bir kamuoyu tartışması başlattı ve modern çevre hareketinin başlangıç
+    noktalarından biri sayılır. ABD 1972'de DDT'nin tarımda kullanımını yasakladı. Sıtmayla mücadelede DDT'nin sınırlı
+    kullanımının yararları ile sağlık riskleri ise hâlâ tartışılır.
+  en: >-
+    Rachel Carson's Silent Spring, published in 1962, described the effects of pesticides such as DDT on birds, fish and
+    the food chain. The book started a broad public debate and is counted among the starting points of the modern
+    environmental movement. The US banned the agricultural use of DDT in 1972. The benefits of limited DDT use against
+    malaria and its health risks are still debated.
+technical:
+  tr: >-
+    DDT ve metabolitleri yağda çözünür ve besin zincirinde yukarı doğru birikir (biyomagnifikasyon). Yırtıcı kuşlarda
+    yumurta kabuklarının incelmesi 1960'larda İngiltere'de ölçüldü. Kel kartal ve gökdoğan gibi türlerin nüfusları
+    yasaktan sonra toparlandı. 2001 Stockholm Sözleşmesi DDT'yi kalıcı organik kirleticiler arasına aldı, ama sıtma
+    vektörleriyle mücadelede iç mekân ilaçlaması için bir istisna tanıdı.
+  en: >-
+    DDT and its metabolites are fat-soluble and accumulate up the food chain (biomagnification). Eggshell thinning in
+    birds of prey was measured in Britain in the 1960s. Populations of species such as the bald eagle and peregrine falcon
+    recovered after the ban. The 2001 Stockholm Convention listed DDT among persistent organic pollutants but allowed an
+    exemption for indoor spraying against malaria vectors.
+claims:
+  - tr: Kalıcı pestisitler besin zincirinde birikir ve hedeflenmeyen canlılara, özellikle yırtıcı kuşlara zarar verir.
+    en: Persistent pesticides accumulate in the food chain and harm non-target organisms, especially birds of prey.
+    src: [carson1962]
+evidence:
+  - kind: measurement
+    stance: for
+    tr: İngiltere'de 1947'den sonra toplanan yırtıcı kuş yumurtalarında kabuk ağırlığının belirgin biçimde azaldığı ölçüldü. Bu dönem DDT kullanımının başlangıcına denk gelir.
+    en: In Britain a marked decrease in shell weight was measured in birds-of-prey eggs collected after 1947, coinciding with the start of DDT use.
+    src: [ratcliffe1967]
+positions:
+  - who:
+      tr: Halk sağlığı açısından değerlendirme
+      en: Public health assessment
+    tr: DDT'nin iç mekân ilaçlamasıyla sınırlı kullanımı sıtmayı azaltmada etkilidir. Olası sağlık riskleri sıtmanın yükü ile birlikte tartılmalıdır.
+    en: Limited use of DDT through indoor spraying is effective in reducing malaria; its possible health risks must be weighed against the burden of malaria.
+    src: [rogan2005]
+sources:
+  carson1962:
+    type: book
+    authors: Carson, R.
+    title: Silent Spring
+    year: 1962
+    in: Houghton Mifflin, Boston
+  ratcliffe1967:
+    type: article
+    authors: Ratcliffe, D. A.
+    title: Decrease in eggshell weight in certain birds of prey
+    year: 1967
+    in: Nature 215, 208–210
+    doi: 10.1038/215208a0
+  rogan2005:
+    type: article
+    authors: Rogan, W. J.; Chen, A.
+    title: Health risks and benefits of bis(4-chlorophenyl)-1,1,1-trichloroethane (DDT)
+    year: 2005
+    in: The Lancet 366(9487), 763–773
+    doi: 10.1016/S0140-6736(05)67182-6
+related: [ekosistem, haber-bosch]

@@ -64,3 +64,5 @@ claims:
     en: 'The word "algorithm" derives from the Latin form of al-Khwārizmī''s name (Algoritmi).'
     src: [mactutor]
 related: [sifir, bilisim]
+links:
+  - { to: sifir, rel: builds-on }

@@ -1,0 +1,70 @@
+id: cok-dunyalar
+parent: kuantum-yorumlari
+type: idea
+date: { year: 1957 }
+people: [Hugh Everett, Bryce DeWitt, David Deutsch]
+title:
+  tr: Çok dünyalı yorum (Everett)
+  en: The many-worlds interpretation (Everett)
+summary:
+  tr: >-
+    Hugh Everett 1957'de dalga fonksiyonunun hiçbir zaman çökmediğini önerdi. Schrödinger denklemi her zaman geçerlidir ve
+    bir ölçümde olası her sonuç gerçekleşir. Gözlemci de dahil her şey, farklı sonuçların yaşandığı ve birbirleriyle
+    etkileşmeyen "dallara" ayrılır. Yorum, kurama ek bir çöküş varsayımı eklememesiyle savunulur. Eleştirmenler ise
+    sayısız gözlenemeyen dünyayı kabul etmesini ve olasılığın nasıl anlaşılacağını sorunlu bulur.
+  en: >-
+    In 1957 Hugh Everett proposed that the wave function never collapses. The Schrödinger equation always holds and every
+    possible outcome of a measurement occurs. Everything, including the observer, splits into "branches" in which
+    different outcomes happen and which do not interact. The interpretation is defended for adding no collapse
+    postulate to the theory; critics object to its acceptance of countless unobservable worlds and question how
+    probability is to be understood.
+technical:
+  tr: >-
+    Everett'in "göreli durum" formülasyonu 1970'te DeWitt tarafından "çok dünyalar" adıyla yaygınlaştırıldı.
+    Dekoherans kuramı, dalların neden birbirinden bağımsız ve klasik görünümlü olduğunu açıklamak için kullanılır. Born
+    kuralının, yani olasılıkların bu yorumda nereden geldiği, karar kuramına dayalı türetmeler dahil süren bir
+    tartışmadır.
+  en: >-
+    Everett's "relative state" formulation was popularised as "many worlds" by DeWitt in 1970. Decoherence theory is used
+    to explain why branches look independent and classical. Where the Born rule, that is, probabilities, comes from in
+    this interpretation is an ongoing debate, including derivations based on decision theory.
+claims:
+  - tr: Evrensel dalga fonksiyonu her zaman Schrödinger denklemine göre evrilir. Ölçüm, gözlemcinin de içinde olduğu dallanmadan ibarettir.
+    en: The universal wave function always evolves according to the Schrödinger equation; measurement is nothing but a branching that includes the observer.
+    src: [everett1957, sep-qm-manyworlds]
+positions:
+  - who:
+      tr: Eleştirmenler
+      en: Critics
+    tr: Her şeyin gerçekleştiği bir kuramda "bir sonucun olasılığı" kavramı anlamını yitirir. Gözlenemeyen dünyalar ekonomik olmayan bir varsayımdır.
+    en: In a theory where everything happens, the notion of "the probability of an outcome" loses its meaning; unobservable worlds are an uneconomical assumption.
+    src: [sep-qm-manyworlds]
+sources:
+  everett1957:
+    type: article
+    authors: Everett, H.
+    title: '"Relative state" formulation of quantum mechanics'
+    year: 1957
+    in: Reviews of Modern Physics 29, 454–462
+    doi: 10.1103/RevModPhys.29.454
+  dewitt1970:
+    type: article
+    authors: DeWitt, B. S.
+    title: Quantum mechanics and reality
+    year: 1970
+    in: Physics Today 23(9), 30–35
+    doi: 10.1063/1.3022331
+  sep-qm-manyworlds:
+    type: encyclopedia
+    authors: Vaidman, L.
+    title: Many-Worlds Interpretation of Quantum Mechanics
+    in: Stanford Encyclopedia of Philosophy
+    url: https://plato.stanford.edu/entries/qm-manyworlds/
+datings:
+  - view:
+      tr: Formülasyon ve adlandırma
+      en: Formulation and naming
+    value:
+      tr: 1957 (Everett, göreli durum), 1970 (DeWitt, "çok dünyalar")
+      en: 1957 (Everett, relative state), 1970 (DeWitt, "many worlds")
+    src: [everett1957, dewitt1970]

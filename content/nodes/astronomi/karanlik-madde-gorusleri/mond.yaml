@@ -1,0 +1,95 @@
+id: mond
+parent: karanlik-madde
+type: idea
+date: { year: 1983 }
+people: [Mordehai Milgrom, Stacy McGaugh, Kyu-Hyun Chae, Indranil Banik]
+title:
+  tr: Değiştirilmiş Newton dinamiği (MOND)
+  en: Modified Newtonian dynamics (MOND)
+summary:
+  tr: >-
+    Mordehai Milgrom 1983'te galaksilerin dönüş hızlarının görünmeyen bir madde yerine, çok zayıf ivmelerde farklı işleyen
+    bir kütleçekim yasasıyla açıklanabileceğini önerdi. MOND, galaksilerin dönüş eğrilerini yalnızca görünen maddeden
+    yola çıkarak şaşırtıcı bir başarıyla öngörür. Buna karşılık galaksi kümelerinde ve kozmik mikrodalga arka planında
+    zorlanır. Geniş çift yıldızlarla yapılan son testler ise birbirine zıt sonuçlar verdi.
+  en: >-
+    In 1983 Mordehai Milgrom proposed that the rotation speeds of galaxies could be explained not by invisible matter but
+    by a law of gravity that works differently at very weak accelerations. MOND predicts galaxy rotation curves from the
+    visible matter alone with striking success. By contrast it struggles with galaxy clusters and the cosmic microwave
+    background. Recent tests with wide binary stars have given opposing results.
+technical:
+  tr: >-
+    MOND'da a₀ ≈ 1,2 × 10⁻¹⁰ m/s² değerinin çok altındaki ivmelerde etkin kütleçekim ivmesi √(a₀·g_N) olur. Bu, düz dönüş
+    eğrilerini ve baryonik Tully–Fisher bağıntısını (M ∝ v⁴) doğrudan verir. AQUAL gibi göreli olmayan sürümler ve TeVeS
+    gibi göreli genişlemeler önerildi. Kütleçekim dalgalarının ışık hızıyla yayıldığının 2017'de gözlenmesi bazı göreli
+    sürümleri dışladı. Galaksi kümelerinde MOND'un bile ek bir görünmeyen kütleye ihtiyaç duyduğu bilinir.
+  en: >-
+    In MOND, at accelerations well below a₀ ≈ 1.2 × 10⁻¹⁰ m/s² the effective gravitational acceleration becomes √(a₀·g_N).
+    This directly gives flat rotation curves and the baryonic Tully–Fisher relation (M ∝ v⁴). Non-relativistic versions
+    such as AQUAL and relativistic extensions such as TeVeS have been proposed; the 2017 observation that gravitational
+    waves travel at the speed of light ruled out some relativistic versions. It is known that in galaxy clusters even
+    MOND needs additional unseen mass.
+claims:
+  - tr: Çok zayıf ivmelerde kütleçekim Newton yasasından saptığı için galaksiler görünmeyen bir maddeye gerek kalmadan hızlı döner.
+    en: Because gravity departs from Newton's law at very weak accelerations, galaxies rotate fast without any need for invisible matter.
+    src: [milgrom1983]
+evidence:
+  - kind: observation
+    stance: for
+    tr: 153 galaksideki gözlenen ivmenin, yalnızca görünen maddeden hesaplanan ivmeyle tek ve dar bir ilişki izlediği bulundu. Bu ilişki MOND'un öngördüğü biçimdedir.
+    en: In 153 galaxies the observed acceleration was found to follow a single, tight relation with the acceleration computed from visible matter alone, of the form MOND predicts.
+    src: [mcgaugh2016]
+  - kind: observation
+    stance: for
+    tr: Gaia verileriyle yapılan bir geniş çift yıldız analizi, çok düşük ivmelerde yörünge hızlarının Newton'un öngördüğünden yüksek olduğunu bildirdi.
+    en: An analysis of wide binary stars with Gaia data reported orbital speeds higher than Newton predicts at very low accelerations.
+    src: [chae2023]
+  - kind: observation
+    stance: against
+    tr: Gaia verilerindeki 8.611 geniş çift yıldızın ayrıntılı istatistiksel analizi, Newton dinamiğini MOND'a karşı çok yüksek bir güvenle tercih etti.
+    en: A detailed statistical analysis of 8,611 wide binaries in Gaia data preferred Newtonian dynamics over MOND with very high confidence.
+    src: [banik2024]
+  - kind: observation
+    stance: against
+    tr: Mermi Kümesi'nde kütlenin görünen gazdan ayrı yerde bulunması, yalnızca kütleçekim yasasını değiştirerek açıklanması zor bir gözlemdir.
+    en: In the Bullet Cluster the mass lies apart from the visible gas, which is hard to explain by changing the law of gravity alone.
+    src: [clowe2006]
+sources:
+  milgrom1983:
+    type: article
+    authors: Milgrom, M.
+    title: A modification of the Newtonian dynamics as a possible alternative to the hidden mass hypothesis
+    year: 1983
+    in: The Astrophysical Journal 270, 365–370
+    doi: 10.1086/161130
+  mcgaugh2016:
+    type: article
+    authors: McGaugh, S. S.; Lelli, F.; Schombert, J. M.
+    title: Radial acceleration relation in rotationally supported galaxies
+    year: 2016
+    in: Physical Review Letters 117, 201101
+    doi: 10.1103/PhysRevLett.117.201101
+  chae2023:
+    type: article
+    authors: Chae, K.-H.
+    title: Breakdown of the Newton–Einstein standard gravity at low acceleration in internal dynamics of wide binary stars
+    year: 2023
+    in: The Astrophysical Journal 952, 128
+    doi: 10.3847/1538-4357/ace101
+  banik2024:
+    type: article
+    authors: Banik, I.; Pittordis, C.; Sutherland, W.; Famaey, B.; Ibata, R.; Mieske, S.; Zhao, H.
+    title: Strong constraints on the gravitational law from Gaia DR3 wide binaries
+    year: 2024
+    in: Monthly Notices of the Royal Astronomical Society 527(3), 4573–4615
+    doi: 10.1093/mnras/stad3393
+  clowe2006:
+    type: article
+    authors: Clowe, D. et al.
+    title: A direct empirical proof of the existence of dark matter
+    year: 2006
+    in: The Astrophysical Journal 648, L109–L113
+    doi: 10.1086/508162
+links:
+  - { to: newton-principia, rel: builds-on }
+  - { to: soguk-karanlik-madde, rel: opposes }

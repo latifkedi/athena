@@ -1,0 +1,63 @@
+id: suleymaniye
+parent: mimarlik
+type: event
+date: { year: 1557 }
+people: [Mimar Sinan, Kanuni Sultan Süleyman / Suleiman the Magnificent, Sâî Mustafa Çelebi]
+title:
+  tr: Mimar Sinan ve Süleymaniye
+  en: Mimar Sinan and the Süleymaniye
+summary:
+  tr: >-
+    Mimar Sinan, 16. yüzyılda Osmanlı'nın baş mimarı olarak yaklaşık 50 yıl boyunca yüzlerce yapı tasarladı. Kanuni
+    Sultan Süleyman için yaptığı Süleymaniye Camii ve Külliyesi 1557'de tamamlandı. Cami, medreseler, darüşşifa, imaret ve
+    hamamla birlikte bir kent merkezi olarak düşünülmüştür. Sinan'ın anılarını aktaran metinlere göre kendisi Şehzade'yi
+    çıraklık, Süleymaniye'yi kalfalık, Edirne'deki Selimiye'yi ustalık eseri olarak nitelendirmiştir.
+  en: >-
+    As chief architect of the Ottoman Empire in the 16th century, Mimar Sinan designed hundreds of buildings over some 50
+    years. The Süleymaniye Mosque and complex, built for Suleiman the Magnificent, was completed in 1557. The mosque was
+    conceived as a city centre together with madrasas, a hospital, a soup kitchen and a bath. According to the texts
+    recording his memoirs, Sinan himself called the Şehzade his apprentice work, the Süleymaniye his journeyman work and
+    the Selimiye in Edirne his masterpiece.
+technical:
+  tr: >-
+    Süleymaniye'nin merkezî kubbesi yaklaşık 26,5 metre çapındadır ve iki yarım kubbeyle desteklenir. Plan şeması
+    Ayasofya'yı hatırlatır, ancak ağırlık kulelerinin ve payandaların dış cepheye yerleştirilmesiyle daha açık bir iç
+    mekân elde edilmiştir. Sinan'ın yapılarının listesi, Sâî Mustafa Çelebi'nin onun ağzından yazdığı Tezkiretü'l-Bünyan
+    gibi metinlerde yer alır. Yapının akustiği ve kandil isinin toplanması için tasarlanmış hava akımı sık anılan
+    özelliklerindendir.
+  en: >-
+    The Süleymaniye's central dome is about 26.5 metres across and is buttressed by two semi-domes. The plan recalls Hagia
+    Sophia, but a more open interior was achieved by placing weight towers and buttresses on the outside. The list of
+    Sinan's buildings appears in texts such as the Tezkiretü'l-Bünyan, which Sâî Mustafa Çelebi wrote from his dictation.
+    Its acoustics and an airflow designed to collect lamp soot are often cited features.
+claims:
+  - tr: Merkezi kubbeli cami tipi, yükleri dış cepheye taşıyan payandalar ve yarım kubbelerle geniş ve bütünlüklü bir iç mekân oluşturacak biçimde geliştirildi.
+    en: The central-domed mosque type was developed to create a wide, unified interior by carrying loads to the exterior with buttresses and semi-domes.
+    src: [necipoglu2005]
+evidence:
+  - kind: historical
+    stance: for
+    tr: Sinan'ın anılarını aktaran 16. yüzyıl metinleri, yapılarının listesini ve kendi eserleri hakkındaki değerlendirmelerini içerir.
+    en: 16th-century texts recording Sinan's memoirs contain the list of his buildings and his own assessments of his works.
+    src: [crane-akin2006]
+sources:
+  necipoglu2005:
+    type: book
+    authors: Necipoğlu, G.
+    title: 'The Age of Sinan: Architectural Culture in the Ottoman Empire'
+    year: 2005
+    in: Reaktion Books, London
+  crane-akin2006:
+    type: book
+    authors: Crane, H.; Akın, E. (eds., trans.)
+    title: "Sinan's Autobiographies: Five Sixteenth-Century Texts"
+    year: 2006
+    in: Brill, Leiden
+links:
+  - to: ayasofya
+    rel: influenced-by
+    note:
+      tr: Merkezi kubbe ve yarım kubbelerle desteklenen plan şeması
+      en: The plan of a central dome buttressed by semi-domes
+    src: [necipoglu2005]
+related: [islam]

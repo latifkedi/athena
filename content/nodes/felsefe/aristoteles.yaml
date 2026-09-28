@@ -46,3 +46,9 @@ sources:
     title: "Aristotle's Logic"
     in: Stanford Encyclopedia of Philosophy
     url: https://plato.stanford.edu/entries/aristotle-logic/
+links:
+  - to: platon
+    rel: opposes
+    note:
+      tr: 'Ayrı var olan formlar kuramına yönelttiği eleştiri'
+      en: 'His criticism of the theory of separately existing Forms'

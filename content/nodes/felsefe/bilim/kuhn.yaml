@@ -51,3 +51,5 @@ sources:
     in: Stanford Encyclopedia of Philosophy
     url: https://plato.stanford.edu/entries/thomas-kuhn/
 related: [popper, kopernik]
+links:
+  - { to: popper, rel: opposes }

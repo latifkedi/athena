@@ -51,3 +51,5 @@ sources:
     year: 1893
     in: Macmillan, London (translation of Untersuchungen über die Ausbreitung der elektrischen Kraft, 1892)
 related: [induksiyon, eter, ozel-gorelilik]
+links:
+  - { to: induksiyon, rel: builds-on }

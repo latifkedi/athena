@@ -92,3 +92,5 @@ sources:
     year: 2005
     in: United States District Court for the Middle District of Pennsylvania
 related: [teistik-evrim, yaratiliscilik]
+links:
+  - { to: darwin-wallace, rel: opposes }

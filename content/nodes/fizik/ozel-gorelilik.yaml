@@ -95,3 +95,10 @@ sources:
     year: 1982
     in: Oxford University Press
 related: [eter, maxwell, nukleer-fisyon]
+links:
+  - { to: maxwell, rel: builds-on }
+  - to: eter
+    rel: replaces
+    note:
+      tr: 'Işığı taşıyan bir esir varsayımı kuramda gereksiz hâle geldi.'
+      en: 'The assumption of a light-carrying ether became unnecessary in the theory.'

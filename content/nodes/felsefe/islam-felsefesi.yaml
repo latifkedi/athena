@@ -51,3 +51,6 @@ positions:
     en: The virtuous city is a society governed by a wise and virtuous ruler and aimed at happiness.
     src: [sep-farabi]
 related: [kelam]
+links:
+  - { to: aristoteles, rel: influenced-by }
+  - { to: platon, rel: influenced-by }
