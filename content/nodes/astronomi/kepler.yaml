@@ -45,3 +45,5 @@ sources:
     year: 1609
     in: Gotthard Vögelin, Heidelberg
 related: [newton-principia, astroloji]
+links:
+  - { to: kopernik, rel: builds-on }

@@ -23,6 +23,10 @@ interface RawNode {
   top: string | null;
   pw?: string[];
   y?: number;
+  /** typed links written on this node: [target, kind] */
+  ln?: [string, string][];
+  /** comparison page, for open questions whose views are sub-branches */
+  cmp?: string;
 }
 interface Group {
   id: string;
@@ -33,6 +37,7 @@ interface Payload {
   lang: 'tr' | 'en';
   center: string;
   strings: Record<string, string>;
+  rels: Record<string, { out: string; in: string }>;
   groups: { canopy: Group[]; roots: Group[] };
   nodes: RawNode[];
 }
@@ -266,17 +271,35 @@ export function initTree(): void {
 
   let placed = new Map<string, Placed>();
 
+  // time view: when a year is set, the whole tree is open but only what is documented by then is drawn.
+  // A branch appears with its first dated topic; topics without a documented date are left out, as on
+  // the timeline page.
+  let timeYear: number | null = null;
+  const firstYear = new Map<string, number>();
+  const firstOf = (id: string): number => {
+    if (!firstYear.has(id)) {
+      const n = byId.get(id)!;
+      firstYear.set(id, Math.min(n.y ?? Infinity, ...n.k.map(firstOf)));
+    }
+    return firstYear.get(id)!;
+  };
+  const shown = (id: string): boolean => timeYear === null || firstOf(id) <= timeYear;
+  const isOpen = (id: string): boolean => timeYear !== null || expanded.has(id);
+
   function layoutSide(side: Side): Placed[] {
     type D = { id: string; group?: Group; rank?: number; children?: D[] };
     const build = (id: string): D => {
       const n = byId.get(id)!;
-      if (!expanded.has(id) || !n.k.length) return { id };
-      const kids = n.k.map((c, i) => ({ ...build(c), rank: n.k.length > 1 ? i / (n.k.length - 1) : 0.5 }));
-      return { id, children: centerOut(kids) };
+      const kids = n.k.filter(shown);
+      if (!isOpen(id) || !kids.length) return { id };
+      const ds = kids.map((c, i) => ({ ...build(c), rank: kids.length > 1 ? i / (kids.length - 1) : 0.5 }));
+      return { id, children: centerOut(ds) };
     };
     const rootD: D = {
       id: `r:${side}`,
-      children: data.groups[side].map((g) => ({ id: `g:${g.id}`, group: g, children: g.f.map(build) })),
+      children: data.groups[side]
+        .map((g) => ({ id: `g:${g.id}`, group: g, children: g.f.filter(shown).map(build) }))
+        .filter((g) => g.children.length),
     };
     const root = hierarchy<D>(rootD);
     const span = Math.PI - 2 * PAD;
@@ -329,7 +352,7 @@ export function initTree(): void {
 
   const isVirtual = (p: Placed): boolean => p.id.startsWith('r:');
   const visibleKids = (p: Placed): boolean =>
-    !!p.group || (byId.get(p.id)!.k.length > 0 && expanded.has(p.id));
+    !!p.group || (byId.get(p.id)!.k.some(shown) && isOpen(p.id));
 
   function geomFor(p: Placed): Geom {
     const q = p.parent!;
@@ -753,24 +776,35 @@ export function initTree(): void {
     renderRelated();
   }
 
+  /** Typed links touching a node, both directions, plus plain "related" links. */
+  function connections(id: string): { id: string; kind: string; dir: 'out' | 'in' }[] {
+    const n = byId.get(id)!;
+    const out: { id: string; kind: string; dir: 'out' | 'in' }[] = [];
+    const seen = new Set<string>();
+    for (const [to, kind] of n.ln ?? []) if (byId.has(to)) out.push({ id: to, kind, dir: 'out' }), seen.add(to);
+    for (const m of byId.values())
+      for (const [to, kind] of m.ln ?? []) if (to === id) out.push({ id: m.id, kind, dir: 'in' }), seen.add(m.id);
+    const plain = new Set(n.rel);
+    for (const m of byId.values()) if (m.rel.includes(id)) plain.add(m.id);
+    for (const r of plain) if (!seen.has(r) && byId.has(r)) out.push({ id: r, kind: 'related', dir: 'out' });
+    return out;
+  }
+
   function renderRelated(): void {
-    const pairs: { a: Placed; b: Placed; key: string }[] = [];
+    const pairs: { a: Placed; b: Placed; key: string; kind: string }[] = [];
     if (selected) {
       const a = placed.get(selected);
-      const n = byId.get(selected)!;
-      const others = new Set(n.rel);
-      for (const m of byId.values()) if (m.rel.includes(selected)) others.add(m.id);
       if (a)
-        for (const id of others) {
-          const b = placed.get(id);
-          if (b) pairs.push({ a, b, key: `${a.id}>${b.id}` });
+        for (const c of connections(selected)) {
+          const b = placed.get(c.id);
+          if (b) pairs.push({ a, b, key: `${a.id}>${b.id}`, kind: c.kind });
         }
     }
     gRel
       .selectAll<SVGPathElement, (typeof pairs)[number]>('path')
       .data(pairs, (d) => d.key)
       .join('path')
-      .attr('class', 't-rel')
+      .attr('class', (d) => `t-rel k-${d.kind}`)
       .attr('d', ({ a, b }) => {
         const cx = (a.x + b.x) * 0.3;
         const cy = (a.y + b.y) * 0.3 - TRUNK * 0.35;
@@ -825,10 +859,10 @@ export function initTree(): void {
     if (text !== undefined) e.textContent = text;
     return e;
   }
-  function linkList(title: string, ids: string[]): HTMLElement[] {
+  function linkList(title: string, ids: string[], kind = ''): HTMLElement[] {
     if (!ids.length) return [];
     const h = el('h3', {}, title);
-    const ul = el('ul', { class: 'links' });
+    const ul = el('ul', { class: kind ? `links k-${kind}` : 'links' });
     for (const id of ids) {
       const m = byId.get(id);
       if (!m) continue;
@@ -865,10 +899,15 @@ export function initTree(): void {
       for (const w of n.pw) ul.append(el('li', {}, w));
       views.push(ul);
     }
-    const rel = new Set(n.rel);
-    for (const m of byId.values()) if (m.rel.includes(id)) rel.add(m.id);
+    if (n.cmp) views.push(el('a', { class: 'cmp', href: n.cmp }, `${S.compare} →`));
+    const conns = connections(id);
+    const typed: HTMLElement[] = [];
+    for (const [kind, lab] of Object.entries(data.rels))
+      for (const dir of ['out', 'in'] as const)
+        typed.push(...linkList(lab[dir], conns.filter((c) => c.kind === kind && c.dir === dir).map((c) => c.id), kind));
+    const plain = conns.filter((c) => c.kind === 'related').map((c) => c.id);
     const go = el('a', { class: 'go', href: n.href }, `${S.openPage} →`);
-    panel.append(close, meta, h, p, ...views, go, ...linkList(S.children, n.k), ...linkList(S.related, [...rel]));
+    panel.append(close, meta, h, p, ...views, go, ...linkList(S.children, n.k), ...typed, ...linkList(S.related, plain));
     panel.hidden = false;
   }
 
@@ -927,6 +966,271 @@ export function initTree(): void {
     setTimeout(() => fit(), DUR + 20);
   });
   document.getElementById('btn-fit')?.addEventListener('click', () => fit());
+
+  // ---------- poster ----------
+  // The tree as it is drawn now, framed with a title, as a standalone SVG (styles inlined, fonts
+  // embedded) or a large PNG made from it.
+  const STYLE_PROPS = [
+    'fill', 'fill-opacity', 'stroke', 'stroke-width', 'stroke-opacity', 'stroke-dasharray', 'stroke-linecap',
+    'stroke-linejoin', 'opacity', 'display', 'visibility', 'font-family', 'font-size', 'font-weight', 'font-style',
+    'letter-spacing', 'text-anchor', 'dominant-baseline', 'paint-order', 'stop-color', 'stop-opacity',
+    'font-variation-settings',
+  ];
+  const toDataUrl = (blob: Blob): Promise<string> =>
+    new Promise((ok, fail) => {
+      const r = new FileReader();
+      r.onload = () => ok(String(r.result));
+      r.onerror = fail;
+      r.readAsDataURL(blob);
+    });
+  /** @font-face rules for the fonts the tree uses (latin and latin-ext only), with the files inlined. */
+  async function embeddedFonts(): Promise<string> {
+    const out: string[] = [];
+    for (const sheet of Array.from(document.styleSheets)) {
+      let rules: CSSRuleList;
+      try {
+        rules = sheet.cssRules;
+      } catch {
+        continue;
+      }
+      for (const r of Array.from(rules)) {
+        if (!(r instanceof CSSFontFaceRule)) continue;
+        const fam = r.style.getPropertyValue('font-family');
+        const range = r.style.getPropertyValue('unicode-range');
+        if (!/Inter|Fraunces/.test(fam) || !/U\+0{0,4}-0{0,2}FF\b|U\+0?100-/i.test(range)) continue;
+        const m = r.style.getPropertyValue('src').match(/url\(["']?([^"')]+)["']?\)/);
+        if (!m) continue;
+        try {
+          const file = new URL(m[1], sheet.href ?? location.href).href;
+          const data = await toDataUrl(await (await fetch(file)).blob());
+          out.push(r.cssText.replace(/src:[^;]+;/, `src: url(${data}) format("woff2");`));
+        } catch {
+          /* the poster falls back to system fonts */
+        }
+      }
+    }
+    return out.join('\n');
+  }
+  async function buildPoster(): Promise<{ svg: string; w: number; h: number }> {
+    const wasFar = svgEl!.classList.contains('far');
+    svgEl!.classList.remove('far');
+    // the drawing itself, labels included (the soil reaches far to the sides, so it does not count)
+    let x0 = Infinity,
+      y0 = Infinity,
+      x1 = -Infinity,
+      y1 = -Infinity;
+    for (const g of [gCrown, gTrunk, gLinks, gGroups, gNodes]) {
+      const r = (g.node() as SVGGElement).getBBox();
+      if (!r.width && !r.height) continue;
+      x0 = Math.min(x0, r.x);
+      y0 = Math.min(y0, r.y);
+      x1 = Math.max(x1, r.x + r.width);
+      y1 = Math.max(y1, r.y + r.height);
+    }
+    const b = Number.isFinite(x0) ? { x: x0, y: y0, width: x1 - x0, height: y1 - y0 } : bounds();
+    const pad = 90;
+    const head = 150;
+    const foot = 80;
+    const w = Math.round(b.width + pad * 2);
+    const h = Math.round(b.height + pad * 2 + head + foot);
+    const clone = svgEl!.cloneNode(true) as SVGSVGElement;
+    const src = [svgEl!, ...Array.from(svgEl!.querySelectorAll('*'))];
+    const dst = [clone, ...Array.from(clone.querySelectorAll('*'))];
+    src.forEach((e, i) => {
+      const cs = getComputedStyle(e);
+      const d = dst[i] as SVGElement;
+      d.removeAttribute('class');
+      d.style.cssText = STYLE_PROPS.map((k) => `${k}:${cs.getPropertyValue(k)}`).join(';');
+    });
+    if (wasFar) svgEl!.classList.add('far');
+    // drop what is not drawn
+    clone.querySelectorAll('[style*="display: none"], [style*="display:none"]').forEach((e) => e.remove());
+    const bg = getComputedStyle(document.body).backgroundColor;
+    const ink = getComputedStyle(document.documentElement).getPropertyValue('--text').trim() || '#222';
+    const muted = getComputedStyle(document.documentElement).getPropertyValue('--text-3').trim() || '#777';
+    const canopy = getComputedStyle(document.documentElement).getPropertyValue('--canopy').trim();
+    const roots = getComputedStyle(document.documentElement).getPropertyValue('--roots').trim();
+    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    clone.setAttribute('width', String(w));
+    clone.setAttribute('height', String(h));
+    clone.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    clone.removeAttribute('role');
+    clone.style.cssText = `background:${bg}`;
+    const vp = clone.querySelector(':scope > g') as SVGGElement;
+    vp.setAttribute('transform', `translate(${pad - b.x},${pad + head - b.y})`);
+    const NS = 'http://www.w3.org/2000/svg';
+    const mk = (tag: string, attrs: Record<string, string | number>, text?: string) => {
+      const e = document.createElementNS(NS, tag);
+      for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, String(v));
+      if (text !== undefined) e.textContent = text;
+      return e;
+    };
+    const bgRect = mk('rect', { x: 0, y: 0, width: w, height: h, fill: bg });
+    clone.insertBefore(bgRect, clone.firstChild);
+    const title = mk('text', { x: pad, y: pad + 30, fill: ink, 'font-family': 'Fraunces Variable, Georgia, serif', 'font-size': 54, 'font-weight': 560 }, 'Athena');
+    const sub = mk('text', { x: pad, y: pad + 72, fill: muted, 'font-family': 'Inter Variable, system-ui, sans-serif', 'font-size': 20 }, S.tagline);
+    const today = new Date().toISOString().slice(0, 10);
+    const leg = mk('g', { transform: `translate(${pad},${h - pad + 10})`, 'font-family': 'Inter Variable, system-ui, sans-serif', 'font-size': 15, fill: muted });
+    leg.append(mk('circle', { cx: 6, cy: -5, r: 6, fill: canopy }), mk('text', { x: 20, y: 0 }, S.canopy));
+    const off = 20 + S.canopy.length * 8 + 30;
+    leg.append(mk('circle', { cx: off + 6, cy: -5, r: 6, fill: roots }), mk('text', { x: off + 20, y: 0 }, S.roots));
+    const url_ = mk('text', { x: w - pad, y: h - pad + 10, 'text-anchor': 'end', fill: muted, 'font-family': 'Inter Variable, system-ui, sans-serif', 'font-size': 15 }, `latifkedi.github.io/athena · ${today} · CC BY-SA 4.0`);
+    const note = mk('text', { x: pad, y: pad + 104, fill: muted, 'font-family': 'Inter Variable, system-ui, sans-serif', 'font-size': 15, 'font-style': 'italic' }, S.principleShort);
+    clone.append(title, sub, note, leg, url_);
+    const style = mk('style', {});
+    style.textContent = await embeddedFonts();
+    clone.insertBefore(style, clone.firstChild);
+    return { svg: new XMLSerializer().serializeToString(clone), w, h };
+  }
+  function download(href: string, name: string): void {
+    const a = document.createElement('a');
+    a.href = href;
+    a.download = name;
+    document.body.append(a);
+    a.click();
+    a.remove();
+  }
+  const posterBtn = document.getElementById('btn-poster') as HTMLButtonElement | null;
+  const posterMenu = document.getElementById('poster-menu');
+  posterBtn?.addEventListener('click', () => {
+    const open = posterMenu!.hidden;
+    posterMenu!.hidden = !open;
+    posterBtn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    if (posterMenu && !posterMenu.hidden && !(e.target as Element).closest('.poster-wrap')) {
+      posterMenu.hidden = true;
+      posterBtn?.setAttribute('aria-expanded', 'false');
+    }
+  });
+  posterMenu?.querySelectorAll<HTMLButtonElement>('button[data-format]').forEach((btn) =>
+    btn.addEventListener('click', async () => {
+      const fmt = btn.dataset.format;
+      posterBtn!.disabled = true;
+      posterBtn!.classList.add('busy');
+      try {
+        const { svg, w, h } = await buildPoster();
+        const stamp = new Date().toISOString().slice(0, 10);
+        if (fmt === 'svg') {
+          const u = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+          download(u, `athena-${stamp}.svg`);
+          setTimeout(() => URL.revokeObjectURL(u), 4000);
+        } else {
+          const img = new Image();
+          img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+          await img.decode();
+          // big enough to print, small enough for mobile canvas limits
+          const scale = Math.min(3, Math.sqrt(16e6 / (w * h)));
+          const c = document.createElement('canvas');
+          c.width = Math.round(w * scale);
+          c.height = Math.round(h * scale);
+          const ctx = c.getContext('2d')!;
+          ctx.drawImage(img, 0, 0, c.width, c.height);
+          const blob: Blob = await new Promise((ok) => c.toBlob((bl) => ok(bl!), 'image/png'));
+          const u = URL.createObjectURL(blob);
+          download(u, `athena-${stamp}.png`);
+          setTimeout(() => URL.revokeObjectURL(u), 4000);
+        }
+      } finally {
+        posterBtn!.disabled = false;
+        posterBtn!.classList.remove('busy');
+        posterMenu!.hidden = true;
+      }
+    }),
+  );
+
+  // ---------- time view ----------
+  // the slider is not linear in years: most of the recorded knowledge is recent
+  const STOPS: [number, number][] = [
+    [0, -2000],
+    [200, -300],
+    [400, 900],
+    [600, 1600],
+    [800, 1900],
+    [1000, 2026],
+  ];
+  const yearAt = (v: number): number => {
+    for (let i = 1; i < STOPS.length; i++) {
+      const [v0, y0] = STOPS[i - 1];
+      const [v1, y1] = STOPS[i];
+      if (v <= v1) return Math.round(y0 + ((v - v0) / (v1 - v0)) * (y1 - y0));
+    }
+    return STOPS[STOPS.length - 1][1];
+  };
+  const fmtYear = (y: number): string =>
+    y < 0 ? (data.lang === 'tr' ? `MÖ ${-y}` : `${-y} BCE`) : String(y);
+  const app = document.querySelector('.tree-app');
+  const timePanel = document.getElementById('time-panel');
+  const timeRange = document.getElementById('time-range') as HTMLInputElement | null;
+  const timeOut = document.getElementById('time-year');
+  const timeMark = document.getElementById('time-watermark');
+  const playBtn = document.getElementById('time-play');
+  let beforeTime: Set<string> | null = null;
+  let playing: number | undefined;
+  let lastShown = '';
+  function setYear(v: number, force = false): void {
+    const y = yearAt(v);
+    timeYear = y;
+    if (timeOut) timeOut.textContent = fmtYear(y);
+    if (timeMark) timeMark.textContent = fmtYear(y);
+    // redraw only when a topic appears or disappears
+    const visible = String(data.nodes.filter((n) => shown(n.id)).length);
+    if (force || visible !== lastShown) {
+      lastShown = visible;
+      render(true);
+    }
+  }
+  function stopPlay(): void {
+    if (playing !== undefined) clearInterval(playing);
+    playing = undefined;
+    playBtn?.setAttribute('aria-pressed', 'false');
+    if (playBtn) playBtn.textContent = '▶';
+  }
+  function enterTime(): void {
+    if (!timePanel || !timeRange) return;
+    beforeTime = new Set(expanded);
+    selected = null;
+    showPanel(null);
+    timePanel.hidden = false;
+    app?.classList.add('timing');
+    timeRange.value = '1000';
+    setYear(1000, true);
+    setTimeout(() => fit(), DUR + 20);
+  }
+  function leaveTime(): void {
+    stopPlay();
+    timeYear = null;
+    if (beforeTime) {
+      expanded.clear();
+      beforeTime.forEach((id) => expanded.add(id));
+    }
+    if (timePanel) timePanel.hidden = true;
+    app?.classList.remove('timing');
+    if (timeMark) timeMark.textContent = '';
+    lastShown = '';
+    render();
+    setTimeout(() => fit(), DUR + 20);
+  }
+  document.getElementById('btn-time')?.addEventListener('click', () => (timeYear === null ? enterTime() : leaveTime()));
+  document.getElementById('time-close')?.addEventListener('click', leaveTime);
+  timeRange?.addEventListener('input', () => {
+    stopPlay();
+    setYear(Number(timeRange.value));
+  });
+  playBtn?.addEventListener('click', () => {
+    if (!timeRange) return;
+    if (playing !== undefined) return stopPlay();
+    if (Number(timeRange.value) >= 1000) timeRange.value = '0';
+    setYear(Number(timeRange.value), true);
+    playBtn.setAttribute('aria-pressed', 'true');
+    playBtn.textContent = '❚❚';
+    playing = window.setInterval(() => {
+      const v = Math.min(1000, Number(timeRange.value) + 3);
+      timeRange.value = String(v);
+      setYear(v);
+      if (v >= 1000) stopPlay();
+    }, 70);
+  });
   svg.on('click', () => {
     if (selected) select_(null);
   });

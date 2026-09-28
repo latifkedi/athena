@@ -1,0 +1,315 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang, NodeData } from '../lib/data';
+import { getNode, nodeSources } from '../lib/data';
+import { ui, t, url, nodePath, comparePath, formatDate, typeLabels, evidenceKinds, otherLang } from '../lib/i18n';
+
+interface Props {
+  node: NodeData;
+  lang: Lang;
+}
+const { node, lang } = Astro.props;
+const title = t(node.title, lang);
+const views = node.children.map((id) => getNode(id)!);
+const firstPara = (s: string) => s.trim().split(/\n\s*\n/)[0];
+const kind = (k: string) => t(evidenceKinds[k] ?? { tr: k, en: k }, lang);
+const rows: { key: string; label: string }[] = [
+  { key: 'summary', label: t(ui.forEveryone, lang) },
+  { key: 'claims', label: t(ui.claims, lang) },
+  { key: 'for', label: t(ui.evFor, lang) },
+  { key: 'against', label: t(ui.evAgainst, lang) },
+  { key: 'positions', label: t(ui.positions, lang) },
+  { key: 'open', label: t(ui.open, lang) },
+  { key: 'sources', label: t(ui.sources, lang) },
+];
+---
+
+<Base
+  lang={lang}
+  title={`${t(ui.compareTitle, lang)}: ${title}`}
+  description={t(ui.compareIntro, lang)}
+  altPath={comparePath(node.id, otherLang(lang))}
+  nodeId={node.id}
+  nodeTitle={title}
+>
+  <main class="compare">
+    <div class="wrap head">
+      <nav class="crumbs small" aria-label="breadcrumb">
+        <a href={url(nodePath(node.id, lang))}>{title}</a>
+        <span aria-hidden="true">›</span>
+        <span>{t(ui.compareTitle, lang)}</span>
+      </nav>
+      <h1>{title}</h1>
+      <p class="fork-box">
+        <strong>⑂ {t(ui.compareTitle, lang)}.</strong>{' '}
+        {t(ui.compareIntro, lang)}
+      </p>
+      <fieldset class="pick">
+        <legend class="small muted">{t(ui.compareShow, lang)}</legend>
+        {
+          views.map((v, i) => (
+            <label class="chip">
+              <input type="checkbox" checked data-col={i} />
+              {t(v.title, lang)}
+            </label>
+          ))
+        }
+      </fieldset>
+    </div>
+
+    <div class="scroller" tabindex="0" role="region" aria-label={t(ui.compareTitle, lang)}>
+      <table>
+        <thead>
+          <tr>
+            <td class="corner"></td>
+            {
+              views.map((v, i) => (
+                <th scope="col" data-col={i} class={v.side}>
+                  <span class="small muted">
+                    {t(typeLabels[v.type], lang)}
+                    {v.date && <> · {formatDate(v.date, lang)}</>}
+                  </span>
+                  <a href={url(nodePath(v.id, lang))}>{t(v.title, lang)}</a>
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {
+            rows.map((r) => (
+              <tr class={r.key}>
+                <th scope="row">{r.label}</th>
+                {views.map((v, i) => {
+                  const evFor = v.evidence.filter((e) => e.stance === 'for');
+                  const evAgainst = v.evidence.filter((e) => e.stance === 'against');
+                  const ev = r.key === 'for' ? evFor : evAgainst;
+                  return (
+                    <td data-col={i}>
+                      {r.key === 'summary' && <p>{firstPara(t(v.summary, lang))}</p>}
+                      {r.key === 'claims' &&
+                        (v.claims.length ? (
+                          <ul>
+                            {v.claims.map((c) => (
+                              <li>{t(c, lang)}</li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <span class="none">—</span>
+                        ))}
+                      {(r.key === 'for' || r.key === 'against') &&
+                        (ev.length ? (
+                          <ul>
+                            {ev.map((e) => (
+                              <li>
+                                <span class="kind">{kind(e.kind)}</span> {t(e, lang)}
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <span class="none">—</span>
+                        ))}
+                      {r.key === 'positions' &&
+                        (v.positions.length ? (
+                          <ul>
+                            {v.positions.map((p) => (
+                              <li>
+                                <strong>{t(p.who, lang)}:</strong> {t(p, lang)}
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <span class="none">—</span>
+                        ))}
+                      {r.key === 'open' &&
+                        (v.open.length ? (
+                          <ul>
+                            {v.open.map((o) => (
+                              <li>{t(o, lang)}</li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <span class="none">—</span>
+                        ))}
+                      {r.key === 'sources' && (
+                        <a href={url(nodePath(v.id, lang)) + '#sources'}>
+                          {nodeSources(v).length} {t(ui.sources, lang).toLocaleLowerCase(lang)} →
+                        </a>
+                      )}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </main>
+</Base>
+
+<script>
+  const table = document.querySelector<HTMLTableElement>('.compare table');
+  document.querySelectorAll<HTMLInputElement>('.pick input').forEach((box) => {
+    box.addEventListener('change', () => {
+      table?.querySelectorAll<HTMLElement>(`[data-col="${box.dataset.col}"]`).forEach((c) => {
+        c.hidden = !box.checked;
+      });
+    });
+  });
+</script>
+
+<style>
+  .compare {
+    padding: 40px 0 56px;
+  }
+  .head {
+    padding-bottom: 8px;
+  }
+  .crumbs {
+    display: flex;
+    gap: 6px;
+    color: var(--text-3);
+  }
+  .crumbs a {
+    color: var(--text-2);
+    text-decoration: none;
+  }
+  .fork-box {
+    background: color-mix(in srgb, var(--fork) 8%, var(--card));
+    border: 1px solid color-mix(in srgb, var(--fork) 28%, var(--border));
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    max-width: 78ch;
+  }
+  .fork-box strong {
+    color: var(--fork);
+  }
+  .pick {
+    border: 0;
+    padding: 0;
+    margin: 18px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .pick legend {
+    margin-bottom: 6px;
+  }
+  .pick .chip {
+    cursor: pointer;
+    user-select: none;
+  }
+  .pick input {
+    accent-color: var(--fork);
+    margin: 0 4px 0 0;
+  }
+  /* the table starts in line with the page text; once scrolled, the row labels stay at the left edge */
+  .scroller {
+    --gutter: max(16px, calc((100vw - var(--maxw)) / 2 + 16px));
+    overflow-x: auto;
+    margin: 20px 0 0;
+    padding: 0 var(--gutter) 12px 0;
+  }
+  table {
+    margin-left: var(--gutter);
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  th,
+  td {
+    vertical-align: top;
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card);
+  }
+  thead th,
+  td {
+    width: 290px;
+    min-width: 250px;
+    max-width: 320px;
+    border-left: 1px solid var(--border);
+  }
+  thead th {
+    border-top: 3px solid var(--canopy);
+    font-weight: 400;
+  }
+  thead th.roots {
+    border-top-color: var(--roots);
+  }
+  thead th a {
+    display: block;
+    margin-top: 2px;
+    font-family: var(--serif);
+    font-size: 1.12rem;
+    font-weight: 560;
+    color: var(--text);
+    text-decoration: none;
+    line-height: 1.25;
+  }
+  thead th a:hover {
+    color: var(--accent-ink);
+  }
+  thead td.corner {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: 130px;
+    min-width: 120px;
+    background: var(--surface);
+    border: 0;
+  }
+  tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: 130px;
+    min-width: 120px;
+    font-size: 0.72rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-3);
+    background: var(--surface-2);
+    border-right: 1px solid var(--border);
+  }
+  tbody tr:first-child th {
+    border-top-left-radius: var(--radius);
+  }
+  tr.for th {
+    color: var(--canopy);
+  }
+  tr.against th {
+    color: var(--roots);
+  }
+  td p {
+    margin: 0;
+  }
+  td ul {
+    margin: 0;
+    padding-left: 1.05em;
+  }
+  td li + li {
+    margin-top: 6px;
+  }
+  .kind {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-3);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0 6px;
+    margin-right: 2px;
+  }
+  .none {
+    color: var(--text-3);
+  }
+  [hidden] {
+    display: none !important;
+  }
+</style>

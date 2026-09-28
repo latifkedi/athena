@@ -61,3 +61,5 @@ sources:
     in: Nature 514, 161–164
     doi: 10.1038/514161a
 related: [lamarck, modern-sentez]
+links:
+  - { to: modern-sentez, rel: builds-on }

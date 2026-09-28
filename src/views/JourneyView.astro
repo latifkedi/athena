@@ -1,0 +1,224 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../lib/data';
+import { getNode, topLevel } from '../lib/data';
+import { journeys, type Journey } from '../lib/journeys';
+import { ui, t, url, nodePath, journeyPath, routes, formatDate, typeLabels, otherLang } from '../lib/i18n';
+
+interface Props {
+  journey: Journey;
+  lang: Lang;
+}
+const { journey, lang } = Astro.props;
+const title = t(journey.title, lang);
+const stops = journey.steps.map((s) => {
+  const node = getNode(s.node)!;
+  return { node, text: t(s.text, lang), branch: node.depth > 1 ? topLevel(node.id) : undefined };
+});
+const others = journeys.filter((j) => j.id !== journey.id);
+---
+
+<Base
+  lang={lang}
+  title={title}
+  description={t(journey.intro, lang)}
+  route="journeys"
+  altPath={journeyPath(journey.id, otherLang(lang))}
+>
+  <main class="wrap journey" data-pagefind-body>
+    <nav class="crumbs small" aria-label="breadcrumb" data-pagefind-ignore>
+      <a href={url(routes.journeys[lang])}>{t(ui.nav.journeys, lang)}</a>
+      <span aria-hidden="true">›</span>
+      <span>{title}</span>
+    </nav>
+    <h1 data-pagefind-meta="title">{title}</h1>
+    <p class="lead">{t(journey.intro, lang)}</p>
+    <p class="note small" data-pagefind-ignore>
+      <span aria-hidden="true">ⓘ</span> {t(ui.nodeNote, lang)}
+    </p>
+
+    <ol class="path">
+      {
+        stops.map(({ node, text, branch }, i) => (
+          <li class={node.side} id={`durak-${i + 1}`}>
+            <span class="marker" aria-hidden="true">
+              {i + 1}
+            </span>
+            <div class="body">
+              <p class="label small" data-pagefind-ignore>
+                <span>
+                  {t(ui.stop, lang)} {i + 1}
+                </span>
+                {node.date && <span>{formatDate(node.date, lang)}</span>}
+                {branch && <span>{t(branch.title, lang)}</span>}
+                <span>{t(typeLabels[node.type], lang)}</span>
+              </p>
+              <h2>
+                <a href={url(nodePath(node.id, lang))}>{t(node.title, lang)}</a>
+              </h2>
+              <p class="text">{text}</p>
+              <a class="go small" href={url(nodePath(node.id, lang))} data-pagefind-ignore>
+                {lang === 'tr' ? 'İddialar, kanıtlar ve kaynaklar →' : 'Claims, evidence and sources →'}
+              </a>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+
+    <section data-pagefind-ignore>
+      <h2>{t(ui.otherJourneys, lang)}</h2>
+      <ul class="others">
+        {
+          others.map((j) => (
+            <li>
+              <a href={url(journeyPath(j.id, lang))}>{t(j.title, lang)}</a>
+              <span class="muted small">
+                {' '}
+                · {j.steps.length} {t(ui.stops, lang)}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</Base>
+
+<style>
+  .journey {
+    max-width: 780px;
+  }
+  .crumbs {
+    display: flex;
+    gap: 6px;
+    color: var(--text-3);
+  }
+  .crumbs a {
+    color: var(--text-2);
+    text-decoration: none;
+  }
+  .lead {
+    font-size: 1.08rem;
+    color: var(--text-2);
+    line-height: 1.65;
+  }
+  .note {
+    color: var(--text-3);
+  }
+  .path {
+    list-style: none;
+    padding: 0;
+    margin: 36px 0 0;
+    position: relative;
+  }
+  .path li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+    padding-bottom: 30px;
+  }
+  /* the trail between stops */
+  .path li::before {
+    content: '';
+    position: absolute;
+    left: 21px;
+    top: 44px;
+    bottom: 0;
+    width: 2px;
+    border-radius: 2px;
+    background: linear-gradient(var(--line-from), var(--line-to));
+  }
+  .path li:last-child::before {
+    display: none;
+  }
+  .path li {
+    --c: var(--canopy);
+    --line-from: color-mix(in srgb, var(--canopy) 55%, transparent);
+    --line-to: color-mix(in srgb, var(--canopy) 20%, transparent);
+  }
+  .path li.roots {
+    --c: var(--roots);
+    --line-from: color-mix(in srgb, var(--roots) 55%, transparent);
+    --line-to: color-mix(in srgb, var(--roots) 20%, transparent);
+  }
+  .marker {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--c);
+    background: var(--card);
+    border: 2px solid var(--c);
+    box-shadow: 0 0 0 5px var(--surface);
+  }
+  .body {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 14px 18px 14px;
+  }
+  .label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin: 0 0 4px;
+    color: var(--text-3);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .label span:first-child {
+    color: var(--c);
+    font-weight: 650;
+  }
+  .body h2 {
+    font-size: 1.28rem;
+    margin: 0 0 6px;
+  }
+  .body h2 a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .body h2 a:hover {
+    color: var(--accent-ink);
+  }
+  .text {
+    margin: 0 0 8px;
+    line-height: 1.6;
+  }
+  .go {
+    color: var(--text-3);
+    text-decoration: none;
+  }
+  .go:hover {
+    color: var(--accent-ink);
+  }
+  .others {
+    padding-left: 1.1em;
+  }
+  .others li {
+    margin: 4px 0;
+  }
+  @media (max-width: 560px) {
+    .path li {
+      grid-template-columns: 32px 1fr;
+      gap: 10px;
+    }
+    .marker {
+      width: 30px;
+      height: 30px;
+      font-size: 0.9rem;
+    }
+    .path li::before {
+      left: 15px;
+      top: 34px;
+    }
+  }
+</style>

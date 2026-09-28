@@ -78,3 +78,5 @@ sources:
     year: 2007
     in: MIT Press, Cambridge MA
 related: [ibn-rusd, ibn-sina, esarilik]
+links:
+  - { to: ibn-sina, rel: opposes }

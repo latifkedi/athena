@@ -1,0 +1,273 @@
+# Journeys: short guided walks along the tree. Each step points to a node, which carries the claims,
+# evidence and sources; the step text only connects one station to the next. Like everything on
+# Athena, the text describes and does not judge.
+
+- id: atom
+  title: { tr: Atomun hikâyesi, en: The story of the atom }
+  intro:
+    tr: Maddenin bölünmez parçalardan oluştuğu fikri, felsefi bir akıl yürütmeden kelam tartışmalarına, oradan laboratuvara ve parçacık hızlandırıcılarına uzanır.
+    en: The idea that matter is made of indivisible pieces runs from philosophical reasoning through kalām debates to the laboratory and the particle accelerator.
+  steps:
+    - node: sokrates-oncesi
+      text:
+        tr: Demokritos ve Leukippos, her şeyin boşlukta hareket eden bölünmez “atomlardan” oluştuğunu akıl yürütmeyle öne sürdü.
+        en: Democritus and Leucippus argued, by reasoning alone, that everything consists of indivisible atoms moving in the void.
+    - node: kelam-atomculugu
+      text:
+        tr: Kelamcılar da cisimlerin bölünemeyen cüzlerden oluştuğunu savundu; ancak bu atomların her an yeniden yaratıldığını kabul ederek fikri farklı bir çerçeveye taşıdılar.
+        en: Kalām theologians also held that bodies are made of indivisible parts, but placed the idea in a different frame by holding that these atoms are re-created at every moment.
+    - node: boyle
+      text:
+        tr: Boyle, dört element kuramını deneylerle sorguladı ve maddenin küçük parçacıklardan oluştuğunu savundu.
+        en: Boyle questioned the four-element theory through experiments and argued that matter is made of small particles.
+    - node: dalton
+      text:
+        tr: Dalton atomlara ölçülebilir ağırlıklar verdi ve bileşiklerin atomların basit oranlarla birleşmesinden oluştuğunu öne sürdü.
+        en: Dalton gave atoms measurable weights and proposed that compounds form when atoms combine in simple ratios.
+    - node: mendeleyev
+      text:
+        tr: Mendeleyev elementleri bir tabloda düzenledi; boş bıraktığı yerlere henüz bulunmamış elementlerin özelliklerini önceden yazdı.
+        en: Mendeleev arranged the elements in a table and predicted the properties of elements not yet found for the gaps he left.
+    - node: standart-model
+      text:
+        tr: 20. yüzyılda atomun da bölünebildiği görüldü. Standart Model, bugün bilinen temel parçacıkları ve etkileşimlerini tarif eder.
+        en: In the twentieth century atoms themselves turned out to be divisible. The Standard Model describes the fundamental particles and interactions known today.
+    - node: higgs
+      text:
+        tr: Kuramın öngördüğü son parçacık olan Higgs bozonu 2012'de CERN'de gözlendi. Kütleçekim ve karanlık madde ise hâlâ bu tablonun dışında.
+        en: The Higgs boson, the last particle the theory predicted, was observed at CERN in 2012. Gravity and dark matter still lie outside the picture.
+
+- id: evren
+  title: { tr: Gökyüzünden evrenin başlangıcına, en: From the night sky to the beginning of the universe }
+  intro:
+    tr: Gezegenlerin hareketini açıklama çabası, Dünya'nın yerini, kütleçekimini ve sonunda evrenin kendi tarihini soran bir yolculuğa dönüştü.
+    en: The effort to explain the motion of the planets turned into a journey that asked about Earth's place, about gravity and finally about the history of the universe itself.
+  steps:
+    - node: batlamyus
+      text:
+        tr: Batlamyus'un yer merkezli modeli, gezegen konumlarını yaklaşık 1400 yıl boyunca kullanılabilir bir doğrulukla öngördü.
+        en: Ptolemy's Earth-centred model predicted planetary positions with usable accuracy for some 1,400 years.
+    - node: ulug-bey
+      text:
+        tr: Semerkant'ta Uluğ Bey'in rasathanesinde yıldız konumları yeniden ve büyük bir dikkatle ölçüldü.
+        en: At Ulugh Beg's observatory in Samarkand, star positions were measured again with great care.
+    - node: kopernik
+      text:
+        tr: Kopernik Güneş'i merkeze aldı. Model ilk başta daha doğru tahminler vermedi, ama gökyüzüne başka bir açıdan bakmayı önerdi.
+        en: Copernicus put the Sun at the centre. At first the model did not predict better, but it proposed a different way of looking at the sky.
+    - node: kepler
+      text:
+        tr: Kepler, Tycho Brahe'nin gözlemlerinden yörüngelerin elips olduğunu çıkardı.
+        en: Kepler inferred from Tycho Brahe's observations that the orbits are ellipses.
+    - node: newton-principia
+      text:
+        tr: Newton, düşen elmayı ve gezegenlerin yörüngesini aynı yasalarla açıkladı.
+        en: Newton explained the falling apple and the orbits of the planets with the same laws.
+    - node: genel-gorelilik
+      text:
+        tr: Einstein kütleçekimini uzay-zamanın eğriliği olarak yeniden tarif etti; kuram kara delikleri ve genişleyen bir evreni mümkün kıldı.
+        en: Einstein redescribed gravity as the curvature of spacetime; the theory allowed for black holes and an expanding universe.
+    - node: buyuk-patlama
+      text:
+        tr: Lemaître evrenin genişlediğini ve sıcak, yoğun bir başlangıçtan çıktığını öne sürdü. Evrenin başlangıcı üzerine dinlerin ve farklı kozmolojik modellerin görüşleri de bu düğümde yan yana.
+        en: Lemaître proposed that the universe is expanding from a hot, dense beginning. The views of religions and of other cosmological models on the beginning sit side by side in this node.
+    - node: karanlik-madde
+      text:
+        tr: Galaksiler görünen maddenin açıklayabileceğinden hızlı dönüyor. Görünmeyen bir madde mi, yoksa değişen bir kütleçekimi mi? Soru açık.
+        en: Galaxies rotate faster than their visible matter can explain. Unseen matter, or modified gravity? The question is open.
+    - node: karanlik-enerji
+      text:
+        tr: Evrenin genişlemesinin hızlandığı gözlendi; bu hızlanmanın nedeni bilinmiyor.
+        en: The expansion of the universe was found to be accelerating; what drives it is unknown.
+    - node: kara-delik
+      text:
+        tr: 2019'da bir kara deliğin çevresindeki ışık halkasının ilk görüntüsü yayımlandı.
+        en: In 2019 the first image of the ring of light around a black hole was published.
+    - node: jwst
+      text:
+        tr: James Webb Uzay Teleskobu, Büyük Patlama'dan birkaç yüz milyon yıl sonrasının galaksilerini görüyor ve modelleri yeniden sınıyor.
+        en: The James Webb Space Telescope sees galaxies from a few hundred million years after the Big Bang and tests the models again.
+
+- id: tip
+  title: { tr: Tıbbın yolculuğu, en: The journey of medicine }
+  intro:
+    tr: Hastalığı anlama ve iyileştirme çabası; kitaplardan deneye, mikroptan genoma uzanan bir yol.
+    en: The effort to understand and cure disease, on a road from books to experiment, from microbes to the genome.
+  steps:
+    - node: ibn-sina-kanun
+      text:
+        tr: İbn Sina'nın Kânûn'u, dönemin tıp bilgisini sistemli bir bütün hâline getirdi ve yüzyıllarca ders kitabı olarak okundu.
+        en: Avicenna's Canon brought the medical knowledge of its time into a systematic whole and was read as a textbook for centuries.
+    - node: harvey
+      text:
+        tr: Harvey, kanın vücutta sürekli bir döngü içinde dolaştığını ölçüm ve hesapla savundu.
+        en: Harvey argued from measurement and calculation that blood circulates in a continuous loop.
+    - node: asi
+      text:
+        tr: Osmanlı'daki çiçek aşılamasından Jenner'in inek çiçeği aşısına uzanan yol, bağışıklığın bilinçli olarak kazandırılabileceğini gösterdi.
+        en: From Ottoman variolation to Jenner's cowpox vaccine, it was shown that immunity could be acquired deliberately.
+    - node: mikrop-kurami
+      text:
+        tr: Semmelweis, Snow, Pasteur ve Koch'un çalışmalarıyla pek çok hastalığın mikroplarla yayıldığı görüşü ağırlık kazandı.
+        en: With the work of Semmelweis, Snow, Pasteur and Koch, the view that many diseases spread through microbes gained ground.
+    - node: penisilin
+      text:
+        tr: Fleming'in fark ettiği küf, antibiyotik çağını başlattı; direnç sorunu da aynı çağın parçası.
+        en: The mould Fleming noticed opened the age of antibiotics; resistance is part of the same age.
+    - node: dna
+      text:
+        tr: DNA'nın çift sarmal yapısı, kalıtımın nasıl kopyalandığını açıklayan bir model sundu.
+        en: The double helix of DNA offered a model of how heredity is copied.
+    - node: mrna-asi
+      text:
+        tr: mRNA aşıları hücreye bir proteinin tarifini vererek bağışıklığı hazırlar; 2020'de geniş ölçekte kullanıldı.
+        en: mRNA vaccines prepare immunity by handing cells the recipe for a protein; they were used at scale from 2020.
+    - node: kisiye-ozel-crispr
+      text:
+        tr: 2025'te tek bir hastanın mutasyonu için tasarlanmış bir gen düzenleme tedavisi uygulandı; uzun vadeli sonuçları henüz bilinmiyor.
+        en: In 2025 a gene-editing therapy designed for a single patient's mutation was given; its long-term results are not yet known.
+
+- id: hesap
+  title: { tr: Saymadan yapay zekâya, en: From counting to artificial intelligence }
+  intro:
+    tr: Sayıları işaretlemekten algoritmalara, oradan düşünen makineler üzerine tartışmalara uzanan bir yol.
+    en: A road from marking numbers to algorithms and on to the debate about thinking machines.
+  steps:
+    - node: sayma
+      text:
+        tr: Saymanın ne zaman başladığı bilinmiyor; Ishango kemiğindeki çentiklerin ne anlama geldiği tartışmalı.
+        en: No one knows when counting began; what the notches on the Ishango bone mean is debated.
+    - node: babil-matematigi
+      text:
+        tr: Babilliler 60 tabanlı bir sayı sistemi kullandı; saatimiz ve açılarımız hâlâ bu sistemi taşıyor.
+        en: The Babylonians used a base-60 number system; our clocks and angles still carry it.
+    - node: sifir
+      text:
+        tr: Brahmagupta sıfırla işlem kurallarını yazdı; sıfır bir basamak işaretinden bir sayıya dönüştü.
+        en: Brahmagupta wrote down rules for calculating with zero, turning it from a placeholder into a number.
+    - node: harezmi
+      text:
+        tr: Harezmî'nin kitabı “cebir” kelimesine, adı da “algoritma” kelimesine kaynak oldu.
+        en: Al-Khwārizmī's book gave us the word “algebra”, and his name the word “algorithm”.
+    - node: lovelace
+      text:
+        tr: Babbage programlanabilir bir makine tasarladı; Lovelace onun için ilk bilgisayar programı sayılan notları yazdı.
+        en: Babbage designed a programmable machine; Lovelace wrote notes for it that are often called the first computer program.
+    - node: turing
+      text:
+        tr: Turing, hesaplamanın ne olduğunu soyut bir makineyle tanımladı ve hiçbir algoritmanın çözemeyeceği problemler olduğunu gösterdi.
+        en: Turing defined computation with an abstract machine and showed that some problems cannot be solved by any algorithm.
+    - node: transistor
+      text:
+        tr: Transistör, hesaplamayı küçük ve ucuz hâle getiren elektronik anahtar oldu.
+        en: The transistor became the electronic switch that made computation small and cheap.
+    - node: shannon
+      text:
+        tr: Shannon bilgiyi ölçülebilir kıldı ve iletişimin sınırlarını hesapladı.
+        en: Shannon made information measurable and calculated the limits of communication.
+    - node: derin-ogrenme
+      text:
+        tr: Çok katmanlı yapay sinir ağları 2012'de görüntü tanımada öne çıktı.
+        en: Many-layered artificial neural networks moved to the front of image recognition in 2012.
+    - node: transformer
+      text:
+        tr: Transformer mimarisi büyük dil modellerinin temeli oldu; bu modellerin neyi “anladığı” tartışılıyor.
+        en: The Transformer architecture became the basis of large language models; what these models “understand” is debated.
+    - node: yapay-zeka-imo
+      text:
+        tr: 2025'te bir yapay zekâ sistemi Uluslararası Matematik Olimpiyatı'nda altın madalya düzeyinde puan aldı.
+        en: In 2025 an AI system scored at gold-medal level at the International Mathematical Olympiad.
+
+- id: akil-vahiy
+  title: { tr: 'Akıl ve vahiy: İslam düşüncesinde bir tartışma', en: 'Reason and revelation: a debate in Islamic thought' }
+  intro:
+    tr: Aklın ve vahyin bilgideki yeri üzerine kelamcılar, filozoflar ve mutasavvıflar yüzyıllar boyunca birbirine cevap verdi. Bu yolculuk görüşleri sırayla anlatır; hiçbirini sonuç olarak sunmaz.
+    en: For centuries theologians, philosophers and Sufis answered one another on the place of reason and revelation in knowledge. This journey presents the views in turn and treats none of them as the conclusion.
+  steps:
+    - node: mutezile
+      text:
+        tr: Mu'tezile inanç konularının yorumunda akla ve insan iradesine öncelik verdi.
+        en: The Muʿtazila gave priority to reason and human free will in interpreting matters of faith.
+    - node: maturidilik
+      text:
+        tr: Mâtürîdî nakil ile aklı dengelemeyi amaçladı ve insan iradesine geniş bir alan tanıdı.
+        en: Al-Māturīdī aimed to balance transmitted texts and reason and gave human will a wide scope.
+    - node: esarilik
+      text:
+        tr: Eş'arî, Mu'tezile'den ayrılarak nakil ile aklı uzlaştırmaya çalıştı; Eş'arîlere göre âlemde gerçek fail yalnızca Allah'tır.
+        en: Al-Ashʿarī broke with the Muʿtazila to reconcile text and reason; for the Ashʿarīs, God alone is the true agent in the world.
+    - node: ibn-sina
+      text:
+        tr: İbn Sina, Allah'ın varlığını zorunlu varlık argümanıyla akıl yoluyla temellendirmeye çalıştı.
+        en: Avicenna sought to ground God's existence by reason through the argument from the necessary existent.
+    - node: gazali-tehafut
+      text:
+        tr: Gazzâlî, filozofların bazı görüşlerinin kesin delile dayanmadığını savunarak Meşşâî felsefeyi eleştirdi.
+        en: Al-Ghazālī criticised Peripatetic philosophy, arguing that some of the philosophers' views rested on no conclusive proof.
+    - node: gazali-munkiz
+      text:
+        tr: Aynı Gazzâlî, kesin bilgi arayışında yöntemli bir şüpheden geçtiğini ve sonunda tasavvufta karar kıldığını anlattı.
+        en: The same al-Ghazālī described passing through methodical doubt in his search for certainty and settling in Sufism.
+    - node: ibn-rusd
+      text:
+        tr: İbn Rüşd, Gazzâlî'ye cevap vererek nedenselliği ve felsefi düşünmenin dinen gerekliliğini savundu.
+        en: Averroes replied to al-Ghazālī, defending causality and the religious obligation of philosophical reflection.
+    - node: ibn-arabi
+      text:
+        tr: İbn Arabî'nin varlığın birliği üzerine görüşleri bilginin keşif ve tecrübe yoluyla da elde edilebileceğini öne çıkardı.
+        en: Ibn ʿArabī's views on the unity of being put forward unveiling and experience as ways to knowledge.
+    - node: mevlana
+      text:
+        tr: Mevlânâ'nın Mesnevî'si bu soruları hikâyeler ve şiir üzerinden anlattı ve geniş bir kitleye ulaştı.
+        en: Rūmī's Masnavi told these questions through stories and poetry and reached a wide audience.
+
+- id: koken
+  title: { tr: Canlıların kökeni üzerine görüşler, en: Views on the origin of living things }
+  intro:
+    tr: Canlıların nasıl ortaya çıktığı ve neden bu kadar çeşitli olduğu sorusuna verilen cevaplar tek bir “evrim kuramı”ndan ibaret değildir. Bu yolculuk görüşleri ortaya çıktıkları sırayla gezer; sıra bir sıralama değildir ve hiçbir görüş sonuç olarak sunulmaz. Her durakta o görüşün kendi iddiaları, kanıtları ve karşı kanıtları vardır.
+    en: The answers to how living things arose and why they are so diverse are not a single “theory of evolution”. This journey visits the views in the order they appeared; the order is not a ranking and no view is offered as the conclusion. Each stop has its own claims, evidence and counter-evidence.
+  steps:
+    - node: abiyogenez
+      text:
+        tr: İlk canlının cansız maddeden nasıl çıktığı açık bir sorudur; laboratuvarlarda bazı yapı taşları üretilmiş, ama canlı bir hücre elde edilmemiştir.
+        en: How the first living thing arose from non-living matter is an open question; some building blocks have been made in the laboratory, but no living cell.
+    - node: lamarck
+      text:
+        tr: Lamarck, kazanılmış özelliklerin yavrulara aktarıldığını savundu. Epigenetik çalışmalar bu soruyu yeniden gündeme getirdi.
+        en: Lamarck held that acquired characteristics are passed to offspring. Studies of epigenetics have reopened the question.
+    - node: darwin-wallace
+      text:
+        tr: Darwin ve Wallace, kalıtsal farklar ve doğal seçilimle türlerin zamanla değiştiğini öne sürdü.
+        en: Darwin and Wallace proposed that species change over time through heritable variation and natural selection.
+    - node: yaratiliscilik
+      text:
+        tr: Yaratılışçılık, türlerin Tanrı tarafından doğrudan ve ayrı ayrı yaratıldığını savunur; Dünya'nın yaşı konusunda farklı kolları vardır.
+        en: Creationism holds that species were created directly and separately by God; its branches differ on the age of the Earth.
+    - node: modern-sentez
+      text:
+        tr: Modern sentez, doğal seçilimi Mendel genetiğiyle birleştirerek evrimi gen sıklıklarının değişimi olarak tanımladı.
+        en: The modern synthesis joined natural selection with Mendelian genetics and defined evolution as change in gene frequencies.
+    - node: notr-teori
+      text:
+        tr: Kimura, moleküler düzeydeki değişimlerin çoğunun seçilimle değil rastgele sürüklenmeyle oluştuğunu öne sürdü.
+        en: Kimura proposed that most change at the molecular level comes not from selection but from random drift.
+    - node: kesintili-denge
+      text:
+        tr: Eldredge ve Gould, türlerin uzun süre değişmeden kaldığını ve değişimin kısa dönemlerde yoğunlaştığını savundu.
+        en: Eldredge and Gould argued that species stay largely unchanged for long periods and that change is concentrated in short bursts.
+    - node: akilli-tasarim
+      text:
+        tr: Akıllı tasarım savunucuları, bazı yapıların adım adım işleyen süreçlerle açıklanamayacak kadar karmaşık olduğunu ileri sürer.
+        en: Advocates of intelligent design argue that some structures are too complex to be explained by step-by-step processes.
+    - node: teistik-evrim
+      text:
+        tr: Teistik evrim görüşü, Tanrı'nın canlıları evrimsel süreçler aracılığıyla yarattığını kabul eder.
+        en: Theistic evolution holds that God created living things through evolutionary processes.
+    - node: genisletilmis-sentez
+      text:
+        tr: Genişletilmiş sentezi savunan biyologlar, gelişim ve niş inşası gibi süreçlerin kurama daha merkezî biçimde katılmasını ister.
+        en: Biologists calling for an extended synthesis want processes such as development and niche construction to play a more central part in the theory.
+    - node: islam-ve-evrim
+      text:
+        tr: İslam düşüncesinde de tek bir görüş yoktur; türlerin ayrı yaratılışından evrimin yaratılışın bir yolu olduğuna kadar farklı yaklaşımlar vardır.
+        en: Islamic thought has no single view either; approaches range from the separate creation of species to evolution as a way of creation.

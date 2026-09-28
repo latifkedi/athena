@@ -1,0 +1,9 @@
+---
+import PersonView from '../../views/PersonView.astro';
+import { allPeople, type Person } from '../../lib/people';
+export function getStaticPaths() {
+  return allPeople.map((person) => ({ params: { slug: person.slug }, props: { person } }));
+}
+const { person } = Astro.props as { person: Person };
+---
+<PersonView person={person} lang="tr" />

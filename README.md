@@ -46,6 +46,8 @@ date: { year: 2026, month: 3 }   # yalnızca belgelenmiş olaylar için; yaklaş
 #     src: [kaynak1]
 people: [Ad Soyad]
 related: [baska-dugum]
+links:                     # türü belli bağlar: builds-on | influenced-by | opposes | replaces
+  - { to: baska-dugum, rel: builds-on }
 title:   { tr: ..., en: ... }
 summary: { tr: ..., en: ... }     # herkes için
 technical: { tr: ..., en: ... }   # uzmanlar için

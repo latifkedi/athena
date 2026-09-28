@@ -25,7 +25,7 @@ const other = otherLang(lang);
 const alt = altPath ?? (route ? routes[route][other] : routes.home[other]);
 const fullTitle = title ? `${title} · Athena` : `Athena — ${t(ui.siteTagline, lang)}`;
 const desc = description ?? t(ui.siteTagline, lang);
-const navKeys: RouteKey[] = ['home', 'list', 'timeline', 'dashboard', 'latest', 'method'];
+const navKeys: RouteKey[] = ['home', 'list', 'timeline', 'journeys', 'dashboard', 'latest', 'method'];
 const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const canonical = site + Astro.url.pathname;
 const image = site + url(ogImage ?? `/og/${lang}/athena.png`);
@@ -166,6 +166,8 @@ const goatcounter = import.meta.env.PUBLIC_GOATCOUNTER;
             <p class="foot-links">
               <a href={suggestUrl(lang, nodeId, nodeTitle)}>{t(ui.suggest, lang)}</a>
               <a href={url(routes.method[lang])}>{t(ui.nav.method, lang)}</a>
+              <a href={url(routes.people[lang])}>{t(ui.nav.people, lang)}</a>
+              <a href={url(routes.journeys[lang])}>{t(ui.nav.journeys, lang)}</a>
               <a href={url(`${rssPrefix}/rss.xml`)}>RSS</a>
               <a href={REPO}>GitHub</a>
             </p>

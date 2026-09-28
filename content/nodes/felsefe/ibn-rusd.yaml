@@ -55,3 +55,5 @@ positions:
     en: The work is a point-by-point rebuttal of al-Ghazālī's Tahāfut.
     src: [tdv-tehafutu-tehafut]
 related: [gazali-tehafut]
+links:
+  - { to: gazali-tehafut, rel: opposes }

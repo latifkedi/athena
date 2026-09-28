@@ -1,0 +1,10 @@
+---
+import CompareView from '../../../views/CompareView.astro';
+import { compareNodes } from '../../../lib/compare';
+import type { NodeData } from '../../../lib/data';
+export function getStaticPaths() {
+  return compareNodes().map((node) => ({ params: { id: node.id }, props: { node } }));
+}
+const { node } = Astro.props as { node: NodeData };
+---
+<CompareView node={node} lang="en" />

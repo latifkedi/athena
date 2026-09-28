@@ -1,0 +1,9 @@
+---
+import JourneyView from '../../views/JourneyView.astro';
+import { journeys, type Journey } from '../../lib/journeys';
+export function getStaticPaths() {
+  return journeys.map((journey) => ({ params: { id: journey.id }, props: { journey } }));
+}
+const { journey } = Astro.props as { journey: Journey };
+---
+<JourneyView journey={journey} lang="tr" />

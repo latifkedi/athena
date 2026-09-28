@@ -1,0 +1,171 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../lib/data';
+import { topLevel } from '../lib/data';
+import { companions, type Person } from '../lib/people';
+import { ui, t, url, nodePath, personPath, routes, formatDate, typeLabels, otherLang } from '../lib/i18n';
+
+interface Props {
+  person: Person;
+  lang: Lang;
+}
+const { person, lang } = Astro.props;
+const name = t(person.name, lang);
+const otherName = t(person.name, otherLang(lang));
+const near = companions(person);
+const q = encodeURIComponent(person.name.en.replace(/\s*\(.*?\)\s*/g, ' ').trim());
+const lookups = [
+  {
+    label: 'Wikipedia',
+    href:
+      lang === 'tr'
+        ? `https://tr.wikipedia.org/w/index.php?search=${encodeURIComponent(person.name.tr)}`
+        : `https://en.wikipedia.org/w/index.php?search=${q}`,
+  },
+  { label: 'Wikidata', href: `https://www.wikidata.org/w/index.php?search=${q}` },
+  { label: 'Google Scholar', href: `https://scholar.google.com/scholar?q=%22${q}%22` },
+];
+---
+
+<Base
+  lang={lang}
+  title={name}
+  description={`${name}: ${person.nodes.map((n) => t(n.title, lang)).join(', ')}`}
+  route="people"
+  altPath={personPath(person.slug, otherLang(lang))}
+>
+  <main class="wrap person">
+    <nav class="crumbs small" aria-label="breadcrumb">
+      <a href={url(routes.people[lang])}>{t(ui.nav.people, lang)}</a>
+      <span aria-hidden="true">›</span>
+      <span>{name}</span>
+    </nav>
+    <h1>{name}</h1>
+    {otherName !== name && <p class="alt muted">{otherName}</p>}
+
+    <section>
+      <h2>{t(ui.personNodes, lang)}</h2>
+      <ol class="nodes">
+        {
+          person.nodes.map((n) => {
+            const branch = n.depth > 1 ? topLevel(n.id) : undefined;
+            return (
+              <li class={n.side}>
+                <span class="when small">{n.date ? formatDate(n.date, lang) : '—'}</span>
+                <div>
+                  <a href={url(nodePath(n.id, lang))}>{t(n.title, lang)}</a>
+                  <p class="small muted">
+                    {t(typeLabels[n.type], lang)}
+                    {branch && <> · {t(branch.title, lang)}</>}
+                  </p>
+                </div>
+              </li>
+            );
+          })
+        }
+      </ol>
+    </section>
+
+    {
+      near.length > 0 && (
+        <section>
+          <h2>{t(ui.companions, lang)}</h2>
+          <div class="chips">
+            {near.map((p) => (
+              <a class="chip" href={url(personPath(p.slug, lang))}>
+                {t(p.name, lang)}
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <p class="small lookups">
+      {lang === 'tr' ? 'Başka kaynaklarda ara:' : 'Look up elsewhere:'}{' '}
+      {
+        lookups.map((l, i) => (
+          <>
+            {i > 0 && ' · '}
+            <a href={l.href} rel="noopener">
+              {l.label}
+            </a>
+          </>
+        ))
+      }
+    </p>
+  </main>
+</Base>
+
+<style>
+  .person {
+    max-width: 780px;
+  }
+  .crumbs {
+    display: flex;
+    gap: 6px;
+    color: var(--text-3);
+  }
+  .crumbs a {
+    color: var(--text-2);
+    text-decoration: none;
+  }
+  .alt {
+    margin-top: -6px;
+    font-size: 1.05rem;
+  }
+  .nodes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+  }
+  .nodes li {
+    display: grid;
+    grid-template-columns: 104px 1fr;
+    gap: 14px;
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--border);
+    border-left: 3px solid var(--canopy);
+  }
+  .nodes li.roots {
+    border-left-color: var(--roots);
+  }
+  .nodes li:last-child {
+    border-bottom: 0;
+  }
+  .when {
+    color: var(--text-3);
+    font-variant-numeric: tabular-nums;
+    padding-top: 2px;
+  }
+  .nodes a {
+    color: var(--text);
+    font-weight: 550;
+    text-decoration: none;
+  }
+  .nodes a:hover {
+    color: var(--accent-ink);
+    text-decoration: underline;
+  }
+  .nodes p {
+    margin: 2px 0 0;
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .chips .chip {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .lookups {
+    margin-top: 2.4rem;
+    color: var(--text-3);
+  }
+</style>

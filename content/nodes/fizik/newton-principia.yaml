@@ -64,3 +64,5 @@ sources:
     year: 1915
     in: Sitzungsberichte der Preußischen Akademie der Wissenschaften, 831–839
 related: [kalkulus, genel-gorelilik, kepler]
+links:
+  - { to: kepler, rel: builds-on }

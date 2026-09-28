@@ -3,7 +3,10 @@ import Base from '../layouts/Base.astro';
 import Cite from '../components/Cite.astro';
 import SourceList from '../components/SourceList.astro';
 import type { Lang, NodeData } from '../lib/data';
-import { ancestors, getNode, relatedTo, nodeSources, descendantCount } from '../lib/data';
+import { ancestors, getNode, relatedTo, nodeSources, descendantCount, typedLinks, REL_KINDS } from '../lib/data';
+import { personSlug, people } from '../lib/people';
+import { journeysThrough } from '../lib/journeys';
+import { canCompare } from '../lib/compare';
 import { latestFor, splitPapers } from '../lib/feed';
 import { literatureLinks } from '../lib/scholar';
 import { datesOf } from '../lib/history';
@@ -19,6 +22,10 @@ import {
   suggestUrl,
   otherLang,
   REPO,
+  personPath,
+  journeyPath,
+  comparePath,
+  relLabels,
 } from '../lib/i18n';
 
 interface Props {
@@ -32,7 +39,18 @@ const sources = nodeSources(node);
 const index: Record<string, number> = {};
 sources.forEach((s, i) => (index[s.key] = i + 1));
 const children = node.children.map((id) => getNode(id)!);
-const relIds = new Set([...node.related, ...relatedTo(node.id).map((n) => n.id)]);
+const typed = typedLinks(node.id);
+// typed links, grouped as "Builds on", "Built upon by", ... in a fixed order
+const typedGroups = REL_KINDS.flatMap((rel) =>
+  (['out', 'in'] as const)
+    .map((dir) => ({ rel, dir, items: typed.filter((l) => l.rel === rel && l.dir === dir) }))
+    .filter((g) => g.items.length),
+);
+const typedIds = new Set(typed.map((l) => l.node.id));
+const relIds = new Set(
+  [...node.related, ...relatedTo(node.id).map((n) => n.id)].filter((id) => !typedIds.has(id)),
+);
+const trips = journeysThrough(node.id);
 const related = [...relIds].map((id) => getNode(id)).filter(Boolean) as NodeData[];
 const evFor = node.evidence.filter((e) => e.stance === 'for');
 const evAgainst = node.evidence.filter((e) => e.stance === 'against');
@@ -109,7 +127,18 @@ const bibtex = `@misc{athena_${node.id.replace(/-/g, '_')},
     </div>
 
     <h1 data-pagefind-meta="title">{title}</h1>
-    {node.people.length > 0 && <p class="people muted">{node.people.join(' · ')}</p>}
+    {
+      node.people.length > 0 && (
+        <p class="people muted">
+          {node.people.map((p, i) => (
+            <>
+              {i > 0 && <span aria-hidden="true"> · </span>}
+              <a href={url(personPath(personSlug(p), lang))}>{t(people.get(personSlug(p))?.name, lang) || p}</a>
+            </>
+          ))}
+        </p>
+      )
+    }
     {
       !['center', 'field'].includes(node.type) && (
         <p class="note small" data-pagefind-ignore>
@@ -124,6 +153,14 @@ const bibtex = `@misc{athena_${node.id.replace(/-/g, '_')},
         <p class="fork-box">
           <strong>⑂ {t(ui.forkBox, lang)}.</strong>{' '}
           {t(node.children.length ? ui.forkNoteKids : ui.forkNote, lang)}
+          {canCompare(node) && (
+            <>
+              {' '}
+              <a class="compare-link" href={url(comparePath(node.id, lang))}>
+                {t(ui.compare, lang)} →
+              </a>
+            </>
+          )}
         </p>
       )
     }
@@ -278,6 +315,19 @@ const bibtex = `@misc{athena_${node.id.replace(/-/g, '_')},
             </div>
           )
         }
+        {typedGroups.map((g) => (
+          <div>
+            <h3>{t(relLabels[g.rel][g.dir], lang)}</h3>
+            <div class="chips">
+              {g.items.map((l) => (
+                <a class={`chip rel ${g.rel}`} href={url(nodePath(l.node.id, lang))} title={l.note ? t(l.note, lang) : undefined}>
+                  <span class={`dot ${l.node.side}`} />
+                  {t(l.node.title, lang)}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
         {
           related.length > 0 && (
             <div>
@@ -287,6 +337,24 @@ const bibtex = `@misc{athena_${node.id.replace(/-/g, '_')},
                   <a class="chip" href={url(nodePath(c.id, lang))}>
                     <span class={`dot ${c.side}`} />
                     {t(c.title, lang)}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )
+        }
+        {
+          trips.length > 0 && (
+            <div>
+              <h3>{t(ui.inJourneys, lang)}</h3>
+              <div class="chips">
+                {trips.map(({ journey, step }) => (
+                  <a class="chip journey" href={url(journeyPath(journey.id, lang)) + `#durak-${step}`}>
+                    {t(journey.title, lang)}
+                    <span class="muted">
+                      {' '}
+                      · {t(ui.stop, lang).toLocaleLowerCase(lang)} {step}/{journey.steps.length}
+                    </span>
                   </a>
                 ))}
               </div>
@@ -335,7 +403,7 @@ const bibtex = `@misc{athena_${node.id.replace(/-/g, '_')},
       )
     }
 
-    <section>
+    <section id="sources">
       <h2>{t(ui.sources, lang)}</h2>
       <SourceList sources={sources} lang={lang} />
     </section>
@@ -486,6 +554,23 @@ const bibtex = `@misc{athena_${node.id.replace(/-/g, '_')},
   }
   h1 {
     margin-bottom: 0.25em;
+  }
+  .people a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  }
+  .people a:hover {
+    color: var(--accent-ink);
+    border-bottom-color: currentColor;
+  }
+  .compare-link {
+    font-weight: 600;
+    color: var(--fork);
+    white-space: nowrap;
+  }
+  .chip.journey {
+    border-style: dashed;
   }
   .people {
     margin: 0 0 6px;

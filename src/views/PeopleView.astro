@@ -1,0 +1,183 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../lib/data';
+import { allPeople } from '../lib/people';
+import { ui, t, url, personPath } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const name = (p: (typeof allPeople)[number]) => t(p.name, lang);
+const sorted = [...allPeople].sort((a, b) => name(a).localeCompare(name(b), lang));
+// group by first letter; Turkish keeps Ç, Ö, Ş, Ü, İ as letters of their own
+const letterOf = (s: string) => {
+  const c = s.replace(/^(al-|el-|an-|en-|ar-|er-|as-|es-|at-|et-)/i, '').charAt(0);
+  const up = c.toLocaleUpperCase(lang);
+  return lang === 'tr' ? up : up.normalize('NFD').replace(/[̀-ͯ]/g, '');
+};
+const groups = new Map<string, typeof sorted>();
+for (const p of sorted) {
+  const l = letterOf(name(p));
+  if (!groups.has(l)) groups.set(l, []);
+  groups.get(l)!.push(p);
+}
+const letters = [...groups.keys()].sort((a, b) => a.localeCompare(b, lang));
+const most = [...allPeople].sort((a, b) => b.nodes.length - a.nodes.length).filter((p) => p.nodes.length > 1);
+---
+
+<Base lang={lang} title={t(ui.nav.people, lang)} route="people">
+  <main class="wrap">
+    <h1>{t(ui.nav.people, lang)}</h1>
+    <p class="muted lead">{t(ui.peopleIntro, lang)}</p>
+
+    {
+      most.length > 0 && (
+        <div class="most">
+          {most.map((p) => (
+            <a class="chip" href={url(personPath(p.slug, lang))}>
+              {name(p)} <span class="n">{p.nodes.length}</span>
+            </a>
+          ))}
+        </div>
+      )
+    }
+
+    <div class="tools">
+      <label class="visually-hidden" for="people-filter">{t(ui.filterPlaceholder, lang)}</label>
+      <input
+        id="people-filter"
+        type="search"
+        placeholder={lang === 'tr' ? 'İsimlerde ara…' : 'Filter names…'}
+        autocomplete="off"
+      />
+      <nav class="letters small" aria-label={lang === 'tr' ? 'Harfler' : 'Letters'}>
+        {letters.map((l) => <a href={`#harf-${encodeURIComponent(l)}`}>{l}</a>)}
+      </nav>
+    </div>
+
+    <div class="index">
+      {
+        letters.map((l) => (
+          <section class="letter" id={`harf-${encodeURIComponent(l)}`}>
+            <h2>{l}</h2>
+            <ul>
+              {groups.get(l)!.map((p) => (
+                <li data-name={`${p.name.tr} ${p.name.en}`.toLocaleLowerCase('tr')}>
+                  <a href={url(personPath(p.slug, lang))}>{name(p)}</a>
+                  <span class="muted small">
+                    {' '}
+                    {p.nodes.length}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+    <p id="people-empty" class="muted" hidden>—</p>
+  </main>
+</Base>
+
+<script>
+  const input = document.getElementById('people-filter') as HTMLInputElement | null;
+  const empty = document.getElementById('people-empty')!;
+  input?.addEventListener('input', () => {
+    const q = input.value.trim().toLocaleLowerCase('tr');
+    let any = false;
+    document.querySelectorAll<HTMLElement>('.letter').forEach((sec) => {
+      let shown = 0;
+      sec.querySelectorAll<HTMLElement>('li').forEach((li) => {
+        const ok = !q || (li.dataset.name ?? '').includes(q);
+        li.hidden = !ok;
+        if (ok) shown++;
+      });
+      sec.hidden = shown === 0;
+      if (shown) any = true;
+    });
+    empty.hidden = any;
+  });
+</script>
+
+<style>
+  .lead {
+    max-width: 68ch;
+  }
+  .most {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 20px 0 8px;
+  }
+  .most .chip {
+    text-decoration: none;
+    color: var(--text);
+  }
+  .most .n {
+    color: var(--text-3);
+    font-size: 0.8em;
+    margin-left: 2px;
+  }
+  .tools {
+    position: sticky;
+    top: var(--header-h, 56px);
+    z-index: 2;
+    background: var(--surface);
+    padding: 14px 0 10px;
+    margin-top: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tools input {
+    width: 100%;
+    max-width: 420px;
+  }
+  .letters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    margin-top: 10px;
+  }
+  .letters a {
+    color: var(--text-2);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .letters a:hover {
+    color: var(--accent-ink);
+  }
+  .index {
+    columns: 3 240px;
+    column-gap: 36px;
+    margin-top: 12px;
+  }
+  .letter {
+    break-inside: avoid;
+    padding-top: 6px;
+  }
+  .letter h2 {
+    font-size: 1.4rem;
+    margin: 14px 0 4px;
+    color: var(--canopy);
+  }
+  .letter ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .letter li {
+    padding: 2px 0;
+  }
+  .letter a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .letter a:hover {
+    color: var(--accent-ink);
+    text-decoration: underline;
+  }
+  [hidden] {
+    display: none !important;
+  }
+</style>

@@ -17,6 +17,8 @@ export const routes = {
   latest: { tr: '/yeni/', en: '/en/latest/' },
   method: { tr: '/yontem/', en: '/en/method/' },
   search: { tr: '/ara/', en: '/en/search/' },
+  journeys: { tr: '/yolculuklar/', en: '/en/journeys/' },
+  people: { tr: '/kisiler/', en: '/en/people/' },
 } as const;
 
 export type RouteKey = keyof typeof routes;
@@ -24,6 +26,13 @@ export type RouteKey = keyof typeof routes;
 export function nodePath(id: string, lang: Lang): string {
   return lang === 'tr' ? `/d/${id}/` : `/en/d/${id}/`;
 }
+
+export const journeyPath = (id: string, lang: Lang): string =>
+  lang === 'tr' ? `/yolculuk/${id}/` : `/en/journey/${id}/`;
+export const personPath = (slug: string, lang: Lang): string =>
+  lang === 'tr' ? `/kisi/${slug}/` : `/en/person/${slug}/`;
+export const comparePath = (id: string, lang: Lang): string =>
+  lang === 'tr' ? `/karsilastir/${id}/` : `/en/compare/${id}/`;
 
 export function t(v: L10n | undefined, lang: Lang): string {
   if (!v) return '';
@@ -39,6 +48,8 @@ export const ui = {
     home: { tr: 'Ağaç', en: 'Tree' },
     list: { tr: 'Liste', en: 'List' },
     timeline: { tr: 'Zaman', en: 'Timeline' },
+    journeys: { tr: 'Yolculuklar', en: 'Journeys' },
+    people: { tr: 'Kişiler', en: 'People' },
     dashboard: { tr: 'İnsanlık nerede?', en: 'Where are we?' },
     latest: { tr: 'Yeni makaleler', en: 'New papers' },
     method: { tr: 'Yöntem', en: 'Method' },
@@ -61,6 +72,13 @@ export const ui = {
   rootsLabel: { tr: 'Kökler — düşünce ve inanç gelenekleri', en: 'Roots — traditions of thought and belief' },
   legendFork: { tr: 'Açık soru: dalın görüşlere ayrıldığı yer', en: 'Open question: where the branch splits into views' },
   legendGrowth: { tr: 'Her dalda uca doğru daha yeni', en: 'Newer toward the tip of each branch' },
+  timeView: { tr: 'Zamanda gez', en: 'Travel in time' },
+  timePlay: { tr: 'Oynat', en: 'Play' },
+  timeYear: { tr: 'Yıl', en: 'Year' },
+  timeNote: {
+    tr: 'Ağaç, seçilen yıla kadar belgelenmiş konularla büyür. Tarihi kesin olmayan konular bu görünümde gösterilmez.',
+    en: 'The tree grows with the topics documented up to the chosen year. Topics without a documented date are not shown here.',
+  },
   legendBloom: { tr: '2020 ve sonrasındaki gelişmeler', en: 'Developments from 2020 on' },
   forkNote: {
     tr: 'Bu soruda görüşler ayrılır; ağaçtaki her çatal bir görüştür.',
@@ -140,7 +158,62 @@ export const ui = {
   roots: { tr: 'Kökler', en: 'Roots' },
   generalLabel: { tr: 'Anlatım', en: 'Reading level' },
   lastUpdate: { tr: 'Son güncelleme', en: 'Last updated' },
+  journeysIntro: {
+    tr: 'Yolculuklar ağacın içinden geçen kısa rehberli yürüyüşlerdir. Her durak bir düğümdür; iddialar, kanıtlar ve kaynaklar o düğümün sayfasındadır. Duraklar birbirine bağlanır ama hiçbiri sonuç olarak sunulmaz.',
+    en: 'Journeys are short guided walks through the tree. Each stop is a node; the claims, evidence and sources are on that node’s page. The stops are connected, but none of them is presented as the conclusion.',
+  },
+  stops: { tr: 'durak', en: 'stops' },
+  stop: { tr: 'Durak', en: 'Stop' },
+  startJourney: { tr: 'Yolculuğa başla', en: 'Start the journey' },
+  otherJourneys: { tr: 'Diğer yolculuklar', en: 'Other journeys' },
+  inJourneys: { tr: 'Bu konu şu yolculuklarda geçer', en: 'This topic is a stop on these journeys' },
+  peopleIntro: {
+    tr: 'Düğümlerde adı geçen kişiler, ekipler ve kurumlar. Her sayfa o kişinin anıldığı konuları tarih sırasıyla listeler.',
+    en: 'People, teams and institutions named on the nodes. Each page lists the topics that mention them, in date order.',
+  },
+  personNodes: { tr: 'Anıldığı konular', en: 'Topics that mention them' },
+  companions: { tr: 'Aynı konularda anılanlar', en: 'Named on the same topics' },
+  mentions: { tr: 'konu', en: 'topics' },
+  compare: { tr: 'Görüşleri yan yana karşılaştır', en: 'Compare the views side by side' },
+  compareTitle: { tr: 'Karşılaştırma', en: 'Comparison' },
+  compareIntro: {
+    tr: 'Bu sorudaki görüşler aynı başlıklar altında yan yana. Tablo bir puanlama değildir: kanıtların sayısı, güçlerini ya da doğruluklarını göstermez. Ayrıntılar ve kaynaklar her görüşün kendi sayfasındadır.',
+    en: 'The views on this question, side by side under the same headings. The table is not a score: the number of pieces of evidence says nothing about their strength or truth. Details and sources are on each view’s own page.',
+  },
+  compareShow: { tr: 'Gösterilen görüşler', en: 'Views shown' },
+  poster: { tr: 'Poster', en: 'Poster' },
+  posterPng: { tr: 'PNG olarak indir', en: 'Download as PNG' },
+  posterSvg: { tr: 'SVG olarak indir', en: 'Download as SVG' },
+  posterNote: {
+    tr: 'Ağacın şu anki hâli, açık dallarıyla birlikte indirilir.',
+    en: 'The tree is saved as it is now, with the branches you have opened.',
+  },
+  typedLinks: { tr: 'Fikir bağları', en: 'Lines of influence' },
+  posterPrinciple: {
+    tr: 'Athena karar vermez: iddiaları, kanıtları ve görüşleri kaynaklarıyla sunar.',
+    en: 'Athena delivers no verdicts: it presents claims, evidence and views with their sources.',
+  },
 } satisfies Record<string, any>;
+
+/** How a typed link reads from each end. 'out' is written on the node itself, 'in' on the other node. */
+export const relLabels: Record<string, { out: L10n; in: L10n }> = {
+  'builds-on': {
+    out: { tr: 'Üzerine kurulduğu', en: 'Builds on' },
+    in: { tr: 'Üzerine kurulanlar', en: 'Built upon by' },
+  },
+  'influenced-by': {
+    out: { tr: 'Etkilendiği', en: 'Influenced by' },
+    in: { tr: 'Etkiledikleri', en: 'Influenced' },
+  },
+  opposes: {
+    out: { tr: 'Eleştirdiği / karşı çıktığı', en: 'Argues against' },
+    in: { tr: 'Onu eleştirenler / karşı çıkanlar', en: 'Argued against by' },
+  },
+  replaces: {
+    out: { tr: 'Yaygın kullanımda yerini aldığı', en: 'Took the place (in wide use) of' },
+    in: { tr: 'Yaygın kullanımda yerini alan', en: 'Its place (in wide use) was taken by' },
+  },
+};
 
 export const typeLabels: Record<string, L10n> = {
   field: { tr: 'Alan', en: 'Field' },
@@ -189,7 +262,7 @@ export const sourceTypes: Record<string, L10n> = {
 const monthsTr = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
 const monthsEn = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-function yearLabel(y: number, lang: Lang): string {
+export function yearLabel(y: number, lang: Lang): string {
   if (y < 0) return lang === 'tr' ? `MÖ ${-y}` : `${-y} BCE`;
   return String(y);
 }

@@ -13,6 +13,7 @@ const KINDS = [
   'proof', 'experiment', 'observation', 'measurement', 'archaeological', 'genetic', 'statistical', 'replication',
   'theoretical', 'argument', 'scripture', 'experience', 'historical', 'critique', 'clinical', 'computation',
 ];
+const RELS = ['builds-on', 'influenced-by', 'opposes', 'replaces'];
 const SOURCE_TYPES = ['article', 'book', 'preprint', 'scripture', 'manuscript', 'web', 'report', 'encyclopedia', 'dataset', 'news'];
 // Words that pass judgement. Athena reports claims and evidence; it does not rule on them.
 const VERDICT_WORDS = [
@@ -118,6 +119,13 @@ for (const n of nodes.values()) {
     collect(d.src, `datings[${i}]`);
   });
   (n.open ?? []).forEach((o, i) => l10n(f, `open[${i}]`, o));
+  (n.links ?? []).forEach((l, i) => {
+    if (!l || !l.to) return err(f, `links[${i}] needs "to"`);
+    if (!RELS.includes(l.rel)) err(f, `links[${i}].rel "${l.rel}" must be one of ${RELS.join(' | ')}`);
+    if (l.to === n.id) err(f, `links[${i}] points to itself`);
+    if (l.note) l10n(f, `links[${i}].note`, l.note);
+    collect(l.src, `links[${i}]`);
+  });
   for (const [k, where] of cited) {
     if (k.startsWith('@')) {
       if (!shared[k.slice(1)]) err(f, `${where} cites unknown shared source "${k}"`);
@@ -129,6 +137,7 @@ for (const n of nodes.values()) {
     if (!cited.some(([c]) => c === k)) warn(f, `source "${k}" is listed but never cited`);
   }
   for (const r of n.related ?? []) if (!nodes.has(r)) err(f, `related "${r}" does not exist`);
+  for (const l of n.links ?? []) if (l?.to && !nodes.has(l.to)) err(f, `links: "${l.to}" does not exist`);
   if (n.date) {
     if (typeof n.date.year !== 'number') err(f, 'date.year must be a number (negative = BCE)');
   }
@@ -179,6 +188,28 @@ if (existsSync(treeFile)) {
     }
   }
   for (const n of top) if (!placedIn.has(n.id)) warn('tree.yaml', `"${n.id}" is in no group (drawn in an extra group)`);
+}
+
+// journeys: every step points to an existing node
+const journeyFile = join(ROOT, 'content/journeys.yaml');
+if (existsSync(journeyFile)) {
+  const js = yaml.load(readFileSync(journeyFile, 'utf8')) ?? [];
+  const ids = new Set();
+  for (const j of js) {
+    const w = `journeys.yaml (${j.id})`;
+    if (!j.id || !/^[a-z0-9-]+$/.test(j.id)) err(w, 'id must be lowercase letters, digits and dashes');
+    if (ids.has(j.id)) err(w, 'duplicate journey id');
+    ids.add(j.id);
+    l10n(w, 'title', j.title);
+    l10n(w, 'intro', j.intro);
+    if (!j.steps?.length || j.steps.length < 3) err(w, 'a journey needs at least 3 steps');
+    (j.steps ?? []).forEach((s, i) => {
+      if (!nodes.has(s.node)) err(w, `steps[${i}]: node "${s.node}" does not exist`);
+      l10n(w, `steps[${i}].text`, s.text);
+      for (const lang of ['tr', 'en'])
+        for (const re of VERDICT_WORDS) if (re.test(s.text?.[lang] ?? '')) warn(w, `steps[${i}].text.${lang} contains a verdict word (${re})`);
+    });
+  }
 }
 
 // dashboard

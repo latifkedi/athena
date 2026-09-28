@@ -62,8 +62,27 @@ Her katkı birleştirilmeden önce şu sorularla gözden geçirilir:
 
 - `type`: `field` (alan), `idea` (fikir/kuram), `event` (olay/yayın/deney), `tradition` (gelenek/ekol),
   `practice` (uygulama), `question` (açık soru; görüşler burada ayrılır), `technology` (teknoloji), `text` (metin/eser).
-- `related`: bağlantılı düğümler. Bağlantının türü biliniyorsa `links` alanı kullanılır:
-  `influenced` (etkiledi), `extended` (geliştirdi), `opposed` (karşı çıktı), `replaced` (yerini aldı).
+- `related`: bağlantılı düğümler. Bağlantının türü biliniyorsa `links` alanı kullanılır. Bağ, düğümün kendisinden
+  diğerine doğru okunur ("bu düğüm … o düğümü"):
+  `builds-on` (üzerine kurulur / geliştirir), `influenced-by` (ondan etkilendi), `opposes` (eleştirir / karşı çıkar),
+  `replaces` (yaygın kullanımda yerini aldı). Diğer düğümün sayfasında bağ ters yönden gösterilir.
+
+  ```yaml
+  links:
+    - { to: kopernik, rel: builds-on }
+    - to: gazali-tehafut
+      rel: opposes
+      note: { tr: Tehâfütü't-Tehâfüt doğrudan bu esere cevaptır., en: The Incoherence of the Incoherence answers this book directly. }
+      src: [kaynak1]
+  ```
+- `people`: kişiler. İki dilde farklı yazılıyorsa `Türkçe / English` biçiminde yazın (ör. `Gazzâlî / al-Ghazālī`);
+  Türkçe kısmı aynı olan adlar tek bir kişi sayfasında toplanır.
+
+## Yolculuklar
+
+`content/journeys.yaml` ağacın içinden geçen rehberli yürüyüşleri tanımlar. Her durak var olan bir düğüme işaret eder;
+durak metni yalnızca bir duraktan ötekine bağ kurar, hüküm vermez. Görüş ayrılığı olan konularda yolculuk görüşleri
+sırayla gezer ve hiçbirini sonuç olarak sunmaz.
 
 ## Davranış
 

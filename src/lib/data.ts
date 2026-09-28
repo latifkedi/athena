@@ -35,6 +35,15 @@ export interface Dating {
   value: L10n;
   src?: string[];
 }
+/** Typed connection, written on the node it starts from: "this node <rel> that node". */
+export type RelKind = 'builds-on' | 'influenced-by' | 'opposes' | 'replaces';
+export const REL_KINDS: RelKind[] = ['builds-on', 'influenced-by', 'opposes', 'replaces'];
+export interface Link {
+  to: string;
+  rel: RelKind;
+  note?: L10n;
+  src?: string[];
+}
 export interface NodeDate {
   year: number;
   month?: number;
@@ -50,6 +59,7 @@ export interface NodeData {
   type: string;
   order?: number;
   related: string[];
+  links: Link[];
   people: string[];
   date?: NodeDate;
   datings: Dating[];
@@ -126,6 +136,7 @@ function load(): Map<string, NodeData> {
       ...d,
       parent: d.parent ?? null,
       related: d.related ?? [],
+      links: d.links ?? [],
       people: d.people ?? [],
       datings: d.datings ?? [],
       claims: d.claims ?? [],
@@ -227,6 +238,19 @@ export function relatedTo(id: string): NodeData[] {
   return allNodes.filter((n) => n.related.includes(id));
 }
 
+/** Typed links touching a node, in both directions: 'out' = written on this node, 'in' = written on the other. */
+export function typedLinks(id: string): { rel: RelKind; dir: 'out' | 'in'; node: NodeData; note?: L10n }[] {
+  const out: { rel: RelKind; dir: 'out' | 'in'; node: NodeData; note?: L10n }[] = [];
+  const self = nodes.get(id);
+  for (const l of self?.links ?? []) {
+    const m = nodes.get(l.to);
+    if (m) out.push({ rel: l.rel, dir: 'out', node: m, note: l.note });
+  }
+  for (const n of allNodes)
+    for (const l of n.links) if (l.to === id) out.push({ rel: l.rel, dir: 'in', node: n, note: l.note });
+  return out;
+}
+
 /** Resolve a citation key: local first, then shared (keys beginning with @). */
 export function resolveSource(node: NodeData, key: string): Source | undefined {
   if (key.startsWith('@')) {
@@ -246,6 +270,7 @@ export function nodeSources(node: NodeData): Source[] {
   node.evidence.forEach((c) => collect(c.src));
   node.positions.forEach((c) => collect(c.src));
   node.datings.forEach((c) => collect(c.src));
+  node.links.forEach((c) => collect(c.src));
   for (const k of cited) {
     const s = resolveSource(node, k);
     if (s) out.push(s);
