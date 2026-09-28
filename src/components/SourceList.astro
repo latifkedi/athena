@@ -46,44 +46,74 @@ const { sources, lang } = Astro.props;
 
 <style>
   .sources {
-    padding-left: 1.6em;
+    list-style: none;
+    counter-reset: src;
+    padding: 0;
+    margin: 0;
     font-size: 0.9rem;
     color: var(--text-2);
+    display: grid;
+    gap: 2px;
   }
   .sources li {
-    margin-bottom: 10px;
-    scroll-margin-top: 80px;
+    counter-increment: src;
+    position: relative;
+    padding: 10px 12px 10px 42px;
+    border-radius: 10px;
+    line-height: 1.55;
+    scroll-margin-top: 90px;
+    transition: background 0.2s;
+  }
+  .sources li::before {
+    content: counter(src);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    min-width: 22px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-3);
+    text-align: right;
+  }
+  .sources li:hover {
+    background: var(--surface-2);
   }
   .sources li:target {
     background: color-mix(in srgb, var(--accent) 12%, transparent);
-    border-radius: 6px;
   }
   .stype {
     display: inline-block;
-    font-size: 0.72rem;
+    font-size: 0.66rem;
+    font-weight: 650;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     color: var(--text-3);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0 7px;
     margin-right: 6px;
+    vertical-align: 1px;
   }
   .authors {
     color: var(--text);
+    font-weight: 500;
   }
   cite {
     font-style: italic;
     color: var(--text);
   }
   .links {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    gap: 4px 10px;
-    margin-left: 8px;
+    gap: 4px 12px;
+    margin-top: 4px;
   }
   .links a {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     word-break: break-all;
   }
   .arch {
-    color: var(--text-2);
+    color: var(--text-3);
   }
 </style>

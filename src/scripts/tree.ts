@@ -186,6 +186,31 @@ export function initTree(): void {
   const soil = defs.append('linearGradient').attr('id', 'soil').attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
   soil.append('stop').attr('offset', 0).attr('class', 'soil-top');
   soil.append('stop').attr('offset', 1).attr('class', 'soil-bottom');
+  // the soil and the ground line fade out sideways instead of ending in hard edges
+  const hfade = defs.append('linearGradient').attr('id', 'hfade');
+  for (const [o, a] of [
+    [0, 0],
+    [0.22, 1],
+    [0.78, 1],
+    [1, 0],
+  ])
+    hfade.append('stop').attr('offset', o).attr('stop-color', '#fff').attr('stop-opacity', a);
+  defs
+    .append('mask')
+    .attr('id', 'soil-mask')
+    .attr('maskContentUnits', 'objectBoundingBox')
+    .append('rect')
+    .attr('width', 1)
+    .attr('height', 1)
+    .attr('fill', 'url(#hfade)');
+  const groundFade = defs.append('linearGradient').attr('id', 'ground-fade');
+  for (const [o, cls] of [
+    [0, 'ground-out'],
+    [0.25, 'ground-in'],
+    [0.75, 'ground-in'],
+    [1, 'ground-out'],
+  ] as const)
+    groundFade.append('stop').attr('offset', o).attr('class', cls);
   const clump = defs.append('radialGradient').attr('id', 'clump');
   clump.append('stop').attr('offset', 0).attr('class', 'clump-in');
   clump.append('stop').attr('offset', 0.65).attr('class', 'clump-mid');
@@ -356,15 +381,24 @@ export function initTree(): void {
     const maxX = Math.max(600, ...list.map((p) => Math.abs(p.x))) + 200;
     const maxY = Math.max(300, ...list.filter((p) => p.side === 'roots').map((p) => p.y)) + 160;
     gGround
-      .selectAll('rect')
+      .selectAll('rect.t-soil')
       .data([0])
       .join('rect')
       .attr('class', 't-soil')
-      .attr('x', -maxX)
-      .attr('width', maxX * 2)
+      .attr('mask', 'url(#soil-mask)')
+      .attr('x', -maxX * 1.3)
+      .attr('width', maxX * 2.6)
       .attr('y', 0)
       .attr('height', maxY);
-    gGround.selectAll('line').data([0]).join('line').attr('class', 't-ground').attr('x1', -maxX).attr('x2', maxX);
+    gGround
+      .selectAll('rect.t-ground')
+      .data([0])
+      .join('rect')
+      .attr('class', 't-ground')
+      .attr('x', -maxX * 1.3)
+      .attr('width', maxX * 2.6)
+      .attr('y', -0.8)
+      .attr('height', 1.6);
     gGround
       .selectAll<SVGTextElement, { t: string; y: number }>('text')
       .data([

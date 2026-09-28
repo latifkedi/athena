@@ -90,35 +90,101 @@ const branchOf = (n: NodeData) => topLevel(n.id);
     list-style: none;
     padding: 0;
     margin: 0;
-    border-left: 2px solid var(--border);
+    position: relative;
+  }
+  .tl::before {
+    content: '';
+    position: absolute;
+    left: 125px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, var(--border), var(--border-strong), var(--border));
   }
   .tl li {
     display: grid;
-    grid-template-columns: 116px 10px 1fr;
-    gap: 10px;
+    grid-template-columns: 110px 12px 1fr;
+    gap: 14px;
     align-items: baseline;
-    padding: 8px 0 4px 14px;
+    padding: 10px 0;
   }
   .tl .when {
-    font-variant-numeric: tabular-nums;
+    font-family: var(--serif);
+    font-variant-numeric: lining-nums;
+    font-size: 1rem;
     color: var(--text-2);
-    font-size: 0.9rem;
+    text-align: right;
   }
-  .tl p {
-    margin: 2px 0 0;
+  .tl .dot {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 1px;
+    box-shadow: 0 0 0 4px var(--surface);
+  }
+  .tl li > div {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    box-shadow: var(--shadow-sm);
+    transition:
+      border-color 0.15s,
+      box-shadow 0.15s;
+  }
+  .tl li > div:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow);
   }
   .tl a {
-    font-weight: 600;
+    font-weight: 650;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .tl a:hover {
+    color: var(--accent-ink);
+  }
+  .tl p {
+    margin: 4px 0 0;
+    line-height: 1.6;
+  }
+  .und {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 8px;
   }
   .und li {
-    margin-bottom: 6px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+  }
+  .und a {
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .und a:hover {
+    color: var(--accent-ink);
   }
   @media (max-width: 560px) {
+    .tl::before {
+      left: 5px;
+    }
     .tl li {
-      grid-template-columns: 10px 1fr;
+      grid-template-columns: 12px 1fr;
+      gap: 6px 12px;
     }
     .tl .when {
-      grid-column: 1 / -1;
+      grid-column: 2;
+      text-align: left;
+      order: -1;
+    }
+    .tl .dot {
+      grid-row: 1;
+      grid-column: 1;
     }
   }
 </style>

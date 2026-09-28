@@ -310,7 +310,7 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
       )
     }
 
-    <p>
+    <p class="suggest">
       <a class="btn" href={suggestUrl(lang, node.id, title)}>✎ {t(ui.suggest, lang)}</a>
     </p>
   </main>
@@ -318,23 +318,261 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
 
 <style>
   .node {
-    padding-top: 20px;
+    padding-top: 28px;
+  }
+  .crumbs {
+    color: var(--text-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+  .crumbs a {
+    color: var(--text-2);
+    text-decoration: none;
+  }
+  .crumbs a:hover {
+    color: var(--text);
+    text-decoration: underline;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 18px 0 6px;
+  }
+  a.chip {
+    text-decoration: none;
+    transition: border-color 0.15s;
+  }
+  a.chip:hover {
+    border-color: var(--border-strong);
+    color: var(--text);
+  }
+  h1 {
+    margin-bottom: 0.25em;
+  }
+  .people {
+    margin: 0 0 6px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.08rem;
+    color: var(--text-2);
+  }
+  .note {
+    color: var(--text-3);
+    margin: 10px 0 26px;
   }
   .fork-box {
+    border: 1px solid color-mix(in srgb, var(--fork) 30%, var(--border));
     border-left: 3px solid var(--fork);
-    background: var(--surface-2);
-    padding: 10px 14px;
-    border-radius: 0 8px 8px 0;
-    font-size: 0.92rem;
+    background: color-mix(in srgb, var(--fork) 6%, var(--card));
+    padding: 12px 16px;
+    border-radius: 4px var(--radius-sm) var(--radius-sm) 4px;
+    font-size: 0.93rem;
     color: var(--text-2);
+    margin: 0 0 24px;
   }
   .fork-box strong {
     color: var(--fork);
   }
-  .lit .chips {
+  .levels {
+    display: grid;
+    gap: 22px;
+    margin-top: 8px;
+  }
+  .level h2 {
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-3);
+    margin: 0 0 8px;
+  }
+  .level p {
+    margin: 0;
+  }
+  .level:not(.expert) p {
+    font-size: 1.14rem;
+    line-height: 1.75;
+  }
+  .level:not(.expert) p + p {
+    margin-top: 0.9em;
+  }
+  .level.expert {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+  }
+  .level.expert p {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--text-2);
+  }
+  table.datings {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 0.95rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  table.datings th,
+  table.datings td {
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 16px;
+  }
+  table.datings tr + tr th,
+  table.datings tr + tr td {
+    border-top: 1px solid var(--border);
+  }
+  table.datings th {
+    width: 34%;
+    font-weight: 600;
+    background: var(--surface-2);
+  }
+  .claims {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .claims li {
+    position: relative;
+    padding-left: 22px;
+  }
+  .claims li::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0.62em;
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    background: var(--bark);
+    opacity: 0.7;
+  }
+  .evidence {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .col {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px 6px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+  }
+  .col::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: var(--border);
+  }
+  .col.for::before {
+    background: var(--for);
+  }
+  .col.against::before {
+    background: var(--against);
+  }
+  .evidence h3 {
+    margin: 2px 0 12px;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .col.for h3 {
+    color: var(--for);
+  }
+  .col.against h3 {
+    color: var(--against);
+  }
+  .ev {
+    padding: 0 0 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ev:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .ev p {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .kind {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-3);
+    background: var(--surface-2);
+    border-radius: 999px;
+    padding: 1px 8px;
+  }
+  .positions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+    margin: 0;
+  }
+  .positions div {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    box-shadow: var(--shadow-sm);
+  }
+  .positions dt {
+    font-weight: 650;
+    font-size: 0.95rem;
+  }
+  .positions dd {
+    margin: 6px 0 0;
+    color: var(--text-2);
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+  .conn {
+    display: grid;
+    gap: 4px;
+  }
+  .conn h3 {
+    font-size: 0.72rem;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-3);
+    margin: 12px 0 8px;
+  }
+  .chips {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
+  }
+  .papers {
+    padding-left: 1.1em;
+  }
+  .papers li {
+    margin-bottom: 8px;
+  }
+  .papers li::marker {
+    color: var(--text-3);
   }
   .lit .chip {
     text-decoration: none;
@@ -343,144 +581,8 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
   .lit .chip:hover {
     border-color: var(--accent);
   }
-  .crumbs {
-    color: var(--text-3);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .crumbs a {
-    color: var(--text-2);
-    text-decoration: none;
-  }
-  .crumbs a:hover {
-    text-decoration: underline;
-  }
-  .meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin: 14px 0 4px;
-  }
-  a.chip {
-    text-decoration: none;
-  }
-  a.chip:hover {
-    border-color: var(--accent);
-    color: var(--text);
-  }
-  .people {
-    margin-top: -6px;
-  }
-  .note {
-    color: var(--text-3);
-    margin: 4px 0 18px;
-  }
-  .levels {
-    display: grid;
-    gap: 16px;
-    margin-top: 12px;
-  }
-  .level h2 {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: var(--text-3);
-    margin: 0 0 6px;
-  }
-  .level p {
-    margin: 0;
-  }
-  .level.expert {
-    border-top: 1px solid var(--border);
-    padding-top: 14px;
-  }
-  .level.expert p {
-    font-size: 0.95rem;
-    color: var(--text-2);
-  }
-  table.datings {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 0.95rem;
-  }
-  table.datings th,
-  table.datings td {
-    text-align: left;
-    vertical-align: top;
-    padding: 10px 8px;
-    border-top: 1px solid var(--border);
-  }
-  table.datings th {
-    width: 34%;
-    font-weight: 600;
-  }
-  .claims li {
-    margin-bottom: 6px;
-  }
-  .evidence {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  .evidence h3 {
-    margin-top: 0;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .col.for h3 {
-    color: var(--for);
-  }
-  .col.against h3 {
-    color: var(--against);
-  }
-  .col {
-    border-top: 3px solid var(--border);
-    padding-top: 10px;
-  }
-  .col.for {
-    border-top-color: var(--for);
-  }
-  .col.against {
-    border-top-color: var(--against);
-  }
-  .ev {
-    margin-bottom: 14px;
-  }
-  .ev p {
-    margin: 2px 0 0;
-    font-size: 0.95rem;
-  }
-  .kind {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-3);
-  }
-  .positions div {
-    margin-bottom: 12px;
-  }
-  .positions dt {
-    font-weight: 600;
-  }
-  .positions dd {
-    margin: 2px 0 0;
-    color: var(--text-2);
-  }
-  .conn h3 {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-3);
-  }
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .papers li {
-    margin-bottom: 6px;
+  .suggest {
+    margin-top: 36px;
   }
   @media (max-width: 640px) {
     .evidence {
@@ -488,6 +590,9 @@ const para = (s: string) => esc(s.trim()).split(/\n\s*\n/).join('</p><p>');
     }
     table.datings th {
       width: 40%;
+    }
+    .level:not(.expert) p {
+      font-size: 1.06rem;
     }
   }
 </style>

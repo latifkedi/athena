@@ -104,10 +104,38 @@ const branches = Object.entries(feed.branches)
 
 <style>
   .papers {
-    padding-left: 1.1em;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
   }
   .papers li {
-    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.12s;
+  }
+  .papers li:last-child {
+    border-bottom: 0;
+  }
+  .papers li:hover {
+    background: var(--surface-2);
+  }
+  .papers a {
+    color: var(--text);
+    font-weight: 550;
+    text-decoration: none;
+    line-height: 1.45;
+  }
+  .papers a:hover {
+    color: var(--accent-ink);
+    text-decoration: underline;
+  }
+  .papers .small {
+    margin-top: 3px;
   }
   h2 a {
     color: var(--text);

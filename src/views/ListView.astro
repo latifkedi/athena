@@ -64,7 +64,7 @@ const norm = (s: string) =>
                   {t(n.title, lang)}
                 </a>
               </td>
-              <td class="hide-sm muted small">{t(typeLabels[n.type], lang)}</td>
+              <td class="hide-sm muted small nowrap">{t(typeLabels[n.type], lang)}</td>
               <td class="muted small nowrap">
                 {n.date ? formatDate(n.date, lang) : n.datings.length ? t(ui.datings, lang) : ''}
               </td>
@@ -105,28 +105,45 @@ const norm = (s: string) =>
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 16px 0;
+    margin: 20px 0 16px;
   }
   .filters input {
-    flex: 1 1 240px;
+    flex: 1 1 260px;
   }
   table.nodes {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
   }
   table.nodes th {
     text-align: left;
-    font-size: 0.78rem;
+    font-size: 0.7rem;
+    font-weight: 650;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.12em;
     color: var(--text-3);
-    padding: 8px;
+    padding: 12px 12px;
+    background: var(--surface-2);
     border-bottom: 1px solid var(--border);
   }
   table.nodes td {
-    padding: 7px 8px;
-    border-bottom: 1px solid var(--border);
+    padding: 9px 12px;
+    border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
     vertical-align: top;
+  }
+  table.nodes tbody tr:last-child td {
+    border-bottom: 0;
+  }
+  table.nodes tbody tr {
+    transition: background 0.12s;
+  }
+  table.nodes tbody tr:hover {
+    background: var(--surface-2);
   }
   table.nodes a {
     color: var(--text);
@@ -134,13 +151,15 @@ const norm = (s: string) =>
   }
   table.nodes a:hover {
     color: var(--accent-ink);
-    text-decoration: underline;
   }
   .strong {
-    font-weight: 650;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.08rem;
   }
   .nowrap {
     white-space: nowrap;
+    font-variant-numeric: tabular-nums;
   }
   @media (max-width: 640px) {
     .hide-sm {
