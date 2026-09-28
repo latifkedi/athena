@@ -3,9 +3,9 @@
 **Athena**, insanlığın bilgisini ilk taş aletlerden 2026'nın en yeni keşiflerine kadar bir **dünya ağacı** olarak gösteren
 iki dilli (Türkçe/İngilizce) bir sitedir.
 
-- **Dallar** (yukarı): dünyayı araştıran alanlar. İlk bilgiler, matematik, fizik, enerji, kimya, biyoloji, tıp,
-  astronomi, uzay keşfi, yer bilimleri ve iklim, bilişim, psikoloji, parapsikoloji, toplum, hukuk ve siyaset, dilbilim,
-  sanat ve müzik.
+- **Dallar** (yukarı): dünyayı araştıran alanlar. İlk bilgiler, matematik ve istatistik, fizik, enerji, teknoloji ve
+  mühendislik, kimya, biyoloji ve ekoloji, tıp, astronomi, uzay keşfi, yer bilimleri ve iklim, bilişim, psikoloji ve
+  sinirbilim, parapsikoloji, toplum, hukuk ve siyaset, dilbilim, sanat, müzik ve mimarlık.
 - **Kökler** (aşağı): düşünce ve inanç gelenekleri. Felsefe, kelam, tasavvuf, dinler, mitoloji, ezoterik gelenekler
   (simya, hermetizm, astroloji).
 
@@ -21,6 +21,14 @@ Athena hiçbir iddiaya "doğru", "yanlış", "makul" gibi bir hüküm vermez. He
 6. **Kaynaklar**: DOI, arXiv, ISBN, bağlantı ve her biri için **Wayback Machine arşivi**
 
 Kaynaksız düğüm kabul edilmez. `scripts/check-content.mjs` her derlemeden önce bunu denetler.
+
+Sitede ayrıca şunlar var:
+
+- **Zamanda gez**: ağaç, seçilen yıla kadar belgelenmiş konularla büyür.
+- **Yolculuklar**: ağacın içinden geçen rehberli yürüyüşler (`content/journeys.yaml`).
+- **Görüş karşılaştırması**: görüşleri alt dal olan açık sorularda görüşler yan yana.
+- **Fikir bağları**: "üzerine kurulur", "etkilendi", "eleştirir", "yerini aldı" türünde bağlar (`links:`).
+- **Kişi sayfaları**, **tam metin arama**, **atıf kutusu**, **RSS** ve ağacın **poster** olarak indirilmesi.
 
 ## Siteyi yayına almak (GitHub Pages)
 
