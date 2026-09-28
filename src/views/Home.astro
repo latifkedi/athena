@@ -43,6 +43,7 @@ const payload = {
     top: n.depth >= 1 ? topLevel(n.id)?.id : null,
     // on open questions the branch splits into one prong per position
     pw: n.type === 'question' ? n.positions.map((p) => t(p.who, lang)) : undefined,
+    y: n.date?.year,
   })),
 };
 ---
@@ -72,6 +73,21 @@ const payload = {
             cy="2"
             r="1.4"></circle></svg
         >{t(ui.legendFork, lang)}
+      </span>
+      <span>
+        <svg class="lg-bloom" viewBox="0 0 14 14" aria-hidden="true"
+          >{
+            [0, 72, 144, 216, 288].map((a) => (
+              <ellipse
+                cx={7 + 3.3 * Math.cos((a * Math.PI) / 180)}
+                cy={7 + 3.3 * Math.sin((a * Math.PI) / 180)}
+                rx="2.9"
+                ry="2.2"
+                transform={`rotate(${a} ${7 + 3.3 * Math.cos((a * Math.PI) / 180)} ${7 + 3.3 * Math.sin((a * Math.PI) / 180)})`}
+              />
+            ))
+          }<circle cx="7" cy="7" r="1.6"></circle></svg
+        >{t(ui.legendBloom, lang)}
       </span>
       <span><span class="lg-grow" aria-hidden="true">→</span>{t(ui.legendGrowth, lang)}</span>
     </div>
@@ -264,25 +280,54 @@ const payload = {
     font-size: 12px;
     letter-spacing: 0.04em;
   }
-  .t-clump {
-    fill: url(#clump);
-    pointer-events: none;
+  .t-crown circle {
+    fill: hsl(var(--gh, 158) 42% var(--gl));
   }
-  .clump-in {
-    stop-color: var(--canopy);
-    stop-opacity: 0.13;
+  .t-crown .halo {
+    opacity: 0.065;
   }
-  .clump-mid {
-    stop-color: var(--canopy);
-    stop-opacity: 0.07;
+  .t-crown .core {
+    opacity: 0.11;
   }
-  .clump-out {
-    stop-color: var(--canopy);
-    stop-opacity: 0;
+  :root[data-theme='dark'] .t-crown .halo {
+    opacity: 0.08;
+  }
+  :root[data-theme='dark'] .t-crown .core {
+    opacity: 0.11;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) .t-crown .halo {
+      opacity: 0.08;
+    }
+    :root:not([data-theme='light']) .t-crown .core {
+      opacity: 0.11;
+    }
+  }
+  .bark-dark {
+    stop-color: color-mix(in srgb, var(--bark) 74%, #000);
+  }
+  .bark-mid {
+    stop-color: var(--bark);
+  }
+  .bark-light {
+    stop-color: color-mix(in srgb, var(--bark) 80%, #fff);
   }
   .t-trunk {
-    fill: var(--bark);
+    fill: url(#bark-shade);
     cursor: pointer;
+  }
+  #tree.intro .t-trunk {
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+    animation: trunk-grow 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  @keyframes trunk-grow {
+    from {
+      transform: scaleY(0.04);
+    }
+    to {
+      transform: scaleY(1);
+    }
   }
   .t-branch {
     stroke: none;
@@ -296,13 +341,13 @@ const payload = {
     fill: var(--bark);
   }
   .t-branch.canopy.l1 {
-    fill: color-mix(in srgb, var(--bark) 52%, var(--canopy));
+    fill: color-mix(in srgb, var(--bark) 55%, hsl(var(--gh, 158) 48% var(--gl)));
   }
   .t-branch.canopy.l2 {
-    fill: color-mix(in srgb, var(--bark) 22%, var(--canopy));
+    fill: color-mix(in srgb, var(--bark) 24%, hsl(var(--gh, 158) 48% var(--gl)));
   }
   .t-branch.canopy.l3 {
-    fill: var(--canopy);
+    fill: hsl(var(--gh, 158) 48% var(--gl));
   }
   .t-branch.roots.l1 {
     fill: color-mix(in srgb, var(--bark) 55%, var(--roots));
@@ -356,20 +401,23 @@ const payload = {
     stroke-width: 1.8;
   }
   .t-node.canopy .mark {
-    stroke: color-mix(in srgb, var(--bark) 30%, var(--canopy));
+    stroke: color-mix(in srgb, var(--bark) 30%, hsl(var(--gh, 158) 48% var(--gl)));
   }
   .t-node.roots .mark {
     stroke: color-mix(in srgb, var(--bark) 30%, var(--roots));
   }
   .t-node.open .mark {
-    fill: color-mix(in srgb, var(--bark) 30%, var(--canopy));
+    fill: color-mix(in srgb, var(--bark) 30%, hsl(var(--gh, 158) 48% var(--gl)));
   }
   .t-node.roots.open .mark {
     fill: color-mix(in srgb, var(--bark) 30%, var(--roots));
   }
   .t-node.leaf .mark {
-    stroke: none;
-    fill: var(--canopy-ink);
+    display: none;
+  }
+  .t-node.roots.leaf .mark,
+  .t-node.fork .mark {
+    display: inline;
   }
   .t-node.roots.leaf .mark {
     fill: var(--roots);
@@ -379,10 +427,46 @@ const payload = {
     stroke: none;
   }
   .t-node .leaf {
-    fill: var(--canopy);
-    stroke: color-mix(in srgb, var(--canopy) 70%, var(--text));
-    stroke-width: 0.6;
-    stroke-opacity: 0.5;
+    fill: hsl(var(--gh, 158) 50% calc(var(--gl) + var(--lv, 0) * 6%));
+  }
+  .t-node .rib {
+    fill: none;
+    stroke: hsl(var(--gh, 158) 45% calc(var(--gl) + 26%));
+    stroke-width: 0.8;
+    stroke-linecap: round;
+    opacity: 0.75;
+  }
+  .t-node .stalk {
+    stroke: hsl(var(--gh, 158) 48% var(--gl));
+    stroke-width: 1.3;
+    stroke-linecap: round;
+  }
+  .t-node .petal {
+    fill: var(--bloom);
+    stroke: color-mix(in srgb, var(--bloom) 70%, #7a4300);
+    stroke-width: 0.5;
+  }
+  .t-node .eye {
+    fill: color-mix(in srgb, var(--bloom) 45%, #6b3a00);
+  }
+  .t-node .sway {
+    transform-box: fill-box;
+    transform-origin: 0% 50%;
+    animation: sway var(--sd, 6s) ease-in-out var(--sdl, 0s) infinite alternate;
+  }
+  @keyframes sway {
+    from {
+      transform: rotate(-6deg);
+    }
+    to {
+      transform: rotate(6deg);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .t-node .sway,
+    #tree.intro .t-trunk {
+      animation: none;
+    }
   }
   .t-node .prong path,
   .t-node .prong circle {
@@ -426,8 +510,12 @@ const payload = {
     stroke-linejoin: round;
   }
   .t-node.lv1 text {
-    font-size: 14px;
-    font-weight: 650;
+    font-family: var(--serif);
+    font-size: 15.5px;
+    font-weight: 600;
+  }
+  .t-node:not(.lv0):not(.lv1):not(.sel):not(.hov) text {
+    fill: var(--text-2);
   }
   .t-node.center text {
     font-family: var(--serif);
@@ -444,7 +532,7 @@ const payload = {
   /* semantic zoom: when zoomed out, keep main-branch labels readable and
      show deeper labels only for the selection, its path and on hover */
   #tree.far .t-node.lv1 text {
-    font-size: calc(14px * min(1.25, max(1, 0.8 / var(--k, 1))));
+    font-size: calc(15.5px * min(1.25, max(1, 0.8 / var(--k, 1))));
   }
   #tree.far .t-node.center text {
     font-size: calc(15px * min(1.6, max(1, 0.8 / var(--k, 1))));
@@ -472,6 +560,17 @@ const payload = {
   }
   .legend .lg-fork circle {
     fill: var(--fork);
+  }
+  .legend .lg-bloom {
+    width: 14px;
+    height: 14px;
+    flex: none;
+  }
+  .legend .lg-bloom ellipse {
+    fill: var(--bloom);
+  }
+  .legend .lg-bloom circle {
+    fill: color-mix(in srgb, var(--bloom) 45%, #6b3a00);
   }
   .legend .lg-grow {
     width: 14px;
@@ -570,6 +669,9 @@ const payload = {
   }
 
   @media (max-width: 720px) {
+    .legend > span:nth-child(n + 3) {
+      display: none;
+    }
     .panel {
       top: auto;
       left: 0;

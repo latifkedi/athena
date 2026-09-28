@@ -60,6 +60,7 @@ export const ui = {
   rootsLabel: { tr: 'Kökler — düşünce ve inanç gelenekleri', en: 'Roots — traditions of thought and belief' },
   legendFork: { tr: 'Açık soru: dalın görüşlere ayrıldığı yer', en: 'Open question: where the branch splits into views' },
   legendGrowth: { tr: 'Her dalda uca doğru daha yeni', en: 'Newer toward the tip of each branch' },
+  legendBloom: { tr: '2020 ve sonrasındaki gelişmeler', en: 'Developments from 2020 on' },
   forkNote: {
     tr: 'Bu soruda görüşler ayrılır; ağaçtaki her çatal bir görüştür.',
     en: 'Views diverge on this question; each prong on the tree is one position.',

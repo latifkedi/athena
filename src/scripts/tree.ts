@@ -5,7 +5,7 @@
 // - Along every branch the newest topics reach furthest out and sit in the middle; older ones
 //   branch off lower down, to the sides.
 // - Open questions end in a fork: one prong per position recorded on the node.
-import { select, zoom, zoomIdentity, hierarchy, tree, line, curveCatmullRomClosed } from 'd3';
+import { select, zoom, zoomIdentity, hierarchy, tree, line, curveCatmullRomClosed, easeCubicOut } from 'd3';
 import type { ZoomBehavior, HierarchyPointNode } from 'd3';
 
 interface RawNode {
@@ -22,6 +22,7 @@ interface RawNode {
   rel: string[];
   top: string | null;
   pw?: string[];
+  y?: number;
 }
 interface Group {
   id: string;
@@ -69,6 +70,10 @@ const REACH = 115; // how much further the newest topic of a branch reaches than
 const MIN_ARC = 15; // minimum arc length per node on a ring (px)
 const PAD = 0.1; // radians kept free next to the ground line
 const DUR = 420;
+const BLOOM_SINCE = 2020; // twigs for developments from this year on end in a blossom
+const INTRO_DELAY = 420; // on first load the trunk rises, then every level of branches grows out
+const INTRO_STEP = 230;
+const INTRO_DUR = 900;
 
 const origin = (side: Side): Pt => (side === 'canopy' ? { x: 0, y: -TRUNK } : { x: 0, y: 0 });
 const unit = (x: number, y: number): Pt => {
@@ -176,6 +181,26 @@ export function initTree(): void {
   const groupOf = new Map<string, string>();
   for (const side of ['canopy', 'roots'] as Side[])
     for (const g of data.groups[side]) for (const f of g.f) groupOf.set(f, `g:${g.id}`);
+  // every limb of the canopy has its own green, from olive on the left to sea green on the right
+  const hueOf = new Map<string, number>();
+  const nG = data.groups.canopy.length;
+  data.groups.canopy.forEach((g, i) => {
+    const h = 80 + (nG > 1 ? (i * 112) / (nG - 1) : 70);
+    hueOf.set(`g:${g.id}`, h);
+    for (const f of g.f) hueOf.set(f, h);
+  });
+  const hue = (p: Placed): number | undefined => {
+    if (p.side !== 'canopy') return undefined;
+    if (p.group) return hueOf.get(p.id);
+    const n = byId.get(p.id);
+    return n ? hueOf.get(n.top ?? n.id) : undefined;
+  };
+  const limbOf = (p: Placed): Placed | null => {
+    let c: Placed | null = p;
+    while (c && c.depth > 1) c = c.parent;
+    return c && c.depth === 1 ? c : null;
+  };
+  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
 
   const expanded = new Set<string>([data.center]);
   for (const id of byId.get(data.center)!.k) expanded.add(id);
@@ -211,10 +236,16 @@ export function initTree(): void {
     [1, 'ground-out'],
   ] as const)
     groundFade.append('stop').attr('offset', o).attr('class', cls);
-  const clump = defs.append('radialGradient').attr('id', 'clump');
-  clump.append('stop').attr('offset', 0).attr('class', 'clump-in');
-  clump.append('stop').attr('offset', 0.65).attr('class', 'clump-mid');
-  clump.append('stop').attr('offset', 1).attr('class', 'clump-out');
+  // soft round shading across the trunk
+  const barkShade = defs.append('linearGradient').attr('id', 'bark-shade');
+  for (const [o, cls] of [
+    [0, 'bark-dark'],
+    [0.3, 'bark-mid'],
+    [0.55, 'bark-light'],
+    [0.85, 'bark-mid'],
+    [1, 'bark-dark'],
+  ] as const)
+    barkShade.append('stop').attr('offset', o).attr('class', cls);
   const viewport = svg.append('g');
   const gGround = viewport.append('g');
   const gCrown = viewport.append('g');
@@ -355,20 +386,23 @@ export function initTree(): void {
     const rot = `rotate(${flip ? deg + 180 : deg})`;
     if (p.depth === 2) return { transform: rot, anchor: flip ? 'start' : 'end', dx: flip ? 13 : -13, dy: -9 };
     const n = byId.get(p.id)!;
-    const gap = prongCount(n) ? 30 : !n.k.length && p.side === 'canopy' ? 21 : 10;
+    const gap = prongCount(n) ? 30 : !n.k.length && p.side === 'canopy' ? 25 : 10;
     return { transform: rot, anchor: flip ? 'end' : 'start', dx: flip ? -gap : gap, dy: 0 };
   }
 
   const prongCount = (n: RawNode): number => (!n.k.length && (n.pw?.length ?? 0) >= 2 ? Math.min(n.pw!.length, 4) : 0);
 
-  function render(animate = true): void {
-    const prev = placed;
+  function render(animate = true, intro = false): void {
+    const prev = intro ? new Map<string, Placed>() : placed;
     placed = computeLayout();
     const onPath = pathToCenter(selected);
     const list = [...placed.values()].filter((p) => !isVirtual(p));
     const links = list.filter((p) => p.parent);
     const nodesOnly = list.filter((p) => !p.group);
     const dur = animate ? DUR : 0;
+    // on the first load every level waits for the one before it, so the tree grows from the trunk
+    const wait = (p: Placed): number => (intro ? INTRO_DELAY + Math.max(0, p.depth - 1) * INTRO_STEP : 0);
+    const time = intro ? INTRO_DUR : dur;
     const from = (p: Placed): Pt => {
       // new branches grow out of their nearest previously visible ancestor
       let cur: Placed | null = p.parent;
@@ -411,29 +445,62 @@ export function initTree(): void {
       .attr('y', (d) => d.y)
       .text((d) => d.t);
 
-    // foliage: a soft clump around every field of the canopy and around its larger sub-branches
-    const clumps: { id: string; x: number; y: number; r: number }[] = [];
-    const within = (p: Placed, top: Placed): boolean => {
-      for (let c: Placed | null = p; c; c = c.parent) if (c === top) return true;
-      return false;
-    };
-    for (const f of list.filter((p) => p.side === 'canopy' && (p.depth === 2 || (p.depth === 3 && visibleKids(p))))) {
-      const members = list.filter((p) => within(p, f));
-      const cx = members.reduce((s, p) => s + p.x, 0) / members.length;
-      const cy = members.reduce((s, p) => s + p.y, 0) / members.length;
-      const r = Math.max(...members.map((p) => Math.hypot(p.x - cx, p.y - cy))) + (f.depth === 2 ? 70 : 45);
-      clumps.push({ id: f.id, x: cx, y: cy, r: Math.min(r, 420) });
+    // crown: a flat, cloud-edged silhouette per limb, made of overlapping discs around its twigs
+    type Blob = { id: string; x: number; y: number; r: number; fx: number; fy: number };
+    const crowns = data.groups.canopy.map((g) => ({ id: `g:${g.id}`, hue: hueOf.get(`g:${g.id}`) ?? 150, blobs: [] as Blob[] }));
+    const crownOf = new Map(crowns.map((c) => [c.id, c]));
+    for (const p of list) {
+      if (p.side !== 'canopy' || p.depth < 2) continue;
+      const c = crownOf.get(limbOf(p)?.id ?? '');
+      if (!c) continue;
+      const f = from(p);
+      const j = Math.abs(jitter(p.id + 'c'));
+      c.blobs.push({ id: p.id, x: p.x, y: p.y, r: (visibleKids(p) ? 52 : 40) + 12 * j, fx: f.x, fy: f.y });
+      // fill the space along the twig as well
+      if (p.parent && p.parent.depth >= 2)
+        c.blobs.push({
+          id: p.id + '~',
+          x: (p.x + p.parent.x) / 2,
+          y: (p.y + p.parent.y) / 2,
+          r: 38 + 10 * j,
+          fx: f.x,
+          fy: f.y,
+        });
     }
-    gCrown
-      .selectAll<SVGCircleElement, (typeof clumps)[number]>('circle')
-      .data(clumps, (d) => d.id)
-      .join((enter) => enter.append('circle').attr('r', 0).attr('cx', (d) => d.x).attr('cy', (d) => d.y))
-      .attr('class', 't-clump')
-      .transition()
-      .duration(dur)
-      .attr('cx', (d) => d.x)
-      .attr('cy', (d) => d.y)
-      .attr('r', (d) => d.r);
+    const crownSel = gCrown
+      .selectAll<SVGGElement, (typeof crowns)[number]>('g.t-crown')
+      .data(crowns, (d) => d.id)
+      .join((enter) => {
+        const g = enter.append('g').attr('class', 't-crown');
+        g.append('g').attr('class', 'halo');
+        g.append('g').attr('class', 'core');
+        return g;
+      })
+      .style('--gh', (d) => d.hue);
+    for (const layer of ['halo', 'core'] as const) {
+      const grow = layer === 'halo' ? 26 : 0;
+      crownSel
+        .select<SVGGElement>(`g.${layer}`)
+        .selectAll<SVGCircleElement, Blob>('circle')
+        .data((d) => d.blobs, (b) => b.id)
+        .join(
+          (enter) =>
+            enter
+              .append('circle')
+              .attr('cx', (b) => b.fx)
+              .attr('cy', (b) => b.fy)
+              .attr('r', 0),
+          (update) => update,
+          (exit) => exit.transition().duration(dur).attr('r', 0).remove(),
+        )
+        .transition()
+        .delay(intro ? INTRO_DELAY + 700 : 0)
+        .duration(intro ? INTRO_DUR * 1.4 : dur)
+        .ease(easeCubicOut)
+        .attr('cx', (b) => b.x)
+        .attr('cy', (b) => b.y)
+        .attr('r', (b) => b.r + grow);
+    }
 
     // trunk
     const wTop = placed.get('r:canopy')?.w ?? 14;
@@ -442,6 +509,7 @@ export function initTree(): void {
       .data([0])
       .join('path')
       .attr('class', `t-trunk${selected === data.center ? ' on' : ''}`)
+      .attr('fill', 'url(#bark-shade)')
       .attr('d', trunkPath(wTop * 1.3, wTop))
       .on('click', (e: MouseEvent) => {
         e.stopPropagation();
@@ -484,8 +552,11 @@ export function initTree(): void {
         const lvl = d.group ? 0 : Math.min(3, d.depth - 1);
         return `t-branch ${d.side} l${lvl}${onPath.has(d.id) ? ' on' : ''}${d.group ? ' limb' : ''}`;
       })
+      .style('--gh', (d) => hue(d) ?? null)
       .transition()
-      .duration(dur)
+      .delay(wait)
+      .duration(time)
+      .ease(easeCubicOut)
       .attrTween('d', function (d) {
         const g0 = this.__g ?? geomFor(d);
         const g1 = geomFor(d);
@@ -508,7 +579,8 @@ export function initTree(): void {
       .attr('dy', '0.32em')
       .text((d) => d.group!.t)
       .transition()
-      .duration(dur)
+      .delay(wait)
+      .duration(time)
       .attr('transform', (d) => {
         const g = geomFor(d);
         const mx = g.ax + (g.bx - g.ax) * 0.58;
@@ -576,7 +648,8 @@ export function initTree(): void {
         return cls.join(' ');
       })
       .attr('aria-label', (d) => byId.get(d.id)!.t)
-      .attr('aria-expanded', (d) => (byId.get(d.id)!.k.length ? String(expanded.has(d.id)) : null));
+      .attr('aria-expanded', (d) => (byId.get(d.id)!.k.length ? String(expanded.has(d.id)) : null))
+      .style('--gh', (d) => hue(d) ?? null);
 
     // leaves on the canopy's twigs, forks on open questions, knots and buds elsewhere
     nodeSel.select<SVGGElement>('g.shape').each(function (d) {
@@ -585,15 +658,48 @@ export function initTree(): void {
       const deg = (Math.atan2(e.y, e.x) * 180) / Math.PI;
       const g = select(this).attr('transform', `rotate(${deg})`);
       const prongs = prongCount(n);
-      const kind = prongs ? `fork${prongs}` : !n.k.length && d.side === 'canopy' ? 'leaf' : 'none';
+      const bloom = !n.k.length && d.side === 'canopy' && (n.y ?? 0) >= BLOOM_SINCE;
+      const kind = prongs ? `fork${prongs}` : bloom ? 'bloom' : !n.k.length && d.side === 'canopy' ? 'leaf' : 'none';
       if (this.dataset.kind === kind) return;
       this.dataset.kind = kind;
       g.selectAll('*').remove();
+      // leaves and blossoms lean a little to either side and sway, each at its own pace
+      const sway = (): ReturnType<typeof g.append<SVGGElement>> =>
+        g
+          .append('g')
+          .attr('transform', `rotate(${jitter(d.id + 't') * 20})`)
+          .append('g')
+          .attr('class', 'sway')
+          .style('--sd', `${5 + 3 * Math.abs(jitter(d.id + 's'))}s`)
+          .style('--sdl', `${-7 * Math.abs(jitter(d.id + 'd'))}s`);
       if (kind === 'leaf') {
-        const len = 14 + 4 * Math.abs(jitter(d.id));
-        g.append('path')
+        const len = 15 + 5 * Math.abs(jitter(d.id));
+        const w = len * 0.34;
+        const sw = sway();
+        sw.append('path')
           .attr('class', 'leaf')
-          .attr('d', `M1,0C${len * 0.3},${-len * 0.36} ${len * 0.75},${-len * 0.34} ${len},0C${len * 0.75},${len * 0.34} ${len * 0.3},${len * 0.36} 1,0Z`);
+          .style('--lv', jitter(d.id + 'l'))
+          .attr(
+            'd',
+            `M0,0C${len * 0.2},${-w} ${len * 0.62},${-w * 1.05} ${len},0C${len * 0.62},${w * 1.05} ${len * 0.2},${w} 0,0Z`,
+          );
+        sw.append('path').attr('class', 'rib').attr('d', `M1.5,0L${len * 0.8},0`);
+      } else if (kind === 'bloom') {
+        const sw = sway();
+        sw.append('path').attr('class', 'stalk').attr('d', 'M0,0L6.5,0');
+        const b = sw.append('g').attr('class', 'bloom').attr('transform', 'translate(11,0)');
+        const turn = jitter(d.id + 'b') * 36;
+        for (let i = 0; i < 5; i++) {
+          const a = ((i * 72 + turn) * Math.PI) / 180;
+          b.append('ellipse')
+            .attr('class', 'petal')
+            .attr('cx', 3.6 * Math.cos(a))
+            .attr('cy', 3.6 * Math.sin(a))
+            .attr('rx', 3.4)
+            .attr('ry', 2.6)
+            .attr('transform', `rotate(${i * 72 + turn} ${3.6 * Math.cos(a)} ${3.6 * Math.sin(a)})`);
+        }
+        b.append('circle').attr('class', 'eye').attr('r', 1.9);
       } else if (prongs) {
         const who = n.pw!;
         for (let i = 0; i < prongs; i++) {
@@ -638,7 +744,9 @@ export function initTree(): void {
 
     nodeSel
       .transition()
-      .duration(dur)
+      .delay((d) => wait(d) + (intro ? INTRO_DUR * 0.5 : 0))
+      .duration(time)
+      .ease(easeCubicOut)
       .style('opacity', 1)
       .attr('transform', (d) => `translate(${d.x},${d.y})`);
 
@@ -898,9 +1006,14 @@ export function initTree(): void {
   input.addEventListener('blur', () => setTimeout(() => ((results.hidden = true), undefined), 120));
 
   // ---------- start ----------
-  render(false);
-  fit(false);
   const hash = decodeURIComponent(location.hash.slice(1));
+  const grow = !reduceMotion && !(hash && byId.has(hash));
+  if (grow) {
+    svgEl.classList.add('intro');
+    setTimeout(() => svgEl.classList.remove('intro'), INTRO_DELAY + 6 * INTRO_STEP + 2 * INTRO_DUR);
+  }
+  render(grow, grow);
+  fit(false);
   if (hash && byId.has(hash)) reveal(hash);
   let rt: number | undefined;
   window.addEventListener('resize', () => {

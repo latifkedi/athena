@@ -23,6 +23,8 @@
   --fork: #7657cf;
   --soil: #f1ebe4;
   --ground: #d9cfc4;
+  --gl: 36%;
+  --bloom: #e9a53b;
   --shadow-sm: 0 1px 2px rgb(60 45 20 / 0.06);
   --shadow: 0 1px 2px rgb(60 45 20 / 0.05), 0 8px 24px -12px rgb(60 45 20 / 0.18);
   --shadow-lg: 0 2px 6px rgb(60 45 20 / 0.06), 0 24px 48px -20px rgb(60 45 20 / 0.28);
@@ -59,6 +61,8 @@
     --fork: #a88ff0;
     --soil: #221f1b;
     --ground: #4a433c;
+    --gl: 50%;
+    --bloom: #f3c064;
     --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 10px 28px -12px rgb(0 0 0 / 0.6);
     --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.3), 0 24px 48px -20px rgb(0 0 0 / 0.7);
@@ -87,6 +91,8 @@
   --fork: #a88ff0;
   --soil: #221f1b;
   --ground: #4a433c;
+  --gl: 50%;
+  --bloom: #f3c064;
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.3);
   --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 10px 28px -12px rgb(0 0 0 / 0.6);
   --shadow-lg: 0 2px 6px rgb(0 0 0 / 0.3), 0 24px 48px -20px rgb(0 0 0 / 0.7);
