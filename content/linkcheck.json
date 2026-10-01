@@ -1,1 +1,19 @@
-{ "checked": null, "urls": {} }
+{
+  "checked": "2026-10-01",
+  "urls": {
+    "https://en.wikisource.org/wiki/The_Rig_Veda/Mandala_10/Hymn_129": {
+      "code": 404,
+      "since": "2026-10-01",
+      "seen": "2026-10-01",
+      "count": 1,
+      "show": true
+    },
+    "https://www.bl.uk/magna-carta": {
+      "code": 404,
+      "since": "2026-10-01",
+      "seen": "2026-10-01",
+      "count": 1,
+      "show": true
+    }
+  }
+}
